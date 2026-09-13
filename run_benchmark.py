@@ -4,13 +4,11 @@ import sys
 import traceback
 import os
 
-# 우리가 만든 파이프라인에서 실행 함수를 가져옵니다.
 from pipeline_main import run_full_pipeline
 
 DATASET_DIR = "dataset"
 os.makedirs(DATASET_DIR, exist_ok=True)
 
-# 📂 진행 상황 출석부도 dataset 폴더 안에 깔끔하게 저장합니다.
 PROCESSED_FILE = os.path.join(DATASET_DIR, "processed_urls.txt")
 
 def load_processed_urls():
@@ -38,14 +36,13 @@ def run_benchmark_automation(csv_file_path):
         print(f"❌ CSV 파일을 읽는 중 오류가 발생했습니다: {e}")
         return
 
-    if 'url' not in df.columns:
-        print("❌ CSV 파일에 'url' 열(Column)이 없습니다. 파일 형식을 확인해주세요.")
+    if '주소' not in df.columns:
+        print("❌ CSV 파일에 '주소' 열(Column)이 없습니다. 파일 형식을 확인해주세요.")
         return
 
-    urls = df['url'].dropna().tolist()
+    urls = df['주소'].dropna().tolist()
     total_urls = len(urls)
     
-    # 🚀 [이어하기 핵심 로직] 이전에 완료한 URL 목록을 불러옵니다.
     processed_urls = load_processed_urls()
     remaining_count = total_urls - len(processed_urls)
     
@@ -53,7 +50,6 @@ def run_benchmark_automation(csv_file_path):
     print("="*85)
 
     for i, url in enumerate(urls, 1):
-        # 이미 출석부에 있는 URL이면 빛의 속도로 스킵합니다.
         if url in processed_urls:
             print(f"⏩ [{i}/{total_urls}] 이미 분석 완료된 URL입니다. 스킵: {url}")
             continue
@@ -62,10 +58,7 @@ def run_benchmark_automation(csv_file_path):
         print(f"👉 타겟 URL: {url}")
         
         try:
-            # 🎯 메인 파이프라인 실행
             run_full_pipeline(url)
-            
-            # 분석이 무사히 끝났으면 출석부에 기록! (다음 실행 시 건너뛰기 위함)
             mark_as_processed(url)
             
         except Exception as e:
@@ -73,8 +66,6 @@ def run_benchmark_automation(csv_file_path):
             print(f"원인: {e}")
             traceback.print_exc()
             print("👉 에러를 무시하고 다음 상품으로 넘어갑니다.\n")
-            # 에러가 난 URL도 계속 뻗는 걸 방지하고 싶다면 아래 주석을 해제하세요.
-            # mark_as_processed(url) 
         
         if i < total_urls:
             print(f"⏳ 서버 부하 방지를 위해 5초 대기합니다...")
@@ -85,5 +76,5 @@ def run_benchmark_automation(csv_file_path):
     print("="*85)
 
 if __name__ == "__main__":
-    TARGET_CSV = os.path.join(DATASET_DIR, "benchmark_dataset_labeled.csv") 
+    TARGET_CSV = os.path.join(DATASET_DIR, "test.csv") 
     run_benchmark_automation(TARGET_CSV)
