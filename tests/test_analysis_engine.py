@@ -274,5 +274,77 @@ class FinalizedLogicTests(unittest.TestCase):
         self.assertEqual(result_consistency_errors(result), [])
 
 
+class ClaimTextConstructionTests(unittest.TestCase):
+    """스펙표의 기능명이 판정 텍스트까지 살아 도달하는지 확인한다."""
+
+    def test_spec_keys_survive_flattening(self):
+        """스펙 키를 버리면 AI 기능명이 통째로 사라진다.
+
+        다나와 스펙표는 기능명이 키에 있고 값은 "지원" 하나뿐이다.
+        키를 버리면 {"AI세탁건조": "지원"} 이 "지원" 이 되어, 정작 판정에
+        필요한 기능명이 남지 않는다. 캐시 330건 중 3건이 raw_specs 마저
+        비어 있어 이 때문에 AI 기능을 하나도 인식하지 못했다.
+        """
+        from fides_integration import build_claim_inputs
+
+        ad_text, _ocr, _extra = build_claim_inputs(
+            {
+                "name": "삼성전자 비스포크 AI 콤보",
+                "specs": {"AI세탁건조": "지원", "AI에너지절약": "지원", "용량": "25kg"},
+                "raw_specs": "",
+            },
+            {},
+        )
+        self.assertIn("AI세탁건조", ad_text)
+        self.assertIn("AI에너지절약", ad_text)
+        self.assertIn("25kg", ad_text)
+
+    def test_top_level_field_names_are_not_injected(self):
+        """최상위 키는 필드 이름이라 내용이 아니다 — 텍스트에 섞이면 안 된다."""
+        from fides_integration import build_claim_inputs
+
+        ad_text, _ocr, _extra = build_claim_inputs(
+            {"name": "테스트 제품", "specs": {"용량": "25kg"}}, {}
+        )
+        self.assertNotIn("raw_specs", ad_text)
+        self.assertNotIn("normalized_model_name", ad_text)
+
+
+class ProductPageGuardTests(unittest.TestCase):
+    """상품 페이지가 아닌 수집 결과를 실제로 걸러내는지 확인한다."""
+
+    def test_news_page_is_rejected(self):
+        """본문만 긴 페이지를 통과시키면 안 된다.
+
+        이전 판정은 "스펙 또는 본문이 있으면 통과"였는데, 다나와 뉴스
+        페이지는 스펙표가 없는 대신 본문이 3,000자라 그대로 통과했다.
+        제품명 "뉴스룸" 으로 분석까지 진행돼 ACCS 0 으로 기록됐다.
+        """
+        from pipeline_main import _looks_like_product_page
+
+        self.assertFalse(
+            _looks_like_product_page(
+                {"specs": {}, "raw_specs": "배너닫기 에누리 몰테일 " * 200}
+            )
+        )
+
+    def test_product_with_spec_table_is_accepted(self):
+        from pipeline_main import _looks_like_product_page
+
+        self.assertTrue(
+            _looks_like_product_page({"specs": {"용량": "25kg"}, "raw_specs": ""})
+        )
+
+    def test_product_without_spec_table_but_with_pairs_is_accepted(self):
+        """스펙표가 없는 상품 유형을 놓치지 않는다."""
+        from pipeline_main import _looks_like_product_page
+
+        self.assertTrue(
+            _looks_like_product_page(
+                {"specs": {}, "raw_specs": "제조회사 : LG전자 / 용량 : 25kg / 색상 : 화이트"}
+            )
+        )
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

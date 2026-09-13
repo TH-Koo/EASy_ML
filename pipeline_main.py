@@ -37,8 +37,41 @@ from fides_integration import secure_analyze_bundle
 # =====================================================================
 # DB 연결 및 로컬 검색 엔진
 # =====================================================================
+_MODEL_FIELD_PATTERN = re.compile(r"(?:단품|본체|세트)?모델명\s*:\s*([A-Za-z0-9][A-Za-z0-9\-]{3,})")
+
 DB_URL = 'mysql+pymysql://admin:fidescapstone@fides-db.cdgw08ugc1uu.ap-northeast-2.rds.amazonaws.com:3306/CapstonDesign'
 engine = create_engine(DB_URL, pool_pre_ping=True)
+
+
+def _spec_table_model(scraped_item: dict) -> str:
+    """스펙표에 적힌 규제기관용 모델번호를 꺼낸다 (있으면 LLM 추측보다 우선한다).
+
+    다나와 스펙표는 "갤럭시S26 울트라" 같은 마케팅명과 별개로 "모델명: SM-S948"
+    처럼 RRA/KC 인증 DB가 실제로 쓰는 모델번호를 이미 갖고 있는 경우가 많다.
+    LLM(resolve_model_name)은 마케팅 제목만 보고 "S26"처럼 짧고 인증 DB에
+    존재하지 않는 이름을 지어내는데, 그 값은 4자 미만이라 _model_match 에서
+    아예 매칭을 시도하지도 못하고 버려진다. 스펙표에 이미 있는 값을 두고
+    지어낼 이유가 없다.
+    """
+    specs = scraped_item.get("specs") or {}
+    if isinstance(specs, dict):
+        # "모델명"이 정확히 일치하는 키를 우선하고, 세트/본체/단품 변형은 그 다음.
+        priority_keys = [k for k in specs if k == "모델명"]
+        other_keys = [k for k in specs if k != "모델명" and "모델명" in k]
+        for key in priority_keys + other_keys:
+            value = str(specs.get(key, "")).strip()
+            if len(value) >= 4:
+                return value
+
+    # specs 딕셔너리 파싱 과정에서 이 한 줄만 누락되는 경우가 있었다 (갤럭시
+    # Z 폴드7 등): raw_specs 원문에는 "모델명 : SM-F966B"가 그대로 있는데
+    # 구조화된 specs 딕셔너리엔 해당 키가 빠져 있었다. 원문에서 직접 찾는다.
+    raw_specs = str(scraped_item.get("raw_specs") or "")
+    match = _MODEL_FIELD_PATTERN.search(raw_specs)
+    if match:
+        return match.group(1)
+    return ""
+
 
 def search_kc_db_local(company_aliases, model_name):
     base_model = model_name[:5] if len(model_name) >= 5 else model_name
@@ -55,6 +88,13 @@ def search_kc_db_local(company_aliases, model_name):
 
     try:
         with engine.connect() as conn:
+            # 회사명만 맞으면 50건 상한 안에서 무작위 순서로 잘렸다. 삼성처럼
+            # 인증 건수가 많은 회사는 정작 이 제품의 모델과 일치하는 행이
+            # LIMIT 밖으로 밀려나, 무관한 다른 제품 인증만 company_general
+            # 근거로 남고 필수 요건(무선 모듈 등)은 영원히 충족되지 못했다.
+            # (캐시 388건 중 350건이 이 LIMIT 에 정확히 걸려 있었다.)
+            # 모델이 일치하는 행을 항상 먼저 오게 정렬해, 있는데도 잘려
+            # 나가는 일을 막는다.
             query = f"""
                 SELECT * FROM kc_ai_products
                 WHERE ({comp_cond})
@@ -62,6 +102,7 @@ def search_kc_db_local(company_aliases, model_name):
                     equip_name REGEXP '무선|통신|센서|비전|스마트|IoT|블루투스|Wi-Fi|제어|AI|인공지능'
                     OR model_name LIKE :model
                   )
+                ORDER BY (model_name LIKE :model) DESC
                 LIMIT 50
             """
             params['model'] = f"%{base_model}%"
@@ -439,6 +480,56 @@ def _build_patent_items_df(kipris_res):
 
 
 
+# 스펙표가 없을 때 raw_specs 가 스펙표 형태인지 판단하는 최소 "key : value" 쌍 수.
+# 크롤러는 raw_specs 를 "항목 : 값 / 항목 : 값" 으로 만든다. 상품 페이지가
+# 아닌 페이지의 본문에는 이 구조가 나타나지 않는다.
+_MIN_SPEC_PAIRS = 3
+
+
+def _looks_like_product_page(scraped_item: dict) -> bool:
+    """수집 결과가 실제 상품 페이지인지 판단한다.
+
+    이전 판정은 "스펙 항목 또는 본문 텍스트가 있으면 통과"였는데, 이것으로는
+    거르지 못했다. 다나와 뉴스 페이지는 스펙표가 없는 대신 본문이 3,000자라
+    그대로 통과했고, 제품명 "뉴스룸"으로 분석까지 진행돼 ACCS 0 으로 기록됐다.
+
+    캐시 330건을 재보니 실제 상품은 전부 스펙 16항목 이상을 갖고, 스펙이 0인
+    것은 그 뉴스 페이지 3건뿐이었다. 그래서 스펙표를 1차 기준으로 쓰되,
+    스펙표가 없는 상품 유형을 놓치지 않도록 raw_specs 가 스펙표 형태
+    ("항목 : 값")일 때도 통과시킨다. 뉴스 페이지 본문에는 이 쌍이 0개다.
+    """
+    specs = scraped_item.get("specs") or {}
+    if specs:
+        return True
+    raw_specs = str(scraped_item.get("raw_specs") or "")
+    return raw_specs.count(" : ") >= _MIN_SPEC_PAIRS
+
+
+def _save_evidence_bundle_cache(url: str, bundle_kwargs: dict) -> None:
+    """Cache the exact keyword arguments passed to secure_analyze_bundle().
+
+    This lets scoring-logic experiments (e.g. sweeping
+    fides_config.EngineConfig.support_combination_power against the labeled
+    benchmark) re-run OntologyAnalysisEngine.analyze() against real,
+    already-collected evidence without re-crawling or re-calling paid APIs.
+    """
+    cache_dir = os.path.join("dataset", "evidence_cache")
+    os.makedirs(cache_dir, exist_ok=True)
+    cache_path = os.path.join(cache_dir, hashlib.sha256(url.encode("utf-8")).hexdigest()[:24] + ".json")
+
+    serializable = dict(bundle_kwargs)
+    serializable["ontology_dir"] = str(serializable.get("ontology_dir", ""))
+    patent_items_df = serializable.get("patent_items_df")
+    if isinstance(patent_items_df, pd.DataFrame):
+        serializable["patent_items_df"] = patent_items_df.to_dict(orient="records")
+
+    try:
+        with open(cache_path, "w", encoding="utf-8") as f:
+            json.dump({"url": url, "bundle_kwargs": serializable}, f, ensure_ascii=False, indent=2, default=str)
+    except Exception as e:
+        print(f"⚠️ [EvidenceCache] 캐시 저장 실패 (무시하고 진행): {e}")
+
+
 def run_full_pipeline(url: str):
     if not url:
         print("❌ 실행할 URL이 없습니다.")
@@ -450,6 +541,15 @@ def run_full_pipeline(url: str):
 
     scraped_item = get_product_data(url)
     if not scraped_item:
+        return
+
+    # 상품 페이지가 아닌 것을 받아오는 경우가 있다. 벤치마크에는 제품명이
+    # "뉴스룸"이고 스펙도 본문도 비어 있는 수집 결과가 섞여 있었다. 이런
+    # 입력은 판정할 대상이 없으므로 무거운 공공데이터 통신을 하기 전에
+    # 멈춘다. 스펙과 본문이 모두 비었을 때만 걸러 정상 상품을 놓치지 않는다.
+    if not _looks_like_product_page(scraped_item):
+        print("\n [중단] 상품 페이지로 보이지 않습니다(스펙·본문 없음). 분석을 건너뜁니다.")
+        print(f" 수집된 제목: {scraped_item.get('model_name', '')!r}")
         return
 
     img_path = scraped_item.get("screenshot_path", "")
@@ -498,7 +598,11 @@ def run_full_pipeline(url: str):
 
     norm_result = normalize_data(scraped_item)
     official_company = resolve_real_company_name(norm_result.get("raw_company", ""), scraped_item.get("model_name", ""))
-    official_model = resolve_model_name(scraped_item.get("model_name", ""), ocr_text) or norm_result.get("final_norm_model", "미확인")
+    official_model = (
+        _spec_table_model(scraped_item)
+        or resolve_model_name(scraped_item.get("model_name", ""), ocr_text)
+        or norm_result.get("final_norm_model", "미확인")
+    )
     product_category = scraped_item.get("category", "") if isinstance(scraped_item.get("category"), str) else ""
     llm_aliases = scraped_item.get("aliases", [])
     search_payload = generate_tailored_search_payload(official_company, llm_aliases)
@@ -544,7 +648,7 @@ def run_full_pipeline(url: str):
     else:
         patent_items_df = None
 
-    analysis_result = secure_analyze_bundle(
+    analyze_bundle_kwargs = dict(
         ontology_dir=ontology_path,
         product_json={
             # Keep the original Danawa title as claim text; official_model is only
@@ -581,6 +685,11 @@ def run_full_pipeline(url: str):
         model_param=official_model,
         ocr_result=ocr_result,
     )
+
+    # 재크롤링·재호출 없이 채점 로직만 다시 시험할 수 있도록, 실제로 엔진에
+    # 넘긴 근거를 그대로 캐시한다 (scripts/calibrate_thresholds.py 등이 사용).
+    _save_evidence_bundle_cache(url, analyze_bundle_kwargs)
+    analysis_result = secure_analyze_bundle(**analyze_bundle_kwargs)
 
     has_dart = bool(_get_valid_api_result(final_results.get('DART')))
 

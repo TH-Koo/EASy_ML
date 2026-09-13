@@ -556,6 +556,13 @@ class OntologyRepository:
         frame.columns = [str(column).replace("\ufeff", "").strip() for column in frame.columns]
         return frame.fillna("")
 
+    def _read_optional_csv(self, filename: str) -> pd.DataFrame:
+        """Load a supplementary table, tolerating its absence."""
+        if not (Path(self.ontology_dir) / filename).exists():
+            self.load_warnings.append(f"{filename}: not found, feature disabled")
+            return pd.DataFrame()
+        return self._read_csv(filename)
+
     def _load(self) -> None:
         self.cap_df = self._read_csv(self.REQUIRED_FILES["capabilities"])
         self.req_df = self._read_csv(self.REQUIRED_FILES["requirements"])
@@ -565,6 +572,12 @@ class OntologyRepository:
         self.source_df = self._read_csv(self.REQUIRED_FILES["sources"])
         self.neg_df = self._read_csv(self.REQUIRED_FILES["negative"])
         self.rule_df = self._read_csv(self.REQUIRED_FILES["scoring_rules"])
+        # Optional: certification records name a device class, never a parts
+        # list, so this table bridges "certified as \uacf5\uae30\uccad\uc815\uae30" to the components
+        # such a device necessarily contains.  Absent file = feature disabled.
+        self.device_implication_df = self._read_optional_csv(
+            "device_component_implication_master.csv"
+        )
 
         # Normalize a known mixed-language field before grouping/scoring.
         if "required_level" in self.req_df:
@@ -600,6 +613,22 @@ class OntologyRepository:
             for _, row in self.rule_df.iterrows()
             if str(row.get("capability_id", "")).strip()
         }
+        # (compact device pattern, compact component name) -> implication strength.
+        # Longer device patterns are preferred at lookup time so that a specific
+        # class ("특정소출력 무선기기") outranks a generic one ("무선기기").
+        self.device_implications: List[Tuple[str, str, float]] = []
+        for _, row in self.device_implication_df.iterrows():
+            device = compact_text(row.get("device_pattern_ko", ""))
+            component = compact_text(row.get("component_name_ko", ""))
+            if not device or not component:
+                continue
+            try:
+                strength = clamp01(float(row.get("implication_strength", 0.0) or 0.0))
+            except (TypeError, ValueError):
+                continue
+            if strength > 0:
+                self.device_implications.append((device, component, strength))
+        self.device_implications.sort(key=lambda item: len(item[0]), reverse=True)
 
     @staticmethod
     def _group(frame: pd.DataFrame, key: str) -> Dict[str, List[Dict[str, Any]]]:
@@ -646,6 +675,19 @@ class OntologyRepository:
                 "source_name_ko": source_type,
             },
         )
+
+    def get_device_implication(self, device_text: str, component_name: str) -> float:
+        """Strength with which a certified device class implies a component."""
+        if not self.device_implications:
+            return 0.0
+        device_compact = compact_text(device_text)
+        component_compact = compact_text(component_name)
+        if not device_compact or not component_compact:
+            return 0.0
+        for device, component, strength in self.device_implications:
+            if component == component_compact and device in device_compact:
+                return strength
+        return 0.0
 
     def get_scoring_rule(self, capability_id: str) -> Dict[str, Any]:
         return self.scoring_rule_map.get(
@@ -710,7 +752,7 @@ class OntologyAnalysisEngine:
         positive_caps = [score for score in capability_scores if score.positive_claim]
         used_caps = positive_caps if positive_caps else []
 
-        channel_details = self._calculate_channel_scores(used_caps, records)
+        channel_details = self._calculate_channel_scores(used_caps, records, all_caps=capability_scores)
         hes = channel_details["hes"]["score"]
         tes = channel_details["tes"]["score"]
         ces = channel_details["ces"]["score"]
@@ -1221,6 +1263,26 @@ class OntologyAnalysisEngine:
         if normalized_component and normalized_component in compact:
             return 0.96
 
+        # A certification record states a device class ("공기청정기", "특정소출력
+        # 무선기기"), never a parts list, so no amount of token matching against a
+        # component name such as "공기질 센서(PM2.5·VOC·CO2)" can ever succeed.
+        # Bridge the two levels explicitly, but only for evidence tied to this
+        # product or its model family -- an unrelated company certification must
+        # not imply anything about this product's hardware.
+        if self._effective_relation_type(record, capability_id) in {
+            "direct_model",
+            "direct_product",
+            "product_family",
+        }:
+            device_text = _first_nonempty(
+                record.meta, ["equip_name", "product_name", "device_name", "기자재명칭"]
+            )
+            implication = self.repo.get_device_implication(
+                device_text or record.title, component_name
+            )
+            if implication > 0:
+                return implication
+
         component_tokens = meaningful_tokens(component_name)
         evidence_tokens = meaningful_tokens(text)
         overlap = component_tokens & evidence_tokens
@@ -1456,10 +1518,18 @@ class OntologyAnalysisEngine:
     # ------------------------------------------------------------------
 
     def _calculate_channel_scores(
-        self, used_caps: List[CapabilityScore], records: List[EvidenceRecord]
+        self,
+        used_caps: List[CapabilityScore],
+        records: List[EvidenceRecord],
+        all_caps: Optional[List[CapabilityScore]] = None,
     ) -> Dict[str, Dict[str, Any]]:
         cap_by_id = {item.capability_id: item for item in used_caps}
         record_by_id = {record.evidence_id: record for record in records}
+        # positive_claim 문턱(25점)을 못 넘은 약한 "AI" 주장도 완전히 0은
+        # 아니게 반영한다. 문턱을 넘은 게 하나라도 있으면(=used_caps 존재)
+        # 이 값은 안 쓰인다 -- 아래 fallback 분기에서만 의미가 있다.
+        best_claim_score = max((item.base_claim_score for item in (all_caps or [])), default=0.0)
+        claim_alignment = clamp01(max(0.15, min(1.0, best_claim_score / 25.0)))
         all_contributions = [
             contribution
             for cap in used_caps
@@ -1542,7 +1612,23 @@ class OntologyAnalysisEngine:
                 else:
                     fallback = []
 
-                if fallback:
+                # used_caps 가 비어 있다는 것은 이 제품 전체에서 AI 기능
+                # 주장이 positive_claim 문턱(25점)을 넘은 게 하나도 없다는
+                # 뜻이다. 그런 경우까지 KC/RRA 인증 개수만으로 원래
+                # fallback 만큼 점수를 다 주면, "AI"라고만 쓰고 실제 기능은
+                # 특정하지 않은 제품(모니터 등 인증형 워싱)이 인증 많은
+                # 정상 제품과 같은 자리(36~43점)에서 겹친다.
+                #
+                # 그렇다고 완전히 0으로 끊으면 반대쪽 절벽이 생긴다: 문턱을
+                # 살짝 못 넘긴(예: claim_score 20점) 정상 제품도 무조건
+                # 0점이 되어, "평가를 못 했다"와 "평가했더니 근거가 없다"가
+                # 숫자로 구분이 안 된다. claim_alignment(0.15~1.0)를 곱해
+                # 문턱 근처일수록 원래 fallback 에 가깝게, "AI" 외엔 아무
+                # 언급도 없을수록 바닥(0.15배)에 가깝게 연속적으로 낮춘다.
+                # 다른 채널에서라도 positive_claim 이 하나 있으면(=이
+                # 제품이 뭔가 구체적 AI 기능을 주장한 게 맞으면) 이 채널의
+                # 커버리지 공백은 기존처럼 fallback 으로 그대로 메운다.
+                if fallback and used_caps:
                     evidence_score = min(
                         35 + log1p(len(fallback)) * 12,
                         65
@@ -1553,6 +1639,18 @@ class OntologyAnalysisEngine:
                     score = clamp(
                         evidence_score * 0.7 +
                         capability_score * 0.3
+                    )
+
+                elif fallback:
+                    evidence_score = min(
+                        35 + log1p(len(fallback)) * 12,
+                        65
+                    )
+
+                    capability_score = 25
+
+                    score = clamp(
+                        (evidence_score * 0.7 + capability_score * 0.3) * claim_alignment
                     )
 
                 else:
@@ -1604,6 +1702,14 @@ class OntologyAnalysisEngine:
         if item.component_type == "HW" and item.source_type in self.HES_SOURCES:
             return "hes"
         if item.component_type == "SW" and item.source_type in self.TES_SOURCES:
+            return "tes"
+        if item.component_type == "SW" and item.source_type == "seller_page":
+            # A first-party page is already accepted into HES for hardware specs,
+            # so silently dropping its software description left a hole: a product
+            # whose only match was a seller-described SW component scored ACCS 0.0
+            # -- identical to a product with no evidence whatsoever.  Its weight is
+            # already held down by seller_page_quality_cap, and Normal still
+            # requires external corroboration (see _decide_verdict).
             return "tes"
         return "other"
 

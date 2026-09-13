@@ -18,17 +18,34 @@ from analysis_engine import (
 )
 
 
-def _flatten_text(value: Any) -> str:
+def _flatten_text(value: Any, keep_keys: bool = False) -> str:
+    """중첩된 값을 판정용 텍스트 한 덩어리로 편다.
+
+    `keep_keys` 는 중첩 매핑의 키를 값과 함께 남길지 정한다. 스펙표는
+    기능명이 키에 있고 값은 "지원" 하나뿐이라(`{"AI세탁건조": "지원"}`),
+    키를 버리면 정작 판정에 필요한 기능명이 통째로 사라진다. 실제로
+    캐시 330건 중 3건이 이 때문에 AI 기능을 하나도 인식하지 못했다.
+
+    바깥에서 넘기는 최상위 매핑의 키는 "title"·"specs" 같은 필드 이름이라
+    내용이 아니므로 기본값은 False 다. 그 안의 중첩 매핑부터 키를 살린다.
+    """
     if value is None:
         return ""
     if isinstance(value, str):
         return value
     if isinstance(value, Mapping):
-        return " ".join(
-            part for part in (_flatten_text(item) for item in value.values()) if part
-        )
+        parts = []
+        for key, item in value.items():
+            text = _flatten_text(item, keep_keys=True)
+            if keep_keys and str(key).strip():
+                parts.append(f"{key} {text}".strip())
+            elif text:
+                parts.append(text)
+        return " ".join(part for part in parts if part)
     if isinstance(value, Iterable) and not isinstance(value, (bytes, bytearray)):
-        return " ".join(part for part in (_flatten_text(item) for item in value) if part)
+        return " ".join(
+            part for part in (_flatten_text(item, keep_keys=keep_keys) for item in value) if part
+        )
     return str(value)
 
 

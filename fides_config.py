@@ -12,13 +12,38 @@ from typing import Dict
 
 @dataclass(frozen=True)
 class VerdictThresholds:
-    """Single source of truth for final classification thresholds."""
+    """Single source of truth for final classification thresholds.
 
-    credible: float = 80.0
-    normal: float = 60.0
-    suspected: float = 45.0
-    minimum_sufficiency_for_normal: float = 0.45
-    minimum_sufficiency_for_credible: float = 0.65
+    Recalibrated on the labeled tuning set (162 products: 130 genuine / 32
+    washing, held out from benchmark_holdout_209.csv) with
+    scripts/calibrate_thresholds.py, after two engine changes on this branch:
+    the RRA model-matching fix and the channel-fallback claim_alignment gate
+    (see analysis_engine.py's _calculate_channel_scores). Those two changes
+    moved the ACCS distribution enough that the inherited thresholds (80/60/45,
+    unchanged since the common ancestor) misclassified 336 of 338 genuine
+    products as washing.
+
+    At these values: normal ACCS averages 48.7 (washing 8.5) -- the two
+    classes barely overlap, so `normal` sits mid-gap rather than at a round
+    number. Every credible value from 55 to 80 ties for the same MCC (0.942)
+    because no genuine product in the tuning set reaches the credible band
+    from below only by a hair; 67.5 is the tie's median so a slightly
+    different sample wouldn't move it far. suff_credible similarly ties
+    across its whole sweep range (0.0-0.45) -- genuine products that clear
+    `credible` on ACCS also clear every sufficiency floor tried, so this gate
+    is not yet doing real work. It stays for the same reason noted in the
+    original design: nothing to catch yet is not evidence the metric is
+    broken, just that the current benchmark has no example that would test it.
+
+    Re-run scripts/calibrate_thresholds.py against a larger/updated labeled
+    set before trusting these across a materially different engine change.
+    """
+
+    credible: float = 67.5
+    normal: float = 35.0
+    suspected: float = 21.8
+    minimum_sufficiency_for_normal: float = 0.0
+    minimum_sufficiency_for_credible: float = 0.25
 
 
 @dataclass(frozen=True)
