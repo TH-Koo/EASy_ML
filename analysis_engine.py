@@ -752,7 +752,7 @@ class OntologyAnalysisEngine:
         positive_caps = [score for score in capability_scores if score.positive_claim]
         used_caps = positive_caps if positive_caps else []
 
-        channel_details = self._calculate_channel_scores(used_caps, records)
+        channel_details = self._calculate_channel_scores(used_caps, records, all_caps=capability_scores)
         hes = channel_details["hes"]["score"]
         tes = channel_details["tes"]["score"]
         ces = channel_details["ces"]["score"]
@@ -1518,10 +1518,18 @@ class OntologyAnalysisEngine:
     # ------------------------------------------------------------------
 
     def _calculate_channel_scores(
-        self, used_caps: List[CapabilityScore], records: List[EvidenceRecord]
+        self,
+        used_caps: List[CapabilityScore],
+        records: List[EvidenceRecord],
+        all_caps: Optional[List[CapabilityScore]] = None,
     ) -> Dict[str, Dict[str, Any]]:
         cap_by_id = {item.capability_id: item for item in used_caps}
         record_by_id = {record.evidence_id: record for record in records}
+        # positive_claim 문턱(25점)을 못 넘은 약한 "AI" 주장도 완전히 0은
+        # 아니게 반영한다. 문턱을 넘은 게 하나라도 있으면(=used_caps 존재)
+        # 이 값은 안 쓰인다 -- 아래 fallback 분기에서만 의미가 있다.
+        best_claim_score = max((item.base_claim_score for item in (all_caps or [])), default=0.0)
+        claim_alignment = clamp01(max(0.15, min(1.0, best_claim_score / 25.0)))
         all_contributions = [
             contribution
             for cap in used_caps
@@ -1605,14 +1613,21 @@ class OntologyAnalysisEngine:
                     fallback = []
 
                 # used_caps 가 비어 있다는 것은 이 제품 전체에서 AI 기능
-                # 주장이 단 하나도 온톨로지 패턴과 매칭되지 않았다는 뜻이다
-                # (positive_claim 이 어디에도 없음). 그런 경우까지 KC/RRA
-                # 인증 개수만으로 기본 점수를 주면, "AI"라고만 쓰고 실제
-                # 기능은 특정하지 않은 제품(모니터 등 인증형 워싱)이 인증
-                # 많은 정상 제품과 같은 자리에서 36~43점을 받는다. 이 채널이
-                # 아니라 다른 채널에서라도 최소 한 capability 가 positive_claim
-                # 이면(=이 제품이 뭔가 구체적 AI 기능을 주장한 게 맞으면)
-                # 이 채널의 커버리지 공백은 기존처럼 fallback 으로 메운다.
+                # 주장이 positive_claim 문턱(25점)을 넘은 게 하나도 없다는
+                # 뜻이다. 그런 경우까지 KC/RRA 인증 개수만으로 원래
+                # fallback 만큼 점수를 다 주면, "AI"라고만 쓰고 실제 기능은
+                # 특정하지 않은 제품(모니터 등 인증형 워싱)이 인증 많은
+                # 정상 제품과 같은 자리(36~43점)에서 겹친다.
+                #
+                # 그렇다고 완전히 0으로 끊으면 반대쪽 절벽이 생긴다: 문턱을
+                # 살짝 못 넘긴(예: claim_score 20점) 정상 제품도 무조건
+                # 0점이 되어, "평가를 못 했다"와 "평가했더니 근거가 없다"가
+                # 숫자로 구분이 안 된다. claim_alignment(0.15~1.0)를 곱해
+                # 문턱 근처일수록 원래 fallback 에 가깝게, "AI" 외엔 아무
+                # 언급도 없을수록 바닥(0.15배)에 가깝게 연속적으로 낮춘다.
+                # 다른 채널에서라도 positive_claim 이 하나 있으면(=이
+                # 제품이 뭔가 구체적 AI 기능을 주장한 게 맞으면) 이 채널의
+                # 커버리지 공백은 기존처럼 fallback 으로 그대로 메운다.
                 if fallback and used_caps:
                     evidence_score = min(
                         35 + log1p(len(fallback)) * 12,
@@ -1624,6 +1639,18 @@ class OntologyAnalysisEngine:
                     score = clamp(
                         evidence_score * 0.7 +
                         capability_score * 0.3
+                    )
+
+                elif fallback:
+                    evidence_score = min(
+                        35 + log1p(len(fallback)) * 12,
+                        65
+                    )
+
+                    capability_score = 25
+
+                    score = clamp(
+                        (evidence_score * 0.7 + capability_score * 0.3) * claim_alignment
                     )
 
                 else:
