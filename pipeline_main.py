@@ -37,6 +37,8 @@ from fides_integration import secure_analyze_bundle
 # =====================================================================
 # DB 연결 및 로컬 검색 엔진
 # =====================================================================
+_MODEL_FIELD_PATTERN = re.compile(r"(?:단품|본체|세트)?모델명\s*:\s*([A-Za-z0-9][A-Za-z0-9\-]{3,})")
+
 DB_URL = 'mysql+pymysql://admin:fidescapstone@fides-db.cdgw08ugc1uu.ap-northeast-2.rds.amazonaws.com:3306/CapstonDesign'
 engine = create_engine(DB_URL, pool_pre_ping=True)
 
@@ -52,15 +54,22 @@ def _spec_table_model(scraped_item: dict) -> str:
     지어낼 이유가 없다.
     """
     specs = scraped_item.get("specs") or {}
-    if not isinstance(specs, dict):
-        return ""
-    # "모델명"이 정확히 일치하는 키를 우선하고, 세트/본체/단품 변형은 그 다음.
-    priority_keys = [k for k in specs if k == "모델명"]
-    other_keys = [k for k in specs if k != "모델명" and "모델명" in k]
-    for key in priority_keys + other_keys:
-        value = str(specs.get(key, "")).strip()
-        if len(value) >= 4:
-            return value
+    if isinstance(specs, dict):
+        # "모델명"이 정확히 일치하는 키를 우선하고, 세트/본체/단품 변형은 그 다음.
+        priority_keys = [k for k in specs if k == "모델명"]
+        other_keys = [k for k in specs if k != "모델명" and "모델명" in k]
+        for key in priority_keys + other_keys:
+            value = str(specs.get(key, "")).strip()
+            if len(value) >= 4:
+                return value
+
+    # specs 딕셔너리 파싱 과정에서 이 한 줄만 누락되는 경우가 있었다 (갤럭시
+    # Z 폴드7 등): raw_specs 원문에는 "모델명 : SM-F966B"가 그대로 있는데
+    # 구조화된 specs 딕셔너리엔 해당 키가 빠져 있었다. 원문에서 직접 찾는다.
+    raw_specs = str(scraped_item.get("raw_specs") or "")
+    match = _MODEL_FIELD_PATTERN.search(raw_specs)
+    if match:
+        return match.group(1)
     return ""
 
 
