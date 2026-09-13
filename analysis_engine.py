@@ -1604,7 +1604,16 @@ class OntologyAnalysisEngine:
                 else:
                     fallback = []
 
-                if fallback:
+                # used_caps 가 비어 있다는 것은 이 제품 전체에서 AI 기능
+                # 주장이 단 하나도 온톨로지 패턴과 매칭되지 않았다는 뜻이다
+                # (positive_claim 이 어디에도 없음). 그런 경우까지 KC/RRA
+                # 인증 개수만으로 기본 점수를 주면, "AI"라고만 쓰고 실제
+                # 기능은 특정하지 않은 제품(모니터 등 인증형 워싱)이 인증
+                # 많은 정상 제품과 같은 자리에서 36~43점을 받는다. 이 채널이
+                # 아니라 다른 채널에서라도 최소 한 capability 가 positive_claim
+                # 이면(=이 제품이 뭔가 구체적 AI 기능을 주장한 게 맞으면)
+                # 이 채널의 커버리지 공백은 기존처럼 fallback 으로 메운다.
+                if fallback and used_caps:
                     evidence_score = min(
                         35 + log1p(len(fallback)) * 12,
                         65
