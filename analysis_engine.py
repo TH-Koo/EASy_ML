@@ -39,6 +39,7 @@ from fides_config import (
     DynamicWeightConfig,
     EngineConfig,
 )
+from fides_scoring import CHANNELS, calculate_accs, validate_weights
 
 
 # ---------------------------------------------------------------------------
@@ -723,6 +724,7 @@ class OntologyAnalysisEngine:
         dynamic_weight_config: Optional[DynamicWeightConfig] = None,
         enable_dynamic_weighting: bool = True,
         engine_config: Optional[EngineConfig] = None,
+        weight_predictor: Optional[Any] = None,
     ):
         self.repo = OntologyRepository(ontology_dir)
         self.engine_config = engine_config or DEFAULT_ENGINE_CONFIG
@@ -731,6 +733,15 @@ class OntologyAnalysisEngine:
         else:
             self.dynamic_weight_config = self.engine_config.dynamic_weights
         self.enable_dynamic_weighting = bool(enable_dynamic_weighting)
+        self.weight_predictor = weight_predictor
+        if weight_predictor is not None:
+            if not self.enable_dynamic_weighting:
+                raise ValueError("weight_predictor requires enable_dynamic_weighting=True")
+            if not callable(getattr(weight_predictor, "predict_weights", None)):
+                raise TypeError("weight_predictor must implement predict_weights()")
+            validator = getattr(weight_predictor, "validate_engine_config", None)
+            if callable(validator):
+                validator(self.engine_config, self.dynamic_weight_config)
         self._contributions_by_cap: Dict[str, List[EvidenceContribution]] = {}
 
     def analyze(
@@ -739,6 +750,7 @@ class OntologyAnalysisEngine:
         ad_text: str = "",
         ocr_text: str = "",
         extra_texts: Optional[List[str]] = None,
+        product_type: str = "",
     ) -> AnalysisResult:
         validated = [
             record if isinstance(record, EvidenceRecord) else EvidenceRecord(**record)
@@ -765,6 +777,7 @@ class OntologyAnalysisEngine:
             ces=ces,
             ecs=ecs,
             channel_details=channel_details,
+            product_type=product_type,
         )
         accs = dynamic["dynamic_accs"] if self.enable_dynamic_weighting else legacy["legacy_accs"]
 
@@ -833,6 +846,8 @@ class OntologyAnalysisEngine:
                 "delta_vs_legacy": round(dynamic["dynamic_accs"] - legacy["legacy_accs"], 2),
                 "verdict": verdict,
                 "risk_level": risk_level,
+                "model_version": dynamic.get("model_version"),
+                "weight_status": dynamic.get("weight_status", "ok"),
             },
             "channel_details": channel_details,
             "channel_presence": {
@@ -856,7 +871,7 @@ class OntologyAnalysisEngine:
 
         return AnalysisResult(
             accs=round(accs, 2),
-            raw_accs=round(legacy["raw_accs"], 2),
+            raw_accs=round(dynamic["dynamic_evidence_score"] if self.weight_predictor is not None else legacy["raw_accs"], 2),
             hes=round(hes, 2),
             tes=round(tes, 2),
             ces=round(ces, 2),
@@ -1818,44 +1833,52 @@ class OntologyAnalysisEngine:
         ces: float,
         ecs: float,
         channel_details: Dict[str, Dict[str, Any]],
+        product_type: str = "",
     ) -> Dict[str, Any]:
         cfg = self.dynamic_weight_config
         scores = {"hes": hes, "tes": tes, "ces": ces}
         active = {key: value for key, value in scores.items() if value > 0}
         logits: Dict[str, float] = {}
-        for channel in active:
-            prior = max(1e-6, cfg.base_channel_priors.get(channel, 1.0 / 3.0))
-            detail = channel_details[channel]
-            diversity = min(len(detail["source_types"]) / 3.0, 1.0)
-            count_signal = min(detail["evidence_count"] / 4.0, 1.0)
-            avg_recency = float(detail.get("avg_recency", 0.5))
-            logits[channel] = (
-                log(prior)
-                + cfg.directness_signal * detail["avg_directness"]
-                + cfg.diversity_signal * diversity
-                + cfg.count_signal * count_signal
-                + cfg.recency_signal * avg_recency
-                - cfg.concentration_penalty * detail["max_source_share"]
+        prediction = None
+        if self.weight_predictor is not None:
+            # Call before ACCS/CONF/verdict exist. The returned object supplies
+            # weights only; even extra score/verdict fields cannot override us.
+            mask = {c: c in active for c in CHANNELS}
+            prediction = self.weight_predictor.predict_weights(
+                channel_scores=dict(scores), channel_details=channel_details,
+                product_type=product_type, channel_mask=mask,
             )
-        weights = _softmax(logits)
-        dynamic_evidence_score = sum(weights[key] * active[key] for key in active)
-
-        evidence_alpha = cfg.evidence_alpha
-        ecs_alpha = cfg.ecs_alpha
-        alpha_sum = evidence_alpha + ecs_alpha
-        if alpha_sum <= 0:
-            evidence_alpha, ecs_alpha = 0.85, 0.15
+            if not isinstance(prediction, Mapping) or not isinstance(prediction.get("weights"), Mapping):
+                raise ValueError("Weight predictor must return a weights mapping")
+            weights = validate_weights(prediction["weights"], mask)
+            expected_status = "ok" if active else "no_usable_channels"
+            if prediction.get("status", expected_status) != expected_status:
+                raise ValueError("Weight predictor status disagrees with channel availability")
         else:
-            evidence_alpha /= alpha_sum
-            ecs_alpha /= alpha_sum
-            
-        BASE = 20.0
-        dynamic_accs = clamp(
-            evidence_alpha * dynamic_evidence_score 
-            + ecs_alpha * ecs
-        )
-        complete_weights = {key: round(weights.get(key, 0.0), 4) for key in ("hes", "tes", "ces")}
-        return {
+            for channel in active:
+                prior = max(1e-6, cfg.base_channel_priors.get(channel, 1.0 / 3.0))
+                detail = channel_details[channel]
+                diversity = min(len(detail["source_types"]) / 3.0, 1.0)
+                count_signal = min(detail["evidence_count"] / 4.0, 1.0)
+                avg_recency = float(detail.get("avg_recency", 0.5))
+                logits[channel] = (
+                    log(prior)
+                    + cfg.directness_signal * detail["avg_directness"]
+                    + cfg.diversity_signal * diversity
+                    + cfg.count_signal * count_signal
+                    + cfg.recency_signal * avg_recency
+                    - cfg.concentration_penalty * detail["max_source_share"]
+                )
+            weights = _softmax(logits)
+        full_weights = {c: weights.get(c, 0.0) for c in CHANNELS}
+        scored = calculate_accs(scores, full_weights, ecs,
+                                evidence_alpha=cfg.evidence_alpha, ecs_alpha=cfg.ecs_alpha)
+        dynamic_evidence_score = scored["evidence_score"]
+        dynamic_accs = clamp(scored["accs"])
+        evidence_alpha, ecs_alpha = scored["evidence_alpha"], scored["ecs_alpha"]
+        # Preserve exact learned coefficients for contribution reconstruction.
+        complete_weights = full_weights if prediction is not None else {c: round(full_weights[c], 4) for c in CHANNELS}
+        result = {
             "enabled": self.enable_dynamic_weighting,
             "method": "quality_context_softmax_hes_tes_ces_with_ecs_blend",
             "weights": complete_weights,
@@ -1885,6 +1908,18 @@ class OntologyAnalysisEngine:
                 "note": "Channel score itself is not used to increase its own dynamic weight.",
             },
         }
+        if prediction is not None:
+            result.update({
+                "method": str(prediction.get("method", "learned_weights")),
+                "model_version": str(prediction.get("model_version", "unknown")),
+                "weight_status": "ok" if active else "no_usable_channels",
+                "score_calculated_by": "OntologyAnalysisEngine",
+                "contributions": scored["contributions"],
+                "unrounded_accs": scored["accs"],
+            })
+            result["formula"]["weight_signals"] = ["product_type", "evidence_quality", "channel_mask"]
+            result["formula"]["note"] = "The learned module returns weights only. ACCS and verdict are computed by AnalysisEngine."
+        return result
 
     # ------------------------------------------------------------------
     # Confidence, sufficiency, verdict
@@ -2115,7 +2150,9 @@ class OntologyAnalysisEngine:
             reasons.append("미충족 필수 구성요소: " + " / ".join(missing[:3]))
         weights = dynamic.get("weights", {})
         reasons.append(
-            "동적 가중치는 채널 점수 자체가 아니라 직접성·출처 다양성·중복 제거 근거 수를 사용했습니다: "
+            ("학습 모델이 제품군과 근거 품질로 생성한 가중치를 적용했습니다: "
+             if self.weight_predictor is not None else
+             "동적 가중치는 채널 점수 자체가 아니라 직접성·출처 다양성·중복 제거 근거 수를 사용했습니다: ") +
             f"HES {weights.get('hes', 0):.3f}, TES {weights.get('tes', 0):.3f}, CES {weights.get('ces', 0):.3f}."
         )
         reasons.append(f"최종 판정은 '{verdict}', 위험도는 '{risk_level}'입니다.")

@@ -16,6 +16,7 @@ from analysis_engine import (
     OntologyAnalysisEngine,
     bundle_to_evidence_records,
 )
+from fides_config import EngineConfig
 
 
 def _flatten_text(value: Any, keep_keys: bool = False) -> str:
@@ -142,6 +143,9 @@ def secure_analyze_bundle(
     ocr_result: Optional[Any] = None,
     ontology_dir: Optional[str] = None,
     enable_dynamic_weighting: bool = True,
+    weight_predictor: Optional[Any] = None,
+    product_type: str = "",
+    engine_config: Optional[EngineConfig] = None,
     **_: Any,
 ) -> AnalysisResult:
     """Normalize one crawler bundle and return one authoritative analysis result.
@@ -180,6 +184,8 @@ def secure_analyze_bundle(
     engine = OntologyAnalysisEngine(
         str(ontology_path),
         enable_dynamic_weighting=enable_dynamic_weighting,
+        weight_predictor=weight_predictor,
+        engine_config=engine_config,
     )
 
     evidence_records = bundle_to_evidence_records(
@@ -210,6 +216,7 @@ def secure_analyze_bundle(
         ad_text=ad_text,
         ocr_text=ocr_text,
         extra_texts=extra_texts,
+        product_type=str(product_type or product_json.get("category") or product_json.get("product_type") or ""),
     )
     # These fields are useful for benchmark/debugging and do not change scoring.
     result.details["integration"] = {
