@@ -7,7 +7,8 @@
  */
 
 export type AnalyzerBackendName = "mock" | "real";
-export type OverallLabel = "양호 구간" | "주의 구간" | "위험 구간";
+/** 백엔드 판정을 옮긴 라벨. "판정 제외"는 AI 기능 주장이 없어 평가하지 않은 경우다. */
+export type OverallLabel = "양호 구간" | "주의 구간" | "위험 구간" | "판정 제외";
 export type ProductSource = "danawa";
 export type XaiCategory = "washing" | "verification" | "relational";
 export type XaiDirection = "up" | "down";
@@ -157,6 +158,27 @@ export interface AnalysisMeta {
   notes: string | null;
 }
 
+export type WeightChannel = "hes" | "tes" | "ces";
+
+/**
+ * ACCS 를 만든 채널 가중치와 기여도 — `fides_integration.weighting_summary`.
+ *
+ *   ACCS = evidence_alpha × Σ(weights[c] × 채널 점수) + ecs_alpha × ECS
+ *
+ * contributions 의 합이 곧 ACCS 다. model_version 이 null 이면 학습 모델이
+ * 아니라 규칙 기반 가중치로 계산된 결과다.
+ */
+export interface Weighting {
+  method: string | null;
+  model_version: string | null;
+  weight_status: "ok" | "no_usable_channels" | null;
+  weights: Record<WeightChannel, number>;
+  contributions: Record<WeightChannel | "ecs", number> | null;
+  active_channels: WeightChannel[];
+  evidence_alpha: number | null;
+  ecs_alpha: number | null;
+}
+
 export interface AnalysisResult {
   analysis_id: string;
   product: ProductInfo;
@@ -165,6 +187,8 @@ export interface AnalysisResult {
   verification: VerificationResult;
   /** 4단계에서 백엔드가 채운다. 그전까지는 undefined. */
   claims?: Claim[];
+  /** 가중치 연결 이전에 저장된 기록에는 없다. */
+  weighting?: Weighting | null;
   meta: AnalysisMeta;
   created_at: string;
 }

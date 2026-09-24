@@ -22,10 +22,14 @@ export function scoreTier(score: number): ScoreTier {
  * `overall_label` 을 쓰면서 배지 색만 `scoreTier(value)` 로 따로 구해,
  * 백엔드 밴딩이 조금만 달라져도 "양호 구간"에 빨간 배지가 붙을 수 있었다.
  */
-export function tierForLabel(label: OverallLabel): ScoreTier {
+export type VerdictTone = ScoreTier | "neutral";
+
+export function tierForLabel(label: OverallLabel): VerdictTone {
   if (label === "양호 구간") return "ok";
   if (label === "주의 구간") return "warn";
-  return "danger";
+  if (label === "위험 구간") return "danger";
+  // 판정 제외: 주장이 없어 평가하지 않은 것이지 워싱이 아니다.
+  return "neutral";
 }
 
 export function overallLabelFor(score: number): OverallLabel {

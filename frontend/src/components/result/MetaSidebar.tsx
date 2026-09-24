@@ -48,6 +48,11 @@ export function MetaSidebar({ data }: MetaSidebarProps) {
             타이머를, 여기가 백엔드 값을 써서 18s / 18.2s 로 어긋났다. */}
         <Row k="분석 ID" v={data.analysis_id} mono />
         <Row k="파이프라인" v={data.meta.pipeline_version} mono />
+        <Row
+          k="가중치 모델"
+          v={data.meta.model_version ?? "규칙 기반"}
+          mono={Boolean(data.meta.model_version)}
+        />
         <Row k="생성 시각" v={createdStr} />
       </dl>
     </Card>
