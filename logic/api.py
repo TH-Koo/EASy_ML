@@ -32,11 +32,13 @@ try:
     NTIS_API_KEY = getattr(config, 'NTIS_API_KEY', '')
 except ImportError:
     print("❌ 에러: config.py 파일을 찾을 수 없습니다.")
+    config = None
     COMMON_DATAGO_KEY = KIPRIS_KEY = NIPA_KEY = ""
 
-DB_URL = "mysql+pymysql://admin:fidescapstone@fides-db.cdgw08ugc1uu.ap-northeast-2.rds.amazonaws.com:3306/CapstonDesign"
+# DB 접속 문자열은 코드에 두지 않는다: 환경변수 FIDES_DB_URL → config.DB_URL.
+DB_URL = os.environ.get("FIDES_DB_URL") or getattr(config, "DB_URL", None)
 try:
-    engine = create_engine(DB_URL)
+    engine = create_engine(DB_URL) if DB_URL else None
 except Exception:
     engine = None
 

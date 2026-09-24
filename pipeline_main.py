@@ -39,7 +39,18 @@ from fides_integration import secure_analyze_bundle
 # =====================================================================
 _MODEL_FIELD_PATTERN = re.compile(r"(?:단품|본체|세트)?모델명\s*:\s*([A-Za-z0-9][A-Za-z0-9\-]{3,})")
 
-DB_URL = 'mysql+pymysql://admin:fidescapstone@fides-db.cdgw08ugc1uu.ap-northeast-2.rds.amazonaws.com:3306/CapstonDesign'
+# DB 접속 문자열은 코드에 두지 않는다 (server.py 와 같은 규칙).
+# 우선순위: 환경변수 FIDES_DB_URL → config.py 의 DB_URL.
+try:
+    import config as _config
+except ImportError:
+    _config = None
+DB_URL = os.environ.get("FIDES_DB_URL") or getattr(_config, "DB_URL", None)
+if not DB_URL:
+    raise RuntimeError(
+        "DB 접속 정보가 없습니다. 환경변수 FIDES_DB_URL 을 넣거나 "
+        "config.py 에 DB_URL 을 정의하세요."
+    )
 engine = create_engine(DB_URL, pool_pre_ping=True)
 
 
