@@ -7,6 +7,7 @@ those values afterwards.
 """
 from __future__ import annotations
 
+import os
 from dataclasses import asdict, is_dataclass
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Mapping, Optional
@@ -16,7 +17,50 @@ from analysis_engine import (
     OntologyAnalysisEngine,
     bundle_to_evidence_records,
 )
-from fides_config import EngineConfig
+from fides_config import DEFAULT_ENGINE_CONFIG, EngineConfig
+
+DEFAULT_WEIGHT_CHECKPOINT = Path(__file__).resolve().parent / "artifacts" / "cen_senn_run"
+
+
+def load_weight_predictor(checkpoint_dir: Optional[str] = None) -> Optional[Any]:
+    """학습된 CEN 가중치 모델을 한 번 불러온다. 서버·파이프라인 시작 시 호출한다.
+
+    경로 우선순위: 인자 → 환경변수 FIDES_WEIGHT_CHECKPOINT → artifacts/cen_senn_run.
+    체크포인트나 torch 가 없으면 None 을 돌려주고, 엔진은 기존 규칙 기반
+    동적 가중치로 동작한다. 어느 쪽인지는 결과의 model_version 으로 확인한다.
+
+    체크포인트는 있는데 엔진 점수 설정(ECS 계수·판정 경계)과 다르면 여기서
+    바로 실패시킨다. 그냥 넘기면 분석 요청마다 엔진 생성 단계에서 터진다.
+    """
+    path = Path(checkpoint_dir or os.environ.get("FIDES_WEIGHT_CHECKPOINT") or DEFAULT_WEIGHT_CHECKPOINT)
+    if not ((path / "model.pt").is_file() and (path / "metadata.json").is_file()):
+        print(f"[WeightPredictor] 체크포인트 없음({path}) → 규칙 기반 가중치 사용")
+        return None
+    try:
+        from fides_ml.predict import WeightPredictor
+    except ImportError as exc:
+        print(f"[WeightPredictor] ML 패키지 없음({exc}) → 규칙 기반 가중치 사용. "
+              "pip install -r requirements-ml.txt 필요")
+        return None
+
+    predictor = WeightPredictor(path)
+    predictor.validate_engine_config(DEFAULT_ENGINE_CONFIG, DEFAULT_ENGINE_CONFIG.dynamic_weights)
+    print(f"[WeightPredictor] 로드 완료: {path} ({predictor.model_version}, mode={predictor.config.mode})")
+    return predictor
+
+
+def infer_product_type(product_json: Optional[Mapping[str, Any]]) -> str:
+    """가중치 모델에 넘길 제품군. category 가 없으면 다나와 스펙 첫 항목을 쓴다.
+
+    학습 라벨의 product_type(예: "노트북")과 표기가 다르면 모델은 처음 보는
+    제품군으로 취급한다(영벡터). 오류는 아니지만 제품군 정보가 빠진다.
+    """
+    product_json = product_json or {}
+    category = str(product_json.get("category") or product_json.get("product_type") or "").strip()
+    if category:
+        return category
+    raw_specs = str(product_json.get("raw_specs") or "")
+    return raw_specs.split("/")[0].strip() if raw_specs else ""
 
 
 def _flatten_text(value: Any, keep_keys: bool = False) -> str:
@@ -236,6 +280,20 @@ def analysis_result_to_dict(result: AnalysisResult) -> Dict[str, Any]:
     if isinstance(result, Mapping):
         return dict(result)
     raise TypeError(f"Unsupported analysis result type: {type(result)!r}")
+
+
+def weighting_summary(result: AnalysisResult) -> Dict[str, Any]:
+    """API·DB·화면에 넘길 가중치 요약. 값은 엔진 결과를 그대로 옮긴다."""
+    dynamic = (result.details or {}).get("dynamic_weighting") or {}
+    return {
+        "method": dynamic.get("method"),
+        # 학습 모델을 거쳤을 때만 채워진다. None 이면 규칙 기반 경로.
+        "model_version": dynamic.get("model_version"),
+        "weight_status": dynamic.get("weight_status"),
+        "weights": dynamic.get("weights", {}),
+        "contributions": dynamic.get("contributions"),
+        "active_channels": dynamic.get("active_channels", []),
+    }
 
 
 def result_consistency_errors(result: AnalysisResult) -> List[str]:

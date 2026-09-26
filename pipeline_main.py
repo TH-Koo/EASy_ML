@@ -31,7 +31,24 @@ from logic.api import (
     verify_iitp,
 )
 
-from fides_integration import secure_analyze_bundle
+from fides_integration import (
+    infer_product_type,
+    load_weight_predictor,
+    secure_analyze_bundle,
+    weighting_summary,
+)
+
+# CEN 가중치 모델은 한 번만 불러온다. 없으면 None → 규칙 기반 가중치.
+_WEIGHT_PREDICTOR = None
+_WEIGHT_PREDICTOR_LOADED = False
+
+
+def get_weight_predictor():
+    global _WEIGHT_PREDICTOR, _WEIGHT_PREDICTOR_LOADED
+    if not _WEIGHT_PREDICTOR_LOADED:
+        _WEIGHT_PREDICTOR = load_weight_predictor()
+        _WEIGHT_PREDICTOR_LOADED = True
+    return _WEIGHT_PREDICTOR
 
 
 # =====================================================================
@@ -39,7 +56,18 @@ from fides_integration import secure_analyze_bundle
 # =====================================================================
 _MODEL_FIELD_PATTERN = re.compile(r"(?:단품|본체|세트)?모델명\s*:\s*([A-Za-z0-9][A-Za-z0-9\-]{3,})")
 
-DB_URL = 'mysql+pymysql://admin:fidescapstone@fides-db.cdgw08ugc1uu.ap-northeast-2.rds.amazonaws.com:3306/CapstonDesign'
+# DB 접속 문자열은 코드에 두지 않는다 (server.py 와 같은 규칙).
+# 우선순위: 환경변수 FIDES_DB_URL → config.py 의 DB_URL.
+try:
+    import config as _config
+except ImportError:
+    _config = None
+DB_URL = os.environ.get("FIDES_DB_URL") or getattr(_config, "DB_URL", None)
+if not DB_URL:
+    raise RuntimeError(
+        "DB 접속 정보가 없습니다. 환경변수 FIDES_DB_URL 을 넣거나 "
+        "config.py 에 DB_URL 을 정의하세요."
+    )
 engine = create_engine(DB_URL, pool_pre_ping=True)
 
 
@@ -688,8 +716,14 @@ def run_full_pipeline(url: str):
 
     # 재크롤링·재호출 없이 채점 로직만 다시 시험할 수 있도록, 실제로 엔진에
     # 넘긴 근거를 그대로 캐시한다 (scripts/calibrate_thresholds.py 등이 사용).
+    # 캐시에는 수집 근거만 남긴다. predictor 는 학습 결과라 근거가 아니다.
     _save_evidence_bundle_cache(url, analyze_bundle_kwargs)
-    analysis_result = secure_analyze_bundle(**analyze_bundle_kwargs)
+    analysis_result = secure_analyze_bundle(
+        **analyze_bundle_kwargs,
+        weight_predictor=get_weight_predictor(),
+        product_type=infer_product_type(analyze_bundle_kwargs["product_json"]),
+    )
+    weighting = weighting_summary(analysis_result)
 
     has_dart = bool(_get_valid_api_result(final_results.get('DART')))
 
@@ -760,6 +794,10 @@ def run_full_pipeline(url: str):
     print(f"▶ CES (인증/공공 신뢰성): {analysis_result.ces:05.2f}점")
     print(f"▶ ECS (근거 채널 다양성): {analysis_result.ecs:05.2f}점")
     print(f"▶ CONF (분석 신뢰도) : {analysis_result.conf:05.2f}점")
+    print("-" * 85)
+    w = weighting["weights"]
+    print(f"[채널 가중치] HES {w.get('hes', 0):.3f} / TES {w.get('tes', 0):.3f} / CES {w.get('ces', 0):.3f}")
+    print(f"└ 방식: {weighting['method']} | 모델 버전: {weighting['model_version'] or '없음(규칙 기반)'}")
     print("-" * 85)
     print(f"⭐ 최종 AI 주장 신뢰도 (ACCS) : {analysis_result.accs:05.2f} / 100 점")
 
