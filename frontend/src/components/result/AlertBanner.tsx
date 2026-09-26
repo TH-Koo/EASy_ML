@@ -1,10 +1,10 @@
-import { AlertTriangle, CheckCircle2, Info } from "lucide-react";
+import { AlertTriangle, CheckCircle2, CircleDashed, Info } from "lucide-react";
 
-import { scoreTier, tierStyles } from "@/lib/score";
+import { tierForLabel, tierStyles, type VerdictTone } from "@/lib/score";
+import type { OverallLabel } from "@/types/analysis";
 
 interface AlertBannerProps {
-  overallScore: number;
-  overallLabel: string;
+  overallLabel: OverallLabel;
 }
 
 const COPY = {
@@ -15,9 +15,9 @@ const COPY = {
     Icon: CheckCircle2,
   },
   warn: {
-    title: "일부 AI 주장이 검증되지 않았습니다",
+    title: "AI 기능을 뒷받침하는 근거를 추가로 확인해 보세요",
     description:
-      "공공 인증 일부 미보유 또는 마케팅 표현의 구체성이 부족한 항목이 발견되었습니다. 구매 전 추가 확인을 권장합니다.",
+      "AI 기능 주장은 있으나 이를 확인할 공공 기록이 충분하지 않습니다. 워싱으로 단정할 단계는 아니며, 구매 전 제조사 자료나 인증 정보를 함께 확인하길 권장합니다.",
     Icon: Info,
   },
   danger: {
@@ -26,12 +26,28 @@ const COPY = {
       "AI 핵심 기술 설명이 부재하고 공공 인증·특허 등 객관적 검증 근거가 매우 부족합니다. 표기된 'AI' 기능이 실체와 다를 가능성이 큽니다.",
     Icon: AlertTriangle,
   },
+  neutral: {
+    title: "AI 기능 주장이 확인되지 않아 평가하지 않았습니다",
+    description:
+      "상품 페이지에서 AI 기능을 내세우는 표현을 찾지 못했습니다. 점수가 낮게 보여도 AI 워싱이라는 뜻은 아닙니다.",
+    Icon: CircleDashed,
+  },
 } as const;
 
-export function AlertBanner({ overallScore, overallLabel }: AlertBannerProps) {
-  const tier = scoreTier(overallScore);
-  const { title, description, Icon } = COPY[tier];
-  const styles = tierStyles[tier];
+const NEUTRAL_STYLES = { text: "text-fg-muted", bgSoft: "bg-surface-strong" };
+
+/**
+ * 결과 상단 안내.
+ *
+ * 문구는 백엔드 판정 라벨로만 고른다. 이전에는 ACCS 를 옛 60/50 기준으로
+ * 다시 나눠서, 엔진이 "신뢰 상품"이라 한 51점 제품에 "검증되지 않았다"는
+ * 경고가 붙었고, 주장이 없어 평가를 건너뛴 제품에는 "워싱 가능성이
+ * 높다"가 떴다. 판정 경계는 fides_config 가 정본이다.
+ */
+export function AlertBanner({ overallLabel }: AlertBannerProps) {
+  const tone: VerdictTone = tierForLabel(overallLabel);
+  const { title, description, Icon } = COPY[tone];
+  const styles = tone === "neutral" ? NEUTRAL_STYLES : tierStyles[tone];
 
   return (
     <div

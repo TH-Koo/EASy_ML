@@ -6,6 +6,7 @@ import { MetaSidebar } from "@/components/result/MetaSidebar";
 import { QuickActions } from "@/components/result/QuickActions";
 import { ResultFooterCta } from "@/components/result/ResultFooterCta";
 import { ResultHero } from "@/components/result/ResultHero";
+import { ScoreBreakdown } from "@/components/result/ScoreBreakdown";
 import { VerificationTable } from "@/components/result/VerificationTable";
 import { XaiFindings } from "@/components/result/XaiFindings";
 import type { AnalysisResult } from "@/types/analysis";
@@ -27,12 +28,7 @@ export function ResultView({ data, historyId, elapsedSeconds }: { data: Analysis
   return (
     <DashboardShell
       hero={<ResultHero data={data} elapsedSeconds={elapsedSeconds} />}
-      alert={
-        <AlertBanner
-          overallScore={data.scores.overall}
-          overallLabel={data.scores.overall_label}
-        />
-      }
+      alert={<AlertBanner overallLabel={data.scores.overall_label} />}
       main={
         <>
           {/* 대조 뷰를 맨 앞에 둔다. 이 서비스의 결론은 점수가 아니라
@@ -43,6 +39,10 @@ export function ResultView({ data, historyId, elapsedSeconds }: { data: Analysis
             <ClaimLedger claims={data.claims} />
           ) : null}
           <KpiCardGrid scores={data.scores} />
+          {/* 가중치 연결 이전 기록에는 weighting 이 없으므로 접는다. */}
+          {data.weighting ? (
+            <ScoreBreakdown scores={data.scores} weighting={data.weighting} />
+          ) : null}
           <XaiFindings findings={data.xai_findings} />
           <VerificationTable verification={data.verification} />
         </>

@@ -18,6 +18,7 @@ from analysis_engine import (
     bundle_to_evidence_records,
 )
 from fides_config import DEFAULT_ENGINE_CONFIG, EngineConfig
+from fides_scoring import CHANNELS, calculate_accs
 
 DEFAULT_WEIGHT_CHECKPOINT = Path(__file__).resolve().parent / "artifacts" / "cen_senn_run"
 
@@ -285,14 +286,30 @@ def analysis_result_to_dict(result: AnalysisResult) -> Dict[str, Any]:
 def weighting_summary(result: AnalysisResult) -> Dict[str, Any]:
     """API·DB·화면에 넘길 가중치 요약. 값은 엔진 결과를 그대로 옮긴다."""
     dynamic = (result.details or {}).get("dynamic_weighting") or {}
+    weights = dynamic.get("weights", {})
+    formula = dynamic.get("formula", {})
+    contributions = dynamic.get("contributions")
+    if contributions is None and weights:
+        # 규칙 기반 경로는 엔진이 기여도를 따로 남기지 않는다. 엔진과 같은
+        # 산식(fides_scoring)으로 되살려 화면이 두 경로를 같은 모양으로 그린다.
+        base = dynamic.get("base_scores", {})
+        contributions = calculate_accs(
+            {c: base.get(c, 0.0) for c in CHANNELS},
+            {c: weights.get(c, 0.0) for c in CHANNELS},
+            base.get("ecs", 0.0),
+            evidence_alpha=formula.get("evidence_alpha", 0.85),
+            ecs_alpha=formula.get("ecs_alpha", 0.15),
+        )["contributions"]
     return {
         "method": dynamic.get("method"),
         # 학습 모델을 거쳤을 때만 채워진다. None 이면 규칙 기반 경로.
         "model_version": dynamic.get("model_version"),
         "weight_status": dynamic.get("weight_status"),
-        "weights": dynamic.get("weights", {}),
-        "contributions": dynamic.get("contributions"),
+        "weights": weights,
+        "contributions": contributions,
         "active_channels": dynamic.get("active_channels", []),
+        "evidence_alpha": formula.get("evidence_alpha"),
+        "ecs_alpha": formula.get("ecs_alpha"),
     }
 
 
