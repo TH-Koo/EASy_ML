@@ -7,9 +7,13 @@ __pycache__/
 *.pyo
 *.pyd
 
-# 실행 결과물
-*.json
+# 실행 결과물 (크롤링·OCR 캐시는 product_images/ 안에 쌓인다)
 product_images/
+# 회사명 정규화 캐시 (실행 중 루트에 누적)
+company_map.json
+llm_company_cache.json
+# 로컬 실행 설정
+.claude/
 
 # 가상환경
 .venv/

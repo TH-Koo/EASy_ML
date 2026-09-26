@@ -1,0 +1,53 @@
+Fides CEN+SENN Stage 1 — v0.2.0 (2026-09-23)
+
+가중치 모듈 분리 수정본입니다.
+WeightPredictor는 HES/TES/CES 가중치만 반환합니다.
+Analysis Engine이 최종 ACCS, CONF, verdict, 이유, 로그를 계산합니다.
+SENN과 학습용 ACCS 계산은 objective.py에 있습니다.
+기존 v1 체크포인트는 특징 정의와 점수 설정이 같으면 재학습 없이 사용할 수 있습니다.
+
+이 압축 파일은 EASy에 적용하는 변경 묶음이며, 독립 실행 프로젝트가 아닙니다.
+기준 저장소: https://github.com/yejxjj/EASy
+기준 main: 424263d50e382c2df613015a78d6b0b58b3ef754
+ontology/ 및 fides_config.py 등 기존 저장소 파일이 필요합니다.
+
+적용 방법 — 아래 중 해당하는 하나만 선택
+
+A. 이전 Fides_CEN_SENN_Stage1 v0.1 코드를 이미 적용했다면:
+압축을 푼 weights_only_refactor.patch의 경로를 사용하여 EASy 루트에서 실행합니다.
+    git apply --check /path/to/weights_only_refactor.patch
+    git apply /path/to/weights_only_refactor.patch
+
+B. 기준 main에 이번 코드를 처음 적용한다면:
+    git apply --check /path/to/changes.patch
+    git apply /path/to/changes.patch
+
+C. 직접 파일을 병합하려면:
+fides_ml/, fides_scoring.py, analysis_engine.py, fides_integration.py,
+requirements-ml.txt, tests/test_fides_ml.py 및 문서를 같은 상대 경로에 반영합니다.
+별도로 수정한 엔진 코드가 있다면 패치를 검토해 병합하고 무조건 덮어쓰지 마세요.
+두 패치를 연달아 적용하지 마세요.
+
+설치/검증:
+    python -m pip install -r requirements-ml.txt
+    python -m unittest discover -s tests -p "test_fides_ml.py" -v
+
+실제 서비스 연결:
+    from fides_ml.predict import WeightPredictor
+    from fides_integration import secure_analyze_bundle
+    predictor = WeightPredictor("artifacts/cen_senn_run")  # 서버 시작 시 한 번
+    result = secure_analyze_bundle(**bundle_kwargs,
+                                   weight_predictor=predictor,
+                                   product_type=product_category)
+    print(result.accs, result.verdict)
+
+기존 pipeline_main.py의 분석 호출부에 predictor를 전달해야 학습 가중치가 활성화됩니다.
+predictor를 전달하지 않는 호출은 기존 근거 품질 기반 동적 가중치를 사용합니다.
+API 변경: ACCSPredictor.predict_analysis -> WeightPredictor 주입 방식.
+CLI 변경: predict -> predict-weights (출력은 가중치만).
+
+README_ML_KO.md에 학습, 연결 예제, 입력 계약, 마이그레이션 설명이 있습니다.
+VERIFICATION_ML.md에 27개 테스트 및 이전 체크포인트 호환성 검증 기록이 있습니다.
+합성/상품명·스펙만의 실행 확인은 실제 전체 근거 성능 평가와 구분합니다.
+체크포인트, 원본 데이터, 자격증명은 이 배포 파일에 포함하지 않았습니다.
+GitHub 원격 저장소에는 push하지 않았습니다.

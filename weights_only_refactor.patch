@@ -1,0 +1,1247 @@
+diff --git a/README_ML_KO.md b/README_ML_KO.md
+index 74b8daa..ddc13d2 100644
+--- a/README_ML_KO.md
++++ b/README_ML_KO.md
+@@ -1,6 +1,16 @@
+ # Fides 1차 모델: CEN + SENN으로 ACCS 가중치 학습
+ 
+-최종 산출물은 **0~100의 ACCS 점수**입니다. 점수 구간에 따라 `Washing / Suspicious / Genuine`을 해석하고, Suspicious는 소비자가 추가로 확인해야 하는 구간으로 유지합니다. Suspicious를 학습에서 제외하거나 Washing으로 합치지 않습니다.
++시스템의 최종 산출물은 **Analysis Engine이 계산하는 0~100의 ACCS와 최종 판정**입니다. CEN+SENN으로 학습한 모듈은 **HES·TES·CES 가중치만 반환**합니다. Suspicious는 소비자가 추가로 확인해야 하는 상태로 유지하며, 학습에서 제외하거나 Washing으로 합치지 않습니다.
++
++이번 수정본(v0.2.0)은 가중치 생성과 최종 결과 계산의 책임을 분리합니다.
++
++| 단계 | 담당 | 입력 → 출력 |
++|---|---|---|
++| 근거 채점 | Analysis Engine | 수집 근거 → HES·TES·CES·ECS, 근거 품질 |
++| 가중치 생성 | WeightPredictor | 채널 점수·근거 품질·제품군·마스크 → HES·TES·CES 가중치 |
++| 최종 분석 | Analysis Engine | 점수 + 반환된 가중치 → ACCS·CONF·판정·설명·로그 |
++
++서비스에서는 이미 학습한 모델을 불러와 가중치를 **추론**합니다. 요청마다 새로 학습하지 않습니다. SENN은 학습 시 가중치를 안정화하는 정규화 손실이며, 서비스에서 별도 판정을 내리는 두 번째 모델이 아닙니다.
+ 
+ 기준 저장소: https://github.com/yejxjj/EASy
+ 
+@@ -23,23 +33,23 @@ ACCS = 0.85 * evidence_score + 0.15 * ECS
+ - 근거가 없는 채널의 가중치는 0입니다. CSV에서 **관측된 0점**은 `mask=1`로 표현할 수 있으며, 결측과 다릅니다.
+ - ECS의 0.15는 현재 main의 고정 계수입니다. ECS는 가중치 생성기의 입력이 아닙니다. `--ecs-alpha 0`이면 HES·TES·CES 가중합 자체가 ACCS가 됩니다.
+ - CONF, 기존 ACCS, 기존 판정, 라벨 설명 `matched_patterns`, 제품명·URL·모델 ID는 가중치 생성기에 들어가지 않습니다.
+-- 모델의 소비자용 출력은 ACCS와 구간입니다. ACCS를 ‘진짜 AI일 확률’이라고 해석하지 않습니다.
++- 모델의 반환값은 가중치·상태·모델 버전입니다. 소비자에게 제공할 ACCS·판정은 엔진 결과를 사용합니다. ACCS를 ‘진짜 AI일 확률’이라고 해석하지 않습니다.
+ - 원문/OCR로 점수 자체를 만드는 학습, ABMIL, 문장 임베딩 학습은 이번 단계에 포함하지 않습니다.
+ 
+-입력의 연속 근거 품질은 채널마다 5개입니다: 근거 개수/4, 출처 개수/3, 직접 관련성, 최신성, 한 출처에 대한 집중도. 앞 두 값은 1에서 상한 처리합니다. 제품군은 학습 집합에서만 vocabulary를 만들고, 처음 보는 제품군은 영벡터로 처리합니다.
++입력의 연속 근거 품질은 채널마다 5개입니다: 근거 개수/4, 출처 개수/3, 직접 관련성, 최신성, 한 출처에 대한 집중도. 앞 두 값은 1에서 상한 처리합니다. 제품군은 학습 집합에서만 vocabulary를 만들고, 처음 보는 제품군은 영벡터로 처리합니다. HES·TES·CES는 API에 전달하지만, 현재 gate는 점수 크기 자체를 읽지 않고 근거 품질·제품군·마스크로 가중치를 생성합니다.
+ 
+ ## 2. ACCS 구간과 학습 목표
+ 
+-**아래 기본 경계값은 현재 저장소의 `fides_config.py`를 따른 값입니다. 과거에 사용했던 60점 기준과는 다릅니다.** 학습 실행 시 지정한 값은 체크포인트에 저장되며 추론에서도 동일하게 적용됩니다.
++**아래 기본 경계값은 기준 커밋의 `fides_config.py`를 따른 값입니다. 과거에 사용했던 60점 기준과는 다릅니다.** 학습 설정은 체크포인트에 저장됩니다. 엔진 연결 시 ECS 혼합 계수와 세 경계값이 일치하는지 검사하며, 다르면 오류를 내어 서로 다른 점수 정의로 실행되는 것을 막습니다.
+ 
+-| ACCS 구간 | 학습/추론 라벨 | 보조 구간 |
++| ACCS 구간 | 학습/오프라인 평가 라벨 | 보조 구간 |
+ |---|---|---|
+ | 0 이상, 21.8 미만 | Washing | 워싱 위험 |
+ | 21.8 이상, 35 미만 | Suspicious | 추가 확인 권고 |
+ | 35 이상, 67.5 미만 | Genuine | 일반 신뢰 구간 |
+ | 67.5 이상 | Genuine | Credible |
+ 
+-이 표는 **새 모델의 점수 구간 해석**입니다. 기존 엔진의 `verdict`에는 주장 검출 여부와 evidence sufficiency 같은 추가 조건이 있으므로, 기존 엔진 전체 판정 로직과 같다는 뜻은 아닙니다. 기존 `AnalysisResult`를 자동 덮어쓰지 않습니다.
++이 표는 **학습과 오프라인 평가용 점수 구간**입니다. 서비스 최종 `verdict`는 기존 엔진의 주장 검출·근거 충분성·CONF 조건까지 적용합니다. 예를 들어 낮은 ACCS라도 CONF가 35 이상이면 엔진은 `Suspected`를 반환할 수 있고, AI 기능 주장이 없으면 `Not Evaluated`입니다. 데이터의 `Suspicious`와 엔진의 `Suspected`는 의심/추가 확인이라는 목적을 공유하지만, 점수 경계만으로 산출한 학습 라벨과 전체 엔진 판정은 구분합니다. 반환된 `AnalysisResult`를 모델 결과로 사후 덮어쓰지 않습니다.
+ 
+ 현재 CSV에는 제품마다 전문가가 정한 정답 ACCS가 없습니다. 따라서 Genuine=100, Suspicious=50, Washing=0처럼 임의의 점수 정답을 만들지 않습니다. 대신 **순서형 손실(ordered logistic likelihood)**로 해당 라벨의 점수 구간을 학습합니다.
+ 
+@@ -52,7 +62,9 @@ P(Genuine)   = 1 - sigmoid(b)
+ Lordinal = -log(P(관측 라벨))
+ ```
+ 
+-위 P는 구간 학습을 위한 내부 likelihood이며, 보정된 소비자용 확률이 아닙니다. 추론 라벨은 P의 argmax가 아니라 **최종 ACCS에 경계값을 적용해** 정합니다. 세 라벨만으로 각 구간 안의 정확한 정답 점수까지 식별할 수는 없습니다.
++위 P는 구간 학습을 위한 내부 likelihood이며, 보정된 소비자용 확률이 아닙니다. 오프라인 평가 라벨은 P의 argmax가 아니라 **ACCS에 경계값을 적용해** 정합니다. 세 라벨만으로 각 구간 안의 정확한 정답 점수까지 식별할 수는 없습니다.
++
++**학습 중에는 ACCS 계산이 필요합니다.** 반환할 가중치가 정답 라벨에 맞는 점수를 만드는지 평가하고 역전파하기 위해서입니다. `fides_ml/objective.py`가 학습용 계산을 담당하고, 엔진과 함께 `fides_scoring.py`의 동일한 산식을 사용합니다. 서비스용 `WeightPredictor`와 `CENWeightModel`은 ACCS나 판정을 계산하지 않습니다.
+ 
+ SENN의 핵심 손실은 논문 식 (3)의 제곱형입니다. `u=[h,c]`, `f=sum(w(c)*h)`, `J_h=[I,0]`로 두고 아래 항을 계산합니다.
+ 
+@@ -69,7 +81,7 @@ L = Lordinal + lambda_senn*Lsenn
+ 
+ ## 3. 설치와 빠른 실행 확인
+ 
+-압축 파일 안의 `fides_ml/`, `tests/`, `requirements-ml.txt`, `README_ML_KO.md`를 EASy 루트에 넣습니다. 기존 서버·크롤러를 실행할 필요는 없습니다.
++압축 파일의 `START_HERE.txt`에 적용 방법이 있습니다. 새로 추가되는 `fides_scoring.py`, `fides_ml/`, `requirements-ml.txt`, 테스트·문서와 함께 **수정된 `analysis_engine.py`, `fides_integration.py`도 적용**해야 합니다. 기존 프로젝트의 별도 수정 사항이 있다면 전체 파일 덮어쓰기보다 제공된 패치를 검토해 병합합니다. 학습·테스트만 할 때는 서버·크롤러를 실행할 필요가 없습니다.
+ 
+ Python 3.10 이상을 사용합니다. Windows/Anaconda에서도 EASy 루트에서 동일한 명령을 실행할 수 있습니다.
+ 
+@@ -79,7 +91,7 @@ python -m unittest discover -s tests -p "test_fides_ml.py" -v
+ 
+ python -m fides_ml demo-data --output artifacts/demo_data.csv
+ python -m fides_ml train --data artifacts/demo_data.csv --output artifacts/demo_run --epochs 140
+-python -m fides_ml predict --checkpoint artifacts/demo_run --data artifacts/demo_data.csv --output artifacts/demo_predictions.csv
++python -m fides_ml predict-weights --checkpoint artifacts/demo_run --data artifacts/demo_data.csv --output artifacts/demo_weights.csv
+ ```
+ 
+ 이 demo는 학습·저장·추론 검사용 **합성 데이터**입니다. 실제 제품 성능을 의미하지 않습니다. 이미 존재하는 실행 폴더를 덮어쓰지 않으므로 재실행 때는 `--output artifacts/demo_run_2`처럼 새 폴더를 사용합니다.
+@@ -185,36 +197,59 @@ python -m fides_ml train --data artifacts/train_features.csv --output artifacts/
+ | training_history.csv | epoch별 순서형·SENN·보조 손실 |
+ | metrics.json | 3개 라벨 macro-F1, balanced accuracy, 혼동행렬, 설명 안정성 |
+ | split_assignments.csv | 제품별 train/validation/test 및 그룹 ID |
+-| test_predictions.csv | ACCS, Suspicious 포함 라벨, 가중치, 점수별 기여 |
++| test_predictions.csv | 오프라인 진단용 ACCS, score_band_label, 가중치, 점수별 기여. 엔진 최종 verdict가 아님 |
+ | data_audit.json | 입력 해시, 라벨 수, 그룹 누수, 점수로 달성 불가능한 라벨 수 |
+ 
+-기존 분석 함수를 호출한 다음 아래처럼 사용합니다. 실제 서비스에서는 predictor를 요청마다 다시 로드하지 말고 서버 시작 시 한 번 로드합니다.
++기존 분석 함수를 **호출할 때 predictor를 전달**합니다. 엔진이 HES·TES·CES를 만든 직후 가중치 모듈을 호출하고, 반환된 가중치로 최종 결과를 계산합니다. 실제 서비스에서는 predictor를 요청마다 다시 로드하지 말고 서버 시작 시 한 번 로드합니다.
+ 
+ ```python
+-from fides_ml.predict import ACCSPredictor
++from fides_ml.predict import WeightPredictor
+ from fides_integration import secure_analyze_bundle
+ 
+-predictor = ACCSPredictor("artifacts/cen_senn_run")
++predictor = WeightPredictor("artifacts/cen_senn_run")
+ 
+ # bundle_kwargs: 기존 pipeline_main에서 구성하는 크롤링 결과
+-rule_result = secure_analyze_bundle(**bundle_kwargs)
+-learned = predictor.predict_analysis(
+-    rule_result,
++result = secure_analyze_bundle(
++    **bundle_kwargs,
++    weight_predictor=predictor,
+     product_type=product_category,  # 학습 CSV와 같은 제품군 표기
+-    sample_id=url,
+ )
+ 
+-print(learned["accs"])
+-print(learned["label"])                # washing / suspicious / genuine
+-print(learned["review_recommended"])
+-print(learned["weights"])
+-print(learned["contributions"])
+-rule_result.details["learned_accs"] = learned
++print(result.accs)       # 최종 ACCS: 엔진에서 계산
++print(result.conf)       # 기존 CONF: 엔진에서 계산
++print(result.verdict)    # Washing / Suspected / Normal / Credible / Not Evaluated
++print(result.details["dynamic_weighting"]["weights"])
++print(result.details["dynamic_weighting"]["contributions"])
++```
++
++`product_type`을 생략하면 `product_json.category`, `product_json.product_type` 순서로 사용합니다. predictor를 전달하지 않으면 기존 근거 품질 기반 동적 가중치 경로로 실행됩니다. 기본 엔진 사용에는 PyTorch가 필요하지 않습니다. 기존 `pipeline_main.py`의 호출부는 위와 같이 predictor를 전달해야 학습 가중치가 활성화됩니다.
++
++가중치 모듈만 직접 호출할 수도 있습니다. `channel_details`에는 채널별 근거 개수·출처 종류·직접성·최신성·집중도가 들어갑니다. 엔진이 이미 이 정보를 생성하므로 위 주입 방식에서는 별도로 만들 필요가 없습니다.
++
++```python
++weight_result = predictor.predict_weights(
++    channel_scores={"hes": 40.0, "tes": 25.0, "ces": 20.0},
++    channel_details=channel_details,
++    product_type=product_category,
++    channel_mask={"hes": True, "tes": True, "ces": True},
++)
++# {"weights": {"hes": ..., "tes": ..., "ces": ...},
++#  "method": "cen_senn", "model_version": "sha256:...", "status": "ok"}
+ ```
+ 
+-계산 예시: HES=40, TES=25, CES=20, ECS=10이고 학습된 가중치가 0.2/0.5/0.3이라면, 가중합은 26.5이고 ACCS는 **24.025**입니다. 기여도는 HES 6.8점 + TES 10.625점 + CES 5.1점 + ECS 1.5점입니다. 기본 구간에서는 `Suspicious`이며 추가 검토 대상입니다. 이 숫자는 구조 설명용 가상 예시입니다.
++계산 예시: HES=40, TES=25, CES=20, ECS=10이고 반환된 가중치가 0.2/0.5/0.3이라면, **엔진이** 가중합 26.5와 ACCS **24.025**를 계산합니다. 기여도는 HES 6.8점 + TES 10.625점 + CES 5.1점 + ECS 1.5점입니다. 기본 점수 구간에서는 `Suspicious`이며, 최종 판정에는 주장 유무 등 엔진 조건도 적용됩니다. 이 숫자는 구조 설명용 가상 예시입니다.
++
++모든 채널이 결측이면 가중치 모듈은 세 가중치 모두 0과 `status=no_usable_channels`를 반환합니다. 최종 결과 처리는 엔진에 맡깁니다. 예를 들어 아무 근거·주장이 없는 입력은 엔진의 기존 규칙에 따라 ACCS 0과 `Not Evaluated`가 됩니다. 학습에서는 모든 채널이 결측인 행 수와 ID를 따로 기록하고 목적함수에서 제외합니다.
++
++CSV 가중치 추론은 `predict-weights` 명령을 사용합니다. `ecs`와 `label`은 필요하지 않으며, 식별 열 외에는 `weight_hes`, `weight_tes`, `weight_ces`, `status`, `method`, `model_version`만 저장합니다. 최종 ACCS를 얻으려면 엔진을 호출합니다.
++
++### 기존 v0.1 코드에서 변경되는 부분
+ 
+-모든 채널이 결측이면 가중치를 학습하거나 정당한 새 점수를 산출할 수 없으므로 `accs=null`, `status=no_usable_channels`를 반환합니다. 결측을 0점 관측으로 간주해 자동으로 Washing 판정을 만들지 않습니다. 학습에서는 해당 행 수와 ID를 따로 기록합니다.
++- `ACCSPredictor.predict_analysis(...)` 호출을 삭제하고 위 `WeightPredictor` 주입 방식으로 바꿉니다. 점수·판정을 사후 덮어쓰는 코드는 삭제합니다.
++- 기존 CLI `predict`는 `predict-weights`로 바뀝니다. 출력 CSV에 ACCS·판정이 없으므로 이를 소비하던 코드는 엔진 결과를 사용하도록 수정합니다.
++- 학습용 내부 클래스 `CENSENN`과 손실 함수는 `fides_ml.objective`로 이동했습니다. 서비스용 생성기는 `fides_ml.model.CENWeightModel`입니다.
++- **v1 체크포인트의 파라미터 이름·크기는 그대로 유지했습니다. 구조 분리만을 위해 다시 학습할 필요는 없습니다.** `model.pt`와 `metadata.json`을 같은 폴더에 두면 새 predictor가 읽습니다. 기존 특징 정의와 점수 설정이 같아야 합니다. 새 학습 결과는 format_version 2로 저장합니다.
++- 학습 가중치를 연결한 경우 `raw_accs`는 ECS 혼합 전의 학습 가중합입니다. 예전 점수는 `details.legacy_details`에 남습니다. 최종 점수·설명·로그는 엔진이 한 번에 생성합니다.
+ 
+ ## 7. 해석할 때 반드시 알아야 하는 한계
+ 
+@@ -228,13 +263,17 @@ HES·TES·CES가 동일하면 어떤 가중치라도 점수가 같습니다. 사
+ 
+ | 파일 | 역할 |
+ |---|---|
+-| fides_ml/model.py | CEN dictionary, masked weights, ACCS 식, SENN 및 ordinal 손실 |
+-| fides_ml/features.py | 기존 AnalysisResult adapter, 동일 학습·추론 feature 계약 |
++| analysis_engine.py | 가중치 모듈 호출 후 최종 ACCS·CONF·판정·설명·로그 생성 |
++| fides_integration.py | secure_analyze_bundle에서 predictor를 엔진에 주입 |
++| fides_scoring.py | 학습/엔진 공통 ACCS 산식, 가중치 검증. torch 의존성 없음 |
++| fides_ml/model.py | CEN dictionary와 masked weights만 생성 |
++| fides_ml/objective.py | 학습용 ACCS·ordinal 손실·SENN 정규화 |
++| fides_ml/features.py | 채널 점수 단계 입력 및 기존 AnalysisResult adapter, 공통 feature 계약 |
+ | fides_ml/prepare.py | 캐시/기존 분석 결과/명시적 seller-only 변환 |
+ | fides_ml/data.py | 세 라벨 정규화, 모델 계열 연결, 그룹 분할 |
+ | fides_ml/train.py | 학습, validation 선택, 체크포인트·평가 저장 |
+ | fides_ml/evaluate.py | ACCS 구간 평가, baseline, 점수 도달 가능성 검사 |
+-| fides_ml/predict.py | CSV 추론과 기존 파이프라인용 ACCSPredictor |
++| fides_ml/predict.py | 가중치만 반환하는 WeightPredictor, v1/v2 체크포인트 로드 |
+ | tests/test_fides_ml.py | 수치 미분, 누수 방지, 기존 엔진 연결, 저장·복원 테스트 |
+ 
+ 이 구현은 논문의 모든 실험을 재현한 패키지가 아니라 **Fides의 고정 개념 점수와 ACCS 식에 맞춘 CEN+SENN 적용 구현**입니다. 순서형 점수 학습, 양수 가중치 제약, ECS 고정 혼합은 이 프로젝트에 맞춘 설계입니다.
+diff --git a/VERIFICATION_ML.md b/VERIFICATION_ML.md
+index e42b364..b393c0f 100644
+--- a/VERIFICATION_ML.md
++++ b/VERIFICATION_ML.md
+@@ -1,6 +1,6 @@
+-# 구현 검증 기록 — 2026-09-22
++# 구현 검증 기록 — v0.2.0, 2026-09-23
+ 
+-최종 출력은 ACCS 0~100 및 점수 구간이며, Suspicious를 독립적인 순서형 라벨로 유지한다.
++가중치 모듈은 HES·TES·CES 가중치만 반환한다. 최종 ACCS 0~100·CONF·판정·설명·로그는 Analysis Engine이 생성한다. Suspicious는 독립적인 순서형 학습 라벨이며, 서비스 최종 판정에는 엔진의 기존 조건도 적용한다.
+ 
+ ## 실행 환경
+ 
+@@ -11,11 +11,32 @@
+ 
+ ## 자동 검증
+ 
+-`python -m unittest discover -s tests -p "test_fides_ml.py" -v`: **17개 통과**.
++`python -m unittest discover -s tests -p "test_fides_ml.py" -v`: **27개 통과**.
+ 
+-검증 범위: 가중치 합/마스킹, 관측된 0과 결측 구별, 모든 채널 결측 시 비판정 처리, ACCS 기여도 복원, ECS의 고정 혼합, 개념 점수 개입의 정확한 효과, SENN context 미분과 2차 역전파, 유한차분과의 일치, 순서형 likelihood의 합/경계값, Suspicious 유지, 교차 그룹 연결과 분할 누수, 미관측 제품군의 영벡터, 잘못된 점수 거부, 기존 온톨로지 엔진 연결, 라벨 설명의 입력 제외, 학습 저장·재로딩 추론 일치.
++검증 범위: 가중치 합/마스킹, 관측된 0과 결측 구별, 모든 채널 결측 시 상태 전달, ACCS 기여도 복원, ECS의 고정 혼합, 개념 점수 개입의 정확한 효과, SENN context 미분과 2차 역전파, 유한차분과의 일치, 순서형 likelihood의 합/경계값, Suspicious 유지, 교차 그룹 연결과 분할 누수, 미관측 제품군의 영벡터, 잘못된 점수 거부, 기존 온톨로지 엔진 연결, 라벨 설명의 입력 제외, 4 epoch 학습·v2 저장·재로딩 가중치 일치.
+ 
+-`fixed`, `global`, `cen`, `cen_senn` 실행 경로도 확인했다. 고정 가중치 모드는 학습 가능한 파라미터가 없어도 평가를 끝낸다.
++이번 구조 분리에서 추가로 확인한 내용:
++
++- `CENWeightModel` 출력에 가중치·유효성만 존재. `WeightPredictor`는 ACCS·판정을 반환하지 않으며 ECS·라벨 없이 추론 가능.
++- 엔진이 최종 결과 생성 전에 predictor를 한 번 호출. predictor가 별도 ACCS·판정을 추가해도 이를 사용하지 않음.
++- 학습용 ACCS와 엔진 ACCS의 일치, 기여도 합 복원, 최종 결과와 로그 일치.
++- 낮은 ACCS/높은 CONF의 `Suspected`, 주장 부재 시 `Not Evaluated` 등 기존 엔진 조건 유지.
++- 가중치 NaN·결측 채널의 양수 가중치 거부, 학습/엔진 점수 설정 불일치 거부.
++- 기존 main 엔진과 수정 엔진의 기본 경로를 5종 입력 × 동적 가중치 on/off, 총 10건 비교. 시간과 추가 감사 메타데이터를 제외한 전체 결과 일치.
++- PyTorch가 로드되지 않은 환경에서 `analysis_engine`, `fides_integration` 기본 import 성공.
++
++## 기존 체크포인트 호환성 — 재학습 없이 검증
++
++이전 버전의 실제 format_version 1 체크포인트 두 개를 새 `WeightPredictor`로 로드하고, 이전에 저장한 가중치 CSV와 비교했다.
++
++| 체크포인트/입력 | 추론 행 수 | 가중치 최대 절대 차이 |
++|---|---:|---:|
++| 이전 합성 실행 모델 | 360 | 2.98e-8 미만 |
++| 이전 seller-only 실행 모델 | 1,286 | 2.97e-8 미만 |
++
++CSV 저장 정밀도 수준의 차이이며, 출력은 가중치와 상태·모델 메타데이터만 포함한다. `predict-weights` CLI로 기존 합성 체크포인트의 360행 출력도 확인했다. 파라미터 이름·크기와 특징 계약이 같으므로 **이번 책임 분리 자체를 이유로 재학습할 필요는 없다.** 특징 정의·채널 순서·점수 설정을 바꾸는 경우는 별도로 검토해야 한다.
++
++아래 성능 수치는 **2026-09-22의 v0.1 학습 실행 기록**이다. 이번 구조 변경의 성능 개선 결과로 해석하지 않는다. 당시 `fixed`, `global`, `cen`, `cen_senn` 실행 경로를 확인했고, 고정 가중치 모드는 학습 가능한 파라미터 없이 평가를 완료했다.
+ 
+ ## 합성 데이터 실행 검증
+ 
+@@ -53,4 +74,4 @@ ACCS 기여도 복원 최대 오차 0.0점, 가중치 합 최대 오차 약 1.2e
+ 
+ ## 전달 범위
+ 
+-코드, 학습/평가/추론 CLI, 기존 엔진 연결 adapter, 한국어 가이드, 테스트를 제공한다. 실행 검증용 checkpoint를 실서비스 모델로 배포하지 않았다. 원격 GitHub 저장소에는 push하지 않았다.
++코드, 학습/오프라인 평가/가중치 추론 CLI, 수정된 Analysis Engine·연결 adapter, 공통 ACCS 산식, 한국어 가이드, 테스트를 제공한다. 압축 파일에는 기준 main용 전체 패치와 이전 v0.1 전달본용 변경 패치를 함께 넣었다. 실행 검증용 checkpoint를 실서비스 모델로 배포하지 않았다. 원격 GitHub 저장소에는 push하지 않았다.
+diff --git a/analysis_engine.py b/analysis_engine.py
+index 860062b..3fa17ee 100644
+--- a/analysis_engine.py
++++ b/analysis_engine.py
+@@ -39,6 +39,7 @@ from fides_config import (
+     DynamicWeightConfig,
+     EngineConfig,
+ )
++from fides_scoring import CHANNELS, calculate_accs, validate_weights
+ 
+ 
+ # ---------------------------------------------------------------------------
+@@ -723,6 +724,7 @@ class OntologyAnalysisEngine:
+         dynamic_weight_config: Optional[DynamicWeightConfig] = None,
+         enable_dynamic_weighting: bool = True,
+         engine_config: Optional[EngineConfig] = None,
++        weight_predictor: Optional[Any] = None,
+     ):
+         self.repo = OntologyRepository(ontology_dir)
+         self.engine_config = engine_config or DEFAULT_ENGINE_CONFIG
+@@ -731,6 +733,15 @@ class OntologyAnalysisEngine:
+         else:
+             self.dynamic_weight_config = self.engine_config.dynamic_weights
+         self.enable_dynamic_weighting = bool(enable_dynamic_weighting)
++        self.weight_predictor = weight_predictor
++        if weight_predictor is not None:
++            if not self.enable_dynamic_weighting:
++                raise ValueError("weight_predictor requires enable_dynamic_weighting=True")
++            if not callable(getattr(weight_predictor, "predict_weights", None)):
++                raise TypeError("weight_predictor must implement predict_weights()")
++            validator = getattr(weight_predictor, "validate_engine_config", None)
++            if callable(validator):
++                validator(self.engine_config, self.dynamic_weight_config)
+         self._contributions_by_cap: Dict[str, List[EvidenceContribution]] = {}
+ 
+     def analyze(
+@@ -739,6 +750,7 @@ class OntologyAnalysisEngine:
+         ad_text: str = "",
+         ocr_text: str = "",
+         extra_texts: Optional[List[str]] = None,
++        product_type: str = "",
+     ) -> AnalysisResult:
+         validated = [
+             record if isinstance(record, EvidenceRecord) else EvidenceRecord(**record)
+@@ -765,6 +777,7 @@ class OntologyAnalysisEngine:
+             ces=ces,
+             ecs=ecs,
+             channel_details=channel_details,
++            product_type=product_type,
+         )
+         accs = dynamic["dynamic_accs"] if self.enable_dynamic_weighting else legacy["legacy_accs"]
+ 
+@@ -833,6 +846,8 @@ class OntologyAnalysisEngine:
+                 "delta_vs_legacy": round(dynamic["dynamic_accs"] - legacy["legacy_accs"], 2),
+                 "verdict": verdict,
+                 "risk_level": risk_level,
++                "model_version": dynamic.get("model_version"),
++                "weight_status": dynamic.get("weight_status", "ok"),
+             },
+             "channel_details": channel_details,
+             "channel_presence": {
+@@ -856,7 +871,7 @@ class OntologyAnalysisEngine:
+ 
+         return AnalysisResult(
+             accs=round(accs, 2),
+-            raw_accs=round(legacy["raw_accs"], 2),
++            raw_accs=round(dynamic["dynamic_evidence_score"] if self.weight_predictor is not None else legacy["raw_accs"], 2),
+             hes=round(hes, 2),
+             tes=round(tes, 2),
+             ces=round(ces, 2),
+@@ -1818,44 +1833,52 @@ class OntologyAnalysisEngine:
+         ces: float,
+         ecs: float,
+         channel_details: Dict[str, Dict[str, Any]],
++        product_type: str = "",
+     ) -> Dict[str, Any]:
+         cfg = self.dynamic_weight_config
+         scores = {"hes": hes, "tes": tes, "ces": ces}
+         active = {key: value for key, value in scores.items() if value > 0}
+         logits: Dict[str, float] = {}
+-        for channel in active:
+-            prior = max(1e-6, cfg.base_channel_priors.get(channel, 1.0 / 3.0))
+-            detail = channel_details[channel]
+-            diversity = min(len(detail["source_types"]) / 3.0, 1.0)
+-            count_signal = min(detail["evidence_count"] / 4.0, 1.0)
+-            avg_recency = float(detail.get("avg_recency", 0.5))
+-            logits[channel] = (
+-                log(prior)
+-                + cfg.directness_signal * detail["avg_directness"]
+-                + cfg.diversity_signal * diversity
+-                + cfg.count_signal * count_signal
+-                + cfg.recency_signal * avg_recency
+-                - cfg.concentration_penalty * detail["max_source_share"]
++        prediction = None
++        if self.weight_predictor is not None:
++            # Call before ACCS/CONF/verdict exist. The returned object supplies
++            # weights only; even extra score/verdict fields cannot override us.
++            mask = {c: c in active for c in CHANNELS}
++            prediction = self.weight_predictor.predict_weights(
++                channel_scores=dict(scores), channel_details=channel_details,
++                product_type=product_type, channel_mask=mask,
+             )
+-        weights = _softmax(logits)
+-        dynamic_evidence_score = sum(weights[key] * active[key] for key in active)
+-
+-        evidence_alpha = cfg.evidence_alpha
+-        ecs_alpha = cfg.ecs_alpha
+-        alpha_sum = evidence_alpha + ecs_alpha
+-        if alpha_sum <= 0:
+-            evidence_alpha, ecs_alpha = 0.85, 0.15
++            if not isinstance(prediction, Mapping) or not isinstance(prediction.get("weights"), Mapping):
++                raise ValueError("Weight predictor must return a weights mapping")
++            weights = validate_weights(prediction["weights"], mask)
++            expected_status = "ok" if active else "no_usable_channels"
++            if prediction.get("status", expected_status) != expected_status:
++                raise ValueError("Weight predictor status disagrees with channel availability")
+         else:
+-            evidence_alpha /= alpha_sum
+-            ecs_alpha /= alpha_sum
+-            
+-        BASE = 20.0
+-        dynamic_accs = clamp(
+-            evidence_alpha * dynamic_evidence_score 
+-            + ecs_alpha * ecs
+-        )
+-        complete_weights = {key: round(weights.get(key, 0.0), 4) for key in ("hes", "tes", "ces")}
+-        return {
++            for channel in active:
++                prior = max(1e-6, cfg.base_channel_priors.get(channel, 1.0 / 3.0))
++                detail = channel_details[channel]
++                diversity = min(len(detail["source_types"]) / 3.0, 1.0)
++                count_signal = min(detail["evidence_count"] / 4.0, 1.0)
++                avg_recency = float(detail.get("avg_recency", 0.5))
++                logits[channel] = (
++                    log(prior)
++                    + cfg.directness_signal * detail["avg_directness"]
++                    + cfg.diversity_signal * diversity
++                    + cfg.count_signal * count_signal
++                    + cfg.recency_signal * avg_recency
++                    - cfg.concentration_penalty * detail["max_source_share"]
++                )
++            weights = _softmax(logits)
++        full_weights = {c: weights.get(c, 0.0) for c in CHANNELS}
++        scored = calculate_accs(scores, full_weights, ecs,
++                                evidence_alpha=cfg.evidence_alpha, ecs_alpha=cfg.ecs_alpha)
++        dynamic_evidence_score = scored["evidence_score"]
++        dynamic_accs = clamp(scored["accs"])
++        evidence_alpha, ecs_alpha = scored["evidence_alpha"], scored["ecs_alpha"]
++        # Preserve exact learned coefficients for contribution reconstruction.
++        complete_weights = full_weights if prediction is not None else {c: round(full_weights[c], 4) for c in CHANNELS}
++        result = {
+             "enabled": self.enable_dynamic_weighting,
+             "method": "quality_context_softmax_hes_tes_ces_with_ecs_blend",
+             "weights": complete_weights,
+@@ -1885,6 +1908,18 @@ class OntologyAnalysisEngine:
+                 "note": "Channel score itself is not used to increase its own dynamic weight.",
+             },
+         }
++        if prediction is not None:
++            result.update({
++                "method": str(prediction.get("method", "learned_weights")),
++                "model_version": str(prediction.get("model_version", "unknown")),
++                "weight_status": "ok" if active else "no_usable_channels",
++                "score_calculated_by": "OntologyAnalysisEngine",
++                "contributions": scored["contributions"],
++                "unrounded_accs": scored["accs"],
++            })
++            result["formula"]["weight_signals"] = ["product_type", "evidence_quality", "channel_mask"]
++            result["formula"]["note"] = "The learned module returns weights only. ACCS and verdict are computed by AnalysisEngine."
++        return result
+ 
+     # ------------------------------------------------------------------
+     # Confidence, sufficiency, verdict
+@@ -2115,7 +2150,9 @@ class OntologyAnalysisEngine:
+             reasons.append("미충족 필수 구성요소: " + " / ".join(missing[:3]))
+         weights = dynamic.get("weights", {})
+         reasons.append(
+-            "동적 가중치는 채널 점수 자체가 아니라 직접성·출처 다양성·중복 제거 근거 수를 사용했습니다: "
++            ("학습 모델이 제품군과 근거 품질로 생성한 가중치를 적용했습니다: "
++             if self.weight_predictor is not None else
++             "동적 가중치는 채널 점수 자체가 아니라 직접성·출처 다양성·중복 제거 근거 수를 사용했습니다: ") +
+             f"HES {weights.get('hes', 0):.3f}, TES {weights.get('tes', 0):.3f}, CES {weights.get('ces', 0):.3f}."
+         )
+         reasons.append(f"최종 판정은 '{verdict}', 위험도는 '{risk_level}'입니다.")
+diff --git a/fides_integration.py b/fides_integration.py
+index 8b6e649..d73075a 100644
+--- a/fides_integration.py
++++ b/fides_integration.py
+@@ -16,6 +16,7 @@ from analysis_engine import (
+     OntologyAnalysisEngine,
+     bundle_to_evidence_records,
+ )
++from fides_config import EngineConfig
+ 
+ 
+ def _flatten_text(value: Any, keep_keys: bool = False) -> str:
+@@ -142,6 +143,9 @@ def secure_analyze_bundle(
+     ocr_result: Optional[Any] = None,
+     ontology_dir: Optional[str] = None,
+     enable_dynamic_weighting: bool = True,
++    weight_predictor: Optional[Any] = None,
++    product_type: str = "",
++    engine_config: Optional[EngineConfig] = None,
+     **_: Any,
+ ) -> AnalysisResult:
+     """Normalize one crawler bundle and return one authoritative analysis result.
+@@ -180,6 +184,8 @@ def secure_analyze_bundle(
+     engine = OntologyAnalysisEngine(
+         str(ontology_path),
+         enable_dynamic_weighting=enable_dynamic_weighting,
++        weight_predictor=weight_predictor,
++        engine_config=engine_config,
+     )
+ 
+     evidence_records = bundle_to_evidence_records(
+@@ -210,6 +216,7 @@ def secure_analyze_bundle(
+         ad_text=ad_text,
+         ocr_text=ocr_text,
+         extra_texts=extra_texts,
++        product_type=str(product_type or product_json.get("category") or product_json.get("product_type") or ""),
+     )
+     # These fields are useful for benchmark/debugging and do not change scoring.
+     result.details["integration"] = {
+diff --git a/fides_ml/__init__.py b/fides_ml/__init__.py
+index 73ce05e..b8efed0 100644
+--- a/fides_ml/__init__.py
++++ b/fides_ml/__init__.py
+@@ -4,4 +4,4 @@ Heavy ML imports are deliberately lazy; preparing features needs only pandas
+ and the existing ontology engine.
+ """
+ 
+-__version__ = "0.1.0"
++__version__ = "0.2.0"
+diff --git a/fides_ml/__main__.py b/fides_ml/__main__.py
+index c5bb9c7..5f7dae6 100644
+--- a/fides_ml/__main__.py
++++ b/fides_ml/__main__.py
+@@ -6,7 +6,7 @@ import json
+ 
+ 
+ def main():
+-    parser = argparse.ArgumentParser(description="Fides stage 1: learn contextual weights and output ACCS (0..100)")
++    parser = argparse.ArgumentParser(description="Fides stage 1: learn contextual weights; AnalysisEngine owns ACCS/verdict")
+     sub = parser.add_subparsers(dest="command", required=True)
+     p = sub.add_parser("prepare", help="Rescore existing evidence caches and attach reference ordinal labels")
+     p.add_argument("--labels", required=True)
+@@ -40,7 +40,7 @@ def main():
+     p.add_argument("--lambda-prior", type=float, default=.005)
+     p.add_argument("--lambda-weight-stability", type=float, default=.01)
+     p.add_argument("--no-balanced", action="store_true")
+-    p = sub.add_parser("predict", help="Write ACCS, review band, weights and point contributions")
++    p = sub.add_parser("predict-weights", help="Write weights and model metadata only; no ACCS or verdict")
+     p.add_argument("--checkpoint", required=True)
+     p.add_argument("--data", required=True)
+     p.add_argument("--output", required=True)
+@@ -65,9 +65,9 @@ def main():
+                         "genuine_cutoff", "credible_cutoff", "temperature")}
+             full = train_model(args.data, args.output, options, config)
+             result = {"output": args.output, "best_epoch": full["best_epoch"], "test": full["splits"]["test"]}
+-        elif args.command == "predict":
+-            from .predict import ACCSPredictor
+-            result_frame = ACCSPredictor(args.checkpoint, args.device).predict_csv(args.data, args.output)
++        elif args.command == "predict-weights":
++            from .predict import WeightPredictor
++            result_frame = WeightPredictor(args.checkpoint, args.device).predict_csv(args.data, args.output)
+             result = {"output": args.output, "rows": len(result_frame)}
+         else:
+             from .demo import make_demo
+diff --git a/fides_ml/evaluate.py b/fides_ml/evaluate.py
+index fa022e1..0c67eed 100644
+--- a/fides_ml/evaluate.py
++++ b/fides_ml/evaluate.py
+@@ -2,11 +2,28 @@
+ from __future__ import annotations
+ 
+ import numpy as np
++import pandas as pd
+ from sklearn.metrics import (accuracy_score, average_precision_score, balanced_accuracy_score,
+                              confusion_matrix, f1_score, precision_score, recall_score)
+ 
+ from .data import LABELS
+-from .features import PRIORS
++from .features import CHANNELS, PRIORS
++
++
++def predictions_frame(frame, values, config):
++    """Offline score-band diagnostics ONLY; never the engine's final verdict."""
++    keep = [c for c in ("sample_id", "url", "product_name", "product_type", "label") if c in frame]
++    out = frame[keep].reset_index(drop=True).copy()
++    valid, accs = values["valid"], values["accs"]
++    out["accs"] = np.where(valid, accs, np.nan)
++    classes = score_labels(accs, config)
++    out["score_band_label"] = [LABELS[i] if ok else "" for i, ok in zip(classes, valid)]
++    out["status"] = np.where(valid, "ok", "no_usable_channels")
++    for j, c in enumerate(CHANNELS):
++        out[f"weight_{c}"] = values["weights"][:, j]
++        out[f"contribution_{c}"] = values["accs_contributions"][:, j]
++    out["contribution_ecs"] = values["ecs_contribution"]
++    return out
+ 
+ 
+ def score_labels(accs, config) -> np.ndarray:
+diff --git a/fides_ml/features.py b/fides_ml/features.py
+index cd62361..a4c94bb 100644
+--- a/fides_ml/features.py
++++ b/fides_ml/features.py
+@@ -11,8 +11,9 @@ from typing import Any, Mapping
+ import numpy as np
+ import pandas as pd
+ 
++from fides_scoring import CHANNELS
++
+ SCHEMA_VERSION = "fides-cen-senn-v1"
+-CHANNELS = ("hes", "tes", "ces")
+ SIGNALS = ("count", "diversity", "directness", "recency", "concentration")
+ CONTEXT_COLUMNS = tuple(f"ctx_{c}_{s}" for c in CHANNELS for s in SIGNALS)
+ MASK_COLUMNS = tuple(f"mask_{c}" for c in CHANNELS)
+@@ -46,6 +47,33 @@ def normalize_label(value: Any) -> str | None:
+     raise ValueError(f"Unknown ground-truth label: {value!r}")
+ 
+ 
++def channel_feature_row(channel_scores: Mapping, channel_details: Mapping, *,
++                        product_type="", sample_id="live", channel_mask=None) -> dict:
++    """Build input BEFORE the engine has calculated ACCS/CONF/verdict.
++
++    Scores are accepted for validation and mask compatibility, but the gate's
++    continuous input remains evidence quality. ECS and labels are not needed.
++    """
++    if not all(c in channel_scores and c in channel_details for c in CHANNELS):
++        raise ValueError("hes, tes, ces scores and channel_details are required")
++    if channel_mask is None:
++        channel_mask = {c: float(channel_scores[c]) > 0 for c in CHANNELS}
++    if set(channel_mask) != set(CHANNELS) or any(v not in (0, 1, False, True) for v in channel_mask.values()):
++        raise ValueError("channel_mask must have exactly hes, tes, ces with 0/1 values")
++    row = {"schema_version": SCHEMA_VERSION, "sample_id": sample_id, "product_type": product_type}
++    for c in CHANNELS:
++        info = channel_details[c]
++        row[c] = channel_scores[c]
++        row[f"mask_{c}"] = int(channel_mask[c])
++        values = (min(float(info.get("evidence_count", 0)) / 4.0, 1.0),
++                  min(len(info.get("source_types") or []) / 3.0, 1.0),
++                  float(info.get("avg_directness", 0.0)),
++                  float(info.get("avg_recency", 0.5)),
++                  float(info.get("max_source_share", 0.0)))
++        row.update({f"ctx_{c}_{s}": v for s, v in zip(SIGNALS, values)})
++    return row
++
++
+ def feature_row(result: Any, *, product_type: str = "", sample_id: str = "") -> dict:
+     """Adapt the ACTUAL AnalysisResult contract on EASy main.
+ 
+@@ -68,19 +96,8 @@ def feature_row(result: Any, *, product_type: str = "", sample_id: str = "") ->
+         active = [c for c in CHANNELS if channel_details[c].get("active", False)]
+     if set(active) - set(CHANNELS):
+         raise ValueError(f"Unexpected active channels: {active}")
+-    row = {"schema_version": SCHEMA_VERSION, "sample_id": sample_id, "product_type": product_type}
+-    for c in CHANNELS:
+-        info = channel_details[c]
+-        row[c] = float(d[c])
+-        row[f"mask_{c}"] = int(c in active)
+-        values = (
+-            min(float(info.get("evidence_count", 0)) / 4.0, 1.0),
+-            min(len(info.get("source_types") or []) / 3.0, 1.0),
+-            float(info.get("avg_directness", 0.0)),
+-            float(info.get("avg_recency", 0.5)),
+-            float(info.get("max_source_share", 0.0)),
+-        )
+-        row.update({f"ctx_{c}_{s}": v for s, v in zip(SIGNALS, values)})
++    row = channel_feature_row(d, channel_details, product_type=product_type, sample_id=sample_id,
++                              channel_mask={c: int(c in active) for c in CHANNELS})
+     # Audit-only fields, NEVER fed to the weight network or used as labels.
+     row.update({
+         "engine_version": details.get("engine_version", "unknown"),
+@@ -101,7 +118,9 @@ def score_bundle(bundle: Mapping[str, Any], engine: Any) -> Any:
+     allowed = inspect.signature(bundle_to_evidence_records).parameters
+     records = bundle_to_evidence_records(**{k: v for k, v in bundle.items() if k in allowed})
+     ad, ocr, extra = build_claim_inputs(bundle.get("product_json"), bundle.get("norm_info"), bundle.get("ocr_result"))
+-    return engine.analyze(records, ad_text=ad, ocr_text=ocr, extra_texts=extra)
++    product = bundle.get("product_json") or {}
++    return engine.analyze(records, ad_text=ad, ocr_text=ocr, extra_texts=extra,
++                          product_type=str(product.get("category") or product.get("product_type") or ""))
+ 
+ 
+ def validate_features(frame: pd.DataFrame) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+@@ -147,12 +166,22 @@ class FeatureEncoder:
+     def category_dim(self) -> int:
+         return len(self.categories) + 1
+ 
+-    def transform(self, frame: pd.DataFrame) -> tuple[np.ndarray, ...]:
+-        scores, context, mask = validate_features(frame)
++    def _categories(self, frame):
+         lookup = {v: i + 1 for i, v in enumerate(self.categories)}
+         indices = [lookup.get(str(v).strip(), 0) for v in frame.product_type]
+         category = np.eye(self.category_dim, dtype=np.float32)[indices]
+         category[np.asarray(indices) == 0] = 0
++        return category
++
++    def transform_weights(self, frame: pd.DataFrame) -> tuple[np.ndarray, ...]:
++        """Serving input, deliberately independent of ECS/labels/final results."""
++        _, context, mask = validate_features(frame)
++        return context, self._categories(frame), mask
++
++    def transform(self, frame: pd.DataFrame) -> tuple[np.ndarray, ...]:
++        """Training input including scores for the differentiable objective."""
++        scores, context, mask = validate_features(frame)
++        category = self._categories(frame)
+         if "ecs" not in frame:
+             raise ValueError("Missing ecs column (set ecs=0 explicitly when using --ecs-alpha 0)")
+         ecs = pd.to_numeric(frame.ecs, errors="raise").to_numpy(dtype=np.float32)
+diff --git a/fides_ml/model.py b/fides_ml/model.py
+index 9012e7c..533b980 100644
+--- a/fides_ml/model.py
++++ b/fides_ml/model.py
+@@ -1,11 +1,10 @@
+-"""CEN dictionary mixing + fixed concepts + SENN gradient regularization."""
++"""CEN weight generator. Serving returns weights, never ACCS or a verdict."""
+ from __future__ import annotations
+ 
+ from dataclasses import asdict, dataclass
+ 
+ import torch
+ from torch import nn
+-from torch.nn import functional as F
+ 
+ from .features import CONTEXT_COLUMNS, PRIORS
+ 
+@@ -44,19 +43,16 @@ def masked_normalize(values: torch.Tensor, mask: torch.Tensor) -> torch.Tensor:
+     return weighted / weighted.sum(-1, keepdim=True).clamp_min(1e-12)
+ 
+ 
+-class CENSENN(nn.Module):
+-    """No direct context->class shortcut and no trainable concept encoder.
++class CENWeightModel(nn.Module):
++    """The only learned serving module: context -> HES/TES/CES weights.
+ 
+     D[k] = softmax(prototype_logits[k])
+     alpha(c) = softmax(MLP(c))
+     w(c,m) = normalize(mask * (alpha(c) @ D))
+-    s = sum(w * h), h = [HES,TES,CES]/100
+-    ACCS = 100 * ((1-ecs_alpha) * s + ecs_alpha * normalized_ECS)
+-
+-    Ordinal labels constrain score intervals, not arbitrary point targets.
+-    Discrete product category and channel masks are held fixed in the SENN
+-    derivative. The gate does not read concept scores, ECS, CONF, target labels,
+-    labeling reasons, product IDs or rule verdicts.
++    SENN and ordinal score supervision live in objective.py, used only during
++    training/evaluation. The gate does not read concept scores, ECS, CONF,
++    labels, labeling reasons, product IDs or rule verdicts. Parameter names
++    remain compatible with the original CENSENN checkpoints.
+     """
+ 
+     def __init__(self, config: ModelConfig):
+@@ -77,66 +73,14 @@ class CENSENN(nn.Module):
+         self.prototype_logits.requires_grad_(config.mode in {"cen", "cen_senn"})
+         self.global_logits.requires_grad_(config.mode == "global")
+ 
+-    def forward(self, concepts, context, category, mask, ecs=None) -> dict[str, torch.Tensor]:
++    def forward(self, context, category, mask) -> dict[str, torch.Tensor]:
+         mode = self.config.mode
+         if mode == "fixed":
+-            raw_weights = self.prior.expand_as(concepts)
++            raw_weights = self.prior.expand_as(mask)
+         elif mode == "global":
+-            raw_weights = self.global_logits.softmax(-1).expand_as(concepts)
++            raw_weights = self.global_logits.softmax(-1).expand_as(mask)
+         else:
+             alpha = self.gate(torch.cat((context, category, mask), dim=-1)).softmax(-1)
+             raw_weights = alpha @ self.prototype_logits.softmax(-1)
+         weights = masked_normalize(raw_weights, mask)
+-        # torch.where also removes NaN placeholders for missing concepts.
+-        masked_concepts = torch.where(mask.bool(), concepts, torch.zeros_like(concepts))
+-        contributions = weights * masked_concepts
+-        score = contributions.sum(-1)
+-        if ecs is None:
+-            if self.config.ecs_alpha:
+-                raise ValueError("ECS is required when ecs_alpha > 0")
+-            ecs = torch.zeros_like(score)
+-        accs_contributions = 100 * (1 - self.config.ecs_alpha) * contributions
+-        ecs_contribution = 100 * self.config.ecs_alpha * ecs
+-        accs = accs_contributions.sum(-1) + ecs_contribution
+-        log_probs = ordinal_log_probs(accs, self.config)
+-        return {"weights": weights, "contributions": contributions, "score": score,
+-                "accs": accs, "accs_contributions": accs_contributions,
+-                "ecs_contribution": ecs_contribution, "ordinal_log_probs": log_probs,
+-                "valid": mask.sum(-1) > 0}
+-
+-
+-def ordinal_log_probs(accs: torch.Tensor, config: ModelConfig) -> torch.Tensor:
+-    """Stable ordered-logistic likelihood: Washing < Suspicious < Genuine.
+-
+-    These are likelihoods for learning score intervals, NOT calibrated consumer
+-    probabilities. Public verdicts always come from the actual ACCS cutoffs.
+-    """
+-    a = (config.washing_cutoff - accs) / config.temperature
+-    b = (config.genuine_cutoff - accs) / config.temperature
+-    gap = accs.new_tensor((config.washing_cutoff - config.genuine_cutoff) / config.temperature)
+-    log_middle = F.logsigmoid(b) + F.logsigmoid(-a) + torch.log(-torch.expm1(gap))
+-    return torch.stack((F.logsigmoid(a), log_middle, F.logsigmoid(-b)), dim=-1)
+-
+-
+-def senn_penalty(output: dict, concepts: torch.Tensor, context: torch.Tensor) -> torch.Tensor:
+-    """Squared SENN Eq.(3), applied to normalized evidence score s.
+-
+-    u=[h,c], h(u)=u[:3], J_h=[I,0], so target gradient is [w,0].
+-    Including d(s)/d(c) is essential: using only d(s)/d(h)-w here would be
+-    identically zero because the CEN gate reads c, not h. create_graph=True
+-    keeps the second derivatives needed to train the gate with this loss.
+-    Masks/categories are discrete and are not differentiated.
+-    """
+-    grad_h, grad_c = torch.autograd.grad(
+-        output["score"].sum(), (concepts, context),
+-        create_graph=True, retain_graph=True, allow_unused=True,
+-    )
+-    if grad_c is None:
+-        grad_c = torch.zeros_like(context)
+-    residual_h = grad_h - output["weights"]
+-    return (residual_h.square().sum(-1) + grad_c.square().sum(-1)).mean()
+-
+-
+-def prior_penalty(weights: torch.Tensor, mask: torch.Tensor, prior: torch.Tensor) -> torch.Tensor:
+-    reference = masked_normalize(prior.expand_as(weights), mask)
+-    return (weights * (weights.clamp_min(1e-8).log() - reference.clamp_min(1e-8).log())).sum(-1).mean()
++        return {"weights": weights, "valid": mask.sum(-1) > 0}
+diff --git a/fides_ml/objective.py b/fides_ml/objective.py
+new file mode 100644
+index 0000000..3935a91
+--- /dev/null
++++ b/fides_ml/objective.py
+@@ -0,0 +1,65 @@
++"""Training-only score supervision and SENN loss; not a serving predictor."""
++from __future__ import annotations
++
++import torch
++from torch.nn import functional as F
++
++from fides_scoring import CHANNELS, calculate_accs
++from .model import CENWeightModel, ModelConfig, masked_normalize
++
++
++class CENSENN(CENWeightModel):
++    """Differentiable training wrapper with the same state_dict as the gate.
++
++    The score exists here to judge and improve the weights. At runtime only
++    CENWeightModel is loaded; AnalysisEngine computes the final ACCS/verdict.
++    """
++
++    def forward(self, concepts, context, category, mask, ecs=None):
++        output = super().forward(context, category, mask)
++        weights = output["weights"]
++        h = torch.where(mask.bool(), concepts, torch.zeros_like(concepts))
++        if ecs is None:
++            if self.config.ecs_alpha:
++                raise ValueError("ECS is required when ecs_alpha > 0")
++            ecs = torch.zeros_like(h[:, 0])
++        scored = calculate_accs(
++            {c: h[:, i] * 100 for i, c in enumerate(CHANNELS)},
++            {c: weights[:, i] for i, c in enumerate(CHANNELS)}, ecs * 100,
++            evidence_alpha=1 - self.config.ecs_alpha, ecs_alpha=self.config.ecs_alpha,
++        )
++        return {**output, "score": scored["evidence_score"] / 100,
++                "contributions": weights * h,
++                "accs": scored["accs"],
++                "accs_contributions": torch.stack([scored["contributions"][c] for c in CHANNELS], dim=-1),
++                "ecs_contribution": scored["contributions"]["ecs"],
++                "ordinal_log_probs": ordinal_log_probs(scored["accs"], self.config)}
++
++
++def ordinal_log_probs(accs: torch.Tensor, config: ModelConfig) -> torch.Tensor:
++    """Stable interval likelihood; not the engine's full production verdict."""
++    a = (config.washing_cutoff - accs) / config.temperature
++    b = (config.genuine_cutoff - accs) / config.temperature
++    gap = accs.new_tensor((config.washing_cutoff - config.genuine_cutoff) / config.temperature)
++    middle = F.logsigmoid(b) + F.logsigmoid(-a) + torch.log(-torch.expm1(gap))
++    return torch.stack((F.logsigmoid(a), middle, F.logsigmoid(-b)), dim=-1)
++
++
++def senn_penalty(output: dict, concepts: torch.Tensor, context: torch.Tensor) -> torch.Tensor:
++    """Squared SENN Eq.(3) for u=[h,c]: ||grad(f)-[w,0]||².
++
++    Include context derivatives: grad_h(f)-w alone would be identically zero.
++    create_graph=True retains the second derivatives needed for optimization.
++    """
++    grad_h, grad_c = torch.autograd.grad(
++        output["score"].sum(), (concepts, context),
++        create_graph=True, retain_graph=True, allow_unused=True,
++    )
++    if grad_c is None:
++        grad_c = torch.zeros_like(context)
++    return ((grad_h - output["weights"]).square().sum(-1) + grad_c.square().sum(-1)).mean()
++
++
++def prior_penalty(weights, mask, prior):
++    reference = masked_normalize(prior.expand_as(weights), mask)
++    return (weights * (weights.clamp_min(1e-8).log() - reference.clamp_min(1e-8).log())).sum(-1).mean()
+diff --git a/fides_ml/predict.py b/fides_ml/predict.py
+index 4749275..c93d6fc 100644
+--- a/fides_ml/predict.py
++++ b/fides_ml/predict.py
+@@ -1,6 +1,7 @@
+-"""ACCS, consumer review category, learned weights and exact contributions."""
++"""Serving API: return HES/TES/CES weights only. Engine owns final results."""
+ from __future__ import annotations
+ 
++import hashlib
+ import json
+ from pathlib import Path
+ 
+@@ -8,79 +9,84 @@ import numpy as np
+ import pandas as pd
+ import torch
+ 
+-from .data import LABELS
+-from .evaluate import score_labels
+-from .features import CHANNELS, FeatureEncoder, feature_row, read_csv
+-from .model import CENSENN, ModelConfig
+-from .train import choose_device, predict_arrays
++from fides_scoring import CHANNELS, blend_coefficients, validate_weights
++from .features import FeatureEncoder, channel_feature_row, read_csv
++from .model import CENWeightModel, ModelConfig
+ 
+ 
+-def predictions_frame(frame: pd.DataFrame, values: dict, config: ModelConfig) -> pd.DataFrame:
+-    keep = [c for c in ("sample_id", "url", "product_name", "product_type", "label") if c in frame]
+-    out = frame[keep].reset_index(drop=True).copy()
+-    valid = values["valid"]
+-    accs = values["accs"]
+-    out["accs"] = np.where(valid, accs, np.nan)
+-    classes = score_labels(accs, config)
+-    out["predicted_label"] = [LABELS[i] if ok else "" for i, ok in zip(classes, valid)]
+-    out["review_recommended"] = [bool(i <= 1) if ok else None for i, ok in zip(classes, valid)]
+-    out["risk_band"] = ["credible" if s >= config.credible_cutoff else LABELS[i] if ok else "unscored"
+-                        for s, i, ok in zip(accs, classes, valid)]
+-    out.loc[~valid, "risk_band"] = "unscored"
+-    out["status"] = np.where(valid, "ok", "no_usable_channels")
+-    for j, c in enumerate(CHANNELS):
+-        out[f"weight_{c}"] = values["weights"][:, j]
+-        out[f"contribution_{c}"] = values["accs_contributions"][:, j]
+-    out["contribution_ecs"] = values["ecs_contribution"]
+-    return out
++class WeightPredictor:
++    """Load once, then inject into OntologyAnalysisEngine/secure_analyze_bundle.
+ 
++    Version-1 trained checkpoints are compatible: no learned parameter shape or
++    state_dict key has changed. Version 2 explicitly records weights_only.
++    """
+ 
+-class ACCSPredictor:
+     def __init__(self, checkpoint_dir, device="cpu"):
+         path = Path(checkpoint_dir)
+         metadata = json.loads((path / "metadata.json").read_text(encoding="utf-8"))
+-        if metadata.get("format_version") != 1 or metadata.get("labels") != list(LABELS):
+-            raise ValueError("Unsupported checkpoint version or label ordering")
++        if metadata.get("format_version") not in (1, 2):
++            raise ValueError("Unsupported checkpoint version")
+         self.metadata = metadata
+         self.encoder = FeatureEncoder.from_dict(metadata["encoder"])
+         self.config = ModelConfig(**metadata["model_config"])
+         if self.config.category_dim != self.encoder.category_dim:
+             raise ValueError("Category vocabulary and model dimensions disagree")
+-        self.device = choose_device(device)
+-        self.model = CENSENN(self.config).to(self.device)
+-        # State dict only; never load arbitrary pickled Python estimators.
++        if device == "auto":
++            device = "cuda" if torch.cuda.is_available() else "cpu"
++        self.device = torch.device(device)
++        if self.device.type == "cuda" and not torch.cuda.is_available():
++            raise ValueError("CUDA unavailable; use --device cpu")
++        self.model = CENWeightModel(self.config).to(self.device)
+         state = torch.load(path / "model.pt", map_location=self.device, weights_only=True)
+         self.model.load_state_dict(state, strict=True)
+         self.model.eval()
++        digest = hashlib.sha256((path / "model.pt").read_bytes())
++        digest.update(json.dumps({"encoder": metadata["encoder"], "config": metadata["model_config"]}, sort_keys=True).encode())
++        self.model_version = "sha256:" + digest.hexdigest()[:16]
+ 
+-    def predict_frame(self, frame: pd.DataFrame) -> pd.DataFrame:
+-        arrays = self.encoder.transform(frame)
+-        values = predict_arrays(self.model, arrays, self.device)
+-        return predictions_frame(frame, values, self.config)
++    def validate_engine_config(self, engine_config, dynamic_weight_config):
++        """Detect training/runtime score-definition drift before accepting traffic."""
++        _, ecs_alpha = blend_coefficients(dynamic_weight_config.evidence_alpha, dynamic_weight_config.ecs_alpha)
++        thresholds = engine_config.thresholds
++        pairs = (("ecs_alpha", self.config.ecs_alpha, ecs_alpha),
++                 ("washing_cutoff", self.config.washing_cutoff, thresholds.suspected),
++                 ("genuine_cutoff", self.config.genuine_cutoff, thresholds.normal),
++                 ("credible_cutoff", self.config.credible_cutoff, thresholds.credible))
++        different = [f"{name}: trained={a}, engine={b}" for name, a, b in pairs if abs(a - b) > 1e-8]
++        if different:
++            raise ValueError("Training/engine scoring settings differ; align configuration or retrain. " + "; ".join(different))
+ 
+-    def predict_csv(self, input_path, output_path) -> pd.DataFrame:
++    def predict_frame(self, frame: pd.DataFrame, batch_size=256) -> pd.DataFrame:
++        if batch_size < 1:
++            raise ValueError("batch_size must be positive")
++        context, category, mask = self.encoder.transform_weights(frame)
++        batches = []
++        with torch.inference_mode():
++            for start in range(0, len(frame), batch_size):
++                arrays = [a[start:start + batch_size] for a in (context, category, mask)]
++                output = self.model(*(torch.as_tensor(a, dtype=torch.float32, device=self.device) for a in arrays))
++                batches.append(output["weights"].cpu().numpy())
++        weights = np.concatenate(batches)
++        keep = [c for c in ("sample_id", "url", "product_name", "product_type") if c in frame]
++        out = frame[keep].reset_index(drop=True).copy()
++        for i, c in enumerate(CHANNELS):
++            out[f"weight_{c}"] = weights[:, i]
++        out["status"] = np.where(mask.sum(-1) > 0, "ok", "no_usable_channels")
++        out["method"] = self.config.mode
++        out["model_version"] = self.model_version
++        return out
++
++    def predict_csv(self, input_path, output_path):
+         result = self.predict_frame(read_csv(input_path))
+         Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+         result.to_csv(output_path, index=False, encoding="utf-8-sig")
+         return result
+ 
+-    def predict_analysis(self, analysis_result, *, product_type: str = "", sample_id: str = "live") -> dict:
+-        """Consumes existing AnalysisResult; never overwrites baseline fields.
+-
+-        The caller may store this result under details.learned_accs for comparison.
+-        Promote it to the UI's primary score after validating a real-evidence run.
+-        """
+-        row = feature_row(analysis_result, product_type=product_type, sample_id=sample_id)
++    def predict_weights(self, *, channel_scores, channel_details, product_type="", channel_mask=None) -> dict:
++        row = channel_feature_row(channel_scores, channel_details, product_type=product_type,
++                                  channel_mask=channel_mask)
+         pred = self.predict_frame(pd.DataFrame([row])).iloc[0]
+-        ok = pred.status == "ok"
+-        return {
+-            "accs": float(pred.accs) if ok else None,
+-            "label": str(pred.predicted_label) if ok else None,
+-            "risk_band": str(pred.risk_band), "status": str(pred.status),
+-            "review_recommended": bool(pred.review_recommended) if ok else None,
+-            "weights": {c: float(pred[f"weight_{c}"]) for c in CHANNELS},
+-            "contributions": {c: float(pred[f"contribution_{c}"]) for c in (*CHANNELS, "ecs")},
+-            "concept_scores": {c: float(row[c]) for c in (*CHANNELS, "ecs")},
+-            "cutoffs": {"washing": self.config.washing_cutoff, "genuine": self.config.genuine_cutoff,
+-                        "credible": self.config.credible_cutoff},
+-        }
++        weights = validate_weights({c: float(pred[f"weight_{c}"]) for c in CHANNELS},
++                                   {c: bool(row[f"mask_{c}"]) for c in CHANNELS})
++        return {"weights": weights, "method": self.config.mode,
++                "model_version": self.model_version, "status": str(pred.status)}
+diff --git a/fides_ml/train.py b/fides_ml/train.py
+index 5d05483..94d0fda 100644
+--- a/fides_ml/train.py
++++ b/fides_ml/train.py
+@@ -18,7 +18,8 @@ from torch.nn import functional as F
+ from .data import LABELS, group_split, load_training_frame
+ from .evaluate import baseline_scores, feasibility, metrics
+ from .features import FeatureEncoder, write_json
+-from .model import CENSENN, ModelConfig, prior_penalty, senn_penalty
++from .model import ModelConfig
++from .objective import CENSENN, prior_penalty, senn_penalty
+ 
+ 
+ @dataclass
+@@ -166,7 +167,8 @@ def train_model(data_path, output_dir, model_options=None, train_config=None) ->
+         commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=Path(__file__).resolve().parent.parent, text=True, stderr=subprocess.DEVNULL).strip()
+     except (OSError, subprocess.CalledProcessError):
+         commit = None
+-    metadata = {"format_version": 1, "model_config": model_cfg.to_dict(), "train_config": asdict(cfg),
++    metadata = {"format_version": 2, "serving_contract": "weights_only",
++                "model_config": model_cfg.to_dict(), "train_config": asdict(cfg),
+                 "encoder": encoder.to_dict(), "labels": list(LABELS), "best_epoch": best_epoch,
+                 "best_validation_ordinal_nll": best_loss, "base_git_commit": commit,
+                 "python": sys.version.split()[0], "torch": torch.__version__,
+@@ -207,7 +209,7 @@ def train_model(data_path, output_dir, model_options=None, train_config=None) ->
+     for name, idx in splits.items():
+         assignment.loc[idx, "split"] = name
+     assignment.to_csv(output / "split_assignments.csv", index=False, encoding="utf-8-sig")
+-    from .predict import predictions_frame
++    from .evaluate import predictions_frame
+     predictions_frame(frame.iloc[test_idx].reset_index(drop=True), normal, model_cfg).to_csv(
+         output / "test_predictions.csv", index=False, encoding="utf-8-sig")
+     return report
+diff --git a/fides_scoring.py b/fides_scoring.py
+new file mode 100644
+index 0000000..832c716
+--- /dev/null
++++ b/fides_scoring.py
+@@ -0,0 +1,50 @@
++"""Shared ACCS arithmetic for the engine (floats) and training (tensors).
++
++No torch dependency, float conversion, rounding, detach, or verdict logic here.
++The engine owns public scores and decisions; training reuses this exact formula.
++"""
++from __future__ import annotations
++
++from math import isfinite
++
++CHANNELS = ("hes", "tes", "ces")
++
++
++def blend_coefficients(evidence_alpha=0.85, ecs_alpha=0.15):
++    a, b = float(evidence_alpha), float(ecs_alpha)
++    if not all(isfinite(x) and x >= 0 for x in (a, b)):
++        raise ValueError("ACCS blend coefficients must be finite and nonnegative")
++    if a + b == 0:
++        return 0.85, 0.15  # Same fallback as the existing engine.
++    return a / (a + b), b / (a + b)
++
++
++def calculate_accs(scores, weights, ecs, *, evidence_alpha=0.85, ecs_alpha=0.15):
++    """Inputs scores/ECS are 0..100; inactive channels have weight zero.
++
++    Callers validate/mask inputs before this function. Values may be Python
++    numbers, NumPy arrays, or torch tensors; gradients remain connected.
++    """
++    a, b = blend_coefficients(evidence_alpha, ecs_alpha)
++    evidence_score = sum(weights[c] * scores[c] for c in CHANNELS)
++    contributions = {c: a * weights[c] * scores[c] for c in CHANNELS}
++    contributions["ecs"] = b * ecs
++    # Match the engine's original arithmetic/rounding order.
++    return {"accs": a * evidence_score + b * ecs,
++            "evidence_score": evidence_score, "contributions": contributions,
++            "evidence_alpha": a, "ecs_alpha": b}
++
++
++def validate_weights(weights, channel_mask):
++    """Reject malformed model outputs before they affect the authoritative score."""
++    if set(weights) != set(CHANNELS) or set(channel_mask) != set(CHANNELS):
++        raise ValueError("Weights and mask must contain exactly hes, tes, ces")
++    values = {c: float(weights[c]) for c in CHANNELS}
++    if any(not isfinite(v) or v < 0 for v in values.values()):
++        raise ValueError("Weights must be finite and nonnegative")
++    if any(values[c] != 0 for c in CHANNELS if not channel_mask[c]):
++        raise ValueError("Missing channels must have exactly zero weight")
++    expected = 1.0 if any(channel_mask.values()) else 0.0
++    if abs(sum(values.values()) - expected) > 1e-5:
++        raise ValueError(f"Weights must sum to {expected} for this mask")
++    return values
+diff --git a/tests/test_fides_ml.py b/tests/test_fides_ml.py
+index 6e807b0..bbf28c2 100644
+--- a/tests/test_fides_ml.py
++++ b/tests/test_fides_ml.py
+@@ -14,8 +14,9 @@ from fides_ml.data import connected_groups, group_split, load_training_frame
+ from fides_ml.demo import make_demo
+ from fides_ml.evaluate import score_labels
+ from fides_ml.features import CONTEXT_COLUMNS, FeatureEncoder, feature_row, normalize_label, read_csv, score_bundle
+-from fides_ml.model import CENSENN, ModelConfig, ordinal_log_probs, senn_penalty
+-from fides_ml.predict import ACCSPredictor
++from fides_ml.model import CENWeightModel, ModelConfig
++from fides_ml.objective import CENSENN, ordinal_log_probs, senn_penalty
++from fides_ml.predict import WeightPredictor
+ from fides_ml.prepare import prepare_dataset
+ from fides_ml.train import TrainConfig, train_model
+ 
+@@ -182,24 +183,160 @@ class EndToEndTests(unittest.TestCase):
+             source, output = Path(d)/"data.csv", Path(d)/"run"
+             make_demo(source, n_groups=36)
+             report = train_model(source, output, train_config=TrainConfig(epochs=4, patience=3))
+-            predictor = ACCSPredictor(output)
++            predictor = WeightPredictor(output)
+             saved = pd.read_csv(output/"test_predictions.csv")
+             features = read_csv(source).set_index("sample_id").loc[saved.sample_id].reset_index()
+             predicted = predictor.predict_frame(features)
+-            np.testing.assert_allclose(predicted.accs.to_numpy(), saved.accs.to_numpy(), atol=1e-5)
++            for c in ("hes", "tes", "ces"):
++                np.testing.assert_allclose(predicted[f"weight_{c}"], saved[f"weight_{c}"], atol=1e-6)
++            self.assertNotIn("accs", predicted)
++            self.assertNotIn("predicted_label", predicted)
+             self.assertLess(report["explanation_checks"]["max_accs_reconstruction_error"], 1e-4)
+             absent = features.iloc[:1].copy()
+             for c in ("hes", "tes", "ces"):
+                 absent[f"mask_{c}"] = "0"
+                 absent[c] = ""
+             result = predictor.predict_frame(absent)
+-            self.assertTrue(pd.isna(result.iloc[0].accs))
+             self.assertEqual(result.iloc[0].status, "no_usable_channels")
+-            self.assertEqual(result.iloc[0].predicted_label, "")
++            self.assertEqual(float(result.filter(like="weight_").sum(axis=1).iloc[0]), 0)
+             # An existing run must never be silently overwritten.
+             with self.assertRaises(ValueError):
+                 train_model(source, output, train_config=TrainConfig(epochs=1))
+ 
+ 
++class WeightModuleIntegrationTests(unittest.TestCase):
++    @classmethod
++    def setUpClass(cls):
++        cls.temp = tempfile.TemporaryDirectory()
++        cls.root = Path(__file__).resolve().parents[1]
++        cls.path = Path(cls.temp.name)
++        make_demo(cls.path/"features.csv", n_groups=12)
++        frame = read_csv(cls.path/"features.csv")
++        encoder = FeatureEncoder().fit(frame)
++        cfg = ModelConfig(category_dim=encoder.category_dim)
++        torch.manual_seed(5)
++        model = CENSENN(cfg)
++        torch.save(model.state_dict(), cls.path/"model.pt")
++        # Actual v1 format: loading this needs no parameter migration.
++        (cls.path/"metadata.json").write_text(json.dumps({
++            "format_version": 1, "model_config": cfg.to_dict(),
++            "encoder": encoder.to_dict(), "labels": ["washing", "suspicious", "genuine"]}), encoding="utf-8")
++        cls.predictor = WeightPredictor(cls.path)
++
++    @classmethod
++    def tearDownClass(cls):
++        cls.temp.cleanup()
++
++    def _analysis(self, predictor=None):
++        from fides_integration import secure_analyze_bundle
++        return secure_analyze_bundle(
++            product_json={"product_name": "AI 로봇청소기", "raw_specs": "AI 카메라 사물인식 장애물 회피", "category": "로봇청소기"},
++            ontology_dir=str(self.root/"ontology"), weight_predictor=predictor)
++
++    def test_weight_serving_requires_no_ecs_or_label(self):
++        frame = read_csv(self.path/"features.csv").drop(columns=["ecs", "label"])
++        result = self.predictor.predict_frame(frame)
++        self.assertTrue(result.status.eq("ok").all())
++        self.assertNotIn("accs", result)
++        self.assertNotIn("risk_band", result)
++
++    def test_generator_forward_has_only_weights_and_validity(self):
++        frame = read_csv(self.path/"features.csv").head(2)
++        tensors = [torch.tensor(a) for a in self.predictor.encoder.transform_weights(frame)]
++        self.assertEqual(set(self.predictor.model(*tensors)), {"weights", "valid"})
++
++    def test_v1_weights_equal_training_wrapper(self):
++        frame = read_csv(self.path/"features.csv").head(3)
++        objective = CENSENN(self.predictor.config)
++        objective.load_state_dict(self.predictor.model.state_dict(), strict=True)
++        arrays = self.predictor.encoder.transform(frame)
++        trained = objective(*(torch.tensor(a) for a in arrays))
++        served = self.predictor.predict_frame(frame)
++        np.testing.assert_allclose(trained["weights"].detach().numpy(), served.filter(like="weight_").to_numpy(), atol=1e-6)
++
++    def test_engine_and_training_accs_match_and_logs_are_consistent(self):
++        from fides_integration import result_consistency_errors
++        result = self._analysis(self.predictor)
++        frame = pd.DataFrame([feature_row(result, sample_id="test", product_type="로봇청소기")])
++        objective = CENSENN(self.predictor.config)
++        objective.load_state_dict(self.predictor.model.state_dict())
++        values = objective(*(torch.tensor(a) for a in self.predictor.encoder.transform(frame)))
++        actual = result.details["dynamic_weighting"]
++        self.assertAlmostEqual(float(values["accs"][0].detach()), actual["unrounded_accs"], places=4)
++        self.assertEqual(round(actual["unrounded_accs"], 2), result.accs)
++        self.assertAlmostEqual(sum(actual["contributions"].values()), actual["unrounded_accs"], places=7)
++        self.assertEqual(result.raw_accs, actual["dynamic_evidence_score"])
++        self.assertEqual(result_consistency_errors(result), [])
++        self.assertEqual(actual["model_version"], self.predictor.model_version)
++        self.assertIn("학습 모델", " ".join(result.reasons))
++
++    def test_provider_called_once_before_final_result_and_cannot_override_it(self):
++        class Spy:
++            calls = []
++            def predict_weights(inner, **kwargs):
++                inner.calls.append(kwargs)
++                active = [c for c, ok in kwargs["channel_mask"].items() if ok]
++                return {"weights": {c: 1/len(active) if c in active else 0 for c in ("hes", "tes", "ces")},
++                        "method": "test", "model_version": "test", "accs": 999, "verdict": "FAKE"}
++        spy = Spy()
++        result = self._analysis(spy)
++        self.assertEqual(len(spy.calls), 1)
++        self.assertEqual(set(spy.calls[0]), {"channel_scores", "channel_details", "product_type", "channel_mask"})
++        self.assertEqual(spy.calls[0]["product_type"], "로봇청소기")
++        self.assertLessEqual(result.accs, 100)
++        self.assertNotEqual(result.verdict, "FAKE")
++
++    def test_engine_still_applies_confidence_and_claim_rules(self):
++        from analysis_engine import OntologyAnalysisEngine
++        engine = OntologyAnalysisEngine(str(self.root/"ontology"), weight_predictor=self.predictor)
++        verdict, _ = engine._decide_verdict(accs=10, confidence=40, sufficiency=0, positive_caps=[object()])
++        self.assertIn("Suspected", verdict)
++        verdict, _ = engine._decide_verdict(accs=90, confidence=90, sufficiency=1, positive_caps=[])
++        self.assertIn("Not Evaluated", verdict)
++
++    def test_all_missing_is_reported_but_engine_owns_decision(self):
++        from analysis_engine import OntologyAnalysisEngine
++        engine = OntologyAnalysisEngine(str(self.root/"ontology"), weight_predictor=self.predictor)
++        result = engine.analyze([])
++        dynamic = result.details["dynamic_weighting"]
++        self.assertEqual(dynamic["weight_status"], "no_usable_channels")
++        self.assertEqual(sum(dynamic["weights"].values()), 0)
++        self.assertIn("Not Evaluated", result.verdict)
++
++    def test_training_and_engine_configuration_drift_fails(self):
++        from dataclasses import replace
++        from fides_config import DEFAULT_ENGINE_CONFIG
++        from analysis_engine import OntologyAnalysisEngine
++        cfg = replace(DEFAULT_ENGINE_CONFIG, thresholds=replace(DEFAULT_ENGINE_CONFIG.thresholds, normal=60))
++        with self.assertRaisesRegex(ValueError, "scoring settings differ"):
++            OntologyAnalysisEngine(str(self.root/"ontology"), weight_predictor=self.predictor, engine_config=cfg)
++        with self.assertRaisesRegex(ValueError, "enable_dynamic"):
++            OntologyAnalysisEngine(str(self.root/"ontology"), weight_predictor=self.predictor, enable_dynamic_weighting=False)
++
++    def test_invalid_weights_are_rejected_by_engine(self):
++        from analysis_engine import OntologyAnalysisEngine
++        class Broken:
++            def predict_weights(self, **kwargs):
++                return {"weights": {"hes": float("nan"), "tes": .5, "ces": .5}}
++        with self.assertRaisesRegex(ValueError, "finite"):
++            self._analysis(Broken())
++        class MissingChannel:
++            def predict_weights(self, **kwargs):
++                return {"weights": {"hes": .25, "tes": .25, "ces": .5}}
++        engine = OntologyAnalysisEngine(str(self.root/"ontology"), weight_predictor=MissingChannel())
++        with self.assertRaisesRegex(ValueError, "Missing channels"):
++            engine._calculate_dynamic_weighting(40, 25, 0, 10, {c: {} for c in ("hes", "tes", "ces")})
++
++    def test_shared_formula_example_and_tensor_gradients(self):
++        from fides_scoring import calculate_accs
++        weights = {"hes": .2, "tes": .5, "ces": .3}
++        plain = calculate_accs({"hes": 40, "tes": 25, "ces": 20}, weights, 10)
++        self.assertAlmostEqual(plain["accs"], 24.025)
++        h = torch.tensor([40., 25., 20.], requires_grad=True)
++        differentiable = calculate_accs(dict(zip(("hes", "tes", "ces"), h)), weights, 10.)
++        differentiable["accs"].backward()
++        torch.testing.assert_close(h.grad, torch.tensor([.17, .425, .255]))
++
++
+ if __name__ == "__main__":
+     unittest.main()
