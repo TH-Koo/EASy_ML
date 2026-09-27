@@ -1,0 +1,93 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=100622723",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "에이서 니트로 V 16S AI ANV16S-41-R9SV (SSD 1TB)",
+      "name": "에이서 니트로 V 16S AI ANV16S-41-R9SV (SSD 1TB)",
+      "description": "",
+      "ocr_text": "에이서 니트로 V 16s Al ANVI6S-41-RgSV (SSD ITB) Gmarket 1,589,650원 무료배승 최저가 구매하기 가격비교 39 상품 상세정보 의견리뷰 15 연관상품 무게 21kg 운명제제(OS) OS미I포함(프리도스) 판매유형 구성변경상품 [화면] 화면 비율 1610 해상도 1920x1200(WUXGA) sRGB 10096 주사물 18OHz 밝기 4OOnit 패널 종류 IPS 디스플레이 특징 광시야각 SYNC [CPU] CPU 제조사 AMD CPU 세분류 라이젠7(Zen4) CPU 코드명 호크포인트 CPU 넘버 260 (51GHz) CPU 코이 욕타(8) 코이 CPU 스레드 16스레드 NPU 종류 AMD 라이젠 Al NPU 16TOPS [그래픽] GPU 종류 외장그래픽 GPU 제조사 엔비디야 GPU 집셋 RTX5O5O GPU 메모리 VRAM: 8GB GPU TOPS 440 Al TOPS TGP 70W 게임 관련 기능 MUX 스위치 [구성] 댐 타입 DDR5 16GB",
+      "specs": {
+        "노트북": "지원",
+        "40.8cm(16인치)": "지원",
+        "2.1kg": "지원",
+        "OS미포함(프리도스)": "지원",
+        "[화면] 1920x1200(WUXGA)": "지원",
+        "sRGB": "100%",
+        "180Hz": "지원",
+        "400nit": "지원",
+        "[CPU] AMD": "지원",
+        "라이젠7(Zen4)": "지원",
+        "260 (5.1GHz)": "지원",
+        "16TOPS": "지원",
+        "[그래픽] 외장그래픽": "지원",
+        "RTX5050": "지원",
+        "VRAM": "8GB",
+        "TGP": "70W",
+        "[구성] 16GB": "지원",
+        "램 교체": "가능",
+        "용량": "1TB",
+        "DC": "지원",
+        "76Wh": "지원"
+      },
+      "raw_specs": "노트북 / 40.8cm(16인치) / 2.1kg / OS미포함(프리도스) / [화면] 1920x1200(WUXGA) / sRGB : 100% / 180Hz / 400nit / [CPU] AMD / 라이젠7(Zen4) / 260 (5.1GHz) / 16TOPS / [그래픽] 외장그래픽 / RTX5050 / VRAM: 8GB / TGP : 70W / [구성] 16GB / 램 교체 : 가능 / 용량 : 1TB / DC / 76Wh",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=100622723",
+      "manufacturer": "에이서, EAES",
+      "model_name": "ANV16S-41-R9SV"
+    },
+    "norm_info": {
+      "company_name": "에이서, EAES",
+      "model_name": "ANV16S-41-R9SV",
+      "product_name": "에이서 니트로 V 16S AI ANV16S-41-R9SV (SSD 1TB)"
+    },
+    "db_results": [
+      {
+        "company_name": "주식회사 케이앤에이서우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PA-50",
+        "country": "한국",
+        "cert_date": "2019-06-27",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-Kna-PA-50"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "source_record_id": "1020250032418",
+        "일련번호": "1",
+        "출원번호": "1020250032418",
+        "발명의명칭(한글)": "생성형 AI 기반 공공기관 경영실적 평가보고서 지적사항 문장 추출 및 분류 자동화 시스템, 그리고 그 방법",
+        "출원일자": "2025-03-13",
+        "출원인": "한국이에스지데이터 주식회사",
+        "등록상태": "등록",
+        "초록": "본 발명은 생성형 AI 기반 공공기관 경영실적 평가보고서 지적사항 문장 추출 및 분류 자동화 시스템 및 그 방법에 관한 것으로, 보다 구체적으로는, 광범위하고 다양한 표현 방식을 효율적으로 다룰 수 있고, 문맥 이해와 의미 추론도 수월해지도록 하는 생성형 AI(Generative AI)를 기반으로 공공기관 경영실적 평가보고서 내 지적사항 문장을 경영평가 항목 주제별, 긍정・부정, 해당 분야 내 다양한 분류, 지적사항의 수준 등 여러 기준으로 자동 추출・분류함으로써, 분석 및 리서치에 투여되는 시간 및 비용이 줄어들도록 하여, 공공기관 경영평가 분석 및 리서치에 대한 신뢰도와 효율성을 한층 높일 수 있도록 하기 위한 생성형 AI 기반 공공기관 경영실적 평가보고서 지적사항 문장 추출 및 분류 자동화 시스템 및 그 방법에 관한 것이다.",
+        "IPC": "G06Q 10/0639|G06Q 10/10|G06F 16/334|G06F 16/3332|G06F 16/35|G06F 40/205|G06F 40/30|G06F 18/10|G06N 3/0475",
+        "CPC": "",
+        "relevance_type": "general_ai",
+        "match_confidence": 0.45,
+        "search_alias": "EAES",
+        "search_type": "AI 특허 [일반]",
+        "search_query": "AP=[EAES]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
+        "status": "verified"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "에이서, EAES",
+    "model_param": "ANV16S-41-R9SV",
+    "ocr_result": {
+      "extracted_text": "에이서 니트로 V 16s Al ANVI6S-41-RgSV (SSD ITB) Gmarket 1,589,650원 무료배승 최저가 구매하기 가격비교 39 상품 상세정보 의견리뷰 15 연관상품 무게 21kg 운명제제(OS) OS미I포함(프리도스) 판매유형 구성변경상품 [화면] 화면 비율 1610 해상도 1920x1200(WUXGA) sRGB 10096 주사물 18OHz 밝기 4OOnit 패널 종류 IPS 디스플레이 특징 광시야각 SYNC [CPU] CPU 제조사 AMD CPU 세분류 라이젠7(Zen4) CPU 코드명 호크포인트 CPU 넘버 260 (51GHz) CPU 코이 욕타(8) 코이 CPU 스레드 16스레드 NPU 종류 AMD 라이젠 Al NPU 16TOPS [그래픽] GPU 종류 외장그래픽 GPU 제조사 엔비디야 GPU 집셋 RTX5O5O GPU 메모리 VRAM: 8GB GPU TOPS 440 Al TOPS TGP 70W 게임 관련 기능 MUX 스위치 [구성] 댐 타입 DDR5 16GB",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\에이서 니트로 V 16S AI ANV16S-41-R9SV (SSD 1TB)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

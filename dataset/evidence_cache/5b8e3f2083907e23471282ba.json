@@ -1,0 +1,150 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=122715471",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "샤크닌자 샤크 파워클린 BU3641KR",
+      "name": "샤크닌자 샤크 파워클린 BU3641KR",
+      "description": "",
+      "ocr_text": "사크난자 사크 파위클린 BU3641KR AUCTION 567,690원   무료배승 최저가 구매하기 가격비교 32 상품 상세정보 의견리뷰 72 연관상품 사용시간 45분(최대) 스테이선 먼지비움 랜드거지 청소기능 시청소 LED라이트 싸이클론급인 배터리 충전시간 4시간30분 배터리종류 리듬이온 배티리용탕 2,35OmAh 전합 21.6V 메인터러쉬 전방향회전 추가e러쉬 쓸널러쉬 틈새부러쉬 편의기능 배티리잔랑표시 색상 화이트 무게 2.3kg [@ 인종 적합성평가인승 R-R-sn8-BU3641KR 인증번호 확인 안전확인인승 XU101439-24070 [인종번호 확인",
+      "specs": {
+        "핸디스틱청소기": "지원",
+        "무선": "지원",
+        "흡입전용": "지원",
+        "스테이션": "먼지비움 , 스탠드거치 , 충전",
+        "싸이클론흡입": "지원",
+        "AI청소": "지원",
+        "LED라이트": "지원",
+        "[흡입구] 전방향회전": "지원",
+        "추가브러쉬": "솔브러쉬 , 틈새브러쉬",
+        "[색상/크기] 색상": "화이트",
+        "무게": "2.3kg",
+        "크기(가로x세로x깊이)": "260x1080x321mm"
+      },
+      "raw_specs": "핸디스틱청소기 / 무선 / 흡입전용 / 스테이션 : 먼지비움 , 스탠드거치 , 충전 / 싸이클론흡입 / AI청소 / LED라이트 / [흡입구] 전방향회전 / 추가브러쉬 : 솔브러쉬 , 틈새브러쉬 / [색상/크기] 색상 : 화이트 / 무게 : 2.3kg / 크기(가로x세로x깊이): 260x1080x321mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=122715471",
+      "manufacturer": "샤크닌자, Sharkninja",
+      "model_name": "BU3641KR"
+    },
+    "norm_info": {
+      "company_name": "샤크닌자, Sharkninja",
+      "model_name": "BU3641KR",
+      "product_name": "샤크닌자 샤크 파워클린 BU3641KR"
+    },
+    "db_results": [
+      {
+        "company_name": "SharkNinja Operating LLC",
+        "equip_name": "Vacuum Cleaner",
+        "model_name": "BU3641KR",
+        "country": "중국",
+        "cert_date": "2025-12-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-sn8-BU3641KR"
+      },
+      {
+        "company_name": "SharkNinja Operating LLC",
+        "equip_name": "Foodi Cooker (Pressure Cooker/Air Fryer)",
+        "model_name": "OP300KR",
+        "country": "미국",
+        "cert_date": "2019-03-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-sn8-OP300KR"
+      },
+      {
+        "company_name": "SharkNinja Operating LLC",
+        "equip_name": "Hair Dryer",
+        "model_name": "HD331KR",
+        "country": "중국",
+        "cert_date": "2023-07-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-sn8-HD331KR"
+      },
+      {
+        "company_name": "SharkNinja Operating LLC",
+        "equip_name": "Air Fryer",
+        "model_name": "AG551KR",
+        "country": "중국",
+        "cert_date": "2023-06-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-sn8-AG551KR"
+      },
+      {
+        "company_name": "SharkNinja Operating LLC",
+        "equip_name": "Hair Dryer",
+        "model_name": "HD415SLKR",
+        "country": "중국",
+        "cert_date": "2023-03-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-sn8-HD415SLKR"
+      },
+      {
+        "company_name": "SharkNinja Operating LLC",
+        "equip_name": "Air Fryer",
+        "model_name": "AG301KR",
+        "country": "중국",
+        "cert_date": "2023-01-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-sn8-AG301KR"
+      },
+      {
+        "company_name": "SharkNinja Operating LLC",
+        "equip_name": "Oven Air Fryer",
+        "model_name": "SFP701KR",
+        "country": "중국",
+        "cert_date": "2024-07-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-sn8-SFP701KR"
+      },
+      {
+        "company_name": "SharkNinja Operating LLC",
+        "equip_name": "Air Fryer",
+        "model_name": "FN100KRGN1",
+        "country": "중국",
+        "cert_date": "2025-11-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-sn8-FN100KRGN1"
+      },
+      {
+        "company_name": "SharkNinja Operating LLC",
+        "equip_name": "Air Fryer",
+        "model_name": "SL300KR",
+        "country": "중국",
+        "cert_date": "2025-09-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-sn8-SL300KR"
+      },
+      {
+        "company_name": "SharkNinja Operating LLC",
+        "equip_name": "STAINFORCE",
+        "model_name": "HX100KR",
+        "country": "중국",
+        "cert_date": "2025-08-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-sn8-HX100KR"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "샤크닌자, Sharkninja",
+    "model_param": "BU3641KR",
+    "ocr_result": {
+      "extracted_text": "사크난자 사크 파위클린 BU3641KR AUCTION 567,690원   무료배승 최저가 구매하기 가격비교 32 상품 상세정보 의견리뷰 72 연관상품 사용시간 45분(최대) 스테이선 먼지비움 랜드거지 청소기능 시청소 LED라이트 싸이클론급인 배터리 충전시간 4시간30분 배터리종류 리듬이온 배티리용탕 2,35OmAh 전합 21.6V 메인터러쉬 전방향회전 추가e러쉬 쓸널러쉬 틈새부러쉬 편의기능 배티리잔랑표시 색상 화이트 무게 2.3kg [@ 인종 적합성평가인승 R-R-sn8-BU3641KR 인증번호 확인 안전확인인승 XU101439-24070 [인종번호 확인",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\샤크닌자 샤크 파워클린 BU3641KR\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

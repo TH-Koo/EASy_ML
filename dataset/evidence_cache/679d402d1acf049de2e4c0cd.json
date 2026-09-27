@@ -1,0 +1,361 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=30228695",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "인포마크 네이버 클로바 클락+ 2세대 NL-S800KRL",
+      "name": "인포마크 네이버 클로바 클락+ 2세대 NL-S800KRL",
+      "description": "",
+      "ocr_text": "인포마크 네이버 홀로바 콜락+ 2세대 NL-S8OOKRL Gmarket 141,000원 4,000원 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 전원 ACIDC전원 형다 탁상형 사운드출력 5W 플루투스버전 불루투스 V5.0 불루투스프로파일 AVRCP A2DP 네트위크 Wi-Fi 멀티미디어 시계 알람 외관특징 화면 편의기능 음심비서내장 리모권 음싱안내 (한국이) 연결상대표시 내장 음성비서 킬로바 인식가능언어 한국이인식 음성제어기능 loT연놈 교통정보",
+      "specs": {
+        "AI스피커": "지원",
+        "AC/DC전원": "지원",
+        "5W": "지원",
+        "블루투스 v5.0": "지원",
+        "Wi-Fi": "지원",
+        "시계": "지원",
+        "알람": "지원",
+        "화면": "지원",
+        "음성비서내장": "지원",
+        "리모컨": "지원",
+        "음성안내(한국어)": "지원",
+        "연결상태표시": "지원",
+        "한국어인식": "지원",
+        "무게": "460g",
+        "색상": "화이트",
+        "크기(가로x세로x깊이)": "166x87.5x81mm"
+      },
+      "raw_specs": "AI스피커 / AC/DC전원 / 5W / 블루투스 v5.0 / Wi-Fi / 시계 / 알람 / 화면 / 음성비서내장 / 리모컨 / 음성안내(한국어) / 연결상태표시 / 한국어인식 / 무게 : 460g / 색상 : 화이트 / 크기(가로x세로x깊이): 166x87.5x81mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=30228695",
+      "manufacturer": "인포마크, Infomation",
+      "model_name": "NL-S800KRL"
+    },
+    "norm_info": {
+      "company_name": "인포마크, Infomation",
+      "model_name": "NL-S800KRL",
+      "product_name": "인포마크 네이버 클로바 클락+ 2세대 NL-S800KRL"
+    },
+    "db_results": [
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "NL-S800KRL",
+        "country": "한국",
+        "cert_date": "2021-07-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-IMW-NL-S800KRL"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "IF-S1100",
+        "country": "한국",
+        "cert_date": "2020-01-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-IMW-IF-S1100"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(기타)",
+        "model_name": "IML-M3200",
+        "country": "한국",
+        "cert_date": "2019-05-15",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-IMW-IML-M3200"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "IF-S1000U",
+        "country": "한국",
+        "cert_date": "2019-04-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-IMW-IF-S1000U"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "NL-S300KRL",
+        "country": "한국",
+        "cert_date": "2019-04-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-IMW-NL-S300KRL"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "IML-C6000W",
+        "country": "한국",
+        "cert_date": "2020-12-29",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-IMW-IML-C6000W"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(기타)",
+        "model_name": "LM-M600",
+        "country": "한국",
+        "cert_date": "2020-05-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-IMW-LM-M600"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "NL-S700KRL",
+        "country": "한국",
+        "cert_date": "2020-04-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-IMW-NL-S700KRL"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "NL-E100KR",
+        "country": "중국",
+        "cert_date": "2020-04-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-IMW-NL-E100KR"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(기타)",
+        "model_name": "IMV-D100SL",
+        "country": "한국",
+        "cert_date": "2020-02-28",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-IMW-IMV-D100SL"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
+        "model_name": "GLM-200",
+        "country": "한국",
+        "cert_date": "2019-05-31",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-IMW-GLM-200"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "AI speaker with +8”LCD",
+        "model_name": "IF-H1100",
+        "country": "중국",
+        "cert_date": "2021-12-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-IMW-IF-H1100"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(28 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "IML-C6200",
+        "country": "한국",
+        "cert_date": "2021-09-14",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-IMW-IML-C6200"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "NL-V200KR",
+        "country": "한국",
+        "cert_date": "2021-07-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-IMW-NL-V200KR"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "NL-S900KRL",
+        "country": "한국",
+        "cert_date": "2022-11-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-IMW-NL-S900KRL"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "IF-W580S",
+        "country": "한국",
+        "cert_date": "2022-07-12",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-IMW-IF-W580S"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "IF-MKT400_IOT",
+        "country": "한국",
+        "cert_date": "2023-02-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-IMW-IF-MKT400IOT"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DO01",
+        "country": "중국",
+        "cert_date": "2016-12-16",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMI-IMW-DO01"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
+        "model_name": "IML540",
+        "country": "한국",
+        "cert_date": "2019-07-15",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-IMW-IML540"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "NL-V100KR",
+        "country": "한국",
+        "cert_date": "2018-02-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-IMW-NL-V100KR"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(기타)",
+        "model_name": "IML-M3010",
+        "country": "한국",
+        "cert_date": "2018-03-15",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-IMW-IML-M3010"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "NL-S200KR",
+        "country": "한국",
+        "cert_date": "2018-04-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-IMW-NL-S200KR"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
+        "model_name": "IML520",
+        "country": "한국",
+        "cert_date": "2018-08-24",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-IMW-IML520"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
+        "model_name": "IML-F400S",
+        "country": "한국",
+        "cert_date": "2017-05-25",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-IMW-IML-F400S"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
+        "model_name": "IML500",
+        "country": "한국",
+        "cert_date": "2017-06-01",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-IMW-IML500"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "NL-S100KR",
+        "country": "한국",
+        "cert_date": "2017-09-18",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRM-IMW-NL-S100KR"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
+        "model_name": "IML-C5000W",
+        "country": "한국",
+        "cert_date": "2017-10-13",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-IMW-IML-C5000W"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
+        "model_name": "IML450",
+        "country": "한국",
+        "cert_date": "2016-04-11",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-IMW-IML450"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
+        "model_name": "IF-W520S",
+        "country": "한국",
+        "cert_date": "2016-09-06",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRM-IMW-IF-W520S"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
+        "model_name": "IML460",
+        "country": "한국",
+        "cert_date": "2016-10-18",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-IMW-IML460"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(기타)",
+        "model_name": "IML-M3000",
+        "country": "한국",
+        "cert_date": "2016-11-04",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRM-IMW-IML-M3000"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SE01",
+        "country": "중국",
+        "cert_date": "2016-12-02",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMI-IMW-SE01"
+      },
+      {
+        "company_name": "(주)인포마크",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DA01",
+        "country": "중국",
+        "cert_date": "2016-12-16",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMI-IMW-DA01"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "인포마크, Infomation",
+    "model_param": "NL-S800KRL",
+    "ocr_result": {
+      "extracted_text": "인포마크 네이버 홀로바 콜락+ 2세대 NL-S8OOKRL Gmarket 141,000원 4,000원 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 전원 ACIDC전원 형다 탁상형 사운드출력 5W 플루투스버전 불루투스 V5.0 불루투스프로파일 AVRCP A2DP 네트위크 Wi-Fi 멀티미디어 시계 알람 외관특징 화면 편의기능 음심비서내장 리모권 음싱안내 (한국이) 연결상대표시 내장 음성비서 킬로바 인식가능언어 한국이인식 음성제어기능 loT연놈 교통정보",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\인포마크 네이버 클로바 클락+ 2세대 NL-S800KRL\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

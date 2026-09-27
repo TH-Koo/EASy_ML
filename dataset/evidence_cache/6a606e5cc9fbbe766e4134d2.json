@@ -1,0 +1,56 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=54315752",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "하이디 이어클립 블루투스 이어폰 ai-ear300 (정품)",
+      "name": "하이디 이어클립 블루투스 이어폰 ai-ear300 (정품)",
+      "description": "",
+      "ocr_text": "하이디 이어클립 불루투스 이어론 ai-ear30o (정품) coupang 18,320원 방 위무료 최저가 구매하기 가격비교 60 상품 상세정보 의견리뷰 연관상품 외형 이이클립형 용도 음악+통화용 무선연결 불무투스 V5.4 사운드채널 스데레오 주파수 2OHz~2OkHz 무선연결거리 iOm 1회충전시 5시간 최대재생 20시간 증전시간 3시간 배티리용량 3OmnAh 충전테이스 23OmAh 테이스중전횟스 스회 충전 USB-C 편의기능 배터리진랑표시(숫 음싱안내 권트론 재생- 멈충조설 불름조설 버든 연결기능 오토페이림",
+      "specs": {
+        "오픈이어형": "지원",
+        "이어클립형": "지원",
+        "블루투스 v5.4": "지원",
+        "[기능] [사운드] 20Hz~20kHz": "지원",
+        "1회충전시": "5시간",
+        "최대재생": "20시간",
+        "충전": "USB-C",
+        "[부가] 편의기능": "음성안내 , 배터리잔량표시(숫자)",
+        "생활방수": "지원"
+      },
+      "raw_specs": "오픈이어형 / 이어클립형 / 블루투스 v5.4 / [기능] [사운드] 20Hz~20kHz / 1회충전시 : 5시간 / 최대재생 : 20시간 / 충전 : USB-C / [부가] 편의기능 : 음성안내 , 배터리잔량표시(숫자) / 생활방수",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=54315752",
+      "manufacturer": "ハイディ, Hi-Di",
+      "model_name": "AI-ear300"
+    },
+    "norm_info": {
+      "company_name": "ハイディ, Hi-Di",
+      "model_name": "AI-ear300",
+      "product_name": "하이디 이어클립 블루투스 이어폰 ai-ear300 (정품)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "ハイディ, Hi-Di",
+    "model_param": "AI-ear300",
+    "ocr_result": {
+      "extracted_text": "하이디 이어클립 불루투스 이어론 ai-ear30o (정품) coupang 18,320원 방 위무료 최저가 구매하기 가격비교 60 상품 상세정보 의견리뷰 연관상품 외형 이이클립형 용도 음악+통화용 무선연결 불무투스 V5.4 사운드채널 스데레오 주파수 2OHz~2OkHz 무선연결거리 iOm 1회충전시 5시간 최대재생 20시간 증전시간 3시간 배티리용량 3OmnAh 충전테이스 23OmAh 테이스중전횟스 스회 충전 USB-C 편의기능 배터리진랑표시(숫 음싱안내 권트론 재생- 멈충조설 불름조설 버든 연결기능 오토페이림",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\하이디 이어클립 블루투스 이어폰 ai-ear300 (정품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

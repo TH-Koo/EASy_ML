@@ -1,0 +1,557 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=78177962",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "LG전자 QNED AI 75QNED65ABA (스탠드)",
+      "name": "LG전자 QNED AI 75QNED65ABA (스탠드)",
+      "description": "",
+      "ocr_text": "LG전자 QNED Al 75QNED65ABA (스랜드) 1L> 1,208,900원 무료배송 최저가 구매하기 가격비교 494 상품 상세정보 의견리뷰 766 뉴스커유니티 연관상품 디스플레이 QNED 해상도 4K UHD 주사물 6OHz 디망방식 로걸디망+FALD 에너지효물 1등금 소비전력 205W 년형 2025년형 프로세서 알다7 4KAl Gen8 시화질 A밝기조설 시장로맛중화면 화질 4K업스레일림 장르맛출화면 필름데이커모드 HDR HDRIO HLG 색표현인증 걸러블룹 1009이1상 DCI-P3 939이1삼 WCG 게임 VRR(6OHz) ALLM HGIG 게믿도드 OS OS 25 스마트 넷플렉스 유특부",
+      "specs": {
+        "QNED TV": "지원",
+        "75인치(189cm)": "지원",
+        "4K UHD": "지원",
+        "주사율": "60Hz",
+        "에너지효율": "1등급",
+        "2025년형": "지원",
+        "[화질] HDR10": "지원",
+        "HLG": "지원",
+        "VRR(60Hz)": "지원",
+        "ALLM": "지원",
+        "HGIG": "지원",
+        "게임모드": "지원",
+        "[스마트] 넷플릭스": "지원",
+        "유튜브": "지원",
+        "미러링": "지원",
+        "AI음성인식": "지원",
+        "AI스마트홈": "지원",
+        "AI콘텐츠추천": "지원",
+        "AI스마트도우미": "지원",
+        "AI실시간번역": "지원",
+        "AI에너지절약모드": "지원",
+        "[규격] HDMI(전체)": "2개",
+        "베사홀": "400x300mm",
+        "크기(가로x세로x깊이)": "1677x965(1032)x31(359)mm",
+        "무게": "33.0(34.0)kg",
+        "일반 리모컨": "지원",
+        "출시가": "3,200,000원"
+      },
+      "raw_specs": "QNED TV / 75인치(189cm) / 4K UHD / 주사율 : 60Hz / 에너지효율 : 1등급 / 2025년형 / [화질] HDR10 / HLG / VRR(60Hz) / ALLM / HGIG / 게임모드 / [스마트] 넷플릭스 / 유튜브 / 미러링 / AI음성인식 / AI스마트홈 / AI콘텐츠추천 / AI스마트도우미 / AI실시간번역 / AI에너지절약모드 / [규격] HDMI(전체) : 2개 / 베사홀 : 400x300mm / 크기(가로x세로x깊이) : 1677x965(1032)x31(359)mm / 무게 : 33.0(34.0)kg / 일반 리모컨 / 출시가: 3,200,000원",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=78177962",
+      "manufacturer": "엘지전자,LG전자",
+      "model_name": "75QNED65ABA"
+    },
+    "norm_info": {
+      "company_name": "엘지전자,LG전자",
+      "model_name": "75QNED65ABA",
+      "product_name": "LG전자 QNED AI 75QNED65ABA (스탠드)"
+    },
+    "db_results": [
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED70BKA",
+        "country": "한국",
+        "cert_date": "2026-01-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED70BKA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED80KRA",
+        "country": "한국",
+        "cert_date": "2022-11-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED80KRA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED99KPA",
+        "country": "한국",
+        "cert_date": "2021-03-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED99KPA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED90KPA",
+        "country": "한국",
+        "cert_date": "2021-03-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED90KPA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED95KPA",
+        "country": "한국",
+        "cert_date": "2021-04-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED95KPA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED7SKQA",
+        "country": "한국",
+        "cert_date": "2022-07-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED7SKQA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED91TKA",
+        "country": "한국",
+        "cert_date": "2023-11-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED91TKA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED85TKA",
+        "country": "한국",
+        "cert_date": "2023-11-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED85TKA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED80TKA",
+        "country": "한국",
+        "cert_date": "2023-10-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED80TKA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED90KQA",
+        "country": "한국",
+        "cert_date": "2021-11-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED90KQA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED80KQA",
+        "country": "한국",
+        "cert_date": "2021-12-09",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED80KQA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED95KQA",
+        "country": "한국",
+        "cert_date": "2021-12-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED95KQA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED99KQA",
+        "country": "한국",
+        "cert_date": "2021-12-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED99KQA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED75KRA",
+        "country": "한국",
+        "cert_date": "2023-04-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED75KRA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED85KRA",
+        "country": "한국",
+        "cert_date": "2023-01-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED85KRA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED65ABA",
+        "country": "한국",
+        "cert_date": "2024-12-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED65ABA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED9MAKB",
+        "country": "한국",
+        "cert_date": "2024-12-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED9MAKB"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED80AKA",
+        "country": "한국",
+        "cert_date": "2024-09-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED80AKA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED65TBA",
+        "country": "한국",
+        "cert_date": "2024-06-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED65TBA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED99TKB",
+        "country": "한국",
+        "cert_date": "2024-01-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED99TKB"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED80BEA",
+        "country": "한국",
+        "cert_date": "2025-12-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED80BEA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED86BKA",
+        "country": "한국",
+        "cert_date": "2025-11-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED86BKA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED92AKA",
+        "country": "중국",
+        "cert_date": "2025-05-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED92AKA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED82AKA",
+        "country": "한국",
+        "cert_date": "2025-06-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED82AKA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED82BKA",
+        "country": "한국",
+        "cert_date": "2026-01-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED82BKA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED70AEA",
+        "country": "한국",
+        "cert_date": "2025-06-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED70AEA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED85AKS",
+        "country": "한국",
+        "cert_date": "2025-03-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED85AKS"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "75QNED93AKA",
+        "country": "중국",
+        "cert_date": "2025-03-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-75QNED93AKA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PM22GN",
+        "country": "한국",
+        "cert_date": "2021-08-03",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-PM22GN"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력무선기기(무선데이터통신 시스템용기기)",
+        "model_name": "LCB-003",
+        "country": "한국",
+        "cert_date": "2021-06-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-LCB-003"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TONE-TFP5",
+        "country": "베트남",
+        "cert_date": "2021-06-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TONE-TFP5"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TONE-TFP9C",
+        "country": "베트남",
+        "cert_date": "2021-06-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TONE-TFP9C"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TONE-TFP9",
+        "country": "베트남",
+        "cert_date": "2021-06-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TONE-TFP9"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "LGSBT12",
+        "country": "인도네시아",
+        "cert_date": "2021-06-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-LGSBT12"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR22GN",
+        "country": "한국",
+        "cert_date": "2021-06-30",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-MR22GN"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR22GA",
+        "country": "한국",
+        "cert_date": "2021-06-30",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-MR22GA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MTVWBE01GLX",
+        "country": "베트남",
+        "cert_date": "2021-07-06",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-MTVWBE01GLX"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HBS-PL6S",
+        "country": "베트남",
+        "cert_date": "2019-05-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-HBS-PL6S"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SPH4BM-W",
+        "country": "중국",
+        "cert_date": "2021-07-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-DMSPH4BM-W"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "LGSBWAC22",
+        "country": "인도네시아",
+        "cert_date": "2021-07-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-LGSBWAC22"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "LCWB-002",
+        "country": "인도네시아",
+        "cert_date": "2021-08-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-LCWB-002"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "I17S",
+        "country": "베트남",
+        "cert_date": "2019-04-30",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-I17S"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "WB1NP9",
+        "country": "한국",
+        "cert_date": "2019-05-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-WB1NP9"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MB8811QD",
+        "country": "한국",
+        "cert_date": "2021-10-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-MB8811QD"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기 (무선데이터통신시스템용 무선기기)",
+        "model_name": "TONE-TFP6",
+        "country": "베트남",
+        "cert_date": "2021-10-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TONE-TFP6"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TONE-TFP3",
+        "country": "베트남",
+        "cert_date": "2021-09-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TONE-TFP3"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR22GJ",
+        "country": "한국",
+        "cert_date": "2021-08-03",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-MR22GJ"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "14HQ901G",
+        "country": "한국",
+        "cert_date": "2021-07-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-14HQ901G"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(기타)",
+        "model_name": "LW-9880",
+        "country": "한국",
+        "cert_date": "2021-05-31",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-LW-9880"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SPN5BM-W",
+        "country": "중국",
+        "cert_date": "2021-07-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-DMSPN5BM-W"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [
+      {
+        "id": 13208,
+        "cert_type": "녹색기술제품",
+        "cert_no": "GTP-23-03812",
+        "product_name": "소비전력 절감형 모니터",
+        "company_name": "엘지전자주식회사",
+        "biz_no": "1078614075",
+        "representative": "조주완",
+        "cert_date": "2023-09-14",
+        "expire_date": "2026-09-13"
+      },
+      {
+        "id": 29277,
+        "cert_type": "녹색기술제품",
+        "cert_no": "GTP-23-03812",
+        "product_name": "소비전력 절감형 모니터",
+        "company_name": "엘지전자주식회사",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2023-09-14",
+        "expire_date": null
+      }
+    ],
+    "dart_result": {
+      "status": "AI 핵심 역량 미흡 (워싱 의심)",
+      "total_score": 20,
+      "evidence": [
+        "📦 [AI 제품적용] Y LG전자 비하이스마트지역혁신 투자조합 단순투자 - - - - -",
+        "📦 [AI 제품적용] Y LG전자 인공지능연구원 단순투자 - - - -",
+        "📦 [AI 제품적용] 131 Y LG전자 LG-LHT Aircraft Solutions GmbH 경영참여 - - - - - - -"
+      ],
+      "detail": "DART 분석 결과 [LG전자] 실적 총 3건 확인."
+    },
+    "target_company_name": "엘지전자,LG전자",
+    "model_param": "75QNED65ABA",
+    "ocr_result": {
+      "extracted_text": "LG전자 QNED Al 75QNED65ABA (스랜드) 1L> 1,208,900원 무료배송 최저가 구매하기 가격비교 494 상품 상세정보 의견리뷰 766 뉴스커유니티 연관상품 디스플레이 QNED 해상도 4K UHD 주사물 6OHz 디망방식 로걸디망+FALD 에너지효물 1등금 소비전력 205W 년형 2025년형 프로세서 알다7 4KAl Gen8 시화질 A밝기조설 시장로맛중화면 화질 4K업스레일림 장르맛출화면 필름데이커모드 HDR HDRIO HLG 색표현인증 걸러블룹 1009이1상 DCI-P3 939이1삼 WCG 게임 VRR(6OHz) ALLM HGIG 게믿도드 OS OS 25 스마트 넷플렉스 유특부",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\LG전자 QNED AI 75QNED65ABA (스탠드)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

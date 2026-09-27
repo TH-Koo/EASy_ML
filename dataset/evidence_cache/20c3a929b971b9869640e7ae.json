@@ -1,0 +1,63 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=101189195",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "클래파 BVC-H38",
+      "name": "클래파 BVC-H38",
+      "description": "",
+      "ocr_text": "불래파 BVC-H38 coupang 121,600원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 집입력(Pa) 38,OOOPa 사용시간 1시간(최대) 소비전력 38ow 스테이선 충전 맨드거지 액세서리요배터리거 청소기능 시청소 먼지감지센서 LED라이트 모티 BLDC모티 필터 테파필터 테파필터등금 H12금 배터리 충전시간 5시간 배터리종류 리롭이온 배티리용량 15,40omAh 전압 25.9V 메인터러쉬 일반 추가브러쉬 틈사 널러쉬 색상 화이트 무게 1.Okg [@ 인종 적합성평가인층 R-R-BFB-NVC-YOI 인공번호 6인",
+      "specs": {
+        "핸디스틱청소기": "지원",
+        "무선": "지원",
+        "흡입전용": "지원",
+        "BLDC모터": "지원",
+        "흡입력": "38,000Pa",
+        "헤파필터": "지원",
+        "스테이션": "충전 , 스탠드거치 , 액세서리&배터리거치",
+        "AI청소": "지원",
+        "먼지감지센서": "지원",
+        "LED라이트": "지원",
+        "[흡입구] 일반": "지원",
+        "롤러": "지원",
+        "추가브러쉬": "틈새브러쉬",
+        "[색상/크기] 색상": "화이트",
+        "무게": "1.0kg",
+        "크기(가로x세로x깊이)": "255x1120x218mm"
+      },
+      "raw_specs": "핸디스틱청소기 / 무선 / 흡입전용 / BLDC모터 / 흡입력 : 38,000Pa / 헤파필터 / 스테이션 : 충전 , 스탠드거치 , 액세서리&배터리거치 / AI청소 / 먼지감지센서 / LED라이트 / [흡입구] 일반 / 롤러 / 추가브러쉬 : 틈새브러쉬 / [색상/크기] 색상 : 화이트 / 무게 : 1.0kg / 크기(가로x세로x깊이): 255x1120x218mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=101189195",
+      "manufacturer": "클래파, Clapa",
+      "model_name": "BVC-H38"
+    },
+    "norm_info": {
+      "company_name": "클래파, Clapa",
+      "model_name": "BVC-H38",
+      "product_name": "클래파 BVC-H38"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "클래파, Clapa",
+    "model_param": "BVC-H38",
+    "ocr_result": {
+      "extracted_text": "불래파 BVC-H38 coupang 121,600원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 집입력(Pa) 38,OOOPa 사용시간 1시간(최대) 소비전력 38ow 스테이선 충전 맨드거지 액세서리요배터리거 청소기능 시청소 먼지감지센서 LED라이트 모티 BLDC모티 필터 테파필터 테파필터등금 H12금 배터리 충전시간 5시간 배터리종류 리롭이온 배티리용량 15,40omAh 전압 25.9V 메인터러쉬 일반 추가브러쉬 틈사 널러쉬 색상 화이트 무게 1.Okg [@ 인종 적합성평가인층 R-R-BFB-NVC-YOI 인공번호 6인",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\클래파 BVC-H38\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

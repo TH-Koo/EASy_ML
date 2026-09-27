@@ -1,0 +1,220 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=106045562",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "이그닉 비와이 프로 32Y 8600 IG-BYA32001 (16GB, M.2 256GB)",
+      "name": "이그닉 비와이 프로 32Y 8600 IG-BYA32001 (16GB, M.2 256GB)",
+      "description": "",
+      "ocr_text": "이그늬 비와이 프로 32Y 8600 IG-BYA32001 (16GB, M.2 256GB) #tP-Gh: 1,699,000원 3,000원 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 메인보드 침셋 (AMD) X6OO 운명제제 원도우11 CPU 제조사 AMD CPU 시리즈 라이젠 8000시리즈 CPU 종류 라이젠5-5세대 CPU 코드명 피녁스 군이 개수 핵사(6) 코이 NPU 종류 AMD 라이젠 Al NPU TOPS 16ToPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M.2 SSD 용량 256GB 그래픽 제조사 AMD 그래픽 종류 내잠 그래픽 디스플레이 화면크기 80.o1cm(31.5인치) 디스플레이 특징 광시아각 피넷(회전) 엘리베이선 (눈낮이) 스위블(좌우) 빌드(상하) 사운드 출력 사운드 지원 스피커 너장형 네트위크",
+      "specs": {
+        "8600G": "지원",
+        "760M": "지원",
+        "(AMD) X600": "지원",
+        "윈도우11": "지원",
+        "AMD": "지원",
+        "라이젠 8000시리즈": "지원",
+        "라이젠5": "지원",
+        "피닉스": "지원",
+        "AMD 라이젠 AI": "지원",
+        "16TOPS": "지원",
+        "DDR5": "지원",
+        "16GB": "지원",
+        "M.2": "지원",
+        "256GB": "지원",
+        "화면크기": "80.01cm(31.5인치)",
+        "광시야각": "지원",
+        "피벗(회전)": "지원",
+        "엘리베이션(높낮이)": "지원",
+        "스위블(좌우)": "지원",
+        "틸트(상하)": "지원",
+        "스피커 내장형": "지원",
+        "1Gbps 유선": "지원",
+        "802.11ax(Wi-Fi 6E) 무선": "지원",
+        "블루투스": "지원",
+        "DC": "지원",
+        "일체형": "지원",
+        "13.1kg": "지원",
+        "용도": "사무/인강용"
+      },
+      "raw_specs": "8600G / 760M / (AMD) X600 / 윈도우11 / AMD / 라이젠 8000시리즈 / 라이젠5 / 피닉스 / AMD 라이젠 AI / 16TOPS / DDR5 / 16GB / M.2 / 256GB / AMD / 화면크기 : 80.01cm(31.5인치) / 광시야각 / 피벗(회전) / 엘리베이션(높낮이) / 스위블(좌우) / 틸트(상하) / 스피커 내장형 / 1Gbps 유선 / 802.11ax(Wi-Fi 6E) 무선 / 블루투스 / DC / 일체형 / 13.1kg / 용도 : 사무/인강용",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=106045562",
+      "manufacturer": "이그닉,  E'snic",
+      "model_name": "IG-BYA32001"
+    },
+    "norm_info": {
+      "company_name": "이그닉,  E'snic",
+      "model_name": "IG-BYA32001",
+      "product_name": "이그닉 비와이 프로 32Y 8600 IG-BYA32001 (16GB, M.2 256GB)"
+    },
+    "db_results": [
+      {
+        "company_name": "이그닉 주식회사",
+        "equip_name": "일체형 PC",
+        "model_name": "IG-BYA23801",
+        "country": "한국",
+        "cert_date": "2019-04-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ign-BY24"
+      },
+      {
+        "company_name": "이그닉 주식회사",
+        "equip_name": "노트북",
+        "model_name": "IG-BYB14001",
+        "country": "중국",
+        "cert_date": "2021-03-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ign-IG-BYB14001"
+      },
+      {
+        "company_name": "이그닉 주식회사",
+        "equip_name": "일체형 컴퓨터",
+        "model_name": "IG-BYA27002",
+        "country": "중국",
+        "cert_date": "2022-11-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ign-IG-BYA27002"
+      },
+      {
+        "company_name": "이그닉 주식회사",
+        "equip_name": "일체형 컴퓨터",
+        "model_name": "IG-BYA27003",
+        "country": "중국",
+        "cert_date": "2022-11-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ign-IG-BYA27003"
+      },
+      {
+        "company_name": "이그닉 주식회사",
+        "equip_name": "일체형 컴퓨터",
+        "model_name": "IG-BYA23804",
+        "country": "중국",
+        "cert_date": "2022-07-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ign-IG-BYA23804"
+      },
+      {
+        "company_name": "이그닉 주식회사",
+        "equip_name": "일체형 컴퓨터",
+        "model_name": "IG-BYA27001",
+        "country": "중국",
+        "cert_date": "2022-05-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ign-IG-BYA27001"
+      },
+      {
+        "company_name": "이그닉 주식회사",
+        "equip_name": "일체형 컴퓨터",
+        "model_name": "IG-BYA29501",
+        "country": "중국",
+        "cert_date": "2022-02-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ign-IG-BYA29501"
+      },
+      {
+        "company_name": "이그닉 주식회사",
+        "equip_name": "일체형 컴퓨터",
+        "model_name": "IG-BYA23803",
+        "country": "중국",
+        "cert_date": "2022-02-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ign-IG-BYA23803"
+      },
+      {
+        "company_name": "이그닉 주식회사",
+        "equip_name": "일체형 컴퓨터",
+        "model_name": "IG-BYA29502",
+        "country": "중국",
+        "cert_date": "2023-07-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ign-IG-BYA29502"
+      },
+      {
+        "company_name": "이그닉 주식회사",
+        "equip_name": "일체형 컴퓨터",
+        "model_name": "IG-BYA23805",
+        "country": "중국",
+        "cert_date": "2023-05-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ign-IG-BYA23805"
+      },
+      {
+        "company_name": "이그닉 주식회사",
+        "equip_name": "일체형 컴퓨터",
+        "model_name": "IG-BYA27004",
+        "country": "중국",
+        "cert_date": "2023-05-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ign-IG-BYA27004"
+      },
+      {
+        "company_name": "이그닉 주식회사",
+        "equip_name": "일체형 컴퓨터",
+        "model_name": "IG-BYA23806",
+        "country": "중국",
+        "cert_date": "2025-09-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ign-IG-BYA23806"
+      },
+      {
+        "company_name": "이그닉 주식회사",
+        "equip_name": "일체형 컴퓨터",
+        "model_name": "IG-BYA32001",
+        "country": "중국",
+        "cert_date": "2025-09-09",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ign-IG-BYA32001"
+      },
+      {
+        "company_name": "이그닉 주식회사",
+        "equip_name": "일체형 컴퓨터",
+        "model_name": "IG-BYA32002",
+        "country": "중국",
+        "cert_date": "2025-09-09",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ign-IG-BYA32002"
+      },
+      {
+        "company_name": "이그닉 주식회사",
+        "equip_name": "고양이 스마트 토이(쥐 장난감)",
+        "model_name": "KM-CST00002",
+        "country": "중국",
+        "cert_date": "2023-12-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ign-KM-CST00002"
+      },
+      {
+        "company_name": "이그닉 주식회사",
+        "equip_name": "고양이 스마트 화장실",
+        "model_name": "KM-CSL00001",
+        "country": "중국",
+        "cert_date": "2023-08-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ign-KM-CSL00001"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "이그닉,  E'snic",
+    "model_param": "IG-BYA32001",
+    "ocr_result": {
+      "extracted_text": "이그늬 비와이 프로 32Y 8600 IG-BYA32001 (16GB, M.2 256GB) #tP-Gh: 1,699,000원 3,000원 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 메인보드 침셋 (AMD) X6OO 운명제제 원도우11 CPU 제조사 AMD CPU 시리즈 라이젠 8000시리즈 CPU 종류 라이젠5-5세대 CPU 코드명 피녁스 군이 개수 핵사(6) 코이 NPU 종류 AMD 라이젠 Al NPU TOPS 16ToPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M.2 SSD 용량 256GB 그래픽 제조사 AMD 그래픽 종류 내잠 그래픽 디스플레이 화면크기 80.o1cm(31.5인치) 디스플레이 특징 광시아각 피넷(회전) 엘리베이선 (눈낮이) 스위블(좌우) 빌드(상하) 사운드 출력 사운드 지원 스피커 너장형 네트위크",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\이그닉 비와이 프로 32Y 8600 IG-BYA32001 (16GB, M.2 256GB)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

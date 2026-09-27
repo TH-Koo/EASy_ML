@@ -1,0 +1,70 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=104989550",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "GEEKOM A7 MAX 7940HS Win11Pro (16GB, SSD 1TB)",
+      "name": "GEEKOM A7 MAX 7940HS Win11Pro (16GB, SSD 1TB)",
+      "description": "",
+      "ocr_text": "GEEKOM A7 MAX 7940HS WiniiPro (16GB, SSD ITB) 지티임코리마 1,199,000원   무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 79 뉴스커유니티 23 연관상품 2026상반기 danawa HIBRAND 다음에서 보기:  Voulube 제조회사 GEEKOM (제조사 웬사이트 바로가기) 등록년원 2026년 02일 CPU 년버 7940HS 그래픽 카드 780M 운영체제 원도우1 프로 CPU 제조사 AMD CPU 시리즈 라이젠 7000시리즈 CPU 종류 라이젠9-5세대 CPU 코드명 피녁스 코이 개수 욕타(8) 크이 NPU 종류 AMD 라이젠 Al NPU TOPS 1OTOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB",
+      "specs": {
+        "7940HS": "지원",
+        "780M": "지원",
+        "윈도우11 프로": "지원",
+        "AMD": "지원",
+        "라이젠 7000시리즈": "지원",
+        "라이젠9": "지원",
+        "피닉스": "지원",
+        "AMD 라이젠 AI": "지원",
+        "10TOPS": "지원",
+        "DDR5": "지원",
+        "16GB": "지원",
+        "SSD": "지원",
+        "1TB": "지원",
+        "2.5Gbps 유선": "지원",
+        "802.11ax(Wi-Fi 6E) 무선": "지원",
+        "블루투스": "지원",
+        "듀얼랜": "지원",
+        "HDMI": "지원",
+        "USB3.x 10Gbps": "지원",
+        "USB C타입 40Gbps": "지원",
+        "DC": "지원",
+        "미니PC": "지원",
+        "용도": "사무/인강용"
+      },
+      "raw_specs": "7940HS / 780M / 윈도우11 프로 / AMD / 라이젠 7000시리즈 / 라이젠9 / 피닉스 / AMD 라이젠 AI / 10TOPS / DDR5 / 16GB / SSD / 1TB / AMD / 2.5Gbps 유선 / 802.11ax(Wi-Fi 6E) 무선 / 블루투스 / 듀얼랜 / HDMI / USB3.x 10Gbps / USB C타입 40Gbps / DC / 미니PC / 용도 : 사무/인강용",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=104989550",
+      "manufacturer": "GEEKOM, GEEKOM",
+      "model_name": "7940HS"
+    },
+    "norm_info": {
+      "company_name": "GEEKOM, GEEKOM",
+      "model_name": "7940HS",
+      "product_name": "GEEKOM A7 MAX 7940HS Win11Pro (16GB, SSD 1TB)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "GEEKOM, GEEKOM",
+    "model_param": "7940HS",
+    "ocr_result": {
+      "extracted_text": "GEEKOM A7 MAX 7940HS WiniiPro (16GB, SSD ITB) 지티임코리마 1,199,000원   무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 79 뉴스커유니티 23 연관상품 2026상반기 danawa HIBRAND 다음에서 보기:  Voulube 제조회사 GEEKOM (제조사 웬사이트 바로가기) 등록년원 2026년 02일 CPU 년버 7940HS 그래픽 카드 780M 운영체제 원도우1 프로 CPU 제조사 AMD CPU 시리즈 라이젠 7000시리즈 CPU 종류 라이젠9-5세대 CPU 코드명 피녁스 코이 개수 욕타(8) 크이 NPU 종류 AMD 라이젠 Al NPU TOPS 1OTOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\GEEKOM A7 MAX 7940HS Win11Pro (16GB, SSD 1TB)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=100691606",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "BUTTONS CLIP (정품)",
+      "name": "BUTTONS CLIP (정품)",
+      "description": "",
+      "ocr_text": "BUTTONS CLIP (정품) coupang 230,300원  무료배송 최저가 구매하기 가격비교 27 상품 상세정보 의견리뷰 연관상품 외형 이이클립형 용도 음악+통화용 무선연결 플루투스 V5.4 노이즈권트록 바람소리감소 [Al 기능] [Al 기능] Al 기능 노이즈권되랗마이 Al 실시간 번역 통역 사운드채널 스테레오 드라이버크기 유넷i2mm 무선연결거리 IOm 서라운드 360도공간음항 360도 공간음향 [배티리] [배티리] 1회중전시 5시간 최대재생 15시간 배터리용량 45mAh 충전켜이스 48OmAh 충전 USB-C",
+      "specs": {
+        "오픈이어형": "지원",
+        "이어클립형": "지원",
+        "블루투스 v5.4": "지원",
+        "[노이즈컨트롤] 바람소리감소": "지원",
+        "[AI 기능] AI 노이즈캔슬링마이크": "지원",
+        "AI 실시간 번역/통역": "지원",
+        "[사운드] 유닛": "12mm",
+        "360도 공간음향": "지원",
+        "[배터리] 1회충전시": "5시간",
+        "최대재생": "15시간",
+        "충전": "USB-C",
+        "[기능] EQ수동조절": "지원",
+        "음성명령": "지원",
+        "저지연게이밍모드": "지원",
+        "마이크특징": "빔포밍"
+      },
+      "raw_specs": "오픈이어형 / 이어클립형 / 블루투스 v5.4 / [노이즈컨트롤] 바람소리감소 / [AI 기능] AI 노이즈캔슬링마이크 / AI 실시간 번역/통역 / [사운드] 유닛:12mm / 360도 공간음향 / [배터리] 1회충전시 : 5시간 / 최대재생 : 15시간 / 충전 : USB-C / [기능] EQ수동조절 / 음성명령 / 저지연게이밍모드 / 마이크특징 : 빔포밍",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=100691606",
+      "manufacturer": "BUTTONS, Buttons",
+      "model_name": "BUTTONS CLIP (정품)"
+    },
+    "norm_info": {
+      "company_name": "BUTTONS, Buttons",
+      "model_name": "BUTTONS CLIP (정품)",
+      "product_name": "BUTTONS CLIP (정품)"
+    },
+    "db_results": [
+      {
+        "company_name": "Buttons(Shanghai) Technology Limited",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "AIRBTN10",
+        "country": "중국",
+        "cert_date": "2019-07-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Bt6-AIRBTN10"
+      },
+      {
+        "company_name": "Buttons(Shanghai) Technology Limited",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "IMBT25",
+        "country": "중국",
+        "cert_date": "2019-07-16",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-Bt6-IMBT25"
+      },
+      {
+        "company_name": "Buttons(Shanghai) Technology Limited",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "AIRBTN20",
+        "country": "중국",
+        "cert_date": "2020-10-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Bt6-AIRBTN20"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "BUTTONS, Buttons",
+    "model_param": "BUTTONS CLIP (정품)",
+    "ocr_result": {
+      "extracted_text": "BUTTONS CLIP (정품) coupang 230,300원  무료배송 최저가 구매하기 가격비교 27 상품 상세정보 의견리뷰 연관상품 외형 이이클립형 용도 음악+통화용 무선연결 플루투스 V5.4 노이즈권트록 바람소리감소 [Al 기능] [Al 기능] Al 기능 노이즈권되랗마이 Al 실시간 번역 통역 사운드채널 스테레오 드라이버크기 유넷i2mm 무선연결거리 IOm 서라운드 360도공간음항 360도 공간음향 [배티리] [배티리] 1회중전시 5시간 최대재생 15시간 배터리용량 45mAh 충전켜이스 48OmAh 충전 USB-C",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\BUTTONS CLIP (정품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

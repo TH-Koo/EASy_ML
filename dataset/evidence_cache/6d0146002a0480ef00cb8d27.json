@@ -1,0 +1,67 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=122629009",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "넥시안 360X 3채널 (64GB)",
+      "name": "넥시안 360X 3채널 (64GB)",
+      "description": "",
+      "ocr_text": "넥시안 360X 3채널 (64GB) Gmarket 793,430원   무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 카메라 수(재널) 3채널 전방 QHD(2560x1440) 패널종류 IPS패널 저장마제 Micro-SD 전원 12-24V 저장용량 64GB 센서 Sony STARVIS 2 후방 해상도 FHD(1920x1080) 안전관련기능 전방추들경고(FCW 앞자출발알림(FVSA) 신6변경알림(TLDS) 안전운전도우미 전원관련기능 주차저전력모드 배터리방전방지 녹화방식 상시녹화 스등녹화 충격감지녹화 녹화관련기능 스가드고온자단 자능포멋 Al 주차녹화 야간보점 나이드비전 GPS GPS내잠 스마트혼 연동 Wi-Fi 연결 부가기능 음션 비밀번호잠금 슬음운전방지",
+      "specs": {
+        "블랙박스": "지원",
+        "3채널": "지원",
+        "빌트인 스타일": "지원",
+        "IPS패널": "지원",
+        "전방": "QHD(2560x1440)",
+        "[후방] FHD(1920x1080)": "지원",
+        "[측면] [안전] 안전운전도우미": "지원",
+        "전방추돌경고(FCWS)": "지원",
+        "앞차출발알림(FVSA)": "지원",
+        "신호변경알림(TLDS)": "지원",
+        "[전원] 배터리방전방지": "지원",
+        "주차저전력모드": "지원",
+        "[녹화] 자동포맷": "지원",
+        "AI 주차녹화": "지원",
+        "스마트고온차단": "지원",
+        "나이트비전": "지원",
+        "[부가] GPS내장": "지원",
+        "스마트폰 연동": "Wi-Fi 연결",
+        "비밀번호잠금": "지원",
+        "졸음운전방지": "지원"
+      },
+      "raw_specs": "블랙박스 / 3채널 / 빌트인 스타일 / IPS패널 / 전방 : QHD(2560x1440) / [후방] FHD(1920x1080) / [측면] [안전] 안전운전도우미 / 전방추돌경고(FCWS) / 앞차출발알림(FVSA) / 신호변경알림(TLDS) / [전원] 배터리방전방지 / 주차저전력모드 / [녹화] 자동포맷 / AI 주차녹화 / 스마트고온차단 / 나이트비전 / [부가] GPS내장 / 스마트폰 연동 : Wi-Fi 연결 / 비밀번호잠금 / 졸음운전방지",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=122629009",
+      "manufacturer": "넥시안, Nexian",
+      "model_name": "NX360X"
+    },
+    "norm_info": {
+      "company_name": "넥시안, Nexian",
+      "model_name": "NX360X",
+      "product_name": "넥시안 360X 3채널 (64GB)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "넥시안, Nexian",
+    "model_param": "NX360X",
+    "ocr_result": {
+      "extracted_text": "넥시안 360X 3채널 (64GB) Gmarket 793,430원   무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 카메라 수(재널) 3채널 전방 QHD(2560x1440) 패널종류 IPS패널 저장마제 Micro-SD 전원 12-24V 저장용량 64GB 센서 Sony STARVIS 2 후방 해상도 FHD(1920x1080) 안전관련기능 전방추들경고(FCW 앞자출발알림(FVSA) 신6변경알림(TLDS) 안전운전도우미 전원관련기능 주차저전력모드 배터리방전방지 녹화방식 상시녹화 스등녹화 충격감지녹화 녹화관련기능 스가드고온자단 자능포멋 Al 주차녹화 야간보점 나이드비전 GPS GPS내잠 스마트혼 연동 Wi-Fi 연결 부가기능 음션 비밀번호잠금 슬음운전방지",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\넥시안 360X 3채널 (64GB)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=71155355",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "APPLE 2024 iPad mini A17 Pro 7세대 (128GB)",
+      "name": "APPLE 2024 iPad mini A17 Pro 7세대 (128GB)",
+      "description": "",
+      "ocr_text": "APPLE 2024 iPad mini A17 Pro 7세대 (128GB) Gmarket  849,890원 무료배송 최저가 구매하기 가격비교 222 상품 상세정보 의견리뷰 296 소모품|액세서리 뉴스커유니티 13 연관상품 호기심의 02 [리더십 고맙 _ 숨니다 ? Voutbe hg 제조회사 APPLE (제조사 웬사이트 바로가기) 등록년원 2024년 1밑 대불릿연결 Wi-Fi 모델명 A2996 화면크기 8.3인치 디스플레이 IPS-LCD 해상도 2266x1488 퍽설 수(ppi) 326ppi 화면비율 32 쇠대주사물 6OHz 색감 DCI-P3 쇠대밝기 50Onits 8GB 용탕 128GB 외장데모리 ricroSD미지원 프로세서 A17 Pro 군이 개수 67이 GPU Apple GPU 5군이",
+      "specs": {
+        "태블릿PC": "지원",
+        "Wi-Fi": "지원",
+        "8.3인치": "지원",
+        "IPS-LCD": "지원",
+        "60Hz": "지원",
+        "500nits": "지원",
+        "램": "8GB",
+        "용량": "128GB",
+        "microSD미지원": "지원",
+        "전용펜 별매": "지원",
+        "키보드 미지원": "지원",
+        "[프로세서/AI] A17 Pro": "지원",
+        "AP CPU": "93점",
+        "AP 게이밍": "94점",
+        "AI TOPS": "35 TOPS",
+        "[카메라] 후면카메라": "싱글",
+        "전면카메라": "싱글",
+        "스피커": "2개",
+        "[배터리] USB3.1": "지원",
+        "약 5,078mAh(19.3WH)": "지원",
+        "최대충전": "약20W",
+        "가로": "134.8mm",
+        "세로": "195.4mm",
+        "두께": "6.3mm",
+        "무게": "293g",
+        "[추천] 용도": "휴대 중심의 독서, 필기, 웹 서핑, 게임",
+        "대상": "이동형·한손 사용 선호 사용자",
+        "출시가": "749,000원"
+      },
+      "raw_specs": "태블릿PC / Wi-Fi / 8.3인치 / IPS-LCD / 60Hz / 500nits / 램 : 8GB / 용량 : 128GB / microSD미지원 / 전용펜 별매 / 키보드 미지원 / [프로세서/AI] A17 Pro / AP CPU : 93점 / AP 게이밍 : 94점 / AI TOPS : 35 TOPS / [카메라] 후면카메라 : 싱글 / 전면카메라 : 싱글 / 스피커 : 2개 / [배터리] USB3.1 / 약 5,078mAh(19.3WH) / 최대충전 : 약20W / 가로 : 134.8mm / 세로 : 195.4mm / 두께 : 6.3mm / 무게 : 293g / [추천] 용도: 휴대 중심의 독서, 필기, 웹 서핑, 게임 / 대상: 이동형·한손 사용 선호 사용자 / 출시가: 749,000원",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=71155355",
+      "manufacturer": "Apple Inc.  Apple",
+      "model_name": "M235UM"
+    },
+    "norm_info": {
+      "company_name": "Apple Inc.  Apple",
+      "model_name": "M235UM",
+      "product_name": "APPLE 2024 iPad mini A17 Pro 7세대 (128GB)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "Apple Inc.  Apple",
+    "model_param": "M235UM",
+    "ocr_result": {
+      "extracted_text": "APPLE 2024 iPad mini A17 Pro 7세대 (128GB) Gmarket  849,890원 무료배송 최저가 구매하기 가격비교 222 상품 상세정보 의견리뷰 296 소모품|액세서리 뉴스커유니티 13 연관상품 호기심의 02 [리더십 고맙 _ 숨니다 ? Voutbe hg 제조회사 APPLE (제조사 웬사이트 바로가기) 등록년원 2024년 1밑 대불릿연결 Wi-Fi 모델명 A2996 화면크기 8.3인치 디스플레이 IPS-LCD 해상도 2266x1488 퍽설 수(ppi) 326ppi 화면비율 32 쇠대주사물 6OHz 색감 DCI-P3 쇠대밝기 50Onits 8GB 용탕 128GB 외장데모리 ricroSD미지원 프로세서 A17 Pro 군이 개수 67이 GPU Apple GPU 5군이",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\APPLE 2024 iPad mini A17 Pro 7세대 (128GB)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

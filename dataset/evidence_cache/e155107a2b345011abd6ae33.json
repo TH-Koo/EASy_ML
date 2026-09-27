@@ -1,0 +1,137 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=105181940",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "주연테크 X24QF180 QHD IPS 프리싱크 AI HDR 무결점",
+      "name": "주연테크 X24QF180 QHD IPS 프리싱크 AI HDR 무결점",
+      "description": "",
+      "ocr_text": "주연테크 X24QF180 QHD IPS 프리싱심크 Al HDR 무결점 프린터 디씨올 163,모 500원 (163,500+무료배송) 최저가 구매하기 가격비교 16 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 Durand Jones & The Indications Flower Moon 주연테크X24QF180QHDIPS 프리심크AIHDR 무결점 24인치에OHD틀? 선명합이다르네 예서 IYoulube 제조회사 주연테크 (제조사 웬사이트 바로가기) 등록년원 2026년 02일 분류 모니터 화면 크기 4cm(24인치) 해상도 QHD(2560 1440) 쇠대 주사물 18OH2 파널 종류 Fast IPS 화면 비율 라이드(169) 때널 형대 평면 시야각 광시야각 퍽설피치 O2058mm 응답 속도 O.5ms(MPRT) 화면 밝기 3oOnits 명압비 1,000.1 HDR 지원 HDR HDR 인종",
+      "specs": {
+        "모니터": "지원",
+        "60.4cm(24인치)": "지원",
+        "QHD(2560 x 1440)": "지원",
+        "180Hz": "지원",
+        "Fast IPS": "지원",
+        "와이드(16": "9)",
+        "평면": "지원",
+        "0.5ms(MPRT)": "지원",
+        "300nits": "지원",
+        "1,000": "1",
+        "HDR10": "지원",
+        "틸트(상하)": "지원",
+        "2.88kg": "지원",
+        "[게임특화] 조준선 표시": "지원",
+        "FreeSync": "지원",
+        "[단자정보] HDMI 2.0": "지원",
+        "DP": "지원"
+      },
+      "raw_specs": "모니터 / 60.4cm(24인치) / QHD(2560 x 1440) / 180Hz / Fast IPS / 와이드(16:9) / 평면 / 0.5ms(MPRT) / 300nits / 1,000:1 / HDR10 / 틸트(상하) / 2.88kg / [게임특화] 조준선 표시 / FreeSync / [단자정보] HDMI 2.0 / DP",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=105181940",
+      "manufacturer": "주연테크,  Jyuyeon Tech",
+      "model_name": "X24QF180"
+    },
+    "norm_info": {
+      "company_name": "주연테크,  Jyuyeon Tech",
+      "model_name": "X24QF180",
+      "product_name": "주연테크 X24QF180 QHD IPS 프리싱크 AI HDR 무결점"
+    },
+    "db_results": [
+      {
+        "company_name": "(주) 주연테크",
+        "equip_name": "모니터",
+        "model_name": "X24QF180",
+        "country": "중국",
+        "cert_date": "2025-11-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-JYT-X24QF180"
+      },
+      {
+        "company_name": "(주) 주연테크",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "JT9",
+        "country": "중국",
+        "cert_date": "2016-11-14",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMI-JYT-JT9"
+      },
+      {
+        "company_name": "(주) 주연테크",
+        "equip_name": "텔레비전수상기",
+        "model_name": "D24HBFNA2",
+        "country": "중국",
+        "cert_date": "2017-09-06",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REI-JYT-D24HBFNA2"
+      },
+      {
+        "company_name": "(주) 주연테크",
+        "equip_name": "텔레비전수상기",
+        "model_name": "D32MBHA",
+        "country": "중국",
+        "cert_date": "2017-07-24",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REI-JYT-D32MBHA"
+      },
+      {
+        "company_name": "(주) 주연테크",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "L108A",
+        "country": "중국",
+        "cert_date": "2018-04-23",
+        "cert_status": "적합인증",
+        "cert_no": "R-CMI-JYT-L108A"
+      },
+      {
+        "company_name": "(주) 주연테크",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "J110A",
+        "country": "중국",
+        "cert_date": "2018-01-24",
+        "cert_status": "적합인증",
+        "cert_no": "R-CMI-JYT-J110A"
+      },
+      {
+        "company_name": "(주) 주연테크",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "WM1",
+        "country": "중국",
+        "cert_date": "2019-05-01",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-JYT-WM1"
+      },
+      {
+        "company_name": "(주) 주연테크",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "WK1",
+        "country": "중국",
+        "cert_date": "2019-05-01",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-JYT-WK1"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "주연테크,  Jyuyeon Tech",
+    "model_param": "X24QF180",
+    "ocr_result": {
+      "extracted_text": "주연테크 X24QF180 QHD IPS 프리싱심크 Al HDR 무결점 프린터 디씨올 163,모 500원 (163,500+무료배송) 최저가 구매하기 가격비교 16 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 Durand Jones & The Indications Flower Moon 주연테크X24QF180QHDIPS 프리심크AIHDR 무결점 24인치에OHD틀? 선명합이다르네 예서 IYoulube 제조회사 주연테크 (제조사 웬사이트 바로가기) 등록년원 2026년 02일 분류 모니터 화면 크기 4cm(24인치) 해상도 QHD(2560 1440) 쇠대 주사물 18OH2 파널 종류 Fast IPS 화면 비율 라이드(169) 때널 형대 평면 시야각 광시야각 퍽설피치 O2058mm 응답 속도 O.5ms(MPRT) 화면 밝기 3oOnits 명압비 1,000.1 HDR 지원 HDR HDR 인종",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\주연테크 X24QF180 QHD IPS 프리싱크 AI HDR 무결점\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

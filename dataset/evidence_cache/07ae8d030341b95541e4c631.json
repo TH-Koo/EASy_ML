@@ -1,0 +1,69 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=96310178",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "에디파이어 V80 (해외구매)",
+      "name": "에디파이어 V80 (해외구매)",
+      "description": "",
+      "ocr_text": "에디파이어 V80 (해외구매) coupang 67,800원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 파드형대 오버이이 용도 음악+통화용 연결단자 USB-C 무선연결 불무투스 V5.4 노이즈런트론 댁티브노이즈랜슬림 (ANC) 맥티 보노 이즈랜슬림 주변소리듬기 AI노이즈랜되림마이 바람소리감소 사운드성능 HRA 드라이버크기 유넷:4Omm 드라이버종류 다이나막드라이버 감도 91dB 주파수 2OHz~20KHz(불로투스 20Hz~40kHz(유선) 코덕 SBC AAC 무선연결거리 IOm 재생시간 26시간(ANC ON) 45시간(ANC OFF)",
+      "specs": {
+        "유무선헤드폰": "지원",
+        "밀폐형": "지원",
+        "오버이어": "지원",
+        "연결단자": "USB-C",
+        "블루투스 v5.4": "지원",
+        "[노이즈컨트롤] 액티브노이즈캔슬링": "지원",
+        "주변소리듣기": "지원",
+        "바람소리감소": "지원",
+        "AI노이즈캔슬링마이크": "지원",
+        "[사운드] HRA": "지원",
+        "유닛": "40mm",
+        "다이나믹드라이버": "지원",
+        "91dB": "지원",
+        "20Hz~20kHz(블루투스), 20Hz~40kHz(유선)": "지원",
+        "코덱": "SBC , AAC",
+        "[배터리] 재생시간": "26시간(ANC ON), 45시간(ANC OFF)",
+        "충전": "USB-C",
+        "[기능] EQ수동조절": "지원",
+        "저지연게이밍모드": "지원",
+        "멀티포인트": "지원",
+        "무게": "480.8g",
+        "접이식": "지원"
+      },
+      "raw_specs": "유무선헤드폰 / 밀폐형 / 오버이어 / 연결단자 : USB-C / 블루투스 v5.4 / [노이즈컨트롤] 액티브노이즈캔슬링 / 주변소리듣기 / 바람소리감소 / AI노이즈캔슬링마이크 / [사운드] HRA / 유닛:40mm / 다이나믹드라이버 / 91dB / 20Hz~20kHz(블루투스), 20Hz~40kHz(유선) / 코덱 : SBC , AAC / [배터리] 재생시간 : 26시간(ANC ON), 45시간(ANC OFF) / 충전 : USB-C / [기능] EQ수동조절 / 저지연게이밍모드 / 멀티포인트 / 무게 : 480.8g / 접이식",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=96310178",
+      "manufacturer": "에디파이어, Edifair",
+      "model_name": "V80"
+    },
+    "norm_info": {
+      "company_name": "에디파이어, Edifair",
+      "model_name": "V80",
+      "product_name": "에디파이어 V80 (해외구매)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "에디파이어, Edifair",
+    "model_param": "V80",
+    "ocr_result": {
+      "extracted_text": "에디파이어 V80 (해외구매) coupang 67,800원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 파드형대 오버이이 용도 음악+통화용 연결단자 USB-C 무선연결 불무투스 V5.4 노이즈런트론 댁티브노이즈랜슬림 (ANC) 맥티 보노 이즈랜슬림 주변소리듬기 AI노이즈랜되림마이 바람소리감소 사운드성능 HRA 드라이버크기 유넷:4Omm 드라이버종류 다이나막드라이버 감도 91dB 주파수 2OHz~20KHz(불로투스 20Hz~40kHz(유선) 코덕 SBC AAC 무선연결거리 IOm 재생시간 26시간(ANC ON) 45시간(ANC OFF)",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\에디파이어 V80 (해외구매)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=93444674",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "2MONS 6U LCD D680 AI 머신러닝 ver3.0",
+      "name": "2MONS 6U LCD D680 AI 머신러닝 ver3.0",
+      "description": "",
+      "ocr_text": "2MONS 6U LCD D680 Al 머신러님 ver3.0 립오아시스 464, 990원 5,000원 최저가 구매하기 가격비교 52 상품 상세정보 의견리뷰 연관상품 CPU=러 높이 230mm 키이스 크기 택마운트 (6U) 내부 확장 8.9cmeilal 8개 PCI 슬릇(스직) 12개 [때널] 축면 퍼널 타인 통등구 [꿀레투딩] 콜림팬 증2개 중망 통풍구 120mm *2 외부포트 USB3X 5Gbps [크기] 너비(W) 430mm 높이니) 266mm 깊이(D 68Ommn [호환성] 지원파위규격 표슨-ATX [@ 인종 적합성평가인층 상세설명 판매 사이드 분의 | 인종번호 확인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인 제조사제공 못데ON 상품 설명 복사하기",
+      "specs": {
+        "랙마운트": "지원",
+        "지원보드규격": "E-ATX , ATX , M-ATX , ITX",
+        "VGA 길이": "360mm",
+        "CPU쿨러 높이": "230mm",
+        "랙마운트(6U)": "지원",
+        "[패널] 측면 패널 타입": "통풍구",
+        "[쿨러/튜닝] 쿨링팬": "총2개",
+        "[크기] 너비(W)": "430mm",
+        "높이(H)": "266mm",
+        "깊이(D)": "680mm",
+        "[호환성] 지원파워규격": "표준-ATX"
+      },
+      "raw_specs": "랙마운트 / 지원보드규격 : E-ATX , ATX , M-ATX , ITX / VGA 길이 : 360mm / CPU쿨러 높이 : 230mm / 랙마운트(6U) / [패널] 측면 패널 타입 : 통풍구 / [쿨러/튜닝] 쿨링팬 : 총2개 / [크기] 너비(W) : 430mm / 높이(H) : 266mm / 깊이(D) : 680mm / [호환성] 지원파워규격 : 표준-ATX",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=93444674",
+      "manufacturer": "2MONS, 2MONS",
+      "model_name": "D680 AI"
+    },
+    "norm_info": {
+      "company_name": "2MONS, 2MONS",
+      "model_name": "D680 AI",
+      "product_name": "2MONS 6U LCD D680 AI 머신러닝 ver3.0"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "2MONS, 2MONS",
+    "model_param": "D680 AI",
+    "ocr_result": {
+      "extracted_text": "2MONS 6U LCD D680 Al 머신러님 ver3.0 립오아시스 464, 990원 5,000원 최저가 구매하기 가격비교 52 상품 상세정보 의견리뷰 연관상품 CPU=러 높이 230mm 키이스 크기 택마운트 (6U) 내부 확장 8.9cmeilal 8개 PCI 슬릇(스직) 12개 [때널] 축면 퍼널 타인 통등구 [꿀레투딩] 콜림팬 증2개 중망 통풍구 120mm *2 외부포트 USB3X 5Gbps [크기] 너비(W) 430mm 높이니) 266mm 깊이(D 68Ommn [호환성] 지원파위규격 표슨-ATX [@ 인종 적합성평가인층 상세설명 판매 사이드 분의 | 인종번호 확인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인 제조사제공 못데ON 상품 설명 복사하기",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\2MONS 6U LCD D680 AI 머신러닝 ver3.0\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

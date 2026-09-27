@@ -1,0 +1,66 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=96314051",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "APPLE 아이폰17 256GB, 자급제 (블랙)",
+      "name": "APPLE 아이폰17 256GB, 자급제 (블랙)",
+      "description": "",
+      "ocr_text": "APPLE 아이혼17 256GB, 자급제 (불택) 11> 1,413,740원 무료배승 최저가 구매하기 가격비교 31 상품 상세정보 의견리뷰 2,034 소모품|액세서리 뉴스커유니티 35 연관상품 아이로T; 이면 72s 어용어스? Oo 이름 9월이웬트 요야 Ioulul? 제조회사 APPLE (제조사 웬사이트 바로가기) 등록년원 2025년 09원 휴대문 타입 스마드문 (바형) 모델명 A3520 판매방식 자금제 공기계 곰공기계 유형 자근제 곰기계 통신사 자금제 유신(국가별상이) 나노+eSIM 메인화면정보 화면 15.9cm(6.3인치) 패널종류 OLED 화면해상도 2622x1206 정설 수(ppi) 46Oppi 최대주사물 120Hz 쇠대밝기 300Onits 디스플레이 특징 HDRIO 돌비비전 삼시표시형(AOD)",
+      "specs": {
+        "스마트폰(바형)": "지원",
+        "화면": "15.9cm(6.3인치)",
+        "120Hz": "지원",
+        "램": "8GB",
+        "용량": "256GB",
+        "[프로세서/AI] A19": "지원",
+        "AP CPU": "93점",
+        "AP 게이밍": "83점",
+        "[카메라] 후면": "4,800만화소+4,800만화소",
+        "전면": "1,800만화소",
+        "[배터리/규격] USB2.0": "지원",
+        "3,692mAh": "지원",
+        "맥세이프": "최대20W",
+        "방수": "IP68",
+        "가로": "71.5mm",
+        "세로": "149.6mm",
+        "두께": "7.95mm",
+        "무게": "177g",
+        "출시가": "1,290,000원"
+      },
+      "raw_specs": "스마트폰(바형) / 화면:15.9cm(6.3인치) / 120Hz / 램 : 8GB / 용량 : 256GB / [프로세서/AI] A19 / AP CPU : 93점 / AP 게이밍 : 83점 / [카메라] 후면:4,800만화소+4,800만화소 / 전면:1,800만화소 / [배터리/규격] USB2.0 / 3,692mAh / 맥세이프:최대20W / 방수 : IP68 / 가로 : 71.5mm / 세로 : 149.6mm / 두께 : 7.95mm / 무게 : 177g / 출시가: 1,290,000원",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=96314051",
+      "manufacturer": "Apple Inc.  Apple",
+      "model_name": "A1785"
+    },
+    "norm_info": {
+      "company_name": "Apple Inc.  Apple",
+      "model_name": "A1785",
+      "product_name": "APPLE 아이폰17 256GB, 자급제 (블랙)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "Apple Inc.  Apple",
+    "model_param": "A1785",
+    "ocr_result": {
+      "extracted_text": "APPLE 아이혼17 256GB, 자급제 (불택) 11> 1,413,740원 무료배승 최저가 구매하기 가격비교 31 상품 상세정보 의견리뷰 2,034 소모품|액세서리 뉴스커유니티 35 연관상품 아이로T; 이면 72s 어용어스? Oo 이름 9월이웬트 요야 Ioulul? 제조회사 APPLE (제조사 웬사이트 바로가기) 등록년원 2025년 09원 휴대문 타입 스마드문 (바형) 모델명 A3520 판매방식 자금제 공기계 곰공기계 유형 자근제 곰기계 통신사 자금제 유신(국가별상이) 나노+eSIM 메인화면정보 화면 15.9cm(6.3인치) 패널종류 OLED 화면해상도 2622x1206 정설 수(ppi) 46Oppi 최대주사물 120Hz 쇠대밝기 300Onits 디스플레이 특징 HDRIO 돌비비전 삼시표시형(AOD)",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\APPLE 아이폰17 256GB, 자급제 (블랙)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

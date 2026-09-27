@@ -1,0 +1,101 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=108228755",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "쿠쿠전자 파워클론 AI Pro 올인원 CRVC-BAC1010TNW",
+      "name": "쿠쿠전자 파워클론 AI Pro 올인원 CRVC-BAC1010TNW",
+      "description": "",
+      "ocr_text": "구구전자 파위클론 Al Pro 올인원 CRVC-BACIOIOTNW coupang 653,000원  무료배송 최저가 구매하기 가격비교 32 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 집입력 10,OOOPa 센서 LDS 카메라 맵끔 사용시간 2시간20분(최대) 감지회피 잠애물회피 충들방지 낙하방지 분터등반 리프팅 1.2cm 분늑님기 2cm 브러쉬 사이드 엉림밤지재질 필터 헤파필터 헤파필터등금 H13금 청소기능 카켓부스트 스마토존제어 금지구역 구역지정 여약청소 물걸레 회전형 물걸레 회전스 2O0RPM 스테이선 먼지비움 걸레세칙(온수)",
+      "specs": {
+        "로봇청소기": "지원",
+        "흡입+물걸레": "지원",
+        "BLDC모터": "지원",
+        "센서": "LDS , 카메라",
+        "흡입력": "10,000Pa",
+        "헤파필터": "지원",
+        "문턱넘기": "2cm",
+        "카펫부스트": "지원",
+        "물걸레": "회전형",
+        "[스테이션] 먼지비움": "지원",
+        "걸레세척(온수)": "지원",
+        "걸레건조(온풍)": "지원",
+        "스테이션청소": "지원",
+        "자동충전": "지원",
+        "[규격] 색상": "화이트",
+        "무게": "3.7kg",
+        "크기(가로x세로x깊이)": "청소기 350x100.5x350mm 스테이션 415x430x464mm"
+      },
+      "raw_specs": "로봇청소기 / 흡입+물걸레 / BLDC모터 / 센서 : LDS , 카메라 / 흡입력 : 10,000Pa / 헤파필터 / 문턱넘기 : 2cm / 카펫부스트 / 물걸레 : 회전형 / [스테이션] 먼지비움 / 걸레세척(온수) / 걸레건조(온풍) / 스테이션청소 / 자동충전 / [규격] 색상 : 화이트 / 무게 : 3.7kg / 크기(가로x세로x깊이): 청소기 350x100.5x350mm 스테이션 415x430x464mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=108228755",
+      "manufacturer": "쿠쿠전자, KuKu Techno",
+      "model_name": "CRVC-BAC1010TNW"
+    },
+    "norm_info": {
+      "company_name": "쿠쿠전자, KuKu Techno",
+      "model_name": "CRVC-BAC1010TNW",
+      "product_name": "쿠쿠전자 파워클론 AI Pro 올인원 CRVC-BAC1010TNW"
+    },
+    "db_results": [
+      {
+        "company_name": "쿠쿠전자 주식회사",
+        "equip_name": "Smart Pet Drinking Fountain",
+        "model_name": "P410",
+        "country": "중국",
+        "cert_date": "2016-09-12",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REI-PE7-P410"
+      },
+      {
+        "company_name": "쿠쿠전자 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "COZY",
+        "country": "중국",
+        "cert_date": "2018-07-30",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRI-PE7-COZY"
+      },
+      {
+        "company_name": "쿠쿠전자 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Petkit Fresh Element",
+        "country": "중국",
+        "cert_date": "2019-02-12",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PE7-Big"
+      },
+      {
+        "company_name": "쿠쿠전자 주식회사",
+        "equip_name": "블루투스 조리용 탐침 온도계",
+        "model_name": "CPS-IRE10WLW",
+        "country": "중국",
+        "cert_date": "2021-10-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-cke-CPS-IRE10WLW"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "쿠쿠전자, KuKu Techno",
+    "model_param": "CRVC-BAC1010TNW",
+    "ocr_result": {
+      "extracted_text": "구구전자 파위클론 Al Pro 올인원 CRVC-BACIOIOTNW coupang 653,000원  무료배송 최저가 구매하기 가격비교 32 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 집입력 10,OOOPa 센서 LDS 카메라 맵끔 사용시간 2시간20분(최대) 감지회피 잠애물회피 충들방지 낙하방지 분터등반 리프팅 1.2cm 분늑님기 2cm 브러쉬 사이드 엉림밤지재질 필터 헤파필터 헤파필터등금 H13금 청소기능 카켓부스트 스마토존제어 금지구역 구역지정 여약청소 물걸레 회전형 물걸레 회전스 2O0RPM 스테이선 먼지비움 걸레세칙(온수)",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\쿠쿠전자 파워클론 AI Pro 올인원 CRVC-BAC1010TNW\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

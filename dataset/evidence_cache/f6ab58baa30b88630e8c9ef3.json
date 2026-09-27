@@ -1,0 +1,65 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=96582521",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "에코백스 디봇 T50 프로 옴니 (단품)",
+      "name": "에코백스 디봇 T50 프로 옴니 (단품)",
+      "description": "",
+      "ocr_text": "에코백스 디봇 T50 프로 음니 (단품) Gmarket   598,990원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 13 뉴스커유니티 연관상품 집입력 15,OOOPa 센서 ToF 카메라 인식 시사물인식 감지회피 잠애물회피 분터등반 오염도감지 리프팀 9cm 분늑님기 2cm 통과높이 81cm 청소운전 모서리 브러쉬 메인 사이드로봇째러쉬 엉림방지재질 먼지통 0.26L 배터리용량 640OmAh 소비전력 75W 청소기능 물걸레리프팀 물걸레 회전형 스테이선",
+      "specs": {
+        "로봇청소기": "지원",
+        "흡입+물걸레": "지원",
+        "센서": "ToF , 카메라",
+        "흡입력": "15,000Pa",
+        "AI사물인식": "지원",
+        "문턱넘기": "2cm",
+        "물걸레리프팅": "지원",
+        "물걸레": "회전형",
+        "물걸레확장암": "지원",
+        "[스테이션] 먼지비움": "지원",
+        "걸레세척(온수)": "지원",
+        "걸레건조(온풍)": "지원",
+        "세제투입": "지원",
+        "플레이트분리": "지원",
+        "스테이션청소": "지원",
+        "[규격] 색상": "화이트",
+        "무게": "3.7kg",
+        "크기(가로x세로x깊이)": "청소기 353x81x352mm 스테이션 350x533x477mm"
+      },
+      "raw_specs": "로봇청소기 / 흡입+물걸레 / 센서 : ToF , 카메라 / 흡입력 : 15,000Pa / AI사물인식 / 문턱넘기 : 2cm / 물걸레리프팅 / 물걸레 : 회전형 / 물걸레확장암 / [스테이션] 먼지비움 / 걸레세척(온수) / 걸레건조(온풍) / 세제투입 / 플레이트분리 / 스테이션청소 / [규격] 색상 : 화이트 / 무게 : 3.7kg / 크기(가로x세로x깊이): 청소기 353x81x352mm 스테이션 350x533x477mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=96582521",
+      "manufacturer": "에코백스, EcoPeaks",
+      "model_name": "T50"
+    },
+    "norm_info": {
+      "company_name": "에코백스, EcoPeaks",
+      "model_name": "T50",
+      "product_name": "에코백스 디봇 T50 프로 옴니 (단품)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "에코백스, EcoPeaks",
+    "model_param": "T50",
+    "ocr_result": {
+      "extracted_text": "에코백스 디봇 T50 프로 음니 (단품) Gmarket   598,990원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 13 뉴스커유니티 연관상품 집입력 15,OOOPa 센서 ToF 카메라 인식 시사물인식 감지회피 잠애물회피 분터등반 오염도감지 리프팀 9cm 분늑님기 2cm 통과높이 81cm 청소운전 모서리 브러쉬 메인 사이드로봇째러쉬 엉림방지재질 먼지통 0.26L 배터리용량 640OmAh 소비전력 75W 청소기능 물걸레리프팀 물걸레 회전형 스테이선",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\에코백스 디봇 T50 프로 옴니 (단품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=123993563",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "샥즈 오픈핏 에어 2 T520 (정품)",
+      "name": "샥즈 오픈핏 에어 2 T520 (정품)",
+      "description": "",
+      "ocr_text": "삭즈 오른핏 에어 2 T520 (정품) AUCTION 158,770원   무료배승 최저가 구매하기 가격비교 51 상품 상세정보 의견리뷰 연관상품 외형 귀걸이험 착용방식 모버이어 용도 음악+통화용 연결단자 USB-C 무선연결 불무투스 v61 노이즈권트록 AI노이즈랜쓸림마이 바람소리감소 사운드채널 스테레오 사운드성능 DirectPitch 드라이버크기 유넷:18x11mm 드라이버 다이나막 감도 97.5dB 주파수 2OHz~2OkHz 코덕 SBC AAC",
+      "specs": {
+        "오픈이어형": "지원",
+        "귀걸이형": "지원",
+        "오버이어": "지원",
+        "연결단자": "USB-C",
+        "블루투스 v6.1": "지원",
+        "노이즈컨트롤 AI노이즈캔슬링마이크": "지원",
+        "[사운드]": "지원",
+        "DirectPitch 유닛": "18x11mm",
+        "드라이버": "다이나믹",
+        "97.5dB": "지원",
+        "20Hz~20kHz": "지원",
+        "코덱": "SBC , AAC",
+        "사운드 튜닝": "지원",
+        "[배터리]": "지원",
+        "1회충전시 8시간": "지원",
+        "최대재생": "32시간",
+        "충전": "USB-C",
+        "[기능]": "지원",
+        "멀티포인트 편의기능": "위치찾기",
+        "EQ수동조절": "지원",
+        "구글패스트페어": "지원",
+        "마이크특징": "듀얼빔포밍",
+        "IP55": "지원",
+        "무게": "60.8g",
+        "출시가": "215,000원"
+      },
+      "raw_specs": "오픈이어형 / 귀걸이형 / 오버이어 / 연결단자 : USB-C / 블루투스 v6.1 / 노이즈컨트롤 AI노이즈캔슬링마이크 / [사운드] / DirectPitch 유닛:18x11mm / 드라이버 : 다이나믹 / 97.5dB / 20Hz~20kHz / 코덱 : SBC , AAC / 사운드 튜닝 / [배터리] / 1회충전시 8시간 / 최대재생 : 32시간 / 충전 : USB-C / [기능] / 멀티포인트 편의기능 : 위치찾기 / EQ수동조절 / 구글패스트페어 / 마이크특징 : 듀얼빔포밍 / IP55 / 무게 : 60.8g / 출시가: 215,000원",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=123993563",
+      "manufacturer": "샥즈,  Z.",
+      "model_name": "T520"
+    },
+    "norm_info": {
+      "company_name": "샥즈,  Z.",
+      "model_name": "T520",
+      "product_name": "샥즈 오픈핏 에어 2 T520 (정품)"
+    },
+    "db_results": [
+      {
+        "company_name": "샥즈코리아 주식회사(SHOKZ KOREA LIMITED)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "T910",
+        "country": "중국",
+        "cert_date": "2023-06-20",
+        "cert_status": "적합인증",
+        "cert_no": "R-CS-GGZ-T910"
+      },
+      {
+        "company_name": "샥즈코리아 주식회사(SHOKZ KOREA LIMITED)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SHOKZ T920",
+        "country": "중국",
+        "cert_date": "2024-12-12",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-GGZ-T920"
+      },
+      {
+        "company_name": "샥즈코리아 주식회사(SHOKZ KOREA LIMITED)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SHOKZ C610",
+        "country": "중국",
+        "cert_date": "2024-12-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-GGZ-C610"
+      },
+      {
+        "company_name": "샥즈코리아 주식회사(SHOKZ KOREA LIMITED)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SHOKZ S820",
+        "country": "중국",
+        "cert_date": "2024-06-05",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-GGZ-S820"
+      },
+      {
+        "company_name": "샥즈코리아 주식회사(SHOKZ KOREA LIMITED)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "T511",
+        "country": "베트남",
+        "cert_date": "2024-03-12",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-GGZ-T511"
+      },
+      {
+        "company_name": "샥즈코리아 주식회사(SHOKZ KOREA LIMITED)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SHOKZ T921",
+        "country": "중국",
+        "cert_date": "2025-05-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-GGZ-T921"
+      },
+      {
+        "company_name": "샥즈코리아 주식회사(SHOKZ KOREA LIMITED)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SHOKZ E310",
+        "country": "중국",
+        "cert_date": "2025-04-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-GGZ-E310"
+      },
+      {
+        "company_name": "샥즈코리아 주식회사(SHOKZ KOREA LIMITED)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SHOKZ T010",
+        "country": "중국",
+        "cert_date": "2026-01-02",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-GGZ-T010"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "샥즈,  Z.",
+    "model_param": "T520",
+    "ocr_result": {
+      "extracted_text": "삭즈 오른핏 에어 2 T520 (정품) AUCTION 158,770원   무료배승 최저가 구매하기 가격비교 51 상품 상세정보 의견리뷰 연관상품 외형 귀걸이험 착용방식 모버이어 용도 음악+통화용 연결단자 USB-C 무선연결 불무투스 v61 노이즈권트록 AI노이즈랜쓸림마이 바람소리감소 사운드채널 스테레오 사운드성능 DirectPitch 드라이버크기 유넷:18x11mm 드라이버 다이나막 감도 97.5dB 주파수 2OHz~2OkHz 코덕 SBC AAC",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\샥즈 오픈핏 에어 2 T520 (정품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

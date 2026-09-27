@@ -1,0 +1,78 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=94932509",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "마이디어 V15 Ultra (블랙)",
+      "name": "마이디어 V15 Ultra (블랙)",
+      "description": "",
+      "ocr_text": "마이디어 V15 Ultra (불택) coupang 615,230원  무료배송 최저가 구매하기 가격비교 29 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 집입력 19,OOOPa 센서 카메라 즉면 맵끔 사용시간 1시간스이분(신대) 인식 시사물인식 감지회피 장애물회피 낙하방지 청소운전 격자 모서리 브러쉬 메인 사이드로봇부러쉬 머리카락컷팀 먼지통 0.3L 급인청소면적 4OOmn2 배티리용량 5200mAh 소비전력 65W 청소기능 카켓부스트 물걸레리프팀 스마토존제어 구역지점 구역순서",
+      "specs": {
+        "로봇청소기": "지원",
+        "흡입+물걸레": "지원",
+        "센서": "카메라 , 측면",
+        "흡입력": "19,000Pa",
+        "AI사물인식": "지원",
+        "카펫부스트": "지원",
+        "물걸레리프팅": "지원",
+        "물걸레": "회전형",
+        "물걸레확장암": "지원",
+        "[스테이션] 먼지비움": "지원",
+        "걸레세척(온수)": "지원",
+        "걸레건조(온풍)": "지원",
+        "머리카락컷팅": "지원",
+        "[규격] 색상": "블랙",
+        "무게": "4.9kg",
+        "크기(가로x세로x깊이)": "청소기 354x110x355mm 스테이션 395x458x468mm"
+      },
+      "raw_specs": "로봇청소기 / 흡입+물걸레 / 센서 : 카메라 , 측면 / 흡입력 : 19,000Pa / AI사물인식 / 카펫부스트 / 물걸레리프팅 / 물걸레 : 회전형 / 물걸레확장암 / [스테이션] 먼지비움 / 걸레세척(온수) / 걸레건조(온풍) / 머리카락컷팅 / [규격] 색상 : 블랙 / 무게 : 4.9kg / 크기(가로x세로x깊이): 청소기 354x110x355mm 스테이션 395x458x468mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=94932509",
+      "manufacturer": "My Media, My Media",
+      "model_name": "V15 Ultra"
+    },
+    "norm_info": {
+      "company_name": "My Media, My Media",
+      "model_name": "V15 Ultra",
+      "product_name": "마이디어 V15 Ultra (블랙)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "source_record_id": "1020230054058",
+        "일련번호": "1",
+        "출원번호": "1020230054058",
+        "발명의명칭(한글)": "AI 카메라 기반 HPE 데이터 처리 엣지 디바이스를 포함하는 시스템",
+        "출원일자": "2023-04-25",
+        "출원인": "주식회사 에이앤씨랩|주식회사 제이경제미디어그룹|김진해",
+        "등록상태": "등록",
+        "초록": "본 발명은 영상정보를 획득하는 촬영부; 상기 영상정보로부터 사람의 관절 좌표 정보를 추출하는 추출부; 및 상기 관절 좌표 정보를 서버로 전송하는 통신부를 포함하는 AI 카메라 기반 HPE 데이터 처리 엣지 디바이스와, 상기 AI 카메라 기반 HPE 데이터 처리 엣지 디바이스와 전기적으로 연결되는 서버를 포함하는, AI 카메라 기반 HPE 데이터 처리 엣지 디바이스를 포함하는 시스템에 관한 것이다.",
+        "IPC": "G06V 10/34|G06V 40/20|G06V 10/774|G08B 21/04|H04L 67/10",
+        "CPC": "",
+        "relevance_type": "general_ai",
+        "match_confidence": 0.45,
+        "search_alias": "MY MEDIA",
+        "search_type": "AI 특허 [일반]",
+        "search_query": "AP=[MY MEDIA]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
+        "status": "verified"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "My Media, My Media",
+    "model_param": "V15 Ultra",
+    "ocr_result": {
+      "extracted_text": "마이디어 V15 Ultra (불택) coupang 615,230원  무료배송 최저가 구매하기 가격비교 29 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 집입력 19,OOOPa 센서 카메라 즉면 맵끔 사용시간 1시간스이분(신대) 인식 시사물인식 감지회피 장애물회피 낙하방지 청소운전 격자 모서리 브러쉬 메인 사이드로봇부러쉬 머리카락컷팀 먼지통 0.3L 급인청소면적 4OOmn2 배티리용량 5200mAh 소비전력 65W 청소기능 카켓부스트 물걸레리프팀 스마토존제어 구역지점 구역순서",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\마이디어 V15 Ultra (블랙)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

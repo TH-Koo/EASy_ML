@@ -1,0 +1,71 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=122654283",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "AVUE AI CAM",
+      "name": "AVUE AI CAM",
+      "description": "",
+      "ocr_text": "AVUE AI CAM coupang 111,610원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 사용장소 실외용 지원 네드위크 유선랜 전송 지원 방식 영상사양 이미지센서 CMOS 쇠대 화소 400만화소 최대 대상도 2880x1616 쇠저 조도 O.ooilx IR-LED 14가 렌즈초점) 1.9mm 팬좌우) 350\" 탤트(상하) 지원기능 스마드데모니터림 양방향통화 원격각도조정 농작감지 소리감지 조도감지 적외선LED 방수(방진) 플라우드 카메라 메모리저장 [@ 인종 적합성평가인층 R-R-ckn-icar-cctv 인증번호 꽉인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인 상품 설명 복사하기",
+      "specs": {
+        "IP 카메라": "지원",
+        "미니/특수형": "지원",
+        "실외용": "지원",
+        "유선랜": "지원",
+        "[전송방식] IP": "지원",
+        "[영상사양] CMOS": "지원",
+        "400만화소": "지원",
+        "2880x1616": "지원",
+        "최저 조도": "0.001lx",
+        "IR-LED": "14개",
+        "지원속도": "12",
+        "렌즈(초점)": "1.9mm",
+        "팬(좌우)": "350˚",
+        "틸트(상하)": "90˚",
+        "[부가기능] 스마트폰모니터링": "지원",
+        "양방향통화": "지원",
+        "원격각도조정": "지원",
+        "동작감지": "지원",
+        "소리감지": "지원",
+        "조도감지": "지원",
+        "적외선LED": "지원",
+        "방수(방진)": "지원",
+        "클라우드 카메라": "지원",
+        "메모리저장": "지원"
+      },
+      "raw_specs": "IP 카메라 / 미니/특수형 / 실외용 / 유선랜 / [전송방식] IP / [영상사양] CMOS / 400만화소 / 2880x1616 / 최저 조도 : 0.001lx / IR-LED : 14개 / 지원속도 : 12 / 렌즈(초점) : 1.9mm / 팬(좌우) : 350˚ / 틸트(상하) : 90˚ / [부가기능] 스마트폰모니터링 / 양방향통화 / 원격각도조정 / 동작감지 / 소리감지 / 조도감지 / 적외선LED / 방수(방진) / 클라우드 카메라 / 메모리저장",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=122654283",
+      "manufacturer": "AVUE, AVUE",
+      "model_name": "AVUE AI CAM"
+    },
+    "norm_info": {
+      "company_name": "AVUE, AVUE",
+      "model_name": "AVUE AI CAM",
+      "product_name": "AVUE AI CAM"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "AVUE, AVUE",
+    "model_param": "AVUE AI CAM",
+    "ocr_result": {
+      "extracted_text": "AVUE AI CAM coupang 111,610원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 사용장소 실외용 지원 네드위크 유선랜 전송 지원 방식 영상사양 이미지센서 CMOS 쇠대 화소 400만화소 최대 대상도 2880x1616 쇠저 조도 O.ooilx IR-LED 14가 렌즈초점) 1.9mm 팬좌우) 350\" 탤트(상하) 지원기능 스마드데모니터림 양방향통화 원격각도조정 농작감지 소리감지 조도감지 적외선LED 방수(방진) 플라우드 카메라 메모리저장 [@ 인종 적합성평가인층 R-R-ckn-icar-cctv 인증번호 꽉인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인 상품 설명 복사하기",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\AVUE AI CAM\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

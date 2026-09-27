@@ -1,0 +1,535 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=104320622",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "DJI ROMO S (단품)",
+      "name": "DJI ROMO S (단품)",
+      "description": "",
+      "ocr_text": "DJI ROMO S (단품) coupang 1,099,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 집입력 25,OOOPa 센서 LDS 카메라 사용시간 3시간(최대) 인식 시사물인식 감지회피 잠애물회피 카켓회피 통과높이 8cm 청소운전 모서리 반복 브러쉬 메인2개 사이드로봇부러쉬 먼지통 0.26L 필터 먼지필터 테파필터등부 Hi1금 증전시간 2시간30분 배티리용람 50oOmAh 청소기능 카켓부스트 브리쉬리프팀 물걸레리프팀 스마토존제어 기 고슬무거끼 츠사라주선",
+      "specs": {
+        "로봇청소기": "지원",
+        "흡입+물걸레": "지원",
+        "센서": "LDS , 카메라",
+        "흡입력": "25,000Pa",
+        "AI사물인식": "지원",
+        "먼지필터": "지원",
+        "카펫부스트": "지원",
+        "브러쉬리프팅": "지원",
+        "물걸레리프팅": "지원",
+        "물걸레": "회전형",
+        "물걸레확장암": "지원",
+        "[스테이션] 먼지비움": "지원",
+        "걸레세척(온수)": "지원",
+        "걸레건조(온풍)": "지원",
+        "세제투입": "지원",
+        "플레이트분리": "지원",
+        "스테이션청소": "지원",
+        "자동충전": "지원",
+        "물탱크수위감지": "지원",
+        "[규격] 색상": "화이트",
+        "무게": "4.4kg",
+        "크기(가로x세로x깊이)": "청소기 351x98x351mm 스테이션 425x453x440mm"
+      },
+      "raw_specs": "로봇청소기 / 흡입+물걸레 / 센서 : LDS , 카메라 / 흡입력 : 25,000Pa / AI사물인식 / 먼지필터 / 카펫부스트 / 브러쉬리프팅 / 물걸레리프팅 / 물걸레 : 회전형 / 물걸레확장암 / [스테이션] 먼지비움 / 걸레세척(온수) / 걸레건조(온풍) / 세제투입 / 플레이트분리 / 스테이션청소 / 자동충전 / 물탱크수위감지 / [규격] 색상 : 화이트 / 무게 : 4.4kg / 크기(가로x세로x깊이): 청소기 351x98x351mm 스테이션 425x453x440mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=104320622",
+      "manufacturer": "DJI, DJI",
+      "model_name": "DJI-ROMOS"
+    },
+    "norm_info": {
+      "company_name": "DJI, DJI",
+      "model_name": "DJI-ROMOS",
+      "product_name": "DJI ROMO S (단품)"
+    },
+    "db_results": [
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RX3",
+        "country": "중국",
+        "cert_date": "2023-05-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-RX3"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "DJI AIR 3S",
+        "model_name": "CZ3SCL",
+        "country": "중국",
+        "cert_date": "2024-09-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-dji-CZ3SCL"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DMMR01",
+        "country": "중국",
+        "cert_date": "2024-09-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-DMMR01"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DMMT01",
+        "country": "중국",
+        "cert_date": "2024-09-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-DMMT01"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TKGSM",
+        "country": "중국",
+        "cert_date": "2024-11-05",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-dji-TKGSM"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "M4T",
+        "country": "중국",
+        "cert_date": "2024-11-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-dji-M4T1023"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TKPL2",
+        "country": "중국",
+        "cert_date": "2024-12-12",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-dji-TKPL2"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "DJI O4 Air Unit",
+        "model_name": "DF3L2904",
+        "country": "중국",
+        "cert_date": "2024-12-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-dji-DF3L2904"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "DJI O4 Air Unit Pro",
+        "model_name": "DF3P2904",
+        "country": "중국",
+        "cert_date": "2024-12-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-dji-DF3P2904"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RM220",
+        "country": "중국",
+        "cert_date": "2023-01-05",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-dji-RM22022"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RCDS13",
+        "country": "중국",
+        "cert_date": "2023-01-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-dji-RCDS13"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TKTA",
+        "country": "중국",
+        "cert_date": "2024-09-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-dji-TKTA24"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "AC003",
+        "country": "중국",
+        "cert_date": "2023-06-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-AC003"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "DJI Air 3 Battery Charging Hub",
+        "model_name": "CHX233-100",
+        "country": "중국",
+        "cert_date": "2023-06-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-dji-CHX233100"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "DJI Air 3",
+        "model_name": "EB3WBC",
+        "country": "중국",
+        "cert_date": "2023-06-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-dji-EB3WBC"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RC151",
+        "country": "중국",
+        "cert_date": "2023-07-14",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-dji-RC151"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RC331",
+        "country": "중국",
+        "cert_date": "2023-07-17",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-dji-RC331"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "OF100",
+        "country": "중국",
+        "cert_date": "2023-07-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-OF100"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "P1GS",
+        "country": "중국",
+        "cert_date": "2023-08-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-dji-P1GS"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "M1X",
+        "country": "중국",
+        "cert_date": "2023-09-20",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-dji-M1X"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "T650A",
+        "country": "중국",
+        "cert_date": "2023-09-20",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-dji-T650A"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DMR02",
+        "country": "중국",
+        "cert_date": "2023-10-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-DMR02"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DMMT02",
+        "country": "중국",
+        "cert_date": "2025-12-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-DMMT02"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RC508",
+        "country": "중국",
+        "cert_date": "2026-01-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-RC508"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RC520",
+        "country": "중국",
+        "cert_date": "2025-04-02",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-dji-RC520"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "OQ001",
+        "country": "중국",
+        "cert_date": "2025-05-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-OQ001"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "ON001",
+        "country": "중국",
+        "cert_date": "2025-06-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-ON001"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DMT03",
+        "country": "중국",
+        "cert_date": "2025-07-14",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-DMT03"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DMR03",
+        "country": "중국",
+        "cert_date": "2025-07-15",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-DMR03"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "Auto Water Refill & Drainage Kit",
+        "model_name": "CR8AW",
+        "country": "중국",
+        "cert_date": "2025-09-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-dji-CR8AW"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "AC006",
+        "country": "중국",
+        "cert_date": "2025-10-02",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-AC006"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DMMR02",
+        "country": "중국",
+        "cert_date": "2025-10-31",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-DMMR02"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "OP-041",
+        "country": "중국",
+        "cert_date": "2025-11-18",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-OP041"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DMT02",
+        "country": "중국",
+        "cert_date": "2023-10-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-DMT02"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "M3TD",
+        "country": "중국",
+        "cert_date": "2024-02-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-dji-M3D"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TKGS3",
+        "country": "중국",
+        "cert_date": "2024-03-12",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-dji-TKGS3"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DF03-002",
+        "country": "중국",
+        "cert_date": "2024-03-15",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-DF032"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DF03-004",
+        "country": "중국",
+        "cert_date": "2024-03-15",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-DF034"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "FC8BGC",
+        "country": "중국",
+        "cert_date": "2024-03-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-dji-FC8BGC"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TKMO3",
+        "country": "중국",
+        "cert_date": "2024-03-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-dji-TKMO3"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "AC004",
+        "country": "중국",
+        "cert_date": "2024-06-28",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-AC004"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RX5",
+        "country": "중국",
+        "cert_date": "2024-07-02",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-RX53209"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TX5",
+        "country": "중국",
+        "cert_date": "2024-07-04",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-TX53209"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "OK100",
+        "country": "중국",
+        "cert_date": "2020-07-20",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-OK100"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MC211",
+        "country": "중국",
+        "cert_date": "2021-10-15",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-MC211"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MT2SD25",
+        "country": "중국",
+        "cert_date": "2021-10-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-dji-MT2SD25"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RM510",
+        "country": "중국",
+        "cert_date": "2021-10-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-dji-RM510"
+      },
+      {
+        "company_name": "SZ DJI TECHNOLOGY CO., LTD",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "L2P",
+        "country": "중국",
+        "cert_date": "2021-10-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-dji-L2P"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RXD2",
+        "country": "중국",
+        "cert_date": "2021-10-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-RXD2"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TX2",
+        "country": "중국",
+        "cert_date": "2021-10-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-TX2"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "source_record_id": "1020227030640",
+        "일련번호": "1",
+        "출원번호": "1020227030640",
+        "발명의명칭(한글)": "적응형 네트워크 핸드오버 방법, 시스템 및 저장 매체",
+        "출원일자": "2022-04-26",
+        "출원인": "스테이트 그리드 지앙수 일렉트릭 파워 컴퍼니 리미티드. 리서치 인스티튜트|스테이트 그리드 지앙수 일렉트릭 파워 컴퍼니 리미티드|지앙수 일렉트릭 파워 리서치 인스티튜트 컴퍼니 리미티드|스테이트 그리드 스마트 그리드 리서치 인스티튜트 컴퍼니 리미티드",
+        "등록상태": "거절",
+        "초록": "본 발명은 적응형 네트워크 핸드오버 방법, 시스템 및 저장 매체를 개시하고, 본 발명은 RBF 신경망을 기반으로 기기의 서비스 유형 및 기기의 네트워크 표준을 판단하여 핸드오버에 사용될 심층 Q 네트워크를 결정하고, 현재의 이기종 네트워크 또는 네트워크 액세스 포인트의 환경 상태를 심층 Q 네트워크의 입력으로 하여 최적의 네트워크 및 액세스 포인트를 획득함으로써 종래의 핸드오버 알고리즘의 단일한 핸드오버 기준으로 인한 핸드오버 오류를 방지하고 기기의 핸드오버 횟수를 줄여 보다 합리적으로 핸드오버할 수 있도록 한다.",
+        "IPC": "H04W 36/14|H04W 36/30|H04W 36/00|G06N 3/08",
+        "CPC": "",
+        "relevance_type": "general_ai",
+        "match_confidence": 0.45,
+        "search_alias": "DJI",
+        "search_type": "AI 특허 [일반]",
+        "search_query": "AP=[DJI]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
+        "status": "verified"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "DJI, DJI",
+    "model_param": "DJI-ROMOS",
+    "ocr_result": {
+      "extracted_text": "DJI ROMO S (단품) coupang 1,099,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 집입력 25,OOOPa 센서 LDS 카메라 사용시간 3시간(최대) 인식 시사물인식 감지회피 잠애물회피 카켓회피 통과높이 8cm 청소운전 모서리 반복 브러쉬 메인2개 사이드로봇부러쉬 먼지통 0.26L 필터 먼지필터 테파필터등부 Hi1금 증전시간 2시간30분 배티리용람 50oOmAh 청소기능 카켓부스트 브리쉬리프팀 물걸레리프팀 스마토존제어 기 고슬무거끼 츠사라주선",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\DJI ROMO S (단품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

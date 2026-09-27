@@ -1,0 +1,67 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=98181275",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "3i P10 Ultra",
+      "name": "3i P10 Ultra",
+      "description": "",
+      "ocr_text": "3i P1o Ultra coupang 528,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 집입력 18,OOOPa 센서 LDS 3D인식 카메라 맵끔 3D 사용시간 4시간(최대) 인식 시사물인식 감지회피 잠애물회피 낙하방지 눈틱등반 카켓회피 오염도감지 리프팅 1.05cm 분늑님기 2cm 통과높이 IOcm 브러쉬 매인 사이드로봇부러쉬 머리카락컷팀 먼지통 O3L 배터리용량 52OOmAh 청소기능 가데터   브거끼 기TFI",
+      "specs": {
+        "로봇청소기": "지원",
+        "흡입+물걸레": "지원",
+        "센서": "LDS , 3D인식 , 카메라",
+        "흡입력": "18,000Pa",
+        "AI사물인식": "지원",
+        "문턱넘기": "2cm",
+        "카펫부스트": "지원",
+        "물걸레리프팅": "지원",
+        "물걸레": "회전형",
+        "물걸레확장암": "지원",
+        "[스테이션] 먼지비움": "지원",
+        "먼지자동집진": "지원",
+        "걸레세척(온수)": "지원",
+        "걸레건조(온풍)": "지원",
+        "세제투입": "지원",
+        "스테이션청소": "지원",
+        "자동급수": "지원",
+        "[규격] 색상": "블랙",
+        "무게": "4.2kg",
+        "크기(가로x세로x깊이)": "청소기 350x100x350mm 스테이션 310x594x468mm"
+      },
+      "raw_specs": "로봇청소기 / 흡입+물걸레 / 센서 : LDS , 3D인식 , 카메라 / 흡입력 : 18,000Pa / AI사물인식 / 문턱넘기 : 2cm / 카펫부스트 / 물걸레리프팅 / 물걸레 : 회전형 / 물걸레확장암 / [스테이션] 먼지비움 / 먼지자동집진 / 걸레세척(온수) / 걸레건조(온풍) / 세제투입 / 스테이션청소 / 자동급수 / [규격] 색상 : 블랙 / 무게 : 4.2kg / 크기(가로x세로x깊이): 청소기 350x100x350mm 스테이션 310x594x468mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=98181275",
+      "manufacturer": "3i Co., Ltd. 3i",
+      "model_name": "P10 Ultra"
+    },
+    "norm_info": {
+      "company_name": "3i Co., Ltd. 3i",
+      "model_name": "P10 Ultra",
+      "product_name": "3i P10 Ultra"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "3i Co., Ltd. 3i",
+    "model_param": "P10 Ultra",
+    "ocr_result": {
+      "extracted_text": "3i P1o Ultra coupang 528,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 집입력 18,OOOPa 센서 LDS 3D인식 카메라 맵끔 3D 사용시간 4시간(최대) 인식 시사물인식 감지회피 잠애물회피 낙하방지 눈틱등반 카켓회피 오염도감지 리프팅 1.05cm 분늑님기 2cm 통과높이 IOcm 브러쉬 매인 사이드로봇부러쉬 머리카락컷팀 먼지통 O3L 배터리용량 52OOmAh 청소기능 가데터   브거끼 기TFI",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\3i P10 Ultra\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

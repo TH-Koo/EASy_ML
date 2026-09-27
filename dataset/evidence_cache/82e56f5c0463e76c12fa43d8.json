@@ -1,0 +1,350 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=92357951",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "프리플로우 MCHOSE V9 PRO (정품)",
+      "name": "프리플로우 MCHOSE V9 PRO (정품)",
+      "description": "",
+      "ocr_text": "프리플로우 MCHOSE V9 PRO (정품) 끄리풀로우 72,900원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 52 연관상품 유넷크기 53mm 채널지원 가상 71자널 연결방식 USB-C USB능글 USB-C동글 2.4GHz 불무투스 불무투스 V5.0 인디터스 322 감도 113dB 주파수 2OHz~2OkHz 사운드기능 A노이즈랜쓸림가이 편의기능 저지언게이망모드 전용 소프트웨어 사용시간 250시간 배터리용량 2,OOOmAh 충전단자 USB-C 패드형대 오버이어 권트론러형태 일제형조작부 권트물러기능 볼룹 조설 마이크 ONOFF 마이크형태 플렉시블 탈작형",
+      "specs": {
+        "유무선겸용 PC헤드셋": "지원",
+        "가상 7.1채널": "지원",
+        "USB-C": "지원",
+        "USB동글": "지원",
+        "USB-C동글": "지원",
+        "2.4GHz": "지원",
+        "블루투스 v5.0": "지원",
+        "32Ω": "지원",
+        "113dB": "지원",
+        "20Hz~20kHz": "지원",
+        "AI노이즈캔슬링마이크": "지원",
+        "저지연게이밍모드": "지원",
+        "전용 소프트웨어": "지원",
+        "사용시간": "250시간",
+        "배터리용량": "2,000mAh",
+        "충전단자": "USB-C",
+        "[형태] 오버이어": "지원",
+        "일체형조작부": "지원",
+        "컨트롤러기능": "볼륨 조절 , 마이크 ON,OFF",
+        "마이크형태": "플렉시블 , 탈착형",
+        "밴드형태": "슬라이더형",
+        "색상": "블랙 , 화이트",
+        "무게": "275g"
+      },
+      "raw_specs": "유무선겸용 PC헤드셋 / 가상 7.1채널 / USB-C / USB동글 / USB-C동글 / 2.4GHz / 블루투스 v5.0 / 32Ω / 113dB / 20Hz~20kHz / AI노이즈캔슬링마이크 / 저지연게이밍모드 / 전용 소프트웨어 / 사용시간 : 250시간 / 배터리용량 : 2,000mAh / 충전단자 : USB-C / [형태] 오버이어 / 일체형조작부 / 컨트롤러기능 : 볼륨 조절 , 마이크 ON,OFF / 마이크형태 : 플렉시블 , 탈착형 / 밴드형태 : 슬라이더형 / 색상 : 블랙 , 화이트 / 무게 : 275g",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=92357951",
+      "manufacturer": "프리플로우, Freelou",
+      "model_name": "V9 PRO"
+    },
+    "norm_info": {
+      "company_name": "프리플로우, Freelou",
+      "model_name": "V9 PRO",
+      "product_name": "프리플로우 MCHOSE V9 PRO (정품)"
+    },
+    "db_results": [
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "archon RE:AL HX",
+        "country": "중국",
+        "cert_date": "2024-06-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-RE-AL-HX"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "archon F1 PRO MAX ART",
+        "country": "중국",
+        "cert_date": "2026-01-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-F1-PRO-MAX-ART"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력무선기기",
+        "model_name": "archon AK74 PRO",
+        "country": "중국",
+        "cert_date": "2026-02-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-AK-74-RRO"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기",
+        "model_name": "archon AK55 BASIC",
+        "country": "중국",
+        "cert_date": "2026-02-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-AK-55-BASIC"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기",
+        "model_name": "archon AK45 BASIC",
+        "country": "중국",
+        "cert_date": "2026-02-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-AK-45-BASIC"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기",
+        "model_name": "archon AM24B",
+        "country": "중국",
+        "cert_date": "2026-02-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-AM-24B"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "archon AK47 PRO",
+        "country": "중국",
+        "cert_date": "2026-03-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-AK-47-PRO"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "archon AK68",
+        "country": "중국",
+        "cert_date": "2025-03-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-AK-68"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "G3 A",
+        "country": "중국",
+        "cert_date": "2025-05-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-G3A"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "archon F1 PRO MAX",
+        "country": "중국",
+        "cert_date": "2025-06-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-F1-PRO-MAX"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "archon F1 PRO TKL",
+        "country": "중국",
+        "cert_date": "2025-06-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-F1-PRO-TKL"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "archon UX FLAT MAX",
+        "country": "중국",
+        "cert_date": "2025-08-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-UX-FLAT-MAX"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "archon AK39",
+        "country": "중국",
+        "cert_date": "2025-09-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-AK-39"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "archon AK68 DualDial",
+        "country": "중국",
+        "cert_date": "2025-09-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-AK-68-DualDial"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "archon AK27 OSCAFE",
+        "country": "중국",
+        "cert_date": "2025-12-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-AK-27-OSCAFE"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "archon V1 PRO MINI",
+        "country": "중국",
+        "cert_date": "2024-05-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-V1-PRO-MINI"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DynaKing R7",
+        "country": "중국",
+        "cert_date": "2019-05-15",
+        "cert_status": "적합인증",
+        "cert_no": "R-CS-AFg-DynaKing-R7"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "GX87",
+        "country": "중국",
+        "cert_date": "2024-07-02",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-GX87"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "archon MAGNOX R",
+        "country": "중국",
+        "cert_date": "2024-07-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-MAGNOX-R"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "archon MAGNOX SL PRO",
+        "country": "중국",
+        "cert_date": "2024-07-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-MAGNOX-SL-PRO"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Archon RE:AL IX KUSTOM",
+        "country": "중국",
+        "cert_date": "2024-07-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-IX-KUSTOM"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SCYROX V8",
+        "country": "중국",
+        "cert_date": "2024-08-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-SCYROX-V8"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "archon AK47",
+        "country": "중국",
+        "cert_date": "2024-09-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-AK-47"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "archon AK74",
+        "country": "중국",
+        "cert_date": "2024-09-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-AK-74"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "GK896B PRO",
+        "country": "중국",
+        "cert_date": "2023-11-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-RS-AFg-E1-PROPlus"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "GK896B PRO R",
+        "country": "중국",
+        "cert_date": "2023-11-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-RS-AFg-ForceLink"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "KBT5.2",
+        "country": "중국",
+        "cert_date": "2023-12-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-RS-AFg-KBT5-2"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "GK898B PRO",
+        "country": "중국",
+        "cert_date": "2023-12-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-RS-AFg-E1-PROMAX"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "GK868B PRO",
+        "country": "중국",
+        "cert_date": "2023-12-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-RS-AFg-E1-PROMINI"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "GK893B PRO",
+        "country": "중국",
+        "cert_date": "2023-12-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-RS-AFg-E1-PRO"
+      },
+      {
+        "company_name": "(주)프리플로우",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "superb CW100",
+        "country": "중국",
+        "cert_date": "2019-01-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AFg-CW100"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "프리플로우, Freelou",
+    "model_param": "V9 PRO",
+    "ocr_result": {
+      "extracted_text": "프리플로우 MCHOSE V9 PRO (정품) 끄리풀로우 72,900원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 52 연관상품 유넷크기 53mm 채널지원 가상 71자널 연결방식 USB-C USB능글 USB-C동글 2.4GHz 불무투스 불무투스 V5.0 인디터스 322 감도 113dB 주파수 2OHz~2OkHz 사운드기능 A노이즈랜쓸림가이 편의기능 저지언게이망모드 전용 소프트웨어 사용시간 250시간 배터리용량 2,OOOmAh 충전단자 USB-C 패드형대 오버이어 권트론러형태 일제형조작부 권트물러기능 볼룹 조설 마이크 ONOFF 마이크형태 플렉시블 탈작형",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\프리플로우 MCHOSE V9 PRO (정품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

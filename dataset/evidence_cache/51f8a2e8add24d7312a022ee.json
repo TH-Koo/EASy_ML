@@ -1,0 +1,58 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=20179199",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "스마트 AI 어썸바이크 2",
+      "name": "스마트 AI 어썸바이크 2",
+      "description": "",
+      "ocr_text": "스마트 Al 어썩바이크 2 coupang 900,000원 50,000원 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 킬무게 운동기능 게임어플연등 편의기능 이동바퀴 스평조설장치 전립선보호안장 거치대 스마토문 대불릿 물병 쇠대하숨 112Okg [@ 인종 적합성평가인층 상세설명 판매 사이드 분의 | 인종번호 확인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인 상품 설명 복사하기",
+      "specs": {
+        "실내자전거": "지원",
+        "입식형": "지원",
+        "휠무게": "6kg",
+        "[운동] 게임어플연동": "지원",
+        "[편의] 이동바퀴": "지원",
+        "수평조절장치": "지원",
+        "전립선보호안장": "지원",
+        "거치대": "스마트폰 , 태블릿 , 물병",
+        "[부가] 최대하중": "1120kg",
+        "크기(정면x측면x높이)": "51x102x125cm",
+        "무게": "35kg"
+      },
+      "raw_specs": "실내자전거 / 입식형 / 휠무게 : 6kg / [운동] 게임어플연동 / [편의] 이동바퀴 / 수평조절장치 / 전립선보호안장 / 거치대 : 스마트폰 , 태블릿 , 물병 / [부가] 최대하중 : 1120kg / 크기(정면x측면x높이): 51x102x125cm / 무게: 35kg",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=20179199",
+      "manufacturer": "스마트 '스마트'",
+      "model_name": "AI 어썸바이크 2"
+    },
+    "norm_info": {
+      "company_name": "스마트 '스마트'",
+      "model_name": "AI 어썸바이크 2",
+      "product_name": "스마트 AI 어썸바이크 2"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "스마트 '스마트'",
+    "model_param": "AI 어썸바이크 2",
+    "ocr_result": {
+      "extracted_text": "스마트 Al 어썩바이크 2 coupang 900,000원 50,000원 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 킬무게 운동기능 게임어플연등 편의기능 이동바퀴 스평조설장치 전립선보호안장 거치대 스마토문 대불릿 물병 쇠대하숨 112Okg [@ 인종 적합성평가인층 상세설명 판매 사이드 분의 | 인종번호 확인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인 상품 설명 복사하기",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\스마트 AI 어썸바이크 2\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

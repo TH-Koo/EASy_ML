@@ -1,0 +1,67 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=63466001",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "SK매직 올클린 디아트 ACL-16C1A",
+      "name": "SK매직 올클린 디아트 ACL-16C1A",
+      "description": "",
+      "ocr_text": "SK매직 올흘린 디아트 ACL-16C1A coupang 932,750원  무료배송 최저가 구매하기 가격비교 37 상품 상세정보 의견리뷰 연관상품 공기창정기능 360도 필터 센서 먼지 모드 자동 수면 티보 스마트기능 스마드근제어 필터점검 교제일림 부가기능 청정도표시 버튼잠금 판량조절 이동식바퀴 그 외 기능 분리 세칙 가능 / A청점 인종 CA인층 KAA아도디인송 소비전력 45W 무게 크기(가로x세로x깊 306x750x323mnm [g 인종 적합성평가인층 R-R-T8R-ACL-16CIA 인공번호 6인 안전확인인승 YHO7078-23001A 인종번로 확인 5kg",
+      "specs": {
+        "공기청정기": "지원",
+        "16평(52.8㎡)": "지원",
+        "360도 필터": "지원",
+        "[센서/모드] 먼지": "지원",
+        "자동": "지원",
+        "수면": "지원",
+        "터보": "지원",
+        "[편의] 스마트폰제어": "지원",
+        "필터점검/교체알림": "지원",
+        "청정도표시": "지원",
+        "버튼잠금": "지원",
+        "풍량조절": "지원",
+        "이동식바퀴": "지원",
+        "분리 세척 가능": "지원",
+        "AI청정": "지원",
+        "[인증] CA인증": "지원",
+        "KAA아토피인증": "지원",
+        "[규격] 소비전력": "45W",
+        "무게": "12.5kg",
+        "크기(가로x세로x깊이)": "306x750x323mm"
+      },
+      "raw_specs": "공기청정기 / 16평(52.8㎡) / 360도 필터 / [센서/모드] 먼지 / 자동 / 수면 / 터보 / [편의] 스마트폰제어 / 필터점검/교체알림 / 청정도표시 / 버튼잠금 / 풍량조절 / 이동식바퀴 / 분리 세척 가능 / AI청정 / [인증] CA인증 / KAA아토피인증 / [규격] 소비전력 : 45W / 무게 : 12.5kg / 크기(가로x세로x깊이) : 306x750x323mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=63466001",
+      "manufacturer": "SK 매직, SK Magic",
+      "model_name": "ACL-16C1A"
+    },
+    "norm_info": {
+      "company_name": "SK 매직, SK Magic",
+      "model_name": "ACL-16C1A",
+      "product_name": "SK매직 올클린 디아트 ACL-16C1A"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "SK 매직, SK Magic",
+    "model_param": "ACL-16C1A",
+    "ocr_result": {
+      "extracted_text": "SK매직 올흘린 디아트 ACL-16C1A coupang 932,750원  무료배송 최저가 구매하기 가격비교 37 상품 상세정보 의견리뷰 연관상품 공기창정기능 360도 필터 센서 먼지 모드 자동 수면 티보 스마트기능 스마드근제어 필터점검 교제일림 부가기능 청정도표시 버튼잠금 판량조절 이동식바퀴 그 외 기능 분리 세칙 가능 / A청점 인종 CA인층 KAA아도디인송 소비전력 45W 무게 크기(가로x세로x깊 306x750x323mnm [g 인종 적합성평가인층 R-R-T8R-ACL-16CIA 인공번호 6인 안전확인인승 YHO7078-23001A 인종번로 확인 5kg",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\SK매직 올클린 디아트 ACL-16C1A\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

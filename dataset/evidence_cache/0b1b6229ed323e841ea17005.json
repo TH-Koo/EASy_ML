@@ -1,0 +1,69 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=96979046",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "드리미 아쿠아10 울트라 롤러",
+      "name": "드리미 아쿠아10 울트라 롤러",
+      "description": "",
+      "ocr_text": "드리미 아구아10 울트라 홀러 Drearnie 690,000원 무료배승 최저가 구매하기 가격비교 82 상품 상세정보 의견리뷰 411 소모품|액세서리 뉴스커유니티 연관상품 집입력 30 OOOPa 센서 LDS 카메라 인식 시사물인식 감지회피 잠애물회피 분터등반 카켓회피 오염도감지 분늑년기 Acm(ecm) 통과뇨이 9.75cm 청소운전 격자 모서리 반복 브러쉬 메인2개 사이드로봇째러쉬 엉림방지재질 먼지통 0.22L 필터 먼지필터 배티리용량 6400mAh 청소기능 카켓부스트 브러쉬리프팀 물걸레리프팀 실시간물설레세책",
+      "specs": {
+        "로봇청소기": "지원",
+        "흡입+물걸레": "지원",
+        "센서": "LDS , 카메라",
+        "흡입력": "30,000Pa",
+        "AI사물인식": "지원",
+        "먼지필터": "지원",
+        "문턱넘기": "4cm(8cm)",
+        "카펫부스트": "지원",
+        "브러쉬리프팅": "지원",
+        "물걸레리프팅": "지원",
+        "실시간물걸레세척": "지원",
+        "롤러가드": "지원",
+        "물걸레": "롤러형",
+        "물걸레확장암": "지원",
+        "[스테이션] 먼지비움": "지원",
+        "걸레세척(온수)": "지원",
+        "걸레건조(온풍)": "지원",
+        "세제투입": "지원",
+        "세제통분리": "지원",
+        "[규격] 색상": "화이트",
+        "무게": "5.8kg",
+        "크기(가로x세로x깊이)": "청소기 350x97.5x350mm 스테이션 420x505x405mm"
+      },
+      "raw_specs": "로봇청소기 / 흡입+물걸레 / 센서 : LDS , 카메라 / 흡입력 : 30,000Pa / AI사물인식 / 먼지필터 / 문턱넘기 : 4cm(8cm) / 카펫부스트 / 브러쉬리프팅 / 물걸레리프팅 / 실시간물걸레세척 / 롤러가드 / 물걸레 : 롤러형 / 물걸레확장암 / [스테이션] 먼지비움 / 걸레세척(온수) / 걸레건조(온풍) / 세제투입 / 세제통분리 / [규격] 색상 : 화이트 / 무게 : 5.8kg / 크기(가로x세로x깊이): 청소기 350x97.5x350mm 스테이션 420x505x405mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=96979046",
+      "manufacturer": "드리미, Dremi",
+      "model_name": "AQM10"
+    },
+    "norm_info": {
+      "company_name": "드리미, Dremi",
+      "model_name": "AQM10",
+      "product_name": "드리미 아쿠아10 울트라 롤러"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "드리미, Dremi",
+    "model_param": "AQM10",
+    "ocr_result": {
+      "extracted_text": "드리미 아구아10 울트라 홀러 Drearnie 690,000원 무료배승 최저가 구매하기 가격비교 82 상품 상세정보 의견리뷰 411 소모품|액세서리 뉴스커유니티 연관상품 집입력 30 OOOPa 센서 LDS 카메라 인식 시사물인식 감지회피 잠애물회피 분터등반 카켓회피 오염도감지 분늑년기 Acm(ecm) 통과뇨이 9.75cm 청소운전 격자 모서리 반복 브러쉬 메인2개 사이드로봇째러쉬 엉림방지재질 먼지통 0.22L 필터 먼지필터 배티리용량 6400mAh 청소기능 카켓부스트 브러쉬리프팀 물걸레리프팀 실시간물설레세책",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\드리미 아쿠아10 울트라 롤러\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

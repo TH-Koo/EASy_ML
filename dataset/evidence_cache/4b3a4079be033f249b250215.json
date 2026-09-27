@@ -1,0 +1,236 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=122653475",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "스틸시리즈 Arctis Nova Pro Omni (블랙)",
+      "name": "스틸시리즈 Arctis Nova Pro Omni (블랙)",
+      "description": "",
+      "ocr_text": "스틱시리즈 Arctis Nova Pro Omni (불택) coupang 590,000원  무료배송 최저가 구매하기 가격비교 20 상품 상세정보 의견리뷰 뉴스커유니티 12 연관상품 유넷크기 4Omnm 채널지원 가상 71자널 연결방식 USB-C 3.5mm 2.4GHz 지원 LC3 임피터스 362 감도 105dB 주파수 1OHz~44OkHz 사운드기능 액티브노이즈랜슬림 주변소리듬기 시I노이즈랜쓸림가이 360 공간음향 편의기능 전용 소프트웨어 전용 맨 퇴충전 사용시간 60시간 충전단자 USB-C 패드형대 오버이어 권트물러기능 불룹 조설 마이크 ONOFF",
+      "specs": {
+        "무선 PC헤드셋": "지원",
+        "가상 7.1채널": "지원",
+        "USB-C": "지원",
+        "3.5mm": "지원",
+        "2.4GHz": "지원",
+        "LC3": "지원",
+        "무선호환": "PS4 , PS5 , Xbox 시리즈X , Xbox 시리즈S , 닌텐도스위치 , PC",
+        "36Ω": "지원",
+        "105dB": "지원",
+        "10Hz~440kHz": "지원",
+        "사용시간": "60시간",
+        "충전단자": "USB-C",
+        "액티브노이즈캔슬링": "지원",
+        "주변소리듣기": "지원",
+        "AI노이즈캔슬링마이크": "지원",
+        "360°공간음향": "지원",
+        "전용 소프트웨어": "지원",
+        "전용 앱": "지원",
+        "퀵충전": "지원",
+        "[형태] 오버이어": "지원",
+        "컨트롤러기능": "볼륨 조절 , 마이크 ON,OFF",
+        "마이크형태": "플렉시블 , 수납형",
+        "밴드형태": "슬라이더형 , 회전식",
+        "색상": "블랙",
+        "마이크 EQ 실시간 조정": "지원",
+        "출시가": "679,000원"
+      },
+      "raw_specs": "무선 PC헤드셋 / 가상 7.1채널 / USB-C / 3.5mm / 2.4GHz / LC3 / 무선호환 : PS4 , PS5 , Xbox 시리즈X , Xbox 시리즈S , 닌텐도스위치 , PC / 36Ω / 105dB / 10Hz~440kHz / 사용시간 : 60시간 / 충전단자 : USB-C / 액티브노이즈캔슬링 / 주변소리듣기 / AI노이즈캔슬링마이크 / 360°공간음향 / 전용 소프트웨어 / 전용 앱 / 퀵충전 / [형태] 오버이어 / 컨트롤러기능 : 볼륨 조절 , 마이크 ON,OFF / 마이크형태 : 플렉시블 , 수납형 / 밴드형태 : 슬라이더형 , 회전식 / 색상 : 블랙 / 마이크 EQ 실시간 조정 / 출시가: 679,000원",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=122653475",
+      "manufacturer": "스틸시리즈, Steel Series",
+      "model_name": "Arctis Nova Pro Omni"
+    },
+    "norm_info": {
+      "company_name": "스틸시리즈, Steel Series",
+      "model_name": "Arctis Nova Pro Omni",
+      "product_name": "스틸시리즈 Arctis Nova Pro Omni (블랙)"
+    },
+    "db_results": [
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "M-00019TX",
+        "country": "중국",
+        "cert_date": "2020-09-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SS4-M-00019TX"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기 ( 무선데이터통신시스템용 무선기기)",
+        "model_name": "M-00030TX",
+        "country": "중국",
+        "cert_date": "2021-02-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SS4-M-00030TX"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기 ( 무선데이터통신시스템용 무선기기)",
+        "model_name": "M-00030",
+        "country": "중국",
+        "cert_date": "2021-02-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SS4-M-00030"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HS-00021TXX",
+        "country": "중국",
+        "cert_date": "2020-02-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SS4-HS-00021TXX"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "M-00022",
+        "country": "중국",
+        "cert_date": "2020-04-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SS4-M-00022"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "M-00022TX",
+        "country": "중국",
+        "cert_date": "2020-04-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SS4-M-00022TX"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "GC-00007",
+        "country": "중국",
+        "cert_date": "2020-06-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SS4-GC-00007"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HS-00018TX",
+        "country": "중국",
+        "cert_date": "2020-07-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SS4-HS-00018TX"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HS-00018",
+        "country": "중국",
+        "cert_date": "2020-07-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SS4-HS-00018"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HS-00015",
+        "country": "중국",
+        "cert_date": "2017-11-09",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-SS4-HS-00015"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "M-00019",
+        "country": "중국",
+        "cert_date": "2020-09-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SS4-M-00019"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HS-00021TX",
+        "country": "중국",
+        "cert_date": "2019-06-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SS4-HS-00021TX"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HS-00021",
+        "country": "중국",
+        "cert_date": "2019-06-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SS4-HS-00021"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HS-00014",
+        "country": "중국",
+        "cert_date": "2018-04-24",
+        "cert_status": "적합인증",
+        "cert_no": "R-CMM-SS4-HS-00014"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HS-00014TX",
+        "country": "중국",
+        "cert_date": "2018-04-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-CMM-SS4-HS-00014TX"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HS-00013TX",
+        "country": "중국",
+        "cert_date": "2017-08-28",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-SS4-HS-00013TX"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HS-00013",
+        "country": "중국",
+        "cert_date": "2017-08-28",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-SS4-HS-00013"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HS-00009",
+        "country": "중국",
+        "cert_date": "2017-09-11",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-SS4-HS-00009"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "스틸시리즈, Steel Series",
+    "model_param": "Arctis Nova Pro Omni",
+    "ocr_result": {
+      "extracted_text": "스틱시리즈 Arctis Nova Pro Omni (불택) coupang 590,000원  무료배송 최저가 구매하기 가격비교 20 상품 상세정보 의견리뷰 뉴스커유니티 12 연관상품 유넷크기 4Omnm 채널지원 가상 71자널 연결방식 USB-C 3.5mm 2.4GHz 지원 LC3 임피터스 362 감도 105dB 주파수 1OHz~44OkHz 사운드기능 액티브노이즈랜슬림 주변소리듬기 시I노이즈랜쓸림가이 360 공간음향 편의기능 전용 소프트웨어 전용 맨 퇴충전 사용시간 60시간 충전단자 USB-C 패드형대 오버이어 권트물러기능 불룹 조설 마이크 ONOFF",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\스틸시리즈 Arctis Nova Pro Omni (블랙)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

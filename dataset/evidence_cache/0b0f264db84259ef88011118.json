@@ -1,0 +1,122 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=74997158",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "크로스오버 32QD180G IPS WQHD 게이밍 AI",
+      "name": "크로스오버 32QD180G IPS WQHD 게이밍 AI",
+      "description": "",
+      "ocr_text": "크로스오버 320D1806 IPS WQHD 게이망 Al 검오아시스   238,980원 (238,980+무료배송) 최저가 구매하기 가격비교 59 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 해삼도 QHD(2560 1440) 쇠대 주사물 165Hz 패널 종류 IPS 화면 비율 라이드(16.9) 파닐 형대 평면 시야각 광시야각 퍽설피치 272mmn 응답 속도 화면 밝기 350nits 명만비 200.1 통적명압반 OOO,0OO:1 HDR 지원 HDR 시력보호 기능 끌리커 프리 불루라이트 자단 눈부십 방지 안티글레이 화면 기능 크로마서브다플림 부가 기능 스피커 내장 해드시 아옷 스랜드 기능 발트(상하) 규격 VESA봄 100 1oOmm 크기가로x세로x깊 718x514x196mnm 무게 소비전력 34W 대기전력 0.5W 이하 색상영역 Ims 9kg",
+      "specs": {
+        "모니터": "지원",
+        "81.3cm(32인치)": "지원",
+        "QHD(2560 x 1440)": "지원",
+        "165Hz": "지원",
+        "IPS": "지원",
+        "와이드(16": "9)",
+        "평면": "지원",
+        "1ms": "지원",
+        "350nits": "지원",
+        "1,200": "1",
+        "헤드폰 아웃": "지원",
+        "스피커 내장": "지원",
+        "틸트(상하)": "지원",
+        "4.9kg": "지원",
+        "[게임특화] 블랙 이퀄라이저": "지원",
+        "조준선 표시": "지원",
+        "G-Sync 호환": "지원",
+        "FreeSync": "지원",
+        "[단자정보] HDMI 2.0": "지원",
+        "DP": "지원"
+      },
+      "raw_specs": "모니터 / 81.3cm(32인치) / QHD(2560 x 1440) / 165Hz / IPS / 와이드(16:9) / 평면 / 1ms / 350nits / 1,200:1 / 헤드폰 아웃 / 스피커 내장 / 틸트(상하) / 4.9kg / [게임특화] 블랙 이퀄라이저 / 조준선 표시 / G-Sync 호환 / FreeSync / [단자정보] HDMI 2.0 / DP",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=74997158",
+      "manufacturer": "크로스오버, Crossover",
+      "model_name": "32QD180G"
+    },
+    "norm_info": {
+      "company_name": "크로스오버, Crossover",
+      "model_name": "32QD180G",
+      "product_name": "크로스오버 32QD180G IPS WQHD 게이밍 AI"
+    },
+    "db_results": [
+      {
+        "company_name": "(주) 크로스오버존",
+        "equip_name": "LED 모니터",
+        "model_name": "32QD100SM IPS WQHD 멀티스탠드",
+        "country": "중국",
+        "cert_date": "2024-11-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-CSO-32QD100SM"
+      },
+      {
+        "company_name": "(주) 크로스오버존",
+        "equip_name": "텔레비전수상기",
+        "model_name": "COCO 402UT UHD TV",
+        "country": "중국",
+        "cert_date": "2016-04-01",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REI-CSO-COCO402UTUHD"
+      },
+      {
+        "company_name": "(주) 크로스오버존",
+        "equip_name": "텔레비전수상기",
+        "model_name": "TIO 5525K UHD CURVED TV",
+        "country": "중국",
+        "cert_date": "2017-07-11",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REI-CSO-5525K"
+      },
+      {
+        "company_name": "(주) 크로스오버존",
+        "equip_name": "텔레비전수상기",
+        "model_name": "TIO 3206HD LEDTV",
+        "country": "중국",
+        "cert_date": "2017-06-30",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REI-CSO-3206HD"
+      },
+      {
+        "company_name": "(주) 크로스오버존",
+        "equip_name": "텔레비전수상기",
+        "model_name": "TIO 65UH6050 UHD TV",
+        "country": "중국",
+        "cert_date": "2018-01-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-REI-CSO-65UH6050"
+      },
+      {
+        "company_name": "(주) 크로스오버존",
+        "equip_name": "텔레비전수상기",
+        "model_name": "TIO 43UH5030 UHD TV",
+        "country": "중국",
+        "cert_date": "2018-01-09",
+        "cert_status": "적합등록",
+        "cert_no": "R-REI-CSO-43UH5030"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "크로스오버, Crossover",
+    "model_param": "32QD180G",
+    "ocr_result": {
+      "extracted_text": "크로스오버 320D1806 IPS WQHD 게이망 Al 검오아시스   238,980원 (238,980+무료배송) 최저가 구매하기 가격비교 59 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 해삼도 QHD(2560 1440) 쇠대 주사물 165Hz 패널 종류 IPS 화면 비율 라이드(16.9) 파닐 형대 평면 시야각 광시야각 퍽설피치 272mmn 응답 속도 화면 밝기 350nits 명만비 200.1 통적명압반 OOO,0OO:1 HDR 지원 HDR 시력보호 기능 끌리커 프리 불루라이트 자단 눈부십 방지 안티글레이 화면 기능 크로마서브다플림 부가 기능 스피커 내장 해드시 아옷 스랜드 기능 발트(상하) 규격 VESA봄 100 1oOmm 크기가로x세로x깊 718x514x196mnm 무게 소비전력 34W 대기전력 0.5W 이하 색상영역 Ims 9kg",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\크로스오버 32QD180G IPS WQHD 게이밍 AI\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=96772775",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "에어르 슬릭",
+      "name": "에어르 슬릭",
+      "description": "",
+      "ocr_text": "에어로 슬리 coupang 215,000원  무료배송 최저가 구매하기 가격비교 24 상품 상세정보 의견리뷰 연관상품 집입력(W) 250W 사용시간 20분(쇠대) 스테이선 먼지비움 스템드거지 먼지봉투 청소기능 시청소 먼지감지센서 LED라이트 모티 BLDC모티 필터 워서불리파필터 테파필터등부 H13금 배터리 충전시간 4시간 메인터러쉬 일반 추가e러쉬 침구널러쉬 슬널러쉬 틈사 브러쉬 편의기능 디스플레이표시 배터리잔량표시 설프스괜딩 색상 베이지 무게 [@ 인종 Bkg",
+      "specs": {
+        "핸디스틱청소기": "지원",
+        "무선": "지원",
+        "흡입전용": "지원",
+        "BLDC모터": "지원",
+        "워셔블헤파필터": "지원",
+        "스테이션": "스탠드거치 , 먼지비움",
+        "먼지봉투": "3L",
+        "먼지감지센서": "지원",
+        "LED라이트": "지원",
+        "AI청소": "지원",
+        "[흡입구] 일반": "지원",
+        "추가브러쉬": "틈새브러쉬 , 침구브러쉬 , 솔브러쉬",
+        "[색상/크기] 색상": "베이지",
+        "무게": "0.8kg"
+      },
+      "raw_specs": "핸디스틱청소기 / 무선 / 흡입전용 / BLDC모터 / 워셔블헤파필터 / 스테이션 : 스탠드거치 , 먼지비움 / 먼지봉투 : 3L / 먼지감지센서 / LED라이트 / AI청소 / [흡입구] 일반 / 추가브러쉬 : 틈새브러쉬 , 침구브러쉬 , 솔브러쉬 / [색상/크기] 색상 : 베이지 / 무게 : 0.8kg",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=96772775",
+      "manufacturer": "에어르, Aero",
+      "model_name": "에어르 슬릭"
+    },
+    "norm_info": {
+      "company_name": "에어르, Aero",
+      "model_name": "에어르 슬릭",
+      "product_name": "에어르 슬릭"
+    },
+    "db_results": [
+      {
+        "company_name": "AEROVISION AVIONICS, INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "A213 820 43 03",
+        "country": "중국",
+        "cert_date": "2018-06-29",
+        "cert_status": "적합인증",
+        "cert_no": "R-CMM-AAi-A2138204303"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "에어르, Aero",
+    "model_param": "에어르 슬릭",
+    "ocr_result": {
+      "extracted_text": "에어로 슬리 coupang 215,000원  무료배송 최저가 구매하기 가격비교 24 상품 상세정보 의견리뷰 연관상품 집입력(W) 250W 사용시간 20분(쇠대) 스테이선 먼지비움 스템드거지 먼지봉투 청소기능 시청소 먼지감지센서 LED라이트 모티 BLDC모티 필터 워서불리파필터 테파필터등부 H13금 배터리 충전시간 4시간 메인터러쉬 일반 추가e러쉬 침구널러쉬 슬널러쉬 틈사 브러쉬 편의기능 디스플레이표시 배터리잔량표시 설프스괜딩 색상 베이지 무게 [@ 인종 Bkg",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\에어르 슬릭\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

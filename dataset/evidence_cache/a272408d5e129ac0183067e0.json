@@ -1,0 +1,67 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=123743060",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "APPLE 맥북프로14 M5프로 15코어 CPU, 16코어 GPU 블랙 (리퍼비시)",
+      "name": "APPLE 맥북프로14 M5프로 15코어 CPU, 16코어 GPU 블랙 (리퍼비시)",
+      "description": "",
+      "ocr_text": "APPLE 맥북프로14 M5프로 15코어 CPU, 16코어 GPU 불택 (리퍼비시) HIMART 4,690,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 14 연관상품 화면 크기 35.9cm(i4 2인치) 무게 1.6kg 최대사용시간 시대 22시간 운영제제 (OS) macOS Tahoe 모델명 MJLW스KHIA [화면] 화면 비율 16.10.3 해상도 3024*x19641254ppi) DCI-P3 주사물 12OHz 밝기 1ooonit 패널 종류 miniLED 디스플레이 특징 트루튼 광시야각 노지령 [CPU] CPU 제조사 애플(ARM) CPU 세분류 M5 Pro CPU 코이 15 굳이 NPU 종류 애플 뉴렬엔진 [그래픽] GPU 종류 내장그래픽 GPU 제조사 애플 GPU 군이 16굳이 [구성] 24GB 램 교체 불가능 [저장장치]",
+      "specs": {
+        "리퍼비시": "지원",
+        "AI노트북": "지원",
+        "35.9cm(14.2인치)": "지원",
+        "1.6kg": "지원",
+        "최대 22시간": "지원",
+        "macOS Tahoe": "지원",
+        "[화면] 3024x1964(254ppi)": "지원",
+        "DCI-P3": "지원",
+        "120Hz": "지원",
+        "1000nit": "지원",
+        "[CPU] 애플(ARM)": "지원",
+        "M5 Pro": "지원",
+        "[그래픽] 내장그래픽": "지원",
+        "16코어": "지원",
+        "[구성] 24GB": "지원",
+        "램 교체": "불가능",
+        "용량": "2TB",
+        "USB-PD": "지원",
+        "72.4Wh": "지원",
+        "Apple Intelligence": "지원"
+      },
+      "raw_specs": "리퍼비시 / AI노트북 / 35.9cm(14.2인치) / 1.6kg / 최대 22시간 / macOS Tahoe / [화면] 3024x1964(254ppi) / DCI-P3 : 지원 / 120Hz / 1000nit / [CPU] 애플(ARM) / M5 Pro / [그래픽] 내장그래픽 / 16코어 / [구성] 24GB / 램 교체 : 불가능 / 용량 : 2TB / USB-PD / 72.4Wh / Apple Intelligence",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=123743060",
+      "manufacturer": "Apple Inc.  Apple",
+      "model_name": "M15"
+    },
+    "norm_info": {
+      "company_name": "Apple Inc.  Apple",
+      "model_name": "M15",
+      "product_name": "APPLE 맥북프로14 M5프로 15코어 CPU, 16코어 GPU 블랙 (리퍼비시)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "Apple Inc.  Apple",
+    "model_param": "M15",
+    "ocr_result": {
+      "extracted_text": "APPLE 맥북프로14 M5프로 15코어 CPU, 16코어 GPU 불택 (리퍼비시) HIMART 4,690,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 14 연관상품 화면 크기 35.9cm(i4 2인치) 무게 1.6kg 최대사용시간 시대 22시간 운영제제 (OS) macOS Tahoe 모델명 MJLW스KHIA [화면] 화면 비율 16.10.3 해상도 3024*x19641254ppi) DCI-P3 주사물 12OHz 밝기 1ooonit 패널 종류 miniLED 디스플레이 특징 트루튼 광시야각 노지령 [CPU] CPU 제조사 애플(ARM) CPU 세분류 M5 Pro CPU 코이 15 굳이 NPU 종류 애플 뉴렬엔진 [그래픽] GPU 종류 내장그래픽 GPU 제조사 애플 GPU 군이 16굳이 [구성] 24GB 램 교체 불가능 [저장장치]",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\APPLE 맥북프로14 M5프로 15코어 CPU, 16코어 GPU 블랙 (리퍼비시)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

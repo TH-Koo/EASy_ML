@@ -1,0 +1,417 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=14957273",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "몬스타 몬스타기어 서머너 버즈 AI (블랙+블랙)",
+      "name": "몬스타 몬스타기어 서머너 버즈 AI (블랙+블랙)",
+      "description": "",
+      "ocr_text": "돌스타 본스타기어 서머너 버즈 Al (불렉+불택) LOTTE ON 56,010원  무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.0 사운드채널 스데레오 드라이버크기 유넷 6mnm 감도 92dB 코덕 AAC 불루투스 프로파일 AVRCP 무선연결거리 1Om 통화시간 6시간 1회중전시 6시간 중전시간 1시간 배티리용량 5OmnAh 편의기능 배터리진랑표시(불 음싱안내 이이입 숲 권트률 재생)멈축조설 불름조설",
+      "specs": {
+        "커널형": "지원",
+        "블루투스 v5.0": "지원",
+        "[기능] [사운드] 유닛": "6mm",
+        "92dB": "지원",
+        "코덱": "AAC",
+        "1회충전시": "6시간",
+        "[부가] 편의기능": "음성안내",
+        "음성명령": "지원",
+        "IPX6방수": "지원"
+      },
+      "raw_specs": "커널형 / 블루투스 v5.0 / [기능] [사운드] 유닛:6mm / 92dB / 코덱 : AAC / 1회충전시 : 6시간 / [부가] 편의기능 : 음성안내 / 음성명령 / IPX6방수",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=14957273",
+      "manufacturer": "몬스타, Monster",
+      "model_name": "VM500"
+    },
+    "norm_info": {
+      "company_name": "몬스타, Monster",
+      "model_name": "VM500",
+      "product_name": "몬스타 몬스타기어 서머너 버즈 AI (블랙+블랙)"
+    },
+    "db_results": [
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "LIVE200",
+        "country": "중국",
+        "cert_date": "2020-03-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-msg-GUTSLIVE200"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "LIVEX3",
+        "country": "중국",
+        "cert_date": "2019-06-20",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-msg-LIVEX3"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "S9PRO",
+        "country": "중국",
+        "cert_date": "2019-01-21",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-msg-S9PROXX"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SUMMONER-S3PRO",
+        "country": "중국",
+        "cert_date": "2019-01-15",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-msg-SUMMONER-S3PRO"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "B1PRO",
+        "country": "중국",
+        "cert_date": "2019-01-15",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-msg-B1PRO"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "BTSOUND",
+        "country": "중국",
+        "cert_date": "2020-08-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-msg-BTSOUND"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MINIKEY",
+        "country": "중국",
+        "cert_date": "2020-08-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-msg-MINIKEY"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RECEIVER PRO",
+        "country": "중국",
+        "cert_date": "2020-07-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-msg-RECEIVERPRO"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "COCKA PRO",
+        "country": "중국",
+        "cert_date": "2020-06-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-msg-COCKAPRO"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SUMMONER BUDS Becky",
+        "country": "중국",
+        "cert_date": "2020-04-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-msg-SBBECKY"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "AI",
+        "country": "중국",
+        "cert_date": "2019-07-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-msg-SBAI"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "블루투스 스피커",
+        "model_name": "GUTSLIVE20BT",
+        "country": "중국",
+        "cert_date": "2022-11-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-msg-GUTSLIVE20BT"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "무선동글이",
+        "model_name": "USBBT",
+        "country": "중국",
+        "cert_date": "2022-02-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-msg-USBBT"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "몬스타 터치스퀘어 스마트테이블",
+        "model_name": "MON-TST55A",
+        "country": "한국",
+        "cert_date": "2023-11-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-msg-MON-TST55A"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "몬스타 터치스퀘어 스마트전자칠판",
+        "model_name": "MON-TSB86A",
+        "country": "한국",
+        "cert_date": "2023-11-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-msg-MON-TSB86A"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "블루투스마이크",
+        "model_name": "micbt",
+        "country": "중국",
+        "cert_date": "2023-08-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-msg-micbt"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "블루투스스피커",
+        "model_name": "WAVE MINI",
+        "country": "중국",
+        "cert_date": "2023-08-02",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-msg-WAVE"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "무선동글이",
+        "model_name": "USBDONGLE",
+        "country": "중국",
+        "cert_date": "2023-03-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-msg-USBDONGLE"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "블루투스 스피커",
+        "model_name": "GUTSSOUND",
+        "country": "중국",
+        "cert_date": "2023-01-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-msg-GUTSSOUND"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "블루투스헤드셋",
+        "model_name": "H720PRO",
+        "country": "중국",
+        "cert_date": "2024-07-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-msg-H720PRO"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "K7PRO",
+        "country": "중국",
+        "cert_date": "2018-10-02",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-msg-SUMMONER-K7PRO"
+      },
+      {
+        "company_name": "Monster, LLC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "186310",
+        "country": "중국",
+        "cert_date": "2016-06-07",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-M98-186310"
+      },
+      {
+        "company_name": "Monster, LLC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "178874",
+        "country": "중국",
+        "cert_date": "2016-03-16",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-M98-178874"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SUMMONER-S1",
+        "country": "중국",
+        "cert_date": "2017-10-24",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRI-msg-S1"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SUMMONER-T1",
+        "country": "중국",
+        "cert_date": "2017-10-20",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRI-msg-T1"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "BK87OMG",
+        "country": "중국",
+        "cert_date": "2017-09-28",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMI-msg-BK87OMG"
+      },
+      {
+        "company_name": "Monster, LLC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "190688-A",
+        "country": "미국",
+        "cert_date": "2017-09-08",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRM-M98-190688"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SUMMONER BE-100",
+        "country": "중국",
+        "cert_date": "2017-08-30",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRI-msg-BE100"
+      },
+      {
+        "company_name": "Monster, LLC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "190686",
+        "country": "중국",
+        "cert_date": "2017-03-30",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRM-M98-190686"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "ZION X-Line Z9",
+        "country": "중국",
+        "cert_date": "2018-11-14",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-msg-ZION-Z9"
+      },
+      {
+        "company_name": "Monster, LLC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "190677",
+        "country": "중국",
+        "cert_date": "2016-06-10",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-M98-190677"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "K5PRO",
+        "country": "중국",
+        "cert_date": "2018-09-27",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-msg-SUMMONER-K5PRO"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "S1PRO",
+        "country": "중국",
+        "cert_date": "2018-09-27",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-msg-S1PRO"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "S9PRO",
+        "country": "중국",
+        "cert_date": "2018-08-31",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-msg-S9PRO"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "K3PRO",
+        "country": "중국",
+        "cert_date": "2018-08-30",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-msg-K3PRO"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "T518",
+        "country": "중국",
+        "cert_date": "2018-06-29",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRI-msg-T518"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "T508",
+        "country": "중국",
+        "cert_date": "2018-06-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRI-msg-T508"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "T308",
+        "country": "중국",
+        "cert_date": "2018-06-18",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRI-msg-T308"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "K1PRO",
+        "country": "중국",
+        "cert_date": "2018-06-01",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRI-msg-K1PRO"
+      },
+      {
+        "company_name": "몬스타 주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CLASSICX3",
+        "country": "중국",
+        "cert_date": "2019-08-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-msg-CLASSICX3"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "몬스타, Monster",
+    "model_param": "VM500",
+    "ocr_result": {
+      "extracted_text": "돌스타 본스타기어 서머너 버즈 Al (불렉+불택) LOTTE ON 56,010원  무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.0 사운드채널 스데레오 드라이버크기 유넷 6mnm 감도 92dB 코덕 AAC 불루투스 프로파일 AVRCP 무선연결거리 1Om 통화시간 6시간 1회중전시 6시간 중전시간 1시간 배티리용량 5OmnAh 편의기능 배터리진랑표시(불 음싱안내 이이입 숲 권트률 재생)멈축조설 불름조설",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\몬스타 몬스타기어 서머너 버즈 AI (블랙+블랙)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=78985019",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "에디파이어 Comfo Flex (정품)",
+      "name": "에디파이어 Comfo Flex (정품)",
+      "description": "",
+      "ocr_text": "에디파이어 Comfo Flex (정품) coupang 73,470원  무료배송 최저가 구매하기 가격비교 23 상품 상세정보 의견리뷰 연관상품 @a SUn 착용감에 음질 까지 ! 에디파이어의 최초 라입유 제조회사 에디파이어 (제조사 웬사이트 바로가기) 등록년원 2025년 04원 분류 무선이어논 이어프타입 오든이이형 외형 귀걸이형 용도 음악+통화용 무선연결 불무투스 V5.4 노이즈건트률",
+      "specs": {
+        "오픈이어형": "지원",
+        "귀걸이형": "지원",
+        "블루투스 v5.4": "지원",
+        "[노이즈컨트롤] AI노이즈캔슬링마이크": "지원",
+        "[음질] HRA": "지원",
+        "유닛": "14.2mm",
+        "드라이버": "다이나믹",
+        "20Hz~40kHz": "지원",
+        "코덱": "LDAC , SBC , AAC",
+        "360도 공간음향": "지원",
+        "[배터리] 1회충전시": "10시간",
+        "최대재생": "40시간",
+        "충전": "USB-C",
+        "[기능] 편의기능": "위치찾기",
+        "멀티포인트": "지원",
+        "IP55방수(이어버드)": "지원"
+      },
+      "raw_specs": "오픈이어형 / 귀걸이형 / 블루투스 v5.4 / [노이즈컨트롤] AI노이즈캔슬링마이크 / [음질] HRA / 유닛:14.2mm / 드라이버 : 다이나믹 / 20Hz~40kHz / 코덱 : LDAC , SBC , AAC / 360도 공간음향 / [배터리] 1회충전시 : 10시간 / 최대재생 : 40시간 / 충전 : USB-C / [기능] 편의기능 : 위치찾기 / 멀티포인트 / IP55방수(이어버드)",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=78985019",
+      "manufacturer": "에디파이어, Edifair",
+      "model_name": "EFP399"
+    },
+    "norm_info": {
+      "company_name": "에디파이어, Edifair",
+      "model_name": "EFP399",
+      "product_name": "에디파이어 Comfo Flex (정품)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "에디파이어, Edifair",
+    "model_param": "EFP399",
+    "ocr_result": {
+      "extracted_text": "에디파이어 Comfo Flex (정품) coupang 73,470원  무료배송 최저가 구매하기 가격비교 23 상품 상세정보 의견리뷰 연관상품 @a SUn 착용감에 음질 까지 ! 에디파이어의 최초 라입유 제조회사 에디파이어 (제조사 웬사이트 바로가기) 등록년원 2025년 04원 분류 무선이어논 이어프타입 오든이이형 외형 귀걸이형 용도 음악+통화용 무선연결 불무투스 V5.4 노이즈건트률",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\에디파이어 Comfo Flex (정품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

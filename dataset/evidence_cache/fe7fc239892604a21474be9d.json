@@ -1,0 +1,656 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=15516026",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "브라운 오랄비 iO7 (블랙오닉스)",
+      "name": "브라운 오랄비 iO7 (블랙오닉스)",
+      "description": "",
+      "ocr_text": "브라운 오락비 i07 (불렉오넉스) coupang 257,050원  무료배송 최저가 구매하기 가격비교 24 상품 상세정보 의견리뷰 16 소모품|액세서리 뉴스커유니티 연관상품 사용대상 성인용 전원 충전식 진통수 45000회(분당) 회전수 9900회(분담) 모드 강력한 연약한 잇몸헤어 화이트님 사용편의스마트 불무투스 압력센서 맨크침 타이머 양치구역인식 생활방수 휴대용 구성품 전통짓슬 1가 첫슬모 1개 휴대용키이스 첫슬모 세밀한세점 조미세모 인공지능실시간코침 일반람색 LED디I스끌레이 흑백 충전시간 3시간 사용시간(그회중전) 12일 [@ 인종 적합성평가인층 상세설명 판매 사이트 문의 인증번호 확인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인",
+      "specs": {
+        "전동칫솔": "지원",
+        "상하진동+좌우회전": "지원",
+        "성인용": "지원",
+        "충전식": "지원",
+        "고회전": "지원",
+        "고진동": "지원",
+        "거치대포함": "지원",
+        "리필모포함": "지원",
+        "진동수": "45000회(분당)",
+        "회전수": "9900회(분당)",
+        "모드": "강력한 , 연약한 , 잇몸케어 , 화이트닝",
+        "블루투스": "지원",
+        "압력센서": "지원",
+        "앱코칭": "지원",
+        "타이머": "지원",
+        "양치구역인식": "지원",
+        "생활방수": "지원",
+        "휴대용": "지원",
+        "구성품": "전동칫솔 1개 , 칫솔모 1개 , 휴대용케이스",
+        "칫솔모": "세밀한세정 , 초미세모",
+        "인공지능실시간코칭": "일반탐색",
+        "LED디스플레이": "흑백",
+        "충전시간": "3시간",
+        "사용시간(1회충전)": "12일",
+        "색상": "블랙오닉스"
+      },
+      "raw_specs": "전동칫솔 / 상하진동+좌우회전 / 성인용 / 충전식 / 고회전 / 고진동 / 거치대포함 / 리필모포함 / 진동수 : 45000회(분당) / 회전수 : 9900회(분당) / 모드 : 강력한 , 연약한 , 잇몸케어 , 화이트닝 / 블루투스 / 압력센서 / 앱코칭 / 타이머 / 양치구역인식 / 생활방수 / 휴대용 / 구성품 : 전동칫솔 1개 , 칫솔모 1개 , 휴대용케이스 / 칫솔모 : 세밀한세정 , 초미세모 / 인공지능실시간코칭 : 일반탐색 / LED디스플레이 : 흑백 / 충전시간 : 3시간 / 사용시간(1회충전) : 12일 / 색상: 블랙오닉스",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=15516026",
+      "manufacturer": "Brown Korea Co., Ltd., Brown",
+      "model_name": "IO7"
+    },
+    "norm_info": {
+      "company_name": "Brown Korea Co., Ltd., Brown",
+      "model_name": "IO7",
+      "product_name": "브라운 오랄비 iO7 (블랙오닉스)"
+    },
+    "db_results": [
+      {
+        "company_name": "Matrox Electronic Systems Ltd.",
+        "equip_name": "Imae Processng Board",
+        "model_name": "VIO7IAOA/G*",
+        "country": "캐나다",
+        "cert_date": "2017-02-09",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REM-MxT-VIO7IAOAG"
+      },
+      {
+        "company_name": "Matrox Electronic Systems Ltd.",
+        "equip_name": "Image Processing Board",
+        "model_name": "VIO7ISAOSA*",
+        "country": "캐나다",
+        "cert_date": "2017-02-09",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REM-MxT-VIO7ISAOSA"
+      },
+      {
+        "company_name": "Matrox Electronic Systems Ltd.",
+        "equip_name": "Image processing Board",
+        "model_name": "VIO7IAOA*",
+        "country": "캐나다",
+        "cert_date": "2017-02-09",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REM-MxT-VIO7IAOA"
+      },
+      {
+        "company_name": "TCL King Electrical Appliances (Huizhou) Co., Ltd.",
+        "equip_name": "텔레비전수상기",
+        "model_name": "65P6US",
+        "country": "중국",
+        "cert_date": "2018-06-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-RMM-TcL-65P6US"
+      },
+      {
+        "company_name": "PC Worth Int'l Co.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RM3030",
+        "country": "대만",
+        "cert_date": "2018-07-16",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-FSF-RM3030"
+      },
+      {
+        "company_name": "Razer (Asia-Pacific) Pte., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RC30-025701",
+        "country": "중국",
+        "cert_date": "2018-07-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-CMM-RAZ-RC30-025701"
+      },
+      {
+        "company_name": "주식회사이지스(EGIS CO.,Ltd.)",
+        "equip_name": "특정소출력 무선기기(중계용 무선기기)",
+        "model_name": "EG-SRR-D12K",
+        "country": "한국",
+        "cert_date": "2018-07-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-eGs-EG-SRR-D12K"
+      },
+      {
+        "company_name": "ELECOM  CO., LTD.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "LBT-HPC13",
+        "country": "일본",
+        "cert_date": "2018-07-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-ELJ-LBT-HPC13"
+      },
+      {
+        "company_name": "SCREEN Graphic Solutions Co., Ltd.",
+        "equip_name": "Air Filter Unit",
+        "model_name": "AF-190",
+        "country": "일본",
+        "cert_date": "2018-07-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-REM-dmp-AF190"
+      },
+      {
+        "company_name": "AIOI·SYSTEMS CO.,LTD.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "NW2975A-01",
+        "country": "일본",
+        "cert_date": "2018-07-12",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-NW5-NW2975A-01"
+      },
+      {
+        "company_name": "Signify (China) Investment Co., Ltd.",
+        "equip_name": "Fixed general purpose luminaire",
+        "model_name": "31246",
+        "country": "중국",
+        "cert_date": "2018-07-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-REM-pli-31246"
+      },
+      {
+        "company_name": "GIGABYTE TECHNOLOGY CO., LTD.",
+        "equip_name": "MAIN BOARD",
+        "model_name": "B450 AORUS PRO WIFI",
+        "country": "중국",
+        "cert_date": "2018-07-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-RMM-GBN-B450APROWIFI"
+      },
+      {
+        "company_name": "Signify (China) Investment Co., Ltd.",
+        "equip_name": "Fixed general purpose luminaire",
+        "model_name": "31245",
+        "country": "중국",
+        "cert_date": "2018-07-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-REM-pli-31245"
+      },
+      {
+        "company_name": "Emerson Professional Tools (Shanghai) Co., Ltd.",
+        "equip_name": "Drain Cleaning Manchine",
+        "model_name": "PowerClear™ R7",
+        "country": "중국",
+        "cert_date": "2018-07-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-REM-Eme-PowerClearR7"
+      },
+      {
+        "company_name": "ATEN INTERNATIONAL CO., LTD.",
+        "equip_name": "Dual Rail USB HDMI DVI VGA Full HD LCD Console",
+        "model_name": "CL3800NW",
+        "country": "대만",
+        "cert_date": "2018-07-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-REM-ATN-CL3800NW"
+      },
+      {
+        "company_name": "Panasonic Manufacturing (Thailand) Co., Ltd.",
+        "equip_name": "Hair Dryer",
+        "model_name": "EH-NA98",
+        "country": "태국",
+        "cert_date": "2018-07-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-REM-PMF-EH-NA98"
+      },
+      {
+        "company_name": "Razer (Asia-Pacific) Pte., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RC30-025801",
+        "country": "중국",
+        "cert_date": "2018-07-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-CMM-RAZ-RC30-025801"
+      },
+      {
+        "company_name": "Razer (Asia-Pacific) Pte., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RC30-025802",
+        "country": "중국",
+        "cert_date": "2018-07-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-RAZ-RC30-025802"
+      },
+      {
+        "company_name": "주식회사 다름인터내셔널(Dareum International Co.,Ltd.)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "X-Craft HP Gold",
+        "country": "중국",
+        "cert_date": "2018-07-06",
+        "cert_status": "적합인증",
+        "cert_no": "R-CMI-DRu-X-CraftHPGold"
+      },
+      {
+        "company_name": "HUAWEI TECHNOLOGIES CO., LTD.",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
+        "model_name": "FIG-LA1",
+        "country": "중국",
+        "cert_date": "2018-07-06",
+        "cert_status": "적합인증",
+        "cert_no": "R-CMM-HUW-FIG-LA1"
+      },
+      {
+        "company_name": "GIGABYTE TECHNOLOGY CO., LTD.",
+        "equip_name": "MAIN BOARD",
+        "model_name": "N3160N-D3V",
+        "country": "중국",
+        "cert_date": "2018-07-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-REM-GBN-N3160ND3V"
+      },
+      {
+        "company_name": "Ecovacs Robotics Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DO3G",
+        "country": "중국",
+        "cert_date": "2018-07-04",
+        "cert_status": "적합인증",
+        "cert_no": "R-CMM-kwS-DO3G"
+      },
+      {
+        "company_name": "Zagg (Shenzhen) Technology Development Co., Ltd.",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "PWRSTION-WRLS-LTG-10K",
+        "country": "중국",
+        "cert_date": "2018-07-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-RMM-zag-TX10LTG"
+      },
+      {
+        "company_name": "Zagg (Shenzhen) Technology Development Co., Ltd.",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "CS-WRLS-VNTMT-10W-A",
+        "country": "중국",
+        "cert_date": "2018-07-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-RMM-zag-VENTA"
+      },
+      {
+        "company_name": "TCL Technoly Electronics (Huizhou) Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "EXTx Air",
+        "country": "중국",
+        "cert_date": "2018-07-03",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-TAV-EXTxAir"
+      },
+      {
+        "company_name": "WACOM CO., LTD.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Lenovo Precision Pen",
+        "country": "일본",
+        "cert_date": "2018-06-29",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-HV4-ESP201B02"
+      },
+      {
+        "company_name": "Lumileds (Shanghai) Management Co., Ltd.",
+        "equip_name": "Car air purifier",
+        "model_name": "GP3201",
+        "country": "중국",
+        "cert_date": "2018-06-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-REM-Lcc-GP3201"
+      },
+      {
+        "company_name": "주식회사 씨디에이 (CDA CO. , LTD. )",
+        "equip_name": "승강장안전문 제어방식 확인용 표시장치",
+        "model_name": "CDA-D0009",
+        "country": "한국",
+        "cert_date": "2018-06-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-RMM-cda-CDA-D0009"
+      },
+      {
+        "company_name": "케이에이치필룩스 주식회사 (KH Feelux Co., Ltd.)",
+        "equip_name": "LED Luminaire",
+        "model_name": "NDP15 22K-24V-C90",
+        "country": "한국",
+        "cert_date": "2018-06-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-REM-FLS-NDP15"
+      },
+      {
+        "company_name": "GIGABYTE TECHNOLOGY CO., LTD.",
+        "equip_name": "MAIN BOARD",
+        "model_name": "B360N AORUS GAMING WIFI",
+        "country": "중국",
+        "cert_date": "2018-06-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-RMM-GBN-B360NAGMWIFI"
+      },
+      {
+        "company_name": "케이에이치필룩스 주식회사 (KH Feelux Co., Ltd.)",
+        "equip_name": "LED Luminaire",
+        "model_name": "NDP1 22K 24V-C90",
+        "country": "한국",
+        "cert_date": "2018-06-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-REM-FLS-NDP1"
+      },
+      {
+        "company_name": "Autel Intelligent Technology Corp., Ltd.",
+        "equip_name": "특정소출력 무선기기(데이터전송용 무선기기)",
+        "model_name": "MXSENSOR433MS",
+        "country": "중국",
+        "cert_date": "2018-06-05",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-WQ2-433MS"
+      },
+      {
+        "company_name": "Dongguan Hele Electronics Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "QCY-L1",
+        "country": "중국",
+        "cert_date": "2018-06-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-QCY-QCY-L1"
+      },
+      {
+        "company_name": "Carl Zeiss Suzhou Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "IAR-630-C",
+        "country": "중국",
+        "cert_date": "2018-06-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-CMM-Czs-IAR-630-C"
+      },
+      {
+        "company_name": "Siemens Shanghai Medical Equipment Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "11061366",
+        "country": "중국",
+        "cert_date": "2018-06-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-Smn-11061366"
+      },
+      {
+        "company_name": "Siemens Shanghai Medical Equipment Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "11061360",
+        "country": "중국",
+        "cert_date": "2018-06-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-Smn-11061360"
+      },
+      {
+        "company_name": "TP-LINK Technologies Co., LTD.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "Archer T4U",
+        "country": "중국",
+        "cert_date": "2018-06-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-TPN-ArcherT4UKR"
+      },
+      {
+        "company_name": "㈜세스트(CEST Co., LTD.)",
+        "equip_name": "지능형교통시스템용 무선설비(육상이동국의 송수신장치)",
+        "model_name": "VW300-OBU",
+        "country": "한국",
+        "cert_date": "2018-06-12",
+        "cert_status": "적합인증",
+        "cert_no": "R-CMM-CE1-VW300-OBU"
+      },
+      {
+        "company_name": "㈜세스트(CEST Co., LTD.)",
+        "equip_name": "지능형교통시스템용 무선설비(기지국의 송수신장치)",
+        "model_name": "VW300-RSU",
+        "country": "한국",
+        "cert_date": "2018-06-12",
+        "cert_status": "적합인증",
+        "cert_no": "R-CMM-CE1-VW300-RSU"
+      },
+      {
+        "company_name": "Beautiful Enterprise Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "ATM100",
+        "country": "홍콩",
+        "cert_date": "2018-06-20",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-Be1-ATM100"
+      },
+      {
+        "company_name": "ZHEJIANG DAHUA VISION TECHNOLOGY Co.,LTD.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Dual-Sensor-IPC-02",
+        "country": "중국",
+        "cert_date": "2018-07-17",
+        "cert_status": "적합인증",
+        "cert_no": "R-CMM-DXJ-Dual-IPC-02"
+      },
+      {
+        "company_name": "Ningbo Jiuchang Electrical Equipment Co., Ltd.",
+        "equip_name": "무선핸디형청소기",
+        "model_name": "GWELL-8080",
+        "country": "중국",
+        "cert_date": "2018-06-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-REM-JCV-GWELL-8080"
+      },
+      {
+        "company_name": "FUJI MEDICAL INSTRUMENTS MFG. CO., LTD.",
+        "equip_name": "Massage Chair",
+        "model_name": "JP-1100KR",
+        "country": "일본",
+        "cert_date": "2018-06-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-REM-FJI-JP-1100KR"
+      },
+      {
+        "company_name": "Giant Manufacturing Co.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Power Pro-L",
+        "country": "대만",
+        "cert_date": "2018-06-20",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-GKR-POWERPRO-L"
+      },
+      {
+        "company_name": "Giant Manufacturing Co.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Power Pro-R",
+        "country": "대만",
+        "cert_date": "2018-06-20",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-GKR-POWERPRO-R"
+      },
+      {
+        "company_name": "Signify (China) Investment Co., Ltd.",
+        "equip_name": "Portable Luminaires",
+        "model_name": "66016",
+        "country": "중국",
+        "cert_date": "2018-06-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-REM-pli-66016"
+      },
+      {
+        "company_name": "WACOM CO., LTD.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HSN-W001P",
+        "country": "중국",
+        "cert_date": "2018-06-14",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-HV4-HSN-W001P"
+      },
+      {
+        "company_name": "Hangzhou HIKVISION Digital Tech. Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DS-2CD2455FWD-IW",
+        "country": "중국",
+        "cert_date": "2018-06-14",
+        "cert_status": "적합인증",
+        "cert_no": "R-CMM-HV2-DS-2CD24x5FWD"
+      },
+      {
+        "company_name": "GIGABYTE TECHNOLOGY CO., LTD.",
+        "equip_name": "MAIN BOARD",
+        "model_name": "H310N",
+        "country": "중국",
+        "cert_date": "2018-06-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-REM-GBN-H310N"
+      },
+      {
+        "company_name": "주식회사 웨이브온 (Wave On Co., Ltd.)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HB-N50",
+        "country": "중국",
+        "cert_date": "2018-06-20",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRI-IMQ-HB-N50"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [
+      {
+        "id": 4374,
+        "cert_type": "GS",
+        "cert_no": "24-0001",
+        "product_name": "비전 인공지능 기반 차량번호 판독시스템 v1.0",
+        "company_name": "주식회사 에이엔비(AnB Co.Ltd.)",
+        "biz_no": "7688102364",
+        "representative": "이현우",
+        "cert_date": "2024-01-29",
+        "expire_date": "9999-12-31"
+      },
+      {
+        "id": 4929,
+        "cert_type": "GS",
+        "cert_no": "23-0006",
+        "product_name": "RPA기반 기업 업무자동화 지원 소프트웨어",
+        "company_name": "(주)블루프리즘코리아 (Blue Prism Korea Ltd.)",
+        "biz_no": "7108802160",
+        "representative": "안현덕",
+        "cert_date": "2023-04-07",
+        "expire_date": "9999-12-31"
+      },
+      {
+        "id": 5000,
+        "cert_type": "GS",
+        "cert_no": "23-0085",
+        "product_name": "3차원 문화유산 플랫폼 v1.03D Cultural Heritage Platform v1.0",
+        "company_name": "뉴레이어 주식회사(New Layer Co. Ltd.)",
+        "biz_no": "2338110238",
+        "representative": "",
+        "cert_date": "2023-02-20",
+        "expire_date": "9999-12-31"
+      },
+      {
+        "id": 5356,
+        "cert_type": "GS",
+        "cert_no": "22-0012",
+        "product_name": "영상 분석을 통한 유속 및 유량 계측 소프트웨어",
+        "company_name": "주식회사 에이치티아이코리아(HTI Korea Co. Ltd.)",
+        "biz_no": "7058601336",
+        "representative": "HASEGAWA MAKOTO",
+        "cert_date": "2022-08-31",
+        "expire_date": "9999-12-31"
+      },
+      {
+        "id": 5357,
+        "cert_type": "GS",
+        "cert_no": "22-0011",
+        "product_name": "SNS 인사이트 데이터 모니터링 소프트웨어",
+        "company_name": "주식회사 프레시앤텍(FRESHNTECH Co.Ltd.)",
+        "biz_no": "4578601081",
+        "representative": "이준호김종우",
+        "cert_date": "2022-08-31",
+        "expire_date": "9999-12-31"
+      },
+      {
+        "id": 14395,
+        "cert_type": "혁신시제품",
+        "cert_no": "2022-450",
+        "product_name": "선제 대응 지능형 수처리 통합계장계측제어장치",
+        "company_name": "주식회사 에이치코비 (H-KORBI Co. Ltd.)",
+        "biz_no": "2098123540",
+        "representative": "",
+        "cert_date": "2022-12-26",
+        "expire_date": "2025-12-25"
+      },
+      {
+        "id": 20443,
+        "cert_type": "GS",
+        "cert_no": "24-0001",
+        "product_name": "비전 인공지능 기반 차량번호 판독시스템 v1.0",
+        "company_name": "주식회사 에이엔비(AnB Co.Ltd.)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2024-01-29",
+        "expire_date": null
+      },
+      {
+        "id": 20998,
+        "cert_type": "GS",
+        "cert_no": "23-0006",
+        "product_name": "RPA기반 기업 업무자동화 지원 소프트웨어",
+        "company_name": "(주)블루프리즘코리아 (Blue Prism Korea Ltd.)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2023-04-07",
+        "expire_date": null
+      },
+      {
+        "id": 21069,
+        "cert_type": "GS",
+        "cert_no": "23-0085",
+        "product_name": "3차원 문화유산 플랫폼 v1.03D Cultural Heritage Platform v1.0",
+        "company_name": "뉴레이어 주식회사(New Layer Co. Ltd.)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2023-02-20",
+        "expire_date": null
+      },
+      {
+        "id": 21425,
+        "cert_type": "GS",
+        "cert_no": "22-0012",
+        "product_name": "영상 분석을 통한 유속 및 유량 계측 소프트웨어",
+        "company_name": "주식회사 에이치티아이코리아(HTI Korea Co. Ltd.)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2022-08-31",
+        "expire_date": null
+      },
+      {
+        "id": 21426,
+        "cert_type": "GS",
+        "cert_no": "22-0011",
+        "product_name": "SNS 인사이트 데이터 모니터링 소프트웨어",
+        "company_name": "주식회사 프레시앤텍(FRESHNTECH Co.Ltd.)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2022-08-31",
+        "expire_date": null
+      },
+      {
+        "id": 30464,
+        "cert_type": "혁신시제품",
+        "cert_no": "2022-450",
+        "product_name": "선제 대응 지능형 수처리 통합계장계측제어장치 ",
+        "company_name": "주식회사 에이치코비 (H-KORBI Co. Ltd.)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2022-12-26",
+        "expire_date": null
+      }
+    ],
+    "dart_result": null,
+    "target_company_name": "Brown Korea Co., Ltd., Brown",
+    "model_param": "IO7",
+    "ocr_result": {
+      "extracted_text": "브라운 오락비 i07 (불렉오넉스) coupang 257,050원  무료배송 최저가 구매하기 가격비교 24 상품 상세정보 의견리뷰 16 소모품|액세서리 뉴스커유니티 연관상품 사용대상 성인용 전원 충전식 진통수 45000회(분당) 회전수 9900회(분담) 모드 강력한 연약한 잇몸헤어 화이트님 사용편의스마트 불무투스 압력센서 맨크침 타이머 양치구역인식 생활방수 휴대용 구성품 전통짓슬 1가 첫슬모 1개 휴대용키이스 첫슬모 세밀한세점 조미세모 인공지능실시간코침 일반람색 LED디I스끌레이 흑백 충전시간 3시간 사용시간(그회중전) 12일 [@ 인종 적합성평가인층 상세설명 판매 사이트 문의 인증번호 확인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\브라운 오랄비 iO7 (블랙오닉스)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

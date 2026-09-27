@@ -1,0 +1,67 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=96650711",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "나르왈 S30 Pro",
+      "name": "나르왈 S30 Pro",
+      "description": "",
+      "ocr_text": "나르올 S30 Pro 11> 458,990원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 29 뉴스커유니티 연관상품 집입력(Pa) 20,OOOPa 사용시간 1시간(최대) 스테이선 랜드거치 청소기능 시청소 먼지감지센서 배터리 배티리용량 OOOmAh 메인터러쉬 전방향회전 어제급인 물걸레기능 널러쉬자동세칙 브러쉬자농건조 자동세제투인 오면감지센서 비절리스브리쉬 물통 79L 색삼 덥스메이스그레이 무게 4.35kg [@ 인종 적합성평가인층 R-R-5YJ-YJSCOO8 인공번호 확인 안전확인인층 HU10935-20027C 인증번호 꽉인  제6",
+      "specs": {
+        "핸디스틱청소기": "지원",
+        "무선": "지원",
+        "흡입+물걸레(건습식)": "지원",
+        "흡입력": "20,000Pa",
+        "스테이션": "스탠드거치",
+        "먼지감지센서": "지원",
+        "AI청소": "지원",
+        "[흡입구] 롤러": "지원",
+        "전방향회전": "지원",
+        "액체흡입": "지원",
+        "베젤리스브러쉬": "지원",
+        "자동세제투입": "지원",
+        "브러쉬자동건조": "지원",
+        "브러쉬자동세척": "지원",
+        "오염감지센서": "지원",
+        "[색상/크기] 색상": "딥스페이스그레이",
+        "무게": "4.35kg",
+        "머리카락컷팅": "지원",
+        "물걸레 압력": "20N",
+        "크기(가로x세로x깊이)": "247x1172x273mm"
+      },
+      "raw_specs": "핸디스틱청소기 / 무선 / 흡입+물걸레(건습식) / 흡입력 : 20,000Pa / 스테이션 : 스탠드거치 / 먼지감지센서 / AI청소 / [흡입구] 롤러 / 전방향회전 / 액체흡입 / 베젤리스브러쉬 / 자동세제투입 / 브러쉬자동건조 / 브러쉬자동세척 / 오염감지센서 / [색상/크기] 색상 : 딥스페이스그레이 / 무게 : 4.35kg / 머리카락컷팅 / 물걸레 압력: 20N / 크기(가로x세로x깊이): 247x1172x273mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=96650711",
+      "manufacturer": "나르왈, Narwal",
+      "model_name": "S30 Pro"
+    },
+    "norm_info": {
+      "company_name": "나르왈, Narwal",
+      "model_name": "S30 Pro",
+      "product_name": "나르왈 S30 Pro"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "나르왈, Narwal",
+    "model_param": "S30 Pro",
+    "ocr_result": {
+      "extracted_text": "나르올 S30 Pro 11> 458,990원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 29 뉴스커유니티 연관상품 집입력(Pa) 20,OOOPa 사용시간 1시간(최대) 스테이선 랜드거치 청소기능 시청소 먼지감지센서 배터리 배티리용량 OOOmAh 메인터러쉬 전방향회전 어제급인 물걸레기능 널러쉬자동세칙 브러쉬자농건조 자동세제투인 오면감지센서 비절리스브리쉬 물통 79L 색삼 덥스메이스그레이 무게 4.35kg [@ 인종 적합성평가인층 R-R-5YJ-YJSCOO8 인공번호 확인 안전확인인층 HU10935-20027C 인증번호 꽉인  제6",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\나르왈 S30 Pro\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

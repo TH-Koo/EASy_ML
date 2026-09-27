@@ -1,0 +1,68 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=122702038",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "바디프랜드 퀀텀 AI 헬스케어로봇 BFR-9040 (일반설치)",
+      "name": "바디프랜드 퀀텀 AI 헬스케어로봇 BFR-9040 (일반설치)",
+      "description": "",
+      "ocr_text": "바디프랜드 권터 Al 헬스웨어로봇 BFR-9040 (일반설치) 1L> 7144,000원   무료배승 최저가 구매하기 가격비교 20 상품 상세정보 의견리뷰 연관상품 안가의자 안마방식 지안 주무름 두드림 곰공기압 콜림 분지름 마사지볼 3D입체안마 SL프레일 대출호 [안마기능] 마사지볼 어꺼 허리 엉덩이 마사지불이동 상하 좌우 온열 허리 송아리 발바닥 에어백 이까 골반 좋아리",
+      "specs": {
+        "안마의자": "지원",
+        "안마방식": "지압 , 주무름 , 두드림 , 공기압 , 롤링 , 문지름 , 마사지볼",
+        "SL프레임": "지원",
+        "[안마기능]": "지원",
+        "마사지볼": "목 , 어깨 , 등 , 허리 , 엉덩이",
+        "마사지볼이동": "상하 , 좌우",
+        "온열": "등 , 허리 , 종아리 , 발바닥",
+        "에어백": "어깨 , 골반 , 종아리 , 팔 , 발 , 발바닥 , 허리 , 등 , 허벅지",
+        "롤러": "발",
+        "지압돌기": "발바닥",
+        "조절": "다리길이",
+        "로보워킹": "지원",
+        "자동체형인식": "지원",
+        "리모컨": "지원",
+        "터치스크린": "지원",
+        "USB포트": "지원",
+        "[규격]": "지원",
+        "크기": "대형",
+        "세웠을때": "166x91x137cm",
+        "눕혔을때": "215x91x133cm",
+        "무게": "169.5kg"
+      },
+      "raw_specs": "안마의자 / 안마방식 : 지압 , 주무름 , 두드림 , 공기압 , 롤링 , 문지름 , 마사지볼 / SL프레임 / [안마기능] / 마사지볼 : 목 , 어깨 , 등 , 허리 , 엉덩이 / 마사지볼이동 : 상하 , 좌우 / 온열 : 등 , 허리 , 종아리 , 발바닥 / 에어백 : 어깨 , 골반 , 종아리 , 팔 , 발 , 발바닥 , 허리 , 등 , 허벅지 / 롤러 : 발 / 지압돌기 : 발바닥 / 조절 : 다리길이 / 로보워킹 / 자동체형인식 / 리모컨 / 터치스크린 / USB포트 / [규격] / 크기 : 대형 / 세웠을때 : 166x91x137cm / 눕혔을때 : 215x91x133cm / 무게 : 169.5kg",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=122702038",
+      "manufacturer": "BodyBrand, BodyBrand",
+      "model_name": "BFR-9040"
+    },
+    "norm_info": {
+      "company_name": "BodyBrand, BodyBrand",
+      "model_name": "BFR-9040",
+      "product_name": "바디프랜드 퀀텀 AI 헬스케어로봇 BFR-9040 (일반설치)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "BodyBrand, BodyBrand",
+    "model_param": "BFR-9040",
+    "ocr_result": {
+      "extracted_text": "바디프랜드 권터 Al 헬스웨어로봇 BFR-9040 (일반설치) 1L> 7144,000원   무료배승 최저가 구매하기 가격비교 20 상품 상세정보 의견리뷰 연관상품 안가의자 안마방식 지안 주무름 두드림 곰공기압 콜림 분지름 마사지볼 3D입체안마 SL프레일 대출호 [안마기능] 마사지볼 어꺼 허리 엉덩이 마사지불이동 상하 좌우 온열 허리 송아리 발바닥 에어백 이까 골반 좋아리",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\바디프랜드 퀀텀 AI 헬스케어로봇 BFR-9040 (일반설치)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

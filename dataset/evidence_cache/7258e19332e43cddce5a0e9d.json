@@ -1,0 +1,64 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=95059091",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "AULA G7 (해외구매)",
+      "name": "AULA G7 (해외구매)",
+      "description": "",
+      "ocr_text": "AULA G7 (해외구매) coupang 19,860원 2,500원 최저가 구매하기 가격비교 28 상품 상세정보 의견리뷰 연관상품 유넷크기 4Omnm 채널지원 스테레오 연결방식 3.5mm USB능글 2.4GHz 불무투스 불무투스 사운드기능 A노이즈랜쓸림마이 편의기능 핸즈프리통화 LED라이트 배티리용량 1,O0OmAh 충전단자 USB-C 파드형대 오버이이 권트론러형태 일체형조작부 권트론러기능 불룹 조설 LED ONOFF 마이크형태 플렉시블 탈작령 배드형태",
+      "specs": {
+        "유무선겸용 PC헤드셋": "지원",
+        "스테레오": "지원",
+        "3.5mm": "지원",
+        "USB동글": "지원",
+        "2.4GHz": "지원",
+        "블루투스": "지원",
+        "AI노이즈캔슬링마이크": "지원",
+        "핸즈프리통화": "지원",
+        "LED라이트": "지원",
+        "배터리용량": "1,000mAh",
+        "충전단자": "USB-C",
+        "[형태] 오버이어": "지원",
+        "일체형조작부": "지원",
+        "컨트롤러기능": "볼륨 조절 , LED ON,OFF",
+        "마이크형태": "플렉시블 , 탈착형",
+        "밴드형태": "슬라이더형",
+        "색상": "블랙 , 화이트 , 핑크"
+      },
+      "raw_specs": "유무선겸용 PC헤드셋 / 스테레오 / 3.5mm / USB동글 / 2.4GHz / 블루투스 / AI노이즈캔슬링마이크 / 핸즈프리통화 / LED라이트 / 배터리용량 : 1,000mAh / 충전단자 : USB-C / [형태] 오버이어 / 일체형조작부 / 컨트롤러기능 : 볼륨 조절 , LED ON,OFF / 마이크형태 : 플렉시블 , 탈착형 / 밴드형태 : 슬라이더형 / 색상 : 블랙 , 화이트 , 핑크",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=95059091",
+      "manufacturer": "AULA, AULA",
+      "model_name": "G7"
+    },
+    "norm_info": {
+      "company_name": "AULA, AULA",
+      "model_name": "G7",
+      "product_name": "AULA G7 (해외구매)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "AULA, AULA",
+    "model_param": "G7",
+    "ocr_result": {
+      "extracted_text": "AULA G7 (해외구매) coupang 19,860원 2,500원 최저가 구매하기 가격비교 28 상품 상세정보 의견리뷰 연관상품 유넷크기 4Omnm 채널지원 스테레오 연결방식 3.5mm USB능글 2.4GHz 불무투스 불무투스 사운드기능 A노이즈랜쓸림마이 편의기능 핸즈프리통화 LED라이트 배티리용량 1,O0OmAh 충전단자 USB-C 파드형대 오버이이 권트론러형태 일체형조작부 권트론러기능 불룹 조설 LED ONOFF 마이크형태 플렉시블 탈작령 배드형태",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\AULA G7 (해외구매)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

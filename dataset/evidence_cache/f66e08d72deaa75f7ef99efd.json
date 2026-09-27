@@ -1,0 +1,67 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=18486866",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "디아스포라 퓨어싱크 DI-CVP01 (단품)",
+      "name": "디아스포라 퓨어싱크 DI-CVP01 (단품)",
+      "description": "",
+      "ocr_text": "디아스포라 푸어상크 DI-CVPO1 (단품) 가격비교 상품 상세정보 의견리뷰 연관상품 공기창정기능 발휘 조미세먼지제거 새집슬후군물질제거 유해가스 제거 전열교환 그외 센서 시I모드 모드 수면 부가기능 미세먼지농도표시 청정도표시 BLDC모터 타이머 그 외 기능 자능환기 양음압기능 결로방지 누수밤지 소비전력 48W 크기(가로x세로x깊 464x693x223mmn [@ 인종 적합성평가인승 R-R-2 DP-DI-CVPOI 인증번호 확인 안전확인인즘 상세설명 판매 사이트 문의 인증번호 확인 롯데ON 상품 설명 복사하기 F우' Ni사T 사프스디o니 U 자동",
+      "specs": {
+        "환기청정기": "지원",
+        "50평(165㎡)": "지원",
+        "탈취": "지원",
+        "초미세먼지제거": "지원",
+        "새집증후군물질제거": "지원",
+        "유해가스 제거": "지원",
+        "전열교환": "지원",
+        "[센서/모드] AI모드": "지원",
+        "자동": "지원",
+        "수면": "지원",
+        "[편의] 미세먼지농도표시": "지원",
+        "청정도표시": "지원",
+        "BLDC모터": "지원",
+        "타이머": "지원",
+        "자동환기": "지원",
+        "양음압기능": "지원",
+        "결로방지": "지원",
+        "누수방지": "지원",
+        "[규격] 소비전력": "48W",
+        "크기(가로x세로x깊이)": "464x693x223mm"
+      },
+      "raw_specs": "환기청정기 / 50평(165㎡) / 탈취 / 초미세먼지제거 / 새집증후군물질제거 / 유해가스 제거 / 전열교환 / [센서/모드] AI모드 / 자동 / 수면 / [편의] 미세먼지농도표시 / 청정도표시 / BLDC모터 / 타이머 / 자동환기 / 양음압기능 / 결로방지 / 누수방지 / [규격] 소비전력 : 48W / 크기(가로x세로x깊이) : 464x693x223mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=18486866",
+      "manufacturer": "DIASPORE, DiaSpoRE",
+      "model_name": "DI-CVP01"
+    },
+    "norm_info": {
+      "company_name": "DIASPORE, DiaSpoRE",
+      "model_name": "DI-CVP01",
+      "product_name": "디아스포라 퓨어싱크 DI-CVP01 (단품)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "DIASPORE, DiaSpoRE",
+    "model_param": "DI-CVP01",
+    "ocr_result": {
+      "extracted_text": "디아스포라 푸어상크 DI-CVPO1 (단품) 가격비교 상품 상세정보 의견리뷰 연관상품 공기창정기능 발휘 조미세먼지제거 새집슬후군물질제거 유해가스 제거 전열교환 그외 센서 시I모드 모드 수면 부가기능 미세먼지농도표시 청정도표시 BLDC모터 타이머 그 외 기능 자능환기 양음압기능 결로방지 누수밤지 소비전력 48W 크기(가로x세로x깊 464x693x223mmn [@ 인종 적합성평가인승 R-R-2 DP-DI-CVPOI 인증번호 확인 안전확인인즘 상세설명 판매 사이트 문의 인증번호 확인 롯데ON 상품 설명 복사하기 F우' Ni사T 사프스디o니 U 자동",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\디아스포라 퓨어싱크 DI-CVP01 (단품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

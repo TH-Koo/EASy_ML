@@ -1,0 +1,65 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=60009962",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "노이시스 플로리오 F10 Pro NR200E",
+      "name": "노이시스 플로리오 F10 Pro NR200E",
+      "description": "",
+      "ocr_text": "노이시스 플로리오 F1O Pro NR2OOE 1L> 1,790,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 32 ~이제다7 연관상품 다음에서 보기: IYoulube 제조회사 노이시스 등록년원 2024년 07원 품목 로봇청소기 용도 졸입+물걸레 집입력 8,OOOPa 센서 LDS 카메라 적외선R 사용시간 3시간(최대) 인식 시사물인식",
+      "specs": {
+        "로봇청소기": "지원",
+        "흡입+물걸레": "지원",
+        "센서": "LDS , 카메라 , 적외선IR",
+        "흡입력": "8,000Pa",
+        "AI사물인식": "지원",
+        "문턱넘기": "2cm",
+        "브러쉬리프팅": "지원",
+        "물걸레리프팅": "지원",
+        "물걸레": "직진형",
+        "[스테이션] 먼지비움": "지원",
+        "걸레탈부착": "지원",
+        "디스플레이": "지원",
+        "자동급수": "지원",
+        "자동충전": "지원",
+        "[규격] 색상": "화이트",
+        "무게": "4kg",
+        "일회용 물걸레패드 교체": "지원",
+        "크기(가로x세로x깊이)": "청소기 312x97x322mm 스테이션 392x470x440mm"
+      },
+      "raw_specs": "로봇청소기 / 흡입+물걸레 / 센서 : LDS , 카메라 , 적외선IR / 흡입력 : 8,000Pa / AI사물인식 / 문턱넘기 : 2cm / 브러쉬리프팅 / 물걸레리프팅 / 물걸레 : 직진형 / [스테이션] 먼지비움 / 걸레탈부착 / 디스플레이 / 자동급수 / 자동충전 / [규격] 색상 : 화이트 / 무게 : 4kg / 일회용 물걸레패드 교체 / 크기(가로x세로x깊이): 청소기 312x97x322mm 스테이션 392x470x440mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=60009962",
+      "manufacturer": "노이시스,  Noisyis",
+      "model_name": "NR200E"
+    },
+    "norm_info": {
+      "company_name": "노이시스,  Noisyis",
+      "model_name": "NR200E",
+      "product_name": "노이시스 플로리오 F10 Pro NR200E"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "노이시스,  Noisyis",
+    "model_param": "NR200E",
+    "ocr_result": {
+      "extracted_text": "노이시스 플로리오 F1O Pro NR2OOE 1L> 1,790,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 32 ~이제다7 연관상품 다음에서 보기: IYoulube 제조회사 노이시스 등록년원 2024년 07원 품목 로봇청소기 용도 졸입+물걸레 집입력 8,OOOPa 센서 LDS 카메라 적외선R 사용시간 3시간(최대) 인식 시사물인식",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\노이시스 플로리오 F10 Pro NR200E\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

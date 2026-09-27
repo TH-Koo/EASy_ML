@@ -1,0 +1,512 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=6518832",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "엠지텍 락 클래식 알렉사",
+      "name": "엠지텍 락 클래식 알렉사",
+      "description": "",
+      "ocr_text": "임지택 락 클래식 알렉사 coupang 117,400원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 전원 내장내터리 최대출력 6oW 불무투스버전 불무투스 V4.2 입출력 AUX 네트위크 Wi-Fi 재생지원 라디오 다중연결 엘리떼이림 멀티미디어 전화통화 편의기능 음성비서내장 내장 음성비서 알력사 인식가능언어 영어인식 음성제어기능 loT연놈",
+      "specs": {
+        "AI스피커": "지원",
+        "내장배터리": "지원",
+        "최대출력": "60W",
+        "블루투스 v4.2": "지원",
+        "입출력": "AUX",
+        "Wi-Fi": "지원",
+        "라디오": "지원",
+        "다중연결": "멀티페어링",
+        "전화통화": "지원",
+        "음성비서내장": "지원",
+        "영어인식": "지원",
+        "IPX6방수": "지원",
+        "사용시간": "30시간",
+        "배터리용량": "4,400mAh"
+      },
+      "raw_specs": "AI스피커 / 내장배터리 / 최대출력 : 60W / 블루투스 v4.2 / 입출력 : AUX / Wi-Fi / 라디오 / 다중연결 : 멀티페어링 / 전화통화 / 음성비서내장 / 영어인식 / IPX6방수 / 사용시간 : 30시간 / 배터리용량 : 4,400mAh",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=6518832",
+      "manufacturer": "엠지텍,  M&T  Tech",
+      "model_name": "AL-401"
+    },
+    "norm_info": {
+      "company_name": "엠지텍,  M&T  Tech",
+      "model_name": "AL-401",
+      "product_name": "엠지텍 락 클래식 알렉사"
+    },
+    "db_results": [
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MAJESTY 5",
+        "country": "중국",
+        "cert_date": "2020-08-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-MAJESTYS"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(데이터전송용 무선기기)",
+        "model_name": "트윈보스 S9 Pro 7세대",
+        "country": "중국",
+        "cert_date": "2021-04-16",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MGI-TWPRO"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(데이터전송용 무선기기)",
+        "model_name": "자동먼지처리기",
+        "country": "중국",
+        "cert_date": "2021-04-16",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MGI-ADC"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "블루투스 사운드바",
+        "model_name": "SOUNDMASTER",
+        "country": "중국",
+        "cert_date": "2021-06-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-SM71S"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MGTEC V9",
+        "country": "중국",
+        "cert_date": "2020-05-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-JGA"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MGTEC Triple",
+        "country": "중국",
+        "cert_date": "2020-05-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-TRIDA"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "WoodClassic",
+        "country": "중국",
+        "cert_date": "2020-07-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-WOODCA"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MetalTheater",
+        "country": "중국",
+        "cert_date": "2020-07-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-MTTA"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "락클래식 Q9900 Pro",
+        "country": "중국",
+        "cert_date": "2020-07-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-Q9900PRO"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MAJESTY 9",
+        "country": "중국",
+        "cert_date": "2020-08-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-MJN"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "블루투스 이어폰",
+        "model_name": "IRON V65 PRO",
+        "country": "중국",
+        "cert_date": "2021-04-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-VANC"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "락클래식 Q90 PRO",
+        "country": "중국",
+        "cert_date": "2020-08-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-MSP"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Extreme ANC",
+        "country": "중국",
+        "cert_date": "2020-10-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-EXANC"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MB-3000X",
+        "country": "중국",
+        "cert_date": "2019-02-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MGI-3000X"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Aqua i7",
+        "country": "중국",
+        "cert_date": "2019-04-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MGI-AQI7"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "EarFree G2",
+        "country": "중국",
+        "cert_date": "2019-04-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MGI-EFGB"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "WOODY J2",
+        "country": "중국",
+        "cert_date": "2019-04-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MGI-WDJ2"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TWINBOTH",
+        "country": "중국",
+        "cert_date": "2019-05-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MGI-TBA"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Redmong R2",
+        "country": "중국",
+        "cert_date": "2019-05-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MGI-RMRB"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Aqua i3",
+        "country": "중국",
+        "cert_date": "2019-05-23",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MGI-AQIC"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "블루투스 스피커",
+        "model_name": "GB770PLUS",
+        "country": "중국",
+        "cert_date": "2023-05-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-GBSS"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "블루투스 스피커",
+        "model_name": "들리움",
+        "country": "중국",
+        "cert_date": "2025-05-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-NTS"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "블루투스 스피커",
+        "model_name": "MAJESTY 8",
+        "country": "중국",
+        "cert_date": "2025-05-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-MJE"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "블루투스 이어폰",
+        "model_name": "EarFree OPEN LDAC",
+        "country": "중국",
+        "cert_date": "2024-02-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-EFOL"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "블루투스 이어폰",
+        "model_name": "C-ALL 6000",
+        "country": "중국",
+        "cert_date": "2024-04-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-C-ALL6000"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "스마트링",
+        "model_name": "바이오링",
+        "country": "중국",
+        "cert_date": "2024-09-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-MBR"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "블루투스 스피커",
+        "model_name": "Masterpiece PRO",
+        "country": "중국",
+        "cert_date": "2024-10-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-MPP"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "블루투스 이어폰",
+        "model_name": "EarFree OPEN Extreme",
+        "country": "중국",
+        "cert_date": "2024-12-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-EOE"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(데이터전송용 무선기기)",
+        "model_name": "TWINBOTH S10 ULTRA",
+        "country": "중국",
+        "cert_date": "2023-01-27",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MGI-STU"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "블루투스 이어폰",
+        "model_name": "통화용이어폰 C-ALL Free",
+        "country": "중국",
+        "cert_date": "2023-02-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-CAF"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "IRON V50",
+        "country": "중국",
+        "cert_date": "2019-06-12",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MGI-IRVE"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "블루투스 스피커",
+        "model_name": "MAJESTY 7",
+        "country": "중국",
+        "cert_date": "2023-06-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-MJS"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "무선마이크",
+        "model_name": "클린보이스 무선마이크",
+        "country": "중국",
+        "cert_date": "2023-07-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-CVWM"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "무선 마이크",
+        "model_name": "Wireless Microphone",
+        "country": "중국",
+        "cert_date": "2023-08-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-RS-MGI-WWMIC"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "무선 골전도 이어폰",
+        "model_name": "EarFree W 무선 골전도 이어폰",
+        "country": "중국",
+        "cert_date": "2023-09-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-EFW"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "블루투스 이어폰",
+        "model_name": "EarFree OPEN 오픈형 이어폰",
+        "country": "중국",
+        "cert_date": "2023-10-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-EFO"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "블루투스 리시버",
+        "model_name": "블루투스 동글이",
+        "country": "중국",
+        "cert_date": "2022-12-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-MBD"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "UHF 무선 마이크",
+        "model_name": "Wireless MIC",
+        "country": "중국",
+        "cert_date": "2021-01-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-MWMIC"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "블루투스 이어폰",
+        "model_name": "EarFree G2 Pro",
+        "country": "중국",
+        "cert_date": "2021-03-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-EFGBP"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "블루투스 이어폰",
+        "model_name": "EarFree G5",
+        "country": "중국",
+        "cert_date": "2021-03-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGI-EFGE"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "락클래식TWS",
+        "country": "중국",
+        "cert_date": "2016-03-10",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRI-MGI-TWS"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Penta X5R",
+        "country": "중국",
+        "cert_date": "2017-07-10",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRI-MGI-PENTAX5R"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MB-E90",
+        "country": "중국",
+        "cert_date": "2017-07-13",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRI-MGI-MB-E90"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Q80+",
+        "country": "중국",
+        "cert_date": "2017-09-20",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMI-MGI-Q80PLUS"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MB-2000X",
+        "country": "중국",
+        "cert_date": "2017-09-21",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMI-MGI-2000X"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MB-Dual7",
+        "country": "중국",
+        "cert_date": "2017-12-08",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRI-MGI-DUAL7"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "락클래식Qi",
+        "country": "중국",
+        "cert_date": "2016-01-21",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMI-MGI-Qi"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "락클래식XL",
+        "country": "중국",
+        "cert_date": "2016-01-27",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRI-MGI-CLASSICXL"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "락클래식 Q30",
+        "country": "중국",
+        "cert_date": "2016-02-02",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRI-MGI-CLASSICQ30"
+      },
+      {
+        "company_name": "주식회사 엠지텍아이엔씨",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "락로맨스 S20",
+        "country": "중국",
+        "cert_date": "2016-02-12",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMI-MGI-ROMANCES20"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "엠지텍,  M&T  Tech",
+    "model_param": "AL-401",
+    "ocr_result": {
+      "extracted_text": "임지택 락 클래식 알렉사 coupang 117,400원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 전원 내장내터리 최대출력 6oW 불무투스버전 불무투스 V4.2 입출력 AUX 네트위크 Wi-Fi 재생지원 라디오 다중연결 엘리떼이림 멀티미디어 전화통화 편의기능 음성비서내장 내장 음성비서 알력사 인식가능언어 영어인식 음성제어기능 loT연놈",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\엠지텍 락 클래식 알렉사\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}
