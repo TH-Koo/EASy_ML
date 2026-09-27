@@ -1,0 +1,170 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=12688838",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "Google 네스트 오디오 (해외구매)",
+      "name": "Google 네스트 오디오 (해외구매)",
+      "description": "",
+      "ocr_text": "Google 네스트 오디오 (해외구매) coupang 150,600원  무료배승 최저가 구매하기 가격비교 57 상품 상세정보 의견리뷰 10 연관상품 전원 ACIDC전원 사운드출력 30W 스피커유넷크기 75mrn 불루투스버전 불루투스 V5.0 쇠대연결거리 1Omn 네트위크 Wi-Fi 다중연결 스타레오 모드 멀티미디어 전화통화 알람 편의기능 음심비서내장 음성안내(영어) 배티리잔랑표시 내장 음성비서 구글어시스런트 인식가능언어 영어인식 음성제어기능 loT연놈 날씨 알람설정 음악재생 일정관리",
+      "specs": {
+        "AC/DC전원": "지원",
+        "30W": "지원",
+        "AI스피커": "지원",
+        "색상": "그레이 , 블랙 , 블루 , 핑크",
+        "블루투스 v5.0": "지원",
+        "Wi-Fi": "지원",
+        "다중연결": "스테레오 모드",
+        "전화통화": "지원",
+        "알람": "지원",
+        "음성안내(영어)": "지원",
+        "배터리잔량표시": "지원",
+        "음성비서내장": "지원",
+        "영어인식": "지원",
+        "무게": "1,200g"
+      },
+      "raw_specs": "AC/DC전원 / 30W / AI스피커 / 색상 : 그레이 , 블랙 , 블루 , 핑크 / 블루투스 v5.0 / Wi-Fi / 다중연결 : 스테레오 모드 / 전화통화 / 알람 / 음성안내(영어) / 배터리잔량표시 / 음성비서내장 / 영어인식 / 무게 : 1,200g",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=12688838",
+      "manufacturer": "구글, Google",
+      "model_name": "Google Nest Audio"
+    },
+    "norm_info": {
+      "company_name": "구글, Google",
+      "model_name": "Google Nest Audio",
+      "product_name": "Google 네스트 오디오 (해외구매)"
+    },
+    "db_results": [
+      {
+        "company_name": "Google LLC",
+        "equip_name": "Google AIY Projects Voice Kit",
+        "model_name": "AIY Voice Kit",
+        "country": "미국",
+        "cert_date": "2017-10-11",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REM-A4H-AIY01"
+      },
+      {
+        "company_name": "Google LLC",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "D9SCA",
+        "country": "중국",
+        "cert_date": "2017-08-21",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRM-A4H-D9SCA"
+      },
+      {
+        "company_name": "Google LLC",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "H0A",
+        "country": "중국",
+        "cert_date": "2018-04-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-A4H-H0A"
+      },
+      {
+        "company_name": "Google LLC",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "H0ME",
+        "country": "중국",
+        "cert_date": "2018-04-06",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-A4H-H0ME"
+      },
+      {
+        "company_name": "Google LLC",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "G022A",
+        "country": "중국",
+        "cert_date": "2019-06-28",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-A4H-G022A"
+      },
+      {
+        "company_name": "Google LLC",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "AA1",
+        "country": "중국",
+        "cert_date": "2019-05-16",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-A4H-AA1"
+      },
+      {
+        "company_name": "Google LLC",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "H1A",
+        "country": "중국",
+        "cert_date": "2019-02-12",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-A4H-H1A"
+      },
+      {
+        "company_name": "Google LLC",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "GG2",
+        "country": "중국",
+        "cert_date": "2019-02-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-A4H-GG2"
+      },
+      {
+        "company_name": "Google LLC",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "GXCA6",
+        "country": "중국",
+        "cert_date": "2020-08-18",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-A4H-GXCA6"
+      },
+      {
+        "company_name": "Google LLC",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "H2C",
+        "country": "중국",
+        "cert_date": "2020-01-20",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-A4H-H2C"
+      },
+      {
+        "company_name": "Google LLC",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "G9N9N",
+        "country": "태국",
+        "cert_date": "2021-02-03",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-A4H-G9N9N"
+      },
+      {
+        "company_name": "Google LLC",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "GZRNL",
+        "country": "태국",
+        "cert_date": "2021-02-02",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-A4H-GZRNL"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "구글, Google",
+    "model_param": "Google Nest Audio",
+    "ocr_result": {
+      "extracted_text": "Google 네스트 오디오 (해외구매) coupang 150,600원  무료배승 최저가 구매하기 가격비교 57 상품 상세정보 의견리뷰 10 연관상품 전원 ACIDC전원 사운드출력 30W 스피커유넷크기 75mrn 불루투스버전 불루투스 V5.0 쇠대연결거리 1Omn 네트위크 Wi-Fi 다중연결 스타레오 모드 멀티미디어 전화통화 알람 편의기능 음심비서내장 음성안내(영어) 배티리잔랑표시 내장 음성비서 구글어시스런트 인식가능언어 영어인식 음성제어기능 loT연놈 날씨 알람설정 음악재생 일정관리",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\Google 네스트 오디오 (해외구매)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

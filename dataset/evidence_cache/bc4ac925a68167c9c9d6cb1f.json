@@ -1,0 +1,67 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=109481933",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "APPLE 에어팟 맥스2 (정품)",
+      "name": "APPLE 에어팟 맥스2 (정품)",
+      "description": "",
+      "ocr_text": "APPLE 에어파 맥스2 (정품) LOTTE ON 591,480원 무료배승 최저가 구매하기 가격비교 66 상품 상세정보 7- 의견리뷰 25 뉴스커유니티 연관상품 치거 ''1B고년 48 '질머씨지바세지 기피 구르 60 예? 에어맛 맥스 (2020) 에어파 맥스2 (2026) 이어맛 맥스? 중격반건 진미검픽_틱어요 w8agCoD 에어 다음에서 보기: IYoullulbe 에어젯 맥스인반인관점 제조회사 APPLE (제조사 웬사이트 바로가기) 등록년원 2026년 03원 분류 무선하드: 유딪형대 밀데형 패드형대 오버이어 용도 음악+통화용 무선연결 불무투스 v5.3 노이즈권트록 적응형ANC 주변소리듬기 드라이버종류 네오디넷마그네틱",
+      "specs": {
+        "무선헤드폰": "지원",
+        "밀폐형": "지원",
+        "오버이어": "지원",
+        "블루투스 v5.3": "지원",
+        "[노이즈컨트롤] 적응형ANC": "지원",
+        "주변소리듣기": "지원",
+        "[사운드] 네오디뮴마그네틱": "지원",
+        "적응형EQ": "지원",
+        "360도 공간음향": "지원",
+        "[배터리] 재생시간": "20시간(ANC ON)",
+        "충전": "USB-C",
+        "[기능] 편의기능": "AI통역사용",
+        "음성명령": "지원",
+        "멀티포인트": "지원",
+        "[부가] 무게": "386.2g",
+        "추가구성품": "충전지원케이스",
+        "동적 머리 추적 기술": "지원",
+        "음성 분리 기능": "지원",
+        "청력 건강": "큰소리 줄이기",
+        "출시가": "849,000원"
+      },
+      "raw_specs": "무선헤드폰 / 밀폐형 / 오버이어 / 블루투스 v5.3 / [노이즈컨트롤] 적응형ANC / 주변소리듣기 / [사운드] 네오디뮴마그네틱 / 적응형EQ / 360도 공간음향 / [배터리] 재생시간 : 20시간(ANC ON) / 충전 : USB-C / [기능] 편의기능 : AI통역사용 / 음성명령 / 멀티포인트 / [부가] 무게 : 386.2g / 추가구성품 : 충전지원케이스 / 동적 머리 추적 기술 / 음성 분리 기능 / 청력 건강: 큰소리 줄이기 / 출시가: 849,000원",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=109481933",
+      "manufacturer": "Apple Inc.  Apple",
+      "model_name": "MPU125"
+    },
+    "norm_info": {
+      "company_name": "Apple Inc.  Apple",
+      "model_name": "MPU125",
+      "product_name": "APPLE 에어팟 맥스2 (정품)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "Apple Inc.  Apple",
+    "model_param": "MPU125",
+    "ocr_result": {
+      "extracted_text": "APPLE 에어파 맥스2 (정품) LOTTE ON 591,480원 무료배승 최저가 구매하기 가격비교 66 상품 상세정보 7- 의견리뷰 25 뉴스커유니티 연관상품 치거 ''1B고년 48 '질머씨지바세지 기피 구르 60 예? 에어맛 맥스 (2020) 에어파 맥스2 (2026) 이어맛 맥스? 중격반건 진미검픽_틱어요 w8agCoD 에어 다음에서 보기: IYoullulbe 에어젯 맥스인반인관점 제조회사 APPLE (제조사 웬사이트 바로가기) 등록년원 2026년 03원 분류 무선하드: 유딪형대 밀데형 패드형대 오버이어 용도 음악+통화용 무선연결 불무투스 v5.3 노이즈권트록 적응형ANC 주변소리듬기 드라이버종류 네오디넷마그네틱",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\APPLE 에어팟 맥스2 (정품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

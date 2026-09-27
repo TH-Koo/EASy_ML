@@ -1,0 +1,57 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=13467755",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "마샬 억스브릿지 보이스 구글어시스턴트 (정품)",
+      "name": "마샬 억스브릿지 보이스 구글어시스턴트 (정품)",
+      "description": "",
+      "ocr_text": "마살 억스브릿지 보이스 구글어시스템트 (정품) Gmarket 389,000원   무료배송 최저가 구매하기 가격비교 12 상품 상세정보 의견리뷰 연관상품 전원 ACIDC전원 사운드출력 30W 주파수 54Hz~2OkHz 불루투스버전 불무투스 v4.2 네트위크 Wi-Fi 편의기능 음심비서내장 내장 음성비서 구글이시스런트 권트률 저음억대조설 고음역대조설 무게 1.39kg 무선지원 지원 [g 인종 적합심평가인승 상세설명 판매 사이트 문의 인증번호 확인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인 다나와제작_CM 못데ON 상품 설명 복사하기 마살 Uxbridge danawa",
+      "specs": {
+        "AI스피커": "지원",
+        "AC/DC전원": "지원",
+        "30W": "지원",
+        "54Hz~20kHz": "지원",
+        "블루투스 v4.2": "지원",
+        "Wi-Fi": "지원",
+        "음성비서내장": "지원",
+        "무게": "1.39kg",
+        "AirPlay": "지원",
+        "멀티룸": "지원"
+      },
+      "raw_specs": "AI스피커 / AC/DC전원 / 30W / 54Hz~20kHz / 블루투스 v4.2 / Wi-Fi / 음성비서내장 / 무게 : 1.39kg / AirPlay / 멀티룸",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=13467755",
+      "manufacturer": "Marshall,  Marshall",
+      "model_name": "MS0003"
+    },
+    "norm_info": {
+      "company_name": "Marshall,  Marshall",
+      "model_name": "MS0003",
+      "product_name": "마샬 억스브릿지 보이스 구글어시스턴트 (정품)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "Marshall,  Marshall",
+    "model_param": "MS0003",
+    "ocr_result": {
+      "extracted_text": "마살 억스브릿지 보이스 구글어시스템트 (정품) Gmarket 389,000원   무료배송 최저가 구매하기 가격비교 12 상품 상세정보 의견리뷰 연관상품 전원 ACIDC전원 사운드출력 30W 주파수 54Hz~2OkHz 불루투스버전 불무투스 v4.2 네트위크 Wi-Fi 편의기능 음심비서내장 내장 음성비서 구글이시스런트 권트률 저음억대조설 고음역대조설 무게 1.39kg 무선지원 지원 [g 인종 적합심평가인승 상세설명 판매 사이트 문의 인증번호 확인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인 다나와제작_CM 못데ON 상품 설명 복사하기 마살 Uxbridge danawa",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\마샬 억스브릿지 보이스 구글어시스턴트 (정품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

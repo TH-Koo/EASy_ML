@@ -1,0 +1,62 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=60321152",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "CnCare 인공지능 홈캠 (1개)",
+      "name": "CnCare 인공지능 홈캠 (1개)",
+      "description": "",
+      "ocr_text": "CnCare 인공지능 홍캠 (1개) coupang 55,090원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 사용장소 실내용 지원 네드위크 Wi-Fi 전송 지원 방식 영상사양 최대 화소 스00만화소 쇠대 해상도 2560x1440(WQHD) 지원기능 스마토문모니터림 양방방통화 프라이버시 모드 야간(주간) 자능전환 메모리저장 전원 사용전원 5V DC [g 인종 적합심평가인승 상세설명 판매 사이트 문의 | 인종번호 확인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인 IP카메라 보안수칙 안내 확인하기 구매가이드 상품 설명 복사하기",
+      "specs": {
+        "IP 카메라": "지원",
+        "스탠드형": "지원",
+        "실내용": "지원",
+        "Wi-Fi": "지원",
+        "[전송방식] IP": "지원",
+        "[영상사양] 400만화소": "지원",
+        "2560x1440(WQHD)": "지원",
+        "[부가기능] 스마트폰모니터링": "지원",
+        "양방향통화": "지원",
+        "프라이버시 모드": "지원",
+        "야간(주간)자동전환": "지원",
+        "메모리저장": "지원",
+        "[전원/사양] 5V DC": "지원",
+        "크기": "71 x 109.5mm",
+        "무게": "164g"
+      },
+      "raw_specs": "IP 카메라 / 스탠드형 / 실내용 / Wi-Fi / [전송방식] IP / [영상사양] 400만화소 / 2560x1440(WQHD) / [부가기능] 스마트폰모니터링 / 양방향통화 / 프라이버시 모드 / 야간(주간)자동전환 / 메모리저장 / [전원/사양] 5V DC / 크기: 71 x 109.5mm / 무게: 164g",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=60321152",
+      "manufacturer": "CnCare, CnCare",
+      "model_name": "CnCare-IN-AI-HomeCam"
+    },
+    "norm_info": {
+      "company_name": "CnCare, CnCare",
+      "model_name": "CnCare-IN-AI-HomeCam",
+      "product_name": "CnCare 인공지능 홈캠 (1개)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "CnCare, CnCare",
+    "model_param": "CnCare-IN-AI-HomeCam",
+    "ocr_result": {
+      "extracted_text": "CnCare 인공지능 홍캠 (1개) coupang 55,090원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 사용장소 실내용 지원 네드위크 Wi-Fi 전송 지원 방식 영상사양 최대 화소 스00만화소 쇠대 해상도 2560x1440(WQHD) 지원기능 스마토문모니터림 양방방통화 프라이버시 모드 야간(주간) 자능전환 메모리저장 전원 사용전원 5V DC [g 인종 적합심평가인승 상세설명 판매 사이트 문의 | 인종번호 확인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인 IP카메라 보안수칙 안내 확인하기 구매가이드 상품 설명 복사하기",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\CnCare 인공지능 홈캠 (1개)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

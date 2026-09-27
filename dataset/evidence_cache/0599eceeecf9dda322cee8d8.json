@@ -1,0 +1,69 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=94880960",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "Seagate SkyHawk AI 7200/256M/해외구매 (8TB, ST8000VE001)",
+      "name": "Seagate SkyHawk AI 7200/256M/해외구매 (8TB, ST8000VE001)",
+      "description": "",
+      "ocr_text": "Seagate SkyHawk Al 7200/256MI해외구매 (8TB, ST8OOOVEOOI) 가격비교 상품 상세정보 의견리뷰 연관상품 디스크 용량 8TB 인터데이스 SATA3 6GbIs) 회전수 7,2OORPM 버피 용량 메모리 256MB 전송 속도 255MBIs 기록방식 CMR(PMR) 두께 26.1mm 부가기능 RV센서 SMA.RI지원 내구성소음 작업부하람 550 TBIY 사용보승 200만시간 [@ 인종 적합성평가인층 상세설명 판매 사이트 문의 인증번호 확인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인 구매가이드 상품 설명 복사하기 Dse46A16 Seagate HDP IRONWOLF 구매가이드",
+      "specs": {
+        "HDD (CCTV용)": "지원",
+        "8.9cm(3.5인치)": "지원",
+        "8TB": "지원",
+        "SATA3 (6Gb/s)": "지원",
+        "7,200RPM": "지원",
+        "메모리 256MB": "지원",
+        "255MB/s": "지원",
+        "기록방식": "CMR(PMR)",
+        "두께": "26.1mm",
+        "RV센서": "지원",
+        "S.M.A.R.T 지원": "지원",
+        "사용보증": "200만시간"
+      },
+      "raw_specs": "HDD (CCTV용) / 8.9cm(3.5인치) / 8TB / SATA3 (6Gb/s) / 7,200RPM / 메모리 256MB / 255MB/s / 기록방식 : CMR(PMR) / 두께 : 26.1mm / RV센서 / S.M.A.R.T 지원 / 사용보증 : 200만시간",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=94880960",
+      "manufacturer": "Seagate",
+      "model_name": "ST8000VE001"
+    },
+    "norm_info": {
+      "company_name": "Seagate",
+      "model_name": "ST8000VE001",
+      "product_name": "Seagate SkyHawk AI 7200/256M/해외구매 (8TB, ST8000VE001)"
+    },
+    "db_results": [
+      {
+        "company_name": "SEAGATE TECHNOLOGY LLC",
+        "equip_name": "LaCie 2big RAID",
+        "model_name": "LRDMU04",
+        "country": "중국",
+        "cert_date": "2019-01-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-STX-LRDMU04"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "Seagate",
+    "model_param": "ST8000VE001",
+    "ocr_result": {
+      "extracted_text": "Seagate SkyHawk Al 7200/256MI해외구매 (8TB, ST8OOOVEOOI) 가격비교 상품 상세정보 의견리뷰 연관상품 디스크 용량 8TB 인터데이스 SATA3 6GbIs) 회전수 7,2OORPM 버피 용량 메모리 256MB 전송 속도 255MBIs 기록방식 CMR(PMR) 두께 26.1mm 부가기능 RV센서 SMA.RI지원 내구성소음 작업부하람 550 TBIY 사용보승 200만시간 [@ 인종 적합성평가인층 상세설명 판매 사이트 문의 인증번호 확인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인 구매가이드 상품 설명 복사하기 Dse46A16 Seagate HDP IRONWOLF 구매가이드",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\Seagate SkyHawk AI 7200256M해외구매 (8TB, ST8000VE001)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

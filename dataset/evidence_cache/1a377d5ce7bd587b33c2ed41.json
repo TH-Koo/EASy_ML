@@ -1,0 +1,256 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=91348658",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "다룸 퓨어 AI d-GM_SJY-0001",
+      "name": "다룸 퓨어 AI d-GM_SJY-0001",
+      "description": "",
+      "ocr_text": "다툼 푸어 Al d-GM_SJY-0001 coupang 109,000원 무료배승 최저가 구매하기 가격비교 35 상품 상세정보 의견리뷰 연관상품 형태 랜드령 위무선 무선 모티방식 BLDC모티 소비전력 28W 바람 12단 바람모드 초미풍(유아품) 수면품 에코품(자용풍속조 자연품 '날가개수 16업날개(9+7) 날개 3Ocm(12인지) 공기이봉거리 15m 헤드조절 좌우회전 상하각도조설 주요기능 도이조설 타이머 리모권 최대사용시간 40시간 부가기능 오로리터 [g 인종",
+      "specs": {
+        "선풍기": "지원",
+        "스탠드형": "지원",
+        "무선": "지원",
+        "BLDC모터": "지원",
+        "바람": "12단",
+        "초미풍(유아풍)": "지원",
+        "수면풍": "지원",
+        "자연풍": "지원",
+        "에코풍(자동풍속조절)": "지원",
+        "16엽날개(9+7)": "지원",
+        "날개": "30cm(12인치)",
+        "좌우회전": "지원",
+        "상하각도조절": "지원",
+        "높이조절": "지원",
+        "타이머": "지원",
+        "리모컨": "지원",
+        "[충전] 최대사용시간": "40시간",
+        "[편의] 오토리턴": "지원",
+        "크기(가로x세로x깊이)": "340x615(950)x330mm"
+      },
+      "raw_specs": "선풍기 / 스탠드형 / 무선 / BLDC모터 / 바람 : 12단 / 초미풍(유아풍) / 수면풍 / 자연풍 / 에코풍(자동풍속조절) / 16엽날개(9+7) / 날개 : 30cm(12인치) / 좌우회전 / 상하각도조절 / 높이조절 / 타이머 / 리모컨 / [충전] 최대사용시간 : 40시간 / [편의] 오토리턴 / 크기(가로x세로x깊이): 340x615(950)x330mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=91348658",
+      "manufacturer": "다룸,  Dalaum",
+      "model_name": "d-GM_SJY-0001"
+    },
+    "norm_info": {
+      "company_name": "다룸,  Dalaum",
+      "model_name": "d-GM_SJY-0001",
+      "product_name": "다룸 퓨어 AI d-GM_SJY-0001"
+    },
+    "db_results": [
+      {
+        "company_name": "주식회사 다룸",
+        "equip_name": "D_퓨어 AI 무선 서큘레이터",
+        "model_name": "d-GM_SJY-0001",
+        "country": "중국",
+        "cert_date": "2025-03-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-1i1-d-GM_SJY-0001"
+      },
+      {
+        "company_name": "주식회사 다룸",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "k-MB-2301",
+        "country": "중국",
+        "cert_date": "2023-05-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-1i1-k-MB-2301"
+      },
+      {
+        "company_name": "주식회사 다룸",
+        "equip_name": "D_다룸 자동센서 스마트 쓰레기통 26L(슬릿형)",
+        "model_name": "d-TC-0027",
+        "country": "중국",
+        "cert_date": "2026-03-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-1i1-d-TC-0027"
+      },
+      {
+        "company_name": "주식회사 다룸",
+        "equip_name": "다룸 자동센서 스마트 쓰레기통 20L(일반형)",
+        "model_name": "d-TC-5005",
+        "country": "중국",
+        "cert_date": "2025-05-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-1i1-d-TC-5005"
+      },
+      {
+        "company_name": "주식회사 다룸",
+        "equip_name": "무선 청소기",
+        "model_name": "d-YLK-VT-1001",
+        "country": "중국",
+        "cert_date": "2025-08-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-1i1-d-YLK-VT-1001"
+      },
+      {
+        "company_name": "주식회사 다룸",
+        "equip_name": "Air Fryer Oven",
+        "model_name": "KV23",
+        "country": "중국",
+        "cert_date": "2025-08-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-1i1-d-PKYL-AF-0001"
+      },
+      {
+        "company_name": "주식회사 다룸",
+        "equip_name": "D_다룸 자동센서 젤리빈 쓰레기통 15L",
+        "model_name": "d-JTC-2002",
+        "country": "중국",
+        "cert_date": "2024-06-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-1i1-d-JTC-2002"
+      },
+      {
+        "company_name": "주식회사 다룸",
+        "equip_name": "D_다룸 제로컬렉션 무선 청소기_거치형",
+        "model_name": "d-YLKV-0001",
+        "country": "중국",
+        "cert_date": "2024-06-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-1i1-d-YLKV-0001"
+      },
+      {
+        "company_name": "주식회사 다룸",
+        "equip_name": "D_다룸 자동센서 스마트 쓰레기통 26L(슬릿형)",
+        "model_name": "d-TC-0026",
+        "country": "중국",
+        "cert_date": "2024-12-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-1i1-d-TC-0026"
+      },
+      {
+        "company_name": "주식회사 다룸",
+        "equip_name": "다룸 자동센서 스마트 쓰레기통(날개형)",
+        "model_name": "d-TC-0011",
+        "country": "중국",
+        "cert_date": "2023-04-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-1i1-d-TC-0011"
+      },
+      {
+        "company_name": "주식회사 다룸",
+        "equip_name": "K_아이패드 i 매직 키보드 블루투스 케이스",
+        "model_name": "k-MK-0001W",
+        "country": "중국",
+        "cert_date": "2023-04-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-1i1-k-MK-0001W"
+      },
+      {
+        "company_name": "주식회사 다룸",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "LILT-slim-01",
+        "country": "중국",
+        "cert_date": "2018-05-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-RMI-1i1-LILT-slim-01"
+      },
+      {
+        "company_name": "주식회사 다룸",
+        "equip_name": "다룸 자동센서 스마트 쓰레기통 30L(날개형)",
+        "model_name": "d-TC-0012",
+        "country": "중국",
+        "cert_date": "2023-08-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-1i1-d-TC-0012"
+      },
+      {
+        "company_name": "주식회사 다룸",
+        "equip_name": "다룸 자동센서 스마트 쓰레기통 10L(날개형)",
+        "model_name": "d-TC-1001",
+        "country": "중국",
+        "cert_date": "2023-09-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-1i1-d-TC-1001"
+      },
+      {
+        "company_name": "주식회사 다룸",
+        "equip_name": "다룸 자동센서 스마트 쓰레기통 20L(날개형)",
+        "model_name": "d-TC-0101",
+        "country": "중국",
+        "cert_date": "2023-09-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-1i1-d-TC-0101"
+      },
+      {
+        "company_name": "주식회사 다룸",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "KAN-A9",
+        "country": "중국",
+        "cert_date": "2023-11-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-1i1-KAN-A9"
+      },
+      {
+        "company_name": "주식회사 다룸",
+        "equip_name": "K_아이패드 i 매직 키보드 블루투스 케이스 12.9",
+        "model_name": "k-MK-0002",
+        "country": "중국",
+        "cert_date": "2023-12-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-1i1-k-MK-0002"
+      },
+      {
+        "company_name": "주식회사 다룸",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "KAN-N4",
+        "country": "중국",
+        "cert_date": "2023-12-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-1i1-KAN-N4"
+      },
+      {
+        "company_name": "주식회사 다룸",
+        "equip_name": "다룸 자동센서 스마트 쓰레기통",
+        "model_name": "d-TC-0005",
+        "country": "중국",
+        "cert_date": "2022-05-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-1i1-d-TC-0005"
+      },
+      {
+        "company_name": "주식회사 다룸",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "YQZ-A2",
+        "country": "중국",
+        "cert_date": "2022-09-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-1i1-YQZ-A2"
+      },
+      {
+        "company_name": "주식회사 다룸",
+        "equip_name": "케이안 차량용 고속 무선충전 거치대",
+        "model_name": "KAN-M06",
+        "country": "중국",
+        "cert_date": "2021-02-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-1i1-KAN-M06"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "다룸,  Dalaum",
+    "model_param": "d-GM_SJY-0001",
+    "ocr_result": {
+      "extracted_text": "다툼 푸어 Al d-GM_SJY-0001 coupang 109,000원 무료배승 최저가 구매하기 가격비교 35 상품 상세정보 의견리뷰 연관상품 형태 랜드령 위무선 무선 모티방식 BLDC모티 소비전력 28W 바람 12단 바람모드 초미풍(유아품) 수면품 에코품(자용풍속조 자연품 '날가개수 16업날개(9+7) 날개 3Ocm(12인지) 공기이봉거리 15m 헤드조절 좌우회전 상하각도조설 주요기능 도이조설 타이머 리모권 최대사용시간 40시간 부가기능 오로리터 [g 인종",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\다룸 퓨어 AI d-GM_SJY-0001\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

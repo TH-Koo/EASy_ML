@@ -1,0 +1,219 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=95285384",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "Nothing Headphone (1) (정품)",
+      "name": "Nothing Headphone (1) (정품)",
+      "description": "",
+      "ocr_text": "Nothing Headphone (1) (정품) AUCTION 375,060원   무료배승 최저가 구매하기 가격비교 13 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 파드형대 오버이이 용도 음악+통화용 연결단자 3.5mm 무선연결 불무투스 V5.3 노이즈런트론 적응형ANC 주변소리듬기 시I노이즈랜늘림가이 사운드성능 HRA 드라이버크기 유넷:4Omm 드라이버종류 다이나먹드라이버 임피터스 162 주파수 2OHz~2OkHz 코덕 LDAC SBC AAC 무선언결거리 iOm",
+      "specs": {
+        "유무선헤드폰": "지원",
+        "밀폐형": "지원",
+        "오버이어": "지원",
+        "연결단자": "3.5mm",
+        "블루투스 v5.3": "지원",
+        "[노이즈컨트롤] 적응형ANC": "지원",
+        "주변소리듣기": "지원",
+        "AI노이즈캔슬링마이크": "지원",
+        "[사운드] HRA": "지원",
+        "유닛": "40mm",
+        "다이나믹드라이버": "지원",
+        "16Ω": "지원",
+        "20Hz~20kHz": "지원",
+        "코덱": "LDAC , SBC , AAC",
+        "360도공간음향": "지원",
+        "재생시간": "35시간(ANC ON), 80시간(ANC OFF)",
+        "충전": "USB-C",
+        "[기능] EQ수동조절": "지원",
+        "음성명령": "지원",
+        "저지연게이밍모드": "지원",
+        "멀티포인트": "지원",
+        "구글패스트페어": "지원",
+        "IP52방수": "지원",
+        "무게": "329g",
+        "회전형이어컵": "지원",
+        "추가구성품": "휴대용케이스",
+        "ChatGPT 음성호출지원": "지원"
+      },
+      "raw_specs": "유무선헤드폰 / 밀폐형 / 오버이어 / 연결단자 : 3.5mm / 블루투스 v5.3 / [노이즈컨트롤] 적응형ANC / 주변소리듣기 / AI노이즈캔슬링마이크 / [사운드] HRA / 유닛:40mm / 다이나믹드라이버 / 16Ω / 20Hz~20kHz / 코덱 : LDAC , SBC , AAC / 360도공간음향 / 재생시간 : 35시간(ANC ON), 80시간(ANC OFF) / 충전 : USB-C / [기능] EQ수동조절 / 음성명령 / 저지연게이밍모드 / 멀티포인트 / 구글패스트페어 / IP52방수 / 무게 : 329g / 회전형이어컵 / 추가구성품 : 휴대용케이스 / ChatGPT 음성호출지원",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=95285384",
+      "manufacturer": "Nothing",
+      "model_name": "HW-01"
+    },
+    "norm_info": {
+      "company_name": "Nothing",
+      "model_name": "HW-01",
+      "product_name": "Nothing Headphone (1) (정품)"
+    },
+    "db_results": [
+      {
+        "company_name": "NOTHING TECHNOLOGY LIMITED",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "B181",
+        "country": "중국",
+        "cert_date": "2021-09-09",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-nOt-B181"
+      },
+      {
+        "company_name": "NOTHING TECHNOLOGY LIMITED",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "B154",
+        "country": "중국",
+        "cert_date": "2022-11-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-nOt-B154"
+      },
+      {
+        "company_name": "NOTHING TECHNOLOGY LIMITED",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "B155",
+        "country": "중국",
+        "cert_date": "2022-09-27",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-nOt-B155"
+      },
+      {
+        "company_name": "NOTHING TECHNOLOGY LIMITED",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "B157",
+        "country": "중국",
+        "cert_date": "2022-09-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-nOt-B157"
+      },
+      {
+        "company_name": "NOTHING TECHNOLOGY LIMITED",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "B163",
+        "country": "중국",
+        "cert_date": "2023-09-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-nOt-B163"
+      },
+      {
+        "company_name": "NOTHING TECHNOLOGY LIMITED",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "A065",
+        "country": "중국",
+        "cert_date": "2023-06-30",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-nOt-A065"
+      },
+      {
+        "company_name": "NOTHING TECHNOLOGY LIMITED",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "A059",
+        "country": "중국",
+        "cert_date": "2024-12-31",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-nOt-A059"
+      },
+      {
+        "company_name": "NOTHING TECHNOLOGY LIMITED",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "B172",
+        "country": "중국",
+        "cert_date": "2024-06-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-nOt-B172"
+      },
+      {
+        "company_name": "NOTHING TECHNOLOGY LIMITED",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "B171",
+        "country": "중국",
+        "cert_date": "2024-03-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-nOt-B171"
+      },
+      {
+        "company_name": "NOTHING TECHNOLOGY LIMITED",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "B162",
+        "country": "중국",
+        "cert_date": "2024-03-05",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-nOt-B162"
+      },
+      {
+        "company_name": "NOTHING TECHNOLOGY LIMITED",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "A142",
+        "country": "중국",
+        "cert_date": "2024-01-16",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-nOt-A142"
+      },
+      {
+        "company_name": "NOTHING TECHNOLOGY LIMITED",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "A024",
+        "country": "중국",
+        "cert_date": "2025-09-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-nOt-A024"
+      },
+      {
+        "company_name": "NOTHING TECHNOLOGY LIMITED",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "B173",
+        "country": "중국",
+        "cert_date": "2025-09-02",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-nOt-B173"
+      },
+      {
+        "company_name": "NOTHING TECHNOLOGY LIMITED",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "B170",
+        "country": "중국",
+        "cert_date": "2025-06-16",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-nOt-B170"
+      },
+      {
+        "company_name": "NOTHING TECHNOLOGY LIMITED",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "B186",
+        "country": "중국",
+        "cert_date": "2026-02-24",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-nOt-B186"
+      },
+      {
+        "company_name": "NOTHING TECHNOLOGY LIMITED",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "A069",
+        "country": "중국",
+        "cert_date": "2026-01-23",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-nOt-A069"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "Nothing",
+    "model_param": "HW-01",
+    "ocr_result": {
+      "extracted_text": "Nothing Headphone (1) (정품) AUCTION 375,060원   무료배승 최저가 구매하기 가격비교 13 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 파드형대 오버이이 용도 음악+통화용 연결단자 3.5mm 무선연결 불무투스 V5.3 노이즈런트론 적응형ANC 주변소리듬기 시I노이즈랜늘림가이 사운드성능 HRA 드라이버크기 유넷:4Omm 드라이버종류 다이나먹드라이버 임피터스 162 주파수 2OHz~2OkHz 코덕 LDAC SBC AAC 무선언결거리 iOm",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\Nothing Headphone (1) (정품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

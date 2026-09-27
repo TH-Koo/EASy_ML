@@ -1,0 +1,68 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=107723801",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "드리미 X60 Master 직배수",
+      "name": "드리미 X60 Master 직배수",
+      "description": "",
+      "ocr_text": "드리미 X6O Master 직배수 Dreame 1,190,000원 무료배승 최저가 구매하기 가격비교 31 상품 상세정보 의견리뷰 152 뉴스커유니티 연관상품 집입력 35,OOOPa 센서 ToF 카메라 인식 시사물인식 감지회피 잠애물회피 분터등반 리프팅 1.05cm 분늑님기 4.5cmn(8 8cm) 통과높이 795cm 청소운전 걱자 모서리 반복 브러쉬 메인2개 사이드로봇부러쉬 엉림방지재질 먼지통 0.235L 필터 워서들먼지필터 배티리용량 6400mAh 청소기능 물걸레리프팀 스마토존제어 금지구역 구역지점",
+      "specs": {
+        "로봇청소기": "지원",
+        "흡입+물걸레": "지원",
+        "BLDC모터": "지원",
+        "센서": "ToF , 카메라",
+        "흡입력": "35,000Pa",
+        "AI사물인식": "지원",
+        "워셔블먼지필터": "지원",
+        "문턱넘기": "4.5cm(8.8cm)",
+        "물걸레리프팅": "지원",
+        "물걸레": "회전형",
+        "물걸레확장암": "지원",
+        "[스테이션] 먼지비움": "지원",
+        "걸레세척(온수)": "지원",
+        "걸레건조(온풍)": "지원",
+        "걸레탈부착": "지원",
+        "세제투입": "지원",
+        "직배수": "지원",
+        "자동충전": "지원",
+        "[규격] 색상": "화이트",
+        "무게": "4.7kg",
+        "크기(가로x세로x깊이)": "청소기 350x79.5(102.8)x350mm 스테이션 416x249x442mm"
+      },
+      "raw_specs": "로봇청소기 / 흡입+물걸레 / BLDC모터 / 센서 : ToF , 카메라 / 흡입력 : 35,000Pa / AI사물인식 / 워셔블먼지필터 / 문턱넘기 : 4.5cm(8.8cm) / 물걸레리프팅 / 물걸레 : 회전형 / 물걸레확장암 / [스테이션] 먼지비움 / 걸레세척(온수) / 걸레건조(온풍) / 걸레탈부착 / 세제투입 / 직배수 / 자동충전 / [규격] 색상 : 화이트 / 무게 : 4.7kg / 크기(가로x세로x깊이): 청소기 350x79.5(102.8)x350mm 스테이션 416x249x442mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=107723801",
+      "manufacturer": "드리미, Dremi",
+      "model_name": "X60 Master"
+    },
+    "norm_info": {
+      "company_name": "드리미, Dremi",
+      "model_name": "X60 Master",
+      "product_name": "드리미 X60 Master 직배수"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "드리미, Dremi",
+    "model_param": "X60 Master",
+    "ocr_result": {
+      "extracted_text": "드리미 X6O Master 직배수 Dreame 1,190,000원 무료배승 최저가 구매하기 가격비교 31 상품 상세정보 의견리뷰 152 뉴스커유니티 연관상품 집입력 35,OOOPa 센서 ToF 카메라 인식 시사물인식 감지회피 잠애물회피 분터등반 리프팅 1.05cm 분늑님기 4.5cmn(8 8cm) 통과높이 795cm 청소운전 걱자 모서리 반복 브러쉬 메인2개 사이드로봇부러쉬 엉림방지재질 먼지통 0.235L 필터 워서들먼지필터 배티리용량 6400mAh 청소기능 물걸레리프팀 스마토존제어 금지구역 구역지점",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\드리미 X60 Master 직배수\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

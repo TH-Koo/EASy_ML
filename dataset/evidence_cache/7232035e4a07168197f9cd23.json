@@ -1,0 +1,60 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=94814210",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "QCY T43 Buds (정품)",
+      "name": "QCY T43 Buds (정품)",
+      "description": "",
+      "ocr_text": "QCY T43 Buds (정품) coupang 19,900원 2,500원 최저가 구매하기 가격비교 54 상품 상세정보 의견리뷰 251 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.4 노이즈권트록 시I노이즈랜늘림가이 사운드채널 스데레오 드라이버크기 유넷 1Omm 드라이버 다이나막 드라이버구성 다이나막 1개 주파수 2OHz~2OkHz 불루투스 프로파일 AVRCP A2DP HFP 무선연결거리 iOm [내티리] [배터리] 1회증전시 7시간 대기시간 80시간 쇠대재생 35시간 중전시간 2시간 배티리용량 32mAh 증전켜이스 35OmAh 캐이스 충전횟수 4회",
+      "specs": {
+        "커널형": "지원",
+        "블루투스 v5.4": "지원",
+        "[노이즈컨트롤] AI노이즈캔슬링마이크": "지원",
+        "[사운드] 유닛": "10mm",
+        "드라이버": "다이나믹",
+        "20Hz~20kHz": "지원",
+        "[배터리] 1회충전시": "7시간",
+        "최대재생": "35시간",
+        "충전": "USB-C",
+        "[기능] 편의기능": "위치찾기",
+        "EQ수동조절": "지원",
+        "저지연게이밍모드": "지원",
+        "IPX4방수": "지원"
+      },
+      "raw_specs": "커널형 / 블루투스 v5.4 / [노이즈컨트롤] AI노이즈캔슬링마이크 / [사운드] 유닛:10mm / 드라이버 : 다이나믹 / 20Hz~20kHz / [배터리] 1회충전시 : 7시간 / 최대재생 : 35시간 / 충전 : USB-C / [기능] 편의기능 : 위치찾기 / EQ수동조절 / 저지연게이밍모드 / IPX4방수",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=94814210",
+      "manufacturer": "QCY, QCY",
+      "model_name": "QCY T43"
+    },
+    "norm_info": {
+      "company_name": "QCY, QCY",
+      "model_name": "QCY T43",
+      "product_name": "QCY T43 Buds (정품)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "QCY, QCY",
+    "model_param": "QCY T43",
+    "ocr_result": {
+      "extracted_text": "QCY T43 Buds (정품) coupang 19,900원 2,500원 최저가 구매하기 가격비교 54 상품 상세정보 의견리뷰 251 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.4 노이즈권트록 시I노이즈랜늘림가이 사운드채널 스데레오 드라이버크기 유넷 1Omm 드라이버 다이나막 드라이버구성 다이나막 1개 주파수 2OHz~2OkHz 불루투스 프로파일 AVRCP A2DP HFP 무선연결거리 iOm [내티리] [배터리] 1회증전시 7시간 대기시간 80시간 쇠대재생 35시간 중전시간 2시간 배티리용량 32mAh 증전켜이스 35OmAh 캐이스 충전횟수 4회",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\QCY T43 Buds (정품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

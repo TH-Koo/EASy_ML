@@ -1,0 +1,69 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=97405013",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "APPLE 에어팟 프로3 MFHP4KH/A (정품)",
+      "name": "APPLE 에어팟 프로3 MFHP4KH/A (정품)",
+      "description": "",
+      "ocr_text": "APPLE 에어파 프로3 MFHP4KHIA (정품) Gmarket   119,800원  무료래송 최저가 구매하기 가격비교 208 상품 상세정보 의견 리뷰 2,001 뉴스커유니티 24 연관상품 f표지- 이건 의 '녁미 s이 U-AOJar? 메어니 3적인히 미처습니다 꼭 사세요 에어되 프로3 실사용 리뷰 IYoulube 제조회사 APPLE (제조사 웬사이트 바로가기) 등록년원 2025년 09원 분류 무선이어논 이어프타입 커널형 외형 크드리스 용도 음악+통화용 무선연결 불무투스 V5.3 노이즈런트론 댁티브노이즈랜슬림 (ANC) 맥티 보노 이즈권슬림 적응형ANC 주버스리드기",
+      "specs": {
+        "커널형": "지원",
+        "블루투스 v5.3": "지원",
+        "[노이즈컨트롤] 액티브노이즈캔슬링": "지원",
+        "적응형ANC": "지원",
+        "주변소리듣기": "지원",
+        "[AI 기능] AI ANC": "지원",
+        "AI 적응형 EQ": "지원",
+        "AI 공간음향": "지원",
+        "음성분리": "지원",
+        "AI 대화인지": "지원",
+        "AI 실시간 번역/통역": "지원",
+        "AI 음성비서": "지원",
+        "[사운드] 드라이버": "하이 익스커션 Apple",
+        "코덱": "SBC , AAC",
+        "[배터리] 1회충전시": "8시간(ANC ON), 10시간(ANC OFF), 7.5시간(공간음향 ON)",
+        "최대재생": "24시간(ANC ON)",
+        "충전": "무선충전 , 맥세이프 , USB-C",
+        "[기능] 편의기능": "심박수측정 , 보청기 , 카메라 제어",
+        "마이크특징": "듀얼빔포밍",
+        "IP57방수": "지원",
+        "충전케이스 내장 스피커(알림음 재생, 음악 재생X)": "지원",
+        "출시가": "369,000원"
+      },
+      "raw_specs": "커널형 / 블루투스 v5.3 / [노이즈컨트롤] 액티브노이즈캔슬링 / 적응형ANC / 주변소리듣기 / [AI 기능] AI ANC / AI 적응형 EQ / AI 공간음향 / 음성분리 / AI 대화인지 / AI 실시간 번역/통역 / AI 음성비서 / [사운드] 드라이버 : 하이 익스커션 Apple / 코덱 : SBC , AAC / [배터리] 1회충전시 : 8시간(ANC ON), 10시간(ANC OFF), 7.5시간(공간음향 ON) / 최대재생 : 24시간(ANC ON) / 충전 : 무선충전 , 맥세이프 , USB-C / [기능] 편의기능 : 심박수측정 , 보청기 , 카메라 제어 / 마이크특징 : 듀얼빔포밍 / IP57방수 / 충전케이스 내장 스피커(알림음 재생, 음악 재생X) / 출시가: 369,000원",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=97405013",
+      "manufacturer": "Apple Inc.  Apple",
+      "model_name": "MFHP4KH"
+    },
+    "norm_info": {
+      "company_name": "Apple Inc.  Apple",
+      "model_name": "MFHP4KH",
+      "product_name": "APPLE 에어팟 프로3 MFHP4KH/A (정품)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "Apple Inc.  Apple",
+    "model_param": "MFHP4KH",
+    "ocr_result": {
+      "extracted_text": "APPLE 에어파 프로3 MFHP4KHIA (정품) Gmarket   119,800원  무료래송 최저가 구매하기 가격비교 208 상품 상세정보 의견 리뷰 2,001 뉴스커유니티 24 연관상품 f표지- 이건 의 '녁미 s이 U-AOJar? 메어니 3적인히 미처습니다 꼭 사세요 에어되 프로3 실사용 리뷰 IYoulube 제조회사 APPLE (제조사 웬사이트 바로가기) 등록년원 2025년 09원 분류 무선이어논 이어프타입 커널형 외형 크드리스 용도 음악+통화용 무선연결 불무투스 V5.3 노이즈런트론 댁티브노이즈랜슬림 (ANC) 맥티 보노 이즈권슬림 적응형ANC 주버스리드기",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\APPLE 에어팟 프로3 MFHP4KHA (정품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

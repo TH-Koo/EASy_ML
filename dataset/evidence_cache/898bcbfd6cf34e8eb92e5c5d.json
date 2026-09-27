@@ -1,0 +1,520 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=91770746",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "필립스 TAK4200 (정품)",
+      "name": "필립스 TAK4200 (정품)",
+      "description": "",
+      "ocr_text": "필립스 TAK4200 (정품) coupang 37,900원  무료배송 최저가 구매하기 가격비교 73 상품 상세정보 의견리뷰 연관상품 파드형대 이어 용도 음악+통화용 어린이용 무선연결 불무투스 V5.4 노이즈런트론 A노이즈랜쓸림가이 드라이버크기 유딪 32mm 드라이버종류 다이나먹드라이버 임피터스 322 감도 112dB 주파수 2OHz~2OkHz 코덕 SBC 불루투스 프로파일 AVRCP A2DP HFP 무선언결거리 iOm 사운드조절 85dB불룹제한",
+      "specs": {
+        "무선헤드폰": "지원",
+        "어린이용": "지원",
+        "밀폐형": "지원",
+        "온이어": "지원",
+        "블루투스 v5.4": "지원",
+        "[노이즈컨트롤] AI노이즈캔슬링마이크": "지원",
+        "[사운드] 유닛": "32mm",
+        "다이나믹드라이버": "지원",
+        "32Ω": "지원",
+        "112dB": "지원",
+        "20Hz~20kHz": "지원",
+        "코덱": "SBC",
+        "[배터리] 재생시간": "45시간",
+        "충전": "USB-C",
+        "[기능] 음성명령": "지원",
+        "멀티포인트": "지원",
+        "무게": "129g",
+        "접이식": "지원",
+        "회전형이어컵": "지원",
+        "자동 꺼짐 기능": "지원",
+        "플레이 시간 제한": "지원",
+        "바이노럴 비트": "지원"
+      },
+      "raw_specs": "무선헤드폰 / 어린이용 / 밀폐형 / 온이어 / 블루투스 v5.4 / [노이즈컨트롤] AI노이즈캔슬링마이크 / [사운드] 유닛:32mm / 다이나믹드라이버 / 32Ω / 112dB / 20Hz~20kHz / 코덱 : SBC / [배터리] 재생시간 : 45시간 / 충전 : USB-C / [기능] 음성명령 / 멀티포인트 / 무게 : 129g / 접이식 / 회전형이어컵 / 자동 꺼짐 기능 / 플레이 시간 제한 / 바이노럴 비트",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=91770746",
+      "manufacturer": "필립스, Philipps",
+      "model_name": "TAK4200"
+    },
+    "norm_info": {
+      "company_name": "필립스, Philipps",
+      "model_name": "TAK4200",
+      "product_name": "필립스 TAK4200 (정품)"
+    },
+    "db_results": [
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "S7930",
+        "country": "네델란드",
+        "cert_date": "2019-02-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PCE-S7930"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "S7782",
+        "country": "네델란드",
+        "cert_date": "2020-05-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PCE-S7782"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Innosight Diagnostic Ultrasound System",
+        "country": "대만",
+        "cert_date": "2020-09-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PCE-989605460371"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "WB50NBT",
+        "country": "중국",
+        "cert_date": "2020-09-29",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PCE-WB50NBT"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "IMT 이동통신용 무선설비의 기기(기타)",
+        "model_name": "989803202921",
+        "country": "중국",
+        "cert_date": "2020-11-05",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PCE-989803202921"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "S7960",
+        "country": "네델란드",
+        "cert_date": "2019-02-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PCE-S7960"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "S7970",
+        "country": "네델란드",
+        "cert_date": "2019-02-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PCE-S7970"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "S7940",
+        "country": "네델란드",
+        "cert_date": "2019-02-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PCE-S7940"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "S7950",
+        "country": "네델란드",
+        "cert_date": "2019-02-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PCE-S7950"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "S7788",
+        "country": "네델란드",
+        "cert_date": "2020-05-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PCE-S7788"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HX960",
+        "country": "중국",
+        "cert_date": "2019-05-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PCE-HX960"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HX961",
+        "country": "중국",
+        "cert_date": "2019-05-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PCE-HX961"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HX962",
+        "country": "중국",
+        "cert_date": "2019-05-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PCE-HX962"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "WFS 3P",
+        "country": "독일",
+        "cert_date": "2019-08-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PCE-WFSGP39"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "WFS 4P+2",
+        "country": "독일",
+        "cert_date": "2019-08-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PCE-WFSGP46"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Base station",
+        "country": "독일",
+        "cert_date": "2019-08-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PCE-Basestation"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "WLANBV3-A",
+        "country": "독일",
+        "cert_date": "2019-09-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PCE-WLANBV3-A"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "HQ8509",
+        "country": "중국",
+        "cert_date": "2019-11-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PCE-HQ8509"
+      },
+      {
+        "company_name": "필립스콘트롤 주식회사",
+        "equip_name": "특정소출력 무선기기(데이터전송용 무선기기)",
+        "model_name": "ST_RSS3_20A",
+        "country": "한국",
+        "cert_date": "2021-01-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-Plc-ST_RSS3_20A"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력무선기기 (무선데이터통신시스템용 무선기기)",
+        "model_name": "Wivue III",
+        "country": "미국",
+        "cert_date": "2025-06-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PCE-PHC-11AC1-A"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력무선기기",
+        "model_name": "Patient Monitor 6500",
+        "country": "독일",
+        "cert_date": "2025-07-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PCE-PM6500"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력무선기기",
+        "model_name": "IntelliVue X3",
+        "country": "독일",
+        "cert_date": "2025-10-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PCE-X3"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력무선기기",
+        "model_name": "IntelliVue MX850",
+        "country": "독일",
+        "cert_date": "2025-10-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PCE-MX850"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력무선기기",
+        "model_name": "IntelliVue MX450",
+        "country": "독일",
+        "cert_date": "2025-10-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PCE-MX450"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력무선기기",
+        "model_name": "IntelliVue MX550",
+        "country": "독일",
+        "cert_date": "2025-12-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PCE-MX550"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "WIT2410NF",
+        "country": "미국",
+        "cert_date": "2023-11-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PCE-WIT2410NFKR"
+      },
+      {
+        "company_name": "필립스콘트롤 주식회사",
+        "equip_name": "통신게이트웨이",
+        "model_name": "ST_GW_TRX",
+        "country": "한국",
+        "cert_date": "2021-01-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Plc-ST_GW_TRX"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "Airfloss",
+        "model_name": "HX8460",
+        "country": "루마니아",
+        "cert_date": "2018-01-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-REI-PCE-HX8460"
+      },
+      {
+        "company_name": "필립스콘트롤 주식회사",
+        "equip_name": "특정소출력 무선기기(데이터전송용 무선기기)",
+        "model_name": "ST_NBSW_3",
+        "country": "한국",
+        "cert_date": "2021-01-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-Plc-ST_NBSW_3"
+      },
+      {
+        "company_name": "필립스콘트롤 주식회사",
+        "equip_name": "특정소출력 무선기기(데이터전송용 무선기기)",
+        "model_name": "ST_RSS1_20A",
+        "country": "한국",
+        "cert_date": "2021-01-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-Plc-ST_RSS1_20A"
+      },
+      {
+        "company_name": "필립스콘트롤 주식회사",
+        "equip_name": "특정소출력 무선기기(데이터전송용 무선기기)",
+        "model_name": "ST_RLS1_50A",
+        "country": "한국",
+        "cert_date": "2021-01-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-Plc-ST_RLS1_50A"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HX991",
+        "country": "중국",
+        "cert_date": "2020-02-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PCE-HX991"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "Hair clipper",
+        "model_name": "HC5630",
+        "country": "인도네시아",
+        "cert_date": "2020-03-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PCE-HC5630"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "S7783",
+        "country": "네델란드",
+        "cert_date": "2020-03-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PCE-S7783"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "S7786",
+        "country": "네델란드",
+        "cert_date": "2020-03-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PCE-S7786"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "CBA3001",
+        "country": "중국",
+        "cert_date": "2017-09-22",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMI-PCE-CBA3001"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "RFID/USN용 무선기기(13.56MHz 대역 사용 기기)",
+        "model_name": "HX680B",
+        "country": "중국",
+        "cert_date": "2018-09-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PCE-HX680B"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "RFID/USN용 무선기기(13.56MHz 대역 사용 기기)",
+        "model_name": "HX642J",
+        "country": "중국",
+        "cert_date": "2018-09-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PCE-HX642J"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "Hair Clipper",
+        "model_name": "HC9494",
+        "country": "중국",
+        "cert_date": "2017-07-03",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REI-PCE-HC9494"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "Hair Clipper",
+        "model_name": "HC5460",
+        "country": "인도네시아",
+        "cert_date": "2017-07-14",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REI-PCE-HC5460"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "Hair Clipper",
+        "model_name": "HC1099",
+        "country": "중국",
+        "cert_date": "2017-09-21",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REI-PCE-HC1099"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "CBA1001",
+        "country": "중국",
+        "cert_date": "2017-09-22",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMI-PCE-CBA1001"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "TCA2001",
+        "country": "중국",
+        "cert_date": "2017-09-22",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMI-PCE-TCA2001"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "TCA1001",
+        "country": "중국",
+        "cert_date": "2017-09-22",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMI-PCE-TCA1001"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "RFID/USN용 무선기기(13.56MHz 대역 사용 기기)",
+        "model_name": "HX684B",
+        "country": "중국",
+        "cert_date": "2018-09-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PCE-HX684B"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "CBA2001",
+        "country": "중국",
+        "cert_date": "2017-09-22",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMI-PCE-CBA2001"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HX993P",
+        "country": "중국",
+        "cert_date": "2017-10-16",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMI-PCE-HX993P"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HX993W",
+        "country": "중국",
+        "cert_date": "2017-10-16",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMI-PCE-HX993W"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HX993B",
+        "country": "중국",
+        "cert_date": "2017-10-16",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMI-PCE-HX993B"
+      },
+      {
+        "company_name": "주식회사 필립스코리아",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HX992B",
+        "country": "중국",
+        "cert_date": "2017-10-16",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMI-PCE-HX992B"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "필립스, Philipps",
+    "model_param": "TAK4200",
+    "ocr_result": {
+      "extracted_text": "필립스 TAK4200 (정품) coupang 37,900원  무료배송 최저가 구매하기 가격비교 73 상품 상세정보 의견리뷰 연관상품 파드형대 이어 용도 음악+통화용 어린이용 무선연결 불무투스 V5.4 노이즈런트론 A노이즈랜쓸림가이 드라이버크기 유딪 32mm 드라이버종류 다이나먹드라이버 임피터스 322 감도 112dB 주파수 2OHz~2OkHz 코덕 SBC 불루투스 프로파일 AVRCP A2DP HFP 무선언결거리 iOm 사운드조절 85dB불룹제한",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\필립스 TAK4200 (정품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

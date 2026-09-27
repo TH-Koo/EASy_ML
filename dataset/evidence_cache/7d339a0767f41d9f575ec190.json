@@ -1,0 +1,71 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=17658302",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "캐리어 The Premium AI 에어로 18단 냉난방기 OSQC181AAWWSD (공식인증 설치)",
+      "name": "캐리어 The Premium AI 에어로 18단 냉난방기 OSQC181AAWWSD (공식인증 설치)",
+      "description": "",
+      "ocr_text": "캐리어 The Premium Al 에어로 18단 냉난방기 OSQC181AAWWSD (공식인증 설치) coupang 1,710,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 12 연관상품 시I기능 시운전(환경) 에너지 2등급 4등습(난방) 냉방능력 72kW 난방능력 8.2kW 소비전력 1.99kW 소비전력 (난방) 2.45kW 절전기능 인버터 편의기능 스마드근제어 자능건조 [@ 인종 적합성평가인층 상세설명 판매 사이트 분의 [ 인종번호 확인 안전확인인승 SU07428-21003 인증번호 꽉인 바로가기 GO 전기요금, 걱정 많으석조? 흘렉하시면 깔끔하게 계산해 드컵니다! SSG.COM 상품 설명 복사하기",
+      "specs": {
+        "냉난방기": "지원",
+        "스탠드형": "지원",
+        "냉방면적": "18평(58.5㎡)",
+        "난방면적": "13평(43.9㎡)",
+        "AI운전(환경)": "지원",
+        "에너지": "2등급 , 4등급(난방)",
+        "[성능] 냉방능력": "7.2kW",
+        "난방능력": "8.2kW",
+        "소비전력": "1.99kW",
+        "소비전력(난방)": "2.45kW",
+        "인버터": "지원",
+        "[편의] 스마트폰제어": "지원",
+        "자동건조": "지원",
+        "[규격] 크기(가로x세로x깊이)": "365x1965x353mm"
+      },
+      "raw_specs": "냉난방기 / 스탠드형 / 냉방면적 : 18평(58.5㎡) / 난방면적 : 13평(43.9㎡) / AI운전(환경) / 에너지 : 2등급 , 4등급(난방) / [성능] 냉방능력 : 7.2kW / 난방능력 : 8.2kW / 소비전력 : 1.99kW / 소비전력(난방) : 2.45kW / 인버터 / [편의] 스마트폰제어 / 자동건조 / [규격] 크기(가로x세로x깊이): 365x1965x353mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=17658302",
+      "manufacturer": "Careera, Career",
+      "model_name": "OSQC181AAWWSD"
+    },
+    "norm_info": {
+      "company_name": "Careera, Career",
+      "model_name": "OSQC181AAWWSD",
+      "product_name": "캐리어 The Premium AI 에어로 18단 냉난방기 OSQC181AAWWSD (공식인증 설치)"
+    },
+    "db_results": [
+      {
+        "company_name": "Circuit Services LLC dba Career Technologies",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "1003910",
+        "country": "미국",
+        "cert_date": "2020-04-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-YVN-1003910"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "Careera, Career",
+    "model_param": "OSQC181AAWWSD",
+    "ocr_result": {
+      "extracted_text": "캐리어 The Premium Al 에어로 18단 냉난방기 OSQC181AAWWSD (공식인증 설치) coupang 1,710,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 12 연관상품 시I기능 시운전(환경) 에너지 2등급 4등습(난방) 냉방능력 72kW 난방능력 8.2kW 소비전력 1.99kW 소비전력 (난방) 2.45kW 절전기능 인버터 편의기능 스마드근제어 자능건조 [@ 인종 적합성평가인층 상세설명 판매 사이트 분의 [ 인종번호 확인 안전확인인승 SU07428-21003 인증번호 꽉인 바로가기 GO 전기요금, 걱정 많으석조? 흘렉하시면 깔끔하게 계산해 드컵니다! SSG.COM 상품 설명 복사하기",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\캐리어 The Premium AI 에어로 18단 냉난방기 OSQC181AAWWSD (공식인증 설치)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

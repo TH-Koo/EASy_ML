@@ -1,0 +1,140 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=89527184",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "샤크닌자 샤크 에보파워 시스템 FIT+ LC150KRBL",
+      "name": "샤크닌자 샤크 에보파워 시스템 FIT+ LC150KRBL",
+      "description": "",
+      "ocr_text": "사크난자 사크 에보파위 시스템 FIT+ LCI5OKRBL coupang 475,360원  무료배송 최저가 구매하기 가격비교 66 상품 상세정보 의견리뷰 61 연관상품 사용시간 41분(최대) 스테이선 먼지비움 랜드거지 청소기능 시청소 먼지감지센서 필터 워서불먼지필터 배터리 배티리 내장령 배터리종류 리롭이온 배티리용탕 3,o0OmAh 전합 11.1V 메인브러쉬 전방향회전 추가e러쉬 침구브러쉬 틈새부러쉬 패부리브러쉬 편의기능 먼지통분리 무게 [@ 인종 적합성평가인층 R-R-sn8-LCI5OKRBL | 인종변호 확인 안전확인인승 XU103298-23001A 인증번호 꽉인 1.7k9",
+      "specs": {
+        "핸디스틱청소기": "지원",
+        "무선": "지원",
+        "흡입전용": "지원",
+        "워셔블먼지필터": "지원",
+        "스테이션": "스탠드거치 , 충전 , 먼지비움",
+        "먼지감지센서": "지원",
+        "AI청소": "지원",
+        "[흡입구] 전방향회전": "지원",
+        "추가브러쉬": "패브릭브러쉬 , 침구브러쉬 , 틈새브러쉬",
+        "[색상/크기] 무게": "1.7kg",
+        "크기(가로x세로x깊이)": "263x1030x115mm"
+      },
+      "raw_specs": "핸디스틱청소기 / 무선 / 흡입전용 / 워셔블먼지필터 / 스테이션 : 스탠드거치 , 충전 , 먼지비움 / 먼지감지센서 / AI청소 / [흡입구] 전방향회전 / 추가브러쉬 : 패브릭브러쉬 , 침구브러쉬 , 틈새브러쉬 / [색상/크기] 무게 : 1.7kg / 크기(가로x세로x깊이): 263x1030x115mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=89527184",
+      "manufacturer": "샤크닌자, Sharkninja",
+      "model_name": "LC150KRBL"
+    },
+    "norm_info": {
+      "company_name": "샤크닌자, Sharkninja",
+      "model_name": "LC150KRBL",
+      "product_name": "샤크닌자 샤크 에보파워 시스템 FIT+ LC150KRBL"
+    },
+    "db_results": [
+      {
+        "company_name": "SharkNinja Operating LLC",
+        "equip_name": "Foodi Cooker (Pressure Cooker/Air Fryer)",
+        "model_name": "OP300KR",
+        "country": "미국",
+        "cert_date": "2019-03-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-sn8-OP300KR"
+      },
+      {
+        "company_name": "SharkNinja Operating LLC",
+        "equip_name": "Hair Dryer",
+        "model_name": "HD331KR",
+        "country": "중국",
+        "cert_date": "2023-07-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-sn8-HD331KR"
+      },
+      {
+        "company_name": "SharkNinja Operating LLC",
+        "equip_name": "Air Fryer",
+        "model_name": "AG551KR",
+        "country": "중국",
+        "cert_date": "2023-06-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-sn8-AG551KR"
+      },
+      {
+        "company_name": "SharkNinja Operating LLC",
+        "equip_name": "Hair Dryer",
+        "model_name": "HD415SLKR",
+        "country": "중국",
+        "cert_date": "2023-03-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-sn8-HD415SLKR"
+      },
+      {
+        "company_name": "SharkNinja Operating LLC",
+        "equip_name": "Air Fryer",
+        "model_name": "AG301KR",
+        "country": "중국",
+        "cert_date": "2023-01-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-sn8-AG301KR"
+      },
+      {
+        "company_name": "SharkNinja Operating LLC",
+        "equip_name": "Oven Air Fryer",
+        "model_name": "SFP701KR",
+        "country": "중국",
+        "cert_date": "2024-07-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-sn8-SFP701KR"
+      },
+      {
+        "company_name": "SharkNinja Operating LLC",
+        "equip_name": "Air Fryer",
+        "model_name": "FN100KRGN1",
+        "country": "중국",
+        "cert_date": "2025-11-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-sn8-FN100KRGN1"
+      },
+      {
+        "company_name": "SharkNinja Operating LLC",
+        "equip_name": "Air Fryer",
+        "model_name": "SL300KR",
+        "country": "중국",
+        "cert_date": "2025-09-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-sn8-SL300KR"
+      },
+      {
+        "company_name": "SharkNinja Operating LLC",
+        "equip_name": "STAINFORCE",
+        "model_name": "HX100KR",
+        "country": "중국",
+        "cert_date": "2025-08-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-sn8-HX100KR"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "샤크닌자, Sharkninja",
+    "model_param": "LC150KRBL",
+    "ocr_result": {
+      "extracted_text": "사크난자 사크 에보파위 시스템 FIT+ LCI5OKRBL coupang 475,360원  무료배송 최저가 구매하기 가격비교 66 상품 상세정보 의견리뷰 61 연관상품 사용시간 41분(최대) 스테이선 먼지비움 랜드거지 청소기능 시청소 먼지감지센서 필터 워서불먼지필터 배터리 배티리 내장령 배터리종류 리롭이온 배티리용탕 3,o0OmAh 전합 11.1V 메인브러쉬 전방향회전 추가e러쉬 침구브러쉬 틈새부러쉬 패부리브러쉬 편의기능 먼지통분리 무게 [@ 인종 적합성평가인층 R-R-sn8-LCI5OKRBL | 인종변호 확인 안전확인인승 XU103298-23001A 인증번호 꽉인 1.7k9",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\샤크닌자 샤크 에보파워 시스템 FIT+ LC150KRBL\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

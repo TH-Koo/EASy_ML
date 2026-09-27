@@ -1,0 +1,335 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=88232396",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "MSI G242L700 E14 IPS 게이밍 144 HDR AI 무결점",
+      "name": "MSI G242L700 E14 IPS 게이밍 144 HDR AI 무결점",
+      "description": "",
+      "ocr_text": "MSI G242L700 E14 IPS 게이망 144 HDR Al 무결점 MSI 공식파트너 109,OO0원 (109,000+무료배송) 최저가 구매하기 가격비교 19 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 해삼도 FHD(192o 1080) 쇠대 주사물 144H2 패널 종류 IPS 화면 비율 라이드(16.9) 파닐 형대 평면 시야각 광시야각 퍽설피치 0.2745mm 응답 속도 Ims(MPRT) 화면 밝기 300nits 명상비 15001 HDR 지원 HDR 시력보호 기능 끌리커 프리 불루라이트 자단 부가 기능 헤드끈 아웃 스랜드 기능 갈드(삼하) 규격 크기(가로x세로x깊 VESA돌 100 1OOmin 540x407x22Omm 무게 8kg 소비전력 18W 색상영역 sRGB 게임 관련 기능 조순선 표시 게임 화면 개선",
+      "specs": {
+        "모니터": "지원",
+        "60.5cm(24인치)": "지원",
+        "FHD(1920 x 1080)": "지원",
+        "144Hz": "지원",
+        "IPS": "지원",
+        "와이드(16": "9)",
+        "평면": "지원",
+        "1ms(MPRT)": "지원",
+        "300nits": "지원",
+        "1,500": "1",
+        "헤드폰 아웃": "지원",
+        "틸트(상하)": "지원",
+        "4.8kg": "지원",
+        "[게임특화] 조준선 표시": "지원",
+        "FreeSync": "지원",
+        "[단자정보] DP": "지원",
+        "HDMI": "지원"
+      },
+      "raw_specs": "모니터 / 60.5cm(24인치) / FHD(1920 x 1080) / 144Hz / IPS / 와이드(16:9) / 평면 / 1ms(MPRT) / 300nits / 1,500:1 / 헤드폰 아웃 / 틸트(상하) / 4.8kg / [게임특화] 조준선 표시 / FreeSync / [단자정보] DP / HDMI",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=88232396",
+      "manufacturer": "MSI, Multi-Solution Inc.",
+      "model_name": "G242L700E14"
+    },
+    "norm_info": {
+      "company_name": "MSI, Multi-Solution Inc.",
+      "model_name": "G242L700E14",
+      "product_name": "MSI G242L700 E14 IPS 게이밍 144 HDR AI 무결점"
+    },
+    "db_results": [
+      {
+        "company_name": "HMS Industrial Networks A.B.",
+        "equip_name": "산업용 통신 게이트웨이",
+        "model_name": "X-Gateway",
+        "country": "스웨덴",
+        "cert_date": "2020-03-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ABJ-ABX"
+      },
+      {
+        "company_name": "MICROHARD SYSTEMS Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "pMDDL2450",
+        "country": "캐나다",
+        "cert_date": "2025-07-28",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MhI-pMDDL2450"
+      },
+      {
+        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
+        "equip_name": "Portrait VSM",
+        "model_name": "Portrait VSM",
+        "country": "중국",
+        "cert_date": "2024-05-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-GeM-PortraitVSM"
+      },
+      {
+        "company_name": "HMS Industrial Networks S.A.",
+        "equip_name": "IIOT remote access gateway with Ethernet connectivity",
+        "model_name": "01003",
+        "country": "벨기에",
+        "cert_date": "2024-11-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-22S-01003"
+      },
+      {
+        "company_name": "HMS Industrial Networks S.A.",
+        "equip_name": "IIOT remote access gateway with Ethernet connectivity",
+        "model_name": "11702",
+        "country": "벨기에",
+        "cert_date": "2024-11-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-22S-11702"
+      },
+      {
+        "company_name": "Cadence Design Systems Inc",
+        "equip_name": "PALLADIUM Z3 AIR-COOLED L SYSTEM 8 ALWAYS-ON-DOMAINS",
+        "model_name": "39HQL1A",
+        "country": "멕시코",
+        "cert_date": "2024-12-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-C3S-Z3LSYSTEM"
+      },
+      {
+        "company_name": "HMS Industrial Networks A.B.",
+        "equip_name": "산업용 통신 게이트웨이",
+        "model_name": "EtherCAT Main Device",
+        "country": "스웨덴",
+        "cert_date": "2023-04-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ABJ-ABC_ECT_MD"
+      },
+      {
+        "company_name": "MICROHARD SYSTEMS Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "p2400",
+        "country": "캐나다",
+        "cert_date": "2023-05-15",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MhI-p2400"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Hardware RAID Enclosure",
+        "model_name": "TR-002",
+        "country": "대만",
+        "cert_date": "2023-11-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TR-002"
+      },
+      {
+        "company_name": "HMS Industrial Networks A.B.",
+        "equip_name": "산업용 통신 게이트웨이",
+        "model_name": "CAN Bridge & Gateway",
+        "country": "독일",
+        "cert_date": "2021-04-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ABJ-Ixxat_CANBG"
+      },
+      {
+        "company_name": "HMS Industrial Networks A.B.",
+        "equip_name": "산업용 통신 게이트웨이",
+        "model_name": "Ixxat Automotive",
+        "country": "독일",
+        "cert_date": "2021-05-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ABJ-Ixxat_Auto"
+      },
+      {
+        "company_name": "HPC Systems Inc.",
+        "equip_name": "AI Server",
+        "model_name": "EMB-S622SPI-R4-AI",
+        "country": "일본",
+        "cert_date": "2021-05-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MV0-EMB-S622SPIR4"
+      },
+      {
+        "company_name": "HMS Industrial Networks S.A.",
+        "equip_name": "4G APAC Extension Card for IIOT Remote Access Gateway",
+        "model_name": "03501",
+        "country": "벨기에",
+        "cert_date": "2021-06-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-22S-03501"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "RAID Enclosure",
+        "model_name": "TR-106CT",
+        "country": "대만",
+        "cert_date": "2021-07-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TR-106CT"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "RAID Enclosure",
+        "model_name": "TR-108CT",
+        "country": "대만",
+        "cert_date": "2021-07-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TR-108CT"
+      },
+      {
+        "company_name": "Varian Medical Systems Imaging Laboratory GmbH",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "VCD",
+        "country": "스위스",
+        "cert_date": "2017-12-14",
+        "cert_status": "적합인증",
+        "cert_no": "R-CMM-Var-VCD"
+      },
+      {
+        "company_name": "HMS Industrial Networks A.B.",
+        "equip_name": "산업용 통신 변환 장치",
+        "model_name": "HMS-EN2PB-R",
+        "country": "스웨덴",
+        "cert_date": "2020-03-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ABJ-LinkingDevice"
+      },
+      {
+        "company_name": "HMS Industrial Networks A.B.",
+        "equip_name": "산업용 통신 게이트웨이",
+        "model_name": "Communicator",
+        "country": "스웨덴",
+        "cert_date": "2020-04-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ABJ-ABC"
+      },
+      {
+        "company_name": "HMS Industrial Networks A.B.",
+        "equip_name": "산업용 통신 게이트웨이",
+        "model_name": "SG-Gateway",
+        "country": "스웨덴",
+        "cert_date": "2020-04-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ABJ-SG-Gateway"
+      },
+      {
+        "company_name": "HMS Industrial Networks A.B.",
+        "equip_name": "산업용 통신 게이트웨이",
+        "model_name": "Anybus Communicator",
+        "country": "스웨덴",
+        "cert_date": "2020-06-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ABJ-Communicator"
+      },
+      {
+        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스 템용 무선기기)",
+        "model_name": "MAC 7",
+        "country": "미국",
+        "cert_date": "2020-10-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-GeM-MAC7"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Hardware RAID Enclosure",
+        "model_name": "TR-004",
+        "country": "대만",
+        "cert_date": "2019-02-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TR-004"
+      },
+      {
+        "company_name": "NetScout Systems Inc.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "EW-7822UNC ? EU",
+        "country": "미국",
+        "cert_date": "2019-08-06",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-NSZ-EW-7822UNC"
+      },
+      {
+        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "MAC VU360",
+        "country": "멕시코",
+        "cert_date": "2019-11-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-GeM-MACVU360"
+      },
+      {
+        "company_name": "Oce Display Graphics Systems Inc",
+        "equip_name": "RFID/USN용 무선기기(13.56MHz 대역 사용 기기)",
+        "model_name": "3010120604",
+        "country": "캐나다",
+        "cert_date": "2018-02-08",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-ODG-3010120604"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "IoT mini Server",
+        "model_name": "QBoat Sunny",
+        "country": "대만",
+        "cert_date": "2018-06-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-REM-QNP-QBoat_Sunny"
+      },
+      {
+        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "MAC 2000",
+        "country": "인도",
+        "cert_date": "2018-09-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-GeM-ECGMAC2000LDWX"
+      },
+      {
+        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MAC Link(Acquisition Module)",
+        "country": "중국",
+        "cert_date": "2017-07-24",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-GeM-MACLinkAM53223"
+      },
+      {
+        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MAC Link(Host Module)",
+        "country": "중국",
+        "cert_date": "2017-08-24",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-GeM-MACLinkHM53223"
+      },
+      {
+        "company_name": "NetScout Systems Inc.",
+        "equip_name": "무선 신호 분석기",
+        "model_name": "SENSOR6-R1S0W1-E",
+        "country": "미국",
+        "cert_date": "2017-11-21",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RRM-NSZ-SENSOR6"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "MSI, Multi-Solution Inc.",
+    "model_param": "G242L700E14",
+    "ocr_result": {
+      "extracted_text": "MSI G242L700 E14 IPS 게이망 144 HDR Al 무결점 MSI 공식파트너 109,OO0원 (109,000+무료배송) 최저가 구매하기 가격비교 19 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 해삼도 FHD(192o 1080) 쇠대 주사물 144H2 패널 종류 IPS 화면 비율 라이드(16.9) 파닐 형대 평면 시야각 광시야각 퍽설피치 0.2745mm 응답 속도 Ims(MPRT) 화면 밝기 300nits 명상비 15001 HDR 지원 HDR 시력보호 기능 끌리커 프리 불루라이트 자단 부가 기능 헤드끈 아웃 스랜드 기능 갈드(삼하) 규격 크기(가로x세로x깊 VESA돌 100 1OOmin 540x407x22Omm 무게 8kg 소비전력 18W 색상영역 sRGB 게임 관련 기능 조순선 표시 게임 화면 개선",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\MSI G242L700 E14 IPS 게이밍 144 HDR AI 무결점\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=31405676",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "APPLE 2022 iPad 10세대 중고 (64GB)",
+      "name": "APPLE 2022 iPad 10세대 중고 (64GB)",
+      "description": "",
+      "ocr_text": "APPLE 2022 iPad 10세대 중고 (64GB) 1L> 303,270원  무료배송 최저가 구매하기 가격비교 71 상품 상세정보 의견리뷰 연관상품 화면크기 10.9인지 디스플레이 IPS-LCD 해상도 2360x1640 정설 수(ppi) 264ppi 화면비율 1.431 쇠대주사율 6OHz 색감 sRGB 쇠대밝기 5OOnits HDR규격 HDR1O 돌비비전 4GB 용량 646B 저장매체 NVMe 외장메모리 microSD미i지원 프로세서 414 Bionic 코어 개스 6코이 GPU Apple GPU 4코어 벤치마크 AP 게이망 65점 AP CPU(심글) 2079 CPU(밀티) 4779 GPU(게임) 7655 Al NPU 16군이 뉴렬엔진 Al TOPS 11 TOPS 카메라 후면카메라 화소 후면:1 200만화소 전면카메라 화소 전면:1,200만화소 통영상활영 4K@GOfps 조리개값 F18 카메라기능 HDR촬영 오도포커스",
+      "specs": {
+        "태블릿PC": "지원",
+        "Wi-Fi": "지원",
+        "10.9인치": "지원",
+        "IPS-LCD": "지원",
+        "60Hz": "지원",
+        "500nits": "지원",
+        "램": "4GB",
+        "용량": "64GB",
+        "microSD미지원": "지원",
+        "전용펜 별매": "지원",
+        "키보드 별매": "지원",
+        "[프로세서/AI] A14 Bionic": "지원",
+        "AP CPU": "68점",
+        "AP 게이밍": "65점",
+        "AI TOPS": "11 TOPS",
+        "[카메라] 후면카메라": "싱글",
+        "전면카메라": "싱글",
+        "스피커": "2개",
+        "배터리 USB2.0": "지원",
+        "약 7,600mAh(28.6WH)": "지원",
+        "최대충전": "약30W",
+        "가로": "179.5mm",
+        "세로": "248.6mm",
+        "두께": "7mm",
+        "무게": "477g"
+      },
+      "raw_specs": "태블릿PC / Wi-Fi / 10.9인치 / IPS-LCD / 60Hz / 500nits / 램 : 4GB / 용량 : 64GB / microSD미지원 / 전용펜 별매 / 키보드 별매 / [프로세서/AI] A14 Bionic / AP CPU : 68점 / AP 게이밍 : 65점 / AI TOPS : 11 TOPS / [카메라] 후면카메라 : 싱글 / 전면카메라 : 싱글 / 스피커 : 2개 / 배터리 USB2.0 / 약 7,600mAh(28.6WH) / 최대충전 : 약30W / 가로 : 179.5mm / 세로 : 248.6mm / 두께 : 7mm / 무게 : 477g",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=31405676",
+      "manufacturer": "Apple Inc.  Apple",
+      "model_name": "A2621"
+    },
+    "norm_info": {
+      "company_name": "Apple Inc.  Apple",
+      "model_name": "A2621",
+      "product_name": "APPLE 2022 iPad 10세대 중고 (64GB)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "Apple Inc.  Apple",
+    "model_param": "A2621",
+    "ocr_result": {
+      "extracted_text": "APPLE 2022 iPad 10세대 중고 (64GB) 1L> 303,270원  무료배송 최저가 구매하기 가격비교 71 상품 상세정보 의견리뷰 연관상품 화면크기 10.9인지 디스플레이 IPS-LCD 해상도 2360x1640 정설 수(ppi) 264ppi 화면비율 1.431 쇠대주사율 6OHz 색감 sRGB 쇠대밝기 5OOnits HDR규격 HDR1O 돌비비전 4GB 용량 646B 저장매체 NVMe 외장메모리 microSD미i지원 프로세서 414 Bionic 코어 개스 6코이 GPU Apple GPU 4코어 벤치마크 AP 게이망 65점 AP CPU(심글) 2079 CPU(밀티) 4779 GPU(게임) 7655 Al NPU 16군이 뉴렬엔진 Al TOPS 11 TOPS 카메라 후면카메라 화소 후면:1 200만화소 전면카메라 화소 전면:1,200만화소 통영상활영 4K@GOfps 조리개값 F18 카메라기능 HDR촬영 오도포커스",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\APPLE 2022 iPad 10세대 중고 (64GB)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

@@ -1,0 +1,514 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=58010240",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "엘즈 파비스 AI 에코 PV-FS03W",
+      "name": "엘즈 파비스 AI 에코 PV-FS03W",
+      "description": "",
+      "ocr_text": "엘즈 파비스 Al 에고 PV-FSO3W Gmarket   178,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 형태 랜드령 위무선 유선 모티방식 DC모티 소비전력 26W 바람 12단 바람모드 초미풍(유아품) 자연품 에코품(자능품속조 '날가개수 3업날가 곰공기이동거리 15mn 헤드조절 좌우회전 상하각도조설 3D인체회전 주요기능 타이머 리모컨 부가기능 오로리터 [g 인종 적합성평가인층 R-R-EZH-PV-FSO2B| 인긍번호 확인 안전확인인승 SU10726-200025 | 인증번호 확인",
+      "specs": {
+        "선풍기": "지원",
+        "스탠드형": "지원",
+        "유선": "지원",
+        "DC모터": "지원",
+        "바람": "12단",
+        "초미풍(유아풍)": "지원",
+        "자연풍": "지원",
+        "에코풍(자동풍속조절)": "지원",
+        "3엽날개": "지원",
+        "좌우회전": "지원",
+        "상하각도조절": "지원",
+        "3D입체회전": "지원",
+        "타이머": "지원",
+        "리모컨": "지원",
+        "[편의] 오토리턴": "지원",
+        "크기(가로x세로x깊이)": "284x705x284mm"
+      },
+      "raw_specs": "선풍기 / 스탠드형 / 유선 / DC모터 / 바람 : 12단 / 초미풍(유아풍) / 자연풍 / 에코풍(자동풍속조절) / 3엽날개 / 좌우회전 / 상하각도조절 / 3D입체회전 / 타이머 / 리모컨 / [편의] 오토리턴 / 크기(가로x세로x깊이): 284x705x284mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=58010240",
+      "manufacturer": "엘즈, ELS",
+      "model_name": "FS03W"
+    },
+    "norm_info": {
+      "company_name": "엘즈, ELS",
+      "model_name": "FS03W",
+      "product_name": "엘즈 파비스 AI 에코 PV-FS03W"
+    },
+    "db_results": [
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HS-00018",
+        "country": "중국",
+        "cert_date": "2020-07-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SS4-HS-00018"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기 ( 무선데이터통신시스템용 무선기기)",
+        "model_name": "M-00030",
+        "country": "중국",
+        "cert_date": "2021-02-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SS4-M-00030"
+      },
+      {
+        "company_name": "㈜엘즈",
+        "equip_name": "무선진공청소기",
+        "model_name": "LZPV-ONE",
+        "country": "중국",
+        "cert_date": "2021-02-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-EZH-LZPV-ONE"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CERES 3",
+        "country": "한국",
+        "cert_date": "2021-06-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-cdr-CERES3"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HS-00021TXX",
+        "country": "중국",
+        "cert_date": "2020-02-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SS4-HS-00021TXX"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "M-00022",
+        "country": "중국",
+        "cert_date": "2020-04-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SS4-M-00022"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "M-00022TX",
+        "country": "중국",
+        "cert_date": "2020-04-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SS4-M-00022TX"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "GC-00007",
+        "country": "중국",
+        "cert_date": "2020-06-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SS4-GC-00007"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HS-00018TX",
+        "country": "중국",
+        "cert_date": "2020-07-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SS4-HS-00018TX"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기 ( 무선데이터통신시스템용 무선기기)",
+        "model_name": "M-00030TX",
+        "country": "중국",
+        "cert_date": "2021-02-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SS4-M-00030TX"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "M-00019TX",
+        "country": "중국",
+        "cert_date": "2020-09-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SS4-M-00019TX"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "M-00019",
+        "country": "중국",
+        "cert_date": "2020-09-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SS4-M-00019"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CR10",
+        "country": "한국",
+        "cert_date": "2020-12-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-cdr-DL10-R"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CT10",
+        "country": "한국",
+        "cert_date": "2020-12-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-cdr-DL10-T"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DRGTX01",
+        "country": "한국",
+        "cert_date": "2019-03-20",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-cdr-DRGTX01"
+      },
+      {
+        "company_name": "CELSYS,Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CES-50006",
+        "country": "일본",
+        "cert_date": "2019-04-01",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-CeL-CES-50006"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HS-00021TX",
+        "country": "중국",
+        "cert_date": "2019-06-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SS4-HS-00021TX"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HS-00021",
+        "country": "중국",
+        "cert_date": "2019-06-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SS4-HS-00021"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "물체감지센서용 무선기기(24GHz 주파수대역)",
+        "model_name": "SESOS AR",
+        "country": "한국",
+        "cert_date": "2021-02-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-cdr-SESOSAR"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "물체감지센서용 무선기기(24GHz 주파수대역)",
+        "model_name": "SESOS GR",
+        "country": "한국",
+        "cert_date": "2021-02-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-cdr-SESOSGR"
+      },
+      {
+        "company_name": "㈜엘즈",
+        "equip_name": "무선진공청소기",
+        "model_name": "LV-MB3-W",
+        "country": "중국",
+        "cert_date": "2021-01-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-EZH-LV-MB3-W"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "2.4G RF 통신모듈",
+        "model_name": "HS2420",
+        "country": "캐나다",
+        "cert_date": "2022-11-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-cdr-HS2420"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PW-LINK",
+        "country": "중국",
+        "cert_date": "2022-05-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-cdr-PW-LINK"
+      },
+      {
+        "company_name": "㈜엘즈",
+        "equip_name": "BLDC 무선 충전식 서큘레이터",
+        "model_name": "PV-DC100",
+        "country": "중국",
+        "cert_date": "2022-04-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-EZH-PV-DC100"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DRONEPANG F1 PRO",
+        "country": "한국",
+        "cert_date": "2022-04-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-cdr-DF1PROTX"
+      },
+      {
+        "company_name": "㈜엘즈",
+        "equip_name": "Air Beam 충전식 다용도 라이팅 팬",
+        "model_name": "PVF-323F",
+        "country": "중국",
+        "cert_date": "2022-03-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-EZH-PVF-323F"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DDTX",
+        "country": "중국",
+        "cert_date": "2022-03-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-cdr-DDTXA"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RF201S",
+        "country": "한국",
+        "cert_date": "2022-03-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-cdr-RF201SA"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RF209S",
+        "country": "한국",
+        "cert_date": "2022-01-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-cdr-RF209SA"
+      },
+      {
+        "company_name": "㈜엘즈",
+        "equip_name": "무선 청소기(USB 충전식)",
+        "model_name": "LV-M4",
+        "country": "중국",
+        "cert_date": "2023-06-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-EZH-LV-M4"
+      },
+      {
+        "company_name": "㈜엘즈",
+        "equip_name": "무선청소기(USB 충전식)",
+        "model_name": "PV-A091",
+        "country": "중국",
+        "cert_date": "2024-08-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-EZH-PV-A091"
+      },
+      {
+        "company_name": "㈜엘즈",
+        "equip_name": "파비스 AI 에코 서큘레이터",
+        "model_name": "PV-FS02B",
+        "country": "중국",
+        "cert_date": "2024-03-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-EZH-PV-FS02B"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "VK Terrain Radar",
+        "model_name": "VK T.Radar V2",
+        "country": "중국",
+        "cert_date": "2026-01-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-cdr-SESOSTRV2"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "STTX10S",
+        "country": "중국",
+        "cert_date": "2017-06-09",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRM-cdr-STTX10S"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "BB-WD-T",
+        "country": "중국",
+        "cert_date": "2016-12-19",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRI-JMJ-BB-WD-T"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Q333-B-Tx",
+        "country": "중국",
+        "cert_date": "2016-10-11",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRI-JMJ-Q333-B-Tx"
+      },
+      {
+        "company_name": "KRIPPL-WATCHES Warenhandels GmbH",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RUNMOCL",
+        "country": "오스트리아",
+        "cert_date": "2016-08-03",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRM-KRi-RUNMOCL"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CX-10D-T",
+        "country": "중국",
+        "cert_date": "2016-06-02",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRI-JMJ-CX-10D-T"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "video transmitter",
+        "country": "중국",
+        "cert_date": "2016-02-01",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRI-JMJ-KF-58-200"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "KDS AT9 remotecontrol",
+        "country": "중국",
+        "cert_date": "2016-01-29",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRI-JMJ-KDSAT9"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Q222 Camera",
+        "country": "중국",
+        "cert_date": "2016-01-29",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRI-JMJ-Q222Camera"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HS-00015",
+        "country": "중국",
+        "cert_date": "2017-11-09",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-SS4-HS-00015"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HS-00009",
+        "country": "중국",
+        "cert_date": "2017-09-11",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-SS4-HS-00009"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HS-00013",
+        "country": "중국",
+        "cert_date": "2017-08-28",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-SS4-HS-00013"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HS-00013TX",
+        "country": "중국",
+        "cert_date": "2017-08-28",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-SS4-HS-00013TX"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "WFT09SII",
+        "country": "중국",
+        "cert_date": "2017-07-31",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRI-cdr-WFT09SII"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "ZL-FP",
+        "country": "중국",
+        "cert_date": "2017-07-21",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-cdr-ZL-FP"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "ZL-XP",
+        "country": "중국",
+        "cert_date": "2017-07-06",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-cdr-ZL-XP"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "ZL-TX",
+        "country": "중국",
+        "cert_date": "2017-07-04",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRM-cdr-ZL-TX"
+      },
+      {
+        "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "BB-WD-R",
+        "country": "중국",
+        "cert_date": "2016-12-19",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRI-JMJ-BB-WD-R"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "엘즈, ELS",
+    "model_param": "FS03W",
+    "ocr_result": {
+      "extracted_text": "엘즈 파비스 Al 에고 PV-FSO3W Gmarket   178,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 형태 랜드령 위무선 유선 모티방식 DC모티 소비전력 26W 바람 12단 바람모드 초미풍(유아품) 자연품 에코품(자능품속조 '날가개수 3업날가 곰공기이동거리 15mn 헤드조절 좌우회전 상하각도조설 3D인체회전 주요기능 타이머 리모컨 부가기능 오로리터 [g 인종 적합성평가인층 R-R-EZH-PV-FSO2B| 인긍번호 확인 안전확인인승 SU10726-200025 | 인증번호 확인",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\엘즈 파비스 AI 에코 PV-FS03W\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

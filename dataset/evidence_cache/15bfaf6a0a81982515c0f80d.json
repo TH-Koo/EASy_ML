@@ -1,0 +1,326 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=103692239",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "다이슨 스팟앤스크럽 (해외구매)",
+      "name": "다이슨 스팟앤스크럽 (해외구매)",
+      "description": "",
+      "ocr_text": "다이손 스맛엔스크럽 (해외구매) 보드비 상점 1,790,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 317 연관상품 집입력 18,OOOPa 센서 LDS 카메라 맵끔 인식 A사물인식 감지회피 잠애물회피 분터등반 오염도감지 리프팀 Icm 분늑님기 2cm 통과높이 11cm 청소운전 모서리 브러쉬 사이드로봇째러쉬 엉림밤지재질 먼지통 0.25L 증전시간 3시간 청소기능 카켓부스트 물걸레리프팀 실시간물결레세칙 스마트혼제어",
+      "specs": {
+        "로봇청소기": "지원",
+        "흡입+물걸레": "지원",
+        "센서": "카메라 , LDS",
+        "흡입력": "18,000Pa",
+        "문턱넘기": "2cm",
+        "실시간물걸레세척": "지원",
+        "카펫부스트": "지원",
+        "물걸레리프팅": "지원",
+        "물걸레": "롤러형",
+        "물걸레확장암": "지원",
+        "[스테이션] 걸레건조(온풍)": "지원",
+        "스테이션청소": "지원",
+        "세제투입": "지원",
+        "먼지비움": "지원",
+        "자동급수": "지원",
+        "걸레세척(온수)": "지원",
+        "자동충전": "지원",
+        "[규격] 색상": "블랙",
+        "무게": "6.6kg",
+        "크기(가로x세로x깊이)": "청소기 373x110x370mm 스테이션 440x508x455mm"
+      },
+      "raw_specs": "로봇청소기 / 흡입+물걸레 / 센서 : 카메라 , LDS / 흡입력 : 18,000Pa / 문턱넘기 : 2cm / 실시간물걸레세척 / 카펫부스트 / 물걸레리프팅 / 물걸레 : 롤러형 / 물걸레확장암 / [스테이션] 걸레건조(온풍) / 스테이션청소 / 세제투입 / 먼지비움 / 자동급수 / 걸레세척(온수) / 자동충전 / [규격] 색상 : 블랙 / 무게 : 6.6kg / 크기(가로x세로x깊이): 청소기 373x110x370mm 스테이션 440x508x455mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=103692239",
+      "manufacturer": "다이슨, Dyson",
+      "model_name": "다이슨 스팟앤스크럽"
+    },
+    "norm_info": {
+      "company_name": "다이슨, Dyson",
+      "model_name": "다이슨 스팟앤스크럽",
+      "product_name": "다이슨 스팟앤스크럽 (해외구매)"
+    },
+    "db_results": [
+      {
+        "company_name": "다이슨코리아 유한회사",
+        "equip_name": "Battery-powered Hair Straightener",
+        "model_name": "HS03",
+        "country": "말레이시아",
+        "cert_date": "2020-03-02",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DkL-HS03"
+      },
+      {
+        "company_name": "다이슨코리아 유한회사",
+        "equip_name": "Hair Dryer",
+        "model_name": "HD19",
+        "country": "중국",
+        "cert_date": "2026-01-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DkL-HD19"
+      },
+      {
+        "company_name": "다이슨코리아 유한회사",
+        "equip_name": "Air Purifier/공기청정기",
+        "model_name": "SP01-A",
+        "country": "중국",
+        "cert_date": "2025-09-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DkL-SP01-A"
+      },
+      {
+        "company_name": "다이슨코리아 유한회사",
+        "equip_name": "Hair Straightener",
+        "model_name": "HT02-A",
+        "country": "필리핀",
+        "cert_date": "2025-11-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DkL-HT02-A"
+      },
+      {
+        "company_name": "다이슨코리아 유한회사",
+        "equip_name": "Dyson Spot+Scrub Ai",
+        "model_name": "RB05-A",
+        "country": "중국",
+        "cert_date": "2025-12-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DkL-RB05-A"
+      },
+      {
+        "company_name": "다이슨코리아 유한회사",
+        "equip_name": "Dyson Spot+Scrub Ai",
+        "model_name": "RB05-A",
+        "country": "중국",
+        "cert_date": "2025-12-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DkL-RB05-A-DOCK"
+      },
+      {
+        "company_name": "다이슨코리아 유한회사",
+        "equip_name": "Hair Dryer",
+        "model_name": "HD17",
+        "country": "말레이시아",
+        "cert_date": "2024-02-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DkL-HD17"
+      },
+      {
+        "company_name": "다이슨코리아 유한회사",
+        "equip_name": "Hair styler",
+        "model_name": "HS08",
+        "country": "말레이시아",
+        "cert_date": "2024-03-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DkL-HS08"
+      },
+      {
+        "company_name": "다이슨코리아 유한회사",
+        "equip_name": "공기청정기(공기청정선풍기) Air purifier(Air Purifying fan)",
+        "model_name": "TP12",
+        "country": "말레이시아",
+        "cert_date": "2024-03-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DkL-TP12"
+      },
+      {
+        "company_name": "다이슨코리아 유한회사,Air Purifier",
+        "equip_name": "Air Purifying Fan",
+        "model_name": "BP04",
+        "country": "말레이시아",
+        "cert_date": "2023-02-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DkL-BP04"
+      },
+      {
+        "company_name": "다이슨코리아 유한회사",
+        "equip_name": "Air Purifying Headphones",
+        "model_name": "WP01",
+        "country": "중국",
+        "cert_date": "2023-03-02",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DkL-WP01"
+      },
+      {
+        "company_name": "다이슨코리아 유한회사",
+        "equip_name": "Hair Straightener",
+        "model_name": "HS06",
+        "country": "필리핀",
+        "cert_date": "2023-06-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DkL-HS06"
+      },
+      {
+        "company_name": "다이슨코리아 유한회사",
+        "equip_name": "공기청정기(온풍기 겸용) Air purifier with fan heater",
+        "model_name": "HP09",
+        "country": "말레이시아",
+        "cert_date": "2021-07-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DkL-HP09"
+      },
+      {
+        "company_name": "다이슨코리아 유한회사",
+        "equip_name": "공기청정기(공기청정선풍기) Air purifier(Air Purifying fan)",
+        "model_name": "TP09",
+        "country": "말레이시아",
+        "cert_date": "2021-07-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DkL-TP09"
+      },
+      {
+        "company_name": "다이슨코리아 유한회사",
+        "equip_name": "Hair Dryer",
+        "model_name": "HD01",
+        "country": "말레이시아",
+        "cert_date": "2016-05-12",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REI-771-HD01"
+      },
+      {
+        "company_name": "다이슨코리아 유한회사",
+        "equip_name": "Air Purifier (Air Purifying Fan)",
+        "model_name": "BP01",
+        "country": "말레이시아",
+        "cert_date": "2019-01-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DkL-BP01"
+      },
+      {
+        "company_name": "Dyson Technology Limited",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "DBWIFIBLE02",
+        "country": "중국",
+        "cert_date": "2019-06-21",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-dtl-DBWIFIBLE02"
+      },
+      {
+        "company_name": "Dyson Technology Limited",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "DBWIFIBLE03",
+        "country": "중국",
+        "cert_date": "2019-08-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-dtl-DBWIFIBLE03"
+      },
+      {
+        "company_name": "다이슨코리아 유한회사",
+        "equip_name": "Air Purifier (with Air Humidifier)",
+        "model_name": "PH01",
+        "country": "말레이시아",
+        "cert_date": "2019-12-02",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DkL-PH01"
+      },
+      {
+        "company_name": "다이슨코리아 유한회사",
+        "equip_name": "Air Purifier (Air Purifying Fan)",
+        "model_name": "TP04",
+        "country": "말레이시아",
+        "cert_date": "2018-01-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-RMI-DkL-TP04"
+      },
+      {
+        "company_name": "다이슨코리아 유한회사",
+        "equip_name": "Air Purifier (Air Purifying Fan)",
+        "model_name": "DP04",
+        "country": "말레이시아",
+        "cert_date": "2018-01-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-RMI-DkL-DP04"
+      },
+      {
+        "company_name": "Dyson Technology Limited",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CD04",
+        "country": "말레이시아",
+        "cert_date": "2018-12-18",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-dtl-LightCycle"
+      },
+      {
+        "company_name": "다이슨코리아 유한회사",
+        "equip_name": "Hair styler",
+        "model_name": "HS01",
+        "country": "말레이시아",
+        "cert_date": "2017-09-26",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REI-DkL-HS01"
+      },
+      {
+        "company_name": "Dyson Technology Limited",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DBWIFIBLE01",
+        "country": "말레이시아",
+        "cert_date": "2017-12-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-dtl-DBWIFIBLE01"
+      },
+      {
+        "company_name": "Dyson Manufacturing Sdn, Bhd",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "WIFIAMFA001",
+        "country": "말레이시아",
+        "cert_date": "2016-03-10",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRM-Dys-WIFIAMFA001"
+      },
+      {
+        "company_name": "다이슨코리아 유한회사",
+        "equip_name": "Air Purifying Fan (선풍기)",
+        "model_name": "TP02",
+        "country": "말레이시아",
+        "cert_date": "2016-03-11",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMI-771-TP02"
+      },
+      {
+        "company_name": "다이슨코리아 유한회사",
+        "equip_name": "Air Purifying Fan (선풍기)",
+        "model_name": "DP01",
+        "country": "말레이시아",
+        "cert_date": "2016-03-25",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMI-771-DP01"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "source_record_id": "1020237039192",
+        "일련번호": "1",
+        "출원번호": "1020237039192",
+        "발명의명칭(한글)": "전해질 조성물",
+        "출원일자": "2022-03-22",
+        "출원인": "다이슨 테크놀러지 리미티드",
+        "등록상태": "거절",
+        "초록": "리튬 이온 배터리용 전해질 조성물이 개시된다. 상기 조성물은: (a) 5 내지 35 wt%의 리튬 염; (b) 2 내지 10 wt%의 첨가제; 및 (c) 55 내지 93 wt%의 용매를 포함하며, 리튬 염은: (ai) 리튬 2-트리플루오로메틸-4,5-디시아노이미다졸라이드, 리튬 디플루오로(옥살라토)보레이트, 리튬 비스(옥살라토)보레이트 및 리튬 테트라플루오로보레이트로부터 선택되는 염; 및 (aⅱ) 선택적으로, 리튬 비스(트리플루오로메탄설포닐)이미드 및/또는 리튬 비스(플루오로설포닐)이미드로부터 선택되는 공염을 포함하고, 염 대 공염의 몰 비는 상기 조성물이 리튬 디플루오로(옥살라토)보레이트 또는 리튬 테트라플루오로보레이트와 함께 리튬 비스(플루오로설포닐)이미드를 포함하지 않는다는 조건으로, 100:0 내지 5:95이며, 첨가제는 비닐렌 카보네이트 및 선택적으로 플루오로에틸렌 카보네이트를 포함하고, 용매는 (ci) 에틸렌 카보네이트 및 10 내지 30 mol% 프로필렌 카보네이트, 또는 (cⅱ) γ-부티로락톤 및 선택적으로 에틸렌 카보네이트를 포함한다.",
+        "IPC": "H01M 10/0568|H01M 10/0567|H01M 10/0569|H01M 10/0525",
+        "CPC": "",
+        "relevance_type": "general_ai",
+        "match_confidence": 0.45,
+        "search_alias": "다이슨",
+        "search_type": "AI 특허 [일반]",
+        "search_query": "AP=[다이슨]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
+        "status": "verified"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "다이슨, Dyson",
+    "model_param": "다이슨 스팟앤스크럽",
+    "ocr_result": {
+      "extracted_text": "다이손 스맛엔스크럽 (해외구매) 보드비 상점 1,790,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 317 연관상품 집입력 18,OOOPa 센서 LDS 카메라 맵끔 인식 A사물인식 감지회피 잠애물회피 분터등반 오염도감지 리프팀 Icm 분늑님기 2cm 통과높이 11cm 청소운전 모서리 브러쉬 사이드로봇째러쉬 엉림밤지재질 먼지통 0.25L 증전시간 3시간 청소기능 카켓부스트 물걸레리프팀 실시간물결레세칙 스마트혼제어",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\다이슨 스팟앤스크럽 (해외구매)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

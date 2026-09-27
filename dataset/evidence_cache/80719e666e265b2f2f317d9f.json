@@ -1,0 +1,521 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=106689230",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "SONY WF-1000XM6 (정품)",
+      "name": "SONY WF-1000XM6 (정품)",
+      "description": "",
+      "ocr_text": "SONY WF-1OOOXM6 (정품) coupang 417,050원  무료배송 최저가 구매하기 가격비교 91 상품 상세정보 의견리뷰 47 뉴스커유니티 연관상품 j눈이면 a떨정렉m \"yeoptuktyi. [로-IOOOXMGs IYoullulb 제조회사 SONY 등록년원 2026년 02원 분류 무선이어논 이어프타입 커널형 외형 크드리스 용도 음악+통화용 무선연결 불무투스 V5.3 노이즈건트률",
+      "specs": {
+        "커널형": "지원",
+        "블루투스 v5.3": "지원",
+        "[노이즈컨트롤] 액티브노이즈캔슬링(ANC)": "지원",
+        "적응형ANC": "지원",
+        "주변소리듣기": "지원",
+        "대화인지": "지원",
+        "[AI 기능] AI 사운드/음질향상": "지원",
+        "AI 노이즈캔슬링마이크": "지원",
+        "[사운드] HRA": "지원",
+        "유닛": "8.4mm",
+        "드라이버": "다이나믹",
+        "20Hz~40kHz(LDAC)": "지원",
+        "코덱": "LDAC , LC3 , SBC , AAC",
+        "360도공간음향": "지원",
+        "헤드트래킹": "지원",
+        "[배터리] 1회충전시": "8시간(ANC ON), 12시간(ANC OFF)",
+        "최대재생": "24시간",
+        "충전": "무선충전 , USB-C",
+        "[기능] EQ수동조절": "지원",
+        "멀티포인트": "지원",
+        "구글패스트페어": "지원",
+        "IPX4방수(이어버드)": "지원",
+        "출시가": "499,000원"
+      },
+      "raw_specs": "커널형 / 블루투스 v5.3 / [노이즈컨트롤] 액티브노이즈캔슬링(ANC) / 적응형ANC / 주변소리듣기 / 대화인지 / [AI 기능] AI 사운드/음질향상 / AI 노이즈캔슬링마이크 / [사운드] HRA / 유닛:8.4mm / 드라이버 : 다이나믹 / 20Hz~40kHz(LDAC) / 코덱 : LDAC , LC3 , SBC , AAC / 360도공간음향 / 헤드트래킹 / [배터리] 1회충전시 : 8시간(ANC ON), 12시간(ANC OFF) / 최대재생 : 24시간 / 충전 : 무선충전 , USB-C / [기능] EQ수동조절 / 멀티포인트 / 구글패스트페어 / IPX4방수(이어버드) / 출시가: 499,000원",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=106689230",
+      "manufacturer": "SONY, Inc.",
+      "model_name": "WF-1000XM6"
+    },
+    "norm_info": {
+      "company_name": "SONY, Inc.",
+      "model_name": "WF-1000XM6",
+      "product_name": "SONY WF-1000XM6 (정품)"
+    },
+    "db_results": [
+      {
+        "company_name": "주식회사 와이엘사이언스(YL Science.Inc.)",
+        "equip_name": "WISEFIT 보풀제거기",
+        "model_name": "WISEFIT WF-107",
+        "country": "중국",
+        "cert_date": "2018-09-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-yl1-WISEFITWF-107"
+      },
+      {
+        "company_name": "Honeywell International Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CCB-H-010BT",
+        "country": "중국",
+        "cert_date": "2019-04-12",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-HWK-CCBH01"
+      },
+      {
+        "company_name": "Diamanti, Inc.",
+        "equip_name": "Bare-Metal Container Appliance",
+        "model_name": "Diamanti D20",
+        "country": "미국",
+        "cert_date": "2019-03-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-dti-DiamantiD20"
+      },
+      {
+        "company_name": "EXTREME NETWORKS, INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SA201",
+        "country": "중국",
+        "cert_date": "2019-03-12",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-EXR-SA201"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "P009",
+        "country": "라오스",
+        "cert_date": "2019-03-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PLM-P009"
+      },
+      {
+        "company_name": "Trimble Inc.",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
+        "model_name": "121300",
+        "country": "미국",
+        "cert_date": "2019-03-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-8TI-121300"
+      },
+      {
+        "company_name": "CRAZYBABY INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "H183",
+        "country": "중국",
+        "cert_date": "2019-03-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-1D4-H183"
+      },
+      {
+        "company_name": "주식회사 게이즈(GAZE, INC.)",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "GAZEON-GTPMWC",
+        "country": "중국",
+        "cert_date": "2019-03-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-GAz-GAZE-GTPMWC"
+      },
+      {
+        "company_name": "오브로 주식회사 (ORBRO. , Inc . )",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "KSB-AK00",
+        "country": "한국",
+        "cert_date": "2019-03-18",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-KoT-KSB-AK00"
+      },
+      {
+        "company_name": "주식회사 와이엘사이언스(YL Science.Inc.)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MHCB01P",
+        "country": "중국",
+        "cert_date": "2019-03-18",
+        "cert_status": "적합인증",
+        "cert_no": "R-CS-yl1-MHCB01P"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "P702 ROG GLADIUS II WIRELESS",
+        "country": "중국",
+        "cert_date": "2019-03-18",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-P702"
+      },
+      {
+        "company_name": "Welch Allyn, Inc.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "9373",
+        "country": "미국",
+        "cert_date": "2019-03-18",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-BVT-9373"
+      },
+      {
+        "company_name": "CRADLEPOINT, INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "S5A804A",
+        "country": "대만",
+        "cert_date": "2019-03-18",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-CdP-S5A804A"
+      },
+      {
+        "company_name": "Honeywell International Inc.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "VM1A-L0N",
+        "country": "말레이시아",
+        "cert_date": "2019-03-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-HWK-VM1A-L0N"
+      },
+      {
+        "company_name": "Healthway Home Products, Inc.",
+        "equip_name": "Electrostatic Air Cleaner",
+        "model_name": "KJ468F",
+        "country": "미국",
+        "cert_date": "2019-03-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-hhp-KJ468F"
+      },
+      {
+        "company_name": "D&M Holdings Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "AH-GC30",
+        "country": "중국",
+        "cert_date": "2019-03-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-Dmh-AH-GC30"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "P702 ROG GLADIUS II WIRELESS DONGLE",
+        "country": "중국",
+        "cert_date": "2019-03-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-P702DONGLE"
+      },
+      {
+        "company_name": "Topcon Positioning Systems, Inc.,간이무선국?우주국?지구국의 무선설비 및 전파탐지용 무선설비 등 그 밖의 업무용 무선설비의 기술기준 제9조, 제15조",
+        "equip_name": "제16조에 따른 무선설비의 기기",
+        "model_name": "R2L UHF",
+        "country": "미국",
+        "cert_date": "2019-03-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-T8S-R2L-UHF"
+      },
+      {
+        "company_name": "Topcon Positioning Systems, Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "WT41u-E",
+        "country": "미국",
+        "cert_date": "2019-03-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-T8S-WT41uAN"
+      },
+      {
+        "company_name": "Arista Networks, Inc.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "W-118",
+        "country": "대만",
+        "cert_date": "2019-03-21",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-AN1-W118"
+      },
+      {
+        "company_name": "Topcon Positioning Systems, Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HiPer VR",
+        "country": "미국",
+        "cert_date": "2019-03-21",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-T8S-UHFbt"
+      },
+      {
+        "company_name": "CISCO SYSTEMS, INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "AIR-BLE-USB",
+        "country": "미국",
+        "cert_date": "2019-03-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-TNY-AIR-BLE-USB"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "HX-CPBS-A",
+        "country": "중국",
+        "cert_date": "2019-03-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-K98-CPBS"
+      },
+      {
+        "company_name": "Graco Inc.",
+        "equip_name": "Electric Airless Sprayer",
+        "model_name": "Ultra Max II 695",
+        "country": "미국",
+        "cert_date": "2019-03-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-CE8-AR1050A"
+      },
+      {
+        "company_name": "Graco Inc.",
+        "equip_name": "Electric Airless Sprayer",
+        "model_name": "TexSpray Mark VII",
+        "country": "미국",
+        "cert_date": "2019-03-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-CE8-AR1050C"
+      },
+      {
+        "company_name": "Graco Inc.",
+        "equip_name": "Electric Airless Sprayer",
+        "model_name": "TexSpray Mark X",
+        "country": "미국",
+        "cert_date": "2019-03-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-CE8-AR1050D"
+      },
+      {
+        "company_name": "Silex Technology, Inc.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "SX-PCEAN2",
+        "country": "일본",
+        "cert_date": "2019-03-27",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SXT-PCEAN2DB"
+      },
+      {
+        "company_name": "주식회사 와이엘사이언스(YL Science.Inc.)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "T1pro",
+        "country": "중국",
+        "cert_date": "2019-03-29",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-yl1-T1pro"
+      },
+      {
+        "company_name": "DELL INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "P100G",
+        "country": "중국",
+        "cert_date": "2019-03-29",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-E2K-P100G001"
+      },
+      {
+        "company_name": "DELL INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "P96G",
+        "country": "중국",
+        "cert_date": "2019-03-29",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-E2K-P96G001"
+      },
+      {
+        "company_name": "SONICWALL, INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "APL41-0BA",
+        "country": "대만",
+        "cert_date": "2019-03-29",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SWL-0BA"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0080",
+        "country": "중국",
+        "cert_date": "2019-03-29",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-DZL-MR0080"
+      },
+      {
+        "company_name": "CELSYS,Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CES-50006",
+        "country": "일본",
+        "cert_date": "2019-04-01",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-CeL-CES-50006"
+      },
+      {
+        "company_name": "DELL INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "P97G",
+        "country": "중국",
+        "cert_date": "2019-04-02",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-E2K-P97G001"
+      },
+      {
+        "company_name": "Arista Networks, Inc.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "C-100",
+        "country": "미국",
+        "cert_date": "2019-04-02",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-AN1-C-100"
+      },
+      {
+        "company_name": "Graco Inc.",
+        "equip_name": "Electric Airless Sprayer",
+        "model_name": "Ultra Max II 1095",
+        "country": "미국",
+        "cert_date": "2019-04-02",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-CE8-AR1050B"
+      },
+      {
+        "company_name": "AuthenTrend Technology Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "ATKeycard",
+        "country": "중국",
+        "cert_date": "2019-04-02",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-Ath-ATKeycard"
+      },
+      {
+        "company_name": "주식회사 와이엘사이언스(YL Science.Inc.)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "T2C",
+        "country": "중국",
+        "cert_date": "2019-04-03",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-yl1-T2C"
+      },
+      {
+        "company_name": "DELL INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "P99G",
+        "country": "중국",
+        "cert_date": "2019-04-05",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-E2K-P99G001"
+      },
+      {
+        "company_name": "Nordson Test and Inspection Americas, Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "AMS-300C",
+        "country": "미국",
+        "cert_date": "2019-04-09",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Cy9-AMS"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0081",
+        "country": "중국",
+        "cert_date": "2019-04-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-DZL-MR0081"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0082",
+        "country": "중국",
+        "cert_date": "2019-04-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-DZL-MR0082"
+      },
+      {
+        "company_name": "Topcon Positioning Systems, Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "GCX3",
+        "country": "미국",
+        "cert_date": "2019-04-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-T8S-GCX3"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "YR0075",
+        "country": "중국",
+        "cert_date": "2019-04-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-DZL-YR0075"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "A00087",
+        "country": "중국",
+        "cert_date": "2019-04-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-DZL-A00087"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "A00085",
+        "country": "중국",
+        "cert_date": "2019-04-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-DZL-A00085"
+      },
+      {
+        "company_name": "Nordson Test and Inspection Americas, Inc.",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "8023746",
+        "country": "미국",
+        "cert_date": "2019-04-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Cy9-8023746"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "GZ700G",
+        "country": "중국",
+        "cert_date": "2019-05-20",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-NB-GZ700G"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "B00034",
+        "country": "말레이시아",
+        "cert_date": "2019-05-20",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-DZL-B00034"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "GZ700G Mobile Dock",
+        "country": "중국",
+        "cert_date": "2019-05-20",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-NB-GZ700KB"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "SONY, Inc.",
+    "model_param": "WF-1000XM6",
+    "ocr_result": {
+      "extracted_text": "SONY WF-1OOOXM6 (정품) coupang 417,050원  무료배송 최저가 구매하기 가격비교 91 상품 상세정보 의견리뷰 47 뉴스커유니티 연관상품 j눈이면 a떨정렉m \"yeoptuktyi. [로-IOOOXMGs IYoullulb 제조회사 SONY 등록년원 2026년 02원 분류 무선이어논 이어프타입 커널형 외형 크드리스 용도 음악+통화용 무선연결 불무투스 V5.3 노이즈건트률",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\SONY WF-1000XM6 (정품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

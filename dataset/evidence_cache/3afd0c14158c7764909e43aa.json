@@ -1,0 +1,614 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=106221245",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "삼성전자 갤럭시S26 512GB, 자급제 (블랙)",
+      "name": "삼성전자 갤럭시S26 512GB, 자급제 (블랙)",
+      "description": "",
+      "ocr_text": "삼성전자 길력시S26 512GB, 자급제 (불택) 11> 1,326,150원  무료배송 최저가 구매하기 가격비교 238 상품 상세정보 의견리뷰 513 소모품|액세서리 뉴스커유니티 26 연관상품 판매방식 자금제 공기계 공기계 유형 자근제 공기계 통신사 자금제 유신국가별상이) 나노+eSIM 메인화면정보 화면 16cmn(6 3인지) 패널송류 D-AMOLED 2X 화면해상도 2340x1080 화면종류 풀HD+ 쇠대주사물 12OHz 쇠대밝기 260Onits 디스플레이 특징 HDR1O+ 삼시표시형(AOD) 램용량 12GB 용량 512GB 저장장치 UFS 4.0 프로세서 액시노스2600 공점 Znm 군이 개수 10굳이 코어클력 3.8GH2+3.25GH2+2.75GHz GPU Xclipse 960 벤치마크 AP CPU 94점 AP 게이팅 92점 시I기능 오재편집 교정 이미지 생심 편진 Al 검색 /인식 실시간 통역번역 Al 브리낌 Al 비서",
+      "specs": {
+        "스마트폰(바형)": "지원",
+        "화면": "16cm(6.3인치)",
+        "120Hz": "지원",
+        "램": "12GB",
+        "용량": "512GB",
+        "[프로세서/AI] 엑시노스2600": "지원",
+        "AP CPU": "94점",
+        "AP 게이밍": "92점",
+        "[카메라] 후면": "5,000만화소+1,000만화소+1,200만화소",
+        "전면": "1,200만화소",
+        "[배터리/규격] USB3.2": "지원",
+        "4,300mAh": "지원",
+        "최대충전": "25W",
+        "무선": "최대15W",
+        "방수": "IP68",
+        "가로": "71.7mm",
+        "세로": "149.6mm",
+        "두께": "7.2mm",
+        "무게": "167g",
+        "출시가": "1,507,000원"
+      },
+      "raw_specs": "스마트폰(바형) / 화면:16cm(6.3인치) / 120Hz / 램 : 12GB / 용량 : 512GB / [프로세서/AI] 엑시노스2600 / AP CPU : 94점 / AP 게이밍 : 92점 / [카메라] 후면:5,000만화소+1,000만화소+1,200만화소 / 전면:1,200만화소 / [배터리/규격] USB3.2 / 4,300mAh / 최대충전 : 25W / 무선:최대15W / 방수 : IP68 / 가로 : 71.7mm / 세로 : 149.6mm / 두께 : 7.2mm / 무게 : 167g / 출시가: 1,507,000원",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=106221245",
+      "manufacturer": "삼성전자",
+      "model_name": "SM-G928B"
+    },
+    "norm_info": {
+      "company_name": "삼성전자",
+      "model_name": "SM-G928B",
+      "product_name": "삼성전자 갤럭시S26 512GB, 자급제 (블랙)"
+    },
+    "db_results": [
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
+        "model_name": "SM-G960N",
+        "country": "한국",
+        "cert_date": "2018-01-03",
+        "cert_status": "적합인증",
+        "cert_no": "R-CMM-SEC-SMG960"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "SM-G981N",
+        "country": "한국",
+        "cert_date": "2020-01-16",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMG981"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "SM-G988N",
+        "country": "한국",
+        "cert_date": "2020-01-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMG988"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "SM-G986N",
+        "country": "한국",
+        "cert_date": "2020-01-16",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMG986"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
+        "model_name": "SM-G965N",
+        "country": "한국",
+        "cert_date": "2018-01-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-CMM-SEC-SMG965"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓ 대역)(육상이동국의 송수신장치)",
+        "model_name": "SM-G977N",
+        "country": "한국",
+        "cert_date": "2019-03-18",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMG977"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
+        "model_name": "SM-G955N",
+        "country": "한국",
+        "cert_date": "2017-03-06",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-SEC-SMG955"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
+        "model_name": "SM-G950N",
+        "country": "한국",
+        "cert_date": "2017-03-06",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-SEC-SMG950"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "SM-G991N",
+        "country": "한국",
+        "cert_date": "2020-12-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMG991"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "SM-G998N",
+        "country": "한국",
+        "cert_date": "2020-12-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMG998"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "SM-G996N",
+        "country": "한국",
+        "cert_date": "2020-12-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMG996"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
+        "model_name": "SM-G973N",
+        "country": "한국",
+        "cert_date": "2019-01-14",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMG973"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
+        "model_name": "SM-G975N",
+        "country": "한국",
+        "cert_date": "2019-01-16",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMG975"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
+        "model_name": "SM-G970N",
+        "country": "한국",
+        "cert_date": "2019-01-17",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMG970"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SM-G930X",
+        "country": "한국",
+        "cert_date": "2016-02-03",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-SEC-SMG930X"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SM-G935X",
+        "country": "한국",
+        "cert_date": "2016-02-03",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-SEC-SMG935X"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
+        "model_name": "SM-G930S",
+        "country": "한국",
+        "cert_date": "2016-02-01",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-SEC-SMG930"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
+        "model_name": "SM-G935S",
+        "country": "한국",
+        "cert_date": "2016-01-28",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-SEC-SMG935"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "미약전계강도 무선기기",
+        "model_name": "EP-P2400",
+        "country": "베트남",
+        "cert_date": "2021-12-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-EPP2400"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TUNE130NCTWS",
+        "country": "중국",
+        "cert_date": "2021-09-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-T130NCTWS"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용무선기기)",
+        "model_name": "PARTYBOX710",
+        "country": "중국",
+        "cert_date": "2021-09-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-JBLPB710"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용무선기기)",
+        "model_name": "FLIP6C",
+        "country": "중국",
+        "cert_date": "2021-09-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-JBLFLIP6C"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "SM-G525N",
+        "country": "베트남",
+        "cert_date": "2021-09-27",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMG525"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Bar 5.1 CNTR",
+        "country": "중국",
+        "cert_date": "2021-09-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-BAR51CNTRM"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Bar 5.1 SUB",
+        "country": "중국",
+        "cert_date": "2021-09-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-BAR51SUBM"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "ENDURANCE RACE",
+        "country": "중국",
+        "cert_date": "2021-10-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-JBLENDRACE"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용무선기기)",
+        "model_name": "FLIP6T",
+        "country": "중국",
+        "cert_date": "2021-10-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-JBLFLIP6T"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "RFID용 무선기기 (13.56MHz 주파수대역)",
+        "model_name": "EF-NS908",
+        "country": "베트남",
+        "cert_date": "2021-10-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-EFNS908"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "RFID용 무선기기 (13.56MHz 주파수대역)",
+        "model_name": "EF-NS901",
+        "country": "베트남",
+        "cert_date": "2021-10-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-EFNS901"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "RFID용 무선기기 (13.56MHz 주파수대역)",
+        "model_name": "EF-NS906",
+        "country": "베트남",
+        "cert_date": "2021-10-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-EFNS906"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "RFID용 무선기기(13.56MHz 주파수 대역)",
+        "model_name": "EF-NG998",
+        "country": "한국",
+        "cert_date": "2021-10-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-EFNG998"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TUNE230NCTWS",
+        "country": "중국",
+        "cert_date": "2021-11-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-T230NT"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기",
+        "model_name": "SLS-BB11G",
+        "country": "한국",
+        "cert_date": "2021-11-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-SLSBB11G"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "QUANTUM350WLTMT",
+        "country": "중국",
+        "cert_date": "2021-11-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-Q350WLTMT"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "QUANTUM350WIRELESST",
+        "country": "중국",
+        "cert_date": "2021-11-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-Q350WLT"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "LIVE PRO 2 TWS",
+        "country": "중국",
+        "cert_date": "2021-11-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-LIVEPRO2TWS"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "EJ-PS908",
+        "country": "중국",
+        "cert_date": "2021-12-01",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-EJPS908"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RMCSPB1EP1",
+        "country": "한국",
+        "cert_date": "2021-12-01",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-RMCSPB1EP1"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "BOOMBOX 2",
+        "country": "중국",
+        "cert_date": "2020-01-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-BOOMBOX2"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "쿡센서",
+        "model_name": "NZ63B1322EK",
+        "country": "한국",
+        "cert_date": "2021-12-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-NZ8500BM-S"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "SM-S901N",
+        "country": "베트남",
+        "cert_date": "2021-12-23",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMS901"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "SM-S908N",
+        "country": "베트남",
+        "cert_date": "2021-12-24",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMS908"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "No5909",
+        "country": "미국",
+        "cert_date": "2021-12-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-NO5909"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "용도미지정 무선기기(57㎓ ~ 66㎓ 주파수 대역)",
+        "model_name": "MDRBI303",
+        "country": "한국",
+        "cert_date": "2021-12-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-MDRBI303"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "WCT732M",
+        "country": "한국",
+        "cert_date": "2020-01-06",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-WCT732M"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TUNE700BT",
+        "country": "중국",
+        "cert_date": "2020-01-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-TUNE700BT"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SM-T723",
+        "country": "한국",
+        "cert_date": "2020-01-17",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMT723"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HW-T420",
+        "country": "중국",
+        "cert_date": "2020-01-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-HWT420"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HW-T450",
+        "country": "중국",
+        "cert_date": "2020-01-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-HWT450"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "쿡센서",
+        "model_name": "NZ63B1322EK",
+        "country": "한국",
+        "cert_date": "2021-12-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-NZ8500BM-C"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [
+      {
+        "id": 1805,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2019-059",
+        "product_name": "Bladeless 기류제어가 적용된 360˚ 카세트",
+        "company_name": "삼성전자(주)",
+        "biz_no": "1248100998",
+        "representative": "한종희 경계현",
+        "cert_date": "2022-12-26",
+        "expire_date": "2025-12-25"
+      },
+      {
+        "id": 1806,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2019-059",
+        "product_name": "Bladeless 기류제어가 적용된 360˚ 카세트",
+        "company_name": "삼성전자(주)",
+        "biz_no": "1248100998",
+        "representative": "한종희 경계현",
+        "cert_date": "2022-12-26",
+        "expire_date": "2025-12-25"
+      },
+      {
+        "id": 1845,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2022-168",
+        "product_name": "냉동 사이클 응축 압력 제어 기술이 적용된 시스템 에어컨",
+        "company_name": "삼성전자(주)",
+        "biz_no": "1248100998",
+        "representative": "한종희",
+        "cert_date": "2022-09-22",
+        "expire_date": "2025-09-21"
+      },
+      {
+        "id": 1853,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2022-168",
+        "product_name": "냉동 사이클 응축 압력 제어 기술이 적용된 시스템 에어컨",
+        "company_name": "삼성전자(주)",
+        "biz_no": "1248100998",
+        "representative": "한종희",
+        "cert_date": "2022-09-22",
+        "expire_date": "2025-09-21"
+      },
+      {
+        "id": 17874,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2019-059",
+        "product_name": "Bladeless 기류제어가 적용된 360˚ 카세트",
+        "company_name": "삼성전자(주)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2022-12-26",
+        "expire_date": null
+      },
+      {
+        "id": 17875,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2019-059",
+        "product_name": "Bladeless 기류제어가 적용된 360˚ 카세트",
+        "company_name": "삼성전자(주)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2022-12-26",
+        "expire_date": null
+      },
+      {
+        "id": 17914,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2022-168",
+        "product_name": "냉동 사이클 응축 압력 제어 기술이 적용된 시스템 에어컨",
+        "company_name": "삼성전자(주)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2022-09-22",
+        "expire_date": null
+      },
+      {
+        "id": 17922,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2022-168",
+        "product_name": "냉동 사이클 응축 압력 제어 기술이 적용된 시스템 에어컨",
+        "company_name": "삼성전자(주)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2022-09-22",
+        "expire_date": null
+      }
+    ],
+    "dart_result": {
+      "status": "AI 핵심 역량 미흡 (워싱 의심)",
+      "total_score": 20,
+      "evidence": [
+        "📦 [AI 제품적용] Y 삼성전자 ㈜인공지능연구원 단순투자"
+      ],
+      "detail": "DART 분석 결과 [삼성전자] 실적 총 1건 확인."
+    },
+    "target_company_name": "삼성전자",
+    "model_param": "SM-G928B",
+    "ocr_result": {
+      "extracted_text": "삼성전자 길력시S26 512GB, 자급제 (불택) 11> 1,326,150원  무료배송 최저가 구매하기 가격비교 238 상품 상세정보 의견리뷰 513 소모품|액세서리 뉴스커유니티 26 연관상품 판매방식 자금제 공기계 공기계 유형 자근제 공기계 통신사 자금제 유신국가별상이) 나노+eSIM 메인화면정보 화면 16cmn(6 3인지) 패널송류 D-AMOLED 2X 화면해상도 2340x1080 화면종류 풀HD+ 쇠대주사물 12OHz 쇠대밝기 260Onits 디스플레이 특징 HDR1O+ 삼시표시형(AOD) 램용량 12GB 용량 512GB 저장장치 UFS 4.0 프로세서 액시노스2600 공점 Znm 군이 개수 10굳이 코어클력 3.8GH2+3.25GH2+2.75GHz GPU Xclipse 960 벤치마크 AP CPU 94점 AP 게이팅 92점 시I기능 오재편집 교정 이미지 생심 편진 Al 검색 /인식 실시간 통역번역 Al 브리낌 Al 비서",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\삼성전자 갤럭시S26 512GB, 자급제 (블랙)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

@@ -1,0 +1,551 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=107768552",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "LG전자 사운드 스위트 M5 (정품)",
+      "name": "LG전자 사운드 스위트 M5 (정품)",
+      "description": "",
+      "ocr_text": "LG전자 사운드 스위트 M5 (정품) HIMART 399,000원  무료배승 최저가 구매하기 가격비교 57 상품 상세정보 의견리뷰 연관상품 50W 채널 1.11재널 유냉정보 유넷개수 3유넷 입출력 USB-C 사운드 특징 비애드모스 시사운드프로 돌비애트모스플렉스 커녁트 달리이보이스프로 부가기능 에어플레이 전용-지원 LED라이트 네트위크 불무투스 Wi-F 플루투스버전 불무투스 v5.4 불루투스코댁 AAC SBC 기타정보 전원형대 ACIDC전원 무게 1.7kg [@ 인종 적합성평가인층 R-R-LGE-M5 인증런호 확인",
+      "specs": {
+        "북셸프스피커": "지원",
+        "1.1.1채널": "지원",
+        "출력": "50W",
+        "유닛개수": "3유닛",
+        "일반용": "지원",
+        "입출력": "USB-C",
+        "블루투스 v5.4": "지원",
+        "블루투스코덱": "AAC , SBC",
+        "AC/DC전원": "지원",
+        "에어플레이": "지원",
+        "전용앱지원": "지원",
+        "LED라이트": "지원",
+        "돌비애트모스": "지원",
+        "AI사운드프로": "지원",
+        "클리어보이스프로": "지원",
+        "돌비애트모스플렉스커넥트": "지원",
+        "블루투스": "지원",
+        "Wi-Fi": "지원",
+        "무게": "1.7kg",
+        "Bass Boost": "지원",
+        "크기(가로x세로x깊이)": "152x199x152mm"
+      },
+      "raw_specs": "북셸프스피커 / 1.1.1채널 / 출력 : 50W / 유닛개수 : 3유닛 / 일반용 / 입출력 : USB-C / 블루투스 v5.4 / 블루투스코덱 : AAC , SBC / AC/DC전원 / 에어플레이 / 전용앱지원 / LED라이트 / 돌비애트모스 / AI사운드프로 / 클리어보이스프로 / 돌비애트모스플렉스커넥트 / 블루투스 / Wi-Fi / 무게 : 1.7kg / Bass Boost / 크기(가로x세로x깊이): 152x199x152mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=107768552",
+      "manufacturer": "엘지전자,LG전자",
+      "model_name": "M5"
+    },
+    "norm_info": {
+      "company_name": "엘지전자,LG전자",
+      "model_name": "M5",
+      "product_name": "LG전자 사운드 스위트 M5 (정품)"
+    },
+    "db_results": [
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "Monitor Signage",
+        "model_name": "65UM5N",
+        "country": "한국",
+        "cert_date": "2023-05-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-65UM5N"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "55SM5D",
+        "country": "한국",
+        "cert_date": "2017-04-11",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMM-LGE-55SM5D"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "32SM5D",
+        "country": "한국",
+        "cert_date": "2017-04-11",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMM-LGE-32SM5D"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "65SM5D",
+        "country": "한국",
+        "cert_date": "2017-04-11",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMM-LGE-65SM5D"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "49SM5D",
+        "country": "한국",
+        "cert_date": "2017-04-04",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMM-LGE-49SM5D"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "1MW ESS PCS",
+        "model_name": "EF01M542111",
+        "country": "한국",
+        "cert_date": "2017-03-30",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REM-LGE-EF01M542111"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "49SM5KD",
+        "country": "한국",
+        "cert_date": "2017-05-25",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMM-LGE-49SM5KD"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "32SM5KD",
+        "country": "한국",
+        "cert_date": "2017-05-25",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMM-LGE-32SM5KD"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "43SM5KD",
+        "country": "한국",
+        "cert_date": "2017-05-25",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMM-LGE-43SM5KD"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "65SM5KD",
+        "country": "한국",
+        "cert_date": "2017-05-25",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMM-LGE-65SM5KD"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "55SM5KD",
+        "country": "한국",
+        "cert_date": "2017-05-25",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMM-LGE-55SM5KD"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "43SM5D",
+        "country": "한국",
+        "cert_date": "2017-03-02",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMM-LGE-43SM5D"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "Monitor Signage",
+        "model_name": "32SM5J",
+        "country": "한국",
+        "cert_date": "2021-05-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-32SM5J"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "43LM5600GNA",
+        "country": "중국",
+        "cert_date": "2018-12-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-43LM5600GNA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LG DIGITAL SIGNAGE",
+        "model_name": "98UM5J-B",
+        "country": "중국",
+        "cert_date": "2022-03-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-98UM5J-B"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LG DIGITAL SIGNAGE",
+        "model_name": "110UM5J-B",
+        "country": "중국",
+        "cert_date": "2022-03-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-110UM5J-B"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "Monitor Signage",
+        "model_name": "32SM5DJ",
+        "country": "한국",
+        "cert_date": "2021-10-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-32SM5DJ"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "Monitor Signage",
+        "model_name": "32SM5E",
+        "country": "한국",
+        "cert_date": "2018-06-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-RMM-LGE-32SM5E"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "Monitor Signage",
+        "model_name": "49SM5E",
+        "country": "한국",
+        "cert_date": "2018-06-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-RMM-LGE-49SM5E"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "Monitor Signage",
+        "model_name": "55SM5E",
+        "country": "한국",
+        "cert_date": "2018-06-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-RMM-LGE-55SM5E"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "Monitor Signage",
+        "model_name": "43SM5E",
+        "country": "한국",
+        "cert_date": "2018-06-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-RMM-LGE-43SM5E"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LG Digital Signage",
+        "model_name": "98UM5K-B",
+        "country": "중국",
+        "cert_date": "2023-05-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-98UM5K-B"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LG Digital Signage",
+        "model_name": "110UM5K-B",
+        "country": "중국",
+        "cert_date": "2023-05-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-110UM5K-B"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "Monitor Signage",
+        "model_name": "43UM5N",
+        "country": "한국",
+        "cert_date": "2023-05-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-43UM5N"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "Monitor Signage",
+        "model_name": "49UM5N",
+        "country": "한국",
+        "cert_date": "2023-05-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-49UM5N"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "Monitor Signage",
+        "model_name": "55UM5N",
+        "country": "한국",
+        "cert_date": "2023-05-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-55UM5N"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "HVAC Controller",
+        "model_name": "PACM5A000",
+        "country": "한국",
+        "cert_date": "2016-03-18",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REM-LGE-PACM5A000"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "Monitor Signage",
+        "model_name": "32SM5KE",
+        "country": "한국",
+        "cert_date": "2018-06-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-RMM-LGE-32SM5KE"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "Monitor Signage",
+        "model_name": "49SM5KE",
+        "country": "한국",
+        "cert_date": "2018-06-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-RMM-LGE-49SM5KE"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "Monitor Signage",
+        "model_name": "55SM5KE",
+        "country": "한국",
+        "cert_date": "2018-06-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-RMM-LGE-55SM5KE"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "Monitor Signage",
+        "model_name": "43SM5KE",
+        "country": "한국",
+        "cert_date": "2018-06-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-RMM-LGE-43SM5KE"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED Monitor",
+        "model_name": "25UM58",
+        "country": "중국",
+        "cert_date": "2016-04-22",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REM-LGE-25UM58"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "55VM5B",
+        "country": "한국",
+        "cert_date": "2016-04-27",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REM-LGE-55VM5B"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED Monitor",
+        "model_name": "29UM58",
+        "country": "중국",
+        "cert_date": "2016-05-27",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REM-LGE-29UM58"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "43SM5C",
+        "country": "한국",
+        "cert_date": "2016-06-15",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMM-LGE-43SM5C"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "32SM5C",
+        "country": "한국",
+        "cert_date": "2016-06-15",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMM-LGE-32SM5C"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "65SM5C",
+        "country": "한국",
+        "cert_date": "2016-06-15",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMM-LGE-65SM5C"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "55SM5C",
+        "country": "한국",
+        "cert_date": "2016-06-15",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMM-LGE-55SM5C"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "49SM5C",
+        "country": "한국",
+        "cert_date": "2016-06-15",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMM-LGE-49SM5C"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED TV",
+        "model_name": "32LM560BGNA",
+        "country": "중국",
+        "cert_date": "2019-01-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-32LM560BGNA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "49VM5E",
+        "country": "한국",
+        "cert_date": "2019-02-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-49VM5E"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "49SM5KC",
+        "country": "한국",
+        "cert_date": "2016-10-05",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMM-LGE-49SM5KC"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "43SM5KC",
+        "country": "한국",
+        "cert_date": "2016-10-05",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMM-LGE-43SM5KC"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "55SM5KC",
+        "country": "한국",
+        "cert_date": "2016-10-05",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RMM-LGE-55SM5KC"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "55VM5E",
+        "country": "한국",
+        "cert_date": "2019-03-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-55VM5E"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "55SVM5F",
+        "country": "한국",
+        "cert_date": "2019-10-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-55SVM5F"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LED Monitor",
+        "model_name": "34UM59",
+        "country": "중국",
+        "cert_date": "2016-07-28",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REM-LGE-34UM59"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "WI-FI 스피커",
+        "model_name": "M5",
+        "country": "한국",
+        "cert_date": "2025-09-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-M5"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "MONITOR SIGNAGE",
+        "model_name": "49VM5C",
+        "country": "한국",
+        "cert_date": "2016-09-06",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REM-LGE-49VM5C"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "전기냉장냉동기기",
+        "model_name": "M515AAA032",
+        "country": "한국",
+        "cert_date": "2024-07-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-M515AAA0322406"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [
+      {
+        "id": 13208,
+        "cert_type": "녹색기술제품",
+        "cert_no": "GTP-23-03812",
+        "product_name": "소비전력 절감형 모니터",
+        "company_name": "엘지전자주식회사",
+        "biz_no": "1078614075",
+        "representative": "조주완",
+        "cert_date": "2023-09-14",
+        "expire_date": "2026-09-13"
+      },
+      {
+        "id": 29277,
+        "cert_type": "녹색기술제품",
+        "cert_no": "GTP-23-03812",
+        "product_name": "소비전력 절감형 모니터",
+        "company_name": "엘지전자주식회사",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2023-09-14",
+        "expire_date": null
+      }
+    ],
+    "dart_result": {
+      "status": "AI 핵심 역량 미흡 (워싱 의심)",
+      "total_score": 20,
+      "evidence": [
+        "📦 [AI 제품적용] Y LG전자 비하이스마트지역혁신 투자조합 단순투자 - - - - -",
+        "📦 [AI 제품적용] Y LG전자 인공지능연구원 단순투자 - - - -",
+        "📦 [AI 제품적용] 131 Y LG전자 LG-LHT Aircraft Solutions GmbH 경영참여 - - - - - - -"
+      ],
+      "detail": "DART 분석 결과 [LG전자] 실적 총 3건 확인."
+    },
+    "target_company_name": "엘지전자,LG전자",
+    "model_param": "M5",
+    "ocr_result": {
+      "extracted_text": "LG전자 사운드 스위트 M5 (정품) HIMART 399,000원  무료배승 최저가 구매하기 가격비교 57 상품 상세정보 의견리뷰 연관상품 50W 채널 1.11재널 유냉정보 유넷개수 3유넷 입출력 USB-C 사운드 특징 비애드모스 시사운드프로 돌비애트모스플렉스 커녁트 달리이보이스프로 부가기능 에어플레이 전용-지원 LED라이트 네트위크 불무투스 Wi-F 플루투스버전 불무투스 v5.4 불루투스코댁 AAC SBC 기타정보 전원형대 ACIDC전원 무게 1.7kg [@ 인종 적합성평가인층 R-R-LGE-M5 인증런호 확인",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\LG전자 사운드 스위트 M5 (정품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=91118831",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "JBL TOUR ONE M3 Smart Tx (정품)",
+      "name": "JBL TOUR ONE M3 Smart Tx (정품)",
+      "description": "",
+      "ocr_text": "JBL TOUR ONE M3 Smart Tx (정품) ARTBOX 294,800원   무료배승 최저가 구매하기 가격비교 134 상품 상세정보 의견리뷰 52 뉴스커유니티 연관상품 43 이해상도 신회내:? JBL TOUR ONE Vaiibg3 제조회사 JBL (제조사 입사이트 바로가기) 등록년원 2025년 05원 분류 유무선하드는 유딪형대 밀데형 패드형대 오버이어 용도 음악+통화용 연결단자 5mm 무선연결 불루투스 V5.3 불무투스 LE 노이즈권트록 적응형ANC 주변소리듬기",
+      "specs": {
+        "유무선헤드폰": "지원",
+        "밀폐형": "지원",
+        "오버이어": "지원",
+        "연결단자": "3.5mm",
+        "블루투스 v5.3": "지원",
+        "블루투스 LE": "지원",
+        "[노이즈컨트롤] 적응형ANC": "지원",
+        "주변소리듣기": "지원",
+        "AI노이즈캔슬링마이크": "지원",
+        "[사운드] HRA": "지원",
+        "유닛": "40mm",
+        "다이나믹드라이버": "지원",
+        "18Ω": "지원",
+        "122dB": "지원",
+        "10Hz~40kHz": "지원",
+        "코덱": "LDAC , LC3 , SBC , AAC",
+        "적응형EQ": "지원",
+        "360도 공간음향": "지원",
+        "[배터리] 재생시간": "40시간(ANC ON), 70시간(ANC OFF)",
+        "충전": "USB-C",
+        "[기능] 편의기능": "음성안내",
+        "EQ수동조절": "지원",
+        "저지연게이밍모드": "지원",
+        "멀티포인트": "지원",
+        "구글패스트페어": "지원",
+        "오라캐스트": "지원",
+        "마이크특징": "빔포밍",
+        "[부가] 케이블특징": "탈착식케이블",
+        "무게": "278g",
+        "접이식": "지원",
+        "회전형이어컵": "지원",
+        "추가구성품": "휴대용케이스",
+        "스마트 트랜스미터": "지원",
+        "출시가": "499,000원"
+      },
+      "raw_specs": "유무선헤드폰 / 밀폐형 / 오버이어 / 연결단자 : 3.5mm / 블루투스 v5.3 / 블루투스 LE / [노이즈컨트롤] 적응형ANC / 주변소리듣기 / AI노이즈캔슬링마이크 / [사운드] HRA / 유닛:40mm / 다이나믹드라이버 / 18Ω / 122dB / 10Hz~40kHz / 코덱 : LDAC , LC3 , SBC , AAC / 적응형EQ / 360도 공간음향 / [배터리] 재생시간 : 40시간(ANC ON), 70시간(ANC OFF) / 충전 : USB-C / [기능] 편의기능 : 음성안내 / EQ수동조절 / 저지연게이밍모드 / 멀티포인트 / 구글패스트페어 / 오라캐스트 / 마이크특징 : 빔포밍 / [부가] 케이블특징 : 탈착식케이블 / 무게 : 278g / 접이식 / 회전형이어컵 / 추가구성품 : 휴대용케이스 / 스마트 트랜스미터 / 출시가: 499,000원",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=91118831",
+      "manufacturer": "JBL Corp.   JBL",
+      "model_name": "JBLTOURONE-M3"
+    },
+    "norm_info": {
+      "company_name": "JBL Corp.   JBL",
+      "model_name": "JBLTOURONE-M3",
+      "product_name": "JBL TOUR ONE M3 Smart Tx (정품)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "JBL Corp.   JBL",
+    "model_param": "JBLTOURONE-M3",
+    "ocr_result": {
+      "extracted_text": "JBL TOUR ONE M3 Smart Tx (정품) ARTBOX 294,800원   무료배승 최저가 구매하기 가격비교 134 상품 상세정보 의견리뷰 52 뉴스커유니티 연관상품 43 이해상도 신회내:? JBL TOUR ONE Vaiibg3 제조회사 JBL (제조사 입사이트 바로가기) 등록년원 2025년 05원 분류 유무선하드는 유딪형대 밀데형 패드형대 오버이어 용도 음악+통화용 연결단자 5mm 무선연결 불루투스 V5.3 불무투스 LE 노이즈권트록 적응형ANC 주변소리듬기",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\JBL TOUR ONE M3 Smart Tx (정품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

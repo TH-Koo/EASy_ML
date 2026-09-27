@@ -1,0 +1,63 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=39916472",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "드리미 H12S (일반구매)",
+      "name": "드리미 H12S (일반구매)",
+      "description": "",
+      "ocr_text": "드리미 H12s (일반구매) Gmarket   978,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 소모품|액세서리 연관상품 UT 습진청-이이} 제조회사 드리미 등록년원 2024년 03원 품목 스틱청소기 방식 졸입+물걸레 (건습식) 집입력(Pa) 16,OOOPa 사용시간 35분(쇠대) 스테이선 충전 맨드거지 청소기능 시청소 먼지감지센서 모티 BLDC모티 배터리",
+      "specs": {
+        "스틱청소기": "지원",
+        "무선": "지원",
+        "흡입+물걸레(건습식)": "지원",
+        "물걸레": "포함",
+        "BLDC모터": "지원",
+        "흡입력": "16,000Pa",
+        "스테이션": "스탠드거치 , 충전",
+        "먼지감지센서": "지원",
+        "AI청소": "지원",
+        "[흡입구] 액체흡입": "지원",
+        "브러쉬자동건조": "지원",
+        "베젤리스브러쉬": "지원",
+        "브러쉬자동세척": "지원",
+        "오염감지센서": "지원",
+        "[색상/크기] 색상": "블랙",
+        "무게": "4.8kg"
+      },
+      "raw_specs": "스틱청소기 / 무선 / 흡입+물걸레(건습식) / 물걸레 : 포함 / BLDC모터 / 흡입력 : 16,000Pa / 스테이션 : 스탠드거치 , 충전 / 먼지감지센서 / AI청소 / [흡입구] 액체흡입 / 브러쉬자동건조 / 베젤리스브러쉬 / 브러쉬자동세척 / 오염감지센서 / [색상/크기] 색상 : 블랙 / 무게 : 4.8kg",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=39916472",
+      "manufacturer": "드리미, Dremi",
+      "model_name": "H12S"
+    },
+    "norm_info": {
+      "company_name": "드리미, Dremi",
+      "model_name": "H12S",
+      "product_name": "드리미 H12S (일반구매)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "드리미, Dremi",
+    "model_param": "H12S",
+    "ocr_result": {
+      "extracted_text": "드리미 H12s (일반구매) Gmarket   978,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 소모품|액세서리 연관상품 UT 습진청-이이} 제조회사 드리미 등록년원 2024년 03원 품목 스틱청소기 방식 졸입+물걸레 (건습식) 집입력(Pa) 16,OOOPa 사용시간 35분(쇠대) 스테이선 충전 맨드거지 청소기능 시청소 먼지감지센서 모티 BLDC모티 배터리",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\드리미 H12S (일반구매)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

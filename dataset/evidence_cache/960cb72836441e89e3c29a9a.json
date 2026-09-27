@@ -1,0 +1,274 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=71964602",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "더함 우버 AMG 스마트 43 QLED 120HZ 돌비 AI 구글 5.0 (스탠드)",
+      "name": "더함 우버 AMG 스마트 43 QLED 120HZ 돌비 AI 구글 5.0 (스탠드)",
+      "description": "",
+      "ocr_text": "더함 우버 AMG 스마트 43 QLED 120HZ 돌비 Al 구글 5.0 (스랜드) LOTTE ON 419,000원 20,000원 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 디스플레이 QLED 해상도 4K UHD 패널 VA패널계열 주사율 12OHz 디팅방식 로컬디망 +FALD 명만비 500만:1 밝기 400cd 서브관실 RGB 에너지효물 1등금 소비전력 1O0W 년형 2024년형 프로세서 MT9603 화질 4K업스레일림 모선보간(MEMC) HDR 돌비비전 HDRiO HLG 색표현인증 DCI-P3 9396이삼 RAM 2GB ROM 16GB 크로마생플림 4.4*4 게임 VRR(I2OHz) ALLM 게임모드 게임종류 플레이스테이선 액스박스시리즈",
+      "specs": {
+        "QLED TV": "지원",
+        "43인치(109cm)": "지원",
+        "4K UHD": "지원",
+        "주사율": "120Hz",
+        "에너지효율": "1등급",
+        "2024년형": "지원",
+        "[화질] 돌비비전": "지원",
+        "HDR10": "지원",
+        "HLG": "지원",
+        "VRR(120Hz)": "지원",
+        "ALLM": "지원",
+        "게임모드": "지원",
+        "[스마트] 넷플릭스": "지원",
+        "유튜브": "지원",
+        "미러링": "지원",
+        "구글TV": "지원",
+        "AI음성인식": "지원",
+        "[규격] HDMI(전체)": "4개",
+        "베사홀": "200x200mm",
+        "크기(가로x세로x깊이)": "957x556(603)x86(180)mm",
+        "무게": "6.3(6.4)kg",
+        "*120Hz VRR 기능은 FHD 해상도에서 적용됩니다.": "지원"
+      },
+      "raw_specs": "QLED TV / 43인치(109cm) / 4K UHD / 주사율 : 120Hz / 에너지효율 : 1등급 / 2024년형 / [화질] 돌비비전 / HDR10 / HLG / VRR(120Hz) / ALLM / 게임모드 / [스마트] 넷플릭스 / 유튜브 / 미러링 / 구글TV / AI음성인식 / [규격] HDMI(전체) : 4개 / 베사홀 : 200x200mm / 크기(가로x세로x깊이) : 957x556(603)x86(180)mm / 무게 : 6.3(6.4)kg / *120Hz VRR 기능은 FHD 해상도에서 적용됩니다.",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=71964602",
+      "manufacturer": "더함, THD",
+      "model_name": "AMG 스마트 43 QLED 120HZ"
+    },
+    "norm_info": {
+      "company_name": "더함, THD",
+      "model_name": "AMG 스마트 43 QLED 120HZ",
+      "product_name": "더함 우버 AMG 스마트 43 QLED 120HZ 돌비 AI 구글 5.0 (스탠드)"
+    },
+    "db_results": [
+      {
+        "company_name": "주식회사 더함전자",
+        "equip_name": "텔레비전수상기",
+        "model_name": "NA551QLED IPS SH 2023K1",
+        "country": "중국",
+        "cert_date": "2023-07-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SIl-A552UQ23K1"
+      },
+      {
+        "company_name": "주식회사 더함전자",
+        "equip_name": "텔레비전수상기",
+        "model_name": "UA551QLED SMART CINEMA144 24C1",
+        "country": "중국",
+        "cert_date": "2024-02-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SIl-A551UQ24C1"
+      },
+      {
+        "company_name": "주식회사 더함전자",
+        "equip_name": "텔레비전수상기",
+        "model_name": "UA551UHD M8X CHIQ CINEMA60 2024",
+        "country": "중국",
+        "cert_date": "2024-03-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SIl-A551UD24C1"
+      },
+      {
+        "company_name": "주식회사 더함전자",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용무선기기)",
+        "model_name": "SN050-231R",
+        "country": "중국",
+        "cert_date": "2023-04-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SIl-SN050-231R"
+      },
+      {
+        "company_name": "주식회사 더함전자",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SW300-231R",
+        "country": "중국",
+        "cert_date": "2023-04-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SIl-SW300-231R"
+      },
+      {
+        "company_name": "주식회사 더함전자",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "WF300-231R",
+        "country": "중국",
+        "cert_date": "2023-04-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SIl-WF300-231R"
+      },
+      {
+        "company_name": "주식회사 더함전자",
+        "equip_name": "텔레비전수상기",
+        "model_name": "NA431FHD VA SH 2023C",
+        "country": "중국",
+        "cert_date": "2023-04-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SIl-N431FD231C"
+      },
+      {
+        "company_name": "주식회사 더함전자",
+        "equip_name": "텔레비전수상기",
+        "model_name": "NA401FHD VA SH 2023C",
+        "country": "중국",
+        "cert_date": "2023-04-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SIl-N401FD231C"
+      },
+      {
+        "company_name": "주식회사 더함전자",
+        "equip_name": "텔레비전수상기",
+        "model_name": "NA321FHD VA SH 2023C",
+        "country": "중국",
+        "cert_date": "2023-04-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SIl-N321FD231C"
+      },
+      {
+        "company_name": "주식회사 더함전자",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용무선기기)",
+        "model_name": "SW240-231R",
+        "country": "중국",
+        "cert_date": "2023-05-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SIl-SW240-231R"
+      },
+      {
+        "company_name": "주식회사 더함전자",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용무선기기)",
+        "model_name": "WF240-231R",
+        "country": "중국",
+        "cert_date": "2023-05-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SIl-WF240-231R"
+      },
+      {
+        "company_name": "주식회사 더함전자",
+        "equip_name": "텔레비전수상기",
+        "model_name": "TQ50M8XCU",
+        "country": "중국",
+        "cert_date": "2021-10-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SIl-U501UQ221C"
+      },
+      {
+        "company_name": "주식회사 더함전자",
+        "equip_name": "텔레비전수상기",
+        "model_name": "NA751QLED IPS SH 2023K1",
+        "country": "중국",
+        "cert_date": "2023-07-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SIl-A752UQ23K1"
+      },
+      {
+        "company_name": "주식회사 더함전자",
+        "equip_name": "텔레비전수상기",
+        "model_name": "NA651QLED IPS SH 2023K1",
+        "country": "중국",
+        "cert_date": "2023-07-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SIl-A652UQ23K1"
+      },
+      {
+        "company_name": "주식회사 더함전자",
+        "equip_name": "텔레비전수상기",
+        "model_name": "UA501UHD M8X CHIQ CINEMA60 2024",
+        "country": "중국",
+        "cert_date": "2023-10-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SIl-A501UD24C1"
+      },
+      {
+        "company_name": "주식회사 더함전자",
+        "equip_name": "텔레비전수상기",
+        "model_name": "UA651QLED SMART CINEMA144 24C1",
+        "country": "중국",
+        "cert_date": "2023-10-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SIl-A651UQ24C1"
+      },
+      {
+        "company_name": "주식회사 더함전자",
+        "equip_name": "텔레비전수상기",
+        "model_name": "UG651QLED SMART GAMING144 24T1",
+        "country": "중국",
+        "cert_date": "2023-11-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SIl-G651UQ24T1"
+      },
+      {
+        "company_name": "주식회사 더함전자",
+        "equip_name": "텔레비전수상기",
+        "model_name": "UG651MINILED SMART GAMING144 24T1",
+        "country": "중국",
+        "cert_date": "2023-12-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SIl-G651UM24T1"
+      },
+      {
+        "company_name": "주식회사 더함전자",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SN180-221R",
+        "country": "중국",
+        "cert_date": "2022-05-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SIl-SN180-221R"
+      },
+      {
+        "company_name": "주식회사 더함전자",
+        "equip_name": "텔레비전수상기",
+        "model_name": "C431FHD IPS 2023C",
+        "country": "중국",
+        "cert_date": "2022-11-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SIl-C431FD231C"
+      },
+      {
+        "company_name": "주식회사 더함전자",
+        "equip_name": "텔레비전수상기",
+        "model_name": "C321FHD VA 2023C",
+        "country": "중국",
+        "cert_date": "2022-11-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SIl-C321FD231C"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "source_record_id": "1020240197320",
+        "일련번호": "1",
+        "출원번호": "1020240197320",
+        "발명의명칭(한글)": "인공지능을 이용한 데이터 수집 및 분석을 통한 소상공인 맞춤형 마케팅 방법 및 장치",
+        "출원일자": "2024-12-26",
+        "출원인": "(주)상생더함",
+        "등록상태": "등록",
+        "초록": "본 발명은 인공지능을 이용한 데이터 수집 및 분석을 통한 소상공인 맞춤형 마케팅 방법으로서, (S1) 고객의 문의 사항 또는 건의사항을 포함하는 피드백 데이터를 수집하는 단계; (S2) 회원의 인구통계학적 정보 및 결제 데이터를 수집하는 단계; (S3) 매장 리뷰 데이터를 수집하는 단계; (S4) 매장의 기본 정보를 등록하고 주변 상권의 이벤트 현황 및 리뷰 데이터를 수집하는 단계; (S5) 수집된 모든 데이터를 분석하여 매장에서 빈번하게 발생하는 불만 사항을 파악하고, 매장의 운영 개선을 위한 수정 사항이나 새로운 시스템 도입을 제안하는 단계; (S6) 상기 주변 상권의 이벤트 현황을 및 리뷰 데이터를 고려하여 해당 매장에 대한 맞춤형 이벤트 및 마케팅 방법을 포함하는 마케팅 아이디어를 제시하는 단계; (S7) 선택된 마케팅 아이디어에 따라 영상 또는 사진을 포함하는 게시물을 제작하고, 상기 영상 또는 상기 사진에 자동으로 문구를 삽입하여 업로드까지 자동화하는 단계; 및 (S8) 광고 결과를 모니터링하여 성과를 보고하며, 광고 후 매출 변화 데이터를 비교 분석하여 대시보드로 제공하는 단계;를 포함하는 소상공인 맞춤형 마케팅 방법을 개시한다.",
+        "IPC": "G06Q 30/0201|G06Q 30/0282|G06Q 50/10|G06Q 10/10|G06Q 30/0242|G06N 20/00|G06Q 10/0637",
+        "CPC": "",
+        "relevance_type": "general_ai",
+        "match_confidence": 0.45,
+        "search_alias": "더함",
+        "search_type": "AI 특허 [일반]",
+        "search_query": "AP=[더함]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
+        "status": "verified"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "더함, THD",
+    "model_param": "AMG 스마트 43 QLED 120HZ",
+    "ocr_result": {
+      "extracted_text": "더함 우버 AMG 스마트 43 QLED 120HZ 돌비 Al 구글 5.0 (스랜드) LOTTE ON 419,000원 20,000원 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 디스플레이 QLED 해상도 4K UHD 패널 VA패널계열 주사율 12OHz 디팅방식 로컬디망 +FALD 명만비 500만:1 밝기 400cd 서브관실 RGB 에너지효물 1등금 소비전력 1O0W 년형 2024년형 프로세서 MT9603 화질 4K업스레일림 모선보간(MEMC) HDR 돌비비전 HDRiO HLG 색표현인증 DCI-P3 9396이삼 RAM 2GB ROM 16GB 크로마생플림 4.4*4 게임 VRR(I2OHz) ALLM 게임모드 게임종류 플레이스테이선 액스박스시리즈",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\더함 우버 AMG 스마트 43 QLED 120HZ 돌비 AI 구글 5.0 (스탠드)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

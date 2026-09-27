@@ -1,0 +1,71 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=28805123",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "피씨스토어 베스트 게이밍PC 울트라5 250K PLUS RTX 5060 (16GB, M.2 500GB)",
+      "name": "피씨스토어 베스트 게이밍PC 울트라5 250K PLUS RTX 5060 (16GB, M.2 500GB)",
+      "description": "",
+      "ocr_text": "피씨스토어 베스트 게이망PC 울트라5 25OK PLUS RTX 5060 (16GB, M.2 500GB) LOTTE ON 2,074,790원 무료내송 최저가 구매하기 가격비교 10 상품 상세정보 의견리뷰 28 연관상품 메인보드 침셋 (인텔) B860 운명제제 OS미포함 파뭐 출력 750W CPU 제조사 인텔 CPU 시리즈 코어올드라 시리즈2 CPU 종류 굳이 올드라5-2세대 CPU 코드명 애로우레이크 코이 개수 6+12 코어 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M2 SSD 용량 500GB 그래픽 특징 그래픽 제조사 NVIDIA 그래픽 종류 외장 그래픽 그래픽 메모리 8GB 네트위크 1Gbps 유선 영상출력 HDMI DP포트 전원 파위서플라이 형대 미들타뭐 외형 LED콜러 용도",
+      "specs": {
+        "250K Plus": "지원",
+        "RTX 5060": "지원",
+        "(인텔) B860": "지원",
+        "OS미포함": "지원",
+        "750W": "지원",
+        "인텔": "지원",
+        "코어울트라 시리즈2": "지원",
+        "코어 울트라5": "지원",
+        "애로우레이크": "지원",
+        "인텔 AI Boost": "지원",
+        "13TOPS": "지원",
+        "DDR5": "지원",
+        "16GB": "지원",
+        "M.2": "지원",
+        "500GB": "지원",
+        "NVIDIA": "지원",
+        "그래픽 메모리": "8GB",
+        "1Gbps 유선": "지원",
+        "HDMI": "지원",
+        "DP포트": "지원",
+        "파워서플라이": "지원",
+        "미들타워": "지원",
+        "LED쿨러": "지원",
+        "용도": "게임용"
+      },
+      "raw_specs": "250K Plus / RTX 5060 / (인텔) B860 / OS미포함 / 750W / 인텔 / 코어울트라 시리즈2 / 코어 울트라5 / 애로우레이크 / 인텔 AI Boost / 13TOPS / DDR5 / 16GB / M.2 / 500GB / NVIDIA / 그래픽 메모리 : 8GB / 1Gbps 유선 / HDMI / DP포트 / 파워서플라이 / 미들타워 / LED쿨러 / 용도 : 게임용",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=28805123",
+      "manufacturer": "피씨스토어, PC Store",
+      "model_name": "PF-U5-250K-PLUS"
+    },
+    "norm_info": {
+      "company_name": "피씨스토어, PC Store",
+      "model_name": "PF-U5-250K-PLUS",
+      "product_name": "피씨스토어 베스트 게이밍PC 울트라5 250K PLUS RTX 5060 (16GB, M.2 500GB)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "피씨스토어, PC Store",
+    "model_param": "PF-U5-250K-PLUS",
+    "ocr_result": {
+      "extracted_text": "피씨스토어 베스트 게이망PC 울트라5 25OK PLUS RTX 5060 (16GB, M.2 500GB) LOTTE ON 2,074,790원 무료내송 최저가 구매하기 가격비교 10 상품 상세정보 의견리뷰 28 연관상품 메인보드 침셋 (인텔) B860 운명제제 OS미포함 파뭐 출력 750W CPU 제조사 인텔 CPU 시리즈 코어올드라 시리즈2 CPU 종류 굳이 올드라5-2세대 CPU 코드명 애로우레이크 코이 개수 6+12 코어 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M2 SSD 용량 500GB 그래픽 특징 그래픽 제조사 NVIDIA 그래픽 종류 외장 그래픽 그래픽 메모리 8GB 네트위크 1Gbps 유선 영상출력 HDMI DP포트 전원 파위서플라이 형대 미들타뭐 외형 LED콜러 용도",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\피씨스토어 베스트 게이밍PC 울트라5 250K PLUS RTX 5060 (16GB, M.2 500GB)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

@@ -1,0 +1,529 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=123621548",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "ASUS V600 AiO VM670KA-675W (16GB, M.2 512GB)",
+      "name": "ASUS V600 AiO VM670KA-675W (16GB, M.2 512GB)",
+      "description": "",
+      "ocr_text": "ASUS V6OO Aio VM67OKA-675W (16GB, M.2 512GB) coupang 1,699,000원  무료배송 최저가 구매하기 가격비교 49 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 운영체제 원도우17 파뭐 줄력 120W CPU 제조사 AMD CPU 시리즈 라이젠 300시리즈 CPU 종류 라이젠시 5 CPU 코드명 크라권 포인트 군이 개수 귀드(스) 굳이 NPU 종류 AMD 라이젠 Al NPU TOPS 50TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M2 SSD 용량 512GB 그래픽 특징 그래픽 제조사 AMD 그래픽 종류 내장 그래픽 디스플레이 화면크기 68cm(27인치) 해상도 1920x1080 디스플레이 특징 눈부신방지 광시야각 사운드 출력 사운드 지원 스피커 너장형 네트위크 802.11ax(Wi-Fi 6) 무선 1Gbps 유선 불무튼스",
+      "specs": {
+        "330": "지원",
+        "820M": "지원",
+        "윈도우11": "지원",
+        "120W": "지원",
+        "AMD": "지원",
+        "라이젠 300시리즈": "지원",
+        "라이젠AI 5": "지원",
+        "크라켄 포인트": "지원",
+        "AMD 라이젠 AI": "지원",
+        "50TOPS": "지원",
+        "DDR5": "지원",
+        "16GB": "지원",
+        "M.2": "지원",
+        "512GB": "지원",
+        "화면크기": "68cm(27인치)",
+        "1920x1080": "지원",
+        "눈부심방지": "지원",
+        "광시야각": "지원",
+        "스피커 내장형": "지원",
+        "1Gbps 유선": "지원",
+        "802.11ax(Wi-Fi 6) 무선": "지원",
+        "블루투스": "지원",
+        "HDMI": "지원",
+        "USB3.x 5Gbps": "지원",
+        "USB C타입 5Gbps": "지원",
+        "웹캠": "지원",
+        "마이크 내장": "지원",
+        "DC": "지원",
+        "일체형": "지원",
+        "9kg": "지원",
+        "용도": "사무/인강용"
+      },
+      "raw_specs": "330 / 820M / 윈도우11 / 120W / AMD / 라이젠 300시리즈 / 라이젠AI 5 / 크라켄 포인트 / AMD 라이젠 AI / 50TOPS / DDR5 / 16GB / M.2 / 512GB / AMD / 화면크기 : 68cm(27인치) / 1920x1080 / 눈부심방지 / 광시야각 / 스피커 내장형 / 1Gbps 유선 / 802.11ax(Wi-Fi 6) 무선 / 블루투스 / HDMI / USB3.x 5Gbps / USB C타입 5Gbps / 웹캠 / 마이크 내장 / DC / 일체형 / 9kg / 용도 : 사무/인강용",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=123621548",
+      "manufacturer": "ASUS, Asus",
+      "model_name": "V600"
+    },
+    "norm_info": {
+      "company_name": "ASUS, Asus",
+      "model_name": "V600",
+      "product_name": "ASUS V600 AiO VM670KA-675W (16GB, M.2 512GB)"
+    },
+    "db_results": [
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MPRFMODULE1",
+        "country": "중국",
+        "cert_date": "2022-12-12",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-MPRFMODULE1"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "G532L",
+        "country": "중국",
+        "cert_date": "2020-05-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MSQ-NB-G532L"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "G732L",
+        "country": "중국",
+        "cert_date": "2020-05-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MSQ-NB-G732L"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "G732LXS",
+        "country": "중국",
+        "cert_date": "2020-05-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MSQ-NB-G732LXS"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "XT8",
+        "country": "중국",
+        "cert_date": "2020-04-27",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-XT8"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "P705 DONGLE",
+        "country": "대만",
+        "cert_date": "2020-04-02",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-P705DONGLE"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "ROG Strix Go 2.4 dongle",
+        "country": "대만",
+        "cert_date": "2020-03-30",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-RSGDONGLE"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TUF Gaming H7 Wireless",
+        "country": "대만",
+        "cert_date": "2020-03-30",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-TH7YW"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "P705",
+        "country": "대만",
+        "cert_date": "2020-03-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-P705"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "ROG Strix Go 2.4",
+        "country": "대만",
+        "cert_date": "2020-03-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-RSGW"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "RT-AX3000",
+        "country": "중국",
+        "cert_date": "2020-03-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-RT-AX3000"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "RFID용 무선기기(13.56㎒ 주파수 대역)",
+        "model_name": "G35DX",
+        "country": "중국",
+        "cert_date": "2020-03-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MSQ-DT-G35DX"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "RT-AX56U",
+        "country": "중국",
+        "cert_date": "2020-02-12",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-RT-AX56U"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "W1G-AWPM",
+        "country": "중국",
+        "cert_date": "2020-01-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MSQ-W1G-AWPM"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "USB-AX56",
+        "country": "중국",
+        "cert_date": "2021-12-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-USBAX56"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RG50",
+        "country": "중국",
+        "cert_date": "2021-11-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MSQ-DG-RG50"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TUF GAMING H3 WIRELESS",
+        "country": "대만",
+        "cert_date": "2021-08-18",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-TH3W"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TUF GAMING H3 WIRELESS DONGLE",
+        "country": "대만",
+        "cert_date": "2021-08-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-TH3WDONGLE"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "GT-AXE11000",
+        "country": "대만",
+        "cert_date": "2021-08-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-GTAXE11000"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "P707DOCK",
+        "country": "대만",
+        "cert_date": "2021-08-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-P707DOCK"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "P707",
+        "country": "대만",
+        "cert_date": "2021-08-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-P707"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MA02",
+        "country": "대만",
+        "cert_date": "2021-07-23",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-MA02"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(28 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "ASUS_I007D",
+        "country": "중국",
+        "cert_date": "2021-07-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-I007D"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "P706",
+        "country": "대만",
+        "cert_date": "2021-07-16",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-P706"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "Active Stylus SA201H",
+        "country": "중국",
+        "cert_date": "2021-03-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MSQ-STYLUS-SA201H"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "Active Stylus SA202H",
+        "country": "중국",
+        "cert_date": "2021-03-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MSQ-STYLUS-SA202H"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "SA301H",
+        "country": "중국",
+        "cert_date": "2021-03-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MSQ-STYLUS-SA301H"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RT-AX55",
+        "country": "대만",
+        "cert_date": "2021-02-01",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-RT-AX55"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기 (무선데이터통신시스템용 무선기기)",
+        "model_name": "MW203-D",
+        "country": "중국",
+        "cert_date": "2021-01-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MSQ-MW203-D"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기 (무선데이터통신시스템용 무선기기)",
+        "model_name": "MW203",
+        "country": "중국",
+        "cert_date": "2021-01-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MSQ-MW203"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "Main Board",
+        "model_name": "NUC14LNB",
+        "country": "중국",
+        "cert_date": "2024-12-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MSQ-NUC14LNB"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "Main Board",
+        "model_name": "PN54-M",
+        "country": "중국",
+        "cert_date": "2025-03-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MSQ-PN54-M"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MPRFMODULE2",
+        "country": "중국",
+        "cert_date": "2025-08-01",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-MPRFMODULE2"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "Main Board",
+        "model_name": "PN54-S1-M",
+        "country": "중국",
+        "cert_date": "2025-09-02",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MSQ-PN54-S1-M"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5925∼7125㎒ 주파수 대역))",
+        "model_name": "TUF-BE9400",
+        "country": "중국",
+        "cert_date": "2025-10-02",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-TUF-BE9400"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5925∼7125㎒ 주파수 대역))",
+        "model_name": "GT-BE19000AI",
+        "country": "중국",
+        "cert_date": "2025-10-23",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-GT-BE19000AI"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "A701",
+        "country": "중국",
+        "cert_date": "2024-06-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-A701"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "R55ES",
+        "country": "대만",
+        "cert_date": "2024-06-18",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-RCTWSN"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "R55ES-D",
+        "country": "대만",
+        "cert_date": "2024-06-18",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-RCTWSND"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "A701Dongle",
+        "country": "중국",
+        "cert_date": "2024-06-20",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-A701DG"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "A501",
+        "country": "중국",
+        "cert_date": "2024-10-02",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-A501"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "A501Dongle",
+        "country": "중국",
+        "cert_date": "2024-10-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-A501DG"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5925∼7125㎒ 주파수 대역))",
+        "model_name": "GT-BE98",
+        "country": "베트남",
+        "cert_date": "2024-11-01",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-GT-BE98"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5925∼7125㎒ 주파수 대역))",
+        "model_name": "RT-BE92U",
+        "country": "베트남",
+        "cert_date": "2024-11-05",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-RT-BE92U"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "Main Board",
+        "model_name": "NUC14MNB",
+        "country": "중국",
+        "cert_date": "2024-11-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MSQ-NUC14MNB"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "ROG Delta S Wireless Dongle",
+        "country": "대만",
+        "cert_date": "2022-09-23",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-RDSWD"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "P306",
+        "country": "대만",
+        "cert_date": "2022-06-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-P306"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TUF GAMING H1 WIRELESS",
+        "country": "대만",
+        "cert_date": "2022-06-17",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-TH1W"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "ROG DELTA S WIRELESS",
+        "country": "대만",
+        "cert_date": "2022-09-23",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-RDSW"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MPDONGLE1",
+        "country": "중국",
+        "cert_date": "2022-11-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-MPDONGLE1"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "ASUS, Asus",
+    "model_param": "V600",
+    "ocr_result": {
+      "extracted_text": "ASUS V6OO Aio VM67OKA-675W (16GB, M.2 512GB) coupang 1,699,000원  무료배송 최저가 구매하기 가격비교 49 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 운영체제 원도우17 파뭐 줄력 120W CPU 제조사 AMD CPU 시리즈 라이젠 300시리즈 CPU 종류 라이젠시 5 CPU 코드명 크라권 포인트 군이 개수 귀드(스) 굳이 NPU 종류 AMD 라이젠 Al NPU TOPS 50TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M2 SSD 용량 512GB 그래픽 특징 그래픽 제조사 AMD 그래픽 종류 내장 그래픽 디스플레이 화면크기 68cm(27인치) 해상도 1920x1080 디스플레이 특징 눈부신방지 광시야각 사운드 출력 사운드 지원 스피커 너장형 네트위크 802.11ax(Wi-Fi 6) 무선 1Gbps 유선 불무튼스",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\ASUS V600 AiO VM670KA-675W (16GB, M.2 512GB)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

@@ -1,0 +1,556 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=107770298",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "LG전자 프리미어 스위트7 (정품)",
+      "name": "LG전자 프리미어 스위트7 (정품)",
+      "description": "",
+      "ocr_text": "LG전자 프리미어 스위트7 (정품) SHINSEGAE 3,924,300원 무료배승 최저가 구매하기 가격비교 67 상품 상세정보 의견리뷰 40 연관상품 출력 사운드바 500W 우피 220W 리어스피커 100W 사운드바구성 사운드바+우피+리이 사운드기능 Al Sound Pro A업픽스 업띄스 돌비애드모스플렉스 커네트 돌비 애트모스 플렉스커넥트 돌비코댁 돌비애드모스 돌비디지털 커넥터 USB HDMI특징 HDMI2.1 eARC ARC CEC HDMI출력 1개 네트위크 불무투스 Wi-Fi Airplay 전용맵지원 불루투스버전 불무투스 v5.4 불루투스코댁 AAC",
+      "specs": {
+        "TV사운드바": "지원",
+        "13.1.7ch": "지원",
+        "출력": "사운드바 500W, 우퍼 220W, 리어스피커 100W",
+        "돌비애트모스": "지원",
+        "돌비디지털": "지원",
+        "AI Sound Pro": "지원",
+        "AI 업믹스": "지원",
+        "돌비 애트모스 플렉스커넥트": "지원",
+        "커넥터": "USB",
+        "HDMI2.1": "지원",
+        "eARC": "지원",
+        "ARC": "지원",
+        "CEC": "지원",
+        "HDMI출력": "1개",
+        "블루투스": "지원",
+        "Wi-Fi": "지원",
+        "Airplay": "지원",
+        "전용앱지원": "지원",
+        "블루투스 v5.4": "지원",
+        "블루투스코덱": "AAC",
+        "LED라이트": "지원",
+        "벽걸이가능": "지원",
+        "리모컨": "지원",
+        "무게": "사운드바 7.7kg, 서브우퍼 8.8kg, 리어 2.8kg",
+        "Bass Boost": "지원",
+        "크기(가로x세로x깊이)": "사운드바 1,200x63x143mm 우퍼 410x415x194mm 리어 1개당 177x238x177mm"
+      },
+      "raw_specs": "TV사운드바 / 13.1.7ch / 출력 : 사운드바 500W, 우퍼 220W, 리어스피커 100W / 돌비애트모스 / 돌비디지털 / AI Sound Pro / AI 업믹스 / 돌비 애트모스 플렉스커넥트 / 커넥터 : USB / HDMI2.1 / eARC / ARC / CEC / HDMI출력 : 1개 / 블루투스 / Wi-Fi / Airplay / 전용앱지원 / 블루투스 v5.4 / 블루투스코덱 : AAC / LED라이트 / 벽걸이가능 / 리모컨 / 무게 : 사운드바 7.7kg, 서브우퍼 8.8kg, 리어 2.8kg / Bass Boost / 크기(가로x세로x깊이): 사운드바 1,200x63x143mm 우퍼 410x415x194mm 리어 1개당 177x238x177mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=107770298",
+      "manufacturer": "엘지전자,LG전자",
+      "model_name": "FR7"
+    },
+    "norm_info": {
+      "company_name": "엘지전자,LG전자",
+      "model_name": "FR7",
+      "product_name": "LG전자 프리미어 스위트7 (정품)"
+    },
+    "db_results": [
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MTVWBE01GLX",
+        "country": "베트남",
+        "cert_date": "2021-07-06",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-MTVWBE01GLX"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "LGSBWAC95",
+        "country": "중국",
+        "cert_date": "2020-07-14",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-LGSBWAC95"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "LGSBWAC03",
+        "country": "중국",
+        "cert_date": "2020-07-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-LGSBWAC03"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "LM-Q310N",
+        "country": "베트남",
+        "cert_date": "2020-06-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-MCQ310N"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HGQ-MSVW10",
+        "country": "한국",
+        "cert_date": "2020-06-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-HGQ-MSVW10"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR20PJTR",
+        "country": "한국",
+        "cert_date": "2020-06-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-MR20PJTR"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(데이터전송용 무선기기)",
+        "model_name": "EBR833396",
+        "country": "한국",
+        "cert_date": "2020-06-17",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-EBR833396"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PL2",
+        "country": "중국",
+        "cert_date": "2020-05-15",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-PL2"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HBS-TFN6",
+        "country": "베트남",
+        "cert_date": "2020-05-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-HBS-FN6"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "TL21BNU2",
+        "country": "베트남",
+        "cert_date": "2020-05-01",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-TL21BNU"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "WC500HOAC21",
+        "country": "말레이시아",
+        "cert_date": "2020-04-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-WC500HOAC21"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "LM-G900N",
+        "country": "한국",
+        "cert_date": "2020-04-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-MCG900N"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "LM-Q630N",
+        "country": "중국",
+        "cert_date": "2020-04-02",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-MCQ630N"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SPN11-SR",
+        "country": "중국",
+        "cert_date": "2020-03-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-DMSPN11"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "LM-Y120L",
+        "country": "중국",
+        "cert_date": "2020-03-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-MCY120"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SPN5B-W",
+        "country": "중국",
+        "cert_date": "2020-02-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-DMSPN5B-W"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SPN8-W",
+        "country": "중국",
+        "cert_date": "2020-02-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-DMSPN8-W"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "PEA4",
+        "country": "중국",
+        "cert_date": "2021-12-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-PEA4"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "10HQ701G",
+        "country": "한국",
+        "cert_date": "2021-12-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-10HQ701G"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MB8811QD",
+        "country": "한국",
+        "cert_date": "2021-10-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-MB8811QD"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기 (무선데이터통신시스템용 무선기기)",
+        "model_name": "TONE-TFP6",
+        "country": "베트남",
+        "cert_date": "2021-10-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TONE-TFP6"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TONE-TFP3",
+        "country": "베트남",
+        "cert_date": "2021-09-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TONE-TFP3"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "LCWB-002",
+        "country": "인도네시아",
+        "cert_date": "2021-08-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-LCWB-002"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "TLHOBDNN0B5",
+        "country": "베트남",
+        "cert_date": "2021-08-17",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-TLHOBDNN0B5"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "17HQ901G",
+        "country": "한국",
+        "cert_date": "2021-08-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-17HQ901G"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR22GJ",
+        "country": "한국",
+        "cert_date": "2021-08-03",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-MR22GJ"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PM22GN",
+        "country": "한국",
+        "cert_date": "2021-08-03",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-PM22GN"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "14HQ901G",
+        "country": "한국",
+        "cert_date": "2021-07-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-14HQ901G"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SPN5BM-W",
+        "country": "중국",
+        "cert_date": "2021-07-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-DMSPN5BM-W"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "LGSBWAC22",
+        "country": "인도네시아",
+        "cert_date": "2021-07-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-LGSBWAC22"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SPH4BM-W",
+        "country": "중국",
+        "cert_date": "2021-07-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-DMSPH4BM-W"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SPN11M-SR",
+        "country": "중국",
+        "cert_date": "2021-05-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-DMSPN11M"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "LGSBWAX12",
+        "country": "중국",
+        "cert_date": "2021-01-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-LGSBWAX12"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "인공지능센서",
+        "model_name": "PSHNAC01",
+        "country": "한국",
+        "cert_date": "2021-02-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-PSHNAC01"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "WCFDM00N2A1",
+        "country": "한국",
+        "cert_date": "2021-03-02",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-WCFDM00N2A1"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "NDHKANBN0A2",
+        "country": "한국",
+        "cert_date": "2021-03-17",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-NDHKANBN0A2"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CCIC KOR",
+        "country": "한국",
+        "cert_date": "2021-03-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-CCICKOR"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "LM-R910N",
+        "country": "베트남",
+        "cert_date": "2021-04-05",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-MCR910N"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LG AI 엔진",
+        "model_name": "PACTLA000",
+        "country": "한국",
+        "cert_date": "2021-04-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-PAC-0052"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR20GB",
+        "country": "한국",
+        "cert_date": "2021-04-23",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-MR20GB"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR21GB",
+        "country": "한국",
+        "cert_date": "2021-04-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-MR21GB"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "LM-V700N",
+        "country": "한국",
+        "cert_date": "2021-04-29",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-MCV700N1"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "WL1SB21",
+        "country": "인도네시아",
+        "cert_date": "2021-05-03",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-WL1SB21"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SPN8M-W",
+        "country": "중국",
+        "cert_date": "2021-05-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-DMSPN8M-W"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SPP8M-W",
+        "country": "중국",
+        "cert_date": "2021-05-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-DMSPP8M-W"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SPP11M-SR",
+        "country": "중국",
+        "cert_date": "2021-05-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-DMSPP11M"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TONE-TFP5",
+        "country": "베트남",
+        "cert_date": "2021-06-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TONE-TFP5"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TONE-TFP9C",
+        "country": "베트남",
+        "cert_date": "2021-06-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TONE-TFP9C"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TONE-TFP9",
+        "country": "베트남",
+        "cert_date": "2021-06-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TONE-TFP9"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력무선기기(무선데이터통신 시스템용기기)",
+        "model_name": "LCB-003",
+        "country": "한국",
+        "cert_date": "2021-06-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-LCB-003"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [
+      {
+        "id": 13208,
+        "cert_type": "녹색기술제품",
+        "cert_no": "GTP-23-03812",
+        "product_name": "소비전력 절감형 모니터",
+        "company_name": "엘지전자주식회사",
+        "biz_no": "1078614075",
+        "representative": "조주완",
+        "cert_date": "2023-09-14",
+        "expire_date": "2026-09-13"
+      },
+      {
+        "id": 29277,
+        "cert_type": "녹색기술제품",
+        "cert_no": "GTP-23-03812",
+        "product_name": "소비전력 절감형 모니터",
+        "company_name": "엘지전자주식회사",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2023-09-14",
+        "expire_date": null
+      }
+    ],
+    "dart_result": {
+      "status": "AI 핵심 역량 미흡 (워싱 의심)",
+      "total_score": 20,
+      "evidence": [
+        "📦 [AI 제품적용] Y LG전자 비하이스마트지역혁신 투자조합 단순투자 - - - - -",
+        "📦 [AI 제품적용] Y LG전자 인공지능연구원 단순투자 - - - -",
+        "📦 [AI 제품적용] 131 Y LG전자 LG-LHT Aircraft Solutions GmbH 경영참여 - - - - - - -"
+      ],
+      "detail": "DART 분석 결과 [LG전자] 실적 총 3건 확인."
+    },
+    "target_company_name": "엘지전자,LG전자",
+    "model_param": "FR7",
+    "ocr_result": {
+      "extracted_text": "LG전자 프리미어 스위트7 (정품) SHINSEGAE 3,924,300원 무료배승 최저가 구매하기 가격비교 67 상품 상세정보 의견리뷰 40 연관상품 출력 사운드바 500W 우피 220W 리어스피커 100W 사운드바구성 사운드바+우피+리이 사운드기능 Al Sound Pro A업픽스 업띄스 돌비애드모스플렉스 커네트 돌비 애트모스 플렉스커넥트 돌비코댁 돌비애드모스 돌비디지털 커넥터 USB HDMI특징 HDMI2.1 eARC ARC CEC HDMI출력 1개 네트위크 불무투스 Wi-Fi Airplay 전용맵지원 불루투스버전 불무투스 v5.4 불루투스코댁 AAC",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\LG전자 프리미어 스위트7 (정품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

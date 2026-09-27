@@ -1,0 +1,78 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=19567457",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "온니포유 나인닷 스네이클 AI 리얼리티 라이딩 헬스자전거",
+      "name": "온니포유 나인닷 스네이클 AI 리얼리티 라이딩 헬스자전거",
+      "description": "",
+      "ocr_text": "온니포유 나인닷 스네이클 Al 리엌리터 라이딩 헬스자전거 현대Hmall 1,237,100원 무료내송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 운동단계 36단계 운동기능 세임어플연봉 계기판 편의기능 이동바퀴 스평조설장치 안장조설 거치대 스마토문 대불릿 최대하숨 10Okg [@ 인종 적합성평가인층 상세설명 판매 사이트 문의 | 인종번호 확인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인 상품 설명 복사하기",
+      "specs": {
+        "실내자전거": "지원",
+        "입식형": "지원",
+        "[운동] 운동단계": "36단계",
+        "게임어플연동": "지원",
+        "계기판": "지원",
+        "[편의] 이동바퀴": "지원",
+        "수평조절장치": "지원",
+        "안장조절": "지원",
+        "거치대": "스마트폰 , 태블릿",
+        "[부가] 최대하중": "100kg",
+        "크기(정면x측면x높이)": "37x97x99.5cm",
+        "무게": "40kg"
+      },
+      "raw_specs": "실내자전거 / 입식형 / [운동] 운동단계 : 36단계 / 게임어플연동 / 계기판 / [편의] 이동바퀴 / 수평조절장치 / 안장조절 / 거치대 : 스마트폰 , 태블릿 / [부가] 최대하중 : 100kg / 크기(정면x측면x높이): 37x97x99.5cm / 무게: 40kg",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=19567457",
+      "manufacturer": "온니포유, Onnipoyu",
+      "model_name": "온니포유 나인닷 스네이클 AI"
+    },
+    "norm_info": {
+      "company_name": "온니포유, Onnipoyu",
+      "model_name": "온니포유 나인닷 스네이클 AI",
+      "product_name": "온니포유 나인닷 스네이클 AI 리얼리티 라이딩 헬스자전거"
+    },
+    "db_results": [
+      {
+        "company_name": "유한책임회사 온니포유",
+        "equip_name": "특정소출력 무선기기(데이터전송용 무선기기)",
+        "model_name": "ND500RC",
+        "country": "중국",
+        "cert_date": "2020-11-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-OFY-ND500RC"
+      },
+      {
+        "company_name": "유한책임회사 온니포유",
+        "equip_name": "스마트로봇청소기",
+        "model_name": "NDR-350",
+        "country": "중국",
+        "cert_date": "2021-03-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-OFY-NDR-350"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "온니포유, Onnipoyu",
+    "model_param": "온니포유 나인닷 스네이클 AI",
+    "ocr_result": {
+      "extracted_text": "온니포유 나인닷 스네이클 Al 리엌리터 라이딩 헬스자전거 현대Hmall 1,237,100원 무료내송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 운동단계 36단계 운동기능 세임어플연봉 계기판 편의기능 이동바퀴 스평조설장치 안장조설 거치대 스마토문 대불릿 최대하숨 10Okg [@ 인종 적합성평가인층 상세설명 판매 사이트 문의 | 인종번호 확인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인 상품 설명 복사하기",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\온니포유 나인닷 스네이클 AI 리얼리티 라이딩 헬스자전거\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

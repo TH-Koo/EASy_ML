@@ -1,0 +1,514 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=122617549",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "샤오미 포코 X8 프로 맥스 512GB, 자급제 (정품)",
+      "name": "샤오미 포코 X8 프로 맥스 512GB, 자급제 (정품)",
+      "description": "",
+      "ocr_text": "사오미 포코 X8 프로 맥스 512GB, 자급제 (정품) coupang 735,080원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 공기계 유형 자금제 공기계 유신(국가별상이) 나노유심(뉴얼) 메인화면정보 화면 173cm(6.83인치) 패널종류 AMOLED 화면해상도 2772x1280 쇠대주사율 12OHz 최대밝기 350Onits 디스플레이 특징 HDR1O+ 돌비비전 램용량 12GB 용탕 512GB 저장장지 UFS41 프로세서 디멘시E95OOs 공점 3nm 군이 개수 8굳이 코이름력 3.73GH2+3.3GHz+2.4GHz GPU Immortalis G925 시I기능 요약 편집 교점 이미지 생싱편집 Al 검색/인식 Al 비서 네트위크 Wi-Fi버전 Wi-Fi7 불무투스 불루투스v6.0 통신연결 GPS NFC",
+      "specs": {
+        "스마트폰(바형)": "지원",
+        "화면": "17.3cm(6.83인치)",
+        "120Hz": "지원",
+        "램": "12GB",
+        "용량": "512GB",
+        "[프로세서/AI] 디멘시티9500s": "지원",
+        "[카메라] 후면": "5,000만화소+800만화소",
+        "전면": "2,000만화소",
+        "[배터리/규격] 8,500mAh": "지원",
+        "최대충전": "100W",
+        "방수": "IP68",
+        "가로": "77.9mm",
+        "세로": "162.9mm",
+        "두께": "8.2mm",
+        "무게": "218g",
+        "출시가": "799,000원"
+      },
+      "raw_specs": "스마트폰(바형) / 화면:17.3cm(6.83인치) / 120Hz / 램 : 12GB / 용량 : 512GB / [프로세서/AI] 디멘시티9500s / [카메라] 후면:5,000만화소+800만화소 / 전면:2,000만화소 / [배터리/규격] 8,500mAh / 최대충전 : 100W / 방수 : IP68 / 가로 : 77.9mm / 세로 : 162.9mm / 두께 : 8.2mm / 무게 : 218g / 출시가: 799,000원",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=122617549",
+      "manufacturer": "샤오미 (Xiaomi),  Xiaomi",
+      "model_name": "샤오미 포코 X8"
+    },
+    "norm_info": {
+      "company_name": "샤오미 (Xiaomi),  Xiaomi",
+      "model_name": "샤오미 포코 X8",
+      "product_name": "샤오미 포코 X8 프로 맥스 512GB, 자급제 (정품)"
+    },
+    "db_results": [
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "Air Purifier",
+        "model_name": "Y-600",
+        "country": "중국",
+        "cert_date": "2025-09-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-xmi-Y-600"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "24075RP89G",
+        "country": "중국",
+        "cert_date": "2024-06-24",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-24075RP89G"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "2405CRPFDL",
+        "country": "중국",
+        "cert_date": "2024-04-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-2405CRPFDL"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "2311DRK48G",
+        "country": "중국",
+        "cert_date": "2024-04-16",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-2311DRK48G"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "M2552B1",
+        "country": "중국",
+        "cert_date": "2025-12-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-M2552B1"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "2512BPNDAG",
+        "country": "중국",
+        "cert_date": "2025-12-15",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-2512BPNDAG"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MHCWB8G-IB",
+        "country": "중국",
+        "cert_date": "2025-12-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-MHCWB8G-IB"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MHCWB8G-B",
+        "country": "중국",
+        "cert_date": "2025-12-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-MHCWB8G-B"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "스마트폰 카메라 그립",
+        "model_name": "25127PS03S",
+        "country": "중국",
+        "cert_date": "2025-12-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-xmi-25127PS03S"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MHCWB8S-B",
+        "country": "중국",
+        "cert_date": "2025-12-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-MHCWB8S-B"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "2511FPC34G",
+        "country": "중국",
+        "cert_date": "2025-12-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-2511FPC34G"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MHCWB8S-IB",
+        "country": "중국",
+        "cert_date": "2025-12-04",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-MHCWB8S-IB"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "M2530W1",
+        "country": "중국",
+        "cert_date": "2025-12-04",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-M2530W1"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "스마트폰 카메라 그립",
+        "model_name": "25125PS17S",
+        "country": "중국",
+        "cert_date": "2025-12-02",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-xmi-25125PS17S"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "25113PN0EG",
+        "country": "중국",
+        "cert_date": "2025-11-04",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-25113PN0EG"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "25098RA98G",
+        "country": "중국",
+        "cert_date": "2025-09-30",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-25118PC98G"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "2409BRN2CL",
+        "country": "중국",
+        "cert_date": "2024-08-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-2409BRN2CL"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "25097RP43G",
+        "country": "중국",
+        "cert_date": "2025-09-16",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-25097RP43G"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "25099RP13G",
+        "country": "중국",
+        "cert_date": "2025-09-16",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-25099RP13G"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "Mijia Electric Straight Screwdriver",
+        "model_name": "MJDDLSD004QW",
+        "country": "중국",
+        "cert_date": "2025-08-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-xmi-MJDDLSD004QW"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "M2523W1",
+        "country": "중국",
+        "cert_date": "2025-08-05",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-M2523W1"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "Oven (Air Fryer)",
+        "model_name": "MAF-W6501",
+        "country": "중국",
+        "cert_date": "2025-08-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-xmi-MAF-W6501"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "25079RPDCG",
+        "country": "중국",
+        "cert_date": "2025-07-28",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-25079RPDCG"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "Air Purifier",
+        "model_name": "AC-M25-SC",
+        "country": "중국",
+        "cert_date": "2025-07-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-xmi-AC-M25-SC"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "25057RN09G",
+        "country": "중국",
+        "cert_date": "2025-07-14",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-25057RN09G"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "2506BPN68G",
+        "country": "중국",
+        "cert_date": "2025-07-03",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-2506BPN68G"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "M2502W1",
+        "country": "중국",
+        "cert_date": "2025-04-16",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-M2502W1"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "24094RAD4G",
+        "country": "중국",
+        "cert_date": "2025-04-15",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-24094RAD4G"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "24129PN74G",
+        "country": "중국",
+        "cert_date": "2025-04-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-24129PN74G"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "25040RP0AL",
+        "country": "중국",
+        "cert_date": "2025-03-28",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-25040RP0AL"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "2602BPC18G",
+        "country": "중국",
+        "cert_date": "2026-02-03",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-2602BPC18G"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "M2559B1",
+        "country": "중국",
+        "cert_date": "2026-01-14",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-M2559B1"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "2201117TG",
+        "country": "중국",
+        "cert_date": "2022-01-03",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-2201117TG"
+      },
+      {
+        "company_name": "Beijing Xiaomi Electronics Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "MDZ-16-AB",
+        "country": "중국",
+        "cert_date": "2016-09-28",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-XM6-MDZ-16-AB"
+      },
+      {
+        "company_name": "Beijing Xiaomi Electronics Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MDZ-22-AB",
+        "country": "중국",
+        "cert_date": "2018-07-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-CMM-XM6-MDZ-22-AB"
+      },
+      {
+        "company_name": "Beijing Xiaomi Electronics Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "XMRM-006",
+        "country": "중국",
+        "cert_date": "2018-07-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-XM6-XMRM-006"
+      },
+      {
+        "company_name": "Qingke Xiaomi Robot Technology (Chengdu) Co., Ltd",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MYNT-901",
+        "country": "중국",
+        "cert_date": "2020-12-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QXR-MYNT-901"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "REDMIWT02",
+        "country": "중국",
+        "cert_date": "2020-10-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-xmi-REDMIWT02"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "XMKDDYJ01HT",
+        "country": "중국",
+        "cert_date": "2020-08-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Hr5-XMKDDYJ01HT"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "21061119AG",
+        "country": "중국",
+        "cert_date": "2021-11-05",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-21061119AG"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "M2103K19G",
+        "country": "중국",
+        "cert_date": "2021-05-17",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-M2103K19G"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "M2101K7AG",
+        "country": "중국",
+        "cert_date": "2021-03-02",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-M2101K7AG"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "M2101K6G",
+        "country": "중국",
+        "cert_date": "2021-02-24",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-M2101K6G"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "2209116AG",
+        "country": "중국",
+        "cert_date": "2022-10-20",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-2209116AG"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "22081283G",
+        "country": "중국",
+        "cert_date": "2022-08-23",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-22081283G"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "2201117TY",
+        "country": "중국",
+        "cert_date": "2022-04-06",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-2201117TY"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "2201116SG",
+        "country": "중국",
+        "cert_date": "2022-02-23",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-2201116SG"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "M2112W1",
+        "country": "중국",
+        "cert_date": "2022-01-03",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-M2112W1"
+      },
+      {
+        "company_name": "Beijing Xiaomi Electronics Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "XMRM-002",
+        "country": "중국",
+        "cert_date": "2016-10-06",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRM-XM6-XMRM-002"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "23124RA7EO",
+        "country": "중국",
+        "cert_date": "2023-12-05",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-23124RA7EO"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "샤오미 (Xiaomi),  Xiaomi",
+    "model_param": "샤오미 포코 X8",
+    "ocr_result": {
+      "extracted_text": "사오미 포코 X8 프로 맥스 512GB, 자급제 (정품) coupang 735,080원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 공기계 유형 자금제 공기계 유신(국가별상이) 나노유심(뉴얼) 메인화면정보 화면 173cm(6.83인치) 패널종류 AMOLED 화면해상도 2772x1280 쇠대주사율 12OHz 최대밝기 350Onits 디스플레이 특징 HDR1O+ 돌비비전 램용량 12GB 용탕 512GB 저장장지 UFS41 프로세서 디멘시E95OOs 공점 3nm 군이 개수 8굳이 코이름력 3.73GH2+3.3GHz+2.4GHz GPU Immortalis G925 시I기능 요약 편집 교점 이미지 생싱편집 Al 검색/인식 Al 비서 네트위크 Wi-Fi버전 Wi-Fi7 불무투스 불루투스v6.0 통신연결 GPS NFC",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\샤오미 포코 X8 프로 맥스 512GB, 자급제 (정품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

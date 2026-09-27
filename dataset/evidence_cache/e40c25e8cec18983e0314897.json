@@ -1,0 +1,552 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=89603213",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "아이닉 iX30 AI Ultra",
+      "name": "아이닉 iX30 AI Ultra",
+      "description": "",
+      "ocr_text": "아이넉 iX30 Al Ultra Gmarket 1149,930원  무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 233 소모품|액세서리 뉴스커유니티 연관상품 집입력 ZO0OPa 센서 LDS 카메라 초음파 맵끔 2D 사용시간 2시간20분(최대) 인식 시사물인식 감지회피 잠애물회피 낙하방지 눈렉등반 리프팀 Icm 낙하감지 10cm 문악님기 2cm 통과높이 1Ocm 청소운전 격자 모서리 브러쉬 메인 사이드 엉림방지재질 먼지통 0.3L 필터 헤파필티 {파-필터등근 H1-금 중전시간 4시간30분",
+      "specs": {
+        "로봇청소기": "지원",
+        "흡입+물걸레": "지원",
+        "BLDC모터": "지원",
+        "센서": "LDS , 카메라 , 초음파",
+        "흡입력": "7,000Pa",
+        "AI사물인식": "지원",
+        "헤파필터": "지원",
+        "문턱넘기": "2cm",
+        "카펫부스트": "지원",
+        "물걸레리프팅": "지원",
+        "물걸레": "회전형",
+        "물걸레확장암": "지원",
+        "[스테이션] 먼지비움": "지원",
+        "걸레세척(온수)": "지원",
+        "걸레건조(온풍)": "지원",
+        "세제투입": "지원",
+        "머리카락컷팅": "지원",
+        "자동충전": "지원",
+        "[규격] 색상": "화이트",
+        "무게": "4kg",
+        "크기(가로x세로x깊이)": "청소기 350x100x350mm 스테이션 310x595x468mm"
+      },
+      "raw_specs": "로봇청소기 / 흡입+물걸레 / BLDC모터 / 센서 : LDS , 카메라 , 초음파 / 흡입력 : 7,000Pa / AI사물인식 / 헤파필터 / 문턱넘기 : 2cm / 카펫부스트 / 물걸레리프팅 / 물걸레 : 회전형 / 물걸레확장암 / [스테이션] 먼지비움 / 걸레세척(온수) / 걸레건조(온풍) / 세제투입 / 머리카락컷팅 / 자동충전 / [규격] 색상 : 화이트 / 무게 : 4kg / 크기(가로x세로x깊이): 청소기 350x100x350mm 스테이션 310x595x468mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=89603213",
+      "manufacturer": "아이닉, Inc.",
+      "model_name": "iX30 AI Ultra"
+    },
+    "norm_info": {
+      "company_name": "아이닉, Inc.",
+      "model_name": "iX30 AI Ultra",
+      "product_name": "아이닉 iX30 AI Ultra"
+    },
+    "db_results": [
+      {
+        "company_name": "ALIF SEMICONDUCTOR, INC.",
+        "equip_name": "AI/ML AppKit",
+        "model_name": "AK-E7-AIML",
+        "country": "말레이시아",
+        "cert_date": "2024-07-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ndu-AK-E7-AIML"
+      },
+      {
+        "company_name": "주식회사 다리소프트(Dareesoft Inc.)",
+        "equip_name": "Ai Road Analyzer",
+        "model_name": "ARA-30",
+        "country": "한국",
+        "cert_date": "2024-11-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-aR9-ARA-30"
+      },
+      {
+        "company_name": "Arashi Vision Inc.",
+        "equip_name": "AI Tracker",
+        "model_name": "CINSBBQA",
+        "country": "중국",
+        "cert_date": "2024-11-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Y8S-CINSBBQA"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0116",
+        "country": "중국",
+        "cert_date": "2024-11-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0116"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0117",
+        "country": "중국",
+        "cert_date": "2024-11-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0117"
+      },
+      {
+        "company_name": "EXTREME NETWORKS, INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5925∼7125㎒ 주파수 대역))",
+        "model_name": "AP5020",
+        "country": "대만",
+        "cert_date": "2024-11-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-EXR-AP5020"
+      },
+      {
+        "company_name": "APPLE INC.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "A2995",
+        "country": "중국",
+        "cert_date": "2024-11-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-APA-A2995"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "Main Board",
+        "model_name": "NUC14MNB",
+        "country": "중국",
+        "cert_date": "2024-11-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MSQ-NUC14MNB"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5925∼7125㎒ 주파수 대역))",
+        "model_name": "RT-BE92U",
+        "country": "베트남",
+        "cert_date": "2024-11-05",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-RT-BE92U"
+      },
+      {
+        "company_name": "Ecoflow Inc.",
+        "equip_name": "Wi-Fi & Bluetooth Internet of Things Module",
+        "model_name": "ESP32-C6-MINI-1",
+        "country": "중국",
+        "cert_date": "2024-11-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ecF-ESPC6MINI1"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5925∼7125㎒ 주파수 대역))",
+        "model_name": "GT-BE98",
+        "country": "베트남",
+        "cert_date": "2024-11-01",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-GT-BE98"
+      },
+      {
+        "company_name": "주식회사 래너코리아(Lanner Korea Inc.)",
+        "equip_name": "AhnLab AIPS",
+        "model_name": "AhnLab AIPS 20000C",
+        "country": "한국",
+        "cert_date": "2024-10-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-RS-lK2-AIPS20000C"
+      },
+      {
+        "company_name": "SUPER MICRO COMPUTER. INC.",
+        "equip_name": "Trackman Entertainment Server 9102021",
+        "model_name": "SYS-110P-WTR-TRM",
+        "country": "미국",
+        "cert_date": "2024-10-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S2M-110P-WTR-T"
+      },
+      {
+        "company_name": "DELTA ELECTRONICS, INC.",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "61905B30094",
+        "country": "대만",
+        "cert_date": "2024-10-28",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-DVP-61905B30094"
+      },
+      {
+        "company_name": "주식회사 와츠매터(What's Matter Inc.)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "UAM023",
+        "country": "중국",
+        "cert_date": "2024-10-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-WMi-UAM023"
+      },
+      {
+        "company_name": "Axon Enterprise, Inc.",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "AX1038",
+        "country": "미국",
+        "cert_date": "2024-10-21",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-CEW-AX1038"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "A501Dongle",
+        "country": "중국",
+        "cert_date": "2024-10-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-A501DG"
+      },
+      {
+        "company_name": "주식회사 소프틀리(softly Inc.)",
+        "equip_name": "포스젯 맥스 무선 에어건",
+        "model_name": "FJET-MAX-001",
+        "country": "중국",
+        "cert_date": "2024-10-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FJ9-FJET_MAX_437"
+      },
+      {
+        "company_name": "주식회사 보아스헬스 (Boaz Health Inc.)",
+        "equip_name": "스마트보아스(Smart Boaz)",
+        "model_name": "SBP",
+        "country": "한국",
+        "cert_date": "2024-10-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Bh4-SBP"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "A501",
+        "country": "중국",
+        "cert_date": "2024-10-02",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-A501"
+      },
+      {
+        "company_name": "DELL INC.",
+        "equip_name": "RFID용 무선기기 (13.56㎒ 주파수 대역)",
+        "model_name": "P148G",
+        "country": "중국",
+        "cert_date": "2024-09-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-E2K-P148G002"
+      },
+      {
+        "company_name": "주식회사 소프틀리(softly Inc.)",
+        "equip_name": "포스젯 제로 차량용 무선 핸디 청소기 에어건",
+        "model_name": "FJET-ZERO-001",
+        "country": "중국",
+        "cert_date": "2024-09-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FJ9-FJET-ZERO-001"
+      },
+      {
+        "company_name": "Powertech Automation Inc.",
+        "equip_name": "특정소출력 무선기기(데이터전송용 무선기기)",
+        "model_name": "PR4",
+        "country": "대만",
+        "cert_date": "2024-09-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PaI-PR4"
+      },
+      {
+        "company_name": "DELL INC.",
+        "equip_name": "RFID용 무선기기 (13.56㎒ 주파수 대역)",
+        "model_name": "P149G",
+        "country": "중국",
+        "cert_date": "2024-09-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-E2K-P149G002"
+      },
+      {
+        "company_name": "ThingsX Inc.",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(기타)",
+        "model_name": "TX520-GL",
+        "country": "중국",
+        "cert_date": "2024-09-20",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-TsX-TX520-GL"
+      },
+      {
+        "company_name": "에스디아이코리아(SDI Korea Inc.)",
+        "equip_name": "오픈형 블루투스 이어폰",
+        "model_name": "LiteEar1004",
+        "country": "중국",
+        "cert_date": "2024-09-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-RS-SDIK-LiteEar1004"
+      },
+      {
+        "company_name": "주식회사 피디에스코리아(PDS KOREA INC.)",
+        "equip_name": "온습도센서",
+        "model_name": "EnviAirI Gateway",
+        "country": "벨기에",
+        "cert_date": "2024-09-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-rp0-EAIG"
+      },
+      {
+        "company_name": "주식회사 피디에스코리아(PDS KOREA INC.)",
+        "equip_name": "온습도센서",
+        "model_name": "EnviAirI DTHUM",
+        "country": "벨기에",
+        "cert_date": "2024-09-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-rp0-EAIDTH"
+      },
+      {
+        "company_name": "주식회사 피디에스코리아(PDS KOREA INC.)",
+        "equip_name": "온습도센서",
+        "model_name": "EnviAirI Daisy Starter",
+        "country": "벨기에",
+        "cert_date": "2024-09-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-rp0-EAIDS"
+      },
+      {
+        "company_name": "주식회사 올더타임(ALL THE TIME Inc.)",
+        "equip_name": "방범장치 겸용 저전력 블루투스 스마트트래커",
+        "model_name": "더 가이드 (THE GUIDE)",
+        "country": "한국",
+        "cert_date": "2024-09-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-z1d-THEGUIDE"
+      },
+      {
+        "company_name": "APPLE INC.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "A3290",
+        "country": "중국",
+        "cert_date": "2024-09-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-APA-A3290"
+      },
+      {
+        "company_name": "APPLE INC.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "A3287",
+        "country": "중국",
+        "cert_date": "2024-09-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-APA-A3287"
+      },
+      {
+        "company_name": "APPLE INC.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "A3293",
+        "country": "중국",
+        "cert_date": "2024-09-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-APA-A3293"
+      },
+      {
+        "company_name": "APPLE INC.",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "A3003",
+        "country": "중국",
+        "cert_date": "2024-09-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-APA-A3003"
+      },
+      {
+        "company_name": "APPLE INC.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "A3296",
+        "country": "중국",
+        "cert_date": "2024-09-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-APA-A3296"
+      },
+      {
+        "company_name": "APPLE INC.",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "A3001",
+        "country": "중국",
+        "cert_date": "2024-09-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-APA-A3001"
+      },
+      {
+        "company_name": "Celona, Inc.",
+        "equip_name": "5G 이동통신용(일정한 구역(건물 등) 내에서만 무선국을 구축·운영하는 경우) 무선설비의 기기(4.7 ㎓ 대역)(기지국의 송수신장치 및 중계장치)",
+        "model_name": "AP21-79",
+        "country": "대만",
+        "cert_date": "2024-09-03",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-clN-AP21-79"
+      },
+      {
+        "company_name": "Lenovo Global Technology (United States) Inc.",
+        "equip_name": "ThinkSystem M.2 RAID B545i-2i SATA/NVMe Enablement Kit",
+        "model_name": "4Y37A93746",
+        "country": "중국",
+        "cert_date": "2024-08-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LNU-ADP-4Y37A93746"
+      },
+      {
+        "company_name": "Lenovo Global Technology (United States) Inc.",
+        "equip_name": "ThinkSystem M.2 RAID B540p-2HS SATA/NVMe Enablement Kit",
+        "model_name": "4Y37A90064",
+        "country": "중국",
+        "cert_date": "2024-08-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LNU-ADP-4Y37A90064"
+      },
+      {
+        "company_name": "SHIMANO INC.",
+        "equip_name": "Rear Derailleur",
+        "model_name": "3K71",
+        "country": "일본",
+        "cert_date": "2024-08-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-WY7-82"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "YR0105",
+        "country": "중국",
+        "cert_date": "2024-08-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-YR0105"
+      },
+      {
+        "company_name": "PATRIOT MEMORY INC.",
+        "equip_name": "Patriot P400 Lite PCIe M.2 Gen 4x4 SSD",
+        "model_name": "P400LP4KGM28H",
+        "country": "대만",
+        "cert_date": "2024-08-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-3PM-P400L"
+      },
+      {
+        "company_name": "Xreal Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "X4000",
+        "country": "중국",
+        "cert_date": "2024-07-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-Xre-X4000"
+      },
+      {
+        "company_name": "Intuitive Surgical, Inc.",
+        "equip_name": "Surgeon Console Wireless Charger and RFID/USN용 무선기기(13.56MHz 대역사용기기)",
+        "model_name": "SCWCX01",
+        "country": "미국",
+        "cert_date": "2024-07-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-1SR-SCWCX01"
+      },
+      {
+        "company_name": "NETPRISMA INC.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(기타)",
+        "model_name": "FCUN69-WWD",
+        "country": "중국",
+        "cert_date": "2024-07-08",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-NPX-FCUN69-WWD"
+      },
+      {
+        "company_name": "EnOcean Edge Inc.",
+        "equip_name": "SmartServer IoT",
+        "model_name": "72201R-248 SmartServer IoT Pro EX",
+        "country": "필리핀",
+        "cert_date": "2024-05-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-En6-72201"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0114",
+        "country": "중국",
+        "cert_date": "2024-05-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0114"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "VR0038",
+        "country": "중국",
+        "cert_date": "2024-05-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-VR0038"
+      },
+      {
+        "company_name": "주식회사 밀로 (millo Inc.)",
+        "equip_name": "특정소출력무선기기(무선데이터통신시스템용무선기기)",
+        "model_name": "NTRA-HDCRANE1000R",
+        "country": "한국",
+        "cert_date": "2024-05-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-RS-miL-HDCRANE-R"
+      },
+      {
+        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
+        "equip_name": "Portrait VSM",
+        "model_name": "Portrait VSM",
+        "country": "중국",
+        "cert_date": "2024-05-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-GeM-PortraitVSM"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "source_record_id": "1020230098893",
+        "일련번호": "1",
+        "출원번호": "1020230098893",
+        "발명의명칭(한글)": "인공지능에 기반한 음성 인식 시스템 및 그 음성 인식 방법",
+        "출원일자": "2023-07-28",
+        "출원인": "주식회사 아이닉스",
+        "등록상태": "취하",
+        "초록": "인공지능에 기반한 음성 인식 시스템은, 제1 음성 신호를 처리하여, 인공지능 모델에 입력하기 위한 제1 데이터를 생성하는 음성 신호 처리부; 및 상기 제1 데이터를 입력받아, 상기 인공지능 모델을 이용하여 분류하는 인공지능부;를 포함하고, 상기 인공지능부는, CNN(Convolutional Neural Networks) 모델을 이용하여 n개의 클래스로 분류하되, 상기 CNN 모델에서 사용하는 손실 함수는, 상기 n개의 클래스에 속하지 않는 데이터인 백그라운드 데이터를 사용한다.",
+        "IPC": "G10L 15/16|G10L 15/22|G10L 25/18|G06N 3/0464|G10L 25/30",
+        "CPC": "",
+        "relevance_type": "general_ai",
+        "match_confidence": 0.45,
+        "search_alias": "아이닉",
+        "search_type": "AI 특허 [일반]",
+        "search_query": "AP=[아이닉]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
+        "status": "verified"
+      },
+      {
+        "source_record_id": "1020220137427",
+        "일련번호": "2",
+        "출원번호": "1020220137427",
+        "발명의명칭(한글)": "딥러닝 기반 차량 인식을 통한 주차 관제 시스템 및 그 관제 방법",
+        "출원일자": "2022-10-24",
+        "출원인": "주식회사 아이닉스",
+        "등록상태": "등록",
+        "초록": "딥러닝 기반 차량 인식을 통한 주차 관제 시스템은, 상기 적어도 하나의 제 1 프로세서는, 제 1 데이터셋을 입력받아 학습 데이터를 생성하고, 상기 학습 데이터를 입력하여 딥러닝 모델을 학습시키되, 상기 제 1 데이터셋은, 입력 영상 및 상기 입력 영상에서의 차량 위치의 라벨링 데이터인 제 1 라벨링 데이터를 포함하고, 상기 학습 데이터는, 상기 입력 영상 중 적어도 일부의 부분을 왜곡시켜 생성된 출력 영상 및 상기 출력 영상에서의 차량 위치의 라벨링 데이터인 제 2 라벨링 데이터를 포함하는 제 2 데이터셋이다.",
+        "IPC": "G06Q 50/40|G06N 3/08|G06T 3/40|G06T 5/50|G06T 7/73|G06T 3/18",
+        "CPC": "",
+        "relevance_type": "general_ai",
+        "match_confidence": 0.45,
+        "search_alias": "아이닉",
+        "search_type": "AI 특허 [일반]",
+        "search_query": "AP=[아이닉]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
+        "status": "verified"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "아이닉, Inc.",
+    "model_param": "iX30 AI Ultra",
+    "ocr_result": {
+      "extracted_text": "아이넉 iX30 Al Ultra Gmarket 1149,930원  무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 233 소모품|액세서리 뉴스커유니티 연관상품 집입력 ZO0OPa 센서 LDS 카메라 초음파 맵끔 2D 사용시간 2시간20분(최대) 인식 시사물인식 감지회피 잠애물회피 낙하방지 눈렉등반 리프팀 Icm 낙하감지 10cm 문악님기 2cm 통과높이 1Ocm 청소운전 격자 모서리 브러쉬 메인 사이드 엉림방지재질 먼지통 0.3L 필터 헤파필티 {파-필터등근 H1-금 중전시간 4시간30분",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\아이닉 iX30 AI Ultra\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

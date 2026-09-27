@@ -1,0 +1,625 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=77965052",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "삼성전자 비스포크 AI 콤보 WD90F25AHY (기본형)",
+      "name": "삼성전자 비스포크 AI 콤보 WD90F25AHY (기본형)",
+      "description": "",
+      "ocr_text": "삼성전자 비스포크 Al 콤보 WD9OF25AHY (기본형) 11> 3,633,070원 무료배송 최저가 구매하기 가격비교 275 상품 상세정보 의견리뷰 32 소모품 액세서리 연관상품 건조기능 건조시간이 빠드 인버 티하트님프+ 하터 에너지등급 에너지: 1등금 소비전력 세탁2100W 건조1700W 시I기능 A세탁건조 AI에너지절막 Al롬 진용소음 시진동소음저감 세탁기능 세탁물감지>Al 코스 셋팀 세제자농부안 71단계 세제함 일반97Oml 유연제83Oml 55주) 주요 기능 미세플라스틱저감 군 세제스랜 정량투입 평레이 코스 스틱실군 세탁건조시간 쾌속코스 79분 조작 풀티치조작 원격제이 음성명령",
+      "specs": {
+        "세탁건조기": "지원",
+        "세탁25kg,건조18kg": "지원",
+        "세탁→건조 올인원": "지원",
+        "귀가시간 맞춤 세탁종료": "지원",
+        "건조시간이 빠른 인버터히트펌프+히터": "지원",
+        "에너지": "1등급",
+        "[성능] AI세탁건조": "지원",
+        "AI에너지절약": "지원",
+        "AI홈": "지원",
+        "AI진동소음저감": "지원",
+        "세제자동투입": "11단계",
+        "세제함": "일반970ml + 유연제830ml (약 5.5주)",
+        "세제스캔 정량투입": "지원",
+        "미세플라스틱저감 코스": "지원",
+        "펫케어 코스": "지원",
+        "스팀살균": "지원",
+        "쾌속코스 79분": "지원",
+        "[조작/스마트] 풀터치조작": "지원",
+        "원격제어": "지원",
+        "음성명령": "지원",
+        "디스플레이": "177.8mm(7인치)",
+        "[관리편의] 오토오픈도어+": "지원",
+        "통세척": "지원",
+        "열풍내부살균": "지원",
+        "자동열교환기세척": "지원",
+        "[내구성] 강화유리도어": "지원",
+        "내부조명": "지원",
+        "플라스틱리프터": "지원",
+        "정면필터": "지원",
+        "[색상/크기] 색상": "그레이지",
+        "크기(가로x세로x깊이)": "686×1,110×875mm"
+      },
+      "raw_specs": "세탁건조기 / 세탁25kg,건조18kg / 세탁→건조 올인원 / 귀가시간 맞춤 세탁종료 / 건조시간이 빠른 인버터히트펌프+히터 / 에너지: 1등급 / [성능] AI세탁건조 / AI에너지절약 / AI홈 / AI진동소음저감 / 세제자동투입 : 11단계 / 세제함 : 일반970ml + 유연제830ml (약 5.5주) / 세제스캔 정량투입 / 미세플라스틱저감 코스 / 펫케어 코스 / 스팀살균 / 쾌속코스 79분 / [조작/스마트] 풀터치조작 / 원격제어 / 음성명령 / 디스플레이 : 177.8mm(7인치) / [관리편의] 오토오픈도어+ / 통세척 / 열풍내부살균 / 자동열교환기세척 / [내구성] 강화유리도어 / 내부조명 / 플라스틱리프터 / 정면필터 / [색상/크기] 색상 : 그레이지 / 크기(가로x세로x깊이) : 686×1,110×875mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=77965052",
+      "manufacturer": "삼성전자",
+      "model_name": "WD90F25AHY"
+    },
+    "norm_info": {
+      "company_name": "삼성전자",
+      "model_name": "WD90F25AHY",
+      "product_name": "삼성전자 비스포크 AI 콤보 WD90F25AHY (기본형)"
+    },
+    "db_results": [
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "SM-X205N",
+        "country": "중국",
+        "cert_date": "2021-12-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMX205N"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TUNE130NCTWS",
+        "country": "중국",
+        "cert_date": "2021-09-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-T130NCTWS"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용무선기기)",
+        "model_name": "PARTYBOX710",
+        "country": "중국",
+        "cert_date": "2021-09-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-JBLPB710"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용무선기기)",
+        "model_name": "FLIP6C",
+        "country": "중국",
+        "cert_date": "2021-09-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-JBLFLIP6C"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "SM-G525N",
+        "country": "베트남",
+        "cert_date": "2021-09-27",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMG525"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Bar 5.1 CNTR",
+        "country": "중국",
+        "cert_date": "2021-09-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-BAR51CNTRM"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Bar 5.1 SUB",
+        "country": "중국",
+        "cert_date": "2021-09-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-BAR51SUBM"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "ENDURANCE RACE",
+        "country": "중국",
+        "cert_date": "2021-10-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-JBLENDRACE"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용무선기기)",
+        "model_name": "FLIP6T",
+        "country": "중국",
+        "cert_date": "2021-10-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-JBLFLIP6T"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "RFID용 무선기기 (13.56MHz 주파수대역)",
+        "model_name": "EF-NS908",
+        "country": "베트남",
+        "cert_date": "2021-10-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-EFNS908"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "RFID용 무선기기 (13.56MHz 주파수대역)",
+        "model_name": "EF-NS901",
+        "country": "베트남",
+        "cert_date": "2021-10-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-EFNS901"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "RFID용 무선기기 (13.56MHz 주파수대역)",
+        "model_name": "EF-NS906",
+        "country": "베트남",
+        "cert_date": "2021-10-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-EFNS906"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "RFID용 무선기기(13.56MHz 주파수 대역)",
+        "model_name": "EF-NG998",
+        "country": "한국",
+        "cert_date": "2021-10-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-EFNG998"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TUNE230NCTWS",
+        "country": "중국",
+        "cert_date": "2021-11-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-T230NT"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기",
+        "model_name": "SLS-BB11G",
+        "country": "한국",
+        "cert_date": "2021-11-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-SLSBB11G"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "QUANTUM350WLTMT",
+        "country": "중국",
+        "cert_date": "2021-11-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-Q350WLTMT"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "QUANTUM350WIRELESST",
+        "country": "중국",
+        "cert_date": "2021-11-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-Q350WLT"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "LIVE PRO 2 TWS",
+        "country": "중국",
+        "cert_date": "2021-11-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-LIVEPRO2TWS"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "EJ-PS908",
+        "country": "중국",
+        "cert_date": "2021-12-01",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-EJPS908"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RMCSPB1EP1",
+        "country": "한국",
+        "cert_date": "2021-12-01",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-RMCSPB1EP1"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용무선기기)",
+        "model_name": "LIVE FREE 2 TWS",
+        "country": "중국",
+        "cert_date": "2021-12-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-LFREETWS2"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SM-T260",
+        "country": "베트남",
+        "cert_date": "2021-12-06",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMT260"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "NT545XLA",
+        "country": "베트남",
+        "cert_date": "2021-12-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-NT545XLA"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "미약전계강도 무선기기",
+        "model_name": "EP-P5400",
+        "country": "베트남",
+        "cert_date": "2021-12-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-EPP5400"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "미약전계강도 무선기기",
+        "model_name": "EP-P2400",
+        "country": "베트남",
+        "cert_date": "2021-12-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-EPP2400"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "WBA210M",
+        "country": "한국",
+        "cert_date": "2021-12-08",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-WBA210M"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SM-X200",
+        "country": "중국",
+        "cert_date": "2021-12-08",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMX200"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RS-9",
+        "country": "인도네시아",
+        "cert_date": "2021-12-09",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-RS-9"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "SM-F700N",
+        "country": "한국",
+        "cert_date": "2020-01-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMF700"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(기지국의 송수신 장치 및 중계장치)",
+        "model_name": "SF2201d-D1A",
+        "country": "한국",
+        "cert_date": "2020-02-05",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SF2201dD1A"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CITATION MULTIBEAM 700",
+        "country": "중국",
+        "cert_date": "2020-01-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-HKMB700"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HK FLY TWS",
+        "country": "중국",
+        "cert_date": "2020-01-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-HKFLYTWS"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "SM-G988N",
+        "country": "한국",
+        "cert_date": "2020-01-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMG988"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "N400NC TWS",
+        "country": "중국",
+        "cert_date": "2020-01-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-N400NCTWS"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "JBL QUANTUM DUO",
+        "country": "중국",
+        "cert_date": "2020-01-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-JBLQTMDUO"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SM-T723",
+        "country": "한국",
+        "cert_date": "2020-01-17",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMT723"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "SM-G981N",
+        "country": "한국",
+        "cert_date": "2020-01-16",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMG981"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "SM-G986N",
+        "country": "한국",
+        "cert_date": "2020-01-16",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMG986"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HW-T420",
+        "country": "중국",
+        "cert_date": "2020-01-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-HWT420"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HW-T450",
+        "country": "중국",
+        "cert_date": "2020-01-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-HWT450"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TUNE700BT",
+        "country": "중국",
+        "cert_date": "2020-01-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-TUNE700BT"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "WCT750M",
+        "country": "한국",
+        "cert_date": "2020-01-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-WCT750M"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "쿡센서",
+        "model_name": "NZ63B1322EK",
+        "country": "한국",
+        "cert_date": "2021-12-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-NZ8500BM-S"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(기지국의 송수신장치 및 중계장치)",
+        "model_name": "MT3230-78A",
+        "country": "한국",
+        "cert_date": "2021-12-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-MT323078A"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(기지국의 송수신장치 및 중계장치)",
+        "model_name": "MT3229-78A",
+        "country": "한국",
+        "cert_date": "2021-12-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-MT322978A"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "QUANTUM610",
+        "country": "중국",
+        "cert_date": "2021-12-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-Q610"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "QUANTUM610TM",
+        "country": "중국",
+        "cert_date": "2021-12-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-Q610TM"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RMCSPB1SP1",
+        "country": "한국",
+        "cert_date": "2021-12-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-RMCSPB1SP1"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "쿡센서",
+        "model_name": "NZ63B1322EK",
+        "country": "한국",
+        "cert_date": "2021-12-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-NZ8500BM-C"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "WCT732M",
+        "country": "한국",
+        "cert_date": "2020-01-06",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-WCT732M"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [
+      {
+        "id": 1805,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2019-059",
+        "product_name": "Bladeless 기류제어가 적용된 360˚ 카세트",
+        "company_name": "삼성전자(주)",
+        "biz_no": "1248100998",
+        "representative": "한종희 경계현",
+        "cert_date": "2022-12-26",
+        "expire_date": "2025-12-25"
+      },
+      {
+        "id": 1806,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2019-059",
+        "product_name": "Bladeless 기류제어가 적용된 360˚ 카세트",
+        "company_name": "삼성전자(주)",
+        "biz_no": "1248100998",
+        "representative": "한종희 경계현",
+        "cert_date": "2022-12-26",
+        "expire_date": "2025-12-25"
+      },
+      {
+        "id": 1845,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2022-168",
+        "product_name": "냉동 사이클 응축 압력 제어 기술이 적용된 시스템 에어컨",
+        "company_name": "삼성전자(주)",
+        "biz_no": "1248100998",
+        "representative": "한종희",
+        "cert_date": "2022-09-22",
+        "expire_date": "2025-09-21"
+      },
+      {
+        "id": 1853,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2022-168",
+        "product_name": "냉동 사이클 응축 압력 제어 기술이 적용된 시스템 에어컨",
+        "company_name": "삼성전자(주)",
+        "biz_no": "1248100998",
+        "representative": "한종희",
+        "cert_date": "2022-09-22",
+        "expire_date": "2025-09-21"
+      },
+      {
+        "id": 17874,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2019-059",
+        "product_name": "Bladeless 기류제어가 적용된 360˚ 카세트",
+        "company_name": "삼성전자(주)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2022-12-26",
+        "expire_date": null
+      },
+      {
+        "id": 17875,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2019-059",
+        "product_name": "Bladeless 기류제어가 적용된 360˚ 카세트",
+        "company_name": "삼성전자(주)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2022-12-26",
+        "expire_date": null
+      },
+      {
+        "id": 17914,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2022-168",
+        "product_name": "냉동 사이클 응축 압력 제어 기술이 적용된 시스템 에어컨",
+        "company_name": "삼성전자(주)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2022-09-22",
+        "expire_date": null
+      },
+      {
+        "id": 17922,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2022-168",
+        "product_name": "냉동 사이클 응축 압력 제어 기술이 적용된 시스템 에어컨",
+        "company_name": "삼성전자(주)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2022-09-22",
+        "expire_date": null
+      }
+    ],
+    "dart_result": {
+      "status": "AI 핵심 역량 미흡 (워싱 의심)",
+      "total_score": 20,
+      "evidence": [
+        "📦 [AI 제품적용] Y 삼성전자 ㈜인공지능연구원 단순투자"
+      ],
+      "detail": "DART 분석 결과 [삼성전자] 실적 총 1건 확인."
+    },
+    "target_company_name": "삼성전자",
+    "model_param": "WD90F25AHY",
+    "ocr_result": {
+      "extracted_text": "삼성전자 비스포크 Al 콤보 WD9OF25AHY (기본형) 11> 3,633,070원 무료배송 최저가 구매하기 가격비교 275 상품 상세정보 의견리뷰 32 소모품 액세서리 연관상품 건조기능 건조시간이 빠드 인버 티하트님프+ 하터 에너지등급 에너지: 1등금 소비전력 세탁2100W 건조1700W 시I기능 A세탁건조 AI에너지절막 Al롬 진용소음 시진동소음저감 세탁기능 세탁물감지>Al 코스 셋팀 세제자농부안 71단계 세제함 일반97Oml 유연제83Oml 55주) 주요 기능 미세플라스틱저감 군 세제스랜 정량투입 평레이 코스 스틱실군 세탁건조시간 쾌속코스 79분 조작 풀티치조작 원격제이 음성명령",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\삼성전자 비스포크 AI 콤보 WD90F25AHY (기본형)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

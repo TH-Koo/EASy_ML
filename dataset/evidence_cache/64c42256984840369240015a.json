@@ -1,0 +1,56 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=19169651",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "아이이피 i500 AI 오토모션",
+      "name": "아이이피 i500 AI 오토모션",
+      "description": "",
+      "ocr_text": "",
+      "specs": {
+        "칫솔살균기": "지원",
+        "가정용": "지원",
+        "USB": "지원",
+        "무선": "지원",
+        "벽걸이형": "지원",
+        "UV-C살균": "지원",
+        "자동반복살균": "지원",
+        "살균대상": "칫솔",
+        "추가거치": "양치컵",
+        "교차감염방지": "지원",
+        "타이머": "지원",
+        "왕타칫솔가능": "지원",
+        "살균가능칫솔개수": "4개",
+        "무게": "295g",
+        "크기(가로x세로x깊이)": "264x50x40mm",
+        "충전시간": "8시"
+      },
+      "raw_specs": "칫솔살균기 / 가정용 / USB / 무선 / 벽걸이형 / UV-C살균 / 자동반복살균 / 살균대상 : 칫솔 / 추가거치 : 양치컵 / 교차감염방지 / 타이머 / 왕타칫솔가능 / 살균가능칫솔개수 : 4개 / 무게 : 295g / 크기(가로x세로x깊이): 264x50x40mm / 충전시간: 8시",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=19169651",
+      "manufacturer": "아이이피, iip",
+      "model_name": "i500"
+    },
+    "norm_info": {
+      "company_name": "아이이피, iip",
+      "model_name": "i500",
+      "product_name": "아이이피 i500 AI 오토모션"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "아이이피, iip",
+    "model_param": "i500",
+    "ocr_result": {}
+  }
+}

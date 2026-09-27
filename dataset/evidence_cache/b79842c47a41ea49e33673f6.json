@@ -1,0 +1,72 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=69468491",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "JBL TOUR PRO 3 (정품)",
+      "name": "JBL TOUR PRO 3 (정품)",
+      "description": "",
+      "ocr_text": "JBL TOUR PRO 3 (정품) Gmarket   306,070원  무료배송 최저가 구매하기 가격비교 148 상품 상세정보 의견리뷰 390 뉴스커유니티 연관상품 MAKMAN UBL 누미 프로 } 국내 타  회조 되미 테미스 종미료 UBL TOURPRO3 기미 사려적완전체TWS 제조회사 JBL (제조사 웬사이트 바로가기) 등록년원 2024년 10밑 분류 무선이어논 이어프타입 커널형 외형 크드리스 용도 음악+통화용 무선연결 불무투스 V5.3 노이즈런트론 댁티브노이즈랜슬림 (ANC) 적응형ANC 주버스리드기 대화이지",
+      "specs": {
+        "커널형": "지원",
+        "블루투스 v5.3": "지원",
+        "[노이즈컨트롤] 액티브노이즈캔슬링(ANC)": "지원",
+        "적응형ANC": "지원",
+        "주변소리듣기": "지원",
+        "대화인지": "지원",
+        "[AI 기능] AI 노이즈캔슬링마이크": "지원",
+        "[사운드] HRA": "지원",
+        "유닛": "10mm(다이나믹), 5.1x2.8mm(BA)",
+        "드라이버": "다이나믹 , BA",
+        "32Ω": "지원",
+        "104dB": "지원",
+        "20Hz~44kHz": "지원",
+        "코덱": "LDAC",
+        "적응형EQ": "지원",
+        "360도 공간음향": "지원",
+        "[배터리] 1회충전시": "8시간(ANC ON), 11시간(ANC OFF)",
+        "최대재생": "44시간",
+        "충전": "무선충전 , USB-C",
+        "[기능] 편의기능": "위치찾기",
+        "EQ수동조절": "지원",
+        "오라캐스트": "지원",
+        "마이크특징": "듀얼빔포밍",
+        "충전케이스에 AUX, USB-C 케이블 연결하여 사용 가능": "지원",
+        "출시가": "399,000원"
+      },
+      "raw_specs": "커널형 / 블루투스 v5.3 / [노이즈컨트롤] 액티브노이즈캔슬링(ANC) / 적응형ANC / 주변소리듣기 / 대화인지 / [AI 기능] AI 노이즈캔슬링마이크 / [사운드] HRA / 유닛:10mm(다이나믹), 5.1x2.8mm(BA) / 드라이버 : 다이나믹 , BA / 32Ω / 104dB / 20Hz~44kHz / 코덱 : LDAC / 적응형EQ / 360도 공간음향 / [배터리] 1회충전시 : 8시간(ANC ON), 11시간(ANC OFF) / 최대재생 : 44시간 / 충전 : 무선충전 , USB-C / [기능] 편의기능 : 위치찾기 / EQ수동조절 / 오라캐스트 / 마이크특징 : 듀얼빔포밍 / 충전케이스에 AUX, USB-C 케이블 연결하여 사용 가능 / 출시가: 399,000원",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=69468491",
+      "manufacturer": "JBL Corp.   JBL",
+      "model_name": "JBLTOURPRO3"
+    },
+    "norm_info": {
+      "company_name": "JBL Corp.   JBL",
+      "model_name": "JBLTOURPRO3",
+      "product_name": "JBL TOUR PRO 3 (정품)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "JBL Corp.   JBL",
+    "model_param": "JBLTOURPRO3",
+    "ocr_result": {
+      "extracted_text": "JBL TOUR PRO 3 (정품) Gmarket   306,070원  무료배송 최저가 구매하기 가격비교 148 상품 상세정보 의견리뷰 390 뉴스커유니티 연관상품 MAKMAN UBL 누미 프로 } 국내 타  회조 되미 테미스 종미료 UBL TOURPRO3 기미 사려적완전체TWS 제조회사 JBL (제조사 웬사이트 바로가기) 등록년원 2024년 10밑 분류 무선이어논 이어프타입 커널형 외형 크드리스 용도 음악+통화용 무선연결 불무투스 V5.3 노이즈런트론 댁티브노이즈랜슬림 (ANC) 적응형ANC 주버스리드기 대화이지",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\JBL TOUR PRO 3 (정품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

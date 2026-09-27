@@ -1,0 +1,61 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=79603781",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "SoundPEATS T3 Pro (정품)",
+      "name": "SoundPEATS T3 Pro (정품)",
+      "description": "",
+      "ocr_text": "SoundPEATS T3 Pro (정품) 소핑 pay 17,900원 3,000원 최저가 구매하기 가격비교 25 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.4 노이즈권트록 댁티브노 (즈랜슬림 (ANC) 맥티브노 이즈랜슬림 주변소리듬기 AI노이 (조랜습림마이 사운드채널 스테레오 드라이버크기 유넷i2mm 드라이버 다이나막 드라이버구성 다이나막 i개 코덕 SBC AAC 불루투스 프로파일 AVRCP A2DP HFP HSP 서라운드 구57드 고기으하 구50드 고가요하",
+      "specs": {
+        "커널형": "지원",
+        "블루투스 v5.4": "지원",
+        "[노이즈컨트롤] 액티브노이즈캔슬링": "지원",
+        "주변소리듣기": "지원",
+        "AI노이즈캔슬링마이크": "지원",
+        "[음질] 유닛": "12mm",
+        "드라이버": "다이나믹",
+        "코덱": "SBC , AAC",
+        "360도 공간음향": "지원",
+        "[배터리] 1회충전시": "7시간",
+        "최대재생": "28시간",
+        "충전": "USB-C",
+        "[기능] 멀티포인트": "지원",
+        "IPX4방수": "지원"
+      },
+      "raw_specs": "커널형 / 블루투스 v5.4 / [노이즈컨트롤] 액티브노이즈캔슬링 / 주변소리듣기 / AI노이즈캔슬링마이크 / [음질] 유닛:12mm / 드라이버 : 다이나믹 / 코덱 : SBC , AAC / 360도 공간음향 / [배터리] 1회충전시 : 7시간 / 최대재생 : 28시간 / 충전 : USB-C / [기능] 멀티포인트 / IPX4방수",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=79603781",
+      "manufacturer": "SoundPEATS, SoundPEATS",
+      "model_name": "SP-T3Pro"
+    },
+    "norm_info": {
+      "company_name": "SoundPEATS, SoundPEATS",
+      "model_name": "SP-T3Pro",
+      "product_name": "SoundPEATS T3 Pro (정품)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "SoundPEATS, SoundPEATS",
+    "model_param": "SP-T3Pro",
+    "ocr_result": {
+      "extracted_text": "SoundPEATS T3 Pro (정품) 소핑 pay 17,900원 3,000원 최저가 구매하기 가격비교 25 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.4 노이즈권트록 댁티브노 (즈랜슬림 (ANC) 맥티브노 이즈랜슬림 주변소리듬기 AI노이 (조랜습림마이 사운드채널 스테레오 드라이버크기 유넷i2mm 드라이버 다이나막 드라이버구성 다이나막 i개 코덕 SBC AAC 불루투스 프로파일 AVRCP A2DP HFP HSP 서라운드 구57드 고기으하 구50드 고가요하",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\SoundPEATS T3 Pro (정품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

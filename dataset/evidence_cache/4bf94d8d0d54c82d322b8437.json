@@ -1,0 +1,509 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=37825949",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "SIE 플레이스테이션 PULSE Explore (정품)",
+      "name": "SIE 플레이스테이션 PULSE Explore (정품)",
+      "description": "",
+      "ocr_text": "SIE 플레이스테이선 PULSE Explore (정품) Gmarket   229,000원  무료배송 최저가 구매하기 가격비교 28 상품 상세정보 의견리뷰 21 뉴스커유니티 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 USB통글 노이즈권트록 시I노이즈랜늘림가이 사운드채널 스데레오 드라이버 평균형 드라이버구성 평판형 1개 [배티리] [배터리] 1회증전시 5시간 쇠대재생 10시간 권트론 불륭조절 버튼 연결기능 벌티포인트 색상 화이트 이어버드 충전테이스 71g",
+      "specs": {
+        "커널형": "지원",
+        "블루투스": "지원",
+        "USB동글": "지원",
+        "[노이즈컨트롤] AI노이즈캔슬링마이크": "지원",
+        "[사운드] 드라이버": "평판형",
+        "[배터리] 1회충전시": "5시간",
+        "최대재생": "10시간",
+        "[기능] 멀티포인트": "지원",
+        "호환기기": "PS5",
+        "PlayStation Link 무선 오디오 기술": "지원",
+        "출시가": "288,000원"
+      },
+      "raw_specs": "커널형 / 블루투스 / USB동글 / [노이즈컨트롤] AI노이즈캔슬링마이크 / [사운드] 드라이버 : 평판형 / [배터리] 1회충전시 : 5시간 / 최대재생 : 10시간 / [기능] 멀티포인트 / 호환기기: PS5 / PlayStation Link 무선 오디오 기술 / 출시가: 288,000원",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=37825949",
+      "manufacturer": "SIE",
+      "model_name": "PS5 Explore"
+    },
+    "norm_info": {
+      "company_name": "SIE",
+      "model_name": "PS5 Explore",
+      "product_name": "SIE 플레이스테이션 PULSE Explore (정품)"
+    },
+    "db_results": [
+      {
+        "company_name": "Siemens Industrial Automation Products Ltd., Chengdu",
+        "equip_name": "SIMATIC IOT2000",
+        "model_name": "SIMATIC IOT2050",
+        "country": "중국",
+        "cert_date": "2020-03-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S53-IOT2050"
+      },
+      {
+        "company_name": "Siemens Healthcare Gmbh",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PERU SB",
+        "country": "독일",
+        "cert_date": "2019-04-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-shF-PERUSB"
+      },
+      {
+        "company_name": "Siemens Healthcare Gmbh",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PERU 098",
+        "country": "독일",
+        "cert_date": "2019-04-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-shF-PERU098"
+      },
+      {
+        "company_name": "Siemens Healthcare Gmbh",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PERU AR",
+        "country": "독일",
+        "cert_date": "2019-04-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-shF-PERUAR"
+      },
+      {
+        "company_name": "Siemens Healthcare Gmbh",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PPU 098",
+        "country": "독일",
+        "cert_date": "2019-04-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-shF-PPU098"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "6SL3255-0VA00-5AA0",
+        "country": "독일",
+        "cert_date": "2019-04-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-S49-SMARTACCESSV"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "6SL3255-0AA00-5AA0",
+        "country": "독일",
+        "cert_date": "2019-04-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-S49-SMARTACCESSG"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "산업용컴퓨터의 제어를 받는 산업용 설비",
+        "model_name": "6FC5303-0AF32-0AA1",
+        "country": "독일",
+        "cert_date": "2019-04-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-303-0AF32-0AA1"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "산업용컴퓨터의 제어를 받는 산업용 설비",
+        "model_name": "6FC5303-0AF34-0AA1",
+        "country": "독일",
+        "cert_date": "2019-04-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-303-0AF34-0AA1"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "산업용컴퓨터의 제어를 받는 산업용 설비",
+        "model_name": "6FC5303-0AF33-0AA1",
+        "country": "독일",
+        "cert_date": "2019-04-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-303-0AF33-0AA1"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "산업용컴퓨터의 제어를 받는 산업용 설비",
+        "model_name": "6FC5303-0AF17-0AA0",
+        "country": "독일",
+        "cert_date": "2019-04-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-303-0AF17-0AA0"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "산업용 컴퓨터의 제어를 받는 산업용 설비",
+        "model_name": "SIMATIC PNJ1939LINK",
+        "country": "독일",
+        "cert_date": "2019-04-02",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-PNJ1939LINK"
+      },
+      {
+        "company_name": "SIERRA WIRELESS, ULC",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(기타)",
+        "model_name": "HL7800",
+        "country": "베트남",
+        "cert_date": "2019-04-02",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SWK-HL7800"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "산업용컴퓨터의 제어를 받는 산업용 설비",
+        "model_name": "6FC5303-0AF32-0AA0",
+        "country": "독일",
+        "cert_date": "2019-01-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-303-0AF32-0AA0"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "산업용컴퓨터의 제어를 받는 산업용 설비",
+        "model_name": "6FC5211-0BA01-0AA4",
+        "country": "독일",
+        "cert_date": "2019-01-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-303-0BA01-0AA4"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "산업용컴퓨터의 제어를 받는 산업용 설비",
+        "model_name": "6FC5303-0AF14-0AA0",
+        "country": "독일",
+        "cert_date": "2019-01-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-303-0AF14-0AA0"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "산업용컴퓨터의 제어를 받는 산업용 설비",
+        "model_name": "6FC5303-0AF33-0AA0",
+        "country": "독일",
+        "cert_date": "2019-01-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-303-0AF33-0AA0"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "산업용컴퓨터의 제어를 받는 산업용 설비",
+        "model_name": "6FC5312-0DA00-1AA1",
+        "country": "독일",
+        "cert_date": "2019-01-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-312-0DA00-1AA1"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "레벨측정 레이다용 무선기기(76∼81㎓의 주파수를 사용하는 레벨측정레이다)",
+        "model_name": "SITRANS LR120",
+        "country": "독일",
+        "cert_date": "2020-12-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-SITRANS_LR120"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "레벨측정 레이다용 무선기기(76∼81㎓의 주파수를 사용하는 레벨측정레이다)",
+        "model_name": "SITRANS LR150",
+        "country": "독일",
+        "cert_date": "2020-12-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-SITRANS_LR150"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "산업용 컴퓨터의 제어를 받는 산업용 설비",
+        "model_name": "6FC5311-0AA00-1AA0",
+        "country": "독일",
+        "cert_date": "2020-12-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-311-0AA00-1AA0"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "산업용 컴퓨터의 제어를 받는 산업용 설비",
+        "model_name": "6FC5303-0AP51-0AA0",
+        "country": "독일",
+        "cert_date": "2020-12-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-303-0AP51-0AA0"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "RFID용 무선기기(13.56㎒ 주파수 대역)",
+        "model_name": "SIMATIC RF360R",
+        "country": "독일",
+        "cert_date": "2020-11-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-RF5-SIMATICRF360R"
+      },
+      {
+        "company_name": "SIERRA WIRELESS, ULC",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(기타)",
+        "model_name": "RC7630",
+        "country": "베트남",
+        "cert_date": "2020-10-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SWK-RC7630"
+      },
+      {
+        "company_name": "Siemens Healthcare Diagnostics Inc.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "PD470SH-B",
+        "country": "미국",
+        "cert_date": "2020-10-15",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-2HD-PD470SH-B"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "산업용 컴퓨터의 제어를 받는 산업용 설비",
+        "model_name": "ET 200SP CM CAN",
+        "country": "독일",
+        "cert_date": "2020-08-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-ET200SPCMCAN"
+      },
+      {
+        "company_name": "Siemens Industry Software Netherlands B.V.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SC-XS06-E",
+        "country": "네델란드",
+        "cert_date": "2020-07-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-s2n-SC-XS06-E"
+      },
+      {
+        "company_name": "Siemens Industry Software Netherlands B.V.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SC-XS12-N",
+        "country": "네델란드",
+        "cert_date": "2020-07-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-s2n-SC-XS12-N"
+      },
+      {
+        "company_name": "Siemens Switzerland Ltd",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PXC4.E16",
+        "country": "스위스",
+        "cert_date": "2020-06-30",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-sIE-PXC4"
+      },
+      {
+        "company_name": "Siemens Switzerland Ltd",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PXC5.E003",
+        "country": "스위스",
+        "cert_date": "2020-06-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-sIE-PXC5-E003"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "산업용 컴퓨터의 제어를 받는 산업용 설비",
+        "model_name": "Siemens F?TM ServoDrive 1x24..48V 4.5A ST",
+        "country": "독일",
+        "cert_date": "2020-05-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-FTMSERVODRIVE"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "산업용 컴퓨터의 제어를 받는 산업용 설비",
+        "model_name": "SIMATIC Micro-Drive PDC100F",
+        "country": "독일",
+        "cert_date": "2020-05-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-MICRODRIVE"
+      },
+      {
+        "company_name": "Shenzhen Yayusi Elec Tech Co.,Ltd",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "BZ-CM7",
+        "country": "중국",
+        "cert_date": "2021-04-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-yay-BZ-CM7"
+      },
+      {
+        "company_name": "SIERRA WIRELESS, ULC",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(기타)",
+        "model_name": "EM9293",
+        "country": "베트남",
+        "cert_date": "2025-06-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SWK-EM92"
+      },
+      {
+        "company_name": "SIERRA WIRELESS, ULC",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(기타)",
+        "model_name": "EM7595",
+        "country": "베트남",
+        "cert_date": "2025-07-31",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SWK-EM7595"
+      },
+      {
+        "company_name": "Siemens Shanghai Medical Equipment Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "11061519",
+        "country": "중국",
+        "cert_date": "2024-01-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Smn-11061519"
+      },
+      {
+        "company_name": "Siemens AG,SIMATIC ET 200",
+        "equip_name": "SIMATIC ET 200ecoPN AI 8xRTDTC",
+        "model_name": "M12-L",
+        "country": "독일",
+        "cert_date": "2024-03-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-Eco1446JF0--BB"
+      },
+      {
+        "company_name": "Siemens AG,SIMATIC ET 200eco PN",
+        "equip_name": "SIMATIC ET 200eco PN AI 6xUI + AIQ 2xUI",
+        "model_name": "8x M12",
+        "country": "독일",
+        "cert_date": "2024-03-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-ECO1466HF0--BB"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "산업용 드라이브 SINAMICS G220 OM IIOT",
+        "model_name": "6SL4950-0AL00-0EA0",
+        "country": "독일",
+        "cert_date": "2024-04-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-SINA_OM_IIOT"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "레벨측정 레이다용 무선기기(76~81GHz의 주파수를 사용하는 레벨측정레이다)",
+        "model_name": "SITRANS LR500 SERIES",
+        "country": "캐나다",
+        "cert_date": "2024-11-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-SITRANS_LR500"
+      },
+      {
+        "company_name": "Siemens Aktiengesellschaft",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "SIMATIC IPC MD-34A",
+        "country": "중국",
+        "cert_date": "2024-12-12",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-afT-SIMATICIPCMD"
+      },
+      {
+        "company_name": "Siemens AG,SIMATIC ET 200",
+        "equip_name": "SIMATIC ET200AL AI 4xRTDTC",
+        "model_name": "4xM12",
+        "country": "독일",
+        "cert_date": "2023-02-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-AL1445KD50--BA"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "6SL4950-0AJ00-0AA0",
+        "country": "중국",
+        "cert_date": "2023-02-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-S49-SMARTADAPTER"
+      },
+      {
+        "company_name": "Siemens Industrial Automation Products Ltd., Chengdu",
+        "equip_name": "SIMATIC IOT2050",
+        "model_name": "SIMATIC IOT2050 Opcenter Connect",
+        "country": "중국",
+        "cert_date": "2023-06-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S53-IOTOpcenter"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "산업용 컴퓨터의 제어를 받는 산업용 설비",
+        "model_name": "TM NPU PN-Setup",
+        "country": "독일",
+        "cert_date": "2023-07-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-MP5561AA0--AB"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "산업용 컴퓨터의 제어를 받는 산업용 설비",
+        "model_name": "SIMATIC ET200SP Distributed I/O System F-TM Count 1x1Vpp sin/cos HF",
+        "country": "독일",
+        "cert_date": "2022-01-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-ET200SPFTM1x1"
+      },
+      {
+        "company_name": "Siemens Switzerland Ltd",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PXC7",
+        "country": "스위스",
+        "cert_date": "2022-02-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-sIE-PXC7"
+      },
+      {
+        "company_name": "SIERRA WIRELESS, ULC",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(기타)",
+        "model_name": "HL7810",
+        "country": "베트남",
+        "cert_date": "2022-11-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SWK-HL7810"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "산업용 드라이브 SINAMICS S120 55KW AIM",
+        "model_name": "6SL3100-0BE25-5AB0",
+        "country": "독일",
+        "cert_date": "2020-02-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-AIM400V55K"
+      },
+      {
+        "company_name": "Siemens AG",
+        "equip_name": "산업용 드라이브 SINAMICS S120 120KW AIM",
+        "model_name": "6SL3100-0BE31-2AB0",
+        "country": "독일",
+        "cert_date": "2020-02-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S49-AIM400V80_120K"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "SIE",
+    "model_param": "PS5 Explore",
+    "ocr_result": {
+      "extracted_text": "SIE 플레이스테이선 PULSE Explore (정품) Gmarket   229,000원  무료배송 최저가 구매하기 가격비교 28 상품 상세정보 의견리뷰 21 뉴스커유니티 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 USB통글 노이즈권트록 시I노이즈랜늘림가이 사운드채널 스데레오 드라이버 평균형 드라이버구성 평판형 1개 [배티리] [배터리] 1회증전시 5시간 쇠대재생 10시간 권트론 불륭조절 버튼 연결기능 벌티포인트 색상 화이트 이어버드 충전테이스 71g",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\SIE 플레이스테이션 PULSE Explore (정품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

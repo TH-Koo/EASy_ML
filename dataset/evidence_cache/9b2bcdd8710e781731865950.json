@@ -1,0 +1,529 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=88235120",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "HP 옴니스튜디오X 27-cs1000kr (16GB, M.2 1TB)",
+      "name": "HP 옴니스튜디오X 27-cs1000kr (16GB, M.2 1TB)",
+      "description": "",
+      "ocr_text": "HP 음니스튜디오X 27-csiooOkr (16GB,M.2 ITB) phcnc 2,200,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 운영체제 원도우17 CPU 제조사 인텔 CPU 시리즈 코어울트라 시리즈2 CPU 종류 군이 울드라7 CPU 코드명 루나레이크 NPU 종류 인텔 Al Boost NPU TOPS 47TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M2 SSD 용량 ITB 그래픽 제조사 INTEL 그래픽 종류 내장 그래픽 디스플레이 화면크기 68cm(27인지) 해상도 3840x2160 디스플레이 특징 광시야각 사운드 출력 사운드 지원 스피커 내장령 네트위크 1Gbps 유선 802.11be(Wi-Fi7) 무선 불무투스 영상출력",
+      "specs": {
+        "255V": "지원",
+        "Arc 140V": "지원",
+        "윈도우11": "지원",
+        "인텔": "지원",
+        "코어울트라 시리즈2": "지원",
+        "코어 울트라7": "지원",
+        "루나레이크": "지원",
+        "인텔 AI Boost": "지원",
+        "47TOPS": "지원",
+        "DDR5": "지원",
+        "16GB": "지원",
+        "M.2": "지원",
+        "1TB": "지원",
+        "INTEL": "지원",
+        "화면크기": "68cm(27인치)",
+        "3840x2160": "지원",
+        "광시야각": "지원",
+        "스피커 내장형": "지원",
+        "1Gbps 유선": "지원",
+        "802.11be(Wi-Fi 7) 무선": "지원",
+        "블루투스": "지원",
+        "HDMI": "지원",
+        "USB3.x 10Gbps": "지원",
+        "USB C타입 20Gbps": "지원",
+        "USB C타입 10Gbps": "지원",
+        "웹캠": "지원",
+        "마이크 내장": "지원",
+        "DC": "지원",
+        "일체형": "지원",
+        "8.4kg": "지원",
+        "용도": "사무/인강용"
+      },
+      "raw_specs": "255V / Arc 140V / 윈도우11 / 인텔 / 코어울트라 시리즈2 / 코어 울트라7 / 루나레이크 / 인텔 AI Boost / 47TOPS / DDR5 / 16GB / M.2 / 1TB / INTEL / 화면크기 : 68cm(27인치) / 3840x2160 / 광시야각 / 스피커 내장형 / 1Gbps 유선 / 802.11be(Wi-Fi 7) 무선 / 블루투스 / HDMI / USB3.x 10Gbps / USB C타입 20Gbps / USB C타입 10Gbps / 웹캠 / 마이크 내장 / DC / 일체형 / 8.4kg / 용도 : 사무/인강용",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=88235120",
+      "manufacturer": "HP, Hewlett-Packard",
+      "model_name": "27-cs1000kr"
+    },
+    "norm_info": {
+      "company_name": "HP, Hewlett-Packard",
+      "model_name": "27-cs1000kr",
+      "product_name": "HP 옴니스튜디오X 27-cs1000kr (16GB, M.2 1TB)"
+    },
+    "db_results": [
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "CCX 700",
+        "country": "중국",
+        "cert_date": "2020-05-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PLM-CCX700"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CA002",
+        "country": "대만",
+        "cert_date": "2021-07-20",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-K98-CA002"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CA002WA",
+        "country": "대만",
+        "cert_date": "2021-07-28",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-K98-CA002WA"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CL002WA1",
+        "country": "중국",
+        "cert_date": "2021-08-03",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-K98-CL002WA1"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "POTE16",
+        "country": "멕시코",
+        "cert_date": "2020-01-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PLT-POTE16"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CF001",
+        "country": "중국",
+        "cert_date": "2020-01-17",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-K98-CF001"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CF001WA",
+        "country": "중국",
+        "cert_date": "2020-01-17",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-K98-CF001WA"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CL5300 USB-C",
+        "country": "중국",
+        "cert_date": "2020-03-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PLT-CL5300"
+      },
+      {
+        "company_name": "Xiamen Healthpal Electronic Co., Ltd.",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "MT-RF900K",
+        "country": "중국",
+        "cert_date": "2020-03-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-XHe-MT-RF900K"
+      },
+      {
+        "company_name": "North Pole Engineering, Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Runn0101",
+        "country": "미국",
+        "cert_date": "2020-03-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-XRH-Runn0101"
+      },
+      {
+        "company_name": "North Pole Engineering, Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "GEMSRB03",
+        "country": "미국",
+        "cert_date": "2020-04-06",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-XRH-NPE105"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CCX 500",
+        "country": "중국",
+        "cert_date": "2020-04-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PLM-CCX500"
+      },
+      {
+        "company_name": "North Pole Engineering, Inc.",
+        "equip_name": "RFID용 무선기기(13.56㎒ 주파수 대역)",
+        "model_name": "GEM3NFC0105",
+        "country": "미국",
+        "cert_date": "2020-04-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-XRH-NPE109"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "V4320",
+        "country": "중국",
+        "cert_date": "2021-06-03",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PLT-V4320"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "P018",
+        "country": "중국",
+        "cert_date": "2020-05-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PLM-P018"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "V4240T",
+        "country": "멕시코",
+        "cert_date": "2020-05-18",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PLT-V4240T"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "P017",
+        "country": "중국",
+        "cert_date": "2020-06-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PLM-P017"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TPC-Q077-VH",
+        "country": "중국",
+        "cert_date": "2020-06-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-hpi-TPC-Q077-VH"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CEB002",
+        "country": "중국",
+        "cert_date": "2020-06-30",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-K98-CEB002"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CL002WA",
+        "country": "중국",
+        "cert_date": "2020-08-12",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-K98-CL002WA"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "VFOCUS2",
+        "country": "중국",
+        "cert_date": "2020-08-12",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PLT-VFOCUS2"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CL002",
+        "country": "중국",
+        "cert_date": "2020-08-12",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-K98-CL002"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TPC-Q077-C2",
+        "country": "중국",
+        "cert_date": "2020-08-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-hpi-TPC-Q077-C2"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TPC-Q077-C1",
+        "country": "중국",
+        "cert_date": "2020-08-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-hpi-TPC-Q077-C1"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SY20-M USB-C",
+        "country": "중국",
+        "cert_date": "2020-09-14",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PLT-SY20"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CEB003L",
+        "country": "중국",
+        "cert_date": "2022-02-18",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-hpi-CEB003L"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SHNGD-1403A",
+        "country": "중국",
+        "cert_date": "2026-02-04",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-hpi-SHNGD-1403A"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "HP JetDirect 3200w Wi-Fi 6 Bluetooth Wireless Accessory",
+        "model_name": "BOISB-2504-00",
+        "country": "중국",
+        "cert_date": "2025-05-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-hpi-BOISB-2504-00"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "AI Accelerator M.2 Key M 2280 card",
+        "model_name": "HSRP-IN01",
+        "country": "중국",
+        "cert_date": "2025-08-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-hpi-HSRP-IN01"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "AI Station",
+        "model_name": "FCW-2501",
+        "country": "중국",
+        "cert_date": "2025-08-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-hpi-FCW-2501"
+      },
+      {
+        "company_name": "주식회사하이퍼(HIGHPER)",
+        "equip_name": "레이다 레벨센서",
+        "model_name": "WSR550",
+        "country": "중국",
+        "cert_date": "2024-02-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-RS-H8P-WSR550"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "VS80T",
+        "country": "멕시코",
+        "cert_date": "2023-01-31",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PLT-VS80T"
+      },
+      {
+        "company_name": "Zhejiang Haozhonghao Health Product Co., Ltd",
+        "equip_name": "Massage Chair",
+        "model_name": "BFH-4000",
+        "country": "중국",
+        "cert_date": "2023-07-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-HZH-BFH-4000"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "VS85T",
+        "country": "멕시코",
+        "cert_date": "2023-08-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-hpi-VS85T"
+      },
+      {
+        "company_name": "Xiamen Healthpal Electronic Co., Ltd.",
+        "equip_name": "무선 목어깨마사지기",
+        "model_name": "BSM-2319",
+        "country": "중국",
+        "cert_date": "2023-09-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-XHe-BSM2319"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CEB003WA",
+        "country": "중국",
+        "cert_date": "2022-02-18",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-hpi-CEB003WA"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CEB003R",
+        "country": "중국",
+        "cert_date": "2022-02-18",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-hpi-CEB003R"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "BT700",
+        "country": "중국",
+        "cert_date": "2020-10-29",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PLT-BT700"
+      },
+      {
+        "company_name": "Xiamen Healthpal Electronic Co., Ltd.",
+        "equip_name": "무선종아리마사지기",
+        "model_name": "SSG-M2201",
+        "country": "중국",
+        "cert_date": "2022-02-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-XHe-SSGM2201"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "EKSGJNZWY",
+        "country": "일본",
+        "cert_date": "2022-08-31",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-hpi-EKSGJNZWY"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "F60T",
+        "country": "중국",
+        "cert_date": "2022-12-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PLT-F60T"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기 (무선데이터통신시스템용 무선기기)",
+        "model_name": "TPC-Q064-VH",
+        "country": "중국",
+        "cert_date": "2021-02-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-hpi-TPC-Q064-VH"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SY60-M",
+        "country": "중국",
+        "cert_date": "2021-02-08",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PLT-SY60"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SNPRC-2150",
+        "country": "중국",
+        "cert_date": "2021-03-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-hpi-SNPRC-2150"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CL004WA",
+        "country": "중국",
+        "cert_date": "2021-04-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-K98-CL004WA"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CL004",
+        "country": "중국",
+        "cert_date": "2021-04-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-K98-CL004"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PF002WA",
+        "country": "대만",
+        "cert_date": "2021-05-03",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-K98-PF002WA"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PF002",
+        "country": "대만",
+        "cert_date": "2021-05-12",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-K98-PF002"
+      },
+      {
+        "company_name": "HPC Systems Inc.",
+        "equip_name": "AI Server",
+        "model_name": "EMB-S622SPI-R4-AI",
+        "country": "일본",
+        "cert_date": "2021-05-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MV0-EMB-S622SPIR4"
+      },
+      {
+        "company_name": "HP Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "B8200",
+        "country": "중국",
+        "cert_date": "2017-05-29",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-PLT-B8200"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "HP, Hewlett-Packard",
+    "model_param": "27-cs1000kr",
+    "ocr_result": {
+      "extracted_text": "HP 음니스튜디오X 27-csiooOkr (16GB,M.2 ITB) phcnc 2,200,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 운영체제 원도우17 CPU 제조사 인텔 CPU 시리즈 코어울트라 시리즈2 CPU 종류 군이 울드라7 CPU 코드명 루나레이크 NPU 종류 인텔 Al Boost NPU TOPS 47TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M2 SSD 용량 ITB 그래픽 제조사 INTEL 그래픽 종류 내장 그래픽 디스플레이 화면크기 68cm(27인지) 해상도 3840x2160 디스플레이 특징 광시야각 사운드 출력 사운드 지원 스피커 내장령 네트위크 1Gbps 유선 802.11be(Wi-Fi7) 무선 불무투스 영상출력",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\HP 옴니스튜디오X 27-cs1000kr (16GB, M.2 1TB)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

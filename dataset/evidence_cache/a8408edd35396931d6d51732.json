@@ -1,0 +1,67 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=21515234",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "포유컴퓨터 퍼포먼스PC 42 울트라 코어5 225 (16GB, M.2 1TB)",
+      "name": "포유컴퓨터 퍼포먼스PC 42 울트라 코어5 225 (16GB, M.2 1TB)",
+      "description": "",
+      "ocr_text": "포유컴퓨터 퍼포민스PC 42 울트라 코어5 225 (16GB, M.2 1TB) 11> 984,950원   무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 13 연관상품 메인보드 침셋 인텔) H81o 운명제제 OS미포함 파뭐 출력 6OOW CPU 제조사 인텔 CPU 시리즈 코어올드라 시리즈2 CPU 종류 굳이 올드라5-2세대 CPU 코드명 애로우레이크 코이 개수 6+41이 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M.2 SSD 용량 1TB 그래픽 제조사 INTEL 그래픽 종류 내잠 그래픽 네트위크 IGbps 유선 전원 파위서플라이 미들타뭐 [@ 인종 적합성평가인승 상세설명 판매 사이드 분의 | 인종번호 확인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인 제조사정보",
+      "specs": {
+        "225": "지원",
+        "인텔 그래픽스": "지원",
+        "(인텔) H810": "지원",
+        "OS미포함": "지원",
+        "600W": "지원",
+        "인텔": "지원",
+        "코어울트라 시리즈2": "지원",
+        "코어 울트라5": "지원",
+        "애로우레이크": "지원",
+        "인텔 AI Boost": "지원",
+        "13TOPS": "지원",
+        "DDR5": "지원",
+        "16GB": "지원",
+        "M.2": "지원",
+        "1TB": "지원",
+        "INTEL": "지원",
+        "1Gbps 유선": "지원",
+        "파워서플라이": "지원",
+        "미들타워": "지원",
+        "용도": "사무/인강용"
+      },
+      "raw_specs": "225 / 인텔 그래픽스 / (인텔) H810 / OS미포함 / 600W / 인텔 / 코어울트라 시리즈2 / 코어 울트라5 / 애로우레이크 / 인텔 AI Boost / 13TOPS / DDR5 / 16GB / M.2 / 1TB / INTEL / 1Gbps 유선 / 파워서플라이 / 미들타워 / 용도 : 사무/인강용",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=21515234",
+      "manufacturer": "포유컴퓨터, Pocket Computer",
+      "model_name": "PF42UT"
+    },
+    "norm_info": {
+      "company_name": "포유컴퓨터, Pocket Computer",
+      "model_name": "PF42UT",
+      "product_name": "포유컴퓨터 퍼포먼스PC 42 울트라 코어5 225 (16GB, M.2 1TB)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "포유컴퓨터, Pocket Computer",
+    "model_param": "PF42UT",
+    "ocr_result": {
+      "extracted_text": "포유컴퓨터 퍼포민스PC 42 울트라 코어5 225 (16GB, M.2 1TB) 11> 984,950원   무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 13 연관상품 메인보드 침셋 인텔) H81o 운명제제 OS미포함 파뭐 출력 6OOW CPU 제조사 인텔 CPU 시리즈 코어올드라 시리즈2 CPU 종류 굳이 올드라5-2세대 CPU 코드명 애로우레이크 코이 개수 6+41이 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M.2 SSD 용량 1TB 그래픽 제조사 INTEL 그래픽 종류 내잠 그래픽 네트위크 IGbps 유선 전원 파위서플라이 미들타뭐 [@ 인종 적합성평가인승 상세설명 판매 사이드 분의 | 인종번호 확인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인 제조사정보",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\포유컴퓨터 퍼포먼스PC 42 울트라 코어5 225 (16GB, M.2 1TB)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

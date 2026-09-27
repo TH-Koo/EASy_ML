@@ -1,0 +1,168 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=94884290",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "BOSE QC 울트라 이어버드 2세대 (정품)",
+      "name": "BOSE QC 울트라 이어버드 2세대 (정품)",
+      "description": "",
+      "ocr_text": "BOSE QC 울트라 이어버드 2세대 (정품) 룻데백화점 278,070원 무료내송 최저가 구매하기 가격비교 70 상품 상세정보 의견리뷰 21 뉴스커유니티 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.3 노이즈권트록 댁티브노이즈랜슬림 (ANC) 적응형ANC 주변소리듬기 [Al 기능] [Al 기능] Al 기능 Al ANC Al 적응형 EQ Al 노이즈랜쓸림마이 Al 공간음향 Al 음성비선 사운드채널 스데레오 사운드성능 스내드래곤 사운드 코덕 aptx Adaptive SBC AAC",
+      "specs": {
+        "커널형": "지원",
+        "블루투스 v5.3": "지원",
+        "[노이즈컨트롤] 액티브노이즈캔슬링(ANC)": "지원",
+        "적응형ANC": "지원",
+        "주변소리듣기": "지원",
+        "[AI 기능] AI ANC": "지원",
+        "AI 적응형 EQ": "지원",
+        "AI 공간음향": "지원",
+        "AI 노이즈캔슬링마이크": "지원",
+        "AI 음성비서": "지원",
+        "[사운드] 코덱": "aptX Adaptive , SBC , AAC",
+        "[배터리] 1회충전시": "6시간",
+        "최대재생": "24시간",
+        "충전": "무선충전 , USB-C",
+        "[기능] 편의기능": "음성안내",
+        "EQ수동조절": "지원",
+        "멀티포인트": "지원",
+        "구글패스트페어": "지원",
+        "IPX4방수(이어버드)": "지원",
+        "심플싱크 지원(보스 스마트스피커 및 사운드바 호환)": "지원",
+        "출시가": "359,000원"
+      },
+      "raw_specs": "커널형 / 블루투스 v5.3 / [노이즈컨트롤] 액티브노이즈캔슬링(ANC) / 적응형ANC / 주변소리듣기 / [AI 기능] AI ANC / AI 적응형 EQ / AI 공간음향 / AI 노이즈캔슬링마이크 / AI 음성비서 / [사운드] 코덱 : aptX Adaptive , SBC , AAC / [배터리] 1회충전시 : 6시간 / 최대재생 : 24시간 / 충전 : 무선충전 , USB-C / [기능] 편의기능 : 음성안내 / EQ수동조절 / 멀티포인트 / 구글패스트페어 / IPX4방수(이어버드) / 심플싱크 지원(보스 스마트스피커 및 사운드바 호환) / 출시가: 359,000원",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=94884290",
+      "manufacturer": "Bose, Bose",
+      "model_name": "QC Ultra II"
+    },
+    "norm_info": {
+      "company_name": "Bose, Bose",
+      "model_name": "QC Ultra II",
+      "product_name": "BOSE QC 울트라 이어버드 2세대 (정품)"
+    },
+    "db_results": [
+      {
+        "company_name": "Bose Corporation",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "420129",
+        "country": "멕시코",
+        "cert_date": "2016-08-09",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRM-BFM-420129"
+      },
+      {
+        "company_name": "Bose Corporation",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "420128RM",
+        "country": "미국",
+        "cert_date": "2016-05-24",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRM-BFM-420128RM"
+      },
+      {
+        "company_name": "Ningbo Self Electronics Co.,Ltd.",
+        "equip_name": "LED Luminaire",
+        "model_name": "STAGNO 215",
+        "country": "중국",
+        "cert_date": "2018-12-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-NbS-STAGNO215"
+      },
+      {
+        "company_name": "Ningbo Self Electronics Co.,Ltd.",
+        "equip_name": "LED Luminaire",
+        "model_name": "SPOTS-L9-24V-K",
+        "country": "중국",
+        "cert_date": "2018-12-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-NbS-SPOTS-L9-24V-K"
+      },
+      {
+        "company_name": "Ningbo Self Electronics Co.,Ltd.",
+        "equip_name": "LED Luminaire",
+        "model_name": "SPOTS-L3-24V-K2",
+        "country": "중국",
+        "cert_date": "2018-12-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-NbS-SPOTS-L3-24VK2"
+      },
+      {
+        "company_name": "Bose Corporation",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "424821",
+        "country": "중국",
+        "cert_date": "2018-08-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-BFM-424821"
+      },
+      {
+        "company_name": "Bose Corporation",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "424411",
+        "country": "중국",
+        "cert_date": "2018-05-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-BFM-424411"
+      },
+      {
+        "company_name": "Bose Corporation",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "431389RF",
+        "country": "중국",
+        "cert_date": "2019-12-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-BFM-431389RF"
+      },
+      {
+        "company_name": "Bose Corporation",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "BMD0005",
+        "country": "중국",
+        "cert_date": "2019-07-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-BFM-431330"
+      },
+      {
+        "company_name": "Bose Corporation",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "423352",
+        "country": "미국",
+        "cert_date": "2019-04-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-BFM-423352"
+      },
+      {
+        "company_name": "Robosen Robotics (ShenZhen) Co., Ltd.",
+        "equip_name": "Robosen Elite Optimus Prime Trailer",
+        "model_name": "CX40",
+        "country": "중국",
+        "cert_date": "2022-11-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ZDF-CX40CX30"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "Bose, Bose",
+    "model_param": "QC Ultra II",
+    "ocr_result": {
+      "extracted_text": "BOSE QC 울트라 이어버드 2세대 (정품) 룻데백화점 278,070원 무료내송 최저가 구매하기 가격비교 70 상품 상세정보 의견리뷰 21 뉴스커유니티 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.3 노이즈권트록 댁티브노이즈랜슬림 (ANC) 적응형ANC 주변소리듬기 [Al 기능] [Al 기능] Al 기능 Al ANC Al 적응형 EQ Al 노이즈랜쓸림마이 Al 공간음향 Al 음성비선 사운드채널 스데레오 사운드성능 스내드래곤 사운드 코덕 aptx Adaptive SBC AAC",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\BOSE QC 울트라 이어버드 2세대 (정품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

@@ -1,0 +1,516 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=124033978",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "로지텍 G325 LIGHTSPEED (해외구매)",
+      "name": "로지텍 G325 LIGHTSPEED (해외구매)",
+      "description": "",
+      "ocr_text": "로지택 G325 LIGHTSPEED (해외구매) coupang 102, 150원   무료배송 최저가 구매하기 가격비교 15 상품 상세정보 의견리뷰 연관상품 유넷크기 32mm 유딪종류 다이나막 연결방식 USB용농글 불무투스 불루투스 V5.2 무선연결거리 3Om 임피터스 322 주파수 2OHz~2OkHz 사운드기능 시I노이즈랜쓸림가이 편의기능 전용 소프트웨어 전용 맨 사용시간 24시간 이삼 충전단자 USB-C 파드형대 버이어 권트론러형태 일체형조작부 권트론러기능 불룹 조설 마이크형태 내장형 색상",
+      "specs": {
+        "무선 PC헤드셋": "지원",
+        "다이나믹": "지원",
+        "USB동글": "지원",
+        "블루투스 v5.2": "지원",
+        "32Ω": "지원",
+        "20Hz~20kHz": "지원",
+        "사용시간": "24시간 이상",
+        "충전단자": "USB-C",
+        "AI노이즈캔슬링마이크": "지원",
+        "전용 소프트웨어": "지원",
+        "전용 앱": "지원",
+        "[형태] 오버이어": "지원",
+        "일체형조작부": "지원",
+        "컨트롤러기능": "볼륨 조절",
+        "마이크형태": "내장형",
+        "색상": "블랙 , 화이트 , 퍼플",
+        "무게": "212g",
+        "빔포밍 마이크": "지원"
+      },
+      "raw_specs": "무선 PC헤드셋 / 다이나믹 / USB동글 / 블루투스 v5.2 / 32Ω / 20Hz~20kHz / 사용시간 : 24시간 이상 / 충전단자 : USB-C / AI노이즈캔슬링마이크 / 전용 소프트웨어 / 전용 앱 / [형태] 오버이어 / 일체형조작부 / 컨트롤러기능 : 볼륨 조절 / 마이크형태 : 내장형 / 색상 : 블랙 , 화이트 , 퍼플 / 무게 : 212g / 빔포밍 마이크",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=124033978",
+      "manufacturer": "로지텍, Logitech",
+      "model_name": "G325 LIGHTSPEED"
+    },
+    "norm_info": {
+      "company_name": "로지텍, Logitech",
+      "model_name": "G325 LIGHTSPEED",
+      "product_name": "로지텍 G325 LIGHTSPEED (해외구매)"
+    },
+    "db_results": [
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "YR0078",
+        "country": "중국",
+        "cert_date": "2022-03-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-YR0078"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "VR0018",
+        "country": "중국",
+        "cert_date": "2020-02-17",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-DZL-VR0018"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "A00130",
+        "country": "중국",
+        "cert_date": "2020-02-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-A00130"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "F00008",
+        "country": "중국",
+        "cert_date": "2020-01-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-F00008"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0094",
+        "country": "중국",
+        "cert_date": "2021-12-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0094"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "A00167",
+        "country": "중국",
+        "cert_date": "2021-12-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-A00167"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "A00142",
+        "country": "중국",
+        "cert_date": "2021-10-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-A00142"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "A00140",
+        "country": "중국",
+        "cert_date": "2021-09-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-A00140"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "YR0082",
+        "country": "중국",
+        "cert_date": "2021-09-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-YR0082"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0093",
+        "country": "중국",
+        "cert_date": "2021-09-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0093"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "YR0085",
+        "country": "중국",
+        "cert_date": "2021-09-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-YR0085"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "YR0081",
+        "country": "중국",
+        "cert_date": "2021-09-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-YR0081"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "VR0030",
+        "country": "중국",
+        "cert_date": "2021-08-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-VR0030"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "B00042",
+        "country": "말레이시아",
+        "cert_date": "2021-08-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-B00042"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "B00036",
+        "country": "말레이시아",
+        "cert_date": "2021-08-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-B00036"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RR0015",
+        "country": "중국",
+        "cert_date": "2021-08-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-RR0015"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "VR0028",
+        "country": "중국",
+        "cert_date": "2021-07-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-VR0028"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "VR0029",
+        "country": "중국",
+        "cert_date": "2021-07-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-VR0029"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "A00150",
+        "country": "중국",
+        "cert_date": "2021-07-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-A00150"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "A00149",
+        "country": "중국",
+        "cert_date": "2021-07-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-A00149"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "YR0084",
+        "country": "중국",
+        "cert_date": "2021-06-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-YR0084"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "VR0020",
+        "country": "대만",
+        "cert_date": "2021-06-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-VR0020"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0089",
+        "country": "중국",
+        "cert_date": "2021-05-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0089"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0090",
+        "country": "중국",
+        "cert_date": "2021-05-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0090"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0092",
+        "country": "중국",
+        "cert_date": "2021-05-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0092"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "VR0022",
+        "country": "중국",
+        "cert_date": "2021-04-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-VR0022"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RR0017",
+        "country": "중국",
+        "cert_date": "2021-04-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-RR0017"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0091",
+        "country": "중국",
+        "cert_date": "2021-04-09",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0091"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "YR0080",
+        "country": "중국",
+        "cert_date": "2021-03-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-YR0080"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "YR0091",
+        "country": "중국",
+        "cert_date": "2022-12-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-YR0091"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0103",
+        "country": "중국",
+        "cert_date": "2022-12-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0103"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0105",
+        "country": "중국",
+        "cert_date": "2022-12-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0105"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "A00178",
+        "country": "중국",
+        "cert_date": "2022-11-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-A00178"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0104",
+        "country": "중국",
+        "cert_date": "2022-11-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0104"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "A00179",
+        "country": "중국",
+        "cert_date": "2022-11-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-A00179"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "B00054",
+        "country": "중국",
+        "cert_date": "2022-10-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-B00054"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "B00056",
+        "country": "중국",
+        "cert_date": "2022-10-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-B00056"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0106",
+        "country": "중국",
+        "cert_date": "2022-10-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0106"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0096",
+        "country": "중국",
+        "cert_date": "2022-09-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0096"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PR0005",
+        "country": "중국",
+        "cert_date": "2022-08-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-PR0005"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "YR0087",
+        "country": "중국",
+        "cert_date": "2022-07-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-YR0087"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0102",
+        "country": "중국",
+        "cert_date": "2022-07-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0102"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0100",
+        "country": "중국",
+        "cert_date": "2022-05-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0100"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0099",
+        "country": "중국",
+        "cert_date": "2022-05-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0099"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "VR0031",
+        "country": "중국",
+        "cert_date": "2022-04-08",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-DZL-VR0031"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0098",
+        "country": "중국",
+        "cert_date": "2022-03-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0098"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CU0023",
+        "country": "중국",
+        "cert_date": "2022-03-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-CU0023"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "A00161",
+        "country": "중국",
+        "cert_date": "2022-03-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-A00161"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "VR0038",
+        "country": "중국",
+        "cert_date": "2024-05-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-VR0038"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0110",
+        "country": "중국",
+        "cert_date": "2024-06-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0110"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "로지텍, Logitech",
+    "model_param": "G325 LIGHTSPEED",
+    "ocr_result": {
+      "extracted_text": "로지택 G325 LIGHTSPEED (해외구매) coupang 102, 150원   무료배송 최저가 구매하기 가격비교 15 상품 상세정보 의견리뷰 연관상품 유넷크기 32mm 유딪종류 다이나막 연결방식 USB용농글 불무투스 불루투스 V5.2 무선연결거리 3Om 임피터스 322 주파수 2OHz~2OkHz 사운드기능 시I노이즈랜쓸림가이 편의기능 전용 소프트웨어 전용 맨 사용시간 24시간 이삼 충전단자 USB-C 파드형대 버이어 권트론러형태 일체형조작부 권트론러기능 불룹 조설 마이크형태 내장형 색상",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\로지텍 G325 LIGHTSPEED (해외구매)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}
