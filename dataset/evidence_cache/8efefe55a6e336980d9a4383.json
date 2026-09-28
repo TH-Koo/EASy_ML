@@ -1,0 +1,215 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=123235435",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "서린씨앤아이 서린컴퓨터 8600G PRO 데스크테리어 미니PC (16GB, M.2 512GB)",
+      "name": "서린씨앤아이 서린컴퓨터 8600G PRO 데스크테리어 미니PC (16GB, M.2 512GB)",
+      "description": "",
+      "ocr_text": "서런씨언아이 서린컴퓨터 8600G PRO 데스크데리어 미니PC (16GB, M.2 512GB) coupang 2,238,000원 2,500원 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 메인보드 침셋 (AMD) A620 운명제제 OS미포함 파뭐 출력 500W CPU 제조사 AMD CPU 시리즈 라이젠  8000시리즈 CPU 종류 라이전5 PRO-5세대 CPU 코드명 피녁스 코이 개수 핵사(6) 굳이 NPU 종류 AMD 라이젠 NPU TOPS 16TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M2 SSD 용량 512GB 그래픽 제조사 AMD 그래픽 종류 내장그래픽 네트위크 1Gbps 유선 영상출력 HDMI D-SUB 단자 USB3 X 5Gbps USB C타입 5Gbps 전원 파위서플라이 형대 미니타뭐 너비(w) 1g4mmn 높이() 321.5mmn 깊이(D 443mmT [g 인종",
+      "specs": {
+        "8600G": "지원",
+        "760M": "지원",
+        "(AMD) A620": "지원",
+        "OS미포함": "지원",
+        "500W": "지원",
+        "AMD": "지원",
+        "라이젠 8000시리즈": "지원",
+        "라이젠5 PRO": "지원",
+        "피닉스": "지원",
+        "AMD 라이젠 AI": "지원",
+        "16TOPS": "지원",
+        "DDR5": "지원",
+        "16GB": "지원",
+        "M.2": "지원",
+        "512GB": "지원",
+        "1Gbps 유선": "지원",
+        "HDMI": "지원",
+        "D-SUB": "지원",
+        "USB3.x 5Gbps": "지원",
+        "USB C타입 5Gbps": "지원",
+        "파워서플라이": "지원",
+        "미니타워": "지원",
+        "용도": "사무/인강용"
+      },
+      "raw_specs": "8600G / 760M / (AMD) A620 / OS미포함 / 500W / AMD / 라이젠 8000시리즈 / 라이젠5 PRO / 피닉스 / AMD 라이젠 AI / 16TOPS / DDR5 / 16GB / M.2 / 512GB / AMD / 1Gbps 유선 / HDMI / D-SUB / USB3.x 5Gbps / USB C타입 5Gbps / 파워서플라이 / 미니타워 / 용도 : 사무/인강용",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=123235435",
+      "manufacturer": "서린씨앤아이, Siren씨앤아이",
+      "model_name": "8600G PRO"
+    },
+    "norm_info": {
+      "company_name": "서린씨앤아이, Siren씨앤아이",
+      "model_name": "8600G PRO",
+      "product_name": "서린씨앤아이 서린컴퓨터 8600G PRO 데스크테리어 미니PC (16GB, M.2 512GB)"
+    },
+    "db_results": [
+      {
+        "company_name": "(주)서린씨앤아이",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "IWC000A1",
+        "country": "중국",
+        "cert_date": "2018-09-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SRN-IWC000A1"
+      },
+      {
+        "company_name": "(주)서린씨앤아이",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "WC-046WT",
+        "country": "중국",
+        "cert_date": "2020-03-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SRN-WC-046WT"
+      },
+      {
+        "company_name": "(주)서린씨앤아이",
+        "equip_name": "FROZEN VISION 360 AIO COOLER",
+        "model_name": "FROZEN VISION 360 AIO COOLER BLACK",
+        "country": "중국",
+        "cert_date": "2023-12-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SRN-FROZENVISION"
+      },
+      {
+        "company_name": "(주)서린씨앤아이",
+        "equip_name": "GALAHAD II LCD AIO COOLER",
+        "model_name": "GAII LCD 360 Black SL Infinity",
+        "country": "대만",
+        "cert_date": "2023-11-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SRN-GAIILCDAIO"
+      },
+      {
+        "company_name": "(주)서린씨앤아이",
+        "equip_name": "Summair(Foldable USB Table Fan)",
+        "model_name": "AEBRZ00018A",
+        "country": "중국",
+        "cert_date": "2023-06-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SRN-Summair"
+      },
+      {
+        "company_name": "(주)서린씨앤아이",
+        "equip_name": "FROZEN WARFRAME 420 AIO COOLER",
+        "model_name": "FROZEN WARFRAME 420 BLACK ARGB",
+        "country": "중국",
+        "cert_date": "2024-06-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SRN-WARFRAME420"
+      },
+      {
+        "company_name": "(주)서린씨앤아이",
+        "equip_name": "FROZEN WARFRAME PRO 360 AIO COOLER",
+        "model_name": "FROZEN WARFRAME PRO 360 BLACK ARGB",
+        "country": "중국",
+        "cert_date": "2024-06-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SRN-WARFRAMEPRO"
+      },
+      {
+        "company_name": "(주)서린씨앤아이",
+        "equip_name": "4BAY ThunderBolt 3 RAID Storage Solution",
+        "model_name": "OWC ThunderBay 4 RAID",
+        "country": "대만",
+        "cert_date": "2024-05-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SRN-OWCTB3IVKIT000"
+      },
+      {
+        "company_name": "(주)서린씨앤아이",
+        "equip_name": "Portable Dual Drive Hardware RAID",
+        "model_name": "OWC MERCURY ELITE PRO DUAL MINI",
+        "country": "대만",
+        "cert_date": "2024-04-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SRN-SROWCMEMDC2KIT"
+      },
+      {
+        "company_name": "(주)서린씨앤아이",
+        "equip_name": "FROZEN WARFRAME 360 AIO COOLER",
+        "model_name": "FROZEN WARFRAME 360 BLACK ARGB",
+        "country": "중국",
+        "cert_date": "2024-03-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SRN-FROZENWARFRAME"
+      },
+      {
+        "company_name": "(주)서린씨앤아이",
+        "equip_name": "Rainbow Vision 360 Turbo ARGB AIO COOLER",
+        "model_name": "Rainbow Vision 360 Turbo ARGB AIO COOLER",
+        "country": "중국",
+        "cert_date": "2025-11-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SRN-RBVisionLCD"
+      },
+      {
+        "company_name": "(주)서린씨앤아이",
+        "equip_name": "Frozen Horizon 360 Digital ARGB AIO COOLER",
+        "model_name": "Frozen Horizon 360 Digital ARGB BLACK AIO COOLER",
+        "country": "중국",
+        "cert_date": "2025-11-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SRN-FR360Digital"
+      },
+      {
+        "company_name": "(주)서린씨앤아이",
+        "equip_name": "Trofeo Vision 360 ARGB AIO COOLER",
+        "model_name": "Trofeo Vision 360 ARGB AIO COOLER WHITE",
+        "country": "중국",
+        "cert_date": "2025-08-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SRN-TrofeoVision"
+      },
+      {
+        "company_name": "(주)서린씨앤아이",
+        "equip_name": "Stream Vision 360 AIO COOLER",
+        "model_name": "Stream Vision 360 AIO WHITE",
+        "country": "중국",
+        "cert_date": "2025-08-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SRN-StreamVision"
+      },
+      {
+        "company_name": "(주)서린씨앤아이",
+        "equip_name": "Wonder Vision 360 UB ARGB AIO COOLER",
+        "model_name": "Wonder Vision 360 UB ARGB BLACK",
+        "country": "중국",
+        "cert_date": "2025-08-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SRN-WonderVision"
+      },
+      {
+        "company_name": "(주)서린씨앤아이",
+        "equip_name": "Hyper Vision AIO COOLER",
+        "model_name": "Hyper Vision AIO 360 BLACK COOLER",
+        "country": "중국",
+        "cert_date": "2025-04-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SRN-HyperVision"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "서린씨앤아이, Siren씨앤아이",
+    "model_param": "8600G PRO",
+    "ocr_result": {
+      "extracted_text": "서런씨언아이 서린컴퓨터 8600G PRO 데스크데리어 미니PC (16GB, M.2 512GB) coupang 2,238,000원 2,500원 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 메인보드 침셋 (AMD) A620 운명제제 OS미포함 파뭐 출력 500W CPU 제조사 AMD CPU 시리즈 라이젠  8000시리즈 CPU 종류 라이전5 PRO-5세대 CPU 코드명 피녁스 코이 개수 핵사(6) 굳이 NPU 종류 AMD 라이젠 NPU TOPS 16TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M2 SSD 용량 512GB 그래픽 제조사 AMD 그래픽 종류 내장그래픽 네트위크 1Gbps 유선 영상출력 HDMI D-SUB 단자 USB3 X 5Gbps USB C타입 5Gbps 전원 파위서플라이 형대 미니타뭐 너비(w) 1g4mmn 높이() 321.5mmn 깊이(D 443mmT [g 인종",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\서린씨앤아이 서린컴퓨터 8600G PRO 데스크테리어 미니PC (16GB, M.2 512GB)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

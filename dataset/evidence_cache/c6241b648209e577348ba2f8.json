@@ -38,11 +38,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=93630728",
       "manufacturer": "레노버, Lenober",
-      "model_name": "LEOVO11"
+      "model_name": "LT-11"
     },
     "norm_info": {
       "company_name": "레노버, Lenober",
-      "model_name": "LEOVO11",
+      "model_name": "LT-11",
       "product_name": "레노버 아이디어탭 11 (128GB)"
     },
     "db_results": [
@@ -510,14 +510,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "레노버, Lenober",
-    "model_param": "LEOVO11",
+    "model_param": "LT-11",
     "ocr_result": {
       "extracted_text": "레노버 아이디어탤 11 (128GB) 중임씨언씨 329,000원  무료배승 최저가 구매하기 가격비교 36 상품 상세정보 의견리뷰 85 소모품|액세서리 뉴스커유니티 도IIU N THiEPiUD LiliEillyllty 연관상품 IDEA TAB TESTED) 17.71 19s13 5515949 4 쇼 0 다음에서 보기: Voulube 제조회사 레노버 (제조사 웬사이트 바로가기) 등록년원 2025년 06원 대불릿연결 Wi-Fi 모델명 ZAFRO398KR 화면크기 11인치 디스끌레이 IPS-LCD 해상도 2560x1600 쇠대주사율 9OHz 쇠대밝기 5OOnits 시스템 8GB 용탕 128GB 저장매체 UFS2 2(내장) 외장메도리 microSD지I원 외장메모리용량 mnicroSD 쇠대2TB",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\레노버 아이디어탭 11 (128GB)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\레노버 아이디어탭 11 (128GB)\\detail_scan.png",
+        "image_size": 422643,
+        "image_sha256": "a213b7880d20a90338d6c1a789cc9f7561f8d486d39c4217bb880a9e5e28d5aa"
+      }
     }
   }
 }

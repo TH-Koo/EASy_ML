@@ -1,0 +1,59 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=12967865",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "벨킨 사운드폼 엘리트 G1S0001 (해외구매)",
+      "name": "벨킨 사운드폼 엘리트 G1S0001 (해외구매)",
+      "description": "",
+      "ocr_text": "빌친 사운드픔 엘리트 G1SO0O1 (해외구매) 안념 네름린 211,600원  무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 전원 ACIDC전원 사운드출력 30W 스피커유넷크기 35mmn 감도 90dB 주파수 4OHz~2OkHz 불무투스버전 불무투스 v5.0 네트위크 Wi-Fi 편의기능 음성비서내장 무선외-기기충전 내장 음성비서 구글어시스런트 인식가능언어 한국이인식 음성제어기능 음악재생 무게 1341g 무선지원 [@ 인종 적합성평가인층 상세설명 판매 사이트 문의 인증번호 확인 안전확인인층 상세설명 판매 사이트 문의 인증번호 확인 상품 설명 복사하기",
+      "specs": {
+        "AI스피커": "지원",
+        "AC/DC전원": "지원",
+        "30W": "지원",
+        "90dB": "지원",
+        "40Hz~20kHz": "지원",
+        "블루투스 v5.0": "지원",
+        "Wi-Fi": "지원",
+        "음성비서내장": "지원",
+        "무선외부기기충전": "지원",
+        "한국어인식": "지원",
+        "무게": "1,341g",
+        "Qi인증": "지원"
+      },
+      "raw_specs": "AI스피커 / AC/DC전원 / 30W / 90dB / 40Hz~20kHz / 블루투스 v5.0 / Wi-Fi / 음성비서내장 / 무선외부기기충전 / 한국어인식 / 무게 : 1,341g / Qi인증",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=12967865",
+      "manufacturer": "벨킨, Bellkin",
+      "model_name": "G1S0001"
+    },
+    "norm_info": {
+      "company_name": "벨킨, Bellkin",
+      "model_name": "G1S0001",
+      "product_name": "벨킨 사운드폼 엘리트 G1S0001 (해외구매)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "벨킨, Bellkin",
+    "model_param": "G1S0001",
+    "ocr_result": {
+      "extracted_text": "빌친 사운드픔 엘리트 G1SO0O1 (해외구매) 안념 네름린 211,600원  무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 전원 ACIDC전원 사운드출력 30W 스피커유넷크기 35mmn 감도 90dB 주파수 4OHz~2OkHz 불무투스버전 불무투스 v5.0 네트위크 Wi-Fi 편의기능 음성비서내장 무선외-기기충전 내장 음성비서 구글어시스런트 인식가능언어 한국이인식 음성제어기능 음악재생 무게 1341g 무선지원 [@ 인종 적합성평가인층 상세설명 판매 사이트 문의 인증번호 확인 안전확인인층 상세설명 판매 사이트 문의 인증번호 확인 상품 설명 복사하기",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\벨킨 사운드폼 엘리트 G1S0001 (해외구매)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

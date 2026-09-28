@@ -1,0 +1,244 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=99889604",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "파인디지털 파인뷰 X3600 파워 2채널 (32GB, 무료장착)",
+      "name": "파인디지털 파인뷰 X3600 파워 2채널 (32GB, 무료장착)",
+      "description": "",
+      "ocr_text": "파인디지털 파인뷰 X3600 파위 2채널 (32GB, 무료장칙) coupang 224,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 다음에서 보기: IYoulube 제조회사 파인디지털 (제조사 웬사이트 바로가기) 등록년원 2025년 09원 제품구분 불렉박스 제품 형대 거치형 카메라 수재널) 2채널 전방 QHD(2560x1440) 최대지원용량 쇠대 1286B 전방 시야각 136.7도 화면 8.9cm(3.5인치) 패널송류 IPS파널 저장매체 Micro-SD 전원 12-24V 저장용량 32GB 센서 Sony STARVIS 2 후방 허상도 FHD(1920x1080) 후방 시아각 124.4도 안전관련기능 차선이날경보(LDW 앞자출발알림(FVSA)",
+      "specs": {
+        "블랙박스": "지원",
+        "2채널": "지원",
+        "거치형": "지원",
+        "화면": "8.9cm(3.5인치)",
+        "IPS패널": "지원",
+        "전방": "QHD(2560x1440)",
+        "136.7도": "지원",
+        "[후방] FHD(1920x1080)": "지원",
+        "124.4도": "지원",
+        "ADAS 안전운전도우미": "지원",
+        "차선이탈경보(LDWS)": "지원",
+        "앞차출발알림(FVSA)": "지원",
+        "전원관련 배터리방전방지": "지원",
+        "주차저전력모드": "지원",
+        "녹화관련 자동포맷": "지원",
+        "AI 주차녹화": "지원",
+        "스마트고온차단": "지원",
+        "야간보정": "지원",
+        "타임랩스": "지원",
+        "번호판식별강화": "지원",
+        "오토슈퍼나이트비전": "지원",
+        "부가기능 GPS외장지원(별매)": "지원",
+        "스마트폰 연동": "Wi-Fi 연결 , 블루투스 연결",
+        "비밀번호잠금": "지원",
+        "PIP기능": "지원"
+      },
+      "raw_specs": "블랙박스 / 2채널 / 거치형 / 화면 : 8.9cm(3.5인치) / IPS패널 / 전방 : QHD(2560x1440) / 136.7도 / [후방] FHD(1920x1080) / 124.4도 / ADAS 안전운전도우미 / 차선이탈경보(LDWS) / 앞차출발알림(FVSA) / 전원관련 배터리방전방지 / 주차저전력모드 / 녹화관련 자동포맷 / AI 주차녹화 / 스마트고온차단 / 야간보정 / 타임랩스 / 번호판식별강화 / 오토슈퍼나이트비전 / 부가기능 GPS외장지원(별매) / 스마트폰 연동 : Wi-Fi 연결 , 블루투스 연결 / 비밀번호잠금 / PIP기능",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=99889604",
+      "manufacturer": "파인디지털, Pinda Digital",
+      "model_name": "X3600"
+    },
+    "norm_info": {
+      "company_name": "파인디지털, Pinda Digital",
+      "model_name": "X3600",
+      "product_name": "파인디지털 파인뷰 X3600 파워 2채널 (32GB, 무료장착)"
+    },
+    "db_results": [
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "FC100",
+        "country": "중국",
+        "cert_date": "2019-07-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FC100"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "AW-NM372SM",
+        "country": "중국",
+        "cert_date": "2023-07-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-FDK-FineA004"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "FineVu K100",
+        "country": "한국",
+        "cert_date": "2022-09-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FinedriveA036"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "FineVu K30",
+        "country": "중국",
+        "cert_date": "2021-04-05",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-FDK-FinedriveA028"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "FineVu K50",
+        "country": "중국",
+        "cert_date": "2021-10-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FinedriveA032"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "UPX1000",
+        "country": "한국",
+        "cert_date": "2020-05-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-Finedrive065"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "FineVu K3",
+        "country": "중국",
+        "cert_date": "2020-07-29",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-FDK-FinedriveA027"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "M500α",
+        "country": "한국",
+        "cert_date": "2019-02-18",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-FDK-Finedrive058"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "TC100",
+        "country": "중국",
+        "cert_date": "2019-03-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-RS-FDK-Finedrive059"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Finedrive AI",
+        "country": "한국",
+        "cert_date": "2019-06-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-FDK-Finedrive062"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Finedrive Audio/TFT Trip Computer(4th)",
+        "country": "한국",
+        "cert_date": "2016-12-26",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-FDK-FinedriveA020"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Finedrive Q100",
+        "country": "중국",
+        "cert_date": "2018-01-08",
+        "cert_status": "적합인증",
+        "cert_no": "R-CMM-FDK-Finedrive054"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Finedrive A1",
+        "country": "중국",
+        "cert_date": "2018-01-08",
+        "cert_status": "적합인증",
+        "cert_no": "R-CMM-FDK-Finedrive053"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "Finedrive 무선충전 거치대",
+        "model_name": "Finedrive 충전 거치대",
+        "country": "한국",
+        "cert_date": "2017-01-10",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REM-FDK-FinedriveA021"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "Finedrive 무선충전 거치대",
+        "model_name": "Finedrive 무선충전 거치대 대시보드형",
+        "country": "한국",
+        "cert_date": "2017-02-24",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REM-FDK-FinedriveA023"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "R2",
+        "country": "한국",
+        "cert_date": "2016-01-06",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-FDK-R2"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "Fine FMT",
+        "country": "한국",
+        "cert_date": "2016-11-30",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RRM-FDK-FinedriveA022"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Finedrive Audio Trip Computer(KorandoSports)",
+        "country": "한국",
+        "cert_date": "2016-12-02",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-FDK-FinedriveA018"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Finedrive Audio Trip Computer(TheNextSpark)",
+        "country": "한국",
+        "cert_date": "2016-12-06",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRM-FDK-FinedriveA019"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "파인디지털, Pinda Digital",
+    "model_param": "X3600",
+    "ocr_result": {
+      "extracted_text": "파인디지털 파인뷰 X3600 파위 2채널 (32GB, 무료장칙) coupang 224,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 다음에서 보기: IYoulube 제조회사 파인디지털 (제조사 웬사이트 바로가기) 등록년원 2025년 09원 제품구분 불렉박스 제품 형대 거치형 카메라 수재널) 2채널 전방 QHD(2560x1440) 최대지원용량 쇠대 1286B 전방 시야각 136.7도 화면 8.9cm(3.5인치) 패널송류 IPS파널 저장매체 Micro-SD 전원 12-24V 저장용량 32GB 센서 Sony STARVIS 2 후방 허상도 FHD(1920x1080) 후방 시아각 124.4도 안전관련기능 차선이날경보(LDW 앞자출발알림(FVSA)",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\파인디지털 파인뷰 X3600 파워 2채널 (32GB, 무료장착)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

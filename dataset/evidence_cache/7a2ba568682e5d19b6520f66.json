@@ -524,7 +524,12 @@
       "cache_hit": false,
       "cache_path": "product_images\\레노버 아이디어센터 AIO 27ILL11 F0JW0018KR (16GB, M.2 512GB)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\레노버 아이디어센터 AIO 27ILL11 F0JW0018KR (16GB, M.2 512GB)\\detail_scan.png",
+        "image_size": 73264,
+        "image_sha256": "69f06f4559a37d0af71a3cced11801d24e2be40a8ca1b2246e0aba008f32b858"
+      }
     }
   }
 }

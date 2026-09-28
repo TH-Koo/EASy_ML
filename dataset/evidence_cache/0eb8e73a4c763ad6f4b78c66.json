@@ -618,7 +618,12 @@
       "cache_hit": false,
       "cache_path": "product_images\\삼성전자 비스포크 AI 콤보 WD90H25BHB (기본형)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\삼성전자 비스포크 AI 콤보 WD90H25BHB (기본형)\\detail_scan.png",
+        "image_size": 65041,
+        "image_sha256": "e23303af57fcf98254a88b95a01f80e01f777710b2a6d37fdb919be004c8773d"
+      }
     }
   }
 }

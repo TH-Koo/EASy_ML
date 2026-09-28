@@ -51,7 +51,12 @@
       "cache_hit": false,
       "cache_path": "product_images\\APPLE 홈팟 미니 MHY53CHA (해외구매)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\APPLE 홈팟 미니 MHY53CHA (해외구매)\\detail_scan.png",
+        "image_size": 53003,
+        "image_sha256": "18cd11011f1dbf5bf691a65d118e148b119c807b1b460b9e9b16a44cc25e96d0"
+      }
     }
   }
 }

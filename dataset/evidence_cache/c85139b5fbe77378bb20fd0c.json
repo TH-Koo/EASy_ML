@@ -1,0 +1,57 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=122724862",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "QCY Era 7 (해외구매)",
+      "name": "QCY Era 7 (해외구매)",
+      "description": "",
+      "ocr_text": "QCY Era 7 (해외구매) AUCTION 21,980원 무료배승 최저가 구매하기 가격비교 28 상품 상세정보 의견리뷰 연관상품 용도 음악+ 통화용 무선연결 불무투스 v5.4 노이즈권트록 시I노이즈랜늘림가이 드라이버크기 유넷:4Omm 드라이버소재 티타늄 불루투스 프로파일 AVRCP A2DP HFP 무선연결거리 1Om [배티리] [배터리] 쇠대재생 60시간 배터리용량 380mnAh 충전 USB-C 편의기능 퇴충전 권트률 재생)멈축조설 불름조설",
+      "specs": {
+        "무선헤드폰": "지원",
+        "오버이어": "지원",
+        "블루투스 v5.4": "지원",
+        "[노이즈컨트롤] AI노이즈캔슬링마이크": "지원",
+        "[사운드] 유닛": "40mm",
+        "드라이버소재": "티타늄",
+        "[배터리] 최대재생": "60시간",
+        "충전": "USB-C",
+        "[기능] 음성명령": "지원",
+        "저지연게이밍모드": "지원"
+      },
+      "raw_specs": "무선헤드폰 / 오버이어 / 블루투스 v5.4 / [노이즈컨트롤] AI노이즈캔슬링마이크 / [사운드] 유닛:40mm / 드라이버소재 : 티타늄 / [배터리] 최대재생 : 60시간 / 충전 : USB-C / [기능] 음성명령 / 저지연게이밍모드",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=122724862",
+      "manufacturer": "QCY, QCY",
+      "model_name": "QCY Era 7"
+    },
+    "norm_info": {
+      "company_name": "QCY, QCY",
+      "model_name": "QCY Era 7",
+      "product_name": "QCY Era 7 (해외구매)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "QCY, QCY",
+    "model_param": "QCY Era 7",
+    "ocr_result": {
+      "extracted_text": "QCY Era 7 (해외구매) AUCTION 21,980원 무료배승 최저가 구매하기 가격비교 28 상품 상세정보 의견리뷰 연관상품 용도 음악+ 통화용 무선연결 불무투스 v5.4 노이즈권트록 시I노이즈랜늘림가이 드라이버크기 유넷:4Omm 드라이버소재 티타늄 불루투스 프로파일 AVRCP A2DP HFP 무선연결거리 1Om [배티리] [배터리] 쇠대재생 60시간 배터리용량 380mnAh 충전 USB-C 편의기능 퇴충전 권트률 재생)멈축조설 불름조설",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\QCY Era 7 (해외구매)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

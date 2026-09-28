@@ -1,0 +1,515 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=74415257",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "파나소닉 테크닉스 EAH-AZ100 (해외구매)",
+      "name": "파나소닉 테크닉스 EAH-AZ100 (해외구매)",
+      "description": "",
+      "ocr_text": "파나소님 테크나스 EAH-AZ10O (해외구매) coupang 320,350원  무료배승 최저가 구매하기 가격비교 125 상품 상세정보 의견리뷰 연관상품 외령 크드리스 용도 음악+통화용 무선연결 불무투스 v5.3 노이즈권트록 액티브노이즈랜슬림 (ANC) 적응형ANC 주변소리듬기 [Al 기능] [Al 기능] Al 기능 Al 노이즈권쓸림다이 사운드채널 스데레오 사운드성능 HRA 드라이버크기 유듯1Ommn 코덕 LDAC LC3 SBC AAC 불르트스 프근파일",
+      "specs": {
+        "커널형": "지원",
+        "블루투스 v5.3": "지원",
+        "[노이즈컨트롤] 액티브노이즈캔슬링(ANC)": "지원",
+        "적응형ANC": "지원",
+        "주변소리듣기": "지원",
+        "[AI 기능] AI 노이즈캔슬링마이크": "지원",
+        "[사운드] HRA": "지원",
+        "유닛": "10mm",
+        "코덱": "LDAC , LC3 , SBC , AAC",
+        "돌비애트모스": "지원",
+        "[배터리] 1회충전시": "10시간(ANC ON)",
+        "최대재생": "28시간(ANC ON)",
+        "충전": "무선충전 , USB-C",
+        "[기능] EQ수동조절": "지원",
+        "멀티포인트": "지원",
+        "구글패스트페어": "지원",
+        "IPX4방수(이어버드)": "지원"
+      },
+      "raw_specs": "커널형 / 블루투스 v5.3 / [노이즈컨트롤] 액티브노이즈캔슬링(ANC) / 적응형ANC / 주변소리듣기 / [AI 기능] AI 노이즈캔슬링마이크 / [사운드] HRA / 유닛:10mm / 코덱 : LDAC , LC3 , SBC , AAC / 돌비애트모스 / [배터리] 1회충전시 : 10시간(ANC ON) / 최대재생 : 28시간(ANC ON) / 충전 : 무선충전 , USB-C / [기능] EQ수동조절 / 멀티포인트 / 구글패스트페어 / IPX4방수(이어버드)",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=74415257",
+      "manufacturer": "파나소닉, Panasonic",
+      "model_name": "EAH-AZ100"
+    },
+    "norm_info": {
+      "company_name": "파나소닉, Panasonic",
+      "model_name": "EAH-AZ100",
+      "product_name": "파나소닉 테크닉스 EAH-AZ100 (해외구매)"
+    },
+    "db_results": [
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HC-X2000",
+        "country": "말레이시아",
+        "cert_date": "2020-02-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PKL-AG-CX10"
+      },
+      {
+        "company_name": "Panasonic Avionics Corporation",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RD-AA8190-01",
+        "country": "미국",
+        "cert_date": "2021-05-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PAv-RD-AA8190-01"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DC-GH5M2",
+        "country": "중국",
+        "cert_date": "2021-05-31",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PKL-DC-GH5M2"
+      },
+      {
+        "company_name": "Panasonic Manufacturing (Thailand) Co., Ltd.",
+        "equip_name": "Hair Styler",
+        "model_name": "EH-KA11",
+        "country": "태국",
+        "cert_date": "2021-06-02",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PMF-EH-KA11"
+      },
+      {
+        "company_name": "Panasonic Manufacturing (Thailand) Co., Ltd.",
+        "equip_name": "Hair dryer",
+        "model_name": "EH-NE15",
+        "country": "태국",
+        "cert_date": "2021-06-02",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PMF-EH-NE15"
+      },
+      {
+        "company_name": "Panasonic Connect Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "CF-33R",
+        "country": "대만",
+        "cert_date": "2021-07-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-pav-CF-33R"
+      },
+      {
+        "company_name": "Panasonic Automotive Systems Co., Ltd.",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "CA-QS4CJ04D",
+        "country": "일본",
+        "cert_date": "2021-07-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Pa3-WCCAQS4CJ04D"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "무선청소기",
+        "model_name": "MC-A10G",
+        "country": "중국",
+        "cert_date": "2021-09-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PKL-MC-A10"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DC-GH6",
+        "country": "중국",
+        "cert_date": "2021-09-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PKL-DC-GH6"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DC-BS1H",
+        "country": "중국",
+        "cert_date": "2021-10-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PKL-DC-BS1H"
+      },
+      {
+        "company_name": "Panasonic Automotive Systems Co., Ltd.",
+        "equip_name": "Rear Seat Entertainment ECU",
+        "model_name": "AT2106",
+        "country": "일본",
+        "cert_date": "2021-11-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Pa3-AT2106"
+      },
+      {
+        "company_name": "Panasonic Automotive Systems Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "AT1806",
+        "country": "일본",
+        "cert_date": "2020-01-14",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-Pa3-AT1806"
+      },
+      {
+        "company_name": "Panasonic Automotive Systems Co., Ltd.",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "CA-QS2CJ04D",
+        "country": "일본",
+        "cert_date": "2021-04-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Pa3-WCCAQS2CJ04D"
+      },
+      {
+        "company_name": "PANASONIC MOBILE COMMUNICATIONS CO., LTD.",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "FZ-N1EU",
+        "country": "중국",
+        "cert_date": "2020-05-06",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PMN-FZ-N1EU"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "무선청소기",
+        "model_name": "MC-WDD91",
+        "country": "중국",
+        "cert_date": "2020-05-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PKL-MC-WDD91"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DC-G100",
+        "country": "중국",
+        "cert_date": "2020-07-01",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PKL-DC-G100"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HC-X1500",
+        "country": "말레이시아",
+        "cert_date": "2020-07-16",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PKL-HC-X1500"
+      },
+      {
+        "company_name": "Panasonic Automotive Systems Co., Ltd.",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "CA-QL5BJ04D",
+        "country": "일본",
+        "cert_date": "2020-07-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Pa3-WCCAQL5BJ04D"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DC-S5",
+        "country": "중국",
+        "cert_date": "2020-09-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PKL-DC-S5"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "무선청소기",
+        "model_name": "MC-SD787",
+        "country": "중국",
+        "cert_date": "2020-09-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PKL-MC-SD787"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DC-BGH1",
+        "country": "중국",
+        "cert_date": "2020-10-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PKL-DC-BGH1"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DC-S1",
+        "country": "중국",
+        "cert_date": "2019-02-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PKL-DC-S1"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DC-S1R",
+        "country": "중국",
+        "cert_date": "2019-02-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PKL-DC-S1R"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DC-G95",
+        "country": "중국",
+        "cert_date": "2019-04-08",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PKL-DC-G95"
+      },
+      {
+        "company_name": "Panasonic Automotive Systems Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(데이터전송용 무선기기)",
+        "model_name": "IK3600F",
+        "country": "태국",
+        "cert_date": "2023-01-16",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-Pa4-IK3600F"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DC-S1M2ES",
+        "country": "중국",
+        "cert_date": "2025-04-04",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PKL-DC-S1M2ES"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DC-S1M2",
+        "country": "중국",
+        "cert_date": "2025-04-15",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PKL-DC-S1M2"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "Main Frame",
+        "model_name": "AT-KC2000",
+        "country": "대만",
+        "cert_date": "2025-04-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PKL-AT-KC2000"
+      },
+      {
+        "company_name": "Panasonic Automotive Systems Co., Ltd.",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "CA-QHMFX0AQ",
+        "country": "멕시코",
+        "cert_date": "2025-12-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Pa4-WCCAQHMFX0AQ"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DC-S9",
+        "country": "중국",
+        "cert_date": "2024-05-28",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PKL-DC-S9"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DC-GH7",
+        "country": "중국",
+        "cert_date": "2024-06-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PKL-DC-GH7"
+      },
+      {
+        "company_name": "Panasonic Manufacturing (Thailand) Co., Ltd.",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "RE8-59",
+        "country": "태국",
+        "cert_date": "2024-06-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PMF-RE8-59"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "Main Frame",
+        "model_name": "AT-KC200",
+        "country": "대만",
+        "cert_date": "2024-08-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PKL-AT-KC200"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HC-VX3",
+        "country": "중국",
+        "cert_date": "2024-11-20",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PKL-HC-VX3"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DC-TZ99",
+        "country": "중국",
+        "cert_date": "2024-12-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PKL-DC-TZ99"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DC-S5M2",
+        "country": "중국",
+        "cert_date": "2023-01-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PKL-DC-S5M2"
+      },
+      {
+        "company_name": "Panasonic Connect Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "FZ-M1J",
+        "country": "대만",
+        "cert_date": "2019-04-12",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-pav-FZ-M1J"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DC-G9M2",
+        "country": "중국",
+        "cert_date": "2023-09-20",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PKL-DC-G9M2"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "DC-G100D",
+        "country": "중국",
+        "cert_date": "2023-12-12",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PKL-DC-G100D"
+      },
+      {
+        "company_name": "Panasonic Automotive Systems Co., Ltd.",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "CA-QT2CN07Q",
+        "country": "일본",
+        "cert_date": "2022-01-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Pa3-WCCAQT2CN07Q"
+      },
+      {
+        "company_name": "Panasonic Automotive Systems Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "CQ-JS72G1AJ",
+        "country": "일본",
+        "cert_date": "2022-08-30",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-Pa4-CQJS72G1AJ"
+      },
+      {
+        "company_name": "Panasonic Automotive Systems Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(데이터전송용 무선기기)",
+        "model_name": "HK1310A",
+        "country": "일본",
+        "cert_date": "2022-09-08",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-Pa4-HK1310A"
+      },
+      {
+        "company_name": "Panasonic Automotive Systems Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(데이터전송용 무선기기)",
+        "model_name": "YEP0FX1510",
+        "country": "일본",
+        "cert_date": "2022-09-08",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-Pa4-YEP0FX1510"
+      },
+      {
+        "company_name": "Panasonic Automotive Systems Co., Ltd.",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "CA-QLMDX04D",
+        "country": "일본",
+        "cert_date": "2022-09-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Pa4-WCCAQLMDX04D"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HC-X2",
+        "country": "중국",
+        "cert_date": "2022-10-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PKL-HC-X2"
+      },
+      {
+        "company_name": "Panasonic Automotive Systems Co., Ltd.",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "CA-QT2BX04D",
+        "country": "일본",
+        "cert_date": "2021-02-09",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Pa3-WCCAQT2BX04D"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "Kairos Control",
+        "model_name": "AT-KC10C1G",
+        "country": "일본",
+        "cert_date": "2021-02-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PKL-AT-KC10C1G"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "Main Frame",
+        "model_name": "AT-KC100",
+        "country": "대만",
+        "cert_date": "2021-02-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-PKL-AT-KC100"
+      },
+      {
+        "company_name": "Panasonic Corporation",
+        "equip_name": "Hair Clipper",
+        "model_name": "ER1511",
+        "country": "일본",
+        "cert_date": "2016-02-15",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REM-Pa3-ER1511x"
+      },
+      {
+        "company_name": "파나소닉코리아주식회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RP-HF400B",
+        "country": "일본",
+        "cert_date": "2017-07-13",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CRI-PKL-RP-HF400B"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "파나소닉, Panasonic",
+    "model_param": "EAH-AZ100",
+    "ocr_result": {
+      "extracted_text": "파나소님 테크나스 EAH-AZ10O (해외구매) coupang 320,350원  무료배승 최저가 구매하기 가격비교 125 상품 상세정보 의견리뷰 연관상품 외령 크드리스 용도 음악+통화용 무선연결 불무투스 v5.3 노이즈권트록 액티브노이즈랜슬림 (ANC) 적응형ANC 주변소리듬기 [Al 기능] [Al 기능] Al 기능 Al 노이즈권쓸림다이 사운드채널 스데레오 사운드성능 HRA 드라이버크기 유듯1Ommn 코덕 LDAC LC3 SBC AAC 불르트스 프근파일",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\파나소닉 테크닉스 EAH-AZ100 (해외구매)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

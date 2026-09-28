@@ -1,0 +1,225 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=96710114",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "베이스어스 Bowie H1 (중고)",
+      "name": "베이스어스 Bowie H1 (중고)",
+      "description": "",
+      "ocr_text": "베이스어스 Bowie H1 (중고) coupang 40,260원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 21 연관상품 파드형대 오버이이 용도 음악+통화용 무선연결 불무투스 V5.2 노이즈런트론 댁티브노이즈랜슬림 (ANC) 댁티브노이 즈랜슬림 주변소리듬기 시I노이즈랜늘림가이 드라이버크기 유넷:4Omm 주파수 2OHz~2OkHz 코덕 SBC AAC 무선연결거리 iOm 증전시간 1시간 재생시간 40시간(ANC ON) 70시간(ANC OFF) 편의기능 회충전 위치찾기 권트론 EQ모드선택 EQ스동조설 재생)멈축조설 불름조설 전용 맨 버튼",
+      "specs": {
+        "무선헤드폰": "지원",
+        "밀폐형": "지원",
+        "오버이어": "지원",
+        "블루투스 v5.2": "지원",
+        "[노이즈컨트롤] 액티브노이즈캔슬링": "지원",
+        "주변소리듣기": "지원",
+        "AI노이즈캔슬링마이크": "지원",
+        "[사운드] 유닛": "40mm",
+        "20Hz~20kHz": "지원",
+        "코덱": "SBC , AAC",
+        "[배터리] 재생시간": "40시간(ANC ON), 70시간(ANC OFF)",
+        "[기능] 편의기능": "위치찾기",
+        "EQ수동조절": "지원",
+        "저지연게이밍모드": "지원",
+        "무게": "300g"
+      },
+      "raw_specs": "무선헤드폰 / 밀폐형 / 오버이어 / 블루투스 v5.2 / [노이즈컨트롤] 액티브노이즈캔슬링 / 주변소리듣기 / AI노이즈캔슬링마이크 / [사운드] 유닛:40mm / 20Hz~20kHz / 코덱 : SBC , AAC / [배터리] 재생시간 : 40시간(ANC ON), 70시간(ANC OFF) / [기능] 편의기능 : 위치찾기 / EQ수동조절 / 저지연게이밍모드 / 무게 : 300g",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=96710114",
+      "manufacturer": "baseus, Baseus",
+      "model_name": "H1"
+    },
+    "norm_info": {
+      "company_name": "baseus, Baseus",
+      "model_name": "H1",
+      "product_name": "베이스어스 Bowie H1 (중고)"
+    },
+    "db_results": [
+      {
+        "company_name": "Shenzhen Baseus Technology Co., Ltd.",
+        "equip_name": "Baseus MagPro Series II 7-in-1 HUB Magnetic Wireless Charging 15W",
+        "model_name": "BS-OH122",
+        "country": "중국",
+        "cert_date": "2024-09-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-B6s-BS-OH122"
+      },
+      {
+        "company_name": "Shenzhen Baseus Technology Co., Ltd.",
+        "equip_name": "Baseus Nomos NU1Air Spacemate 12-in-1 Docking Station",
+        "model_name": "BS-OH198",
+        "country": "중국",
+        "cert_date": "2025-04-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-B6s-BS-OH198"
+      },
+      {
+        "company_name": "Shenzhen Baseus Technology Co., Ltd.",
+        "equip_name": "Baseus UltraJoy Series 7-Port HUB AIR",
+        "model_name": "BS-OH186",
+        "country": "중국",
+        "cert_date": "2024-03-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-B6s-BS-OH186"
+      },
+      {
+        "company_name": "Shenzhen Baseus Technology Co., Ltd.",
+        "equip_name": "Baseus UltraJoy Series 4-Port HUB",
+        "model_name": "BS-OH108",
+        "country": "중국",
+        "cert_date": "2024-03-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-B6s-BS-OH108"
+      },
+      {
+        "company_name": "Shenzhen Baseus Technology Co., Ltd.",
+        "equip_name": "Baseus UltraJoy Series 7-Port HUB Docking Station",
+        "model_name": "BS-OH156",
+        "country": "중국",
+        "cert_date": "2024-03-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-B6s-BS-OH156"
+      },
+      {
+        "company_name": "Shenzhen Baseus Technology Co., Ltd.",
+        "equip_name": "Baseus Spacemate Series 11-in-1 Docking Station Space Grey",
+        "model_name": "BS-OH137",
+        "country": "중국",
+        "cert_date": "2024-04-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-B6s-BS-OH137"
+      },
+      {
+        "company_name": "Shenzhen Baseus Technology Co., Ltd.",
+        "equip_name": "Baseus?Spacemate?Series?11-in-1 (MAC) Docking?Station",
+        "model_name": "BS-OH175",
+        "country": "중국",
+        "cert_date": "2024-09-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-B6s-BS-OH175"
+      },
+      {
+        "company_name": "Shenzhen Baseus Technology Co., Ltd.",
+        "equip_name": "Baseus Bowie H1 Noise-Cancelling Wireless Headphones",
+        "model_name": "Baseus Bowie H1",
+        "country": "중국",
+        "cert_date": "2022-07-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-B6s-BowieH1"
+      },
+      {
+        "company_name": "Shenzhen Baseus Technology Co., Ltd.",
+        "equip_name": "Baseus UltraJoy Series 6-Port HUB Docking Station",
+        "model_name": "BS-OH111",
+        "country": "중국",
+        "cert_date": "2023-05-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-B6s-BS-OH111"
+      },
+      {
+        "company_name": "Shenzhen Baseus Technology Co., Ltd.",
+        "equip_name": "Baseus UltraJoy Series 7-Port HUB Docking Station",
+        "model_name": "BS-OH112",
+        "country": "중국",
+        "cert_date": "2023-06-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-B6s-BS-OH112"
+      },
+      {
+        "company_name": "Shenzhen Baseus Technology Co., Ltd.",
+        "equip_name": "Baseus Wireless Headphones",
+        "model_name": "Baseus Bowie H1i",
+        "country": "중국",
+        "cert_date": "2023-08-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-B6s-BowieH1i"
+      },
+      {
+        "company_name": "Shenzhen Baseus Technology Co., Ltd.",
+        "equip_name": "Baseus UltraJoy Series 5-Port HUB Docking Station",
+        "model_name": "BS-OH110",
+        "country": "중국",
+        "cert_date": "2023-09-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-B6s-BS-OH110"
+      },
+      {
+        "company_name": "Shenzhen Baseus Technology Co., Ltd.",
+        "equip_name": "Baseus AcmeJoy 8-Port Type-C HUB Adapter",
+        "model_name": "BS-OH107",
+        "country": "중국",
+        "cert_date": "2023-09-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-B6s-BS-OH107"
+      },
+      {
+        "company_name": "Shenzhen Baseus Technology Co., Ltd.",
+        "equip_name": "Baseus UltraJoy Series 6-Port HUB Docking Station",
+        "model_name": "BS-OH118",
+        "country": "중국",
+        "cert_date": "2023-09-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-B6s-BS-OH118"
+      },
+      {
+        "company_name": "Shenzhen Baseus Technology Co., Ltd.",
+        "equip_name": "Baseus Noise-Cancellation Wireless Headphones",
+        "model_name": "Baseus Bowie H1 Pro",
+        "country": "중국",
+        "cert_date": "2023-10-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-B6s-H1-PRO"
+      },
+      {
+        "company_name": "Shenzhen Baseus Technology Co., Ltd.",
+        "equip_name": "Baseus UltraJoy Series 5-Port HUB Docking Station",
+        "model_name": "BS-OH150",
+        "country": "중국",
+        "cert_date": "2023-11-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-B6s-BS-OH150"
+      },
+      {
+        "company_name": "Shenzhen Baseus Technology Co., Ltd.",
+        "equip_name": "Baseus Brilliance Series Original Keyboard Case For Pad Pro 11-inch（2018/2020/2021/2022）/Pad Air4/Air5/Air6 10.9-inch",
+        "model_name": "BS-PC048",
+        "country": "중국",
+        "cert_date": "2024-06-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-B6s-BS-PC048"
+      },
+      {
+        "company_name": "Shenzhen Baseus Technology Co., Ltd.",
+        "equip_name": "Baseus SuperMini Mega Series Double Cylinder Air Inflator Cluster Black",
+        "model_name": "BS-CG024",
+        "country": "중국",
+        "cert_date": "2024-03-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-B6s-BS-CG024"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "baseus, Baseus",
+    "model_param": "H1",
+    "ocr_result": {
+      "extracted_text": "베이스어스 Bowie H1 (중고) coupang 40,260원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 21 연관상품 파드형대 오버이이 용도 음악+통화용 무선연결 불무투스 V5.2 노이즈런트론 댁티브노이즈랜슬림 (ANC) 댁티브노이 즈랜슬림 주변소리듬기 시I노이즈랜늘림가이 드라이버크기 유넷:4Omm 주파수 2OHz~2OkHz 코덕 SBC AAC 무선연결거리 iOm 증전시간 1시간 재생시간 40시간(ANC ON) 70시간(ANC OFF) 편의기능 회충전 위치찾기 권트론 EQ모드선택 EQ스동조설 재생)멈축조설 불름조설 전용 맨 버튼",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\베이스어스 Bowie H1 (중고)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

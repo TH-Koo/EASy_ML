@@ -607,7 +607,12 @@
       "cache_hit": false,
       "cache_path": "product_images\\삼성전자 비스포크 제트 AI Lite VS28D952HCB\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\삼성전자 비스포크 제트 AI Lite VS28D952HCB\\detail_scan.png",
+        "image_size": 66084,
+        "image_sha256": "664bc7aeed7d0085f7d3bbdb60ba5b6e5db6c2ce57819b391ca5b27ebf84d0f3"
+      }
     }
   }
 }

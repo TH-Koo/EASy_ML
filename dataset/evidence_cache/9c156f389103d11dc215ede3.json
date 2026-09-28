@@ -65,7 +65,12 @@
       "cache_hit": false,
       "cache_path": "product_images\\표준PC DPG 게임용 250723 (16GB, M.2 1TB)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\표준PC DPG 게임용 250723 (16GB, M.2 1TB)\\detail_scan.png",
+        "image_size": 71688,
+        "image_sha256": "57f21ab291e915eaf396dd95c94be007fc0e1864bfe950e6af21e875919a4f7e"
+      }
     }
   }
 }

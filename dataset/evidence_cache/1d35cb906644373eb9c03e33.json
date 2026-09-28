@@ -6,7 +6,7 @@
       "title": "ASUS NUC 16 Pro NUC16GDKU7 (베어본)",
       "name": "ASUS NUC 16 Pro NUC16GDKU7 (베어본)",
       "description": "",
-      "ocr_text": "ASUS NUC 16 Pro NUCI6GDKU7 (베어본) 띄오아시스 1,350,000원 4,000원 최저가 구매하기 가격비교 21 상품 상세정보 의견리뷰 연관상품 운영체제 OS미포함 파위 출력 150W CPU 제조사 인텔 CPU 시리즈 군어울트과 시리즈3 CPU 종류 코이 울드라7-3세대 CPU 코드명 팬서레이크 군이 개수 4+8+47이 NPU 종류 인텔 Al Boost NPU TOPS 50TOPS 메모리 메모리 타입 DDR5 메모리 용량 메모리 미포함 저장장치 HDD 용량 HDD:저장장치 미포함 그래픽 제조사 INTEL 그래픽 종류 내장 그래픽 네트위크 2.5Gbps 유선 802.11be(Wi-Fi7) 무선 불무투스 두얼런 영상출력 HDMI 단자 USB3X 1oGbps USB C타입 1oGbps 선더불트 4 전원 DC 너비(W) 144mm 높이(H) 42mnm 깊이(D 117mmn",
+      "ocr_text": "ASUS NUC 16 Pro NUCI6GDKU7 (베어본) #tP-Gh: 1,350,000원 무료배송 최저가 구매하기 가격비교 21 상품 상세정보 의견리뷰 연관상품 운영체제 OS미포함 파위 출력 150W CPU 제조사 인텔 CPU 시리즈 군어울트과 시리즈3 CPU 종류 코이 울드라7-3세대 CPU 코드명 팬서레이크 군이 개수 4+8+47이 NPU 종류 인텔 Al Boost NPU TOPS 50TOPS 메모리 메모리 타입 DDR5 메모리 용량 메모리 미포함 저장장치 HDD 용량 HDD:저장장치 미포함 그래픽 제조사 INTEL 그래픽 종류 내장 그래픽 네트위크 2.5Gbps 유선 802.11be(Wi-Fi7) 무선 불무투스 두얼런 영상출력 HDMI 단자 USB3X 1oGbps USB C타입 1oGbps 선더불트 4 전원 DC 너비(W) 144mm 높이(H) 42mnm 깊이(D 117mmn",
       "specs": {
         "356H": "지원",
         "인텔 그래픽스": "지원",
@@ -503,40 +503,7 @@
     "iitp_result": null,
     "patent_items_df": [
       {
-        "source_record_id": "1020250142585",
-        "일련번호": "1",
-        "출원번호": "1020250142585",
-        "발명의명칭(한글)": "무선 통신 시스템에서 AIML 보조 이동성에 대한 방법 및 장치",
-        "출원일자": "2025-09-30",
-        "출원인": "아서스 테크놀러지 라이센싱 아이엔씨.",
-        "등록상태": "공개",
-        "초록": "무선 통신 시스템에서 인공 지능/기계 학습(artificial intelligence/machine learning; ai/ml) 보조 이동성에 대한 방법들, 시스템들, 및 장치들이 제공되며 여기서 사용자 단말(user equipment; ue)의 방법은, 측정 보고를 트리거하는 단계, 및 셀에 대해 다수의 시간 인스턴스들에서, 측정 보고에 다수의 측정 결과들을 포함시키는 단계 - 다수의 시간 인스턴스들은: (i) 네트워크(network; nw)에 의해 구성된 시간 인스턴스들; 및 (ii) nw에 의해 구성된 시간 윈도우 내의 시간 인스턴스들 중 하나 이상을 포함함 - 를 포함한다.",
-        "IPC": "H04W 36/00|H04W 36/30",
-        "CPC": "",
-        "relevance_type": "general_ai",
-        "match_confidence": 0.45,
-        "search_alias": "ASUS",
-        "search_type": "AI 특허 [일반]",
-        "search_query": "AP=[ASUS]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
-        "status": "verified"
-      },
-      {
-        "source_record_id": "1020250099220",
-        "일련번호": "2",
-        "출원번호": "1020250099220",
-        "발명의명칭(한글)": "무선 통신 시스템에서 AIML 보조 이동성을 위한 방법 및 장치",
-        "출원일자": "2025-07-22",
-        "출원인": "아서스 테크놀러지 라이센싱 아이엔씨.",
-        "등록상태": "공개",
-        "초록": "무선 통신 시스템에서 인공 지능/기계 학습(artificial intelligence/machine learning; ai/ml) 보조 이동성을 위한 방법들, 시스템들, 및 장치들이 제공되며, 여기서 사용자 단말(user equipment; ue)에 대한 방법은, 측정 예측을 위한 ai/ml 기능성의 제1 구성을 수신하는 단계, 및 적어도 측정 예측으로부터의 셀의 품질의 평가에 기초하여 적어도 하나의 액션을 수행하는 단계 - 적어도 하나의 액션은 평가의 결과를 네트워크로 보고하는 것을 포함함 - 를 포함한다.",
-        "IPC": "H04W 36/00|H04W 36/30|G06N 20/00",
-        "CPC": "",
-        "relevance_type": "general_ai",
-        "match_confidence": 0.45,
-        "search_alias": "ASUS",
-        "search_type": "AI 특허 [일반]",
-        "search_query": "AP=[ASUS]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
-        "status": "verified"
+        "title": "AI 특허 내역 없음 None"
       }
     ],
     "cert_results": [],
@@ -544,7 +511,7 @@
     "target_company_name": "ASUS, Asus",
     "model_param": "NUC16GDKU7",
     "ocr_result": {
-      "extracted_text": "ASUS NUC 16 Pro NUCI6GDKU7 (베어본) 띄오아시스 1,350,000원 4,000원 최저가 구매하기 가격비교 21 상품 상세정보 의견리뷰 연관상품 운영체제 OS미포함 파위 출력 150W CPU 제조사 인텔 CPU 시리즈 군어울트과 시리즈3 CPU 종류 코이 울드라7-3세대 CPU 코드명 팬서레이크 군이 개수 4+8+47이 NPU 종류 인텔 Al Boost NPU TOPS 50TOPS 메모리 메모리 타입 DDR5 메모리 용량 메모리 미포함 저장장치 HDD 용량 HDD:저장장치 미포함 그래픽 제조사 INTEL 그래픽 종류 내장 그래픽 네트위크 2.5Gbps 유선 802.11be(Wi-Fi7) 무선 불무투스 두얼런 영상출력 HDMI 단자 USB3X 1oGbps USB C타입 1oGbps 선더불트 4 전원 DC 너비(W) 144mm 높이(H) 42mnm 깊이(D 117mmn",
+      "extracted_text": "ASUS NUC 16 Pro NUCI6GDKU7 (베어본) #tP-Gh: 1,350,000원 무료배송 최저가 구매하기 가격비교 21 상품 상세정보 의견리뷰 연관상품 운영체제 OS미포함 파위 출력 150W CPU 제조사 인텔 CPU 시리즈 군어울트과 시리즈3 CPU 종류 코이 울드라7-3세대 CPU 코드명 팬서레이크 군이 개수 4+8+47이 NPU 종류 인텔 Al Boost NPU TOPS 50TOPS 메모리 메모리 타입 DDR5 메모리 용량 메모리 미포함 저장장치 HDD 용량 HDD:저장장치 미포함 그래픽 제조사 INTEL 그래픽 종류 내장 그래픽 네트위크 2.5Gbps 유선 802.11be(Wi-Fi7) 무선 불무투스 두얼런 영상출력 HDMI 단자 USB3X 1oGbps USB C타입 1oGbps 선더불트 4 전원 DC 너비(W) 144mm 높이(H) 42mnm 깊이(D 117mmn",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\ASUS NUC 16 Pro NUC16GDKU7 (베어본)\\detail_scan.ocr_cache.json",

@@ -6,7 +6,7 @@
       "title": "삼성전자 갤럭시탭S9 (256GB)",
       "name": "삼성전자 갤럭시탭S9 (256GB)",
       "description": "",
-      "ocr_text": "삼성전자 길력시터S9 (256GB) AUCTION 1,074,190원  무료w송 최저가 구매하기 가격비교 18 상품 상세정보 의견리뷰 소모품|액세서리 연관상품 스-너-다 p다I 조_정리스 팀 아이패드 에어보단 좋습니다. 결력시택S9 실사용 한 달장단점 부 제조회사 삼심전자 (제조사 웬사이트 바로가기) 등록년원 2023년 07원 대불릿연결 Wi-Fi 모델명 SM-X71O 화면크기 11인치 디스플레이 D-AMOLED 2X 해상도 2560x1600 퍽설 수(ppi) 274ppi 화면비율 1610 쇠대주사물 12OHz 강화유리 고렇다 글래스 HDR규격 HDRIO+ S팬 S팬 포함 시스템 12GB 용량 256GB",
+      "ocr_text": "삼성전자 길력시터S9 (256GB) Gmarket 1,074,190원 무료배송 최저가 구매하기 가격비교 18 상품 상세정보 의견리뷰 소모품|액세서리 연관상품 스-너-다 p다I 조_정리스 팀 아이패드 에어보단 좋습니다. 결력시택S9 실사용 한 달장단점 부 제조회사 삼심전자 (제조사 웬사이트 바로가기) 등록년원 2023년 07원 대불릿연결 Wi-Fi 모델명 SM-X71O 화면크기 11인치 디스플레이 D-AMOLED 2X 해상도 2560x1600 퍽설 수(ppi) 274ppi 화면비율 1610 쇠대주사물 12OHz 강화유리 고렇다 글래스 HDR규격 HDRIO+ S팬 S팬 포함 시스템 12GB 용량 256GB",
       "specs": {
         "태블릿PC": "지원",
         "Wi-Fi": "지원",
@@ -38,40 +38,31 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=21504296",
       "manufacturer": "삼성전자",
-      "model_name": "SM-X108U"
+      "model_name": "G820"
     },
     "norm_info": {
       "company_name": "삼성전자",
-      "model_name": "SM-X108U",
+      "model_name": "G820",
       "product_name": "삼성전자 갤럭시탭S9 (256GB)"
     },
     "db_results": [
       {
         "company_name": "삼성전자(주)",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
-        "model_name": "SM-X115N",
-        "country": "중국",
-        "cert_date": "2023-08-23",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-SMX115N"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
-        "model_name": "SM-X135N",
-        "country": "중국",
-        "cert_date": "2025-08-08",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-SMX135N"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용무선기기)",
-        "model_name": "PARTYBOX710",
-        "country": "중국",
-        "cert_date": "2021-09-17",
+        "equip_name": "전기건조기",
+        "model_name": "DV21DG8200BV",
+        "country": "한국",
+        "cert_date": "2024-08-19",
         "cert_status": "적합등록",
-        "cert_no": "R-R-SEC-JBLPB710"
+        "cert_no": "R-R-SEC-DV8000DKD"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RS-9",
+        "country": "인도네시아",
+        "cert_date": "2021-12-09",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-RS-9"
       },
       {
         "company_name": "삼성전자(주)",
@@ -81,6 +72,24 @@
         "cert_date": "2021-09-07",
         "cert_status": "적합인증",
         "cert_no": "R-C-SEC-SMT-A61WFB"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TUNE130NCTWS",
+        "country": "중국",
+        "cert_date": "2021-09-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-T130NCTWS"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용무선기기)",
+        "model_name": "PARTYBOX710",
+        "country": "중국",
+        "cert_date": "2021-09-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-JBLPB710"
       },
       {
         "company_name": "삼성전자(주)",
@@ -301,29 +310,11 @@
       {
         "company_name": "삼성전자(주)",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "RS-9",
-        "country": "인도네시아",
-        "cert_date": "2021-12-09",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-SEC-RS-9"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
-        "model_name": "SM-F700N",
-        "country": "한국",
+        "model_name": "BOOMBOX 2",
+        "country": "중국",
         "cert_date": "2020-01-10",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-SMF700"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(기지국의 송수신 장치 및 중계장치)",
-        "model_name": "SF2201d-D1A",
-        "country": "한국",
-        "cert_date": "2020-02-05",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-SF2201dD1A"
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-BOOMBOX2"
       },
       {
         "company_name": "삼성전자(주)",
@@ -435,21 +426,21 @@
       },
       {
         "company_name": "삼성전자(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "QUANTUM610",
-        "country": "중국",
-        "cert_date": "2021-12-21",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-SEC-Q610"
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "SM-F700N",
+        "country": "한국",
+        "cert_date": "2020-01-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMF700"
       },
       {
         "company_name": "삼성전자(주)",
-        "equip_name": "쿡센서",
-        "model_name": "NZ63B1322EK",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(기지국의 송수신장치 및 중계장치)",
+        "model_name": "MT3229-78A",
         "country": "한국",
-        "cert_date": "2021-12-23",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-SEC-NZ8500BM-C"
+        "cert_date": "2021-12-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-MT322978A"
       },
       {
         "company_name": "삼성전자(주)",
@@ -471,21 +462,21 @@
       },
       {
         "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "QUANTUM610",
+        "country": "중국",
+        "cert_date": "2021-12-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-Q610"
+      },
+      {
+        "company_name": "삼성전자(주)",
         "equip_name": "쿡센서",
         "model_name": "NZ63B1322EK",
         "country": "한국",
         "cert_date": "2021-12-23",
         "cert_status": "적합등록",
-        "cert_no": "R-R-SEC-NZ8500BM-S"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(기지국의 송수신장치 및 중계장치)",
-        "model_name": "MT3229-78A",
-        "country": "한국",
-        "cert_date": "2021-12-13",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-MT322978A"
+        "cert_no": "R-R-SEC-NZ8500BM-C"
       },
       {
         "company_name": "삼성전자(주)",
@@ -495,6 +486,15 @@
         "cert_date": "2021-12-13",
         "cert_status": "적합인증",
         "cert_no": "R-C-SEC-MT323078A"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "SM-X205N",
+        "country": "중국",
+        "cert_date": "2021-12-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMX205N"
       }
     ],
     "jodale_result": null,
@@ -606,9 +606,9 @@
       "detail": "DART 분석 결과 [삼성전자] 실적 총 1건 확인."
     },
     "target_company_name": "삼성전자",
-    "model_param": "SM-X108U",
+    "model_param": "G820",
     "ocr_result": {
-      "extracted_text": "삼성전자 길력시터S9 (256GB) AUCTION 1,074,190원  무료w송 최저가 구매하기 가격비교 18 상품 상세정보 의견리뷰 소모품|액세서리 연관상품 스-너-다 p다I 조_정리스 팀 아이패드 에어보단 좋습니다. 결력시택S9 실사용 한 달장단점 부 제조회사 삼심전자 (제조사 웬사이트 바로가기) 등록년원 2023년 07원 대불릿연결 Wi-Fi 모델명 SM-X71O 화면크기 11인치 디스플레이 D-AMOLED 2X 해상도 2560x1600 퍽설 수(ppi) 274ppi 화면비율 1610 쇠대주사물 12OHz 강화유리 고렇다 글래스 HDR규격 HDRIO+ S팬 S팬 포함 시스템 12GB 용량 256GB",
+      "extracted_text": "삼성전자 길력시터S9 (256GB) Gmarket 1,074,190원 무료배송 최저가 구매하기 가격비교 18 상품 상세정보 의견리뷰 소모품|액세서리 연관상품 스-너-다 p다I 조_정리스 팀 아이패드 에어보단 좋습니다. 결력시택S9 실사용 한 달장단점 부 제조회사 삼심전자 (제조사 웬사이트 바로가기) 등록년원 2023년 07원 대불릿연결 Wi-Fi 모델명 SM-X71O 화면크기 11인치 디스플레이 D-AMOLED 2X 해상도 2560x1600 퍽설 수(ppi) 274ppi 화면비율 1610 쇠대주사물 12OHz 강화유리 고렇다 글래스 HDR규격 HDRIO+ S팬 S팬 포함 시스템 12GB 용량 256GB",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\삼성전자 갤럭시탭S9 (256GB)\\detail_scan.ocr_cache.json",

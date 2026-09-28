@@ -262,7 +262,12 @@
       "cache_hit": false,
       "cache_path": "product_images\\알파스캔 AOC Q27G42ZE 게이밍 260 QHD FAST IPS 프리싱크 AI HDR 무결점\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\알파스캔 AOC Q27G42ZE 게이밍 260 QHD FAST IPS 프리싱크 AI HDR 무결점\\detail_scan.png",
+        "image_size": 73477,
+        "image_sha256": "7c3921ec214a1c18e11fb4d67b1870f158b44711e3b5ec086a123793cf2fa8e0"
+      }
     }
   }
 }

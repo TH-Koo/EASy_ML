@@ -6,7 +6,7 @@
       "title": "ANKER Soundcore 스페이스 Q45 A3040 (정품)",
       "name": "ANKER Soundcore 스페이스 Q45 A3040 (정품)",
       "description": "",
-      "ocr_text": "ANKER Soundcore 스폐이스 Q45 A3040 (정품) #tP-Gh: 99,900원  무료배송 최저가 구매하기 가격비교 13 상품 상세정보 의견 리뷰 10 뉴스커유니티 연관상품 때드형대 오버이이 용도 음악+통화용 연결단자 3.5mm 무선연결 불무투스 V5.3 노이즈런트론 적응형ANC 주변소리듬기 시I노이즈랜늘림가이 사운드성능 HRA 드라이버크기 유넷:4Omm 코덕 LDAC SBC AAC 재생시간 50시간(ANC ON), 65시간(ANC OFF) 충전 USB-C 편의기능",
+      "ocr_text": "ANKER Soundcore 스폐이스 Q45 A3040 (정품) coupang 99,900원  무료배송 최저가 구매하기 가격비교 13 상품 상세정보 의견 리뷰 10 뉴스커유니티 연관상품 때드형대 오버이이 용도 음악+통화용 연결단자 3.5mm 무선연결 불무투스 V5.3 노이즈런트론 적응형ANC 주변소리듬기 시I노이즈랜늘림가이 사운드성능 HRA 드라이버크기 유넷:4Omm 코덕 LDAC SBC AAC 재생시간 50시간(ANC ON), 65시간(ANC OFF) 충전 USB-C 편의기능",
       "specs": {
         "유무선헤드폰": "지원",
         "밀폐형": "지원",
@@ -34,14 +34,23 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=17743568",
       "manufacturer": "ANKER, Anker",
-      "model_name": "Q45"
+      "model_name": "A3040"
     },
     "norm_info": {
       "company_name": "ANKER, Anker",
-      "model_name": "Q45",
+      "model_name": "A3040",
       "product_name": "ANKER Soundcore 스페이스 Q45 A3040 (정품)"
     },
     "db_results": [
+      {
+        "company_name": "Anker Innovations Limited",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "A3040",
+        "country": "중국",
+        "cert_date": "2022-08-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AIl-A3040"
+      },
       {
         "company_name": "Anker Innovations Limited",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
@@ -104,15 +113,6 @@
         "cert_date": "2022-09-06",
         "cert_status": "적합등록",
         "cert_no": "R-R-AIl-T0350"
-      },
-      {
-        "company_name": "Anker Innovations Limited",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "A3040",
-        "country": "중국",
-        "cert_date": "2022-08-26",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-AIl-A3040"
       },
       {
         "company_name": "Anker Innovations Limited",
@@ -506,9 +506,9 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "ANKER, Anker",
-    "model_param": "Q45",
+    "model_param": "A3040",
     "ocr_result": {
-      "extracted_text": "ANKER Soundcore 스폐이스 Q45 A3040 (정품) #tP-Gh: 99,900원  무료배송 최저가 구매하기 가격비교 13 상품 상세정보 의견 리뷰 10 뉴스커유니티 연관상품 때드형대 오버이이 용도 음악+통화용 연결단자 3.5mm 무선연결 불무투스 V5.3 노이즈런트론 적응형ANC 주변소리듬기 시I노이즈랜늘림가이 사운드성능 HRA 드라이버크기 유넷:4Omm 코덕 LDAC SBC AAC 재생시간 50시간(ANC ON), 65시간(ANC OFF) 충전 USB-C 편의기능",
+      "extracted_text": "ANKER Soundcore 스폐이스 Q45 A3040 (정품) coupang 99,900원  무료배송 최저가 구매하기 가격비교 13 상품 상세정보 의견 리뷰 10 뉴스커유니티 연관상품 때드형대 오버이이 용도 음악+통화용 연결단자 3.5mm 무선연결 불무투스 V5.3 노이즈런트론 적응형ANC 주변소리듬기 시I노이즈랜늘림가이 사운드성능 HRA 드라이버크기 유넷:4Omm 코덕 LDAC SBC AAC 재생시간 50시간(ANC ON), 65시간(ANC OFF) 충전 USB-C 편의기능",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\ANKER Soundcore 스페이스 Q45 A3040 (정품)\\detail_scan.ocr_cache.json",

@@ -650,7 +650,12 @@
       "cache_hit": false,
       "cache_path": "product_images\\브라운 오랄비 iO7 (블랙오닉스)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\브라운 오랄비 iO7 (블랙오닉스)\\detail_scan.png",
+        "image_size": 71300,
+        "image_sha256": "f76f64fd1b454d861c29ff1a3eec2e19269b0690d7245dfc0f884c0828f5174f"
+      }
     }
   }
 }

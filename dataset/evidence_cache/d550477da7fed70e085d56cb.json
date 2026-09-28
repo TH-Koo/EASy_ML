@@ -1,0 +1,67 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=122683812",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "이어펀 AirPro4 (중고)",
+      "name": "이어펀 AirPro4 (중고)",
+      "description": "",
+      "ocr_text": "이어편 AirPro4 (중고) coupang 99,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.4 불무투스 LE 노이즈권트록 액티브노이즈랜슬림 (ANC) 적응형ANC 주변소리듬기 [Al 기능] [Al 기능] Al 기능 Al 노이즈권쓸림다이 사운드채널 스데레오 사운드성능 HRA 스년드래곤 사운드 드라이버크기 유듯1Ommn 드라이버 다이나막 드라이버구성 다이나막 1개 코덕",
+      "specs": {
+        "커널형": "지원",
+        "블루투스 v5.4": "지원",
+        "블루투스 LE": "지원",
+        "[노이즈컨트롤] 액티브노이즈캔슬링(ANC)": "지원",
+        "적응형ANC": "지원",
+        "주변소리듣기": "지원",
+        "[AI 기능] AI 노이즈캔슬링마이크": "지원",
+        "[사운드] HRA": "지원",
+        "유닛": "10mm",
+        "드라이버": "다이나믹",
+        "코덱": "LDAC , aptX Adaptive , LC3 , SBC",
+        "[배터리] 1회충전시": "7.5시간(ANC ON), 11시간(ANC OFF)",
+        "최대재생": "35시간(ANC ON), 52시간(ANC OFF)",
+        "충전": "무선충전 , USB-C",
+        "[기능] EQ수동조절": "지원",
+        "멀티포인트": "지원",
+        "구글패스트페어": "지원",
+        "오라캐스트": "지원",
+        "마이크특징": "CVC 8.0",
+        "IPX5방수": "지원"
+      },
+      "raw_specs": "커널형 / 블루투스 v5.4 / 블루투스 LE / [노이즈컨트롤] 액티브노이즈캔슬링(ANC) / 적응형ANC / 주변소리듣기 / [AI 기능] AI 노이즈캔슬링마이크 / [사운드] HRA / 유닛:10mm / 드라이버 : 다이나믹 / 코덱 : LDAC , aptX Adaptive , LC3 , SBC / [배터리] 1회충전시 : 7.5시간(ANC ON), 11시간(ANC OFF) / 최대재생 : 35시간(ANC ON), 52시간(ANC OFF) / 충전 : 무선충전 , USB-C / [기능] EQ수동조절 / 멀티포인트 / 구글패스트페어 / 오라캐스트 / 마이크특징 : CVC 8.0 / IPX5방수",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=122683812",
+      "manufacturer": "이어펀, iEmerge",
+      "model_name": "AirPro4"
+    },
+    "norm_info": {
+      "company_name": "이어펀, iEmerge",
+      "model_name": "AirPro4",
+      "product_name": "이어펀 AirPro4 (중고)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "이어펀, iEmerge",
+    "model_param": "AirPro4",
+    "ocr_result": {
+      "extracted_text": "이어편 AirPro4 (중고) coupang 99,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.4 불무투스 LE 노이즈권트록 액티브노이즈랜슬림 (ANC) 적응형ANC 주변소리듬기 [Al 기능] [Al 기능] Al 기능 Al 노이즈권쓸림다이 사운드채널 스데레오 사운드성능 HRA 스년드래곤 사운드 드라이버크기 유듯1Ommn 드라이버 다이나막 드라이버구성 다이나막 1개 코덕",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\이어펀 AirPro4 (중고)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

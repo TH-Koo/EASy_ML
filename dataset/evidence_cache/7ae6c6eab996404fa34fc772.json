@@ -38,11 +38,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=74248601",
       "manufacturer": "레노버, Lenober",
-      "model_name": "RE:128GB"
+      "model_name": "아이디어탭 프로 12.7"
     },
     "norm_info": {
       "company_name": "레노버, Lenober",
-      "model_name": "RE:128GB",
+      "model_name": "아이디어탭 프로 12.7",
       "product_name": "레노버 아이디어탭 프로 12.7 (128GB)"
     },
     "db_results": [
@@ -510,14 +510,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "레노버, Lenober",
-    "model_param": "RE:128GB",
+    "model_param": "아이디어탭 프로 12.7",
     "ocr_result": {
       "extracted_text": "레노버 아이디어탤 프로 12.7 (128GB) Gmarket   457,990원 무료배송 최저가 구매하기 가격비교 40 상품 상세정보 의견리뷰 266 소모품[액세서리 뉴스커유니티 연관상품 레노버 12 잔미고히 몇달 사용수 만족도-1 2.33 t F - 벼 S paer T1u  미미_머  프로{하; 한번 집취반 T  LENoVOIDIA TAolPRo 5296 중문데? 레노어 ldea Tan Pro 12 Ynlube Lemoyu TanPio 제조회사 레노버 (제조사 웬사이트 바로가기) 등록년원 2025년 01민 대불릿연결 Wi-Fi 모델명 ZAE4OO7gKR 화면크기 12 7인지 디스끌레이 IPS-LCD 해상도 2944x1840 퍽설 수(ppi) 400ppi 쇠대주사물 144H2 쇠대밝기 40Onits 시스템 8GB 용탕 128GB 저장매체 UFS3.1(나장) 외장메도리 microSD지I원 외장메모리용량 TnicroSD 쇠대ITB 프로세서 디멘시터 8300 코어 개수 8코이 코이클럭 3.35GH2+3.2GH2+2.2GHz",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\레노버 아이디어탭 프로 12.7 (128GB)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\레노버 아이디어탭 프로 12.7 (128GB)\\detail_scan.png",
+        "image_size": 424334,
+        "image_sha256": "bc6a636ef22c965e86a20b3ab661445d207420c97fdfd7cee879c0e70f14c833"
+      }
     }
   }
 }

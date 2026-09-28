@@ -29,11 +29,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=123961377",
       "manufacturer": "샤오미 (Xiaomi),  Xiaomi",
-      "model_name": "SX6"
+      "model_name": "SM70"
     },
     "norm_info": {
       "company_name": "샤오미 (Xiaomi),  Xiaomi",
-      "model_name": "SX6",
+      "model_name": "SM70",
       "product_name": "샤오미 6"
     },
     "db_results": [
@@ -501,14 +501,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "샤오미 (Xiaomi),  Xiaomi",
-    "model_param": "SX6",
+    "model_param": "SM70",
     "ocr_result": {
       "extracted_text": "사오미 6 coupang 989,800원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 집입력 30 OOOPa 센서 카메라 초음파 인식 시사물인식 감지회피 잠애물회피 분터등반 리프팅 Icm 분늑님기 4cm 통과높이 gcm 브러쉬 사이드로봇째러쉬 머리카락켓팀 배티리용람 480OmnAh 소비전력 65W 청소기능 물걸레리프팀 실시간물걸레세칙 스마트포제어 금지구역 급인력조설 예약청소 진공후물걸레 출수랑조설 물걸레 둘러령 물걸레 회전스 220RPM 물걸레청소면적 3OOmz 스테이선",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\샤오미 6\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\샤오미 6\\detail_scan.png",
+        "image_size": 57377,
+        "image_sha256": "7e5b8df0acbde9492bb1cfe804917bf59acc47fa1fa858d01424498ee1744cbe"
+      }
     }
   }
 }

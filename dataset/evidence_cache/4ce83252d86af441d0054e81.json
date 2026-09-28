@@ -25,11 +25,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=19567457",
       "manufacturer": "온니포유, Onnipoyu",
-      "model_name": "온니포유 나인닷 스네이클 AI"
+      "model_name": "ONNI-SNEAK"
     },
     "norm_info": {
       "company_name": "온니포유, Onnipoyu",
-      "model_name": "온니포유 나인닷 스네이클 AI",
+      "model_name": "ONNI-SNEAK",
       "product_name": "온니포유 나인닷 스네이클 AI 리얼리티 라이딩 헬스자전거"
     },
     "db_results": [
@@ -65,14 +65,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "온니포유, Onnipoyu",
-    "model_param": "온니포유 나인닷 스네이클 AI",
+    "model_param": "ONNI-SNEAK",
     "ocr_result": {
       "extracted_text": "온니포유 나인닷 스네이클 Al 리엌리터 라이딩 헬스자전거 현대Hmall 1,237,100원 무료내송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 운동단계 36단계 운동기능 세임어플연봉 계기판 편의기능 이동바퀴 스평조설장치 안장조설 거치대 스마토문 대불릿 최대하숨 10Okg [@ 인종 적합성평가인층 상세설명 판매 사이트 문의 | 인종번호 확인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인 상품 설명 복사하기",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\온니포유 나인닷 스네이클 AI 리얼리티 라이딩 헬스자전거\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\온니포유 나인닷 스네이클 AI 리얼리티 라이딩 헬스자전거\\detail_scan.png",
+        "image_size": 48208,
+        "image_sha256": "568f508ece30faebb1cf6ca80de323d6b5d9b1327f495f544c5c43cd9b8f7b61"
+      }
     }
   }
 }

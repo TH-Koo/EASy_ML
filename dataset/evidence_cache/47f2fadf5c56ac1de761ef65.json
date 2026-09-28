@@ -37,11 +37,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=104320955",
       "manufacturer": "DJI, DJI",
-      "model_name": "Romo P"
+      "model_name": "DJI-ROMO-P"
     },
     "norm_info": {
       "company_name": "DJI, DJI",
-      "model_name": "Romo P",
+      "model_name": "DJI-ROMO-P",
       "product_name": "DJI ROMO P (단품)"
     },
     "db_results": [
@@ -503,35 +503,25 @@
     "iitp_result": null,
     "patent_items_df": [
       {
-        "source_record_id": "1020227030640",
-        "일련번호": "1",
-        "출원번호": "1020227030640",
-        "발명의명칭(한글)": "적응형 네트워크 핸드오버 방법, 시스템 및 저장 매체",
-        "출원일자": "2022-04-26",
-        "출원인": "스테이트 그리드 지앙수 일렉트릭 파워 컴퍼니 리미티드. 리서치 인스티튜트|스테이트 그리드 지앙수 일렉트릭 파워 컴퍼니 리미티드|지앙수 일렉트릭 파워 리서치 인스티튜트 컴퍼니 리미티드|스테이트 그리드 스마트 그리드 리서치 인스티튜트 컴퍼니 리미티드",
-        "등록상태": "거절",
-        "초록": "본 발명은 적응형 네트워크 핸드오버 방법, 시스템 및 저장 매체를 개시하고, 본 발명은 RBF 신경망을 기반으로 기기의 서비스 유형 및 기기의 네트워크 표준을 판단하여 핸드오버에 사용될 심층 Q 네트워크를 결정하고, 현재의 이기종 네트워크 또는 네트워크 액세스 포인트의 환경 상태를 심층 Q 네트워크의 입력으로 하여 최적의 네트워크 및 액세스 포인트를 획득함으로써 종래의 핸드오버 알고리즘의 단일한 핸드오버 기준으로 인한 핸드오버 오류를 방지하고 기기의 핸드오버 횟수를 줄여 보다 합리적으로 핸드오버할 수 있도록 한다.",
-        "IPC": "H04W 36/14|H04W 36/30|H04W 36/00|G06N 3/08",
-        "CPC": "",
-        "relevance_type": "general_ai",
-        "match_confidence": 0.45,
-        "search_alias": "DJI",
-        "search_type": "AI 특허 [일반]",
-        "search_query": "AP=[DJI]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
-        "status": "verified"
+        "title": "AI 특허 내역 없음 None"
       }
     ],
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "DJI, DJI",
-    "model_param": "Romo P",
+    "model_param": "DJI-ROMO-P",
     "ocr_result": {
       "extracted_text": "DJI ROMO P (단품) 효로로물 1,299,000원   무료배승 최저가 구매하기 가격비교 16 상품 상세정보 의견리뷰 25 뉴스커유니티 연관상품 (dyson) 삼성:로보락?드리미? 그게원데  다음에서 보기: Ioulube 제조회사 DJI (제조사 \"사이트 바로가기) 등록년원 2026년 01월 품목 로봇청소기 용도 졸입+물걸레 집입력 25,OOOPa 센서 LDS 카메라 사용시간 3시간(최대) 인식 A사물인식 감지회피",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\DJI ROMO P (단품)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\DJI ROMO P (단품)\\detail_scan.png",
+        "image_size": 332444,
+        "image_sha256": "ac4d92d3724c2064f76904a19bd6e2a4951e820e04af51cd8f3e942beb449e16"
+      }
     }
   }
 }

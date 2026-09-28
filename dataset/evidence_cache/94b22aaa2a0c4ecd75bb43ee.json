@@ -34,11 +34,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=92106638",
       "manufacturer": "ASUS, Asus",
-      "model_name": "UX3407QA-SB284W"
+      "model_name": "UX3407QA"
     },
     "norm_info": {
       "company_name": "ASUS, Asus",
-      "model_name": "UX3407QA-SB284W",
+      "model_name": "UX3407QA",
       "product_name": "ASUS 젠북 A14 UX3407QA-SB284W (리퍼비시)"
     },
     "db_results": [
@@ -500,53 +500,25 @@
     "iitp_result": null,
     "patent_items_df": [
       {
-        "source_record_id": "1020250142585",
-        "일련번호": "1",
-        "출원번호": "1020250142585",
-        "발명의명칭(한글)": "무선 통신 시스템에서 AIML 보조 이동성에 대한 방법 및 장치",
-        "출원일자": "2025-09-30",
-        "출원인": "아서스 테크놀러지 라이센싱 아이엔씨.",
-        "등록상태": "공개",
-        "초록": "무선 통신 시스템에서 인공 지능/기계 학습(artificial intelligence/machine learning; ai/ml) 보조 이동성에 대한 방법들, 시스템들, 및 장치들이 제공되며 여기서 사용자 단말(user equipment; ue)의 방법은, 측정 보고를 트리거하는 단계, 및 셀에 대해 다수의 시간 인스턴스들에서, 측정 보고에 다수의 측정 결과들을 포함시키는 단계 - 다수의 시간 인스턴스들은: (i) 네트워크(network; nw)에 의해 구성된 시간 인스턴스들; 및 (ii) nw에 의해 구성된 시간 윈도우 내의 시간 인스턴스들 중 하나 이상을 포함함 - 를 포함한다.",
-        "IPC": "H04W 36/00|H04W 36/30",
-        "CPC": "",
-        "relevance_type": "general_ai",
-        "match_confidence": 0.45,
-        "search_alias": "ASUS",
-        "search_type": "AI 특허 [일반]",
-        "search_query": "AP=[ASUS]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
-        "status": "verified"
-      },
-      {
-        "source_record_id": "1020250099220",
-        "일련번호": "2",
-        "출원번호": "1020250099220",
-        "발명의명칭(한글)": "무선 통신 시스템에서 AIML 보조 이동성을 위한 방법 및 장치",
-        "출원일자": "2025-07-22",
-        "출원인": "아서스 테크놀러지 라이센싱 아이엔씨.",
-        "등록상태": "공개",
-        "초록": "무선 통신 시스템에서 인공 지능/기계 학습(artificial intelligence/machine learning; ai/ml) 보조 이동성을 위한 방법들, 시스템들, 및 장치들이 제공되며, 여기서 사용자 단말(user equipment; ue)에 대한 방법은, 측정 예측을 위한 ai/ml 기능성의 제1 구성을 수신하는 단계, 및 적어도 측정 예측으로부터의 셀의 품질의 평가에 기초하여 적어도 하나의 액션을 수행하는 단계 - 적어도 하나의 액션은 평가의 결과를 네트워크로 보고하는 것을 포함함 - 를 포함한다.",
-        "IPC": "H04W 36/00|H04W 36/30|G06N 20/00",
-        "CPC": "",
-        "relevance_type": "general_ai",
-        "match_confidence": 0.45,
-        "search_alias": "ASUS",
-        "search_type": "AI 특허 [일반]",
-        "search_query": "AP=[ASUS]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
-        "status": "verified"
+        "title": "AI 특허 내역 없음 None"
       }
     ],
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "ASUS, Asus",
-    "model_param": "UX3407QA-SB284W",
+    "model_param": "UX3407QA",
     "ocr_result": {
       "extracted_text": "ASUS 전북 A14 UX3407QA-SB284W (리퍼비시) coupang 1,291,160원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 12 연관상품 화면 크기 35.56cmn(14인지) 무게 899g 최대사용시간 쇠대 20시간 운영제제 (OS) 원도우11흡 [화면] 화면 비율 1610 해상도 1920x1200(WUXGA) sRGB 10076 주사물 6OHz 밝기 4OOnit 패널 표면 처리 안되글레이 파널 종류 IPS레벌 디스플레이 특징 광시야각 [CPU] CPU 제조사 권럽 CPU 세분류 스년드래곤 X CPU 코드명 오라이온 CPU 넘버 X1-26-100 (3.OGHz) CPU 코이 욕타(8) 코어 NPU 종류 컬럽 핵사곧 NPU 45TOPS [그래픽] GPU 종류 내장그래픽 GPU 제조사 권럽 GPU 침셋 Adreno (1.7 TFLOPS) [구성] 댐 타입 LPDDR5x(온보드) 16GB 댐교제 불가능",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\ASUS 젠북 A14 UX3407QA-SB284W (리퍼비시)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\ASUS 젠북 A14 UX3407QA-SB284W (리퍼비시)\\detail_scan.png",
+        "image_size": 75621,
+        "image_sha256": "33a045ee8b8b6fb5a5e367752ff1712d13f6479e1e5e6a31ac4c85089327d2fa"
+      }
     }
   }
 }

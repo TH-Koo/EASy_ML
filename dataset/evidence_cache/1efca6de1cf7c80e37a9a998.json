@@ -32,11 +32,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=103809164",
       "manufacturer": "레노버, Lenober",
-      "model_name": "G9 R7"
+      "model_name": "R7 AI"
     },
     "norm_info": {
       "company_name": "레노버, Lenober",
-      "model_name": "G9 R7",
+      "model_name": "R7 AI",
       "product_name": "레노버 씽크북 16AHP G9 R7 AI (SSD 2TB)"
     },
     "db_results": [
@@ -504,14 +504,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "레노버, Lenober",
-    "model_param": "G9 R7",
+    "model_param": "R7 AI",
     "ocr_result": {
       "extracted_text": "레노버 생크북 16AHP G9 R7 Al (SSD 2TB) phcnc 1,539,000원  무료배송 최저가 구매하기 가격비교 23 상품 상세정보 의견리뷰 연관상품 무게 17kg 쇠대사용시간 최대 19시간 운영제제(OS) OS미포함(프리도신 판매유형 구성변경상품 [화면] 화면 비율 1610 해상도 1920x1200(WUXGA) 화면 회전각 180도 밝기 400nit 파널 표면 처리 안티글레이 패널 종류 IPS 디스플레이 특징 광시야각 [CPU] CPU 제조사 AMD CPU 세분류 라이젠Z(Zen스) CPU 코드명 호크포인트 CPU 넘버 250 (5.1GHz) CPU 코이 욕타(8) 코이 CPU 스레드 16스레드 NPU 종류 AMD 라이젠 Al NPU 16TOPS [그래픽] GPU 종류 내장그래픽 GPU 제조사 AMD GPU 집셋 Radeon 780M GPU 코어 12 굳이 GPU 클력 27OOMHz [구성] 댐 타입 DDR5 16GB 쓰 슬로 총 2가 램 구심 심글(16G)",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\레노버 씽크북 16AHP G9 R7 AI (SSD 2TB)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\레노버 씽크북 16AHP G9 R7 AI (SSD 2TB)\\detail_scan.png",
+        "image_size": 77904,
+        "image_sha256": "fd77ac339477b2a91acffc50498bd771b164cd45ae4b89ce60b1259162f24bdd"
+      }
     }
   }
 }

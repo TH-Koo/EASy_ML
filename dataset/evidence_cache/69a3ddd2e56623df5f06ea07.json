@@ -33,11 +33,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=108392639",
       "manufacturer": "ASUS, Asus",
-      "model_name": "FA401EA-RG031W"
+      "model_name": "FA401EA"
     },
     "norm_info": {
       "company_name": "ASUS, Asus",
-      "model_name": "FA401EA-RG031W",
+      "model_name": "FA401EA",
       "product_name": "ASUS TUF Gaming A14 FA401EA-RG031W (SSD 1TB)"
     },
     "db_results": [
@@ -499,53 +499,25 @@
     "iitp_result": null,
     "patent_items_df": [
       {
-        "source_record_id": "1020250142585",
-        "일련번호": "1",
-        "출원번호": "1020250142585",
-        "발명의명칭(한글)": "무선 통신 시스템에서 AIML 보조 이동성에 대한 방법 및 장치",
-        "출원일자": "2025-09-30",
-        "출원인": "아서스 테크놀러지 라이센싱 아이엔씨.",
-        "등록상태": "공개",
-        "초록": "무선 통신 시스템에서 인공 지능/기계 학습(artificial intelligence/machine learning; ai/ml) 보조 이동성에 대한 방법들, 시스템들, 및 장치들이 제공되며 여기서 사용자 단말(user equipment; ue)의 방법은, 측정 보고를 트리거하는 단계, 및 셀에 대해 다수의 시간 인스턴스들에서, 측정 보고에 다수의 측정 결과들을 포함시키는 단계 - 다수의 시간 인스턴스들은: (i) 네트워크(network; nw)에 의해 구성된 시간 인스턴스들; 및 (ii) nw에 의해 구성된 시간 윈도우 내의 시간 인스턴스들 중 하나 이상을 포함함 - 를 포함한다.",
-        "IPC": "H04W 36/00|H04W 36/30",
-        "CPC": "",
-        "relevance_type": "general_ai",
-        "match_confidence": 0.45,
-        "search_alias": "ASUS",
-        "search_type": "AI 특허 [일반]",
-        "search_query": "AP=[ASUS]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
-        "status": "verified"
-      },
-      {
-        "source_record_id": "1020250099220",
-        "일련번호": "2",
-        "출원번호": "1020250099220",
-        "발명의명칭(한글)": "무선 통신 시스템에서 AIML 보조 이동성을 위한 방법 및 장치",
-        "출원일자": "2025-07-22",
-        "출원인": "아서스 테크놀러지 라이센싱 아이엔씨.",
-        "등록상태": "공개",
-        "초록": "무선 통신 시스템에서 인공 지능/기계 학습(artificial intelligence/machine learning; ai/ml) 보조 이동성을 위한 방법들, 시스템들, 및 장치들이 제공되며, 여기서 사용자 단말(user equipment; ue)에 대한 방법은, 측정 예측을 위한 ai/ml 기능성의 제1 구성을 수신하는 단계, 및 적어도 측정 예측으로부터의 셀의 품질의 평가에 기초하여 적어도 하나의 액션을 수행하는 단계 - 적어도 하나의 액션은 평가의 결과를 네트워크로 보고하는 것을 포함함 - 를 포함한다.",
-        "IPC": "H04W 36/00|H04W 36/30|G06N 20/00",
-        "CPC": "",
-        "relevance_type": "general_ai",
-        "match_confidence": 0.45,
-        "search_alias": "ASUS",
-        "search_type": "AI 특허 [일반]",
-        "search_query": "AP=[ASUS]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
-        "status": "verified"
+        "title": "AI 특허 내역 없음 None"
       }
     ],
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "ASUS, Asus",
-    "model_param": "FA401EA-RG031W",
+    "model_param": "FA401EA",
     "ocr_result": {
       "extracted_text": "ASUS TUF Gaming A14 FA4O1EA-RGO31W (SSD ITB) coupang 3,519,000원 무료배승 최저가 구매하기 가격비교 12 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 무게 1.48kg 운명제제(OS) 원도우11움 판매유형 제조사기본상품 [화면] 화면 비율 1610 해상도 2560x1600(WQXGA) sRGB 10096 '화면 회전각 180도 주사물 165Hz 밝기 4OOnit 파널 표면 처리 안티글레이 [CPU] CPU 제조사 AMD CPU 세분류 라이젠A Max+ CPU 코드명 스트리스 헤일로 CPU 넘버 392 (5.0GHz) CPU 코이 12코이 CPU 스레드 24스레드 NPU 종류 AMD 라이젠 Al NPU 5OTOPS [그래픽] GPU 종류 내장그래픽 GPU 제조사 AMD GPU 침셋 Radeon 8060s GPU 코어 407이 GPU 클력 290OMHz [구성] 램 타입 LPDDR5x(온보드 32GB 캠 대역쪽 8OOOMHz 램 교체 불가능 [저장장치]",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\ASUS TUF Gaming A14 FA401EA-RG031W (SSD 1TB)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\ASUS TUF Gaming A14 FA401EA-RG031W (SSD 1TB)\\detail_scan.png",
+        "image_size": 78953,
+        "image_sha256": "ebf405f98e8b794a16591b07135da6c95cfb91d52dbc632f4d7f6453bed5b0e7"
+      }
     }
   }
 }

@@ -96,7 +96,12 @@
       "cache_hit": false,
       "cache_path": "product_images\\쿠쿠전자 파워클론 AI CRVC-BFFAC0530NW\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\쿠쿠전자 파워클론 AI CRVC-BFFAC0530NW\\detail_scan.png",
+        "image_size": 57141,
+        "image_sha256": "46ea641ea638e77cb8f398130dbe85e36f3d59f001a15a96956a9dd09e936ba0"
+      }
     }
   }
 }

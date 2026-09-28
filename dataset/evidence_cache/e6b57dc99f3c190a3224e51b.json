@@ -44,22 +44,7 @@
     "iitp_result": null,
     "patent_items_df": [
       {
-        "source_record_id": "1020230054058",
-        "일련번호": "1",
-        "출원번호": "1020230054058",
-        "발명의명칭(한글)": "AI 카메라 기반 HPE 데이터 처리 엣지 디바이스를 포함하는 시스템",
-        "출원일자": "2023-04-25",
-        "출원인": "주식회사 에이앤씨랩|주식회사 제이경제미디어그룹|김진해",
-        "등록상태": "등록",
-        "초록": "본 발명은 영상정보를 획득하는 촬영부; 상기 영상정보로부터 사람의 관절 좌표 정보를 추출하는 추출부; 및 상기 관절 좌표 정보를 서버로 전송하는 통신부를 포함하는 AI 카메라 기반 HPE 데이터 처리 엣지 디바이스와, 상기 AI 카메라 기반 HPE 데이터 처리 엣지 디바이스와 전기적으로 연결되는 서버를 포함하는, AI 카메라 기반 HPE 데이터 처리 엣지 디바이스를 포함하는 시스템에 관한 것이다.",
-        "IPC": "G06V 10/34|G06V 40/20|G06V 10/774|G08B 21/04|H04L 67/10",
-        "CPC": "",
-        "relevance_type": "general_ai",
-        "match_confidence": 0.45,
-        "search_alias": "MY MEDIA",
-        "search_type": "AI 특허 [일반]",
-        "search_query": "AP=[MY MEDIA]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
-        "status": "verified"
+        "title": "AI 특허 내역 없음 None"
       }
     ],
     "cert_results": [],
@@ -72,7 +57,12 @@
       "cache_hit": false,
       "cache_path": "product_images\\마이디어 V15 Ultra (블랙)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\마이디어 V15 Ultra (블랙)\\detail_scan.png",
+        "image_size": 56472,
+        "image_sha256": "658f45d52dd3bf248d73a26e560538d9e96ff201a1af7c5a5081d105fcf02a7d"
+      }
     }
   }
 }

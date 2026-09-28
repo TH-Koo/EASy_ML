@@ -6,7 +6,7 @@
       "title": "삼성전자 갤럭시 점프3 128GB, 공기계 (상급,중고)",
       "name": "삼성전자 갤럭시 점프3 128GB, 공기계 (상급,중고)",
       "description": "",
-      "ocr_text": "삼성전자 길력시 점프3 128GB, 공기계 (상급 중고) 프유즈 116,150원   무료배승 최저가 구매하기 가격비교 66 상품 상세정보 의견리뷰 174 뉴스커유니티 연관상품 판매방식 리때숨고가개통 중고 유형 S구 통신사 olleh 유신국가별상이) 나노유심 메인화면정보 화면 16.8cm(6 6인지) 패널송류 PLS-LCD 화면해상도 2408x1080 화면종류 풀HD 퍽설 수(ppi) 399ppi 쇠대주사물 12OHz 화면비 20.9 램용량 GB 용량 128GB 외장메모리 TnicroSD 쇠대ITB 프로세서 스냄드래근888 공정 5nm 군이 개수 8굳이 코이름력 2.84GH2+2.42GHz+1.8GHz GPU Adreno 660 벤치마크 AP CPU 49점 AP 게이팅 42점 AP GPU게인) 5824 Al NPU 컬러 핵사곧 네트위크 Wi-Fi버전 Wi-Fi 5 불무투스 불무투스v5.2 통신 연결 Wi-Fi다이a트 GPS",
+      "ocr_text": "삼성전자 길력시 점프3 128GB, 공기계 (상급 중고) 포유즈   109,650원   무료배송 최저가 구매하기 가격비교 66 상품 상세정보 의견리뷰 174 뉴스커유니티 연관상품 판매방식 리때숨고가개통 중고 유형 S구 통신사 olleh 유신국가별상이) 나노유심 메인화면정보 화면 16.8cm(6 6인지) 패널송류 PLS-LCD 화면해상도 2408x1080 화면종류 풀HD 퍽설 수(ppi) 399ppi 쇠대주사물 12OHz 화면비 20.9 램용량 GB 용량 128GB 외장메모리 TnicroSD 쇠대ITB 프로세서 스냄드래근888 공정 5nm 군이 개수 8굳이 코이름력 2.84GH2+2.42GHz+1.8GHz GPU Adreno 660 벤치마크 AP CPU 49점 AP 게이팅 42점 AP GPU게인) 5824 Al NPU 컬러 핵사곧 네트위크 Wi-Fi버전 Wi-Fi 5 불무투스 불무투스v5.2 통신 연결 Wi-Fi다이a트 GPS",
       "specs": {
         "스마트폰": "지원",
         "화면": "16.8cm(6.6인치)",
@@ -30,40 +30,22 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=75541439",
       "manufacturer": "삼성전자",
-      "model_name": "G870"
+      "model_name": "G800B"
     },
     "norm_info": {
       "company_name": "삼성전자",
-      "model_name": "G870",
+      "model_name": "G800B",
       "product_name": "삼성전자 갤럭시 점프3 128GB, 공기계 (상급,중고)"
     },
     "db_results": [
       {
         "company_name": "삼성전자(주)",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
-        "model_name": "SM-G870F0",
-        "country": "한국",
-        "cert_date": "2016-03-22",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "SM-X205N",
+        "country": "중국",
+        "cert_date": "2021-12-10",
         "cert_status": "적합인증",
-        "cert_no": "MSIP-CMM-SEC-SMG870F0"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "RS-9",
-        "country": "인도네시아",
-        "cert_date": "2021-12-09",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-SEC-RS-9"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "SMT-A61WFB",
-        "country": "한국",
-        "cert_date": "2021-09-07",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-SMT-A61WFB"
+        "cert_no": "R-C-SEC-SMX205N"
       },
       {
         "company_name": "삼성전자(주)",
@@ -302,11 +284,29 @@
       {
         "company_name": "삼성전자(주)",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "BOOMBOX 2",
-        "country": "중국",
-        "cert_date": "2020-01-10",
+        "model_name": "RS-9",
+        "country": "인도네시아",
+        "cert_date": "2021-12-09",
         "cert_status": "적합등록",
-        "cert_no": "R-R-SEC-BOOMBOX2"
+        "cert_no": "R-R-SEC-RS-9"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "SM-F700N",
+        "country": "한국",
+        "cert_date": "2020-01-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMF700"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(기지국의 송수신 장치 및 중계장치)",
+        "model_name": "SF2201d-D1A",
+        "country": "한국",
+        "cert_date": "2020-02-05",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SF2201dD1A"
       },
       {
         "company_name": "삼성전자(주)",
@@ -418,12 +418,21 @@
       },
       {
         "company_name": "삼성전자(주)",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
-        "model_name": "SM-F700N",
+        "equip_name": "쿡센서",
+        "model_name": "NZ63B1322EK",
         "country": "한국",
-        "cert_date": "2020-01-10",
+        "cert_date": "2021-12-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-NZ8500BM-S"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(기지국의 송수신장치 및 중계장치)",
+        "model_name": "MT3230-78A",
+        "country": "한국",
+        "cert_date": "2021-12-13",
         "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-SMF700"
+        "cert_no": "R-C-SEC-MT323078A"
       },
       {
         "company_name": "삼성전자(주)",
@@ -437,11 +446,11 @@
       {
         "company_name": "삼성전자(주)",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "RMCSPB1SP1",
-        "country": "한국",
-        "cert_date": "2021-12-22",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-RMCSPB1SP1"
+        "model_name": "QUANTUM610",
+        "country": "중국",
+        "cert_date": "2021-12-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-Q610"
       },
       {
         "company_name": "삼성전자(주)",
@@ -455,11 +464,11 @@
       {
         "company_name": "삼성전자(주)",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "QUANTUM610",
-        "country": "중국",
-        "cert_date": "2021-12-21",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-SEC-Q610"
+        "model_name": "RMCSPB1SP1",
+        "country": "한국",
+        "cert_date": "2021-12-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-RMCSPB1SP1"
       },
       {
         "company_name": "삼성전자(주)",
@@ -472,21 +481,12 @@
       },
       {
         "company_name": "삼성전자(주)",
-        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(기지국의 송수신장치 및 중계장치)",
-        "model_name": "MT3230-78A",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "WCT732M",
         "country": "한국",
-        "cert_date": "2021-12-13",
+        "cert_date": "2020-01-06",
         "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-MT323078A"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
-        "model_name": "SM-X205N",
-        "country": "중국",
-        "cert_date": "2021-12-10",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-SMX205N"
+        "cert_no": "R-C-SEC-WCT732M"
       }
     ],
     "jodale_result": null,
@@ -598,9 +598,9 @@
       "detail": "DART 분석 결과 [삼성전자] 실적 총 1건 확인."
     },
     "target_company_name": "삼성전자",
-    "model_param": "G870",
+    "model_param": "G800B",
     "ocr_result": {
-      "extracted_text": "삼성전자 길력시 점프3 128GB, 공기계 (상급 중고) 프유즈 116,150원   무료배승 최저가 구매하기 가격비교 66 상품 상세정보 의견리뷰 174 뉴스커유니티 연관상품 판매방식 리때숨고가개통 중고 유형 S구 통신사 olleh 유신국가별상이) 나노유심 메인화면정보 화면 16.8cm(6 6인지) 패널송류 PLS-LCD 화면해상도 2408x1080 화면종류 풀HD 퍽설 수(ppi) 399ppi 쇠대주사물 12OHz 화면비 20.9 램용량 GB 용량 128GB 외장메모리 TnicroSD 쇠대ITB 프로세서 스냄드래근888 공정 5nm 군이 개수 8굳이 코이름력 2.84GH2+2.42GHz+1.8GHz GPU Adreno 660 벤치마크 AP CPU 49점 AP 게이팅 42점 AP GPU게인) 5824 Al NPU 컬러 핵사곧 네트위크 Wi-Fi버전 Wi-Fi 5 불무투스 불무투스v5.2 통신 연결 Wi-Fi다이a트 GPS",
+      "extracted_text": "삼성전자 길력시 점프3 128GB, 공기계 (상급 중고) 포유즈   109,650원   무료배송 최저가 구매하기 가격비교 66 상품 상세정보 의견리뷰 174 뉴스커유니티 연관상품 판매방식 리때숨고가개통 중고 유형 S구 통신사 olleh 유신국가별상이) 나노유심 메인화면정보 화면 16.8cm(6 6인지) 패널송류 PLS-LCD 화면해상도 2408x1080 화면종류 풀HD 퍽설 수(ppi) 399ppi 쇠대주사물 12OHz 화면비 20.9 램용량 GB 용량 128GB 외장메모리 TnicroSD 쇠대ITB 프로세서 스냄드래근888 공정 5nm 군이 개수 8굳이 코이름력 2.84GH2+2.42GHz+1.8GHz GPU Adreno 660 벤치마크 AP CPU 49점 AP 게이팅 42점 AP GPU게인) 5824 Al NPU 컬러 핵사곧 네트위크 Wi-Fi버전 Wi-Fi 5 불무투스 불무투스v5.2 통신 연결 Wi-Fi다이a트 GPS",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\삼성전자 갤럭시 점프3 128GB, 공기계 (상급,중고)\\detail_scan.ocr_cache.json",

@@ -6,7 +6,7 @@
       "title": "레노버 아이디어센터 AIO 24ILL11 F0JY001HKR (16GB, M.2 512GB)",
       "name": "레노버 아이디어센터 AIO 24ILL11 F0JY001HKR (16GB, M.2 512GB)",
       "description": "",
-      "ocr_text": "레노버 아이디어센터 AlO 24ILL11 FOJYOOIHKR (16GB, M.2 512GB) phcnc 1,590,000원 무료배송 최저가 구매하기 가격비교 34 상품 상세정보 의견리뷰 연관상품 운영체제 원도우17 파위 출력 90W CPU 제조사 인텔 CPU 시리즈 군어울트과 시리즈2 CPU 종류 코이 울드다7-2세대 CPU 코드명 루나레이크 군이 개수 욕타(8) 코이 NPU 종류 인텔 Al Boost NPU TOPS 47TOPS 메모리 메모리 타입 LPDDR5X 메모리 용량 16GB 저장장치 SSD 형대 M.2 SSD 용량 512GB 그래픽 제조사 INTEL 그래픽 종류 내잠 그래픽 디스플레이 화면크기 60.5cm(23.8인치) 해상도 1920x1080 디스플레이 특징 눈부신방지 광시야각 사운드 출력 사운드 지원 소피커 내장험 네트위크 802.11ax(Wi-Fi 6) 무선 IGbps 유선 불루투스",
+      "ocr_text": "레노버 아이디어센터 AlO 24ILL11 FOJYOOIHKR (16GB, M.2 512GB) phcnc 1,590,000원 무료배송 최저가 구매하기 가격비교 33 상품 상세정보 의견리뷰 연관상품 운영체제 원도우17 파위 출력 90W CPU 제조사 인텔 CPU 시리즈 군어울트과 시리즈2 CPU 종류 코이 울드다7-2세대 CPU 코드명 루나레이크 군이 개수 욕타(8) 코이 NPU 종류 인텔 Al Boost NPU TOPS 47TOPS 메모리 메모리 타입 LPDDR5X 메모리 용량 16GB 저장장치 SSD 형대 M.2 SSD 용량 512GB 그래픽 제조사 INTEL 그래픽 종류 내잠 그래픽 디스플레이 화면크기 60.5cm(23.8인치) 해상도 1920x1080 디스플레이 특징 눈부신방지 광시야각 사운드 출력 사운드 지원 소피커 내장험 네트위크 802.11ax(Wi-Fi 6) 무선 IGbps 유선 불루투스",
       "specs": {
         "256V": "지원",
         "Arc 140V": "지원",
@@ -44,49 +44,76 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=122711102",
       "manufacturer": "레노버, Lenober",
-      "model_name": "F0JY001HKR"
+      "model_name": "AIO 24ILL11 F0JY001HKR"
     },
     "norm_info": {
       "company_name": "레노버, Lenober",
-      "model_name": "F0JY001HKR",
+      "model_name": "AIO 24ILL11 F0JY001HKR",
       "product_name": "레노버 아이디어센터 AIO 24ILL11 F0JY001HKR (16GB, M.2 512GB)"
     },
     "db_results": [
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "TP00139A",
+        "equip_name": "퍼스널컴퓨터",
+        "model_name": "IdeaCentre AIO 27IPH11",
         "country": "중국",
-        "cert_date": "2022-10-06",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TP00139A"
+        "cert_date": "2026-02-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-ICAIO-F0JH"
       },
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
-        "model_name": "Lenovo TB-J706F",
+        "equip_name": "퍼스널 컴퓨터",
+        "model_name": "IdeaCentre AIO 27ILL11",
         "country": "중국",
-        "cert_date": "2020-08-26",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB-J706F"
+        "cert_date": "2026-03-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-IC-F0JV"
       },
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "L06E",
+        "equip_name": "퍼스널 컴퓨터",
+        "model_name": "IdeaCentre AIO 24ILL11",
         "country": "중국",
-        "cert_date": "2020-07-16",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-L06E"
+        "cert_date": "2026-03-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-IC-F0JX"
       },
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "L06D",
+        "equip_name": "퍼스널 컴퓨터",
+        "model_name": "IdeaCentre AIO 27AKP10",
         "country": "중국",
-        "cert_date": "2020-07-16",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-L06D"
+        "cert_date": "2025-05-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-AIO-F0JE"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "모니터 일체형 데스크탑 컴퓨터",
+        "model_name": "IdeaCentre AIO 24AKP10",
+        "country": "중국",
+        "cert_date": "2025-10-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-AIO-F0JB"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "퍼스널컴퓨터",
+        "model_name": "IdeaCentre AIO 24IRH9",
+        "country": "중국",
+        "cert_date": "2024-01-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-ICAIO3-F0HN"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "퍼스널 컴퓨터",
+        "model_name": "IdeaCentre AIO 24ARR9",
+        "country": "중국",
+        "cert_date": "2024-01-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-AIO3-F0HR"
       },
       {
         "company_name": "한국레노버 유한회사",
@@ -96,6 +123,15 @@
         "cert_date": "2020-06-25",
         "cert_status": "적합인증",
         "cert_no": "R-C-LVK-TB-X306F"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "L06D",
+        "country": "중국",
+        "cert_date": "2020-07-16",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LVK-L06D"
       },
       {
         "company_name": "한국레노버 유한회사",
@@ -298,6 +334,15 @@
       {
         "company_name": "한국레노버 유한회사",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TP00139A",
+        "country": "중국",
+        "cert_date": "2022-10-06",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LVK-TP00139A"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
         "model_name": "Lenovo C1610",
         "country": "중국",
         "cert_date": "2023-05-11",
@@ -415,56 +460,11 @@
       {
         "company_name": "한국레노버 유한회사",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "TB330FU",
-        "country": "중국",
-        "cert_date": "2023-11-10",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB330FU"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5925∼7125㎒ 주파수 대역))",
-        "model_name": "TB350FU",
-        "country": "중국",
-        "cert_date": "2022-09-27",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB350FU"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "TB128FU",
-        "country": "중국",
-        "cert_date": "2022-06-03",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB128FU"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
-        "model_name": "TB128XU",
-        "country": "중국",
-        "cert_date": "2022-05-31",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB128XU"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
         "model_name": "TB125FU",
         "country": "중국",
         "cert_date": "2022-03-02",
         "cert_status": "적합인증",
         "cert_no": "R-C-LVK-TB125FU"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "TB328FU",
-        "country": "중국",
-        "cert_date": "2022-02-23",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB328FU"
       },
       {
         "company_name": "한국레노버 유한회사",
@@ -478,29 +478,29 @@
       {
         "company_name": "한국레노버 유한회사",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "TB370FU",
+        "model_name": "TB328FU",
         "country": "중국",
-        "cert_date": "2023-06-22",
+        "cert_date": "2022-02-23",
         "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB370FU"
+        "cert_no": "R-C-LVK-TB328FU"
       },
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5925∼7125㎒ 주파수 대역))",
-        "model_name": "Lenovo VRX 6060",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TB330FU",
         "country": "중국",
-        "cert_date": "2023-05-16",
+        "cert_date": "2023-11-10",
         "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-VRX6060"
+        "cert_no": "R-C-LVK-TB330FU"
       },
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
-        "model_name": "TB360ZU",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "TB128XU",
         "country": "중국",
-        "cert_date": "2023-06-07",
+        "cert_date": "2022-05-31",
         "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB360ZU"
+        "cert_no": "R-C-LVK-TB128XU"
       }
     ],
     "jodale_result": null,
@@ -516,9 +516,9 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "레노버, Lenober",
-    "model_param": "F0JY001HKR",
+    "model_param": "AIO 24ILL11 F0JY001HKR",
     "ocr_result": {
-      "extracted_text": "레노버 아이디어센터 AlO 24ILL11 FOJYOOIHKR (16GB, M.2 512GB) phcnc 1,590,000원 무료배송 최저가 구매하기 가격비교 34 상품 상세정보 의견리뷰 연관상품 운영체제 원도우17 파위 출력 90W CPU 제조사 인텔 CPU 시리즈 군어울트과 시리즈2 CPU 종류 코이 울드다7-2세대 CPU 코드명 루나레이크 군이 개수 욕타(8) 코이 NPU 종류 인텔 Al Boost NPU TOPS 47TOPS 메모리 메모리 타입 LPDDR5X 메모리 용량 16GB 저장장치 SSD 형대 M.2 SSD 용량 512GB 그래픽 제조사 INTEL 그래픽 종류 내잠 그래픽 디스플레이 화면크기 60.5cm(23.8인치) 해상도 1920x1080 디스플레이 특징 눈부신방지 광시야각 사운드 출력 사운드 지원 소피커 내장험 네트위크 802.11ax(Wi-Fi 6) 무선 IGbps 유선 불루투스",
+      "extracted_text": "레노버 아이디어센터 AlO 24ILL11 FOJYOOIHKR (16GB, M.2 512GB) phcnc 1,590,000원 무료배송 최저가 구매하기 가격비교 33 상품 상세정보 의견리뷰 연관상품 운영체제 원도우17 파위 출력 90W CPU 제조사 인텔 CPU 시리즈 군어울트과 시리즈2 CPU 종류 코이 울드다7-2세대 CPU 코드명 루나레이크 군이 개수 욕타(8) 코이 NPU 종류 인텔 Al Boost NPU TOPS 47TOPS 메모리 메모리 타입 LPDDR5X 메모리 용량 16GB 저장장치 SSD 형대 M.2 SSD 용량 512GB 그래픽 제조사 INTEL 그래픽 종류 내잠 그래픽 디스플레이 화면크기 60.5cm(23.8인치) 해상도 1920x1080 디스플레이 특징 눈부신방지 광시야각 사운드 출력 사운드 지원 소피커 내장험 네트위크 802.11ax(Wi-Fi 6) 무선 IGbps 유선 불루투스",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\레노버 아이디어센터 AIO 24ILL11 F0JY001HKR (16GB, M.2 512GB)\\detail_scan.ocr_cache.json",

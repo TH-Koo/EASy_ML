@@ -1,0 +1,530 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=122725710",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "DELL CEC27260-WP07KR (16GB, M.2 1TB)",
+      "name": "DELL CEC27260-WP07KR (16GB, M.2 1TB)",
+      "description": "",
+      "ocr_text": "DELL CEC27260-WPOZKR (I6GB, M.2 ITB) coupang 2,658,760원  무료배송 최저가 구매하기 가격비교 18 상품 상세정보 의견리뷰 연관상품 운영체제 원도우11 프로 파위 출력 130W CPU 제조사 인텔 CPU 시리즈 군어울트과 시리즈3 CPU 종류 코이 울드다7-2세대 CPU 코드명 팬서레이크 군이 개수 욕타(8) 코이 NPU 종류 인텔 Al Boost NPU TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M.2 SSD 용량 1TB 그래픽 제조사 INTEL 그래픽 종류 내잠 그래픽 디스플레이 화면크기 68cm(27인치) 해상도 1920x1080 디스플레이 특징 눈부신방지 광시야각 사운드 출력 사운드 지원 소피커 내장험 네트위크 1Gbps 유선 802.11be(Wi-Fi7) 무선 불무투스",
+      "specs": {
+        "355": "지원",
+        "인텔 그래픽스": "지원",
+        "윈도우11 프로": "지원",
+        "130W": "지원",
+        "인텔": "지원",
+        "코어울트라 시리즈3": "지원",
+        "코어 울트라7": "지원",
+        "팬서레이크": "지원",
+        "인텔 AI Boost": "지원",
+        "49": "지원",
+        "DDR5": "지원",
+        "16GB": "지원",
+        "M.2": "지원",
+        "1TB": "지원",
+        "INTEL": "지원",
+        "화면크기": "68cm(27인치)",
+        "1920x1080": "지원",
+        "눈부심방지": "지원",
+        "광시야각": "지원",
+        "스피커 내장형": "지원",
+        "1Gbps 유선": "지원",
+        "802.11be(Wi-Fi 7) 무선": "지원",
+        "블루투스": "지원",
+        "HDMI": "지원",
+        "USB3.x 10Gbps": "지원",
+        "USB C타입 10Gbps": "지원",
+        "웹캠": "지원",
+        "마이크 내장": "지원",
+        "DC": "지원",
+        "일체형": "지원",
+        "용도": "사무/인강용",
+        "구성변경상품": "지원"
+      },
+      "raw_specs": "355 / 인텔 그래픽스 / 윈도우11 프로 / 130W / 인텔 / 코어울트라 시리즈3 / 코어 울트라7 / 팬서레이크 / 인텔 AI Boost / 49 / DDR5 / 16GB / M.2 / 1TB / INTEL / 화면크기 : 68cm(27인치) / 1920x1080 / 눈부심방지 / 광시야각 / 스피커 내장형 / 1Gbps 유선 / 802.11be(Wi-Fi 7) 무선 / 블루투스 / HDMI / USB3.x 10Gbps / USB C타입 10Gbps / 웹캠 / 마이크 내장 / DC / 일체형 / 용도 : 사무/인강용 / 구성변경상품",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=122725710",
+      "manufacturer": "DELL, Inc.",
+      "model_name": "CEC27260"
+    },
+    "norm_info": {
+      "company_name": "DELL, Inc.",
+      "model_name": "CEC27260",
+      "product_name": "DELL CEC27260-WP07KR (16GB, M.2 1TB)"
+    },
+    "db_results": [
+      {
+        "company_name": "COMPAL ELECTRONICS, INC.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(기타)",
+        "model_name": "RMM-G1",
+        "country": "베트남",
+        "cert_date": "2024-07-04",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-CEI-RMM-G1"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0116",
+        "country": "중국",
+        "cert_date": "2024-11-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0116"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0117",
+        "country": "중국",
+        "cert_date": "2024-11-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0117"
+      },
+      {
+        "company_name": "EXTREME NETWORKS, INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5925∼7125㎒ 주파수 대역))",
+        "model_name": "AP5020",
+        "country": "대만",
+        "cert_date": "2024-11-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-EXR-AP5020"
+      },
+      {
+        "company_name": "APPLE INC.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "A2995",
+        "country": "중국",
+        "cert_date": "2024-11-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-APA-A2995"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "Main Board",
+        "model_name": "NUC14MNB",
+        "country": "중국",
+        "cert_date": "2024-11-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MSQ-NUC14MNB"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5925∼7125㎒ 주파수 대역))",
+        "model_name": "RT-BE92U",
+        "country": "베트남",
+        "cert_date": "2024-11-05",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-RT-BE92U"
+      },
+      {
+        "company_name": "Ecoflow Inc.",
+        "equip_name": "Wi-Fi & Bluetooth Internet of Things Module",
+        "model_name": "ESP32-C6-MINI-1",
+        "country": "중국",
+        "cert_date": "2024-11-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ecF-ESPC6MINI1"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5925∼7125㎒ 주파수 대역))",
+        "model_name": "GT-BE98",
+        "country": "베트남",
+        "cert_date": "2024-11-01",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-GT-BE98"
+      },
+      {
+        "company_name": "주식회사 래너코리아(Lanner Korea Inc.)",
+        "equip_name": "AhnLab AIPS",
+        "model_name": "AhnLab AIPS 20000C",
+        "country": "한국",
+        "cert_date": "2024-10-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-RS-lK2-AIPS20000C"
+      },
+      {
+        "company_name": "SUPER MICRO COMPUTER. INC.",
+        "equip_name": "Trackman Entertainment Server 9102021",
+        "model_name": "SYS-110P-WTR-TRM",
+        "country": "미국",
+        "cert_date": "2024-10-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-S2M-110P-WTR-T"
+      },
+      {
+        "company_name": "DELTA ELECTRONICS, INC.",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "61905B30094",
+        "country": "대만",
+        "cert_date": "2024-10-28",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-DVP-61905B30094"
+      },
+      {
+        "company_name": "주식회사 와츠매터(What's Matter Inc.)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "UAM023",
+        "country": "중국",
+        "cert_date": "2024-10-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-WMi-UAM023"
+      },
+      {
+        "company_name": "Axon Enterprise, Inc.",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "AX1038",
+        "country": "미국",
+        "cert_date": "2024-10-21",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-CEW-AX1038"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "A501Dongle",
+        "country": "중국",
+        "cert_date": "2024-10-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-A501DG"
+      },
+      {
+        "company_name": "주식회사 소프틀리(softly Inc.)",
+        "equip_name": "포스젯 맥스 무선 에어건",
+        "model_name": "FJET-MAX-001",
+        "country": "중국",
+        "cert_date": "2024-10-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FJ9-FJET_MAX_437"
+      },
+      {
+        "company_name": "주식회사 보아스헬스 (Boaz Health Inc.)",
+        "equip_name": "스마트보아스(Smart Boaz)",
+        "model_name": "SBP",
+        "country": "한국",
+        "cert_date": "2024-10-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Bh4-SBP"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "A501",
+        "country": "중국",
+        "cert_date": "2024-10-02",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-A501"
+      },
+      {
+        "company_name": "DELL INC.",
+        "equip_name": "RFID용 무선기기 (13.56㎒ 주파수 대역)",
+        "model_name": "P148G",
+        "country": "중국",
+        "cert_date": "2024-09-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-E2K-P148G002"
+      },
+      {
+        "company_name": "주식회사 소프틀리(softly Inc.)",
+        "equip_name": "포스젯 제로 차량용 무선 핸디 청소기 에어건",
+        "model_name": "FJET-ZERO-001",
+        "country": "중국",
+        "cert_date": "2024-09-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FJ9-FJET-ZERO-001"
+      },
+      {
+        "company_name": "Powertech Automation Inc.",
+        "equip_name": "특정소출력 무선기기(데이터전송용 무선기기)",
+        "model_name": "PR4",
+        "country": "대만",
+        "cert_date": "2024-09-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-PaI-PR4"
+      },
+      {
+        "company_name": "DELL INC.",
+        "equip_name": "RFID용 무선기기 (13.56㎒ 주파수 대역)",
+        "model_name": "P149G",
+        "country": "중국",
+        "cert_date": "2024-09-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-E2K-P149G002"
+      },
+      {
+        "company_name": "ThingsX Inc.",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(기타)",
+        "model_name": "TX520-GL",
+        "country": "중국",
+        "cert_date": "2024-09-20",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-TsX-TX520-GL"
+      },
+      {
+        "company_name": "에스디아이코리아(SDI Korea Inc.)",
+        "equip_name": "오픈형 블루투스 이어폰",
+        "model_name": "LiteEar1004",
+        "country": "중국",
+        "cert_date": "2024-09-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-RS-SDIK-LiteEar1004"
+      },
+      {
+        "company_name": "주식회사 피디에스코리아(PDS KOREA INC.)",
+        "equip_name": "온습도센서",
+        "model_name": "EnviAirI Gateway",
+        "country": "벨기에",
+        "cert_date": "2024-09-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-rp0-EAIG"
+      },
+      {
+        "company_name": "주식회사 피디에스코리아(PDS KOREA INC.)",
+        "equip_name": "온습도센서",
+        "model_name": "EnviAirI DTHUM",
+        "country": "벨기에",
+        "cert_date": "2024-09-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-rp0-EAIDTH"
+      },
+      {
+        "company_name": "주식회사 피디에스코리아(PDS KOREA INC.)",
+        "equip_name": "온습도센서",
+        "model_name": "EnviAirI Daisy Starter",
+        "country": "벨기에",
+        "cert_date": "2024-09-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-rp0-EAIDS"
+      },
+      {
+        "company_name": "주식회사 올더타임(ALL THE TIME Inc.)",
+        "equip_name": "방범장치 겸용 저전력 블루투스 스마트트래커",
+        "model_name": "더 가이드 (THE GUIDE)",
+        "country": "한국",
+        "cert_date": "2024-09-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-z1d-THEGUIDE"
+      },
+      {
+        "company_name": "APPLE INC.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "A3290",
+        "country": "중국",
+        "cert_date": "2024-09-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-APA-A3290"
+      },
+      {
+        "company_name": "APPLE INC.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "A3287",
+        "country": "중국",
+        "cert_date": "2024-09-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-APA-A3287"
+      },
+      {
+        "company_name": "APPLE INC.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "A3293",
+        "country": "중국",
+        "cert_date": "2024-09-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-APA-A3293"
+      },
+      {
+        "company_name": "APPLE INC.",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "A3003",
+        "country": "중국",
+        "cert_date": "2024-09-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-APA-A3003"
+      },
+      {
+        "company_name": "APPLE INC.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "A3296",
+        "country": "중국",
+        "cert_date": "2024-09-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-APA-A3296"
+      },
+      {
+        "company_name": "APPLE INC.",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "A3001",
+        "country": "중국",
+        "cert_date": "2024-09-09",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-APA-A3001"
+      },
+      {
+        "company_name": "Celona, Inc.",
+        "equip_name": "5G 이동통신용(일정한 구역(건물 등) 내에서만 무선국을 구축·운영하는 경우) 무선설비의 기기(4.7 ㎓ 대역)(기지국의 송수신장치 및 중계장치)",
+        "model_name": "AP21-79",
+        "country": "대만",
+        "cert_date": "2024-09-03",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-clN-AP21-79"
+      },
+      {
+        "company_name": "Lenovo Global Technology (United States) Inc.",
+        "equip_name": "ThinkSystem M.2 RAID B545i-2i SATA/NVMe Enablement Kit",
+        "model_name": "4Y37A93746",
+        "country": "중국",
+        "cert_date": "2024-08-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LNU-ADP-4Y37A93746"
+      },
+      {
+        "company_name": "Lenovo Global Technology (United States) Inc.",
+        "equip_name": "ThinkSystem M.2 RAID B540p-2HS SATA/NVMe Enablement Kit",
+        "model_name": "4Y37A90064",
+        "country": "중국",
+        "cert_date": "2024-08-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LNU-ADP-4Y37A90064"
+      },
+      {
+        "company_name": "SHIMANO INC.",
+        "equip_name": "Rear Derailleur",
+        "model_name": "3K71",
+        "country": "일본",
+        "cert_date": "2024-08-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-WY7-82"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "YR0105",
+        "country": "중국",
+        "cert_date": "2024-08-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-YR0105"
+      },
+      {
+        "company_name": "PATRIOT MEMORY INC.",
+        "equip_name": "Patriot P400 Lite PCIe M.2 Gen 4x4 SSD",
+        "model_name": "P400LP4KGM28H",
+        "country": "대만",
+        "cert_date": "2024-08-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-3PM-P400L"
+      },
+      {
+        "company_name": "Xreal Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "X4000",
+        "country": "중국",
+        "cert_date": "2024-07-25",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-Xre-X4000"
+      },
+      {
+        "company_name": "Intuitive Surgical, Inc.",
+        "equip_name": "Surgeon Console Wireless Charger and RFID/USN용 무선기기(13.56MHz 대역사용기기)",
+        "model_name": "SCWCX01",
+        "country": "미국",
+        "cert_date": "2024-07-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-1SR-SCWCX01"
+      },
+      {
+        "company_name": "NETPRISMA INC.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(기타)",
+        "model_name": "FCUN69-WWD",
+        "country": "중국",
+        "cert_date": "2024-07-08",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-NPX-FCUN69-WWD"
+      },
+      {
+        "company_name": "ALIF SEMICONDUCTOR, INC.",
+        "equip_name": "AI/ML AppKit",
+        "model_name": "AK-E7-AIML",
+        "country": "말레이시아",
+        "cert_date": "2024-07-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ndu-AK-E7-AIML"
+      },
+      {
+        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
+        "equip_name": "Portrait VSM",
+        "model_name": "Portrait VSM",
+        "country": "중국",
+        "cert_date": "2024-05-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-GeM-PortraitVSM"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "VR0038",
+        "country": "중국",
+        "cert_date": "2024-05-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-VR0038"
+      },
+      {
+        "company_name": "EnOcean Edge Inc.",
+        "equip_name": "SmartServer IoT",
+        "model_name": "72201R-248 SmartServer IoT Pro EX",
+        "country": "필리핀",
+        "cert_date": "2024-05-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-En6-72201"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0114",
+        "country": "중국",
+        "cert_date": "2024-05-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0114"
+      },
+      {
+        "company_name": "AVer Information Inc.",
+        "equip_name": "AI Coffee Sorter",
+        "model_name": "CS One",
+        "country": "대만",
+        "cert_date": "2024-05-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AVi-CG30"
+      },
+      {
+        "company_name": "LOGITECH Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR0115",
+        "country": "중국",
+        "cert_date": "2024-05-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DZL-MR0115"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "DELL, Inc.",
+    "model_param": "CEC27260",
+    "ocr_result": {
+      "extracted_text": "DELL CEC27260-WPOZKR (I6GB, M.2 ITB) coupang 2,658,760원  무료배송 최저가 구매하기 가격비교 18 상품 상세정보 의견리뷰 연관상품 운영체제 원도우11 프로 파위 출력 130W CPU 제조사 인텔 CPU 시리즈 군어울트과 시리즈3 CPU 종류 코이 울드다7-2세대 CPU 코드명 팬서레이크 군이 개수 욕타(8) 코이 NPU 종류 인텔 Al Boost NPU TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M.2 SSD 용량 1TB 그래픽 제조사 INTEL 그래픽 종류 내잠 그래픽 디스플레이 화면크기 68cm(27인치) 해상도 1920x1080 디스플레이 특징 눈부신방지 광시야각 사운드 출력 사운드 지원 소피커 내장험 네트위크 1Gbps 유선 802.11be(Wi-Fi7) 무선 불무투스",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\DELL CEC27260-WP07KR (16GB, M.2 1TB)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

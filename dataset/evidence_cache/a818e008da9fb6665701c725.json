@@ -522,7 +522,12 @@
       "cache_hit": false,
       "cache_path": "product_images\\레노버 아이디어센터 AIO i F0JYCTO1WWKR1 (16GB, M.2 256GB)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\레노버 아이디어센터 AIO i F0JYCTO1WWKR1 (16GB, M.2 256GB)\\detail_scan.png",
+        "image_size": 70717,
+        "image_sha256": "1c3a2abb210f3b9f9e47de5d60efc9f5ea4c3354ae12b3dc8ff6db5e7fc72a5d"
+      }
     }
   }
 }

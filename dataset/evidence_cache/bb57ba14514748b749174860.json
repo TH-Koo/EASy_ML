@@ -6,7 +6,7 @@
       "title": "삼성전자 갤럭시탭S10 FE (램8GB,128GB)",
       "name": "삼성전자 갤럭시탭S10 FE (램8GB,128GB)",
       "description": "",
-      "ocr_text": "삼성전자 길력시터S10 FE (캠8GB,128GB) coupang 699,000원 무료배승 최저가 구매하기 가격비교 363 상품 상세정보 의견리뷰 1,937 소모품|액세서리 unooxing Galaxy TabSIO FE Tab SIO FE+ 뉴스커유니티 12 연관상품 심_미또왜다 횟동장 +스   v147*) [피지\" ' ' \"onraa #물 다우이다S가다 무기 리안르없다  - - T'75s` 다음에서 보기: IYoululbe 갇로로SEE 제조회사 삼성전자 (제조사 웬사이트 바로가기) 등록년원 2025년 04원 대불릿연결 Wi-Fi 모델명 SM-X52ON 화면크기 10.9인치 디스끌레이 TFT-LCD 해상도 2304*x1440 퍽설 수(ppi) 249ppi 화면비율 1610 쇠대주사율 9OHz 최대밝기 8oonits S팬 S팬 포함 시스템 8GB 용량 128GB 외장메모리 TnicroSD지원 외장메도리용량 microSD쇠대2TB 프로세서 액시노스1580 코어 개수 8코이 코이클럭 2.9GHz+2.6GHz+1.9GHz GPU Xclipse 540",
+      "ocr_text": "삼성전자 길력시터S10 FE (캠8GB,128GB) coupang 699,000원 무료배승 최저가 구매하기 가격비교 362 상품 상세정보 의견리뷰 1,947 소모품|액세서리 unooxing Galaxy TabSIO FE Tab SIO FE+ 뉴스커유니티 12 연관상품 심_미또왜다 횟동장 +스   v147*) [피지\" ' ' \"onraa #물 다우이다S가다 무기 리안르없다  - - T'75s` 다음에서 보기: IYoululbe 갇로로SEE 제조회사 삼성전자 (제조사 웬사이트 바로가기) 등록년원 2025년 04원 대불릿연결 Wi-Fi 모델명 SM-X52ON 화면크기 10.9인치 디스끌레이 TFT-LCD 해상도 2304*x1440 퍽설 수(ppi) 249ppi 화면비율 1610 쇠대주사율 9OHz 최대밝기 8oonits S팬 S팬 포함 시스템 8GB 용량 128GB 외장메모리 TnicroSD지원 외장메도리용량 microSD쇠대2TB 프로세서 액시노스1580 코어 개수 8코이 코이클럭 2.9GHz+2.6GHz+1.9GHz GPU Xclipse 540",
       "specs": {
         "태블릿PC": "지원",
         "Wi-Fi": "지원",
@@ -40,32 +40,14 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=78982952",
       "manufacturer": "삼성전자",
-      "model_name": "SM-G7800"
+      "model_name": "SM-B410"
     },
     "norm_info": {
       "company_name": "삼성전자",
-      "model_name": "SM-G7800",
+      "model_name": "SM-B410",
       "product_name": "삼성전자 갤럭시탭S10 FE (램8GB,128GB)"
     },
     "db_results": [
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
-        "model_name": "SM-G766N",
-        "country": "베트남",
-        "cert_date": "2025-04-29",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-SMG766"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
-        "model_name": "SM-G781N",
-        "country": "한국",
-        "cert_date": "2020-09-11",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-SMG781"
-      },
       {
         "company_name": "삼성전자(주)",
         "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
@@ -446,30 +428,39 @@
       },
       {
         "company_name": "삼성전자(주)",
+        "equip_name": "쿡센서",
+        "model_name": "NZ63B1322EK",
+        "country": "한국",
+        "cert_date": "2021-12-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-NZ8500BM-S"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(기지국의 송수신장치 및 중계장치)",
+        "model_name": "MT3230-78A",
+        "country": "한국",
+        "cert_date": "2021-12-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-MT323078A"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(기지국의 송수신장치 및 중계장치)",
+        "model_name": "MT3229-78A",
+        "country": "한국",
+        "cert_date": "2021-12-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-MT322978A"
+      },
+      {
+        "company_name": "삼성전자(주)",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
         "model_name": "QUANTUM610",
         "country": "중국",
         "cert_date": "2021-12-21",
         "cert_status": "적합등록",
         "cert_no": "R-R-SEC-Q610"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "쿡센서",
-        "model_name": "NZ63B1322EK",
-        "country": "한국",
-        "cert_date": "2021-12-23",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-SEC-NZ8500BM-C"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "RMCSPB1SP1",
-        "country": "한국",
-        "cert_date": "2021-12-22",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-RMCSPB1SP1"
       },
       {
         "company_name": "삼성전자(주)",
@@ -482,21 +473,30 @@
       },
       {
         "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RMCSPB1SP1",
+        "country": "한국",
+        "cert_date": "2021-12-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-RMCSPB1SP1"
+      },
+      {
+        "company_name": "삼성전자(주)",
         "equip_name": "쿡센서",
         "model_name": "NZ63B1322EK",
         "country": "한국",
         "cert_date": "2021-12-23",
         "cert_status": "적합등록",
-        "cert_no": "R-R-SEC-NZ8500BM-S"
+        "cert_no": "R-R-SEC-NZ8500BM-C"
       },
       {
         "company_name": "삼성전자(주)",
-        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(기지국의 송수신장치 및 중계장치)",
-        "model_name": "MT3229-78A",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "WCT732M",
         "country": "한국",
-        "cert_date": "2021-12-13",
+        "cert_date": "2020-01-06",
         "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-MT322978A"
+        "cert_no": "R-C-SEC-WCT732M"
       }
     ],
     "jodale_result": null,
@@ -608,9 +608,9 @@
       "detail": "DART 분석 결과 [삼성전자] 실적 총 1건 확인."
     },
     "target_company_name": "삼성전자",
-    "model_param": "SM-G7800",
+    "model_param": "SM-B410",
     "ocr_result": {
-      "extracted_text": "삼성전자 길력시터S10 FE (캠8GB,128GB) coupang 699,000원 무료배승 최저가 구매하기 가격비교 363 상품 상세정보 의견리뷰 1,937 소모품|액세서리 unooxing Galaxy TabSIO FE Tab SIO FE+ 뉴스커유니티 12 연관상품 심_미또왜다 횟동장 +스   v147*) [피지\" ' ' \"onraa #물 다우이다S가다 무기 리안르없다  - - T'75s` 다음에서 보기: IYoululbe 갇로로SEE 제조회사 삼성전자 (제조사 웬사이트 바로가기) 등록년원 2025년 04원 대불릿연결 Wi-Fi 모델명 SM-X52ON 화면크기 10.9인치 디스끌레이 TFT-LCD 해상도 2304*x1440 퍽설 수(ppi) 249ppi 화면비율 1610 쇠대주사율 9OHz 최대밝기 8oonits S팬 S팬 포함 시스템 8GB 용량 128GB 외장메모리 TnicroSD지원 외장메도리용량 microSD쇠대2TB 프로세서 액시노스1580 코어 개수 8코이 코이클럭 2.9GHz+2.6GHz+1.9GHz GPU Xclipse 540",
+      "extracted_text": "삼성전자 길력시터S10 FE (캠8GB,128GB) coupang 699,000원 무료배승 최저가 구매하기 가격비교 362 상품 상세정보 의견리뷰 1,947 소모품|액세서리 unooxing Galaxy TabSIO FE Tab SIO FE+ 뉴스커유니티 12 연관상품 심_미또왜다 횟동장 +스   v147*) [피지\" ' ' \"onraa #물 다우이다S가다 무기 리안르없다  - - T'75s` 다음에서 보기: IYoululbe 갇로로SEE 제조회사 삼성전자 (제조사 웬사이트 바로가기) 등록년원 2025년 04원 대불릿연결 Wi-Fi 모델명 SM-X52ON 화면크기 10.9인치 디스끌레이 TFT-LCD 해상도 2304*x1440 퍽설 수(ppi) 249ppi 화면비율 1610 쇠대주사율 9OHz 최대밝기 8oonits S팬 S팬 포함 시스템 8GB 용량 128GB 외장메모리 TnicroSD지원 외장메도리용량 microSD쇠대2TB 프로세서 액시노스1580 코어 개수 8코이 코이클럭 2.9GHz+2.6GHz+1.9GHz GPU Xclipse 540",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\삼성전자 갤럭시탭S10 FE (램8GB,128GB)\\detail_scan.ocr_cache.json",

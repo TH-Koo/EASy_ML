@@ -27,11 +27,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=96258452",
       "manufacturer": "QCY, QCY",
-      "model_name": "T41"
+      "model_name": "T41AIR"
     },
     "norm_info": {
       "company_name": "QCY, QCY",
-      "model_name": "T41",
+      "model_name": "T41AIR",
       "product_name": "QCY T41 AIR (정품)"
     },
     "db_results": [],
@@ -48,14 +48,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "QCY, QCY",
-    "model_param": "T41",
+    "model_param": "T41AIR",
     "ocr_result": {
       "extracted_text": "QCY T41 AIR (정품) coupang 23,600원  무료배송 최저가 구매하기 가격비교 10 상품 상세정보 의견 리뷰 10 뉴스커유니티 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.4 노이즈권트록 시I노이즈랜늘림가이 사운드채널 스데레오 드라이버크기 유넷13mm 드라이버 다이나막 드라이버구성 다이나벤 1개 불루투스 프로파일 AVRCP A2DP HFP 무선연결거리 iOm [배티리] [배터리] 통화시간 3시간 1회중전시 7시간 대기시간 80시간 쇠대재생 35시간 충전시간 2시간 귀이스중전횟수 4회 충전",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\QCY T41 AIR (정품)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\QCY T41 AIR (정품)\\detail_scan.png",
+        "image_size": 55878,
+        "image_sha256": "94afcc8c77cf8019bab17653b13be0bfc866285cf4da7144b136fcf5e6973b77"
+      }
     }
   }
 }

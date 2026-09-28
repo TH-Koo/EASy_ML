@@ -37,11 +37,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=28805123",
       "manufacturer": "피씨스토어, PC Store",
-      "model_name": "PF-U5-250K-PLUS"
+      "model_name": "PCI5060"
     },
     "norm_info": {
       "company_name": "피씨스토어, PC Store",
-      "model_name": "PF-U5-250K-PLUS",
+      "model_name": "PCI5060",
       "product_name": "피씨스토어 베스트 게이밍PC 울트라5 250K PLUS RTX 5060 (16GB, M.2 500GB)"
     },
     "db_results": [],
@@ -58,7 +58,7 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "피씨스토어, PC Store",
-    "model_param": "PF-U5-250K-PLUS",
+    "model_param": "PCI5060",
     "ocr_result": {
       "extracted_text": "피씨스토어 베스트 게이망PC 울트라5 25OK PLUS RTX 5060 (16GB, M.2 500GB) LOTTE ON 2,074,790원 무료내송 최저가 구매하기 가격비교 10 상품 상세정보 의견리뷰 28 연관상품 메인보드 침셋 (인텔) B860 운명제제 OS미포함 파뭐 출력 750W CPU 제조사 인텔 CPU 시리즈 코어올드라 시리즈2 CPU 종류 굳이 올드라5-2세대 CPU 코드명 애로우레이크 코이 개수 6+12 코어 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M2 SSD 용량 500GB 그래픽 특징 그래픽 제조사 NVIDIA 그래픽 종류 외장 그래픽 그래픽 메모리 8GB 네트위크 1Gbps 유선 영상출력 HDMI DP포트 전원 파위서플라이 형대 미들타뭐 외형 LED콜러 용도",
       "ocr_device": "CPU",

@@ -616,7 +616,12 @@
       "cache_hit": false,
       "cache_path": "product_images\\삼성전자 올인원 PRO DM970AGA-L71AR (32GB, M.2 1TB)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\삼성전자 올인원 PRO DM970AGA-L71AR (32GB, M.2 1TB)\\detail_scan.png",
+        "image_size": 69153,
+        "image_sha256": "eeac4d33f67b8ad1cc277583d810f92419f9ed124c495098b22cd6b84b3642b2"
+      }
     }
   }
 }

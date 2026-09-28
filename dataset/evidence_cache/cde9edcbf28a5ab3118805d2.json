@@ -34,11 +34,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=75855581",
       "manufacturer": "Apple Inc.  Apple",
-      "model_name": "A2771"
+      "model_name": "A16E"
     },
     "norm_info": {
       "company_name": "Apple Inc.  Apple",
-      "model_name": "A2771",
+      "model_name": "A16E",
       "product_name": "APPLE 아이폰16e 128GB, 자급제 (자급제 공기계)"
     },
     "db_results": [],
@@ -55,14 +55,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "Apple Inc.  Apple",
-    "model_param": "A2771",
+    "model_param": "A16E",
     "ocr_result": {
       "extracted_text": "APPLE 아이혼16e 128GB, 자급제 (자급제 공기계) 11 897,990원 무료내승 최저가 구매하기 가격비교 18 상품 상세정보 의견리뷰 152 소모품[액세서리 뉴스커유니티 27 9g0,000원 @앞존j X맛다E c; 우 > DYD런I6e 연관상품 마 다 \" SE4 새로움이이이혼공께 아O논 16e 4분 요약 총점? 제조회사 APPLE (제조사 웬사이트 바로가기) 등록년원 2025년 02밑 휴대문 타입 스마드문 (바형) 모델명 A3409 판매방식 자금제 공기계 곰공기계 유형 자근제 공기계 통신사 자금제 유신(국가별상이) 나노+eSIM 메인화면정보 화면 15.4cm(6.7인치) 패널종류 OLED 화면해상도 2532x1170 정설 수(ppi) 46Oppi 최대주사물 6OHz 화면비 19.5.9 화면면적 871%6 쇠대밝기 12OOnits 디스플레이 특징 HDR",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\APPLE 아이폰16e 128GB, 자급제 (자급제 공기계)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\APPLE 아이폰16e 128GB, 자급제 (자급제 공기계)\\detail_scan.png",
+        "image_size": 285937,
+        "image_sha256": "cfe462f50e8d01749baea2592004c4e8ef15d01c7fe37f5c34b84d907fc408c0"
+      }
     }
   }
 }

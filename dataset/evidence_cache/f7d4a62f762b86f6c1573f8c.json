@@ -1,0 +1,43 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=25185254",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "KS-107 인공지능 물체감지 선풍기 만들기 DIY",
+      "name": "KS-107 인공지능 물체감지 선풍기 만들기 DIY",
+      "description": "",
+      "ocr_text": "",
+      "specs": {
+        "완구/블록/매트": "지원",
+        "과학완구": "지원",
+        "과학상자": "지원"
+      },
+      "raw_specs": "완구/블록/매트 / 과학완구 / 과학상자",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=25185254",
+      "manufacturer": "KS107, KS107",
+      "model_name": "KS-107"
+    },
+    "norm_info": {
+      "company_name": "KS107, KS107",
+      "model_name": "KS-107",
+      "product_name": "KS-107 인공지능 물체감지 선풍기 만들기 DIY"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "KS107, KS107",
+    "model_param": "KS-107",
+    "ocr_result": {}
+  }
+}

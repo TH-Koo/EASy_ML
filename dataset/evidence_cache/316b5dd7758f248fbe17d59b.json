@@ -6,7 +6,7 @@
       "title": "엘즈 파비스 AI 에코 PV-FS03W",
       "name": "엘즈 파비스 AI 에코 PV-FS03W",
       "description": "",
-      "ocr_text": "엘즈 파비스 Al 에고 PV-FSO3W Gmarket   178,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 형태 랜드령 위무선 유선 모티방식 DC모티 소비전력 26W 바람 12단 바람모드 초미풍(유아품) 자연품 에코품(자능품속조 '날가개수 3업날가 곰공기이동거리 15mn 헤드조절 좌우회전 상하각도조설 3D인체회전 주요기능 타이머 리모컨 부가기능 오로리터 [g 인종 적합성평가인층 R-R-EZH-PV-FSO2B| 인긍번호 확인 안전확인인승 SU10726-200025 | 인증번호 확인",
+      "ocr_text": "엘즈 파비스 Al 에고 PV-FSO3W AUCTION 178,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 형태 랜드령 위무선 유선 모티방식 DC모티 소비전력 26W 바람 12단 바람모드 초미풍(유아품) 자연품 에코품(자능품속조 '날가개수 3업날가 곰공기이동거리 15mn 헤드조절 좌우회전 상하각도조설 3D인체회전 주요기능 타이머 리모컨 부가기능 오로리터 [g 인종 적합성평가인층 R-R-EZH-PV-FSO2B| 인긍번호 확인 안전확인인승 SU10726-200025 | 인증번호 확인",
       "specs": {
         "선풍기": "지원",
         "스탠드형": "지원",
@@ -29,31 +29,31 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=58010240",
       "manufacturer": "엘즈, ELS",
-      "model_name": "FS03W"
+      "model_name": "PV-FS03W"
     },
     "norm_info": {
       "company_name": "엘즈, ELS",
-      "model_name": "FS03W",
+      "model_name": "PV-FS03W",
       "product_name": "엘즈 파비스 AI 에코 PV-FS03W"
     },
     "db_results": [
       {
-        "company_name": "SteelSeries ApS.",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "HS-00018",
+        "company_name": "㈜엘즈",
+        "equip_name": "파비스 AI 에코 서큘레이터",
+        "model_name": "PV-FS02B",
         "country": "중국",
-        "cert_date": "2020-07-03",
+        "cert_date": "2024-03-19",
         "cert_status": "적합등록",
-        "cert_no": "R-R-SS4-HS-00018"
+        "cert_no": "R-R-EZH-PV-FS02B"
       },
       {
         "company_name": "SteelSeries ApS.",
-        "equip_name": "특정소출력 무선기기 ( 무선데이터통신시스템용 무선기기)",
-        "model_name": "M-00030",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "M-00019TX",
         "country": "중국",
-        "cert_date": "2021-02-24",
+        "cert_date": "2020-09-29",
         "cert_status": "적합등록",
-        "cert_no": "R-R-SS4-M-00030"
+        "cert_no": "R-R-SS4-M-00019TX"
       },
       {
         "company_name": "㈜엘즈",
@@ -120,21 +120,21 @@
       },
       {
         "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HS-00018",
+        "country": "중국",
+        "cert_date": "2020-07-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SS4-HS-00018"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
         "equip_name": "특정소출력 무선기기 ( 무선데이터통신시스템용 무선기기)",
         "model_name": "M-00030TX",
         "country": "중국",
         "cert_date": "2021-02-24",
         "cert_status": "적합등록",
         "cert_no": "R-R-SS4-M-00030TX"
-      },
-      {
-        "company_name": "SteelSeries ApS.",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "M-00019TX",
-        "country": "중국",
-        "cert_date": "2020-09-29",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-SS4-M-00019TX"
       },
       {
         "company_name": "SteelSeries ApS.",
@@ -189,6 +189,15 @@
         "cert_date": "2019-06-10",
         "cert_status": "적합인증",
         "cert_no": "R-C-SS4-HS-00021TX"
+      },
+      {
+        "company_name": "SteelSeries ApS.",
+        "equip_name": "특정소출력 무선기기 ( 무선데이터통신시스템용 무선기기)",
+        "model_name": "M-00030",
+        "country": "중국",
+        "cert_date": "2021-02-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SS4-M-00030"
       },
       {
         "company_name": "SteelSeries ApS.",
@@ -315,15 +324,6 @@
         "cert_date": "2024-08-12",
         "cert_status": "적합등록",
         "cert_no": "R-R-EZH-PV-A091"
-      },
-      {
-        "company_name": "㈜엘즈",
-        "equip_name": "파비스 AI 에코 서큘레이터",
-        "model_name": "PV-FS02B",
-        "country": "중국",
-        "cert_date": "2024-03-19",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-EZH-PV-FS02B"
       },
       {
         "company_name": "주식회사 헬셀(Helsel Co., Ltd)",
@@ -501,9 +501,9 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "엘즈, ELS",
-    "model_param": "FS03W",
+    "model_param": "PV-FS03W",
     "ocr_result": {
-      "extracted_text": "엘즈 파비스 Al 에고 PV-FSO3W Gmarket   178,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 형태 랜드령 위무선 유선 모티방식 DC모티 소비전력 26W 바람 12단 바람모드 초미풍(유아품) 자연품 에코품(자능품속조 '날가개수 3업날가 곰공기이동거리 15mn 헤드조절 좌우회전 상하각도조설 3D인체회전 주요기능 타이머 리모컨 부가기능 오로리터 [g 인종 적합성평가인층 R-R-EZH-PV-FSO2B| 인긍번호 확인 안전확인인승 SU10726-200025 | 인증번호 확인",
+      "extracted_text": "엘즈 파비스 Al 에고 PV-FSO3W AUCTION 178,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 형태 랜드령 위무선 유선 모티방식 DC모티 소비전력 26W 바람 12단 바람모드 초미풍(유아품) 자연품 에코품(자능품속조 '날가개수 3업날가 곰공기이동거리 15mn 헤드조절 좌우회전 상하각도조설 3D인체회전 주요기능 타이머 리모컨 부가기능 오로리터 [g 인종 적합성평가인층 R-R-EZH-PV-FSO2B| 인긍번호 확인 안전확인인승 SU10726-200025 | 인증번호 확인",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\엘즈 파비스 AI 에코 PV-FS03W\\detail_scan.ocr_cache.json",
