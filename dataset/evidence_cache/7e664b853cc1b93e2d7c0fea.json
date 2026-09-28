@@ -59,7 +59,12 @@
       "cache_hit": false,
       "cache_path": "product_images\\에코백스 디봇 T80 옴니 (단품)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\에코백스 디봇 T80 옴니 (단품)\\detail_scan.png",
+        "image_size": 355274,
+        "image_sha256": "8c5765a0be1f001003171dfedf3b2b293fea922d99cd795266dcd2791cfe7e87"
+      }
     }
   }
 }

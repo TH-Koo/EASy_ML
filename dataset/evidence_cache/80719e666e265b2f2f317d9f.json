@@ -515,7 +515,12 @@
       "cache_hit": false,
       "cache_path": "product_images\\SONY WF-1000XM6 (정품)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\SONY WF-1000XM6 (정품)\\detail_scan.png",
+        "image_size": 408961,
+        "image_sha256": "9ec83b8ee0e86650115fd9289c062e5b0c47d3af001efcc1a6f4f5d9fa31c194"
+      }
     }
   }
 }

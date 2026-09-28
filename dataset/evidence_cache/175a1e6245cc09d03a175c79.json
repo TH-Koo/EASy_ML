@@ -1,0 +1,92 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=28625048",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "코웨이 노블 2 AP-1623M",
+      "name": "코웨이 노블 2 AP-1623M",
+      "description": "",
+      "ocr_text": "코웨이 노틀 2 AP-1623M LOTTE ON 907,990원 무료내승 최저가 구매하기 가격비교 16 상품 상세정보 의견리뷰 연관상품 공기창정기능 날취 조미세먼지제거 UV실군 새진승후군물질제거 유하가스 제거 에어관업모선 (전제손환모드 전면진중모드 후면 간접모드) 정음모드 에너지효물 3능금 그 외 센서 모드 자능 수면 스마트기능 스마드근제어 부가기능 미세먼지농도표시 청정도표시 버든잠금 풍량조설 이동식바퀴 그 외 기능 해듣디스끌레이 인종 Al+인y CA인: BAF인층 소비전력 35W 크기(가로x세로x깊 320x805x32Ommn [@ 인종",
+      "specs": {
+        "공기청정기": "지원",
+        "16평(53㎡)": "지원",
+        "탈취": "지원",
+        "초미세먼지제거": "지원",
+        "UV살균": "지원",
+        "새집증후군물질제거": "지원",
+        "유해가스 제거": "지원",
+        "에너지효율": "3등급",
+        "[센서/모드] 펫": "지원",
+        "자동": "지원",
+        "수면": "지원",
+        "에어팝업모션(전제순환모드": "지원",
+        "전면집중모드": "지원",
+        "후면간접모드)": "지원",
+        "정음모드": "지원",
+        "[편의] 스마트폰제어": "지원",
+        "미세먼지농도표시": "지원",
+        "청정도표시": "지원",
+        "버튼잠금": "지원",
+        "풍량조절": "지원",
+        "이동식바퀴": "지원",
+        "히든디스플레이": "지원",
+        "[인증] AI+인증": "지원",
+        "CA인증": "지원",
+        "BAF인증": "지원",
+        "[규격] 소비전력": "35W",
+        "크기(가로x세로x깊이)": "320x805x320mm",
+        "판매가": "1,010,000원"
+      },
+      "raw_specs": "공기청정기 / 16평(53㎡) / 탈취 / 초미세먼지제거 / UV살균 / 새집증후군물질제거 / 유해가스 제거 / 에너지효율 : 3등급 / [센서/모드] 펫 / 자동 / 수면 / 에어팝업모션(전제순환모드 / 전면집중모드 / 후면간접모드) / 정음모드 / [편의] 스마트폰제어 / 미세먼지농도표시 / 청정도표시 / 버튼잠금 / 풍량조절 / 이동식바퀴 / 히든디스플레이 / [인증] AI+인증 / CA인증 / BAF인증 / [규격] 소비전력 : 35W / 크기(가로x세로x깊이) : 320x805x320mm / 판매가: 1,010,000원",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=28625048",
+      "manufacturer": "코웨이,  KOWAI",
+      "model_name": "AP-1623M"
+    },
+    "norm_info": {
+      "company_name": "코웨이,  KOWAI",
+      "model_name": "AP-1623M",
+      "product_name": "코웨이 노블 2 AP-1623M"
+    },
+    "db_results": [
+      {
+        "company_name": "코웨이(주)",
+        "equip_name": "특정소출력 무선기기(데이터전송용 무선기기)",
+        "model_name": "CW447TRX",
+        "country": "한국",
+        "cert_date": "2018-11-02",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-CWY-CW447TRX"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": {
+      "status": "AI 핵심 역량 미흡 (워싱 의심)",
+      "total_score": 20,
+      "evidence": [
+        "📦 [AI 제품적용] Y 코웨이 Coway (Thailand) Co.,Ltd. 경영참여 - - -"
+      ],
+      "detail": "DART 분석 결과 [코웨이] 실적 총 1건 확인."
+    },
+    "target_company_name": "코웨이,  KOWAI",
+    "model_param": "AP-1623M",
+    "ocr_result": {
+      "extracted_text": "코웨이 노틀 2 AP-1623M LOTTE ON 907,990원 무료내승 최저가 구매하기 가격비교 16 상품 상세정보 의견리뷰 연관상품 공기창정기능 날취 조미세먼지제거 UV실군 새진승후군물질제거 유하가스 제거 에어관업모선 (전제손환모드 전면진중모드 후면 간접모드) 정음모드 에너지효물 3능금 그 외 센서 모드 자능 수면 스마트기능 스마드근제어 부가기능 미세먼지농도표시 청정도표시 버든잠금 풍량조설 이동식바퀴 그 외 기능 해듣디스끌레이 인종 Al+인y CA인: BAF인층 소비전력 35W 크기(가로x세로x깊 320x805x32Ommn [@ 인종",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\코웨이 노블 2 AP-1623M\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

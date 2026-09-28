@@ -506,7 +506,12 @@
       "cache_hit": false,
       "cache_path": "product_images\\ANKER Soundcore 에어로클립 A3388 (정품)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\ANKER Soundcore 에어로클립 A3388 (정품)\\detail_scan.png",
+        "image_size": 52220,
+        "image_sha256": "7e64ca9c339fe51d9573fe97c29a557265842d7f045961a1cd1e0aecf5964c87"
+      }
     }
   }
 }

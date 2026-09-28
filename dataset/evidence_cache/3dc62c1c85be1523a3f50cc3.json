@@ -329,7 +329,12 @@
       "cache_hit": false,
       "cache_path": "product_images\\MSI MAG 272F Rapid IPS 게이밍 FHD 200 AI Vision 무결점\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\MSI MAG 272F Rapid IPS 게이밍 FHD 200 AI Vision 무결점\\detail_scan.png",
+        "image_size": 74199,
+        "image_sha256": "f4f927be455297c113f5fd8521df2dfb37cd6c554b5166a818754d8b22db6961"
+      }
     }
   }
 }

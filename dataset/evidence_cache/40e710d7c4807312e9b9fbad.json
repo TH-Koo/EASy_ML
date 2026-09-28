@@ -35,11 +35,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=92891300",
       "manufacturer": "삼성전자",
-      "model_name": "SM-Z907"
+      "model_name": "G880"
     },
     "norm_info": {
       "company_name": "삼성전자",
-      "model_name": "SM-Z907",
+      "model_name": "G880",
       "product_name": "삼성전자 갤럭시Z 플립7 256GB, 자급제 (정품)"
     },
     "db_results": [
@@ -603,14 +603,19 @@
       "detail": "DART 분석 결과 [삼성전자] 실적 총 1건 확인."
     },
     "target_company_name": "삼성전자",
-    "model_param": "SM-Z907",
+    "model_param": "G880",
     "ocr_result": {
       "extracted_text": "삼성전자 길력시z 플림7 256GB, 자급제 (정품) coupang 1,485,000원 무료배송 최저가 구매하기 가격비교 96 상품 상세정보 의견리뷰 843 소모품|액세서리 뉴스커유니티 22 연관상품 @ at   급드7 & 문김? 진물 공계 07 19 770 9 07 79 자) Z프립F E등장 그동안 무리가르다 이유 이거사세외 미리 어앗습니다 IYolune '뜨다? 표리7 너무예대? 제조회사 삼심전자 (제조사 웬사이트 바로가기) 등록년원 2025년 07원 휴대문 타입 스마드근 (풀더블) 모델명 SM-F766B 판매방식 자금제 공기계 곰공기계 유형 자근제 공기계 통신사 자금제 유신(국가별상이) 나노+eSIM 메인화면정보 화면 17.4cmn(6.9인치) 패널종류 D-AMOLED 2X 화면해상도 2520x1080 화면종류 풀HD+ 퍽실 수(ppi) 397ppi 쇠대주사율 12OHz 화면비 21.9 화면면적 88.7% 최대밝기 260Onits 디스플레이 특징 ~\"u개 .",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\삼성전자 갤럭시Z 플립7 256GB, 자급제 (정품)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\삼성전자 갤럭시Z 플립7 256GB, 자급제 (정품)\\detail_scan.png",
+        "image_size": 474875,
+        "image_sha256": "54ebe4b1608a2fa033277820a3da36b14c1cf13b9af4427f67cfea42e7d40a98"
+      }
     }
   }
 }

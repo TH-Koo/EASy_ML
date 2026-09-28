@@ -60,7 +60,12 @@
       "cache_hit": false,
       "cache_path": "product_images\\APPLE 아이폰 에어 256GB, 자급제 (스카이블루)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\APPLE 아이폰 에어 256GB, 자급제 (스카이블루)\\detail_scan.png",
+        "image_size": 360119,
+        "image_sha256": "855e21dbdcf6337ebd62489cb9f9ae6b529a53591d93a0811f59d6f87282ed4a"
+      }
     }
   }
 }

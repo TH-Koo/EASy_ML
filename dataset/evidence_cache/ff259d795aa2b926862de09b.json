@@ -31,139 +31,58 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=123800066",
       "manufacturer": "팅크웨어, Tinkingwear",
-      "model_name": "아이나비 퀀텀4"
+      "model_name": "퀀텀4"
     },
     "norm_info": {
       "company_name": "팅크웨어, Tinkingwear",
-      "model_name": "아이나비 퀀텀4",
+      "model_name": "퀀텀4",
       "product_name": "팅크웨어 아이나비 퀀텀4 2채널 (64GB)"
     },
     "db_results": [
       {
         "company_name": "팅크웨어(주)",
-        "equip_name": "CAR BLACK BOX",
-        "model_name": "아이나비 B100",
-        "country": "한국",
-        "cert_date": "2017-03-22",
-        "cert_status": "적합등록",
-        "cert_no": "MSIP-REM-TWI-IBRF-TN317D1"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "CAR BLACKBOX",
-        "model_name": "아이나비 T1000",
-        "country": "한국",
-        "cert_date": "2021-03-12",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-TWI-IBFF-TGN21A1"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "CAR BLACK BOX",
-        "model_name": "아이나비 Black Air",
-        "country": "한국",
-        "cert_date": "2018-08-28",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-TWI-IBRS-TN318J1"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "ADAS 전용단말기",
-        "model_name": "아이나비 ADAS DS-1",
-        "country": "한국",
-        "cert_date": "2018-04-26",
-        "cert_status": "적합등록",
-        "cert_no": "R-REM-TWI-IAOC-T18F1"
-      },
-      {
-        "company_name": "팅크웨어(주)",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "F800",
+        "model_name": "MAN",
         "country": "한국",
-        "cert_date": "2019-02-19",
+        "cert_date": "2019-05-16",
         "cert_status": "적합인증",
-        "cert_no": "R-C-TWI-IBRF-TG019C1"
+        "cert_no": "R-C-TWI-INI3-TN719E1"
       },
       {
         "company_name": "팅크웨어(주)",
-        "equip_name": "미약 전계강도 무선기기",
-        "model_name": "SHC-10",
+        "equip_name": "무선 안드로이드 오토",
+        "model_name": "ZB001-AA",
         "country": "중국",
-        "cert_date": "2019-05-23",
+        "cert_date": "2024-03-14",
         "cert_status": "적합등록",
-        "cert_no": "R-R-TWI-IAOC-C1961"
+        "cert_no": "R-RS-TWI-ZB001-AA"
       },
       {
         "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "FL/FE AVN",
+        "equip_name": "스마트필름 컨트롤러",
+        "model_name": "KA-CT1",
         "country": "한국",
-        "cert_date": "2020-12-08",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-TWI-INI3-TNA20L1"
+        "cert_date": "2024-07-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IAOC-T2481"
       },
       {
         "company_name": "팅크웨어모바일 주식회사",
-        "equip_name": "미약 전계강도 무선기기",
-        "model_name": "SHC20",
+        "equip_name": "차량용 무선충전거치대",
+        "model_name": "SHC-40",
         "country": "중국",
-        "cert_date": "2020-08-14",
+        "cert_date": "2022-05-30",
         "cert_status": "적합등록",
-        "cert_no": "R-R-tm0-SHC20"
+        "cert_no": "R-R-tm0-SHC-40"
       },
       {
         "company_name": "팅크웨어(주)",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "Kangaroo",
+        "model_name": "MC10",
         "country": "중국",
-        "cert_date": "2020-08-06",
+        "cert_date": "2022-09-23",
         "cert_status": "적합등록",
-        "cert_no": "R-R-TWI-IABC-F20J1"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "BAB-115",
-        "country": "한국",
-        "cert_date": "2020-03-31",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-TWI-IAOB-E20D3"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "F200",
-        "country": "한국",
-        "cert_date": "2020-02-24",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-TWI-IBRF-TN02041"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "ACP-R1",
-        "country": "중국",
-        "cert_date": "2020-02-06",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-TWI-IAOC-T20A1"
-      },
-      {
-        "company_name": "팅크웨어모바일 주식회사",
-        "equip_name": "미약 전계강도 무선기기",
-        "model_name": "SHC-30",
-        "country": "중국",
-        "cert_date": "2021-11-11",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-tm0-SHC-30"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "MC-1",
-        "country": "중국",
-        "cert_date": "2021-03-12",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-TWI-IABC-S21E1"
+        "cert_no": "R-R-TWI-IABC-S22I1"
       },
       {
         "company_name": "팅크웨어모바일 주식회사",
@@ -177,38 +96,83 @@
       {
         "company_name": "팅크웨어(주)",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "MC10",
+        "model_name": "MC-1",
         "country": "중국",
-        "cert_date": "2022-09-23",
+        "cert_date": "2021-03-12",
         "cert_status": "적합등록",
-        "cert_no": "R-R-TWI-IABC-S22I1"
+        "cert_no": "R-R-TWI-IABC-S21E1"
       },
       {
         "company_name": "팅크웨어모바일 주식회사",
-        "equip_name": "차량용 무선충전거치대",
-        "model_name": "SHC-40",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "SHC-30",
         "country": "중국",
-        "cert_date": "2022-05-30",
+        "cert_date": "2021-11-11",
         "cert_status": "적합등록",
-        "cert_no": "R-R-tm0-SHC-40"
+        "cert_no": "R-R-tm0-SHC-30"
       },
       {
         "company_name": "팅크웨어(주)",
-        "equip_name": "스마트필름 컨트롤러",
-        "model_name": "KA-CT1",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "ACP-R1",
+        "country": "중국",
+        "cert_date": "2020-02-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IAOC-T20A1"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "F200",
         "country": "한국",
-        "cert_date": "2024-07-04",
+        "cert_date": "2020-02-24",
         "cert_status": "적합등록",
-        "cert_no": "R-R-TWI-IAOC-T2481"
+        "cert_no": "R-R-TWI-IBRF-TN02041"
       },
       {
         "company_name": "팅크웨어(주)",
-        "equip_name": "무선 안드로이드 오토",
-        "model_name": "ZB001-AA",
-        "country": "중국",
-        "cert_date": "2024-03-14",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "BAB-115",
+        "country": "한국",
+        "cert_date": "2020-03-31",
         "cert_status": "적합등록",
-        "cert_no": "R-RS-TWI-ZB001-AA"
+        "cert_no": "R-R-TWI-IAOB-E20D3"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Kangaroo",
+        "country": "중국",
+        "cert_date": "2020-08-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IABC-F20J1"
+      },
+      {
+        "company_name": "팅크웨어모바일 주식회사",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "SHC20",
+        "country": "중국",
+        "cert_date": "2020-08-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-tm0-SHC20"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "FL/FE AVN",
+        "country": "한국",
+        "cert_date": "2020-12-08",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-TWI-INI3-TNA20L1"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "F800",
+        "country": "한국",
+        "cert_date": "2019-02-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-TWI-IBRF-TG019C1"
       },
       {
         "company_name": "팅크웨어(주)",
@@ -222,20 +186,20 @@
       {
         "company_name": "팅크웨어(주)",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "MAN",
-        "country": "한국",
-        "cert_date": "2019-05-16",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-TWI-INI3-TN719E1"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
         "model_name": "ITP-XD10W",
         "country": "중국",
         "cert_date": "2016-05-16",
         "cert_status": "적합인증",
         "cert_no": "MSIP-CMI-TWI-ITPXD10W"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "SHC-10",
+        "country": "중국",
+        "cert_date": "2019-05-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IAOC-C1961"
       },
       {
         "company_name": "팅크웨어(주)",
@@ -375,14 +339,19 @@
       "detail": "DART 분석 결과 [팅크웨어] 실적 총 1건 확인."
     },
     "target_company_name": "팅크웨어, Tinkingwear",
-    "model_param": "아이나비 퀀텀4",
+    "model_param": "퀀텀4",
     "ocr_result": {
       "extracted_text": "팅크웨어 아이나비 권싫4 2채널 (64GB) coupang 539,000원 무료내송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 카메라 수(재널) 2채널 전방 UHD 4K(3840x2160) 전방 프레임 3Ofps 저장마제 Micro-SD 저장용량 64GB 센서 Sony Exmor R STARVIS 2 후밤 대상도 QHD(2560x1440) 후방 프레인 30fps 안전관련기능 자선이발경보(LDW Al ADAS 전방주돌경고(FCW 앞자출발알림(FVSA) 저속전방추돌경고나 CWS) 안전운전도우미 전원관련기능 주차저전력모드 녹화방식 주차녹화 녹화관련기능 타입컵스 자동포멋 야간보점 울드라나이트비전 GPS GPS내잠 스마트론 연동 Wi-Fi 연결 커넥티드 연결 [@ 인종 적합성평가인승 상세설명 판매 사이트 문의 인증번호 확인",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\팅크웨어 아이나비 퀀텀4 2채널 (64GB)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\팅크웨어 아이나비 퀀텀4 2채널 (64GB)\\detail_scan.png",
+        "image_size": 77625,
+        "image_sha256": "00190cdd3d3cc0485151eac25b6da371b7e7700b556c845a7f01b9993bca5d43"
+      }
     }
   }
 }

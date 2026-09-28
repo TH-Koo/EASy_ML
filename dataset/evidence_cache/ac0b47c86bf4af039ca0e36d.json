@@ -1,0 +1,75 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=122651546",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "다본다 울트라 AI 3.0 3채널 (본품)",
+      "name": "다본다 울트라 AI 3.0 3채널 (본품)",
+      "description": "",
+      "ocr_text": "다본다 울트라 Al 3.0 3채널 (본품) 11> 769,$ 990원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 카메라 수(재널) 3채널 전방 FHD(192ox1080) 전방 프레임 3Ofps 쇠대지원용량 쇠대 ITB 전방 시야각 160도 화면 10.2cm(4인치) 패널종류 IPS패널 저장매제 Micro-SD 전원 12-24V 후방 해상도 FHD(1920x1080) 후방 프레임 3Ofps 후밤 시야각 140도 안전관련기능 차선이날경보(LDW 전방주돌경고(FCW 녹화관련기능 야간보점 이번트녹화일림 광여역관보점(WDR) 야간보점 나이드비전 GPS GPS내잠 스마트혼 연동 Wi-Fi 연결 [g 인종 적합성평가인승 상세설명 판매 사이드 분의 | 인종번호 확인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인 상품 설명 복사하기",
+      "specs": {
+        "블랙박스": "지원",
+        "3채널": "지원",
+        "거치형": "지원",
+        "화면": "10.2cm(4인치)",
+        "IPS패널": "지원",
+        "전방": "FHD(1920x1080)",
+        "160도": "지원",
+        "30fps": "지원",
+        "[후방] FHD(1920x1080)": "지원",
+        "140도": "지원",
+        "[안전] 전방추돌경고(FCWS)": "지원",
+        "차선이탈경보(LDWS)": "지원",
+        "[녹화] 광역역광보정(WDR)": "지원",
+        "이벤트녹화알림": "지원",
+        "야간보정": "지원",
+        "나이트비전": "지원",
+        "[부가] GPS내장": "지원",
+        "스마트폰 연동": "Wi-Fi 연결"
+      },
+      "raw_specs": "블랙박스 / 3채널 / 거치형 / 화면 : 10.2cm(4인치) / IPS패널 / 전방 : FHD(1920x1080) / 160도 / 30fps / [후방] FHD(1920x1080) / 140도 / 30fps / [안전] 전방추돌경고(FCWS) / 차선이탈경보(LDWS) / [녹화] 광역역광보정(WDR) / 이벤트녹화알림 / 야간보정 / 나이트비전 / [부가] GPS내장 / 스마트폰 연동 : Wi-Fi 연결",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=122651546",
+      "manufacturer": "다본다, Dabondda",
+      "model_name": "다본다 울트라 AI 3.0 3채널"
+    },
+    "norm_info": {
+      "company_name": "다본다, Dabondda",
+      "model_name": "다본다 울트라 AI 3.0 3채널",
+      "product_name": "다본다 울트라 AI 3.0 3채널 (본품)"
+    },
+    "db_results": [
+      {
+        "company_name": "다본다몰 주식회사",
+        "equip_name": "다본다 AI 6WAY",
+        "model_name": "NDBD-AI600",
+        "country": "한국",
+        "cert_date": "2023-04-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-dBD-NDBD-AI600"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "다본다, Dabondda",
+    "model_param": "다본다 울트라 AI 3.0 3채널",
+    "ocr_result": {
+      "extracted_text": "다본다 울트라 Al 3.0 3채널 (본품) 11> 769,$ 990원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 카메라 수(재널) 3채널 전방 FHD(192ox1080) 전방 프레임 3Ofps 쇠대지원용량 쇠대 ITB 전방 시야각 160도 화면 10.2cm(4인치) 패널종류 IPS패널 저장매제 Micro-SD 전원 12-24V 후방 해상도 FHD(1920x1080) 후방 프레임 3Ofps 후밤 시야각 140도 안전관련기능 차선이날경보(LDW 전방주돌경고(FCW 녹화관련기능 야간보점 이번트녹화일림 광여역관보점(WDR) 야간보점 나이드비전 GPS GPS내잠 스마트혼 연동 Wi-Fi 연결 [g 인종 적합성평가인승 상세설명 판매 사이드 분의 | 인종번호 확인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인 상품 설명 복사하기",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\다본다 울트라 AI 3.0 3채널 (본품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

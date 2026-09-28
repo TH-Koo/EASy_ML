@@ -1,0 +1,61 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=30300062",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "홈앤아트 코지 HAVG-160AW (단품)",
+      "name": "홈앤아트 코지 HAVG-160AW (단품)",
+      "description": "",
+      "ocr_text": "흉안아트 코지 HAVG-160AW (단품) coupang 205,750원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 10 연관상품 집입력(Pa) 35,000 급인력(W) 160 사용시간 25분(최대) 스테이선 액세서리요 배터리거 벽걸이거치 청소기능 시청소 LED라이트 모티 BLDC모티 필터 테파필터 필티단계 스단계어과 배터리 배티리 분리형(]개) 배터리종류 리롭이온 배티리용량 220OmnAh 메인터러쉬 일반 추가e러쉬 침구널러쉬 슬널러쉬 슬형부러쉬 틈사 브러쉬 편의기능 디스플레이표시 배터리잔량표시 색상 화이트 [@ 인종",
+      "specs": {
+        "핸디스틱청소기": "지원",
+        "무선": "지원",
+        "흡입+물걸레(동시)": "지원",
+        "물걸레": "별매",
+        "BLDC모터": "지원",
+        "흡입력": "160W(35,000Pa)",
+        "헤파필터": "지원",
+        "스테이션": "벽걸이거치 , 액세서리&배터리거치",
+        "AI청소": "지원",
+        "LED라이트": "지원",
+        "[흡입구] 일반": "지원",
+        "추가브러쉬": "침구브러쉬 , 솔형브러쉬 , 틈새브러쉬",
+        "[색상/크기] 색상": "화이트",
+        "크기(가로x세로x깊이)": "240x1080x225mm"
+      },
+      "raw_specs": "핸디스틱청소기 / 무선 / 흡입+물걸레(동시) / 물걸레 : 별매 / BLDC모터 / 흡입력 : 160W(35,000Pa) / 헤파필터 / 스테이션 : 벽걸이거치 , 액세서리&배터리거치 / AI청소 / LED라이트 / [흡입구] 일반 / 추가브러쉬 : 침구브러쉬 , 솔형브러쉬 , 틈새브러쉬 / [색상/크기] 색상 : 화이트 / 크기(가로x세로x깊이): 240x1080x225mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=30300062",
+      "manufacturer": "홈앤아트, Home & Art",
+      "model_name": "HAVG-160AW"
+    },
+    "norm_info": {
+      "company_name": "홈앤아트, Home & Art",
+      "model_name": "HAVG-160AW",
+      "product_name": "홈앤아트 코지 HAVG-160AW (단품)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "홈앤아트, Home & Art",
+    "model_param": "HAVG-160AW",
+    "ocr_result": {
+      "extracted_text": "흉안아트 코지 HAVG-160AW (단품) coupang 205,750원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 10 연관상품 집입력(Pa) 35,000 급인력(W) 160 사용시간 25분(최대) 스테이선 액세서리요 배터리거 벽걸이거치 청소기능 시청소 LED라이트 모티 BLDC모티 필터 테파필터 필티단계 스단계어과 배터리 배티리 분리형(]개) 배터리종류 리롭이온 배티리용량 220OmnAh 메인터러쉬 일반 추가e러쉬 침구널러쉬 슬널러쉬 슬형부러쉬 틈사 브러쉬 편의기능 디스플레이표시 배터리잔량표시 색상 화이트 [@ 인종",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\홈앤아트 코지 HAVG-160AW (단품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

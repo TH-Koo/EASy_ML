@@ -107,7 +107,12 @@
       "cache_hit": false,
       "cache_path": "product_images\\크로스오버 27QSA9 Fast-iPS 180 WQHD Ai 게이밍\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\크로스오버 27QSA9 Fast-iPS 180 WQHD Ai 게이밍\\detail_scan.png",
+        "image_size": 65986,
+        "image_sha256": "fc4923c998af18d196bd039c89495920ff6467137c2b02e3365437523d462be0"
+      }
     }
   }
 }

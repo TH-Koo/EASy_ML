@@ -38,49 +38,31 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=108229898",
       "manufacturer": "레노버, Lenober",
-      "model_name": "RM-P13"
+      "model_name": "LENOVR SH-070"
     },
     "norm_info": {
       "company_name": "레노버, Lenober",
-      "model_name": "RM-P13",
+      "model_name": "LENOVR SH-070",
       "product_name": "레노버 샤오신패드 프로 13 해외구매 (램8GB,128GB)"
     },
     "db_results": [
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "TP00139A",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Lenovo S14 G3 IAP",
         "country": "중국",
-        "cert_date": "2022-10-06",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TP00139A"
+        "cert_date": "2023-08-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-S14-82TW"
       },
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
-        "model_name": "Lenovo TB-J706F",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Lenovo Legion S7 15IMH5",
         "country": "중국",
-        "cert_date": "2020-08-26",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB-J706F"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "L06E",
-        "country": "중국",
-        "cert_date": "2020-07-16",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-L06E"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "L06D",
-        "country": "중국",
-        "cert_date": "2020-07-16",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-L06D"
+        "cert_date": "2020-08-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-LegionS7-15IMH"
       },
       {
         "company_name": "한국레노버 유한회사",
@@ -90,6 +72,15 @@
         "cert_date": "2020-06-25",
         "cert_status": "적합인증",
         "cert_no": "R-C-LVK-TB-X306F"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "Smart Charging Station",
+        "model_name": "Lenovo CD-100",
+        "country": "중국",
+        "cert_date": "2020-06-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-CD-100"
       },
       {
         "company_name": "한국레노버 유한회사",
@@ -111,60 +102,6 @@
       },
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "RG202-F",
-        "country": "중국",
-        "cert_date": "2020-04-29",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-RG202-F"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "M600A",
-        "country": "중국",
-        "cert_date": "2020-04-27",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-M600A"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "KC-1957",
-        "country": "대만",
-        "cert_date": "2020-04-17",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-LVK-KC-1957"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "RG-1217",
-        "country": "대만",
-        "cert_date": "2020-04-17",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-LVK-RG-1217"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "미약 전계강도 무선기기",
-        "model_name": "F0FA",
-        "country": "중국",
-        "cert_date": "2020-03-31",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-LVK-AIO5-F0FA"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "MB230B",
-        "country": "중국",
-        "cert_date": "2020-02-05",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-LVK-MB230B"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
         "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
         "model_name": "Lenovo TB-X606X",
         "country": "중국",
@@ -173,13 +110,13 @@
         "cert_no": "R-C-LVK-TB-X606X"
       },
       {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "IP Duet 5 Chromebook 13Q7C6",
+        "company_name": "한국레노버 유한회사,특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5150∼5350㎒",
+        "equip_name": "5470∼5850㎒ 주파수 대역))",
+        "model_name": "Lenovo TB-Q706F",
         "country": "중국",
-        "cert_date": "2021-11-09",
+        "cert_date": "2021-11-18",
         "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-Duet5-82QS"
+        "cert_no": "R-C-LVK-TB-Q706F"
       },
       {
         "company_name": "한국레노버 유한회사",
@@ -201,12 +138,12 @@
       },
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
-        "model_name": "Lenovo TB-J616X",
+        "equip_name": "Keyboard",
+        "model_name": "Lenovo Chromebook keyboard Pack",
         "country": "중국",
-        "cert_date": "2021-09-16",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB-J616X"
+        "cert_date": "2021-09-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-DUET5CB7CKB"
       },
       {
         "company_name": "한국레노버 유한회사",
@@ -216,6 +153,15 @@
         "cert_date": "2021-09-07",
         "cert_status": "적합인증",
         "cert_no": "R-C-LVK-PS-1551B"
+      },
+      {
+        "company_name": "한국레노버 유한회사,특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5150∼5350㎒",
+        "equip_name": "5470∼5850㎒ 주파수 대역))",
+        "model_name": "Lenovo TB-X6C6NBF",
+        "country": "중국",
+        "cert_date": "2021-08-18",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LVK-TB-X6C6NBF"
       },
       {
         "company_name": "한국레노버 유한회사",
@@ -236,22 +182,40 @@
         "cert_no": "R-R-LVK-HA-200"
       },
       {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "HW10TP",
+        "company_name": "한국레노버 유한회사,특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5150∼5350㎒",
+        "equip_name": "5470∼5850㎒ 주파수 대역))",
+        "model_name": "Lenovo YT-J706F",
         "country": "중국",
-        "cert_date": "2021-05-27",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-LVK-HW10TP"
+        "cert_date": "2021-07-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LVK-YT-J706F"
       },
       {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "ThinkCentre Nano IoT IOBOX D-out dongle",
-        "model_name": "M90n IOBOX D-out dongle",
+        "company_name": "한국레노버 유한회사,특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5150∼5350㎒",
+        "equip_name": "5470∼5850㎒ 주파수 대역))",
+        "model_name": "Lenovo TB-J616F",
         "country": "중국",
-        "cert_date": "2021-03-11",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-LVK-M90ndongle"
+        "cert_date": "2021-06-29",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LVK-TB-J616F"
+      },
+      {
+        "company_name": "한국레노버 유한회사,특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5150∼5350㎒",
+        "equip_name": "5470∼5850㎒ 주파수 대역))",
+        "model_name": "Lenovo TB-X6C6F",
+        "country": "중국",
+        "cert_date": "2021-06-29",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LVK-TB-X6C6F"
+      },
+      {
+        "company_name": "한국레노버 유한회사,특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5150∼5350㎒",
+        "equip_name": "5470∼5850㎒ 주파수 대역))",
+        "model_name": "Lenovo TB-8506FS",
+        "country": "중국",
+        "cert_date": "2021-06-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LVK-TB-8506FS"
       },
       {
         "company_name": "한국레노버 유한회사",
@@ -263,220 +227,247 @@
         "cert_no": "R-C-LVK-TB-J606L"
       },
       {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "H600D",
+        "company_name": "한국레노버 유한회사,특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5150∼5350㎒",
+        "equip_name": "5470∼5850㎒ 주파수 대역))",
+        "model_name": "Lenovo TB-J606F",
         "country": "중국",
-        "cert_date": "2021-01-15",
+        "cert_date": "2021-02-09",
         "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-H600D"
+        "cert_no": "R-C-LVK-TB-J606F"
       },
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "H600",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Lenovo V15 G2 ALC",
         "country": "중국",
-        "cert_date": "2021-01-15",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-H600"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "TB300FU",
-        "country": "중국",
-        "cert_date": "2022-11-07",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB300FU"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "Lenovo C1610",
-        "country": "중국",
-        "cert_date": "2023-05-11",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-C1610"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "TB323FU",
-        "country": "중국",
-        "cert_date": "2026-02-20",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB323FU"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "TB390FU",
-        "country": "중국",
-        "cert_date": "2026-03-04",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB390FU"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
-        "model_name": "TB336ZU",
-        "country": "중국",
-        "cert_date": "2025-05-22",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB336ZU"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "무선 컨트롤러",
-        "model_name": "Legion Go 2 Controller L",
-        "country": "중국",
-        "cert_date": "2025-08-22",
+        "cert_date": "2021-01-22",
         "cert_status": "적합등록",
-        "cert_no": "R-R-LVK-LegionGo-LC2"
+        "cert_no": "R-R-LVK-V15-82KD"
       },
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "무선 컨트롤러",
-        "model_name": "Legion Go 2 Controller R",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Lenovo V14 G2 ALC",
         "country": "중국",
-        "cert_date": "2025-08-22",
+        "cert_date": "2021-01-20",
         "cert_status": "적합등록",
-        "cert_no": "R-R-LVK-LegionGo-RC2"
+        "cert_no": "R-R-LVK-V14-82KC"
       },
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5925∼7125㎒ 주파수 대역))",
-        "model_name": "TB710FU",
+        "equip_name": "Lenovo HDMI to Glasses Adapter",
+        "model_name": "Lenovo AAC-371Y",
         "country": "중국",
-        "cert_date": "2025-08-22",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB710FU"
+        "cert_date": "2022-09-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-LenovoAAC-371Y"
       },
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
-        "model_name": "TB361ZU",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Lenovo V14 G3 IAP",
         "country": "중국",
-        "cert_date": "2025-08-27",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB361ZU"
+        "cert_date": "2022-04-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-V14-82TS"
       },
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5925∼7125㎒ 주파수 대역))",
-        "model_name": "TB571FU",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Lenovo V15 G3 IAP",
         "country": "중국",
-        "cert_date": "2025-09-11",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB571FU"
+        "cert_date": "2022-04-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-V15-82TT"
       },
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5925∼7125㎒ 주파수 대역))",
-        "model_name": "TB373FU",
+        "equip_name": "Bluetooth Folio Keyboard",
+        "model_name": "Lenovo Duet 5 BT Folio",
         "country": "중국",
-        "cert_date": "2024-08-14",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB373FU"
+        "cert_date": "2022-04-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-DUET5BTKB"
       },
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
-        "model_name": "TB311XU",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Lenovo V15 G3 ABA",
         "country": "중국",
-        "cert_date": "2024-11-20",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB311XU"
+        "cert_date": "2022-03-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-V15-82TV"
       },
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
-        "model_name": "TB310XU",
-        "country": "중국",
-        "cert_date": "2023-01-27",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB310XU"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "Lenovo TB-X6E6F",
-        "country": "중국",
-        "cert_date": "2023-03-24",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB-X6E6F"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "TB330FU",
-        "country": "중국",
-        "cert_date": "2023-11-10",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB330FU"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5925∼7125㎒ 주파수 대역))",
-        "model_name": "TB350FU",
-        "country": "중국",
-        "cert_date": "2022-09-27",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB350FU"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "TB128FU",
-        "country": "중국",
-        "cert_date": "2022-06-03",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB128FU"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
-        "model_name": "TB128XU",
-        "country": "중국",
-        "cert_date": "2022-05-31",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB128XU"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "TB125FU",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Lenovo V14 G3 ABA",
         "country": "중국",
         "cert_date": "2022-03-02",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB125FU"
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-V14-82TU"
       },
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "TB328FU",
+        "equip_name": "퍼스널컴퓨터",
+        "model_name": "Lenovo Chromebox Micro",
         "country": "중국",
-        "cert_date": "2022-02-23",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB328FU"
+        "cert_date": "2023-10-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-Chromebox-83F9"
       },
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
-        "model_name": "TB330XU",
+        "equip_name": "Smart Glasses",
+        "model_name": "Lenovo AR-6561Y",
         "country": "중국",
-        "cert_date": "2023-11-10",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB330XU"
+        "cert_date": "2023-09-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-AR-6561Y"
       },
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "TB370FU",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Lenovo V17 G4 IRU",
         "country": "중국",
-        "cert_date": "2023-06-22",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB370FU"
+        "cert_date": "2024-05-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-V17-83A2"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Lenovo Chrome 500e 2in1 G5 M89",
+        "country": "아일랜드",
+        "cert_date": "2026-01-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-500e-83TA"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "퍼스널 컴퓨터",
+        "model_name": "Lenovo A105 24",
+        "country": "중국",
+        "cert_date": "2026-01-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-A105-F0JS"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "퍼스널 컴퓨터",
+        "model_name": "Lenovo V105q",
+        "country": "중국",
+        "cert_date": "2026-01-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-V105q-13Q2"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Lenovo 13w 2-in-1 Gen 3",
+        "country": "중국",
+        "cert_date": "2025-03-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-13w-83M9"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Lenovo 100w Gen 5",
+        "country": "중국",
+        "cert_date": "2025-03-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-100w-83LD"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Lenovo Chrome 14M9610",
+        "country": "중국",
+        "cert_date": "2025-04-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-CBP-83MW"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Lenovo 300w 2-in-1 Gen 5",
+        "country": "중국",
+        "cert_date": "2025-04-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-300w-83LF"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Lenovo Chrome 2-in-1 14IRU10",
+        "country": "중국",
+        "cert_date": "2025-08-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-CBP-83LL"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "데스크탑",
+        "model_name": "Lenovo V100q",
+        "country": "중국",
+        "cert_date": "2025-08-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-V100q-13GE"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "노트북",
+        "model_name": "Lenovo V15 G6 ARP",
+        "country": "중국",
+        "cert_date": "2025-11-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-V15-83UU"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "노트북",
+        "model_name": "Lenovo V14 G6 ARP",
+        "country": "중국",
+        "cert_date": "2025-11-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-V14-83UT"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Lenovo Chrome 14ITN11",
+        "country": "중국",
+        "cert_date": "2025-12-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-CB14-83SV"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Lenovo Chrome 500e 2in1 G5 ITN",
+        "country": "중국",
+        "cert_date": "2025-12-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-500e-83T8"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Lenovo V15 G5 IRL",
+        "country": "중국",
+        "cert_date": "2024-03-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-V15-83GW"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Lenovo V14 G5 IRL",
+        "country": "중국",
+        "cert_date": "2024-03-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-V14-83GU"
       },
       {
         "company_name": "한국레노버 유한회사",
@@ -489,12 +480,21 @@
       },
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
-        "model_name": "TB360ZU",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Lenovo K14 Gen 2 IRU",
         "country": "중국",
-        "cert_date": "2023-06-07",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB360ZU"
+        "cert_date": "2023-07-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-K14-21G0"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Lenovo V14 G4 ABP",
+        "country": "중국",
+        "cert_date": "2023-07-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-V14-82YX"
       }
     ],
     "jodale_result": null,
@@ -510,14 +510,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "레노버, Lenober",
-    "model_param": "RM-P13",
+    "model_param": "LENOVR SH-070",
     "ocr_result": {
       "extracted_text": "레노버 사오신패드 프로 13 해외구매 (캠8GB,128GB) croket 321,500원 무료내송 최저가 구매하기 가격비교 85 상품 상세정보 의견리뷰 163 소모품|액세서리 뉴스커유니티 연관상품 화면크기 13인지 디스플레이 LCD 해상도 3504*x2190 화면비율 16.10 최대주사물 144Hz 색감 DCI-P3 쇠대밝기 8oOnits 시스템 8GB 용탕 128GB 외장메모리 ricroSD지I원 외장메도리용량 microSD:최대2TB 프로세서 스년드래근8s Gen4 코이 개수 8코이 군이블력 3.21GHz+3.OGHz+2.8GH2+2.OGHz GPU Adreno825 벤치마크 AP CPU 74점 AP 게이팅 64점 AP CPU(싱글) 2154 AP CPU밀리) 6880 Al NPU 권럽 학사곧 시I기능 요약 편집 교점 이미지 생싱편집 Al 검색/인식 실시간 통역번역 카메라 후면카메라 후면:1,300만화소 전면카메라 전면 800만화소 사운드",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\레노버 샤오신패드 프로 13 해외구매 (램8GB,128GB)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\레노버 샤오신패드 프로 13 해외구매 (램8GB,128GB)\\detail_scan.png",
+        "image_size": 76500,
+        "image_sha256": "0cf1b21485a1d5eeb71223381b7be300795a6fc82e51778ea93fc72bb2badcc2"
+      }
     }
   }
 }

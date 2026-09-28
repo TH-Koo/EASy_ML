@@ -35,31 +35,40 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=106717304",
       "manufacturer": "레노버, Lenober",
-      "model_name": "83S1004PKR"
+      "model_name": "14AGP11"
     },
     "norm_info": {
       "company_name": "레노버, Lenober",
-      "model_name": "83S1004PKR",
+      "model_name": "14AGP11",
       "product_name": "레노버 아이디어패드 Slim5 14AGP11 83S1004PKR (SSD 1TB)"
     },
     "db_results": [
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "TP00139A",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Yoga 7 2-in-1 14AGP11",
         "country": "중국",
-        "cert_date": "2022-10-06",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TP00139A"
+        "cert_date": "2026-01-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-Yoga-83TD"
       },
       {
         "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
-        "model_name": "Lenovo TB-J706F",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "Yoga Slim 7 14AGP11",
         "country": "중국",
-        "cert_date": "2020-08-26",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB-J706F"
+        "cert_date": "2026-02-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-Yoga-83QS"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "노트북 컴퓨터",
+        "model_name": "IdeaPad Slim 5 14AGP11",
+        "country": "중국",
+        "cert_date": "2025-11-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LVK-IPS5-83S1"
       },
       {
         "company_name": "한국레노버 유한회사",
@@ -69,6 +78,15 @@
         "cert_date": "2020-07-16",
         "cert_status": "적합인증",
         "cert_no": "R-C-LVK-L06E"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "Lenovo TB-J706F",
+        "country": "중국",
+        "cert_date": "2020-08-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LVK-TB-J706F"
       },
       {
         "company_name": "한국레노버 유한회사",
@@ -474,24 +492,6 @@
         "cert_date": "2023-06-22",
         "cert_status": "적합인증",
         "cert_no": "R-C-LVK-TB370FU"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5925∼7125㎒ 주파수 대역))",
-        "model_name": "Lenovo VRX 6060",
-        "country": "중국",
-        "cert_date": "2023-05-16",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-VRX6060"
-      },
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
-        "model_name": "TB360ZU",
-        "country": "중국",
-        "cert_date": "2023-06-07",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-LVK-TB360ZU"
       }
     ],
     "jodale_result": null,
@@ -507,14 +507,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "레노버, Lenober",
-    "model_param": "83S1004PKR",
+    "model_param": "14AGP11",
     "ocr_result": {
       "extracted_text": "레노버 아이디어때드 Slim5 14AGP11 83S1004PKR (SSD ITB) coupang 1,939,000원 무료배승 최저가 구매하기 가격비교 23 상품 상세정보 의견리뷰 연관상품 무게 1.37kg 쇠대사용시간 최대 15 시간 운영제제(OS) 웬도우1움 판매유형 제조사기본상품 [화면] 화면 비율 1610 해상도 2880x1800(WQXGA+) DCI-P3 10076 주사물 12OHz 밝기 5OOnit 패널 표면 처리 글레이 파널 종류 OLED 디스플레이 특징 광시아각 [CPU] CPU 제조사 AMD CPU 세분류 라이전A 7 CPU 코드명 고르근 포인트 CPU 넘버 450 (5.1GHz) CPU 코이 욕타(8) 코어 CPU 스레드 16스레드 NPU 종류 AMD 라이젠 Al NPU 5OTOPS [그래픽] GPU 종류 내장그래픽 GPU 제조사 AMD GPU 침셋 Radeon 860M GPU 코어 8코이 GPU 클력 3OOOMHz [구성] 댐 타입 DDR5 32GB",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\레노버 아이디어패드 Slim5 14AGP11 83S1004PKR (SSD 1TB)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\레노버 아이디어패드 Slim5 14AGP11 83S1004PKR (SSD 1TB)\\detail_scan.png",
+        "image_size": 77068,
+        "image_sha256": "63743c335e909b42a10298ca193d71d0235d99e2d4ae0afd71b176a30e66f223"
+      }
     }
   }
 }

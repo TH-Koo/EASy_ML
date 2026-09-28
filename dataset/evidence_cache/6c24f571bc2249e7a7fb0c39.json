@@ -1,0 +1,547 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=91036862",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "LG전자 오브제컬렉션 코드제로 AI A9 AI927WA (일반구매)",
+      "name": "LG전자 오브제컬렉션 코드제로 AI A9 AI927WA (일반구매)",
+      "description": "",
+      "ocr_text": "LG전자 오브제걸렉선 코드제로 Al A9 Al927WA (일반구매) 11> 911,210원  무료배송 최저가 구매하기 가격비교 230 상품 상세정보 의견 리뷰 72 소모품|액세서리 뉴스커유니티 연관상품 집입력(W) 320W 사용시간 30분(쇠대) 스데이선 명칭 올인원타뭐 스테이선 먼지비움 액세서리스님 스템드거지 먼지비음시간 30조 청소기능 시청소 LED라이트 오토스탑맨고 자능물공금 모티 스마드인버터모티 필터단계 5단계어과 배터리 충전시간 4시간 배터리 분리험 (그개) 배티리종류 리듬이온 전압 25.2V 메인터러쉬 와이드 추가브러쉬 슬널러쉬 슬형부러쉬 틈새부러쉬 편의기능 스트완제어 대화형알림장 디스플레이표시 배터리잔량표시 깊이즈석여자과 머지트부리",
+      "specs": {
+        "핸디스틱청소기": "지원",
+        "무선": "지원",
+        "흡입+물걸레(동시)": "지원",
+        "물걸레": "포함",
+        "스마트인버터모터": "지원",
+        "흡입력": "320W",
+        "스테이션": "먼지비움 , 충전 , 액세서리수납 , 스탠드거치",
+        "먼지비움시간": "30초",
+        "AI청소": "지원",
+        "LED라이트": "지원",
+        "오토스탑앤고": "지원",
+        "자동물공급": "지원",
+        "[흡입구] 와이드": "지원",
+        "추가브러쉬": "솔형브러쉬 , 틈새브러쉬",
+        "[색상/크기] 색상": "카밍베이지",
+        "무게": "2.54kg",
+        "크기(가로x세로x깊이)": "300x1100x245mm"
+      },
+      "raw_specs": "핸디스틱청소기 / 무선 / 흡입+물걸레(동시) / 물걸레 : 포함 / 스마트인버터모터 / 흡입력 : 320W / 스테이션 : 먼지비움 , 충전 , 액세서리수납 , 스탠드거치 / 먼지비움시간 : 30초 / AI청소 / LED라이트 / 오토스탑앤고 / 자동물공급 / [흡입구] 와이드 / 추가브러쉬 : 솔형브러쉬 , 틈새브러쉬 / [색상/크기] 색상 : 카밍베이지 / 무게 : 2.54kg / 크기(가로x세로x깊이): 300x1100x245mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=91036862",
+      "manufacturer": "엘지전자,LG전자",
+      "model_name": "A9"
+    },
+    "norm_info": {
+      "company_name": "엘지전자,LG전자",
+      "model_name": "A9",
+      "product_name": "LG전자 오브제컬렉션 코드제로 AI A9 AI927WA (일반구매)"
+    },
+    "db_results": [
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "에어컨",
+        "model_name": "TNW1450A9HL",
+        "country": "한국",
+        "cert_date": "2025-03-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TNW1450A9HL"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "에어컨",
+        "model_name": "TNW1300A9HL",
+        "country": "한국",
+        "cert_date": "2025-03-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TNW1300A9HL"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "에어컨",
+        "model_name": "T-W145PA9SR",
+        "country": "한국",
+        "cert_date": "2019-07-09",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TW-0032"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "에어컨",
+        "model_name": "TNW1450A9FR",
+        "country": "한국",
+        "cert_date": "2023-05-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TNW1450A9FR"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "에어컨",
+        "model_name": "TW110PA9SR",
+        "country": "한국",
+        "cert_date": "2019-05-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TW-0033"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "에어컨",
+        "model_name": "TNW145PA9UR",
+        "country": "한국",
+        "cert_date": "2023-04-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TNW145PA9UR"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "에어컨",
+        "model_name": "TNW1450A9UR",
+        "country": "한국",
+        "cert_date": "2023-04-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TNW1450A9UR"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "에어컨",
+        "model_name": "TW1100A9FR",
+        "country": "한국",
+        "cert_date": "2020-01-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TW-0037"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "IA97011YBLG",
+        "country": "한국",
+        "cert_date": "2019-04-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-IA97011YBLG"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "IA97001JALG",
+        "country": "한국",
+        "cert_date": "2019-04-26",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-IA97001JALG"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "진공청소기",
+        "model_name": "A9700IK",
+        "country": "한국",
+        "cert_date": "2020-01-09",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-S98K"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "냉장기",
+        "model_name": "LRC-V3001A9",
+        "country": "한국",
+        "cert_date": "2017-02-20",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REM-LGE-LV-0001"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "콘덴싱유닛",
+        "model_name": "LSC-V0991A9",
+        "country": "한국",
+        "cert_date": "2019-03-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-LSC-0005"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "에어컨",
+        "model_name": "TNW1453A9UR",
+        "country": "한국",
+        "cert_date": "2024-01-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TNW1453A9UR"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "에어컨",
+        "model_name": "T-W1450A9SR",
+        "country": "한국",
+        "cert_date": "2018-12-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TW-0026"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "에어컨",
+        "model_name": "TNW145PA9UR",
+        "country": "한국",
+        "cert_date": "2021-07-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TNW-0054"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "냉방기(실외기)",
+        "model_name": "LSC-V1500A9",
+        "country": "한국",
+        "cert_date": "2018-03-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-REM-LGE-LSC-0002"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "에어컨",
+        "model_name": "TNW1451A9FR",
+        "country": "한국",
+        "cert_date": "2024-08-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TNW1451A9FR"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "에어컨",
+        "model_name": "TNW1455A9UR",
+        "country": "한국",
+        "cert_date": "2024-08-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TNW1455A9UR"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "에어컨",
+        "model_name": "TNW1450A9UR",
+        "country": "한국",
+        "cert_date": "2021-07-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TNW-0053"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "진공청소기",
+        "model_name": "A9100SN",
+        "country": "베트남",
+        "cert_date": "2020-12-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-S97S"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "에어컨",
+        "model_name": "TNW145QA9UR",
+        "country": "한국",
+        "cert_date": "2024-08-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TNW145QA9UR"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HBS-TFN6",
+        "country": "베트남",
+        "cert_date": "2020-05-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-HBS-FN6"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "WCFDM00N2A1",
+        "country": "한국",
+        "cert_date": "2021-03-02",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-WCFDM00N2A1"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "TL21BNU2",
+        "country": "베트남",
+        "cert_date": "2020-05-01",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-TL21BNU"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "WC500HOAC21",
+        "country": "말레이시아",
+        "cert_date": "2020-04-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-WC500HOAC21"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "LM-G900N",
+        "country": "한국",
+        "cert_date": "2020-04-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-MCG900N"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "LM-Q630N",
+        "country": "중국",
+        "cert_date": "2020-04-02",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-MCQ630N"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SPN11-SR",
+        "country": "중국",
+        "cert_date": "2020-03-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-DMSPN11"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "LM-Y120L",
+        "country": "중국",
+        "cert_date": "2020-03-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-MCY120"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SPN5B-W",
+        "country": "중국",
+        "cert_date": "2020-02-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-DMSPN5B-W"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SPN8-W",
+        "country": "중국",
+        "cert_date": "2020-02-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-DMSPN8-W"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "PEA4",
+        "country": "중국",
+        "cert_date": "2021-12-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-PEA4"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "10HQ701G",
+        "country": "한국",
+        "cert_date": "2021-12-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-10HQ701G"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MB8811QD",
+        "country": "한국",
+        "cert_date": "2021-10-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-MB8811QD"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기 (무선데이터통신시스템용 무선기기)",
+        "model_name": "TONE-TFP6",
+        "country": "베트남",
+        "cert_date": "2021-10-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TONE-TFP6"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TONE-TFP3",
+        "country": "베트남",
+        "cert_date": "2021-09-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-TONE-TFP3"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "LCWB-002",
+        "country": "인도네시아",
+        "cert_date": "2021-08-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-LCWB-002"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "TLHOBDNN0B5",
+        "country": "베트남",
+        "cert_date": "2021-08-17",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-TLHOBDNN0B5"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "17HQ901G",
+        "country": "한국",
+        "cert_date": "2021-08-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-17HQ901G"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MR22GJ",
+        "country": "한국",
+        "cert_date": "2021-08-03",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-MR22GJ"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PM22GN",
+        "country": "한국",
+        "cert_date": "2021-08-03",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-PM22GN"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "14HQ901G",
+        "country": "한국",
+        "cert_date": "2021-07-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-14HQ901G"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SPP11M-SR",
+        "country": "중국",
+        "cert_date": "2021-05-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-DMSPP11M"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "WL1SB21",
+        "country": "인도네시아",
+        "cert_date": "2021-05-03",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-WL1SB21"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SPN8M-W",
+        "country": "중국",
+        "cert_date": "2021-05-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-DMSPN8M-W"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SPP8M-W",
+        "country": "중국",
+        "cert_date": "2021-05-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-DMSPP8M-W"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "IR12PT-TS",
+        "country": "한국",
+        "cert_date": "2021-05-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LGE-IR12PT-TS"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SC-00DA",
+        "country": "한국",
+        "cert_date": "2021-05-14",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SE2-SC-00DA"
+      },
+      {
+        "company_name": "엘지전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "LM-V700N",
+        "country": "한국",
+        "cert_date": "2021-04-29",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LGE-MCV700N1"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [
+      {
+        "id": 13208,
+        "cert_type": "녹색기술제품",
+        "cert_no": "GTP-23-03812",
+        "product_name": "소비전력 절감형 모니터",
+        "company_name": "엘지전자주식회사",
+        "biz_no": "1078614075",
+        "representative": "조주완",
+        "cert_date": "2023-09-14",
+        "expire_date": "2026-09-13"
+      },
+      {
+        "id": 29277,
+        "cert_type": "녹색기술제품",
+        "cert_no": "GTP-23-03812",
+        "product_name": "소비전력 절감형 모니터",
+        "company_name": "엘지전자주식회사",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2023-09-14",
+        "expire_date": null
+      }
+    ],
+    "dart_result": {
+      "status": "AI 핵심 역량 미흡 (워싱 의심)",
+      "total_score": 20,
+      "evidence": [
+        "📦 [AI 제품적용] Y LG전자 비하이스마트지역혁신 투자조합 단순투자 - - - - -",
+        "📦 [AI 제품적용] Y LG전자 인공지능연구원 단순투자 - - - -",
+        "📦 [AI 제품적용] 131 Y LG전자 LG-LHT Aircraft Solutions GmbH 경영참여 - - - - - - -"
+      ],
+      "detail": "DART 분석 결과 [LG전자] 실적 총 3건 확인."
+    },
+    "target_company_name": "엘지전자,LG전자",
+    "model_param": "A9",
+    "ocr_result": {
+      "extracted_text": "LG전자 오브제걸렉선 코드제로 Al A9 Al927WA (일반구매) 11> 911,210원  무료배송 최저가 구매하기 가격비교 230 상품 상세정보 의견 리뷰 72 소모품|액세서리 뉴스커유니티 연관상품 집입력(W) 320W 사용시간 30분(쇠대) 스데이선 명칭 올인원타뭐 스테이선 먼지비움 액세서리스님 스템드거지 먼지비음시간 30조 청소기능 시청소 LED라이트 오토스탑맨고 자능물공금 모티 스마드인버터모티 필터단계 5단계어과 배터리 충전시간 4시간 배터리 분리험 (그개) 배티리종류 리듬이온 전압 25.2V 메인터러쉬 와이드 추가브러쉬 슬널러쉬 슬형부러쉬 틈새부러쉬 편의기능 스트완제어 대화형알림장 디스플레이표시 배터리잔량표시 깊이즈석여자과 머지트부리",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\LG전자 오브제컬렉션 코드제로 AI A9 AI927WA (일반구매)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

@@ -33,11 +33,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=103692239",
       "manufacturer": "다이슨, Dyson",
-      "model_name": "다이슨 스팟앤스크럽"
+      "model_name": "DAISYSON"
     },
     "norm_info": {
       "company_name": "다이슨, Dyson",
-      "model_name": "다이슨 스팟앤스크럽",
+      "model_name": "DAISYSON",
       "product_name": "다이슨 스팟앤스크럽 (해외구매)"
     },
     "db_results": [
@@ -292,35 +292,25 @@
     "iitp_result": null,
     "patent_items_df": [
       {
-        "source_record_id": "1020237039192",
-        "일련번호": "1",
-        "출원번호": "1020237039192",
-        "발명의명칭(한글)": "전해질 조성물",
-        "출원일자": "2022-03-22",
-        "출원인": "다이슨 테크놀러지 리미티드",
-        "등록상태": "거절",
-        "초록": "리튬 이온 배터리용 전해질 조성물이 개시된다. 상기 조성물은: (a) 5 내지 35 wt%의 리튬 염; (b) 2 내지 10 wt%의 첨가제; 및 (c) 55 내지 93 wt%의 용매를 포함하며, 리튬 염은: (ai) 리튬 2-트리플루오로메틸-4,5-디시아노이미다졸라이드, 리튬 디플루오로(옥살라토)보레이트, 리튬 비스(옥살라토)보레이트 및 리튬 테트라플루오로보레이트로부터 선택되는 염; 및 (aⅱ) 선택적으로, 리튬 비스(트리플루오로메탄설포닐)이미드 및/또는 리튬 비스(플루오로설포닐)이미드로부터 선택되는 공염을 포함하고, 염 대 공염의 몰 비는 상기 조성물이 리튬 디플루오로(옥살라토)보레이트 또는 리튬 테트라플루오로보레이트와 함께 리튬 비스(플루오로설포닐)이미드를 포함하지 않는다는 조건으로, 100:0 내지 5:95이며, 첨가제는 비닐렌 카보네이트 및 선택적으로 플루오로에틸렌 카보네이트를 포함하고, 용매는 (ci) 에틸렌 카보네이트 및 10 내지 30 mol% 프로필렌 카보네이트, 또는 (cⅱ) γ-부티로락톤 및 선택적으로 에틸렌 카보네이트를 포함한다.",
-        "IPC": "H01M 10/0568|H01M 10/0567|H01M 10/0569|H01M 10/0525",
-        "CPC": "",
-        "relevance_type": "general_ai",
-        "match_confidence": 0.45,
-        "search_alias": "다이슨",
-        "search_type": "AI 특허 [일반]",
-        "search_query": "AP=[다이슨]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
-        "status": "verified"
+        "title": "AI 특허 내역 없음 None"
       }
     ],
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "다이슨, Dyson",
-    "model_param": "다이슨 스팟앤스크럽",
+    "model_param": "DAISYSON",
     "ocr_result": {
       "extracted_text": "다이손 스맛엔스크럽 (해외구매) 보드비 상점 1,790,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 317 연관상품 집입력 18,OOOPa 센서 LDS 카메라 맵끔 인식 A사물인식 감지회피 잠애물회피 분터등반 오염도감지 리프팀 Icm 분늑님기 2cm 통과높이 11cm 청소운전 모서리 브러쉬 사이드로봇째러쉬 엉림밤지재질 먼지통 0.25L 증전시간 3시간 청소기능 카켓부스트 물걸레리프팀 실시간물결레세칙 스마트혼제어",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\다이슨 스팟앤스크럽 (해외구매)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\다이슨 스팟앤스크럽 (해외구매)\\detail_scan.png",
+        "image_size": 52220,
+        "image_sha256": "6b7579a4725d08cd7c7e523a906c418d7ceef7e9f39818b2ce45417ccd1c2f61"
+      }
     }
   }
 }

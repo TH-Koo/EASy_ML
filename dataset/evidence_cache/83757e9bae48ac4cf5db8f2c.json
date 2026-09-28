@@ -36,11 +36,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=98768060",
       "manufacturer": "레노버, Lenober",
-      "model_name": "RENOVER-TA111AI"
+      "model_name": "레노버 AI"
     },
     "norm_info": {
       "company_name": "레노버, Lenober",
-      "model_name": "RENOVER-TA111AI",
+      "model_name": "레노버 AI",
       "product_name": "레노버 요가 탭 11.1 AI (256GB)"
     },
     "db_results": [
@@ -508,14 +508,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "레노버, Lenober",
-    "model_param": "RENOVER-TA111AI",
+    "model_param": "레노버 AI",
     "ocr_result": {
       "extracted_text": "레노버 요가 댐 11.1 Al (256GB) coupang 648,000원  무료배송 최저가 구매하기 가격비교 37 상품 상세정보 의견리뷰 59 소모품|액세서리 뉴스커유니티 연관상품 해삼도 3200x2000 쇠대주사율 144H2 색감 DCI-P3 쇠대밝기 8OOnits 시스템 12GB 용량 256GB 저장매체 UFS4.이(내장) 외장메모리 microSD미지원 프로세서 냄드래근8 Gen3 코어클력 3.3GH2+2.95GH2+21GHz 벤치마크 AP CPU 91점 AP 게이팅 93점 CPU(싱글) 2193 CPU(밀리) 7304 AP GPU게인) 14751 시I기능 Al 검색/인식 카메라 후면카메라 후면:1,300만화소 + 200만화소 전면카메라 전면:1,300만화소 사운드 가이크 2개 소피러 사운드기술 돌비애드모스 네트위크",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\레노버 요가 탭 11.1 AI (256GB)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\레노버 요가 탭 11.1 AI (256GB)\\detail_scan.png",
+        "image_size": 70503,
+        "image_sha256": "bac897b86a74e5f78d4b97351dd1978b3294895b75b070186994247161471747"
+      }
     }
   }
 }

@@ -541,7 +541,12 @@
       "cache_hit": false,
       "cache_path": "product_images\\LG전자 디오스 AI 오브제컬렉션 T875MEE011 (전국무료)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\LG전자 디오스 AI 오브제컬렉션 T875MEE011 (전국무료)\\detail_scan.png",
+        "image_size": 59527,
+        "image_sha256": "28ab5170c0fee357c6e089c9a86582af3f1cd2992725e516d06104438c665c13"
+      }
     }
   }
 }

@@ -1,0 +1,58 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=12920660",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "BoomPods 아쿠아블라스터 (정품)",
+      "name": "BoomPods 아쿠아블라스터 (정품)",
+      "description": "",
+      "ocr_text": "BoomPods 아루아블라스터 (정품) Gmarket   57,420원 3,500원 최저가 구매하기 가격비교 38 상품 상세정보 의견리뷰 연관상품 전원 너장내터리 형다 휴대용 사운드출력 8W 스피커유능크기 스5mnm 불루투스버전 불무투스 V5.0 최대연결거리 IOm 멀티미디어 전화통화 외관특징 카라비너 편의기능 음성비서내장 내장 음성비서 알력사 인식가능언어 영어인식 밤수등금 IPX7방수 사용시간 5시간 충전시간 증전시간:3시간 무선지원 지원 [@ 인종 적합성평가인층 R-C-145-aquablaster 인증런로 확인 안전확인인승 XU1O1021-17003D 인증런호 확인",
+      "specs": {
+        "AI스피커": "지원",
+        "내장배터리": "지원",
+        "8W": "지원",
+        "블루투스 v5.0": "지원",
+        "전화통화": "지원",
+        "카라비너": "지원",
+        "음성비서내장": "지원",
+        "영어인식": "지원",
+        "IPX7방수": "지원",
+        "사용시간": "5시간",
+        "전용앱지원": "지원"
+      },
+      "raw_specs": "AI스피커 / 내장배터리 / 8W / 블루투스 v5.0 / 전화통화 / 카라비너 / 음성비서내장 / 영어인식 / IPX7방수 / 사용시간 : 5시간 / 전용앱지원",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=12920660",
+      "manufacturer": "BoomPods, Boompods",
+      "model_name": "AQ-P001"
+    },
+    "norm_info": {
+      "company_name": "BoomPods, Boompods",
+      "model_name": "AQ-P001",
+      "product_name": "BoomPods 아쿠아블라스터 (정품)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "BoomPods, Boompods",
+    "model_param": "AQ-P001",
+    "ocr_result": {
+      "extracted_text": "BoomPods 아루아블라스터 (정품) Gmarket   57,420원 3,500원 최저가 구매하기 가격비교 38 상품 상세정보 의견리뷰 연관상품 전원 너장내터리 형다 휴대용 사운드출력 8W 스피커유능크기 스5mnm 불루투스버전 불무투스 V5.0 최대연결거리 IOm 멀티미디어 전화통화 외관특징 카라비너 편의기능 음성비서내장 내장 음성비서 알력사 인식가능언어 영어인식 밤수등금 IPX7방수 사용시간 5시간 충전시간 증전시간:3시간 무선지원 지원 [@ 인종 적합성평가인층 R-C-145-aquablaster 인증런로 확인 안전확인인승 XU1O1021-17003D 인증런호 확인",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\BoomPods 아쿠아블라스터 (정품)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

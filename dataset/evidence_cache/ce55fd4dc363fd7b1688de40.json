@@ -1,0 +1,339 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=94571375",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "MSI 크로스헤어 18 HX AI A2XWFKG-U9 QHD+ WIN11 (SSD 1TB)",
+      "name": "MSI 크로스헤어 18 HX AI A2XWFKG-U9 QHD+ WIN11 (SSD 1TB)",
+      "description": "",
+      "ocr_text": "MSI 크로스헤어 18 HX AlA2XWFKG-U9 QHD+ WINII (SSD ITB) Gmarket   2,484,450원 무료배송 최저가 구매하기 가격비교 24 상품 상세정보 의견리뷰 연관상품 무게 3.1kg 운명제제(OS) 원도우기(설치) 판매유형 구성변경상품 [화면] 화면 비율 1610 해상도 2560x1600(WQXGA) DCI-P3 10096 주사물 240Hz 밝기 5OOnit 패널 표면 저리 안티글레이 파널 종류 IPS타입 디스플레이 특징 광시아각 [CPU] CPU 제조사 인텔 CPU 세분류 굳이 올드라9(S2) CPU 코드명 애로우레이크 CPU 넘버 275HX (5.4GHz) CPU 코이 24코어1(8P+16E) CPU 스레드 24스레드 NPU 종류 인텔 Al Boost NPU 13TOPS [그래픽] GPU 종류 외장그래픽 GPU 제조사 엔비디야 GPU 침셋 RTX5O6O GPU 메모리 VRAM: 8GB GPU TOPS 572TOPS TGP 115W 게임 관련 기능 MUX 스위치 [구성]",
+      "specs": {
+        "노트북": "지원",
+        "45.72cm(18인치)": "지원",
+        "3.1kg": "지원",
+        "윈도우11(설치)": "지원",
+        "[화면] 2560x1600(WQXGA)": "지원",
+        "DCI-P3": "100%",
+        "240Hz": "지원",
+        "500nit": "지원",
+        "[CPU] 인텔": "지원",
+        "코어 울트라9(S2)": "지원",
+        "275HX (5.4GHz)": "지원",
+        "13TOPS": "지원",
+        "[그래픽] 외장그래픽": "지원",
+        "RTX5060": "지원",
+        "VRAM": "8GB",
+        "TGP": "115W",
+        "[구성] 16GB": "지원",
+        "램 교체": "가능",
+        "용량": "1TB",
+        "USB-PD(+DC)": "지원",
+        "90Wh": "지원"
+      },
+      "raw_specs": "노트북 / 45.72cm(18인치) / 3.1kg / 윈도우11(설치) / [화면] 2560x1600(WQXGA) / DCI-P3 : 100% / 240Hz / 500nit / [CPU] 인텔 / 코어 울트라9(S2) / 275HX (5.4GHz) / 13TOPS / [그래픽] 외장그래픽 / RTX5060 / VRAM: 8GB / TGP : 115W / [구성] 16GB / 램 교체 : 가능 / 용량 : 1TB / USB-PD(+DC) / 90Wh",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=94571375",
+      "manufacturer": "MSI, Multi-Solution Inc.",
+      "model_name": "A2XWFKG-U9"
+    },
+    "norm_info": {
+      "company_name": "MSI, Multi-Solution Inc.",
+      "model_name": "A2XWFKG-U9",
+      "product_name": "MSI 크로스헤어 18 HX AI A2XWFKG-U9 QHD+ WIN11 (SSD 1TB)"
+    },
+    "db_results": [
+      {
+        "company_name": "HMS Industrial Networks A.B.",
+        "equip_name": "산업용 통신 게이트웨이",
+        "model_name": "X-Gateway",
+        "country": "스웨덴",
+        "cert_date": "2020-03-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ABJ-ABX"
+      },
+      {
+        "company_name": "MICROHARD SYSTEMS Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "pMDDL2450",
+        "country": "캐나다",
+        "cert_date": "2025-07-28",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MhI-pMDDL2450"
+      },
+      {
+        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
+        "equip_name": "Portrait VSM",
+        "model_name": "Portrait VSM",
+        "country": "중국",
+        "cert_date": "2024-05-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-GeM-PortraitVSM"
+      },
+      {
+        "company_name": "HMS Industrial Networks S.A.",
+        "equip_name": "IIOT remote access gateway with Ethernet connectivity",
+        "model_name": "01003",
+        "country": "벨기에",
+        "cert_date": "2024-11-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-22S-01003"
+      },
+      {
+        "company_name": "HMS Industrial Networks S.A.",
+        "equip_name": "IIOT remote access gateway with Ethernet connectivity",
+        "model_name": "11702",
+        "country": "벨기에",
+        "cert_date": "2024-11-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-22S-11702"
+      },
+      {
+        "company_name": "Cadence Design Systems Inc",
+        "equip_name": "PALLADIUM Z3 AIR-COOLED L SYSTEM 8 ALWAYS-ON-DOMAINS",
+        "model_name": "39HQL1A",
+        "country": "멕시코",
+        "cert_date": "2024-12-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-C3S-Z3LSYSTEM"
+      },
+      {
+        "company_name": "HMS Industrial Networks A.B.",
+        "equip_name": "산업용 통신 게이트웨이",
+        "model_name": "EtherCAT Main Device",
+        "country": "스웨덴",
+        "cert_date": "2023-04-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ABJ-ABC_ECT_MD"
+      },
+      {
+        "company_name": "MICROHARD SYSTEMS Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "p2400",
+        "country": "캐나다",
+        "cert_date": "2023-05-15",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MhI-p2400"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Hardware RAID Enclosure",
+        "model_name": "TR-002",
+        "country": "대만",
+        "cert_date": "2023-11-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TR-002"
+      },
+      {
+        "company_name": "HMS Industrial Networks A.B.",
+        "equip_name": "산업용 통신 게이트웨이",
+        "model_name": "CAN Bridge & Gateway",
+        "country": "독일",
+        "cert_date": "2021-04-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ABJ-Ixxat_CANBG"
+      },
+      {
+        "company_name": "HMS Industrial Networks A.B.",
+        "equip_name": "산업용 통신 게이트웨이",
+        "model_name": "Ixxat Automotive",
+        "country": "독일",
+        "cert_date": "2021-05-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ABJ-Ixxat_Auto"
+      },
+      {
+        "company_name": "HPC Systems Inc.",
+        "equip_name": "AI Server",
+        "model_name": "EMB-S622SPI-R4-AI",
+        "country": "일본",
+        "cert_date": "2021-05-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MV0-EMB-S622SPIR4"
+      },
+      {
+        "company_name": "HMS Industrial Networks S.A.",
+        "equip_name": "4G APAC Extension Card for IIOT Remote Access Gateway",
+        "model_name": "03501",
+        "country": "벨기에",
+        "cert_date": "2021-06-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-22S-03501"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "RAID Enclosure",
+        "model_name": "TR-106CT",
+        "country": "대만",
+        "cert_date": "2021-07-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TR-106CT"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "RAID Enclosure",
+        "model_name": "TR-108CT",
+        "country": "대만",
+        "cert_date": "2021-07-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TR-108CT"
+      },
+      {
+        "company_name": "Varian Medical Systems Imaging Laboratory GmbH",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "VCD",
+        "country": "스위스",
+        "cert_date": "2017-12-14",
+        "cert_status": "적합인증",
+        "cert_no": "R-CMM-Var-VCD"
+      },
+      {
+        "company_name": "HMS Industrial Networks A.B.",
+        "equip_name": "산업용 통신 변환 장치",
+        "model_name": "HMS-EN2PB-R",
+        "country": "스웨덴",
+        "cert_date": "2020-03-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ABJ-LinkingDevice"
+      },
+      {
+        "company_name": "HMS Industrial Networks A.B.",
+        "equip_name": "산업용 통신 게이트웨이",
+        "model_name": "Communicator",
+        "country": "스웨덴",
+        "cert_date": "2020-04-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ABJ-ABC"
+      },
+      {
+        "company_name": "HMS Industrial Networks A.B.",
+        "equip_name": "산업용 통신 게이트웨이",
+        "model_name": "SG-Gateway",
+        "country": "스웨덴",
+        "cert_date": "2020-04-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ABJ-SG-Gateway"
+      },
+      {
+        "company_name": "HMS Industrial Networks A.B.",
+        "equip_name": "산업용 통신 게이트웨이",
+        "model_name": "Anybus Communicator",
+        "country": "스웨덴",
+        "cert_date": "2020-06-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ABJ-Communicator"
+      },
+      {
+        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스 템용 무선기기)",
+        "model_name": "MAC 7",
+        "country": "미국",
+        "cert_date": "2020-10-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-GeM-MAC7"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Hardware RAID Enclosure",
+        "model_name": "TR-004",
+        "country": "대만",
+        "cert_date": "2019-02-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TR-004"
+      },
+      {
+        "company_name": "NetScout Systems Inc.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "EW-7822UNC ? EU",
+        "country": "미국",
+        "cert_date": "2019-08-06",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-NSZ-EW-7822UNC"
+      },
+      {
+        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "MAC VU360",
+        "country": "멕시코",
+        "cert_date": "2019-11-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-GeM-MACVU360"
+      },
+      {
+        "company_name": "Oce Display Graphics Systems Inc",
+        "equip_name": "RFID/USN용 무선기기(13.56MHz 대역 사용 기기)",
+        "model_name": "3010120604",
+        "country": "캐나다",
+        "cert_date": "2018-02-08",
+        "cert_status": "적합인증",
+        "cert_no": "R-CRM-ODG-3010120604"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "IoT mini Server",
+        "model_name": "QBoat Sunny",
+        "country": "대만",
+        "cert_date": "2018-06-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-REM-QNP-QBoat_Sunny"
+      },
+      {
+        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "MAC 2000",
+        "country": "인도",
+        "cert_date": "2018-09-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-GeM-ECGMAC2000LDWX"
+      },
+      {
+        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MAC Link(Acquisition Module)",
+        "country": "중국",
+        "cert_date": "2017-07-24",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-GeM-MACLinkAM53223"
+      },
+      {
+        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MAC Link(Host Module)",
+        "country": "중국",
+        "cert_date": "2017-08-24",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-GeM-MACLinkHM53223"
+      },
+      {
+        "company_name": "NetScout Systems Inc.",
+        "equip_name": "무선 신호 분석기",
+        "model_name": "SENSOR6-R1S0W1-E",
+        "country": "미국",
+        "cert_date": "2017-11-21",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-RRM-NSZ-SENSOR6"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "MSI, Multi-Solution Inc.",
+    "model_param": "A2XWFKG-U9",
+    "ocr_result": {
+      "extracted_text": "MSI 크로스헤어 18 HX AlA2XWFKG-U9 QHD+ WINII (SSD ITB) Gmarket   2,484,450원 무료배송 최저가 구매하기 가격비교 24 상품 상세정보 의견리뷰 연관상품 무게 3.1kg 운명제제(OS) 원도우기(설치) 판매유형 구성변경상품 [화면] 화면 비율 1610 해상도 2560x1600(WQXGA) DCI-P3 10096 주사물 240Hz 밝기 5OOnit 패널 표면 저리 안티글레이 파널 종류 IPS타입 디스플레이 특징 광시아각 [CPU] CPU 제조사 인텔 CPU 세분류 굳이 올드라9(S2) CPU 코드명 애로우레이크 CPU 넘버 275HX (5.4GHz) CPU 코이 24코어1(8P+16E) CPU 스레드 24스레드 NPU 종류 인텔 Al Boost NPU 13TOPS [그래픽] GPU 종류 외장그래픽 GPU 제조사 엔비디야 GPU 침셋 RTX5O6O GPU 메모리 VRAM: 8GB GPU TOPS 572TOPS TGP 115W 게임 관련 기능 MUX 스위치 [구성]",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\MSI 크로스헤어 18 HX AI A2XWFKG-U9 QHD+ WIN11 (SSD 1TB)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

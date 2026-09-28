@@ -6,7 +6,7 @@
       "title": "삼성전자 갤럭시A25 128GB, 공기계 (중고)",
       "name": "삼성전자 갤럭시A25 128GB, 공기계 (중고)",
       "description": "",
-      "ocr_text": "삼성전자 길력시A25 128GB, 공기계 (중고) 끈유즈 120,050원 무료매승 최저가 구매하기 가격비교 34 상품 상세정보 의견리뷰 74 연관상품 판매방식 리패숨고 가개통 중고 유형 유심(국가별상이) 나노유심 메인화면정보 화면 16.4cmn(6 5인치) 패널송류 S-AMOLED 화면해상도 2340x1080 화면종류 풀HD+ 퍽설 수(ppi) 396ppi 쇠대주사율 12OHz 화면비 20.9 화면면적 84.206 쇠대밝기 iooOnits 램용량 6GB 용량 128GB 외장메모리 rnicroSD 쇠대ITB 프로세서 Y시노스1280 공점 5nm 군이 개수 8군이 코어클력 2.4GHz+2 OGHZ GPU Mali G68 벤치마크 AP CPU 29점 AP 게이팅 15점 GPU(세민) 2287 Al NPU NPU률 탑재한 Al 엔진 Al TOPS 4.3 TOPS 네트위크 Wi-Fi버전 Wi-Fi 5 불무투스 불루투스v5.3",
+      "ocr_text": "삼성전자 길력시A25 128GB, 공기계 (중고) 혼유즈 113,050원 무료매승 최저가 구매하기 가격비교 34 상품 상세정보 의견리뷰 76 연관상품 판매방식 리패숨고 가개통 중고 유형 유심(국가별상이) 나노유심 메인화면정보 화면 16.4cmn(6 5인치) 패널송류 S-AMOLED 화면해상도 2340x1080 화면종류 풀HD+ 퍽설 수(ppi) 396ppi 쇠대주사율 12OHz 화면비 20.9 화면면적 84.206 쇠대밝기 iooOnits 램용량 6GB 용량 128GB 외장메모리 rnicroSD 쇠대ITB 프로세서 Y시노스1280 공점 5nm 군이 개수 8군이 코어클력 2.4GHz+2 OGHZ GPU Mali G68 벤치마크 AP CPU 29점 AP 게이팅 15점 GPU(세민) 2287 Al NPU NPU률 탑재한 Al 엔진 Al TOPS 4.3 TOPS 네트위크 Wi-Fi버전 Wi-Fi 5 불무투스 불루투스v5.3",
       "specs": {
         "스마트폰(바형)": "지원",
         "화면": "16.4cm(6.5인치)",
@@ -32,41 +32,14 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=71971859",
       "manufacturer": "삼성전자",
-      "model_name": "G800"
+      "model_name": "G7200"
     },
     "norm_info": {
       "company_name": "삼성전자",
-      "model_name": "G800",
+      "model_name": "G7200",
       "product_name": "삼성전자 갤럭시A25 128GB, 공기계 (중고)"
     },
     "db_results": [
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "OLED 모니터",
-        "model_name": "S32DG800S",
-        "country": "한국",
-        "cert_date": "2024-04-16",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-SEC-S32DG800S"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "OLED 모니터",
-        "model_name": "S27HG800S",
-        "country": "한국",
-        "cert_date": "2026-02-06",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-SEC-S27HG800S"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "OLED 모니터",
-        "model_name": "S32HG800S",
-        "country": "한국",
-        "cert_date": "2026-02-06",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-SEC-S32HG800S"
-      },
       {
         "company_name": "삼성전자(주)",
         "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
@@ -75,15 +48,6 @@
         "cert_date": "2021-12-10",
         "cert_status": "적합인증",
         "cert_no": "R-C-SEC-SMX205N"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "SMT-A61WFB",
-        "country": "한국",
-        "cert_date": "2021-09-07",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-SMT-A61WFB"
       },
       {
         "company_name": "삼성전자(주)",
@@ -322,11 +286,29 @@
       {
         "company_name": "삼성전자(주)",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "BOOMBOX 2",
-        "country": "중국",
-        "cert_date": "2020-01-10",
+        "model_name": "RS-9",
+        "country": "인도네시아",
+        "cert_date": "2021-12-09",
         "cert_status": "적합등록",
-        "cert_no": "R-R-SEC-BOOMBOX2"
+        "cert_no": "R-R-SEC-RS-9"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "SM-F700N",
+        "country": "한국",
+        "cert_date": "2020-01-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMF700"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(기지국의 송수신 장치 및 중계장치)",
+        "model_name": "SF2201d-D1A",
+        "country": "한국",
+        "cert_date": "2020-02-05",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SF2201dD1A"
       },
       {
         "company_name": "삼성전자(주)",
@@ -438,12 +420,21 @@
       },
       {
         "company_name": "삼성전자(주)",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
-        "model_name": "SM-F700N",
+        "equip_name": "쿡센서",
+        "model_name": "NZ63B1322EK",
         "country": "한국",
-        "cert_date": "2020-01-10",
+        "cert_date": "2021-12-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-NZ8500BM-S"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(기지국의 송수신장치 및 중계장치)",
+        "model_name": "MT3230-78A",
+        "country": "한국",
+        "cert_date": "2021-12-13",
         "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-SMF700"
+        "cert_no": "R-C-SEC-MT323078A"
       },
       {
         "company_name": "삼성전자(주)",
@@ -457,11 +448,11 @@
       {
         "company_name": "삼성전자(주)",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "RMCSPB1SP1",
-        "country": "한국",
-        "cert_date": "2021-12-22",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-RMCSPB1SP1"
+        "model_name": "QUANTUM610",
+        "country": "중국",
+        "cert_date": "2021-12-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-Q610"
       },
       {
         "company_name": "삼성전자(주)",
@@ -475,11 +466,11 @@
       {
         "company_name": "삼성전자(주)",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "QUANTUM610",
-        "country": "중국",
-        "cert_date": "2021-12-21",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-SEC-Q610"
+        "model_name": "RMCSPB1SP1",
+        "country": "한국",
+        "cert_date": "2021-12-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-RMCSPB1SP1"
       },
       {
         "company_name": "삼성전자(주)",
@@ -489,6 +480,15 @@
         "cert_date": "2021-12-23",
         "cert_status": "적합등록",
         "cert_no": "R-R-SEC-NZ8500BM-C"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "WCT732M",
+        "country": "한국",
+        "cert_date": "2020-01-06",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-WCT732M"
       }
     ],
     "jodale_result": null,
@@ -600,9 +600,9 @@
       "detail": "DART 분석 결과 [삼성전자] 실적 총 1건 확인."
     },
     "target_company_name": "삼성전자",
-    "model_param": "G800",
+    "model_param": "G7200",
     "ocr_result": {
-      "extracted_text": "삼성전자 길력시A25 128GB, 공기계 (중고) 끈유즈 120,050원 무료매승 최저가 구매하기 가격비교 34 상품 상세정보 의견리뷰 74 연관상품 판매방식 리패숨고 가개통 중고 유형 유심(국가별상이) 나노유심 메인화면정보 화면 16.4cmn(6 5인치) 패널송류 S-AMOLED 화면해상도 2340x1080 화면종류 풀HD+ 퍽설 수(ppi) 396ppi 쇠대주사율 12OHz 화면비 20.9 화면면적 84.206 쇠대밝기 iooOnits 램용량 6GB 용량 128GB 외장메모리 rnicroSD 쇠대ITB 프로세서 Y시노스1280 공점 5nm 군이 개수 8군이 코어클력 2.4GHz+2 OGHZ GPU Mali G68 벤치마크 AP CPU 29점 AP 게이팅 15점 GPU(세민) 2287 Al NPU NPU률 탑재한 Al 엔진 Al TOPS 4.3 TOPS 네트위크 Wi-Fi버전 Wi-Fi 5 불무투스 불루투스v5.3",
+      "extracted_text": "삼성전자 길력시A25 128GB, 공기계 (중고) 혼유즈 113,050원 무료매승 최저가 구매하기 가격비교 34 상품 상세정보 의견리뷰 76 연관상품 판매방식 리패숨고 가개통 중고 유형 유심(국가별상이) 나노유심 메인화면정보 화면 16.4cmn(6 5인치) 패널송류 S-AMOLED 화면해상도 2340x1080 화면종류 풀HD+ 퍽설 수(ppi) 396ppi 쇠대주사율 12OHz 화면비 20.9 화면면적 84.206 쇠대밝기 iooOnits 램용량 6GB 용량 128GB 외장메모리 rnicroSD 쇠대ITB 프로세서 Y시노스1280 공점 5nm 군이 개수 8군이 코어클력 2.4GHz+2 OGHZ GPU Mali G68 벤치마크 AP CPU 29점 AP 게이팅 15점 GPU(세민) 2287 Al NPU NPU률 탑재한 Al 엔진 Al TOPS 4.3 TOPS 네트위크 Wi-Fi버전 Wi-Fi 5 불무투스 불루투스v5.3",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\삼성전자 갤럭시A25 128GB, 공기계 (중고)\\detail_scan.ocr_cache.json",

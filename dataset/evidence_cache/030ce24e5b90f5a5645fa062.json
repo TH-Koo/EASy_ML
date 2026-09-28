@@ -542,7 +542,12 @@
       "cache_hit": false,
       "cache_path": "product_images\\LG전자 휘센 AI 오브제컬렉션 쿨 프로 4시리즈 FQ18GC4EK1 (기본설치비 별도)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\LG전자 휘센 AI 오브제컬렉션 쿨 프로 4시리즈 FQ18GC4EK1 (기본설치비 별도)\\detail_scan.png",
+        "image_size": 63633,
+        "image_sha256": "607730b3a7a3d96cbf0c04d5106df2c14f6e29be2cf7fa8dbbc79d6c89714b39"
+      }
     }
   }
 }

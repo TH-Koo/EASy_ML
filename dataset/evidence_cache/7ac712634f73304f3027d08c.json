@@ -1,0 +1,77 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=12996683",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "아마존 Echo 4th (해외구매)",
+      "name": "아마존 Echo 4th (해외구매)",
+      "description": "",
+      "ocr_text": "아마존 Echo 4th (해외구매) 보다 BODA 206,030원   무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 전원 ACIDC전원 불무투스버전 불무투스 불루투스프로파일 AVRCP A2DP 입출력 AUX 네트위크 Wi-Fi 멀티미디어 전화통화 알람 외관특징 LED조명 편의기능 음성비서내장 내장 음성비서 알력사 인식가능언어 영어인식 음성제어기능 loT연놈 날씨",
+      "specs": {
+        "AI스피커": "지원",
+        "AC/DC전원": "지원",
+        "블루투스": "지원",
+        "입출력": "AUX",
+        "Wi-Fi": "지원",
+        "전화통화": "지원",
+        "알람": "지원",
+        "LED조명": "지원",
+        "음성비서내장": "지원",
+        "영어인식": "지원",
+        "무게": "980g"
+      },
+      "raw_specs": "AI스피커 / AC/DC전원 / 블루투스 / 입출력 : AUX / Wi-Fi / 전화통화 / 알람 / LED조명 / 음성비서내장 / 영어인식 / 무게 : 980g",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=12996683",
+      "manufacturer": "아마존, Amazon",
+      "model_name": "RA1004"
+    },
+    "norm_info": {
+      "company_name": "아마존, Amazon",
+      "model_name": "RA1004",
+      "product_name": "아마존 Echo 4th (해외구매)"
+    },
+    "db_results": [
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "RFID용 무선기기(13.56㎒ 주파수 대역)",
+        "model_name": "Atlanta17",
+        "country": "미국",
+        "cert_date": "2019-11-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-hyv-ATLANTA"
+      },
+      {
+        "company_name": "Amazon.com Services, Inc.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PQ94WIF",
+        "country": "중국",
+        "cert_date": "2021-12-28",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-E48-PQ94WIF"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "아마존, Amazon",
+    "model_param": "RA1004",
+    "ocr_result": {
+      "extracted_text": "아마존 Echo 4th (해외구매) 보다 BODA 206,030원   무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 전원 ACIDC전원 불무투스버전 불무투스 불루투스프로파일 AVRCP A2DP 입출력 AUX 네트위크 Wi-Fi 멀티미디어 전화통화 알람 외관특징 LED조명 편의기능 음성비서내장 내장 음성비서 알력사 인식가능언어 영어인식 음성제어기능 loT연놈 날씨",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\아마존 Echo 4th (해외구매)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

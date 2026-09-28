@@ -1,0 +1,57 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=100842362",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "오디오테크니카 ATH-CC500BT2 (해외구매)",
+      "name": "오디오테크니카 ATH-CC500BT2 (해외구매)",
+      "description": "",
+      "ocr_text": "오디오테크니카 ATH-CC5OOBT2 (해외구매) coupang 150,530원   무료배승 최저가 구매하기 가격비교 29 상품 상세정보 의견리뷰 연관상품 외형 백레드령 용도 음악+통화용 무선연결 불무투스 v5.3 노이즈권트록 A노이즈랜늘림가이 사운드채널 스데레오 코덕 SBC AAC 불루투스 프로파일 AVRCP A2DP HFP 무선연결거리 1Om 통화시간 10시간 쇠대재생 20시간 충전 USB-C 편의기능 리충전",
+      "specs": {
+        "골전도형": "지원",
+        "백헤드형": "지원",
+        "블루투스 v5.3": "지원",
+        "[노이즈컨트롤] AI노이즈캔슬링마이크": "지원",
+        "[음질] 코덱": "SBC , AAC",
+        "최대재생": "20시간",
+        "충전": "USB-C",
+        "[기능] 멀티포인트": "지원",
+        "마이크특징": "MEMS",
+        "IPX4방수": "지원"
+      },
+      "raw_specs": "골전도형 / 백헤드형 / 블루투스 v5.3 / [노이즈컨트롤] AI노이즈캔슬링마이크 / [음질] 코덱 : SBC , AAC / 최대재생 : 20시간 / 충전 : USB-C / [기능] 멀티포인트 / 마이크특징 : MEMS / IPX4방수",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=100842362",
+      "manufacturer": "오디오테크니카, Audio Technica",
+      "model_name": "ATH-CC500BT2"
+    },
+    "norm_info": {
+      "company_name": "오디오테크니카, Audio Technica",
+      "model_name": "ATH-CC500BT2",
+      "product_name": "오디오테크니카 ATH-CC500BT2 (해외구매)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "오디오테크니카, Audio Technica",
+    "model_param": "ATH-CC500BT2",
+    "ocr_result": {
+      "extracted_text": "오디오테크니카 ATH-CC5OOBT2 (해외구매) coupang 150,530원   무료배승 최저가 구매하기 가격비교 29 상품 상세정보 의견리뷰 연관상품 외형 백레드령 용도 음악+통화용 무선연결 불무투스 v5.3 노이즈권트록 A노이즈랜늘림가이 사운드채널 스데레오 코덕 SBC AAC 불루투스 프로파일 AVRCP A2DP HFP 무선연결거리 1Om 통화시간 10시간 쇠대재생 20시간 충전 USB-C 편의기능 리충전",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\오디오테크니카 ATH-CC500BT2 (해외구매)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

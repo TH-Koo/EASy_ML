@@ -33,11 +33,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=81036566",
       "manufacturer": "레노버, Lenober",
-      "model_name": "16IAL G8 U5 3K AI"
+      "model_name": "G8 U5 3K AI"
     },
     "norm_info": {
       "company_name": "레노버, Lenober",
-      "model_name": "16IAL G8 U5 3K AI",
+      "model_name": "G8 U5 3K AI",
       "product_name": "레노버 씽크북 16IAL G8 U5 3K AI (SSD 1TB)"
     },
     "db_results": [
@@ -505,14 +505,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "레노버, Lenober",
-    "model_param": "16IAL G8 U5 3K AI",
+    "model_param": "G8 U5 3K AI",
     "ocr_result": {
       "extracted_text": "레노버 생크북 16IAL G8 U5 3K Al (SSD ITB) ASUS코리마-SIS검퍼니 1,599,000원  무료배송 최저가 구매하기 가격비교 13 상품 상세정보 의견리뷰 78 연관상품 무게 17kg 운명제제(OS) OS미I포함(프리도스) 판매유형 구성변경상품 [화면] 화면 비율 1610 해상도 2560x1600(WQXGA) sRGB 10096 주사물 12OHz 밝기 4OOnit 패널 표면 저리 안티글레이 파널 종류 IPS 디스플레이 특징 광시아각 [CPU] CPU 제조사 인텔 CPU 세분류 굳어 울드라5(S2) CPU 코드명 애로우레이크 CPU 넘버 225H (49GHz) CPU 코이 14코01(4P+8E+2LE) CPU 스레드 14스레드 NPU 종류 인텔 Al Boost NPU 13TOPS [그래픽] GPU 종류 내장그래픽 GPU 제조사 GPU 침셋 Arc 130T GPU 코어 7코이 GPU 클력 22OOMHz [구성] 댐 타입 DDR5 16GB",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\레노버 씽크북 16IAL G8 U5 3K AI (SSD 1TB)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\레노버 씽크북 16IAL G8 U5 3K AI (SSD 1TB)\\detail_scan.png",
+        "image_size": 74730,
+        "image_sha256": "681f0af45403f611cac79a52bd9bd417a157d050571185a605ee0869525d8ea9"
+      }
     }
   }
 }

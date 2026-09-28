@@ -25,11 +25,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=13679738",
       "manufacturer": "구글, Google",
-      "model_name": "NEST Mini"
+      "model_name": "NN-01"
     },
     "norm_info": {
       "company_name": "구글, Google",
-      "model_name": "NEST Mini",
+      "model_name": "NN-01",
       "product_name": "Google 네스트 미니 (정품)"
     },
     "db_results": [
@@ -155,14 +155,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "구글, Google",
-    "model_param": "NEST Mini",
+    "model_param": "NN-01",
     "ocr_result": {
       "extracted_text": "Google 네스트 미니 (정품) 11> 166,250원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 13 뉴스커유니티 연관상품 전원 ACIDC전원 스피커유품크기 4Omnm 불무투스버전 불무투스 V5.0 네트위크 Wi-Fi 사운드특징 360도 사운드 외관특징 LED조명 편의기능 음성비서내장 내장 음성비서 구글이시스런트 음성제어기능 loT연통 음막재생 일정관리 무게 181g 색상 불력 그레이 [@ 인종 적합심평가인승 상세설명 판매 사이트 문의 | 인종번호 확인",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\Google 네스트 미니 (정품)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\Google 네스트 미니 (정품)\\detail_scan.png",
+        "image_size": 54952,
+        "image_sha256": "9643a2f895c5d49538f4d98d1b2bf2edbc550f2fb5694e1ca52ab4e61bb066a0"
+      }
     }
   }
 }

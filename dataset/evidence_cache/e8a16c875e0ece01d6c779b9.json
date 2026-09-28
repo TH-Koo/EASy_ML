@@ -1,0 +1,78 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=122676835",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "에이서 스위프트 GO 16 AI SFG16-I71-75Y2 (리퍼비시)",
+      "name": "에이서 스위프트 GO 16 AI SFG16-I71-75Y2 (리퍼비시)",
+      "description": "",
+      "ocr_text": "에이서 스위프트 GO 16 Al SFG16-171-75Y2 (리퍼비시) 가격비교 상품 상세정보 의견리뷰 연관상품 화면 크기 40.6cmn(16인*) 무게 1.36kg 운영제제(OS) 웬도우1움 [화면] 화면 비율 1610 해상도 2880x1800(WQXGA+) DCI-P3 10076 화면 회전각 180도 주사율 12OHz 밝기 4OOnit 파널 종류 OLED 디스플레이 특징 광시아각 [CPU] CPU 제조사 인텔 CPU 세분류 굳어 울드라X7(S3) CPU 코드명 괜서레이크 CPU 넘버 358H (4.8GHz) CPU 코이 16코01(4P+8E+4LE) CPU 스레드 16스레드 NPU 종류 인텔 Al Boost NPU 5OTOPS [그래픽] GPU 종류 내장그래픽 GPU 제조사 GPU 침셋 Arc B390 GPU TOPS 122TOPS GPU 굳이 12 코이 GPU 클력 250OMHz [구성] 댐 타입 LPDDR5x(온보드 16GB",
+      "specs": {
+        "리퍼비시": "지원",
+        "AI노트북": "지원",
+        "40.6cm(16인치)": "지원",
+        "1.36kg": "지원",
+        "윈도우11홈": "지원",
+        "[화면] 2880x1800(WQXGA+)": "지원",
+        "DCI-P3": "100%",
+        "120Hz": "지원",
+        "400nit": "지원",
+        "[CPU] 인텔": "지원",
+        "코어 울트라X7(S3)": "지원",
+        "358H (4.8GHz)": "지원",
+        "50TOPS": "지원",
+        "[그래픽] 내장그래픽": "지원",
+        "Arc B390": "지원",
+        "12코어": "지원",
+        "[구성] 16GB": "지원",
+        "램 교체": "불가능",
+        "용량": "512GB",
+        "USB-PD": "지원",
+        "71Wh": "지원"
+      },
+      "raw_specs": "리퍼비시 / AI노트북 / 40.6cm(16인치) / 1.36kg / 윈도우11홈 / [화면] 2880x1800(WQXGA+) / DCI-P3 : 100% / 120Hz / 400nit / [CPU] 인텔 / 코어 울트라X7(S3) / 358H (4.8GHz) / 50TOPS / [그래픽] 내장그래픽 / Arc B390 / 12코어 / [구성] 16GB / 램 교체 : 불가능 / 용량 : 512GB / USB-PD / 71Wh",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=122676835",
+      "manufacturer": "에이서, EAES",
+      "model_name": "SFG16-I71-75Y2"
+    },
+    "norm_info": {
+      "company_name": "에이서, EAES",
+      "model_name": "SFG16-I71-75Y2",
+      "product_name": "에이서 스위프트 GO 16 AI SFG16-I71-75Y2 (리퍼비시)"
+    },
+    "db_results": [
+      {
+        "company_name": "주식회사 케이앤에이서우",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PA-50",
+        "country": "한국",
+        "cert_date": "2019-06-27",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-Kna-PA-50"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "에이서, EAES",
+    "model_param": "SFG16-I71-75Y2",
+    "ocr_result": {
+      "extracted_text": "에이서 스위프트 GO 16 Al SFG16-171-75Y2 (리퍼비시) 가격비교 상품 상세정보 의견리뷰 연관상품 화면 크기 40.6cmn(16인*) 무게 1.36kg 운영제제(OS) 웬도우1움 [화면] 화면 비율 1610 해상도 2880x1800(WQXGA+) DCI-P3 10076 화면 회전각 180도 주사율 12OHz 밝기 4OOnit 파널 종류 OLED 디스플레이 특징 광시아각 [CPU] CPU 제조사 인텔 CPU 세분류 굳어 울드라X7(S3) CPU 코드명 괜서레이크 CPU 넘버 358H (4.8GHz) CPU 코이 16코01(4P+8E+4LE) CPU 스레드 16스레드 NPU 종류 인텔 Al Boost NPU 5OTOPS [그래픽] GPU 종류 내장그래픽 GPU 제조사 GPU 침셋 Arc B390 GPU TOPS 122TOPS GPU 굳이 12 코이 GPU 클력 250OMHz [구성] 댐 타입 LPDDR5x(온보드 16GB",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\에이서 스위프트 GO 16 AI SFG16-I71-75Y2 (리퍼비시)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

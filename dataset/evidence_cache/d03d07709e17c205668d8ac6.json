@@ -266,7 +266,12 @@
       "cache_hit": false,
       "cache_path": "product_images\\알파스캔 AOC Q27G4Z 게이밍 260 QHD FAST IPS 프리싱크 AI HDR 400 멀티스탠드 무결점\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\알파스캔 AOC Q27G4Z 게이밍 260 QHD FAST IPS 프리싱크 AI HDR 400 멀티스탠드 무결점\\detail_scan.png",
+        "image_size": 74326,
+        "image_sha256": "103a98d23e4737cfb48e5382495bdc25978b77002299f95d13e0e71e992014ae"
+      }
     }
   }
 }

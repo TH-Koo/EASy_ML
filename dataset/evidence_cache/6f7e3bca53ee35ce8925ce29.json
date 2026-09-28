@@ -60,22 +60,7 @@
     "iitp_result": null,
     "patent_items_df": [
       {
-        "source_record_id": "1020250032418",
-        "일련번호": "1",
-        "출원번호": "1020250032418",
-        "발명의명칭(한글)": "생성형 AI 기반 공공기관 경영실적 평가보고서 지적사항 문장 추출 및 분류 자동화 시스템, 그리고 그 방법",
-        "출원일자": "2025-03-13",
-        "출원인": "한국이에스지데이터 주식회사",
-        "등록상태": "등록",
-        "초록": "본 발명은 생성형 AI 기반 공공기관 경영실적 평가보고서 지적사항 문장 추출 및 분류 자동화 시스템 및 그 방법에 관한 것으로, 보다 구체적으로는, 광범위하고 다양한 표현 방식을 효율적으로 다룰 수 있고, 문맥 이해와 의미 추론도 수월해지도록 하는 생성형 AI(Generative AI)를 기반으로 공공기관 경영실적 평가보고서 내 지적사항 문장을 경영평가 항목 주제별, 긍정・부정, 해당 분야 내 다양한 분류, 지적사항의 수준 등 여러 기준으로 자동 추출・분류함으로써, 분석 및 리서치에 투여되는 시간 및 비용이 줄어들도록 하여, 공공기관 경영평가 분석 및 리서치에 대한 신뢰도와 효율성을 한층 높일 수 있도록 하기 위한 생성형 AI 기반 공공기관 경영실적 평가보고서 지적사항 문장 추출 및 분류 자동화 시스템 및 그 방법에 관한 것이다.",
-        "IPC": "G06Q 10/0639|G06Q 10/10|G06F 16/334|G06F 16/3332|G06F 16/35|G06F 40/205|G06F 40/30|G06F 18/10|G06N 3/0475",
-        "CPC": "",
-        "relevance_type": "general_ai",
-        "match_confidence": 0.45,
-        "search_alias": "EAES",
-        "search_type": "AI 특허 [일반]",
-        "search_query": "AP=[EAES]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
-        "status": "verified"
+        "title": "AI 특허 내역 없음 None"
       }
     ],
     "cert_results": [],
@@ -88,7 +73,12 @@
       "cache_hit": false,
       "cache_path": "product_images\\에이서 스위프트 GO 14 AI SFG14-75-508U (리퍼비시)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\에이서 스위프트 GO 14 AI SFG14-75-508U (리퍼비시)\\detail_scan.png",
+        "image_size": 78203,
+        "image_sha256": "5423a50b73f15c9f963b6dff8b4f7c3660f9031e7f913e8c772ef88eecb146d9"
+      }
     }
   }
 }

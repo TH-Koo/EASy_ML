@@ -65,7 +65,12 @@
       "cache_hit": false,
       "cache_path": "product_images\\영웅컴퓨터 영웅 H게이밍 U7266 (32GB, M.2 1TB)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\영웅컴퓨터 영웅 H게이밍 U7266 (32GB, M.2 1TB)\\detail_scan.png",
+        "image_size": 67874,
+        "image_sha256": "e3234fd63f15542af7a1455e43adccdb8bae364d4457e8d0a0ea496e637907dc"
+      }
     }
   }
 }

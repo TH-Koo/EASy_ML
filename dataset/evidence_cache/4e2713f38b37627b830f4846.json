@@ -1,0 +1,620 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=122641079",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "삼성전자 Crystal UHD KU55UH8000FXKR (벽걸이)",
+      "name": "삼성전자 Crystal UHD KU55UH8000FXKR (벽걸이)",
+      "description": "",
+      "ocr_text": "삼성전자 Crystal UHD KU55UH8OOOFXKR (벽걸이) Gmarket   879,960원 무료배승 최저가 구매하기 가격비교 136 상품 상세정보 의견리뷰 연관상품 디스플레이 LED 해상도 4K UHD 주사물 6OHz 디망방식 UHD디망 에너지효물 1등금 소비전력 125W 년형 2026년형 프로세서 크리스날4K 시I화질 시명압비감화 시장로맛중화면 화질 4K업스레일림 장르맛출화면 모선보간(MEMC) 필름메이커모드 HDR HDR1O+ 게임 VRR( 60Hz) ALLM HGIG 게임모드 DLG 12OHz OS 타이전 스마트 넷플렉스 유슬부 미러림 지그비매터 TV노래방 시스마트",
+      "specs": {
+        "LED TV": "지원",
+        "55인치(138cm)": "지원",
+        "4K UHD": "지원",
+        "주사율": "60Hz",
+        "에너지효율": "1등급",
+        "2026년형": "지원",
+        "[화질] HDR10+": "지원",
+        "VRR(60Hz)": "지원",
+        "ALLM": "지원",
+        "HGIG": "지원",
+        "게임모드": "지원",
+        "DLG": "120Hz",
+        "[스마트] 넷플릭스": "지원",
+        "유튜브": "지원",
+        "미러링": "지원",
+        "지그비/매터": "지원",
+        "TV노래방": "지원",
+        "AI음성인식": "지원",
+        "AI스마트홈": "지원",
+        "AI콘텐츠추천": "지원",
+        "AI스마트도우미": "지원",
+        "AI축구모드": "지원",
+        "[규격] HDMI(전체)": "3개",
+        "베사홀": "200x200mm",
+        "크기(가로x세로x깊이)": "1225x708(760)x77(199)mm",
+        "무게": "9.9(10.2)kg"
+      },
+      "raw_specs": "LED TV / 55인치(138cm) / 4K UHD / 주사율 : 60Hz / 에너지효율 : 1등급 / 2026년형 / [화질] HDR10+ / VRR(60Hz) / ALLM / HGIG / 게임모드 / DLG : 120Hz / [스마트] 넷플릭스 / 유튜브 / 미러링 / 지그비/매터 / TV노래방 / AI음성인식 / AI스마트홈 / AI콘텐츠추천 / AI스마트도우미 / AI축구모드 / [규격] HDMI(전체) : 3개 / 베사홀 : 200x200mm / 크기(가로x세로x깊이) : 1225x708(760)x77(199)mm / 무게 : 9.9(10.2)kg",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=122641079",
+      "manufacturer": "삼성전자",
+      "model_name": "KU55UH8000FXKR"
+    },
+    "norm_info": {
+      "company_name": "삼성전자",
+      "model_name": "KU55UH8000FXKR",
+      "product_name": "삼성전자 Crystal UHD KU55UH8000FXKR (벽걸이)"
+    },
+    "db_results": [
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "UHD TV",
+        "model_name": "KU55UT8000",
+        "country": "한국",
+        "cert_date": "2020-01-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-KU55UT8000"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "UHD TV",
+        "model_name": "KU55UC8000",
+        "country": "한국",
+        "cert_date": "2022-12-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-KU55UC8000"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "UHD TV",
+        "model_name": "KU55UT8500",
+        "country": "한국",
+        "cert_date": "2020-02-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-KU55UT8500"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "UHD TV",
+        "model_name": "KU55UT7000",
+        "country": "한국",
+        "cert_date": "2020-02-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-KU55UT7000"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "UHD TV",
+        "model_name": "KU55UC7000",
+        "country": "한국",
+        "cert_date": "2022-12-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-KU55UC7000"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "UHD TV",
+        "model_name": "KU55UA8000",
+        "country": "한국",
+        "cert_date": "2020-12-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-KU55UA8000"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "UHD TV",
+        "model_name": "KU55UA9000",
+        "country": "한국",
+        "cert_date": "2020-12-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-KU55UA9000"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "UHD TV",
+        "model_name": "KU55UA7000",
+        "country": "한국",
+        "cert_date": "2020-12-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-KU55UA7000"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "UHD TV",
+        "model_name": "KU55UD8000",
+        "country": "한국",
+        "cert_date": "2023-12-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-KU55UD8000"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "UHD TV",
+        "model_name": "KU55UD7000",
+        "country": "한국",
+        "cert_date": "2023-12-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-KU55UD7000"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "UHD TV",
+        "model_name": "KU55UH8000",
+        "country": "한국",
+        "cert_date": "2025-12-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-KU55UH8000"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "UHD TV",
+        "model_name": "KU55UB8000",
+        "country": "한국",
+        "cert_date": "2021-12-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-KU55UB8000"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용무선기기)",
+        "model_name": "PARTYBOX710",
+        "country": "중국",
+        "cert_date": "2021-09-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-JBLPB710"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Bar 2.1 Deep Bass CNTR",
+        "country": "중국",
+        "cert_date": "2021-09-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-BAR300CNTRM"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용무선기기)",
+        "model_name": "FLIP6C",
+        "country": "중국",
+        "cert_date": "2021-09-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-JBLFLIP6C"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "SM-G525N",
+        "country": "베트남",
+        "cert_date": "2021-09-27",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMG525"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Bar 5.1 CNTR",
+        "country": "중국",
+        "cert_date": "2021-09-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-BAR51CNTRM"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "Bar 5.1 SUB",
+        "country": "중국",
+        "cert_date": "2021-09-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-BAR51SUBM"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "ENDURANCE RACE",
+        "country": "중국",
+        "cert_date": "2021-10-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-JBLENDRACE"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용무선기기)",
+        "model_name": "FLIP6T",
+        "country": "중국",
+        "cert_date": "2021-10-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-JBLFLIP6T"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "RFID용 무선기기 (13.56MHz 주파수대역)",
+        "model_name": "EF-NS908",
+        "country": "베트남",
+        "cert_date": "2021-10-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-EFNS908"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "RFID용 무선기기 (13.56MHz 주파수대역)",
+        "model_name": "EF-NS901",
+        "country": "베트남",
+        "cert_date": "2021-10-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-EFNS901"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "RFID용 무선기기 (13.56MHz 주파수대역)",
+        "model_name": "EF-NS906",
+        "country": "베트남",
+        "cert_date": "2021-10-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-EFNS906"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "RFID용 무선기기(13.56MHz 주파수 대역)",
+        "model_name": "EF-NG998",
+        "country": "한국",
+        "cert_date": "2021-10-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-EFNG998"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TUNE230NCTWS",
+        "country": "중국",
+        "cert_date": "2021-11-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-T230NT"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기",
+        "model_name": "SLS-BB11G",
+        "country": "한국",
+        "cert_date": "2021-11-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-SLSBB11G"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "QUANTUM350WLTMT",
+        "country": "중국",
+        "cert_date": "2021-11-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-Q350WLTMT"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "QUANTUM350WIRELESST",
+        "country": "중국",
+        "cert_date": "2021-11-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-Q350WLT"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "LIVE PRO 2 TWS",
+        "country": "중국",
+        "cert_date": "2021-11-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-LIVEPRO2TWS"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "EJ-PS908",
+        "country": "중국",
+        "cert_date": "2021-12-01",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-EJPS908"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RMCSPB1EP1",
+        "country": "한국",
+        "cert_date": "2021-12-01",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-RMCSPB1EP1"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용무선기기)",
+        "model_name": "LIVE FREE 2 TWS",
+        "country": "중국",
+        "cert_date": "2021-12-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-LFREETWS2"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SM-T260",
+        "country": "베트남",
+        "cert_date": "2021-12-06",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMT260"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "NT545XLA",
+        "country": "베트남",
+        "cert_date": "2021-12-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-NT545XLA"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "미약전계강도 무선기기",
+        "model_name": "EP-P5400",
+        "country": "베트남",
+        "cert_date": "2021-12-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-EPP5400"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "미약전계강도 무선기기",
+        "model_name": "EP-P2400",
+        "country": "베트남",
+        "cert_date": "2021-12-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-EPP2400"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "WBA210M",
+        "country": "한국",
+        "cert_date": "2021-12-08",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-WBA210M"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HW-T450",
+        "country": "중국",
+        "cert_date": "2020-01-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-HWT450"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "용도미지정 무선기기(57㎓ ~ 66㎓ 주파수 대역)",
+        "model_name": "MDRBI303",
+        "country": "한국",
+        "cert_date": "2021-12-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-MDRBI303"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
+        "model_name": "WCT732M",
+        "country": "한국",
+        "cert_date": "2020-01-06",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-WCT732M"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "BOOMBOX 2",
+        "country": "중국",
+        "cert_date": "2020-01-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-BOOMBOX2"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "SM-F700N",
+        "country": "한국",
+        "cert_date": "2020-01-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMF700"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "WCT750M",
+        "country": "한국",
+        "cert_date": "2020-01-10",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-WCT750M"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "TUNE700BT",
+        "country": "중국",
+        "cert_date": "2020-01-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-TUNE700BT"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "SM-G981N",
+        "country": "한국",
+        "cert_date": "2020-01-16",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMG981"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "JBL QUANTUM DUO",
+        "country": "중국",
+        "cert_date": "2020-01-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-JBLQTMDUO"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "SM-T723",
+        "country": "한국",
+        "cert_date": "2020-01-17",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMT723"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "No5909",
+        "country": "미국",
+        "cert_date": "2021-12-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-NO5909"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "SM-G986N",
+        "country": "한국",
+        "cert_date": "2020-01-16",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMG986"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "HW-T420",
+        "country": "중국",
+        "cert_date": "2020-01-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-HWT420"
+      }
+    ],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [
+      {
+        "id": 1805,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2019-059",
+        "product_name": "Bladeless 기류제어가 적용된 360˚ 카세트",
+        "company_name": "삼성전자(주)",
+        "biz_no": "1248100998",
+        "representative": "한종희 경계현",
+        "cert_date": "2022-12-26",
+        "expire_date": "2025-12-25"
+      },
+      {
+        "id": 1806,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2019-059",
+        "product_name": "Bladeless 기류제어가 적용된 360˚ 카세트",
+        "company_name": "삼성전자(주)",
+        "biz_no": "1248100998",
+        "representative": "한종희 경계현",
+        "cert_date": "2022-12-26",
+        "expire_date": "2025-12-25"
+      },
+      {
+        "id": 1845,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2022-168",
+        "product_name": "냉동 사이클 응축 압력 제어 기술이 적용된 시스템 에어컨",
+        "company_name": "삼성전자(주)",
+        "biz_no": "1248100998",
+        "representative": "한종희",
+        "cert_date": "2022-09-22",
+        "expire_date": "2025-09-21"
+      },
+      {
+        "id": 1853,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2022-168",
+        "product_name": "냉동 사이클 응축 압력 제어 기술이 적용된 시스템 에어컨",
+        "company_name": "삼성전자(주)",
+        "biz_no": "1248100998",
+        "representative": "한종희",
+        "cert_date": "2022-09-22",
+        "expire_date": "2025-09-21"
+      },
+      {
+        "id": 17874,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2019-059",
+        "product_name": "Bladeless 기류제어가 적용된 360˚ 카세트",
+        "company_name": "삼성전자(주)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2022-12-26",
+        "expire_date": null
+      },
+      {
+        "id": 17875,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2019-059",
+        "product_name": "Bladeless 기류제어가 적용된 360˚ 카세트",
+        "company_name": "삼성전자(주)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2022-12-26",
+        "expire_date": null
+      },
+      {
+        "id": 17914,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2022-168",
+        "product_name": "냉동 사이클 응축 압력 제어 기술이 적용된 시스템 에어컨",
+        "company_name": "삼성전자(주)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2022-09-22",
+        "expire_date": null
+      },
+      {
+        "id": 17922,
+        "cert_type": "NEP",
+        "cert_no": "NEP-MOTIE-2022-168",
+        "product_name": "냉동 사이클 응축 압력 제어 기술이 적용된 시스템 에어컨",
+        "company_name": "삼성전자(주)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2022-09-22",
+        "expire_date": null
+      }
+    ],
+    "dart_result": {
+      "status": "AI 핵심 역량 미흡 (워싱 의심)",
+      "total_score": 20,
+      "evidence": [
+        "📦 [AI 제품적용] Y 삼성전자 ㈜인공지능연구원 단순투자"
+      ],
+      "detail": "DART 분석 결과 [삼성전자] 실적 총 1건 확인."
+    },
+    "target_company_name": "삼성전자",
+    "model_param": "KU55UH8000FXKR",
+    "ocr_result": {
+      "extracted_text": "삼성전자 Crystal UHD KU55UH8OOOFXKR (벽걸이) Gmarket   879,960원 무료배승 최저가 구매하기 가격비교 136 상품 상세정보 의견리뷰 연관상품 디스플레이 LED 해상도 4K UHD 주사물 6OHz 디망방식 UHD디망 에너지효물 1등금 소비전력 125W 년형 2026년형 프로세서 크리스날4K 시I화질 시명압비감화 시장로맛중화면 화질 4K업스레일림 장르맛출화면 모선보간(MEMC) 필름메이커모드 HDR HDR1O+ 게임 VRR( 60Hz) ALLM HGIG 게임모드 DLG 12OHz OS 타이전 스마트 넷플렉스 유슬부 미러림 지그비매터 TV노래방 시스마트",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\삼성전자 Crystal UHD KU55UH8000FXKR (벽걸이)\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}

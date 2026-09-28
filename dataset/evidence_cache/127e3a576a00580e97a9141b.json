@@ -34,11 +34,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=98415824",
       "manufacturer": "구글, Google",
-      "model_name": "PHA1000000"
+      "model_name": "PA810"
     },
     "norm_info": {
       "company_name": "구글, Google",
-      "model_name": "PHA1000000",
+      "model_name": "PA810",
       "product_name": "Google Pixel Buds Pro 2 (해외구매)"
     },
     "db_results": [
@@ -164,7 +164,7 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "구글, Google",
-    "model_param": "PHA1000000",
+    "model_param": "PA810",
     "ocr_result": {
       "extracted_text": "Google Pixel Buds Pro 2 (해외구매) coupang 304,760원 무료배승 최저가 구매하기 가격비교 61 상품 상세정보 PIxel Buds Pro 2 의견리뷰 연관상품 다음에서 보기: Voulube 제조회사 Google (제조사 웬사이트 바로가기) 등록년원 2025년 09원 분류 무선이어논 이어프타입 커널형 외형 크드리스 용도 음악+통화용 무선연결 불무투스 V5.4 노이즈건트률",
       "ocr_device": "CPU",

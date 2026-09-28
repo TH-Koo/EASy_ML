@@ -6,7 +6,7 @@
       "title": "샤오미 미지아 5 Pro",
       "name": "샤오미 미지아 5 Pro",
       "description": "",
-      "ocr_text": "사오미 미지아 5 Pro emart hall 1125,240원  무료래승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 집입력 20,OOOPa 센서 ToF 카메라 적외선R 맵끔 사용시간 2시간20분(최대) 인식 시사물인식 감지회피 잠애물회피 분터등반 카켓회피 오자도감지 리프팀 1.5cm 분늑님기 2cm 청소운전 모서리 반복 브러쉬 매인 사이드로봇부러쉬 머리카락컷팀 배티리용량 5200mAh 소비전력 55W 청소기능 카페부스트 물걸레리프팀",
+      "ocr_text": "사오미 미지아 5 Pro 1L> 1125,230원  무료래승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 집입력 20,OOOPa 센서 ToF 카메라 적외선R 맵끔 사용시간 2시간20분(최대) 인식 시사물인식 감지회피 잠애물회피 분터등반 카켓회피 오자도감지 리프팀 1.5cm 분늑님기 2cm 청소운전 모서리 반복 브러쉬 매인 사이드로봇부러쉬 머리카락컷팀 배티리용량 5200mAh 소비전력 55W 청소기능 카페부스트 물걸레리프팀",
       "specs": {
         "로봇청소기": "지원",
         "흡입+물걸레": "지원",
@@ -30,11 +30,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=98924015",
       "manufacturer": "샤오미 (Xiaomi),  Xiaomi",
-      "model_name": "XIAOMI MI 11 Pro"
+      "model_name": "SM-X9700"
     },
     "norm_info": {
       "company_name": "샤오미 (Xiaomi),  Xiaomi",
-      "model_name": "XIAOMI MI 11 Pro",
+      "model_name": "SM-X9700",
       "product_name": "샤오미 미지아 5 Pro"
     },
     "db_results": [
@@ -502,9 +502,9 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "샤오미 (Xiaomi),  Xiaomi",
-    "model_param": "XIAOMI MI 11 Pro",
+    "model_param": "SM-X9700",
     "ocr_result": {
-      "extracted_text": "사오미 미지아 5 Pro emart hall 1125,240원  무료래승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 집입력 20,OOOPa 센서 ToF 카메라 적외선R 맵끔 사용시간 2시간20분(최대) 인식 시사물인식 감지회피 잠애물회피 분터등반 카켓회피 오자도감지 리프팀 1.5cm 분늑님기 2cm 청소운전 모서리 반복 브러쉬 매인 사이드로봇부러쉬 머리카락컷팀 배티리용량 5200mAh 소비전력 55W 청소기능 카페부스트 물걸레리프팀",
+      "extracted_text": "사오미 미지아 5 Pro 1L> 1125,230원  무료래승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 집입력 20,OOOPa 센서 ToF 카메라 적외선R 맵끔 사용시간 2시간20분(최대) 인식 시사물인식 감지회피 잠애물회피 분터등반 카켓회피 오자도감지 리프팀 1.5cm 분늑님기 2cm 청소운전 모서리 반복 브러쉬 매인 사이드로봇부러쉬 머리카락컷팀 배티리용량 5200mAh 소비전력 55W 청소기능 카페부스트 물걸레리프팀",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\샤오미 미지아 5 Pro\\detail_scan.ocr_cache.json",

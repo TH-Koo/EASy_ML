@@ -37,11 +37,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=28531091",
       "manufacturer": "Brown Korea Co., Ltd., Brown",
-      "model_name": "iO10"
+      "model_name": "IO10"
     },
     "norm_info": {
       "company_name": "Brown Korea Co., Ltd., Brown",
-      "model_name": "iO10",
+      "model_name": "IO10",
       "product_name": "브라운 오랄비 iO10 (코스믹블랙)"
     },
     "db_results": [
@@ -642,14 +642,19 @@
     ],
     "dart_result": null,
     "target_company_name": "Brown Korea Co., Ltd., Brown",
-    "model_param": "iO10",
+    "model_param": "IO10",
     "ocr_result": {
       "extracted_text": "브라운 오락비 i010 (코스틱블렉) coupang 481,310원 무료배송 최저가 구매하기 가격비교 25 상품 상세정보 의견리뷰 소모품 액세서리 연관상품 사용대상 성인용 전원 충전식 진통수 45000회(분당) 회전수 9900회(분담) 모드 강력한 연약한 잇몸헤이 화이트님 혀세점 사용편의스마트 플루투스 압력센서 타이머 양치구역인식 생활방수 휴대용 구성품 전통짓슬 1가 첫슬모 3개 휴대용키이스 첫슬도웨이스 첫슬모 세밀한세점 조미세모 인공지능실시간코침 3D 치아람색 LED디I스끌레이 흑백 충전시간 3시간 무게 800g 무게 (미노출) O.8kg [@ 인종 적합성평가인층 R-R-BAG-3758 [인종변호 확인 안전확인인승 XW1OO027-16001 인증번호 꽉인",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\브라운 오랄비 iO10 (코스믹블랙)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\브라운 오랄비 iO10 (코스믹블랙)\\detail_scan.png",
+        "image_size": 72892,
+        "image_sha256": "b512a44cf9c280471dc78d838d27296ac61acf6275a26edbfff864e82415afc2"
+      }
     }
   }
 }

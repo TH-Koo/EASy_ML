@@ -1,0 +1,60 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=61438310",
+  "bundle_kwargs": {
+    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "product_json": {
+      "title": "듀플렉스 AI 음성인식 서큘레이터 DP-CA08VR",
+      "name": "듀플렉스 AI 음성인식 서큘레이터 DP-CA08VR",
+      "description": "",
+      "ocr_text": "두플렉스 Al 음성인식 서물레이터 DP-CAO8VR coupang 75,970원  무료배송 최저가 구매하기 가격비교 18 상품 상세정보 의견리뷰 연관상품 형태 스랜드령 위무선 유선 소비전력 40W 바람 날개개수 3업날개 날개 I7cm(6.6인치) 헤드조절 좌우회전 상하각도조설 주요기능 높이조철(분리형) 타이머 리모권 부가기능 음성인식 소음 30-32dB [@ 인종 적합성평가인승 R-R-YII-DP-CAO8VR | 인증런호 확인 안전확인인승 HUO7274-24039 인증번로 확인 바로가기 GO 전기요금, 걱정 많으섯조? 클렉하시면 깔끔하게 계산해 드립니다!",
+      "specs": {
+        "서큘레이터": "지원",
+        "스탠드형": "지원",
+        "유선": "지원",
+        "바람": "8단",
+        "3엽날개": "지원",
+        "날개": "17cm(6.6인치)",
+        "좌우회전": "지원",
+        "상하각도조절": "지원",
+        "높이조절(분리형)": "지원",
+        "타이머": "지원",
+        "리모컨": "지원",
+        "[편의] 음성인식": "지원",
+        "크기(가로x세로x깊이)": "305x560(1050)x305mm"
+      },
+      "raw_specs": "서큘레이터 / 스탠드형 / 유선 / 바람 : 8단 / 3엽날개 / 날개 : 17cm(6.6인치) / 좌우회전 / 상하각도조절 / 높이조절(분리형) / 타이머 / 리모컨 / [편의] 음성인식 / 크기(가로x세로x깊이): 305x560(1050)x305mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=61438310",
+      "manufacturer": "듀플렉스, Doublex",
+      "model_name": "DP-CA08VR"
+    },
+    "norm_info": {
+      "company_name": "듀플렉스, Doublex",
+      "model_name": "DP-CA08VR",
+      "product_name": "듀플렉스 AI 음성인식 서큘레이터 DP-CA08VR"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "듀플렉스, Doublex",
+    "model_param": "DP-CA08VR",
+    "ocr_result": {
+      "extracted_text": "두플렉스 Al 음성인식 서물레이터 DP-CAO8VR coupang 75,970원  무료배송 최저가 구매하기 가격비교 18 상품 상세정보 의견리뷰 연관상품 형태 스랜드령 위무선 유선 소비전력 40W 바람 날개개수 3업날개 날개 I7cm(6.6인치) 헤드조절 좌우회전 상하각도조설 주요기능 높이조철(분리형) 타이머 리모권 부가기능 음성인식 소음 30-32dB [@ 인종 적합성평가인승 R-R-YII-DP-CAO8VR | 인증런호 확인 안전확인인승 HUO7274-24039 인증번로 확인 바로가기 GO 전기요금, 걱정 많으섯조? 클렉하시면 깔끔하게 계산해 드립니다!",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images\\듀플렉스 AI 음성인식 서큘레이터 DP-CA08VR\\detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1
+    }
+  }
+}
