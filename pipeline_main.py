@@ -184,7 +184,8 @@ def save_to_dataset(product_info, scores, final_score, is_ai_product, verdict, r
     csv_filename = os.path.join(dataset_dir, "ai_washing_dataset.csv")
     
     model_name = product_info.get("model", "미확인")
-    file_exists = os.path.isfile(csv_filename)
+    # 저장소에 0바이트 CSV가 있더라도 첫 행에는 헤더를 기록한다.
+    file_exists = os.path.isfile(csv_filename) and os.path.getsize(csv_filename) > 0
 
     if file_exists:
         try:
@@ -195,17 +196,23 @@ def save_to_dataset(product_info, scores, final_score, is_ai_product, verdict, r
         except Exception as e:
             print(f"CSV 중복 검사 오류 (무시하고 진행): {e}")
 
-    # 점수 임계값을 다시 적용하지 않고 엔진의 최종 판정을 그대로 사용한다.
-    if not is_ai_product or "판정 제외" in verdict or "미확인" in verdict:
+    # 이 CSV는 룰 분석 결과의 누적 로그이며 fides_ml의 정답 라벨 파일이 아니다.
+    # 판정 제외는 AI 기능을 확인하지 못했다는 뜻이지 비 AI 상품이라는 뜻이 아니다.
+    verdict_text = str(verdict or "")
+    if risk_level == "판정 제외" or "Not Evaluated" in verdict_text or "미확인" in verdict_text:
+        label = "미확인"
+    elif not is_ai_product:
         label = "일반 상품 (Non-AI)"
-    elif "높은 신뢰" in verdict:
+    elif "높은 신뢰" in verdict_text:
         label = "매우 신뢰 (Normal)"
-    elif "신뢰 상품" in verdict:
+    elif "신뢰 상품" in verdict_text:
         label = "신뢰 (Normal)"
-    elif "워싱 의심" in verdict:
+    elif "워싱 의심" in verdict_text:
         label = "워싱 의심 (Suspected)"
-    else:
+    elif "AI 워싱 상품" in verdict_text:
         label = "AI 워싱 상품 (Washing)"
+    else:
+        label = "미확인"
 
     data = {
         "상품카테고리": product_info.get("category", "기타"),
