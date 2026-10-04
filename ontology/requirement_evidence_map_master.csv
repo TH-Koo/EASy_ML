@@ -268,3 +268,11 @@ CAP_CHATBOT_LLM,SW,온디바이스 또는 클라우드 실행,optional,seller_pa
 CAP_CHATBOT_LLM,SW,온디바이스 또는 클라우드 실행,optional,kipris,technical_keyword,company_or_product,0.8,weak,배포·추론 구조 관련 특허
 CAP_AI_HW_FOUNDATION,HW,AI 연산 가속기(NPU/GPU),optional,seller_page,spec_text,product,0.65,weak,제품 스펙의 NPU·GPU·TOPS 확인
 CAP_AI_HW_FOUNDATION,HW,AI 연산 가속기(NPU/GPU),optional,rra,hardware_spec,product_or_model,0.65,weak,인증 설명에 AI 가속 하드웨어가 명시된 경우
+CAP_AI_NOISE_CANCELLATION,HW,마이크,required,kc,hardware_spec,product_or_model,0.95,strong,하드웨어 실체 및 제품 단위 확인
+CAP_AI_NOISE_CANCELLATION,HW,마이크,required,rra,hardware_spec,product_or_model,0.95,strong,전파·통신 관련 하드웨어 확인
+CAP_AI_NOISE_CANCELLATION,HW,마이크,required,seller_page,spec_text,product,0.45,strong,판매 페이지 스펙 보조 근거
+CAP_AI_NOISE_CANCELLATION,SW,음성·소음 분리 AI 모델,required,kipris,technical_keyword,company_or_product,0.9,strong,특허 기반 기술 기능 근거
+CAP_AI_NOISE_CANCELLATION,SW,음성·소음 분리 AI 모델,required,dart,business_technical_keyword,company,0.85,strong,공시 기반 AI 사업/기술 근거
+CAP_AI_NOISE_CANCELLATION,SW,음성·소음 분리 AI 모델,required,seller_page,claim_text,product,0.4,strong,상품 설명 직접 주장
+CAP_AI_NOISE_CANCELLATION,SW,통화 음성 향상 모듈,optional,gs,certification_text,product_or_company,0.8,weak,소프트웨어 인증 보조 근거
+CAP_AI_NOISE_CANCELLATION,SW,통화 음성 향상 모듈,optional,nep,certification_text,product_or_company,0.8,weak,신기술 인증 보조 근거
