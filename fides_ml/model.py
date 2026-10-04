@@ -17,7 +17,7 @@ class ModelConfig:
     prototypes: int = 4
     mode: str = "cen_senn"  # fixed | global | cen | cen_senn
     ecs_alpha: float = 0.15  # Existing main: 0.85 * evidence_score + 0.15 * ECS.
-    washing_cutoff: float = 21.8
+    washing_cutoff: float = 21.8  # Same as fides_config suspected; see scripts/calibrate_washing_cutoff.py.
     genuine_cutoff: float = 35.0
     credible_cutoff: float = 67.5
     temperature: float = 5.0  # ACCS points; fixed softness of ordinal training loss.

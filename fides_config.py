@@ -37,6 +37,15 @@ class VerdictThresholds:
 
     Re-run scripts/calibrate_thresholds.py against a larger/updated labeled
     set before trusting these across a materially different engine change.
+
+    `suspected` (the washing boundary) was re-checked on dataset_v2's train
+    split (749 products) with scripts/calibrate_washing_cutoff.py. ACCS splits
+    into a Not-Evaluated floor (<= 6.4) and an evaluated cluster (>= 33.3);
+    every cutoff inside that gap gives the same result (MCC 0.610, washing
+    recall 0.82), so 21.8 is kept. Val, checked once: MCC 0.417, washing
+    recall 0.62. `normal` was NOT recalibrated: dataset_v2's suspicious and
+    genuine labels split almost entirely by product type, so an ACCS boundary
+    between them would separate product categories, not AI credibility.
     """
 
     credible: float = 67.5
