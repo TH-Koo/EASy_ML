@@ -265,3 +265,13 @@ CAP_AI_HW_FOUNDATION,strong,text,AI 가속기,AI 가속 하드웨어 직접 언�
 CAP_AI_HW_FOUNDATION,strong,text,Neural Processing Unit,NPU 정식 명칭
 CAP_AI_HW_FOUNDATION,weak,text,Intel Core Ultra,NPU 포함 가능성이 있는 AI PC 프로세서 단서
 CAP_AI_HW_FOUNDATION,weak,text,인텔 코어 Ultra,NPU 포함 가능성이 있는 AI PC 프로세서 단서
+CAP_AI_NOISE_CANCELLATION,strong,text,AI노이즈캔슬링,직접 기능 언급
+CAP_AI_NOISE_CANCELLATION,strong,text,AI 노이즈 캔슬링,직접 기능 언급
+CAP_SPEECH_RECOGNITION,strong,text,음성인식,직접 기능 언급(붙여쓰기)
+CAP_SPEECH_RECOGNITION,strong,text,음성비서내장,기기 내장 음성 비서
+CAP_SPEECH_RECOGNITION,strong,text,내장 음성비서,기기 내장 음성 비서
+CAP_OBJECT_DETECTION,strong,text,사물인식,직접 기능 언급(붙여쓰기)
+CAP_AI_OBSTACLE_RECOGNITION,strong,text,사물인식,직접 기능 언급(붙여쓰기)
+CAP_PATH_PLANNING_AVOIDANCE,strong,text,장애물회피,직접 기능 언급(붙여쓰기)
+CAP_AI_OBSTACLE_RECOGNITION,weak,text,장애물회피,단순 센서일 수 있음(붙여쓰기)
+CAP_OBJECT_DETECTION,weak,text,ADAS,"차선·전방 차량 인식 운전 보조, 구현 수준 불명확"
