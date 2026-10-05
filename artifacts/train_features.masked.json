@@ -1,0 +1,21 @@
+{
+  "input_rows": 1286,
+  "prepared_rows": 1251,
+  "label_counts": {
+    "washing": 195,
+    "genuine": 458,
+    "suspicious": 598
+  },
+  "excluded_rows": 35,
+  "excluded_reasons": {
+    "missing_evidence_cache_or_result": 35
+  },
+  "missing_group_rows": 0,
+  "group_column_override": "group_id",
+  "score_source": [
+    "rescored_evidence_cache"
+  ],
+  "labels_sha256": "e480fce6474a916037849902263cdfd2f20d83c559519fdd4201fd768eb8ee3c",
+  "ontology_sha256": "df10b72f72a9a849e9c0bf93304f4ad4bc2406fb60568586e8d11b7187152076",
+  "warnings": []
+}

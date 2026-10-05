@@ -1,0 +1,79 @@
+{
+  "input_rows": 1251,
+  "training_eligible_rows": 1251,
+  "unlabeled_excluded": 0,
+  "no_channel_excluded": 0,
+  "no_channel_sample_ids": [],
+  "class_counts": {
+    "washing": 195,
+    "genuine": 458,
+    "suspicious": 598
+  },
+  "groups": 980,
+  "score_feasibility_by_split": {
+    "train": {
+      "unreachable_label_rows": 402,
+      "total_rows": 754,
+      "by_label": {
+        "washing": 21,
+        "suspicious": 356,
+        "genuine": 25
+      },
+      "note": "Necessary score-range check, not a performance bound. Dictionary constraints can further reduce attainability. Weights alone cannot fix mislabeled or inadequate concept scores."
+    },
+    "validation": {
+      "unreachable_label_rows": 131,
+      "total_rows": 247,
+      "by_label": {
+        "washing": 8,
+        "suspicious": 116,
+        "genuine": 7
+      },
+      "note": "Necessary score-range check, not a performance bound. Dictionary constraints can further reduce attainability. Weights alone cannot fix mislabeled or inadequate concept scores."
+    },
+    "test": {
+      "unreachable_label_rows": 133,
+      "total_rows": 250,
+      "by_label": {
+        "washing": 9,
+        "suspicious": 119,
+        "genuine": 5
+      },
+      "note": "Necessary score-range check, not a performance bound. Dictionary constraints can further reduce attainability. Weights alone cannot fix mislabeled or inadequate concept scores."
+    }
+  },
+  "split_counts": {
+    "train": {
+      "rows": 754,
+      "groups": 588,
+      "labels": {
+        "suspicious": 360,
+        "genuine": 277,
+        "washing": 117
+      }
+    },
+    "validation": {
+      "rows": 247,
+      "groups": 196,
+      "labels": {
+        "suspicious": 118,
+        "genuine": 90,
+        "washing": 39
+      }
+    },
+    "test": {
+      "rows": 250,
+      "groups": 196,
+      "labels": {
+        "suspicious": 120,
+        "genuine": 91,
+        "washing": 39
+      }
+    }
+  },
+  "feature_input_sha256": "ca627553115a2035b8f11cab6b00f45b38233f3ab1dec41f6ff799359775eb90",
+  "group_overlap_count": 0,
+  "score_sources": [
+    "rescored_evidence_cache"
+  ]
+}
