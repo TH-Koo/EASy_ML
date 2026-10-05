@@ -1,0 +1,80 @@
+{
+  "format_version": 2,
+  "serving_contract": "weights_only",
+  "model_config": {
+    "category_dim": 2,
+    "context_dim": 15,
+    "hidden_dim": 32,
+    "prototypes": 4,
+    "mode": "cen_senn",
+    "ecs_alpha": 0.15,
+    "washing_cutoff": 21.8,
+    "genuine_cutoff": 35.0,
+    "credible_cutoff": 67.5,
+    "temperature": 5.0
+  },
+  "train_config": {
+    "epochs": 200,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "patience": 30,
+    "lambda_senn": 0.1,
+    "lambda_prior": 0.005,
+    "lambda_weight_stability": 0.01,
+    "noise_std": 0.02,
+    "balanced": true,
+    "seed": 42,
+    "device": "cpu",
+    "threads": 2
+  },
+  "encoder": {
+    "schema_version": "fides-cen-senn-v1",
+    "categories": [
+      "[MASKED_CATEGORY]"
+    ],
+    "context_columns": [
+      "ctx_hes_count",
+      "ctx_hes_diversity",
+      "ctx_hes_directness",
+      "ctx_hes_recency",
+      "ctx_hes_concentration",
+      "ctx_tes_count",
+      "ctx_tes_diversity",
+      "ctx_tes_directness",
+      "ctx_tes_recency",
+      "ctx_tes_concentration",
+      "ctx_ces_count",
+      "ctx_ces_diversity",
+      "ctx_ces_directness",
+      "ctx_ces_recency",
+      "ctx_ces_concentration"
+    ],
+    "channels": [
+      "hes",
+      "tes",
+      "ces"
+    ],
+    "unknown_category": "zero_vector"
+  },
+  "labels": [
+    "washing",
+    "suspicious",
+    "genuine"
+  ],
+  "best_epoch": 200,
+  "best_validation_ordinal_nll": 1.1105594635009766,
+  "base_git_commit": "8be976a31cbaaa3d524603953857b3b6e47f4842",
+  "python": "3.13.14",
+  "torch": "2.10.0+cpu",
+  "target": "ACCS 0..100; washing < suspicious < genuine",
+  "class_weights": [
+    2.1481480598449707,
+    0.6981481313705444,
+    0.9073405265808105
+  ],
+  "score_sources": [
+    "rescored_evidence_cache"
+  ],
+  "note": "Ordinal labels constrain intervals; ACCS is not a calibrated truth probability or a supervised exact-score estimate."
+}
