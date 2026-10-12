@@ -72,7 +72,11 @@ def predict_arrays(model, arrays, device, batch_size=256) -> dict[str, np.ndarra
     return {k: np.concatenate(v) for k, v in values.items()}
 
 
-def train_model(data_path, output_dir, model_options=None, train_config=None) -> dict:
+def train_model(data_path, output_dir, model_options=None, train_config=None, split_fn=None) -> dict:
+    """split_fn(frame) -> {"train", "validation", "test"} row indices; default is group_split.
+
+    Cross-validation passes a fold-specific split_fn; frame.group_id/target are already set.
+    """
     cfg = train_config or TrainConfig()
     random.seed(cfg.seed)
     np.random.seed(cfg.seed)
@@ -83,7 +87,10 @@ def train_model(data_path, output_dir, model_options=None, train_config=None) ->
     torch.use_deterministic_algorithms(True, warn_only=True)
     device = choose_device(cfg.device)
     frame, audit = load_training_frame(data_path)
-    splits = group_split(frame, cfg.seed)
+    splits = split_fn(frame) if split_fn is not None else group_split(frame, cfg.seed)
+    if any(set(frame.group_id.iloc[splits[a]]) & set(frame.group_id.iloc[splits[b]])
+           for a, b in (("train", "validation"), ("train", "test"), ("validation", "test"))):
+        raise ValueError("Group leakage between splits")
     encoder = FeatureEncoder().fit(frame.iloc[splits["train"]])
     arrays = encoder.transform(frame)
     y = frame.target.to_numpy()
