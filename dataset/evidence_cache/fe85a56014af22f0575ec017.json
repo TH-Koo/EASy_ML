@@ -6,7 +6,7 @@
       "title": "HP ProStudio 4 G1i C2FT3PT Win11Home (8GB, M.2 1TB)",
       "name": "HP ProStudio 4 G1i C2FT3PT Win11Home (8GB, M.2 1TB)",
       "description": "",
-      "ocr_text": "HP ProStudio 4 G1i C2FT3PT WiniiHome (8GB, M.2 ITB) 11> 1,498,990원  무료배송 최저가 구매하기 가격비교 10 상품 상세정보 의견리뷰 연관상품 메인보드 침셋 (인텔) Q870 운명제제 원도우11 CPU 제조사 인텔 CPU 시리즈 군어울트라 시리즈2 CPU 종류 코이 울드라5 CPU 코드명 애로우레이크 군이 개수 6+81이 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량 8GB 저장장치 SSD 형대 M.2 SSD 용량 1TB 그래픽 종류 내장 그래픽 디스플레이 화면크기 61crn(24인치) 해상도 1920x1080 디스플레이 특징 엘리베이선 (눈낮이) 스위블(좌우) 갈드(삼하) 네트위크 802.11ax(Wi-Fi 6E) 무선 1Gbps 유선 불무투스 영상출력",
+      "ocr_text": "HP ProStudio 4 G1i C2FT3PT WiniiHome (8GB, M.2 ITB) 1L> 1,498,980원  무료배송 최저가 구매하기 가격비교 10 상품 상세정보 의견리뷰 연관상품 메인보드 침셋 (인텔) Q870 운명제제 원도우11 CPU 제조사 인텔 CPU 시리즈 군어울트라 시리즈2 CPU 종류 코이 울드라5 CPU 코드명 애로우레이크 군이 개수 6+81이 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량 8GB 저장장치 SSD 형대 M.2 SSD 용량 1TB 그래픽 종류 내장 그래픽 디스플레이 화면크기 61crn(24인치) 해상도 1920x1080 디스플레이 특징 엘리베이선 (눈낮이) 스위블(좌우) 갈드(삼하) 네트위크 802.11ax(Wi-Fi 6E) 무선 1Gbps 유선 불무투스 영상출력",
       "specs": {
         "245": "지원",
         "인텔 그래픽스": "지원",
@@ -520,17 +520,12 @@
     "target_company_name": "HP, Hewlett-Packard",
     "model_param": "C2FT3PT",
     "ocr_result": {
-      "extracted_text": "HP ProStudio 4 G1i C2FT3PT WiniiHome (8GB, M.2 ITB) 11> 1,498,990원  무료배송 최저가 구매하기 가격비교 10 상품 상세정보 의견리뷰 연관상품 메인보드 침셋 (인텔) Q870 운명제제 원도우11 CPU 제조사 인텔 CPU 시리즈 군어울트라 시리즈2 CPU 종류 코이 울드라5 CPU 코드명 애로우레이크 군이 개수 6+81이 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량 8GB 저장장치 SSD 형대 M.2 SSD 용량 1TB 그래픽 종류 내장 그래픽 디스플레이 화면크기 61crn(24인치) 해상도 1920x1080 디스플레이 특징 엘리베이선 (눈낮이) 스위블(좌우) 갈드(삼하) 네트위크 802.11ax(Wi-Fi 6E) 무선 1Gbps 유선 불무투스 영상출력",
+      "extracted_text": "HP ProStudio 4 G1i C2FT3PT WiniiHome (8GB, M.2 ITB) 1L> 1,498,980원  무료배송 최저가 구매하기 가격비교 10 상품 상세정보 의견리뷰 연관상품 메인보드 침셋 (인텔) Q870 운명제제 원도우11 CPU 제조사 인텔 CPU 시리즈 군어울트라 시리즈2 CPU 종류 코이 울드라5 CPU 코드명 애로우레이크 군이 개수 6+81이 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량 8GB 저장장치 SSD 형대 M.2 SSD 용량 1TB 그래픽 종류 내장 그래픽 디스플레이 화면크기 61crn(24인치) 해상도 1920x1080 디스플레이 특징 엘리베이선 (눈낮이) 스위블(좌우) 갈드(삼하) 네트위크 802.11ax(Wi-Fi 6E) 무선 1Gbps 유선 불무투스 영상출력",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\HP ProStudio 4 G1i C2FT3PT Win11Home (8GB, M.2 1TB)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1,
-      "_cache_meta": {
-        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\HP ProStudio 4 G1i C2FT3PT Win11Home (8GB, M.2 1TB)\\detail_scan.png",
-        "image_size": 69988,
-        "image_sha256": "20946848b521271b301b95c79969a55175f3200181c438d498069d2e663ad4bd"
-      }
+      "chunk_count": 1
     }
   }
 }

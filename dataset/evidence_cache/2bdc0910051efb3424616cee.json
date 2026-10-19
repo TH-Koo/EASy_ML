@@ -6,7 +6,7 @@
       "title": "쿠쿠전자 파워클론 AI CRVC-BFFAC0530NW",
       "name": "쿠쿠전자 파워클론 AI CRVC-BFFAC0530NW",
       "description": "",
-      "ocr_text": "구구전자 파위클론 Al CRVC-BFFACO53ONW coupang 860,000원 무료배승 최저가 구매하기 가격비교 35 상품 상세정보 의견리뷰 연관상품 센서 LDS ToF 카메라 맵끔 사용시간 2시간20분(최대) 감지회피 잠애물회피 충들방지 낙하방지 분터등반 리프팅 1.2cm 분늑님기 2cm 통과높이 11cm 브러쉬 매인 사이드 필티 기파필터 헤파필되등금 H13금 청소기능 카켓부스트 물걸레리프팀 스마트M제어 금지구역 구역지점 예약청소 물걸레 회전형 물걸레 회전스 2OORPM 스테이선",
+      "ocr_text": "구구전자 파위클론 Al CRVC-BFFACO53ONW Gmarket   986,720원 무료내승 최저가 구매하기 가격비교 14 상품 상세정보 의견리뷰 연관상품 센서 LDS ToF 카메라 맵끔 사용시간 2시간20분(최대) 감지회피 잠애물회피 충들방지 낙하방지 분터등반 리프팅 1.2cm 분늑님기 2cm 통과높이 11cm 브러쉬 매인 사이드 필티 기파필터 헤파필되등금 H13금 청소기능 카켓부스트 물걸레리프팀 스마트M제어 금지구역 구역지점 예약청소 물걸레 회전형 물걸레 회전스 2OORPM 스테이선",
       "specs": {
         "로봇청소기": "지원",
         "흡입+물걸레": "지원",
@@ -91,17 +91,12 @@
     "target_company_name": "쿠쿠전자, KuKu Techno",
     "model_param": "CRVC-BFFAC0530NW",
     "ocr_result": {
-      "extracted_text": "구구전자 파위클론 Al CRVC-BFFACO53ONW coupang 860,000원 무료배승 최저가 구매하기 가격비교 35 상품 상세정보 의견리뷰 연관상품 센서 LDS ToF 카메라 맵끔 사용시간 2시간20분(최대) 감지회피 잠애물회피 충들방지 낙하방지 분터등반 리프팅 1.2cm 분늑님기 2cm 통과높이 11cm 브러쉬 매인 사이드 필티 기파필터 헤파필되등금 H13금 청소기능 카켓부스트 물걸레리프팀 스마트M제어 금지구역 구역지점 예약청소 물걸레 회전형 물걸레 회전스 2OORPM 스테이선",
+      "extracted_text": "구구전자 파위클론 Al CRVC-BFFACO53ONW Gmarket   986,720원 무료내승 최저가 구매하기 가격비교 14 상품 상세정보 의견리뷰 연관상품 센서 LDS ToF 카메라 맵끔 사용시간 2시간20분(최대) 감지회피 잠애물회피 충들방지 낙하방지 분터등반 리프팅 1.2cm 분늑님기 2cm 통과높이 11cm 브러쉬 매인 사이드 필티 기파필터 헤파필되등금 H13금 청소기능 카켓부스트 물걸레리프팀 스마트M제어 금지구역 구역지점 예약청소 물걸레 회전형 물걸레 회전스 2OORPM 스테이선",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\쿠쿠전자 파워클론 AI CRVC-BFFAC0530NW\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1,
-      "_cache_meta": {
-        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\쿠쿠전자 파워클론 AI CRVC-BFFAC0530NW\\detail_scan.png",
-        "image_size": 57141,
-        "image_sha256": "46ea641ea638e77cb8f398130dbe85e36f3d59f001a15a96956a9dd09e936ba0"
-      }
+      "chunk_count": 1
     }
   }
 }

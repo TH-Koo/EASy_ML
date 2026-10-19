@@ -16,11 +16,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=25348649",
       "manufacturer": "AI중생대공룡도감",
-      "model_name": "AI-RSZ"
+      "model_name": "RSZ"
     },
     "norm_info": {
       "company_name": "AI중생대공룡도감",
-      "model_name": "AI-RSZ",
+      "model_name": "RSZ",
       "product_name": "AI-중생대공룡도감 머신러닝 1인용 RSZ"
     },
     "db_results": [],
@@ -37,7 +37,7 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "AI중생대공룡도감",
-    "model_param": "AI-RSZ",
+    "model_param": "RSZ",
     "ocr_result": {}
   }
 }

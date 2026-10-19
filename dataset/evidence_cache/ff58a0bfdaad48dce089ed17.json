@@ -6,9 +6,10 @@
       "title": "KZ Carol Pro (해외구매)",
       "name": "KZ Carol Pro (해외구매)",
       "description": "",
-      "ocr_text": "KZ Carol Pro (해외구매) Gmarket   37,540원 무료내송 최저가 구매하기 가격비교 33 상품 상세정보 의견리뷰 연관상품 외형 크드리스 이어클립영 용도 음악+통화용 무선연결 불무투스 v5.4 노이즈권트록 A노이즈랜늘림가이 사운드채널 스데레오 드라이버크기 유넷 1Omm 주파수 2OHz~2OkHz 코덕 LDAC SBC AAC 무선언결거리 2Om [내티리] [배터리] 1회증전시 7시간 쇠대재생 35시간 이상 배티리용량 4OmnAh 중전켜이스 30OmAh 충전 USB-C 권트률 EQ모드선택 음성명령",
+      "ocr_text": "KZ Carol Pro (해외구매) 11> 40,790원 무료배송 최저가 구매하기 가격비교 10 상품 상세정보 의견리뷰 연관상품 외형 크드리스 이어클립영 용도 음악+통화용 무선연결 불무투스 v5.4 노이즈권트록 A노이즈랜늘림가이 사운드채널 스데레오 드라이버크기 유넷 1Omm 주파수 2OHz~2OkHz 코덕 LDAC SBC AAC 무선언결거리 2Om [내티리] [배터리] 1회증전시 7시간 쇠대재생 35시간 이상 배티리용량 4OmnAh 중전켜이스 30OmAh 충전 USB-C 권트률 EQ모드선택 음성명령",
       "specs": {
         "커널형": "지원",
+        "코드리스": "지원",
         "이어클립형": "지원",
         "블루투스 v5.4": "지원",
         "[노이즈컨트롤] AI노이즈캔슬링마이크": "지원",
@@ -21,98 +22,260 @@
         "[기능] 음성명령": "지원",
         "멀티포인트": "지원"
       },
-      "raw_specs": "커널형 / 이어클립형 / 블루투스 v5.4 / [노이즈컨트롤] AI노이즈캔슬링마이크 / [사운드] 유닛:10mm / 20Hz~20kHz / 코덱 : LDAC , SBC , AAC / [배터리] 1회충전시 : 7시간 / 최대재생 : 35시간 이상 / 충전 : USB-C / [기능] 음성명령 / 멀티포인트",
+      "raw_specs": "커널형 / 코드리스 / 이어클립형 / 블루투스 v5.4 / [노이즈컨트롤] AI노이즈캔슬링마이크 / [사운드] 유닛:10mm / 20Hz~20kHz / 코덱 : LDAC , SBC , AAC / [배터리] 1회충전시 : 7시간 / 최대재생 : 35시간 이상 / 충전 : USB-C / [기능] 음성명령 / 멀티포인트",
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=123846808",
-      "manufacturer": "KZ",
-      "model_name": "KZ-Carol-Pro"
+      "manufacturer": "KZ Co., Ltd., Kz",
+      "model_name": "KZ-C-Pro"
     },
     "norm_info": {
-      "company_name": "KZ",
-      "model_name": "KZ-Carol-Pro",
+      "company_name": "KZ Co., Ltd., Kz",
+      "model_name": "KZ-C-Pro",
       "product_name": "KZ Carol Pro (해외구매)"
     },
     "db_results": [
       {
-        "company_name": "케이지 코퍼레이션(KZ' corp.)",
-        "equip_name": "미약 전계강도 무선기기",
-        "model_name": "E.V.C SYSTEM",
+        "company_name": "Wenzhou Wolang Electric Appliance Co., Ltd.",
+        "equip_name": "HAIR CLIPPER",
+        "model_name": "V-888",
         "country": "중국",
-        "cert_date": "2019-05-27",
+        "cert_date": "2026-02-02",
         "cert_status": "적합등록",
-        "cert_no": "R-R-KZC-KZ-EXHAUST-EVC"
+        "cert_no": "R-R-WZWL-V-888"
       },
       {
-        "company_name": "케이지 코퍼레이션(KZ' corp.)",
-        "equip_name": "미약 전계강도 무선기기",
-        "model_name": "E.V.C SYSTEM 02",
+        "company_name": "Anhui Huami Information Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "A2550",
         "country": "중국",
-        "cert_date": "2020-07-28",
+        "cert_date": "2026-01-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-hM6-A2550"
+      },
+      {
+        "company_name": "CASIO COMPUTER CO., LTD.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "GWR-B3000",
+        "country": "중국",
+        "cert_date": "2026-01-23",
         "cert_status": "적합등록",
-        "cert_no": "R-R-KZC-EVCSYSTEM02"
+        "cert_no": "R-R-CAI-S70W"
       },
       {
-        "company_name": "샥즈코리아 주식회사(SHOKZ KOREA LIMITED)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "T910",
+        "company_name": "Dongguan Dongjing Electric Appliance Co., Ltd.",
+        "equip_name": "CURLING HAIR IRON",
+        "model_name": "SL-008KRAB 32mm",
         "country": "중국",
-        "cert_date": "2023-06-20",
-        "cert_status": "적합인증",
-        "cert_no": "R-CS-GGZ-T910"
+        "cert_date": "2026-01-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-91d-SL-008KRAB32mm"
       },
       {
-        "company_name": "샥즈코리아 주식회사(SHOKZ KOREA LIMITED)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "SHOKZ T920",
+        "company_name": "진우에이티에스 주식회사 (Jin Woo AI Traffic Solution co., ltd.)",
+        "equip_name": "댁내 활동 감지 센서",
+        "model_name": "JW-HFD",
+        "country": "한국",
+        "cert_date": "2026-01-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-JIW-JW-HFD"
+      },
+      {
+        "company_name": "Vanch(Ningbo) Brand Management Co.,Ltd.",
+        "equip_name": "AI translation",
+        "model_name": "AI-102",
         "country": "중국",
-        "cert_date": "2024-12-12",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-GGZ-T920"
+        "cert_date": "2026-01-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FVA-AI-102"
       },
       {
-        "company_name": "샥즈코리아 주식회사(SHOKZ KOREA LIMITED)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "SHOKZ C610",
+        "company_name": "Wuhu Flyco Electrical Appliance Co., Ltd.",
+        "equip_name": "Nose Hair Trimmer",
+        "model_name": "FS5600KR",
         "country": "중국",
-        "cert_date": "2024-12-09",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-GGZ-C610"
+        "cert_date": "2026-01-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Fly-FS5600KR"
       },
       {
-        "company_name": "샥즈코리아 주식회사(SHOKZ KOREA LIMITED)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "SHOKZ S820",
+        "company_name": "Beijing Orion Star Technology Co., Ltd.",
+        "equip_name": "AI Service Robot",
+        "model_name": "OS-R-SG04",
         "country": "중국",
-        "cert_date": "2024-06-05",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-GGZ-S820"
+        "cert_date": "2026-01-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Orn-OS-R-SG04"
       },
       {
-        "company_name": "샥즈코리아 주식회사(SHOKZ KOREA LIMITED)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "T511",
-        "country": "베트남",
-        "cert_date": "2024-03-12",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-GGZ-T511"
-      },
-      {
-        "company_name": "샥즈코리아 주식회사(SHOKZ KOREA LIMITED)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "SHOKZ T921",
+        "company_name": "Wuhu Flyco Electrical Appliance Co., Ltd.",
+        "equip_name": "Nose Hair Trimmer",
+        "model_name": "FS5615KR",
         "country": "중국",
-        "cert_date": "2025-05-13",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-GGZ-T921"
+        "cert_date": "2026-01-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Fly-FS5615KR"
       },
       {
-        "company_name": "샥즈코리아 주식회사(SHOKZ KOREA LIMITED)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "SHOKZ E310",
+        "company_name": "Guangdong Lingdu Intelligent Technology Development Co., Ltd.",
+        "equip_name": "K3 Curtain Wall Cleaning Robot Receiver",
+        "model_name": "H12",
         "country": "중국",
-        "cert_date": "2025-04-10",
+        "cert_date": "2026-01-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-LinG-H12"
+      },
+      {
+        "company_name": "주식회사 무한에이아이 (MOOHAN AI Co.,Ltd.)",
+        "equip_name": "인체공학 무선 키보드",
+        "model_name": "EK100",
+        "country": "중국",
+        "cert_date": "2026-01-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Lme-EK100"
+      },
+      {
+        "company_name": "SIYI Technology (Shenzhen) Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "UniRC 7 Pro RF Module",
+        "country": "중국",
+        "cert_date": "2026-01-28",
         "cert_status": "적합인증",
-        "cert_no": "R-C-GGZ-E310"
+        "cert_no": "R-C-Sy5-UniRC7ProRF"
+      },
+      {
+        "company_name": "GIGABYTE TECHNOLOGY CO., LTD.",
+        "equip_name": "MAIN BOARD",
+        "model_name": "H810M HD3P",
+        "country": "중국",
+        "cert_date": "2026-01-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-GBN-H81MD3P"
+      },
+      {
+        "company_name": "Shanghai Slamtec Co., Ltd.",
+        "equip_name": "Compact AI-Integrated Spatial Perception System",
+        "model_name": "SLAMTEC Aurora S",
+        "country": "중국",
+        "cert_date": "2026-02-02",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-s8s-AuroraS"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "2602BPC18G",
+        "country": "중국",
+        "cert_date": "2026-02-03",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-2602BPC18G"
+      },
+      {
+        "company_name": "GIGABYTE TECHNOLOGY CO., LTD.",
+        "equip_name": "MAIN BOARD",
+        "model_name": "A620M H",
+        "country": "중국",
+        "cert_date": "2026-02-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-GBN-A62MH"
+      },
+      {
+        "company_name": "주식회사 사이언스플러스 (SCIENCE PLUS Co.,Ltd.)",
+        "equip_name": "스마트링 마우스",
+        "model_name": "K-Ring",
+        "country": "중국",
+        "cert_date": "2026-02-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SCIE-K-Ring"
+      },
+      {
+        "company_name": "Beijing Yuezhua Technology Co., Ltd.",
+        "equip_name": "Smart pet water fountain",
+        "model_name": "YBCW01",
+        "country": "중국",
+        "cert_date": "2026-02-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-2D1F-YBCW01"
+      },
+      {
+        "company_name": "Beijing Yuezhua Technology Co., Ltd.",
+        "equip_name": "Smart pet water fountain",
+        "model_name": "YPCW01",
+        "country": "중국",
+        "cert_date": "2026-02-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-2D1F-YPCW01"
+      },
+      {
+        "company_name": "주식회사 팬앤코(Fannco Co.,Ltd.)",
+        "equip_name": "특정소출력 무선기기(데이터전송용 무선기기)",
+        "model_name": "FT0312MJ",
+        "country": "중국",
+        "cert_date": "2026-02-04",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-fnc-FT0312MJ"
+      },
+      {
+        "company_name": "(주)브랜드세터 (Brand Setter Co., Ltd.)",
+        "equip_name": "차량용 무선 카플레이오토",
+        "model_name": "CAC",
+        "country": "중국",
+        "cert_date": "2026-02-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-brds-CAC"
+      },
+      {
+        "company_name": "Suteng Innovation Technology Co.,Ltd.",
+        "equip_name": "Fairy",
+        "model_name": "Fairy",
+        "country": "중국",
+        "cert_date": "2026-02-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SuiT-Fairy"
+      },
+      {
+        "company_name": "Anhui Huami Information Technology Co., Ltd.",
+        "equip_name": "특정소출력무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "A2559",
+        "country": "중국",
+        "cert_date": "2026-02-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-hM6-A2559"
+      },
+      {
+        "company_name": "Huawei Device Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "T0026",
+        "country": "중국",
+        "cert_date": "2026-01-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-HZY-T0026"
+      },
+      {
+        "company_name": "Zhongshan Changhong Electric Co., Ltd.",
+        "equip_name": "Split type air conditioner",
+        "model_name": "CSDC-14DA",
+        "country": "중국",
+        "cert_date": "2026-01-02",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ZSCH-CSDC-14DA"
+      },
+      {
+        "company_name": "Zhongshan Changhong Electric Co., Ltd.",
+        "equip_name": "Split type air conditioner",
+        "model_name": "CSDC-10DA",
+        "country": "중국",
+        "cert_date": "2026-01-02",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ZSCH-CSDC-10DA"
+      },
+      {
+        "company_name": "Zhongshan Changhong Electric Co., Ltd.",
+        "equip_name": "Split type air conditioner",
+        "model_name": "CSDC-08DA",
+        "country": "중국",
+        "cert_date": "2026-01-02",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ZSCH-CSDC-08DA"
       },
       {
         "company_name": "샥즈코리아 주식회사(SHOKZ KOREA LIMITED)",
@@ -122,6 +285,204 @@
         "cert_date": "2026-01-02",
         "cert_status": "적합인증",
         "cert_no": "R-C-GGZ-T010"
+      },
+      {
+        "company_name": "ELITEGROUP COMPUTER SYSTEMS CO., LTD.",
+        "equip_name": "Mainboard",
+        "model_name": "Q87V1-EM",
+        "country": "중국",
+        "cert_date": "2026-01-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ETW-Q87V1-EM"
+      },
+      {
+        "company_name": "Anhui Jianling Fire Protection Technology Co., Ltd.",
+        "equip_name": "Electric nail grinder",
+        "model_name": "CH-DM803",
+        "country": "중국",
+        "cert_date": "2026-01-09",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-JLXF-CH-DM803"
+      },
+      {
+        "company_name": "Guangdong Welland Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "FG2504WB",
+        "country": "중국",
+        "cert_date": "2026-01-09",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-GWT1-FG2504WB"
+      },
+      {
+        "company_name": "AG BEAUTY CO., LTD.",
+        "equip_name": "다슈 데일리 볼륨핏 스타일러(DASHU DAILY VOLUME FIT STYLER)",
+        "model_name": "DS-W100",
+        "country": "중국",
+        "cert_date": "2026-01-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AG01-DS-W100"
+      },
+      {
+        "company_name": "Ningbo Xinhu E-commerce Co., Ltd.",
+        "equip_name": "우스틴스 무선 대포 송풍기",
+        "model_name": "XH-BXJ01",
+        "country": "중국",
+        "cert_date": "2026-01-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-NxE-XH-BXJ01"
+      },
+      {
+        "company_name": "주식회사 직방 (ZIGBANG Co., Ltd.)",
+        "equip_name": "특정소출력 무선기기(안전시스템용 무선기기)",
+        "model_name": "SHP-DP940H",
+        "country": "필리핀",
+        "cert_date": "2026-01-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-ZBc-SHP-DP940H"
+      },
+      {
+        "company_name": "주식회사 직방 (ZIGBANG Co., Ltd.)",
+        "equip_name": "특정소출력 무선기기(안전시스템용 무선기기)",
+        "model_name": "ZD-P61-FH",
+        "country": "필리핀",
+        "cert_date": "2026-01-13",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-ZBc-ZD-P61-FH"
+      },
+      {
+        "company_name": "Foshan Midea Carrier Air-conditioning Equipment Co., Ltd.",
+        "equip_name": "Air-Conditioner",
+        "model_name": "AAMB-0852XXMDO (Outdoor Unit); DAMB-0852NDWMDI (Indoor Unit 1); AARB-0061GDWMDI (Indoor Unit 2)",
+        "country": "중국",
+        "cert_date": "2026-02-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FAir-LLCM-85"
+      },
+      {
+        "company_name": "Xiaomi Communications Co.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "M2559B1",
+        "country": "중국",
+        "cert_date": "2026-01-14",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-xmi-M2559B1"
+      },
+      {
+        "company_name": "Guangzhou Langston Electronic Technology Co., Ltd.",
+        "equip_name": "Langsdom AirWave Pro",
+        "model_name": "Langsdom AirWave Pro",
+        "country": "중국",
+        "cert_date": "2026-01-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FBN-BE19"
+      },
+      {
+        "company_name": "주식회사 카르나 에이아이 아시아 (CARNA AI ASIA Co., Ltd.)",
+        "equip_name": "CARNA AI 헬스뷰어",
+        "model_name": "CRAI-KIOCA-26",
+        "country": "한국",
+        "cert_date": "2026-01-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ASIA-CRAI-KIOCA-26"
+      },
+      {
+        "company_name": "Guangzhou Langston Electronic Technology Co., Ltd.",
+        "equip_name": "Langsdom AirSwim Neo",
+        "model_name": "Langsdom AirSwim Neo",
+        "country": "중국",
+        "cert_date": "2026-01-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FBN-BE23"
+      },
+      {
+        "company_name": "Dongguan Zeyuan Household Appliances Co., Ltd.",
+        "equip_name": "Air Purifier",
+        "model_name": "HY1800Pro",
+        "country": "중국",
+        "cert_date": "2026-01-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-ZeH-HY1800Pro"
+      },
+      {
+        "company_name": "SZ DJI Osmo Technology Co., Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "RC508",
+        "country": "중국",
+        "cert_date": "2026-01-19",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-osm-RC508"
+      },
+      {
+        "company_name": "주식회사 무한에이아이 (MOOHAN AI Co.,Ltd.)",
+        "equip_name": "무선키보드",
+        "model_name": "WK10",
+        "country": "중국",
+        "cert_date": "2026-01-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Lme-WK10"
+      },
+      {
+        "company_name": "NINGBO CHANGLI AUTOMATIC APPLIANCE CO.,LTD.",
+        "equip_name": "무선 물걸레 청소기",
+        "model_name": "AK-2000R",
+        "country": "중국",
+        "cert_date": "2026-01-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-NCa-AK-2000R"
+      },
+      {
+        "company_name": "진우에이티에스 주식회사 (Jin Woo AI Traffic Solution co., ltd.)",
+        "equip_name": "댁내 활동 감지 센서",
+        "model_name": "JW-HAM",
+        "country": "한국",
+        "cert_date": "2026-01-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-JIW-JW-HAM"
+      },
+      {
+        "company_name": "GIGABYTE TECHNOLOGY CO., LTD.",
+        "equip_name": "MAIN BOARD",
+        "model_name": "Q870M HD3P",
+        "country": "중국",
+        "cert_date": "2026-01-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-GBN-Q87MD3P"
+      },
+      {
+        "company_name": "(주) 제닉스크리에이티브 (XenicsCreative Co., Ltd.)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "STORMX VM AIR R",
+        "country": "중국",
+        "cert_date": "2026-02-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-XeC-STORMX-VMAR"
+      },
+      {
+        "company_name": "GUANGZHOU XAIRCRAFT TECHNOLOGY CO.,Ltd.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "3WDFZ-240AH1",
+        "country": "중국",
+        "cert_date": "2026-02-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-GXC-3WDFZ-240AH1"
+      },
+      {
+        "company_name": "Foshan Midea Carrier Air-conditioning Equipment Co., Ltd.",
+        "equip_name": "Air-Conditioner",
+        "model_name": "AAMB-0852XXMDO (Outdoor Unit); DAMB-0852QDWMDI (Indoor Unit 1); AARB-0061GDWMDI (Indoor Unit 2)",
+        "country": "중국",
+        "cert_date": "2026-02-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FAir-QMCM-85"
+      },
+      {
+        "company_name": "Foshan Midea Carrier Air-conditioning Equipment Co., Ltd.",
+        "equip_name": "Air-Conditioner",
+        "model_name": "AAMB-0702TXMDO (Outdoor Unit); DAMB-0702QDWMDI (Indoor Unit 1); AARB-0061GDWMDI (Indoor Unit 2)",
+        "country": "중국",
+        "cert_date": "2026-02-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FAir-QMCM-70"
       }
     ],
     "jodale_result": null,
@@ -134,12 +495,145 @@
         "title": "AI 특허 내역 없음 None"
       }
     ],
-    "cert_results": [],
+    "cert_results": [
+      {
+        "id": 4374,
+        "cert_type": "GS",
+        "cert_no": "24-0001",
+        "product_name": "비전 인공지능 기반 차량번호 판독시스템 v1.0",
+        "company_name": "주식회사 에이엔비(AnB Co.Ltd.)",
+        "biz_no": "7688102364",
+        "representative": "이현우",
+        "cert_date": "2024-01-29",
+        "expire_date": "9999-12-31"
+      },
+      {
+        "id": 4929,
+        "cert_type": "GS",
+        "cert_no": "23-0006",
+        "product_name": "RPA기반 기업 업무자동화 지원 소프트웨어",
+        "company_name": "(주)블루프리즘코리아 (Blue Prism Korea Ltd.)",
+        "biz_no": "7108802160",
+        "representative": "안현덕",
+        "cert_date": "2023-04-07",
+        "expire_date": "9999-12-31"
+      },
+      {
+        "id": 5000,
+        "cert_type": "GS",
+        "cert_no": "23-0085",
+        "product_name": "3차원 문화유산 플랫폼 v1.03D Cultural Heritage Platform v1.0",
+        "company_name": "뉴레이어 주식회사(New Layer Co. Ltd.)",
+        "biz_no": "2338110238",
+        "representative": "",
+        "cert_date": "2023-02-20",
+        "expire_date": "9999-12-31"
+      },
+      {
+        "id": 5356,
+        "cert_type": "GS",
+        "cert_no": "22-0012",
+        "product_name": "영상 분석을 통한 유속 및 유량 계측 소프트웨어",
+        "company_name": "주식회사 에이치티아이코리아(HTI Korea Co. Ltd.)",
+        "biz_no": "7058601336",
+        "representative": "HASEGAWA MAKOTO",
+        "cert_date": "2022-08-31",
+        "expire_date": "9999-12-31"
+      },
+      {
+        "id": 5357,
+        "cert_type": "GS",
+        "cert_no": "22-0011",
+        "product_name": "SNS 인사이트 데이터 모니터링 소프트웨어",
+        "company_name": "주식회사 프레시앤텍(FRESHNTECH Co.Ltd.)",
+        "biz_no": "4578601081",
+        "representative": "이준호김종우",
+        "cert_date": "2022-08-31",
+        "expire_date": "9999-12-31"
+      },
+      {
+        "id": 14395,
+        "cert_type": "혁신시제품",
+        "cert_no": "2022-450",
+        "product_name": "선제 대응 지능형 수처리 통합계장계측제어장치",
+        "company_name": "주식회사 에이치코비 (H-KORBI Co. Ltd.)",
+        "biz_no": "2098123540",
+        "representative": "",
+        "cert_date": "2022-12-26",
+        "expire_date": "2025-12-25"
+      },
+      {
+        "id": 20443,
+        "cert_type": "GS",
+        "cert_no": "24-0001",
+        "product_name": "비전 인공지능 기반 차량번호 판독시스템 v1.0",
+        "company_name": "주식회사 에이엔비(AnB Co.Ltd.)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2024-01-29",
+        "expire_date": null
+      },
+      {
+        "id": 20998,
+        "cert_type": "GS",
+        "cert_no": "23-0006",
+        "product_name": "RPA기반 기업 업무자동화 지원 소프트웨어",
+        "company_name": "(주)블루프리즘코리아 (Blue Prism Korea Ltd.)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2023-04-07",
+        "expire_date": null
+      },
+      {
+        "id": 21069,
+        "cert_type": "GS",
+        "cert_no": "23-0085",
+        "product_name": "3차원 문화유산 플랫폼 v1.03D Cultural Heritage Platform v1.0",
+        "company_name": "뉴레이어 주식회사(New Layer Co. Ltd.)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2023-02-20",
+        "expire_date": null
+      },
+      {
+        "id": 21425,
+        "cert_type": "GS",
+        "cert_no": "22-0012",
+        "product_name": "영상 분석을 통한 유속 및 유량 계측 소프트웨어",
+        "company_name": "주식회사 에이치티아이코리아(HTI Korea Co. Ltd.)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2022-08-31",
+        "expire_date": null
+      },
+      {
+        "id": 21426,
+        "cert_type": "GS",
+        "cert_no": "22-0011",
+        "product_name": "SNS 인사이트 데이터 모니터링 소프트웨어",
+        "company_name": "주식회사 프레시앤텍(FRESHNTECH Co.Ltd.)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2022-08-31",
+        "expire_date": null
+      },
+      {
+        "id": 30464,
+        "cert_type": "혁신시제품",
+        "cert_no": "2022-450",
+        "product_name": "선제 대응 지능형 수처리 통합계장계측제어장치 ",
+        "company_name": "주식회사 에이치코비 (H-KORBI Co. Ltd.)",
+        "biz_no": null,
+        "representative": null,
+        "cert_date": "2022-12-26",
+        "expire_date": null
+      }
+    ],
     "dart_result": null,
-    "target_company_name": "KZ",
-    "model_param": "KZ-Carol-Pro",
+    "target_company_name": "KZ Co., Ltd., Kz",
+    "model_param": "KZ-C-Pro",
     "ocr_result": {
-      "extracted_text": "KZ Carol Pro (해외구매) Gmarket   37,540원 무료내송 최저가 구매하기 가격비교 33 상품 상세정보 의견리뷰 연관상품 외형 크드리스 이어클립영 용도 음악+통화용 무선연결 불무투스 v5.4 노이즈권트록 A노이즈랜늘림가이 사운드채널 스데레오 드라이버크기 유넷 1Omm 주파수 2OHz~2OkHz 코덕 LDAC SBC AAC 무선언결거리 2Om [내티리] [배터리] 1회증전시 7시간 쇠대재생 35시간 이상 배티리용량 4OmnAh 중전켜이스 30OmAh 충전 USB-C 권트률 EQ모드선택 음성명령",
+      "extracted_text": "KZ Carol Pro (해외구매) 11> 40,790원 무료배송 최저가 구매하기 가격비교 10 상품 상세정보 의견리뷰 연관상품 외형 크드리스 이어클립영 용도 음악+통화용 무선연결 불무투스 v5.4 노이즈권트록 A노이즈랜늘림가이 사운드채널 스데레오 드라이버크기 유넷 1Omm 주파수 2OHz~2OkHz 코덕 LDAC SBC AAC 무선언결거리 2Om [내티리] [배터리] 1회증전시 7시간 쇠대재생 35시간 이상 배티리용량 4OmnAh 중전켜이스 30OmAh 충전 USB-C 권트률 EQ모드선택 음성명령",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\KZ Carol Pro (해외구매)\\detail_scan.ocr_cache.json",

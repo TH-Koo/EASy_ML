@@ -46,11 +46,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=68246969",
       "manufacturer": "HP, Hewlett-Packard",
-      "model_name": "24-cr1000kl"
+      "model_name": "HP 24-cr1000kl"
     },
     "norm_info": {
       "company_name": "HP, Hewlett-Packard",
-      "model_name": "24-cr1000kl",
+      "model_name": "HP 24-cr1000kl",
       "product_name": "HP 24-cr1000kl Max (16GB, M.2 512GB)"
     },
     "db_results": [
@@ -518,7 +518,7 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "HP, Hewlett-Packard",
-    "model_param": "24-cr1000kl",
+    "model_param": "HP 24-cr1000kl",
     "ocr_result": {
       "extracted_text": "HP 24-cr1OOOkl Max (16GB, M.2 512GB) phcnc 1,280,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 운영체제 원도우11 CPU 제조사 인텔 CPU 시리즈 코어올드라 시리즈1 CPU 종류 군이 올드라5 CPU 코드명 메태오레이크 NPU 종류 인텔 Al Boost NPU TOPS 11TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M2 SSD 용량 512GB 그래픽 제조사 INTEL 그래픽 종류 내장 그래픽 디스플레이 화면크기 60.5cm(23.8인지) 해상도 1920x1080 디스플레이 특징 눈부신방지 광시야각 엘리베이선 (도낮이) 사운드 출력 사운드 지원 스피커 너장형 네트위크 802.11ax(Wi-Fi 6) 무선 1Gbps 유선 불무튼스",
       "ocr_device": "CPU",

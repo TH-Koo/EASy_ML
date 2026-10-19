@@ -6,7 +6,7 @@
       "title": "삼성전자 갤럭시탭 액티브5 5G (128GB)",
       "name": "삼성전자 갤럭시탭 액티브5 5G (128GB)",
       "description": "",
-      "ocr_text": "삼성전자 길력시t 액티브5 56 (128GB) 심성 공식온라인물 809,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 24 연관상품 화면크기 8인지 디스플레이 TFT-LCD 해상도 1920*x1200 정설 수(ppi) 283ppi 화면비율 16.10 쇠대주사율 12OHz 강화유리 고립다 글래스 5 시스템 6GB 용량 128GB 외장메모리 ricroSD지I원 프로세서 액시노스1380 코이 개수 8코이 군이블력 2.4GHz+2.0GHz GPU Mali G68 벤치마크 AP CPU 35점 AP 게이팅 20점 AP CPU(싱글) 999 AP CPU밀리) 2758 GPU(세민) 2772 Al NPU 4,9TOPS NPU률 탑재한 Al 엔진 Al TOPS 4.9 TOPS 카메라 후면카메라 화소 후면:1,300만화소 전면카데라 화소 전면:500만화소 통영상활영 4k@3Ofps 조리개값 F19 카메라기능 HDR촬영 LED플래쉬",
+      "ocr_text": "삼성전자 길력시t 액티브5 56 (128GB) 가격비교 상품 상세정보 의견리뷰 24 연관상품 화면크기 8인지 디스플레이 TFT-LCD 해상도 1920*x1200 정설 수(ppi) 283ppi 화면비율 16.10 쇠대주사율 12OHz 강화유리 고립다 글래스 5 시스템 6GB 용량 128GB 외장메모리 ricroSD지I원 프로세서 액시노스1380 코이 개수 8코이 군이블력 2.4GHz+2.0GHz GPU Mali G68 벤치마크 AP CPU 35점 AP 게이팅 20점 AP CPU(싱글) 999 AP CPU밀리) 2758 GPU(세민) 2772 Al NPU 4,9TOPS NPU률 탑재한 Al 엔진 Al TOPS 4.9 TOPS 카메라 후면카메라 화소 후면:1,300만화소 전면카데라 화소 전면:500만화소 통영상활영 4k@3Ofps 조리개값 F19 카메라기능 HDR촬영 LED플래쉬",
       "specs": {
         "태블릿PC": "지원",
         "5G": "지원",
@@ -35,14 +35,95 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=42203525",
       "manufacturer": "삼성전자",
-      "model_name": "SM-B5100"
+      "model_name": "SM-F936B"
     },
     "norm_info": {
       "company_name": "삼성전자",
-      "model_name": "SM-B5100",
+      "model_name": "SM-F936B",
       "product_name": "삼성전자 갤럭시탭 액티브5 5G (128GB)"
     },
     "db_results": [
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "SM-F956N",
+        "country": "한국",
+        "cert_date": "2024-05-23",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMF956"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓ 대역)(육상이동국의 송수신장치)",
+        "model_name": "SM-F907N",
+        "country": "한국",
+        "cert_date": "2019-04-22",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMF907"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "SM-F946N",
+        "country": "베트남",
+        "cert_date": "2023-06-21",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMF946"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "SM-F936N",
+        "country": "베트남",
+        "cert_date": "2022-07-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMF936"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "SM-F916N",
+        "country": "한국",
+        "cert_date": "2020-08-18",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMF916"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "SM-F958N",
+        "country": "한국",
+        "cert_date": "2024-08-29",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMF958"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "SM-F966N",
+        "country": "한국",
+        "cert_date": "2025-05-27",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMF966"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "SM-F926N",
+        "country": "한국",
+        "cert_date": "2021-07-01",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMF926"
+      },
+      {
+        "company_name": "삼성전자(주)",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "SM-F968N",
+        "country": "한국",
+        "cert_date": "2025-09-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-SEC-SMF968"
+      },
       {
         "company_name": "삼성전자(주)",
         "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
@@ -51,42 +132,6 @@
         "cert_date": "2021-12-10",
         "cert_status": "적합인증",
         "cert_no": "R-C-SEC-SMX205N"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "TUNE130NCTWS",
-        "country": "중국",
-        "cert_date": "2021-09-15",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-SEC-T130NCTWS"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용무선기기)",
-        "model_name": "PARTYBOX710",
-        "country": "중국",
-        "cert_date": "2021-09-17",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-SEC-JBLPB710"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용무선기기)",
-        "model_name": "FLIP6C",
-        "country": "중국",
-        "cert_date": "2021-09-24",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-SEC-JBLFLIP6C"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
-        "model_name": "SM-G525N",
-        "country": "베트남",
-        "cert_date": "2021-09-27",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-SMG525"
       },
       {
         "company_name": "삼성전자(주)",
@@ -289,20 +334,11 @@
       {
         "company_name": "삼성전자(주)",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "RS-9",
-        "country": "인도네시아",
-        "cert_date": "2021-12-09",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-SEC-RS-9"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
-        "model_name": "SM-F700N",
-        "country": "한국",
+        "model_name": "BOOMBOX 2",
+        "country": "중국",
         "cert_date": "2020-01-10",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-SMF700"
+        "cert_status": "적합등록",
+        "cert_no": "R-R-SEC-BOOMBOX2"
       },
       {
         "company_name": "삼성전자(주)",
@@ -423,39 +459,12 @@
       },
       {
         "company_name": "삼성전자(주)",
-        "equip_name": "쿡센서",
-        "model_name": "NZ63B1322EK",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "SM-F700N",
         "country": "한국",
-        "cert_date": "2021-12-23",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-SEC-NZ8500BM-S"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(기지국의 송수신장치 및 중계장치)",
-        "model_name": "MT3230-78A",
-        "country": "한국",
-        "cert_date": "2021-12-13",
+        "cert_date": "2020-01-10",
         "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-MT323078A"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(기지국의 송수신장치 및 중계장치)",
-        "model_name": "MT3229-78A",
-        "country": "한국",
-        "cert_date": "2021-12-13",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-MT322978A"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "QUANTUM610",
-        "country": "중국",
-        "cert_date": "2021-12-21",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-SEC-Q610"
+        "cert_no": "R-C-SEC-SMF700"
       },
       {
         "company_name": "삼성전자(주)",
@@ -469,29 +478,20 @@
       {
         "company_name": "삼성전자(주)",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "RMCSPB1SP1",
-        "country": "한국",
-        "cert_date": "2021-12-22",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-RMCSPB1SP1"
-      },
-      {
-        "company_name": "삼성전자(주)",
-        "equip_name": "쿡센서",
-        "model_name": "NZ63B1322EK",
-        "country": "한국",
-        "cert_date": "2021-12-23",
+        "model_name": "QUANTUM610",
+        "country": "중국",
+        "cert_date": "2021-12-21",
         "cert_status": "적합등록",
-        "cert_no": "R-R-SEC-NZ8500BM-C"
+        "cert_no": "R-R-SEC-Q610"
       },
       {
         "company_name": "삼성전자(주)",
-        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
-        "model_name": "WCT732M",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(기지국의 송수신장치 및 중계장치)",
+        "model_name": "MT3229-78A",
         "country": "한국",
-        "cert_date": "2020-01-06",
+        "cert_date": "2021-12-13",
         "cert_status": "적합인증",
-        "cert_no": "R-C-SEC-WCT732M"
+        "cert_no": "R-C-SEC-MT322978A"
       }
     ],
     "jodale_result": null,
@@ -603,19 +603,14 @@
       "detail": "DART 분석 결과 [삼성전자] 실적 총 1건 확인."
     },
     "target_company_name": "삼성전자",
-    "model_param": "SM-B5100",
+    "model_param": "SM-F936B",
     "ocr_result": {
-      "extracted_text": "삼성전자 길력시t 액티브5 56 (128GB) 심성 공식온라인물 809,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 24 연관상품 화면크기 8인지 디스플레이 TFT-LCD 해상도 1920*x1200 정설 수(ppi) 283ppi 화면비율 16.10 쇠대주사율 12OHz 강화유리 고립다 글래스 5 시스템 6GB 용량 128GB 외장메모리 ricroSD지I원 프로세서 액시노스1380 코이 개수 8코이 군이블력 2.4GHz+2.0GHz GPU Mali G68 벤치마크 AP CPU 35점 AP 게이팅 20점 AP CPU(싱글) 999 AP CPU밀리) 2758 GPU(세민) 2772 Al NPU 4,9TOPS NPU률 탑재한 Al 엔진 Al TOPS 4.9 TOPS 카메라 후면카메라 화소 후면:1,300만화소 전면카데라 화소 전면:500만화소 통영상활영 4k@3Ofps 조리개값 F19 카메라기능 HDR촬영 LED플래쉬",
+      "extracted_text": "삼성전자 길력시t 액티브5 56 (128GB) 가격비교 상품 상세정보 의견리뷰 24 연관상품 화면크기 8인지 디스플레이 TFT-LCD 해상도 1920*x1200 정설 수(ppi) 283ppi 화면비율 16.10 쇠대주사율 12OHz 강화유리 고립다 글래스 5 시스템 6GB 용량 128GB 외장메모리 ricroSD지I원 프로세서 액시노스1380 코이 개수 8코이 군이블력 2.4GHz+2.0GHz GPU Mali G68 벤치마크 AP CPU 35점 AP 게이팅 20점 AP CPU(싱글) 999 AP CPU밀리) 2758 GPU(세민) 2772 Al NPU 4,9TOPS NPU률 탑재한 Al 엔진 Al TOPS 4.9 TOPS 카메라 후면카메라 화소 후면:1,300만화소 전면카데라 화소 전면:500만화소 통영상활영 4k@3Ofps 조리개값 F19 카메라기능 HDR촬영 LED플래쉬",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\삼성전자 갤럭시탭 액티브5 5G (128GB)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1,
-      "_cache_meta": {
-        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\삼성전자 갤럭시탭 액티브5 5G (128GB)\\detail_scan.png",
-        "image_size": 76399,
-        "image_sha256": "de466f030abd876480653230e0eb9ccd0861475f128c6bee6a53eaaef03f4479"
-      }
+      "chunk_count": 1
     }
   }
 }

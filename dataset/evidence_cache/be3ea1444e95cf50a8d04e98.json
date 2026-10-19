@@ -6,7 +6,7 @@
       "title": "DELL QC24250 245 Win11Pro (16GB, SSD 1TB)",
       "name": "DELL QC24250 245 Win11Pro (16GB, SSD 1TB)",
       "description": "",
-      "ocr_text": "DELL QC24250 245 WiniiPro (16GB, SSD ITB) 슈프림컵 2,550,000원  무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 메인보드 침셋 (인텔) Q870 운명제제 원도우11 프로 파뭐 출력 160W CPU 제조사 인텔 CPU 시리즈 코어올드라 시리즈2 CPU 종류 굳이 올드라5-2세대 CPU 코드명 애로우레이크 코이 개수 6+8코이 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 SSD SSD 용량 1TB 그래픽 제조사 INTEL 그래픽 종류 내잠 그래픽 디스플레이 화면크기 61crn(24인치) 디스플레이 특징 피넷(회전) 엘리베이선 (도낮이) 사운드 출력 사운드 지원 소피커 내장험 네트위크 802.11ax(Wi-Fi 6E) 무선 불무투스 영상출력",
+      "ocr_text": "DELL QC24250 245 WiniiPro (16GB, SSD ITB) phcnc 3,100,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 메인보드 침셋 (인텔) Q870 운명제제 원도우11 프로 파뭐 출력 160W CPU 제조사 인텔 CPU 시리즈 코어올드라 시리즈2 CPU 종류 굳이 올드라5-2세대 CPU 코드명 애로우레이크 코이 개수 6+8코이 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 SSD SSD 용량 1TB 그래픽 제조사 INTEL 그래픽 종류 내잠 그래픽 디스플레이 화면크기 61crn(24인치) 디스플레이 특징 피넷(회전) 엘리베이선 (도낮이) 사운드 출력 사운드 지원 소피커 내장험 네트위크 802.11ax(Wi-Fi 6E) 무선 불무투스 영상출력",
       "specs": {
         "245": "지원",
         "인텔 그래픽스": "지원",
@@ -519,17 +519,12 @@
     "target_company_name": "DELL, Inc.",
     "model_param": "QC24250",
     "ocr_result": {
-      "extracted_text": "DELL QC24250 245 WiniiPro (16GB, SSD ITB) 슈프림컵 2,550,000원  무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 메인보드 침셋 (인텔) Q870 운명제제 원도우11 프로 파뭐 출력 160W CPU 제조사 인텔 CPU 시리즈 코어올드라 시리즈2 CPU 종류 굳이 올드라5-2세대 CPU 코드명 애로우레이크 코이 개수 6+8코이 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 SSD SSD 용량 1TB 그래픽 제조사 INTEL 그래픽 종류 내잠 그래픽 디스플레이 화면크기 61crn(24인치) 디스플레이 특징 피넷(회전) 엘리베이선 (도낮이) 사운드 출력 사운드 지원 소피커 내장험 네트위크 802.11ax(Wi-Fi 6E) 무선 불무투스 영상출력",
+      "extracted_text": "DELL QC24250 245 WiniiPro (16GB, SSD ITB) phcnc 3,100,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 메인보드 침셋 (인텔) Q870 운명제제 원도우11 프로 파뭐 출력 160W CPU 제조사 인텔 CPU 시리즈 코어올드라 시리즈2 CPU 종류 굳이 올드라5-2세대 CPU 코드명 애로우레이크 코이 개수 6+8코이 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 SSD SSD 용량 1TB 그래픽 제조사 INTEL 그래픽 종류 내잠 그래픽 디스플레이 화면크기 61crn(24인치) 디스플레이 특징 피넷(회전) 엘리베이선 (도낮이) 사운드 출력 사운드 지원 소피커 내장험 네트위크 802.11ax(Wi-Fi 6E) 무선 불무투스 영상출력",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\DELL QC24250 245 Win11Pro (16GB, SSD 1TB)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1,
-      "_cache_meta": {
-        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\DELL QC24250 245 Win11Pro (16GB, SSD 1TB)\\detail_scan.png",
-        "image_size": 69865,
-        "image_sha256": "0e38e919204cd56a0f4e6d224246f50503c0166c1fc4aa96ceb7502e348cce57"
-      }
+      "chunk_count": 1
     }
   }
 }
