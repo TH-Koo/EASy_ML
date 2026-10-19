@@ -6,9 +6,10 @@
       "title": "몬스타 몬스타기어 서머너 버즈 AI (블랙+블랙)",
       "name": "몬스타 몬스타기어 서머너 버즈 AI (블랙+블랙)",
       "description": "",
-      "ocr_text": "돌스타 본스타기어 서머너 버즈 Al (불렉+불택) LOTTE ON 56,010원  무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.0 사운드채널 스데레오 드라이버크기 유넷 6mnm 감도 92dB 코덕 AAC 불루투스 프로파일 AVRCP 무선연결거리 1Om 통화시간 6시간 1회중전시 6시간 중전시간 1시간 배티리용량 5OmnAh 편의기능 배터리진랑표시(불 음싱안내 이이입 숲 권트률 재생)멈축조설 불름조설",
+      "ocr_text": "돌스타 본스타기어 서머너 버즈 Al (불렉+불택) LOTTE ON 57,620원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.0 사운드채널 스데레오 드라이버크기 유넷 6mnm 감도 92dB 코덕 AAC 불루투스 프로파일 AVRCP 무선연결거리 1Om 통화시간 6시간 1회중전시 6시간 중전시간 1시간 배티리용량 5OmnAh 편의기능 배터리진랑표시(불 음싱안내 이이입 숲 권트률 재생)멈축조설 불름조설",
       "specs": {
         "커널형": "지원",
+        "코드리스": "지원",
         "블루투스 v5.0": "지원",
         "[기능] [사운드] 유닛": "6mm",
         "92dB": "지원",
@@ -18,15 +19,15 @@
         "음성명령": "지원",
         "IPX6방수": "지원"
       },
-      "raw_specs": "커널형 / 블루투스 v5.0 / [기능] [사운드] 유닛:6mm / 92dB / 코덱 : AAC / 1회충전시 : 6시간 / [부가] 편의기능 : 음성안내 / 음성명령 / IPX6방수",
+      "raw_specs": "커널형 / 코드리스 / 블루투스 v5.0 / [기능] [사운드] 유닛:6mm / 92dB / 코덱 : AAC / 1회충전시 : 6시간 / [부가] 편의기능 : 음성안내 / 음성명령 / IPX6방수",
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=14957273",
       "manufacturer": "몬스타, Monster",
-      "model_name": "몬스타기어"
+      "model_name": "VGG16"
     },
     "norm_info": {
       "company_name": "몬스타, Monster",
-      "model_name": "몬스타기어",
+      "model_name": "VGG16",
       "product_name": "몬스타 몬스타기어 서머너 버즈 AI (블랙+블랙)"
     },
     "db_results": [
@@ -404,19 +405,14 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "몬스타, Monster",
-    "model_param": "몬스타기어",
+    "model_param": "VGG16",
     "ocr_result": {
-      "extracted_text": "돌스타 본스타기어 서머너 버즈 Al (불렉+불택) LOTTE ON 56,010원  무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.0 사운드채널 스데레오 드라이버크기 유넷 6mnm 감도 92dB 코덕 AAC 불루투스 프로파일 AVRCP 무선연결거리 1Om 통화시간 6시간 1회중전시 6시간 중전시간 1시간 배티리용량 5OmnAh 편의기능 배터리진랑표시(불 음싱안내 이이입 숲 권트률 재생)멈축조설 불름조설",
+      "extracted_text": "돌스타 본스타기어 서머너 버즈 Al (불렉+불택) LOTTE ON 57,620원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.0 사운드채널 스데레오 드라이버크기 유넷 6mnm 감도 92dB 코덕 AAC 불루투스 프로파일 AVRCP 무선연결거리 1Om 통화시간 6시간 1회중전시 6시간 중전시간 1시간 배티리용량 5OmnAh 편의기능 배터리진랑표시(불 음싱안내 이이입 숲 권트률 재생)멈축조설 불름조설",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\몬스타 몬스타기어 서머너 버즈 AI (블랙+블랙)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1,
-      "_cache_meta": {
-        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\몬스타 몬스타기어 서머너 버즈 AI (블랙+블랙)\\detail_scan.png",
-        "image_size": 51740,
-        "image_sha256": "de75acd1d4b6e650e91783eff432e7b7afb9725a065a5d0ae1ccbfb38c71402b"
-      }
+      "chunk_count": 1
     }
   }
 }

@@ -6,7 +6,7 @@
       "title": "GPD WIN 5 AI Max+ 395 해외구매 32GB, SSD 2TB/해외구매",
       "name": "GPD WIN 5 AI Max+ 395 해외구매 32GB, SSD 2TB/해외구매",
       "description": "",
-      "ocr_text": "GPD WIN 5 Al Max+ 395 해외구매 32GB, SSD 2TBI해외구매 AUCTION 2,870,440원  무료버송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 화면 비율 169 해상도 1920x1080(FHD) 패널 종류 IPS(터치) 화면 밝기 5OOnit 화면 주사물 I2OHz 운명제제 원도우OS 무게 950g 상품구분 해외상품 [시스템] CPU 종류 라이젠A Max+ CPU 코드네민 스트리스 혜일로 CPU 년버 395 (5.1GHz) CPU 코이스 16코어 CPU 스레드수 GPU 라데온 8060s 32GB 캠 타입 LPDDRSX 쓰 대역쪽 OOOMHz 용량 2TB SSD 뜻렉터 M2 2280 SSD 인터데이스 PCle 4.0(NVMe) [조작부] 권드물러 타입 일체형 파드 권트론러 부가가능 본선서 트리거 [파위단자] 배티리 8owh USB 타입",
+      "ocr_text": "GPD WIN 5 Al Max+ 395 해외구매 32GB, SSD 2TBI해외구매 AUCTION 2,808,710원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 화면 비율 169 해상도 1920x1080(FHD) 패널 종류 IPS(터치) 화면 밝기 5OOnit 화면 주사물 I2OHz 운명제제 원도우OS 무게 950g 상품구분 해외상품 [시스템] CPU 종류 라이젠A Max+ CPU 코드네민 스트리스 혜일로 CPU 년버 395 (5.1GHz) CPU 코이스 16코어 CPU 스레드수 GPU 라데온 8060s 32GB 캠 타입 LPDDRSX 쓰 대역쪽 OOOMHz 용량 2TB SSD 뜻렉터 M2 2280 SSD 인터데이스 PCle 4.0(NVMe) [조작부] 권드물러 타입 일체형 파드 권트론러 부가가능 본선서 트리거 [파위단자] 배티리 8owh USB 타입",
       "specs": {
         "휴대용PC 게임기(UMPC)": "지원",
         "본체": "지원",
@@ -57,17 +57,12 @@
     "target_company_name": "GPD, GPD",
     "model_param": "GPD WIN 5 AI Max+",
     "ocr_result": {
-      "extracted_text": "GPD WIN 5 Al Max+ 395 해외구매 32GB, SSD 2TBI해외구매 AUCTION 2,870,440원  무료버송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 화면 비율 169 해상도 1920x1080(FHD) 패널 종류 IPS(터치) 화면 밝기 5OOnit 화면 주사물 I2OHz 운명제제 원도우OS 무게 950g 상품구분 해외상품 [시스템] CPU 종류 라이젠A Max+ CPU 코드네민 스트리스 혜일로 CPU 년버 395 (5.1GHz) CPU 코이스 16코어 CPU 스레드수 GPU 라데온 8060s 32GB 캠 타입 LPDDRSX 쓰 대역쪽 OOOMHz 용량 2TB SSD 뜻렉터 M2 2280 SSD 인터데이스 PCle 4.0(NVMe) [조작부] 권드물러 타입 일체형 파드 권트론러 부가가능 본선서 트리거 [파위단자] 배티리 8owh USB 타입",
+      "extracted_text": "GPD WIN 5 Al Max+ 395 해외구매 32GB, SSD 2TBI해외구매 AUCTION 2,808,710원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 화면 비율 169 해상도 1920x1080(FHD) 패널 종류 IPS(터치) 화면 밝기 5OOnit 화면 주사물 I2OHz 운명제제 원도우OS 무게 950g 상품구분 해외상품 [시스템] CPU 종류 라이젠A Max+ CPU 코드네민 스트리스 혜일로 CPU 년버 395 (5.1GHz) CPU 코이스 16코어 CPU 스레드수 GPU 라데온 8060s 32GB 캠 타입 LPDDRSX 쓰 대역쪽 OOOMHz 용량 2TB SSD 뜻렉터 M2 2280 SSD 인터데이스 PCle 4.0(NVMe) [조작부] 권드물러 타입 일체형 파드 권트론러 부가가능 본선서 트리거 [파위단자] 배티리 8owh USB 타입",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\GPD WIN 5 AI Max+ 395 해외구매 32GB, SSD 2TB해외구매\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1,
-      "_cache_meta": {
-        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\GPD WIN 5 AI Max+ 395 해외구매 32GB, SSD 2TB해외구매\\detail_scan.png",
-        "image_size": 71769,
-        "image_sha256": "b075871ef1478aa2b2393993b569837b04a6799b7db2a3bdb6d611b00585bb5f"
-      }
+      "chunk_count": 1
     }
   }
 }

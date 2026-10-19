@@ -6,7 +6,7 @@
       "title": "ASUS ROG DELTA S WIRELESS 게이밍 헤드셋 (해외구매)",
       "name": "ASUS ROG DELTA S WIRELESS 게이밍 헤드셋 (해외구매)",
       "description": "",
-      "ocr_text": "ASUS ROG DELTA S WIRELESS 게이망 헤드셋 (해외구매) coupang 207,270원 무료래송 최저가 구매하기 가격비교 12 상품 상세정보 의견리뷰 연관상품 유넷크기 5Omnm 채널지원 가상 71자널 연결방식 USB-C농글 2.4GHz 불루투스 불루투스 V5.0 인디터스 322 주파수 2OHz~2OkHz 사운드기능 시I노이즈랜쓸림가이 ENC노이즈랜되림마 편의기능 전용 소프트웨어 회증전 사용시간 25시간 배터리용량 18oOmAh 충전단자 USB-C 파드형대 오버이이 권트론러형태 일체형조작부 권트론러기능 볼룹 조설 음소거 마이크형태 내장형 샌드형태",
+      "ocr_text": "ASUS ROG DELTA S WIRELESS 게이망 헤드셋 (해외구매) 11> 267,790원 무료내송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 유넷크기 5Omnm 채널지원 가상 71자널 연결방식 USB-C농글 2.4GHz 불루투스 불루투스 V5.0 인디터스 322 주파수 2OHz~2OkHz 사운드기능 시I노이즈랜쓸림가이 ENC노이즈랜되림마 편의기능 전용 소프트웨어 회증전 사용시간 25시간 배터리용량 18oOmAh 충전단자 USB-C 파드형대 오버이이 권트론러형태 일체형조작부 권트론러기능 볼룹 조설 음소거 마이크형태 내장형 샌드형태",
       "specs": {
         "무선 PC헤드셋": "지원",
         "가상 7.1채널": "지원",
@@ -35,59 +35,14 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=20687075",
       "manufacturer": "ASUS, Asus",
-      "model_name": "ROG DELTA S WIRELESS"
+      "model_name": "R700"
     },
     "norm_info": {
       "company_name": "ASUS, Asus",
-      "model_name": "ROG DELTA S WIRELESS",
+      "model_name": "R700",
       "product_name": "ASUS ROG DELTA S WIRELESS 게이밍 헤드셋 (해외구매)"
     },
     "db_results": [
-      {
-        "company_name": "ASUSTEK COMPUTER INC.",
-        "equip_name": "헤드셋",
-        "model_name": "ROG DELTA S",
-        "country": "대만",
-        "cert_date": "2020-11-12",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-MSQ-RDV2"
-      },
-      {
-        "company_name": "ASUSTEK COMPUTER INC.",
-        "equip_name": "Motherboard",
-        "model_name": "ROG DOMINUS EXTREME",
-        "country": "중국",
-        "cert_date": "2019-06-05",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-MSQ-DOMINUSE"
-      },
-      {
-        "company_name": "ASUSTEK COMPUTER INC.",
-        "equip_name": "HEADSET",
-        "model_name": "ROG Delta",
-        "country": "중국",
-        "cert_date": "2018-11-07",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-MSQ-RDEL"
-      },
-      {
-        "company_name": "ASUSTEK COMPUTER INC.",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "ROG DELTA S WIRELESS",
-        "country": "대만",
-        "cert_date": "2022-09-23",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-MSQ-RDSW"
-      },
-      {
-        "company_name": "ASUSTEK COMPUTER INC.",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "ROG Delta S Wireless Dongle",
-        "country": "대만",
-        "cert_date": "2022-09-23",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-MSQ-RDSWD"
-      },
       {
         "company_name": "ASUSTEK COMPUTER INC.",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
@@ -342,6 +297,24 @@
       },
       {
         "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기 (무선데이터통신시스템용 무선기기)",
+        "model_name": "MW203-D",
+        "country": "중국",
+        "cert_date": "2021-01-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MSQ-MW203-D"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기 (무선데이터통신시스템용 무선기기)",
+        "model_name": "MW203",
+        "country": "중국",
+        "cert_date": "2021-01-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MSQ-MW203"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
         "equip_name": "Main Board",
         "model_name": "NUC14LNB",
         "country": "중국",
@@ -478,6 +451,24 @@
       {
         "company_name": "ASUSTEK COMPUTER INC.",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "ROG Delta S Wireless Dongle",
+        "country": "대만",
+        "cert_date": "2022-09-23",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-RDSWD"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "P306",
+        "country": "대만",
+        "cert_date": "2022-06-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-P306"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
         "model_name": "TUF GAMING H1 WIRELESS",
         "country": "대만",
         "cert_date": "2022-06-17",
@@ -487,11 +478,20 @@
       {
         "company_name": "ASUSTEK COMPUTER INC.",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "P709",
-        "country": "중국",
-        "cert_date": "2022-11-09",
+        "model_name": "ROG DELTA S WIRELESS",
+        "country": "대만",
+        "cert_date": "2022-09-23",
         "cert_status": "적합인증",
-        "cert_no": "R-C-MSQ-P709"
+        "cert_no": "R-C-MSQ-RDSW"
+      },
+      {
+        "company_name": "ASUSTEK COMPUTER INC.",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MPDONGLE1",
+        "country": "중국",
+        "cert_date": "2022-11-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-MSQ-MPDONGLE1"
       }
     ],
     "jodale_result": null,
@@ -507,9 +507,9 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "ASUS, Asus",
-    "model_param": "ROG DELTA S WIRELESS",
+    "model_param": "R700",
     "ocr_result": {
-      "extracted_text": "ASUS ROG DELTA S WIRELESS 게이망 헤드셋 (해외구매) coupang 207,270원 무료래송 최저가 구매하기 가격비교 12 상품 상세정보 의견리뷰 연관상품 유넷크기 5Omnm 채널지원 가상 71자널 연결방식 USB-C농글 2.4GHz 불루투스 불루투스 V5.0 인디터스 322 주파수 2OHz~2OkHz 사운드기능 시I노이즈랜쓸림가이 ENC노이즈랜되림마 편의기능 전용 소프트웨어 회증전 사용시간 25시간 배터리용량 18oOmAh 충전단자 USB-C 파드형대 오버이이 권트론러형태 일체형조작부 권트론러기능 볼룹 조설 음소거 마이크형태 내장형 샌드형태",
+      "extracted_text": "ASUS ROG DELTA S WIRELESS 게이망 헤드셋 (해외구매) 11> 267,790원 무료내송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 유넷크기 5Omnm 채널지원 가상 71자널 연결방식 USB-C농글 2.4GHz 불루투스 불루투스 V5.0 인디터스 322 주파수 2OHz~2OkHz 사운드기능 시I노이즈랜쓸림가이 ENC노이즈랜되림마 편의기능 전용 소프트웨어 회증전 사용시간 25시간 배터리용량 18oOmAh 충전단자 USB-C 파드형대 오버이이 권트론러형태 일체형조작부 권트론러기능 볼룹 조설 음소거 마이크형태 내장형 샌드형태",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\ASUS ROG DELTA S WIRELESS 게이밍 헤드셋 (해외구매)\\detail_scan.ocr_cache.json",

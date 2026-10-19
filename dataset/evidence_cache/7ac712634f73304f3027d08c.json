@@ -6,10 +6,9 @@
       "title": "아마존 Echo 4th (해외구매)",
       "name": "아마존 Echo 4th (해외구매)",
       "description": "",
-      "ocr_text": "아마존 Echo 4th (해외구매) 보다 BODA 206,030원   무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 전원 ACIDC전원 불무투스버전 불무투스 불루투스프로파일 AVRCP A2DP 입출력 AUX 네트위크 Wi-Fi 멀티미디어 전화통화 알람 외관특징 LED조명 편의기능 음성비서내장 내장 음성비서 알력사 인식가능언어 영어인식 음성제어기능 loT연놈 날씨",
+      "ocr_text": "아마존 Echo 4th (해외구매) 보다 BODA 206,030원  무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 불루투스프로파일 AVRCP A2DP 입출력 AUX 네트위크 Wi-Fi 멀티미디어 전화통화 알람 외관특징 LED조명 편의기능 음심비서내장 내장 음성비서 알력사 인식가능언어 영어인식 음성제어기능 loT연통 날씨 음악재생 무게 980g 전원",
       "specs": {
         "AI스피커": "지원",
-        "AC/DC전원": "지원",
         "블루투스": "지원",
         "입출력": "AUX",
         "Wi-Fi": "지원",
@@ -18,17 +17,18 @@
         "LED조명": "지원",
         "음성비서내장": "지원",
         "영어인식": "지원",
-        "무게": "980g"
+        "무게": "980g",
+        "AC/DC전원": "지원"
       },
-      "raw_specs": "AI스피커 / AC/DC전원 / 블루투스 / 입출력 : AUX / Wi-Fi / 전화통화 / 알람 / LED조명 / 음성비서내장 / 영어인식 / 무게 : 980g",
+      "raw_specs": "AI스피커 / 블루투스 / 입출력 : AUX / Wi-Fi / 전화통화 / 알람 / LED조명 / 음성비서내장 / 영어인식 / 무게 : 980g / AC/DC전원",
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=12996683",
       "manufacturer": "아마존, Amazon",
-      "model_name": "RA1004"
+      "model_name": "B085V5Q9N8"
     },
     "norm_info": {
       "company_name": "아마존, Amazon",
-      "model_name": "RA1004",
+      "model_name": "B085V5Q9N8",
       "product_name": "아마존 Echo 4th (해외구매)"
     },
     "db_results": [
@@ -64,9 +64,9 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "아마존, Amazon",
-    "model_param": "RA1004",
+    "model_param": "B085V5Q9N8",
     "ocr_result": {
-      "extracted_text": "아마존 Echo 4th (해외구매) 보다 BODA 206,030원   무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 전원 ACIDC전원 불무투스버전 불무투스 불루투스프로파일 AVRCP A2DP 입출력 AUX 네트위크 Wi-Fi 멀티미디어 전화통화 알람 외관특징 LED조명 편의기능 음성비서내장 내장 음성비서 알력사 인식가능언어 영어인식 음성제어기능 loT연놈 날씨",
+      "extracted_text": "아마존 Echo 4th (해외구매) 보다 BODA 206,030원  무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 불루투스프로파일 AVRCP A2DP 입출력 AUX 네트위크 Wi-Fi 멀티미디어 전화통화 알람 외관특징 LED조명 편의기능 음심비서내장 내장 음성비서 알력사 인식가능언어 영어인식 음성제어기능 loT연통 날씨 음악재생 무게 980g 전원",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\아마존 Echo 4th (해외구매)\\detail_scan.ocr_cache.json",

@@ -6,7 +6,7 @@
       "title": "HP 24-ct2001KL (16GB, M.2 512GB)",
       "name": "HP 24-ct2001KL (16GB, M.2 512GB)",
       "description": "",
-      "ocr_text": "HP 24-ct2001KL (16GB, M.2 512GB) coupang 1,711,800원 무료래송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 운영체제 OS미포함 CPU 제조사 AMD CPU 시리즈 라이젠 300시리즈 CPU 종류 라이젠A 5 CPU 코드명 크라권 포인트 NPU 종류 AMD 라이전 Al NPU TOPS 50TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M2 SSD 용량 512GB 그래픽 제조사 AMD 그래픽 종류 내장 그래픽 디스플레이 화면크기 61cmn(24인치) 해상도 1920x1080 디스플레이 특징 눈부신방지 광시야각 사운드 출력 사운드 지원 스피커 내장령 네트위크 802.11ax(Wi-Fi6) 무선 1Gbps 유선 불무투스 영상출력",
+      "ocr_text": "HP 24-ct2001KL (16GB, M.2 512GB) 가격비교 상품 상세정보 의견리뷰 연관상품 운영체제 OS미포함 CPU 제조사 AMD CPU 시리즈 라이젠 300시리즈 CPU 종류 라이젠A 5 CPU 코드명 크라권 포인트 NPU 종류 AMD 라이전 Al NPU TOPS 50TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M2 SSD 용량 512GB 그래픽 제조사 AMD 그래픽 종류 내장 그래픽 디스플레이 화면크기 61cmn(24인치) 해상도 1920x1080 디스플레이 특징 눈부신방지 광시야각 사운드 출력 사운드 지원 스피커 내장령 네트위크 802.11ax(Wi-Fi6) 무선 1Gbps 유선 불무투스 영상출력",
       "specs": {
         "340": "지원",
         "840M": "지원",
@@ -517,17 +517,12 @@
     "target_company_name": "HP, Hewlett-Packard",
     "model_param": "24-ct2001KL",
     "ocr_result": {
-      "extracted_text": "HP 24-ct2001KL (16GB, M.2 512GB) coupang 1,711,800원 무료래송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 운영체제 OS미포함 CPU 제조사 AMD CPU 시리즈 라이젠 300시리즈 CPU 종류 라이젠A 5 CPU 코드명 크라권 포인트 NPU 종류 AMD 라이전 Al NPU TOPS 50TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M2 SSD 용량 512GB 그래픽 제조사 AMD 그래픽 종류 내장 그래픽 디스플레이 화면크기 61cmn(24인치) 해상도 1920x1080 디스플레이 특징 눈부신방지 광시야각 사운드 출력 사운드 지원 스피커 내장령 네트위크 802.11ax(Wi-Fi6) 무선 1Gbps 유선 불무투스 영상출력",
+      "extracted_text": "HP 24-ct2001KL (16GB, M.2 512GB) 가격비교 상품 상세정보 의견리뷰 연관상품 운영체제 OS미포함 CPU 제조사 AMD CPU 시리즈 라이젠 300시리즈 CPU 종류 라이젠A 5 CPU 코드명 크라권 포인트 NPU 종류 AMD 라이전 Al NPU TOPS 50TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M2 SSD 용량 512GB 그래픽 제조사 AMD 그래픽 종류 내장 그래픽 디스플레이 화면크기 61cmn(24인치) 해상도 1920x1080 디스플레이 특징 눈부신방지 광시야각 사운드 출력 사운드 지원 스피커 내장령 네트위크 802.11ax(Wi-Fi6) 무선 1Gbps 유선 불무투스 영상출력",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\HP 24-ct2001KL (16GB, M.2 512GB)\\detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1,
-      "_cache_meta": {
-        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\HP 24-ct2001KL (16GB, M.2 512GB)\\detail_scan.png",
-        "image_size": 66455,
-        "image_sha256": "9d3e5c2deeb8e6a0e9dcd43fc5ea528bcbbab4d864d46888fbc71fe949e5db13"
-      }
+      "chunk_count": 1
     }
   }
 }

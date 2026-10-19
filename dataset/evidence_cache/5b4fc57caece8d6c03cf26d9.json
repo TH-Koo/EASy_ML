@@ -26,11 +26,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=78785210",
       "manufacturer": "삼성전자",
-      "model_name": "AP052CNPFBH1PP"
+      "model_name": "AP052CNPFBH1"
     },
     "norm_info": {
       "company_name": "삼성전자",
-      "model_name": "AP052CNPFBH1PP",
+      "model_name": "AP052CNPFBH1",
       "product_name": "삼성전자 AP052CNPFBH1PP (기본설치비 포함)"
     },
     "db_results": [
@@ -594,7 +594,7 @@
       "detail": "DART 분석 결과 [삼성전자] 실적 총 1건 확인."
     },
     "target_company_name": "삼성전자",
-    "model_param": "AP052CNPFBH1PP",
+    "model_param": "AP052CNPFBH1",
     "ocr_result": {
       "extracted_text": "삼성전자 APO52CNPFBHIPP (기본설치비 포함) 영등포대리점 1등금  2,607,000원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 년형 2025년형 시I기능 시운전(환경 패션) 에너지 그등급 그등금(난방) 냉방능력 5.2kW 난방능력 6.OkW 소비전력 1.11kW 절전기능 인버터 편의기능 스마드근제어 [@ 인종 적합성평가인층 상세설명 판매 사이트 문의 인증번호 확인 안전확인인층 상세설명 판매 사이트 문의 인증번호 확인 바로가기 GO 전기요금, 걱정 많으섯조? 흘프하시면 깔끔하게 계산해 드컵니다! 상품 설명 복사하기",
       "ocr_device": "CPU",

@@ -29,11 +29,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=19169651",
       "manufacturer": "아이이피, iip",
-      "model_name": "i500"
+      "model_name": "i500 AI"
     },
     "norm_info": {
       "company_name": "아이이피, iip",
-      "model_name": "i500",
+      "model_name": "i500 AI",
       "product_name": "아이이피 i500 AI 오토모션"
     },
     "db_results": [],
@@ -50,7 +50,7 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "아이이피, iip",
-    "model_param": "i500",
+    "model_param": "i500 AI",
     "ocr_result": {}
   }
 }

@@ -6,9 +6,10 @@
       "title": "SoundPEATS H3 (해외구매)",
       "name": "SoundPEATS H3 (해외구매)",
       "description": "",
-      "ocr_text": "SoundPEATS H3 (해외구매) 11> 135,380원  무료매승 최저가 구매하기 가격비교 14 상품 상세정보 의견리뷰 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.4 노이즈권트록 액티브노이즈랜슬림 (ANC) 적응형ANC 주변소리듬기 [Al 기능] [Al 기능] Al 기능 Al 노이즈권늘림가이 Al ANC 사운드채널 스데레오 사운드성능 HRA 스년드래곤 사운드 드라이버크기 유딪:12mnm(다이나막) 드라이버 다이나막 드라이버구성 다이나막 1개+BA 2개 드라이버 개스 3개 코덕",
+      "ocr_text": "SoundPEATS H3 (해외구매) 11> 135,270원 무료록송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.4 노이즈권트록 액티브노이즈랜슬림 (ANC) 적응형ANC 주변소리듬기 [Al 기능] [Al 기능] Al 기능 Al 노이즈권늘림가이 Al ANC 사운드채널 스데레오 사운드성능 HRA 스년드래곤 사운드 드라이버크기 유딪:12mnm(다이나막) 드라이버 다이나막 드라이버구성 다이나막 1개+BA 2개 드라이버 개스 3개 코덕",
       "specs": {
         "커널형": "지원",
+        "코드리스": "지원",
         "블루투스 v5.4": "지원",
         "[노이즈컨트롤] 액티브노이즈캔슬링(ANC)": "지원",
         "적응형ANC": "지원",
@@ -27,7 +28,7 @@
         "마이크특징": "CVC 8.0",
         "IPX5방수": "지원"
       },
-      "raw_specs": "커널형 / 블루투스 v5.4 / [노이즈컨트롤] 액티브노이즈캔슬링(ANC) / 적응형ANC / 주변소리듣기 / [AI 기능] AI ANC / AI 노이즈캔슬링마이크 / [사운드] HRA / 유닛:12mm(다이나믹) / 드라이버 : 다이나믹 , BA / 코덱 : LDAC , aptX Adaptive , aptX Lossless , aptX , SBC , AAC / 1회충전시 : 7시간 / 최대재생 : 37시간 / 충전 : USB-C / [부가] 편의기능 : 위치찾기 / EQ수동조절 / 마이크특징 : CVC 8.0 / IPX5방수",
+      "raw_specs": "커널형 / 코드리스 / 블루투스 v5.4 / [노이즈컨트롤] 액티브노이즈캔슬링(ANC) / 적응형ANC / 주변소리듣기 / [AI 기능] AI ANC / AI 노이즈캔슬링마이크 / [사운드] HRA / 유닛:12mm(다이나믹) / 드라이버 : 다이나믹 , BA / 코덱 : LDAC , aptX Adaptive , aptX Lossless , aptX , SBC , AAC / 1회충전시 : 7시간 / 최대재생 : 37시간 / 충전 : USB-C / [부가] 편의기능 : 위치찾기 / EQ수동조절 / 마이크특징 : CVC 8.0 / IPX5방수",
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=97357622",
       "manufacturer": "SoundPEATS, SoundPEATS",
@@ -54,7 +55,7 @@
     "target_company_name": "SoundPEATS, SoundPEATS",
     "model_param": "H3",
     "ocr_result": {
-      "extracted_text": "SoundPEATS H3 (해외구매) 11> 135,380원  무료매승 최저가 구매하기 가격비교 14 상품 상세정보 의견리뷰 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.4 노이즈권트록 액티브노이즈랜슬림 (ANC) 적응형ANC 주변소리듬기 [Al 기능] [Al 기능] Al 기능 Al 노이즈권늘림가이 Al ANC 사운드채널 스데레오 사운드성능 HRA 스년드래곤 사운드 드라이버크기 유딪:12mnm(다이나막) 드라이버 다이나막 드라이버구성 다이나막 1개+BA 2개 드라이버 개스 3개 코덕",
+      "extracted_text": "SoundPEATS H3 (해외구매) 11> 135,270원 무료록송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.4 노이즈권트록 액티브노이즈랜슬림 (ANC) 적응형ANC 주변소리듬기 [Al 기능] [Al 기능] Al 기능 Al 노이즈권늘림가이 Al ANC 사운드채널 스데레오 사운드성능 HRA 스년드래곤 사운드 드라이버크기 유딪:12mnm(다이나막) 드라이버 다이나막 드라이버구성 다이나막 1개+BA 2개 드라이버 개스 3개 코덕",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\SoundPEATS H3 (해외구매)\\detail_scan.ocr_cache.json",

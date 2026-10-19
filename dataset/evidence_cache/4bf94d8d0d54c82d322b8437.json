@@ -6,9 +6,10 @@
       "title": "SIE 플레이스테이션 PULSE Explore (정품)",
       "name": "SIE 플레이스테이션 PULSE Explore (정품)",
       "description": "",
-      "ocr_text": "SIE 플레이스테이선 PULSE Explore (정품) Gmarket   229,000원  무료배송 최저가 구매하기 가격비교 28 상품 상세정보 의견리뷰 21 뉴스커유니티 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 USB통글 노이즈권트록 시I노이즈랜늘림가이 사운드채널 스데레오 드라이버 평균형 드라이버구성 평판형 1개 [배티리] [배터리] 1회증전시 5시간 쇠대재생 10시간 권트론 불륭조절 버튼 연결기능 벌티포인트 색상 화이트 이어버드 충전테이스 71g",
+      "ocr_text": "SIE 플레이스테이선 PULSE Explore (정품) AUCTION 229,000원  무료배송 최저가 구매하기 가격비교 27 상품 상세정보 의견리뷰 23 뉴스커유니티 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 USB통글 노이즈권트록 시I노이즈랜늘림가이 사운드채널 스데레오 드라이버 평균형 드라이버구성 평판형 1개 [배티리] [배터리] 1회증전시 5시간 쇠대재생 10시간 권트론 불륭조절 버튼 연결기능 벌티포인트 색상 화이트 이어버드 충전테이스 71g",
       "specs": {
         "커널형": "지원",
+        "코드리스": "지원",
         "블루투스": "지원",
         "USB동글": "지원",
         "[노이즈컨트롤] AI노이즈캔슬링마이크": "지원",
@@ -20,15 +21,15 @@
         "PlayStation Link 무선 오디오 기술": "지원",
         "출시가": "288,000원"
       },
-      "raw_specs": "커널형 / 블루투스 / USB동글 / [노이즈컨트롤] AI노이즈캔슬링마이크 / [사운드] 드라이버 : 평판형 / [배터리] 1회충전시 : 5시간 / 최대재생 : 10시간 / [기능] 멀티포인트 / 호환기기: PS5 / PlayStation Link 무선 오디오 기술 / 출시가: 288,000원",
+      "raw_specs": "커널형 / 코드리스 / 블루투스 / USB동글 / [노이즈컨트롤] AI노이즈캔슬링마이크 / [사운드] 드라이버 : 평판형 / [배터리] 1회충전시 : 5시간 / 최대재생 : 10시간 / [기능] 멀티포인트 / 호환기기: PS5 / PlayStation Link 무선 오디오 기술 / 출시가: 288,000원",
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=37825949",
-      "manufacturer": "SIE",
-      "model_name": "PS5 Explore"
+      "manufacturer": "SIE, SIE",
+      "model_name": "WFC-01"
     },
     "norm_info": {
-      "company_name": "SIE",
-      "model_name": "PS5 Explore",
+      "company_name": "SIE, SIE",
+      "model_name": "WFC-01",
       "product_name": "SIE 플레이스테이션 PULSE Explore (정품)"
     },
     "db_results": [
@@ -495,10 +496,10 @@
     ],
     "cert_results": [],
     "dart_result": null,
-    "target_company_name": "SIE",
-    "model_param": "PS5 Explore",
+    "target_company_name": "SIE, SIE",
+    "model_param": "WFC-01",
     "ocr_result": {
-      "extracted_text": "SIE 플레이스테이선 PULSE Explore (정품) Gmarket   229,000원  무료배송 최저가 구매하기 가격비교 28 상품 상세정보 의견리뷰 21 뉴스커유니티 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 USB통글 노이즈권트록 시I노이즈랜늘림가이 사운드채널 스데레오 드라이버 평균형 드라이버구성 평판형 1개 [배티리] [배터리] 1회증전시 5시간 쇠대재생 10시간 권트론 불륭조절 버튼 연결기능 벌티포인트 색상 화이트 이어버드 충전테이스 71g",
+      "extracted_text": "SIE 플레이스테이선 PULSE Explore (정품) AUCTION 229,000원  무료배송 최저가 구매하기 가격비교 27 상품 상세정보 의견리뷰 23 뉴스커유니티 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 USB통글 노이즈권트록 시I노이즈랜늘림가이 사운드채널 스데레오 드라이버 평균형 드라이버구성 평판형 1개 [배티리] [배터리] 1회증전시 5시간 쇠대재생 10시간 권트론 불륭조절 버튼 연결기능 벌티포인트 색상 화이트 이어버드 충전테이스 71g",
       "ocr_device": "CPU",
       "cache_hit": false,
       "cache_path": "product_images\\SIE 플레이스테이션 PULSE Explore (정품)\\detail_scan.ocr_cache.json",
