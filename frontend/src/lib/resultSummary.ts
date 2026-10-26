@@ -106,10 +106,21 @@ export const SOURCE_INFO: Record<string, SourceInfo> = {
   gs: { name: "GS 인증", role: "소프트웨어가 품질 시험을 통과했다는 인증" },
   nep: { name: "신제품 인증 NEP", role: "새 기술이 처음 적용된 제품에 주는 인증" },
   procurement: { name: "조달청", role: "공공기관 납품을 위해 등록한 제품 목록" },
+  seller_page: { name: "판매 페이지", role: "판매자가 올린 상세페이지 (공공 기록은 아니에요)" },
 };
 
+/** 백엔드가 `SELLER_PAGE` 처럼 대문자로 보내는 경우도 같은 항목으로 찾는다. */
+function infoFor(source: string): SourceInfo | undefined {
+  return SOURCE_INFO[source] ?? SOURCE_INFO[source.toLowerCase()];
+}
+
 export function sourceName(ref: Pick<EvidenceRef, "source" | "label">): string {
-  return SOURCE_INFO[ref.source]?.name ?? ref.label;
+  return infoFor(ref.source)?.name ?? infoFor(ref.label)?.name ?? ref.label;
+}
+
+/** 기록 제목. 백엔드가 제목 대신 출처 id(`SELLER_PAGE`)를 넣어 보낸 경우 설명으로 바꾼다. */
+export function recordTitle(ref: Pick<EvidenceRef, "label">): string {
+  return infoFor(ref.label)?.role ?? ref.label;
 }
 
 /** 근거를 출처별로 묶어 칩으로 쓴다. 예) "특허청 KIPRIS 2" */
@@ -149,7 +160,7 @@ const ROLE: Record<ClaimStatus, string> = {
 };
 
 export function explain(claim: Claim): PlainExplanation {
-  const ids = new Set(claim.evidence.map((e) => e.source));
+  const ids = new Set(claim.evidence.map((e) => e.source.toLowerCase()));
   // 근거가 없을 때는 사유 문구에 적힌 기관만 출처로 보여 준다.
   if (ids.size === 0 && claim.note) {
     for (const id of Object.keys(SOURCE_INFO)) {

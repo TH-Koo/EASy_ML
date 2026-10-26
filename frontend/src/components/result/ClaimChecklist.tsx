@@ -1,10 +1,11 @@
-import { Check, Minus, Plus, X } from "lucide-react";
+import { Check, ChevronDown, Minus, Plus, X } from "lucide-react";
 
 import { cn } from "@/lib/cn";
 import {
   CLAIM_META,
   evidenceChips,
   explain,
+  recordTitle,
   sortClaims,
   sourceName,
 } from "@/lib/resultSummary";
@@ -20,6 +21,11 @@ import type { Claim, ClaimStatus, VerificationRow } from "@/types/analysis";
  */
 export function ClaimChecklist({ claims }: { claims: Claim[] }) {
   const rows = sortClaims(claims, true);
+  // 주장이 많으면 처음 몇 개만 펼친 목록으로 두고 나머지는 접는다. 근거를
+  // 찾은 줄을 모두 펼쳐 두면 수십 줄이 화면을 덮는다.
+  const few = rows.length <= OPEN_ALL_MAX;
+  const head = rows.slice(0, LIST_HEAD);
+  const tail = rows.slice(LIST_HEAD);
   return (
     <section aria-labelledby="factcheck-h">
       <div className="mb-2 flex flex-wrap items-end justify-between gap-3 px-0.5">
@@ -33,13 +39,31 @@ export function ClaimChecklist({ claims }: { claims: Claim[] }) {
         </p>
       </div>
       <div className="bg-surface rounded-[var(--radius-panel)] px-5 py-1 shadow-[var(--shadow-panel)] md:px-6">
-        {rows.map((c) => (
-          <ClaimRow key={c.id} claim={c} />
+        {head.map((c) => (
+          <ClaimRow key={c.id} claim={c} openFound={few} />
         ))}
+        {tail.length > 0 ? (
+          <details className="group/more">
+            <summary className="text-fg-muted border-border flex cursor-pointer list-none items-center justify-center gap-1.5 border-t py-3.5 text-[13.5px] font-semibold group-open/more:hidden [&::-webkit-details-marker]:hidden">
+              나머지 {tail.length}개 기능 보기
+              <ChevronDown size={16} aria-hidden />
+            </summary>
+            <div className="border-border border-t">
+              {tail.map((c) => (
+                <ClaimRow key={c.id} claim={c} openFound={false} />
+              ))}
+            </div>
+          </details>
+        ) : null}
       </div>
     </section>
   );
 }
+
+/** 이 개수 이하면 근거를 찾은 줄을 처음부터 펼쳐 둔다 */
+const OPEN_ALL_MAX = 5;
+/** 접지 않고 바로 보여 줄 줄 수 */
+const LIST_HEAD = 8;
 
 function Legend({ cls, label }: { cls: string; label: string }) {
   return (
@@ -56,7 +80,7 @@ const MARK: Record<ClaimStatus, { Icon: typeof Check; bg: string; text: string }
   unsupported: { Icon: X, bg: "bg-[var(--claim-no)]", text: "text-[var(--claim-no)]" },
 };
 
-function ClaimRow({ claim }: { claim: Claim }) {
+function ClaimRow({ claim, openFound }: { claim: Claim; openFound: boolean }) {
   const { Icon, bg, text } = MARK[claim.status];
   const chips = evidenceChips(claim);
   const found = claim.evidence.length > 0;
@@ -65,7 +89,7 @@ function ClaimRow({ claim }: { claim: Claim }) {
   return (
     <details
       id={`claim-${claim.id}`}
-      open={found}
+      open={found && openFound}
       className="group border-border scroll-mt-4 border-b last:border-b-0"
     >
       <summary className="grid cursor-pointer list-none grid-cols-[28px_minmax(0,1fr)_44px_24px] items-center gap-x-2.5 gap-y-1.5 py-4 md:grid-cols-[28px_minmax(0,1fr)_auto_56px_24px] md:gap-x-3.5 [&::-webkit-details-marker]:hidden">
@@ -108,7 +132,7 @@ function ClaimRow({ claim }: { claim: Claim }) {
             >
               <span className="text-fg-dim text-[12.5px]">{sourceName(ref)}</span>
               <span className="text-fg text-[13.5px] font-medium">
-                {ref.label}
+                {recordTitle(ref)}
                 {ref.record_id ? (
                   <small className="text-fg-dim block font-mono text-[11.5px] font-normal">
                     {ref.record_id}

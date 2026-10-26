@@ -1,4 +1,4 @@
-import { Check, Minus, Plus, X } from "lucide-react";
+import { Check, ChevronDown, Minus, Plus, X } from "lucide-react";
 
 import { cn } from "@/lib/cn";
 import {
@@ -25,13 +25,17 @@ import type { AnalysisResult, ClaimStatus } from "@/types/analysis";
  */
 export function VerdictPanel({ data }: { data: AnalysisResult }) {
   const level = verdictLevel(data.scores.overall_label);
-  const claims = sortClaims(data.claims ?? [], false);
+  // 실제 분석은 주장이 수십 개 나온다. 결론 타일에는 문제가 되는 것부터
+  // 몇 개만 보이고, 전체는 아래 팩트체크로 보낸다.
+  const claims = sortClaims(data.claims ?? [], true);
   const counts = countByStatus(claims);
+  const shown = claims.slice(0, VERDICT_LIST_MAX);
+  const rest = claims.length - shown.length;
 
   return (
     <section
       aria-label="분석 결론"
-      className="relative grid gap-6 overflow-hidden rounded-[var(--radius-panel)] p-6 text-white md:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] md:items-center md:gap-8 md:p-8"
+      className="relative grid gap-6 overflow-hidden rounded-[var(--radius-panel)] p-6 text-white md:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] md:items-start md:gap-8 md:p-8"
       style={{ background: "linear-gradient(135deg, #08195f 0%, #0f35b4 60%, #1e6fe8 100%)" }}
     >
       <div className="min-w-0">
@@ -58,8 +62,9 @@ export function VerdictPanel({ data }: { data: AnalysisResult }) {
             <Count dot="bg-[var(--claim-part-on-dark)]" label="일부" n={counts.partial} />
             <Count dot="bg-[var(--claim-no-on-dark)]" label="미확인" n={counts.unsupported} />
           </p>
+          <StatusBar counts={counts} total={claims.length} />
           <ul className="mt-1 divide-y divide-white/10">
-            {claims.map((c) => (
+            {shown.map((c) => (
               <li key={c.id}>
                 <a
                   href={`#claim-${c.id}`}
@@ -82,9 +87,43 @@ export function VerdictPanel({ data }: { data: AnalysisResult }) {
               </li>
             ))}
           </ul>
+          {rest > 0 ? (
+            <a
+              href="#factcheck-h"
+              className="mt-1 flex items-center justify-between rounded-lg border-t border-white/15 px-1 pt-3 pb-1 text-[13px] font-semibold text-white/85 hover:text-white"
+            >
+              나머지 {rest}개 기능 보기
+              <ChevronDown size={16} aria-hidden />
+            </a>
+          ) : null}
         </div>
       ) : null}
     </section>
+  );
+}
+
+/** 결론 타일에 이름까지 보여 줄 주장 수. 나머지는 팩트체크 목록에 있다. */
+const VERDICT_LIST_MAX = 5;
+
+/** 확인 · 일부 · 미확인 비율 막대. 주장이 많을수록 목록보다 이게 먼저 읽힌다. */
+function StatusBar({
+  counts,
+  total,
+}: {
+  counts: { verified: number; partial: number; unsupported: number };
+  total: number;
+}) {
+  const parts = [
+    { n: counts.verified, cls: "bg-white" },
+    { n: counts.partial, cls: "bg-[var(--claim-part-on-dark)]" },
+    { n: counts.unsupported, cls: "bg-[var(--claim-no-on-dark)]" },
+  ];
+  return (
+    <div aria-hidden className="mt-3 flex h-2 gap-0.5 overflow-hidden rounded-full">
+      {parts.map((p, i) =>
+        p.n > 0 ? <i key={i} className={cn("block h-full", p.cls)} style={{ flex: p.n / total }} /> : null,
+      )}
+    </div>
   );
 }
 
