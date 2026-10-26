@@ -3,8 +3,10 @@ import { Check, ChevronDown, Minus, Plus, X } from "lucide-react";
 import { cn } from "@/lib/cn";
 import {
   CLAIM_META,
+  displayQuote,
   evidenceChips,
   explain,
+  isInternalId,
   recordTitle,
   sortClaims,
   sourceName,
@@ -83,6 +85,7 @@ const MARK: Record<ClaimStatus, { Icon: typeof Check; bg: string; text: string }
 function ClaimRow({ claim, openFound }: { claim: Claim; openFound: boolean }) {
   const { Icon, bg, text } = MARK[claim.status];
   const chips = evidenceChips(claim);
+  const quote = displayQuote(claim);
   const found = claim.evidence.length > 0;
   const ex = explain(claim);
 
@@ -100,8 +103,8 @@ function ClaimRow({ claim, openFound }: { claim: Claim; openFound: boolean }) {
           <b className="text-fg text-[15.5px] font-bold tracking-[var(--tracking-tight)]">
             {claim.text}
           </b>
-          {claim.quote ? (
-            <span className="text-fg-dim truncate text-[13px]">“{claim.quote}”</span>
+          {quote ? (
+            <span className="text-fg-dim truncate text-[13px]">“{quote}”</span>
           ) : null}
         </span>
         <span className="col-start-2 row-start-2 flex flex-wrap gap-1.5 md:col-start-auto md:row-start-auto md:justify-end">
@@ -133,7 +136,7 @@ function ClaimRow({ claim, openFound }: { claim: Claim; openFound: boolean }) {
               <span className="text-fg-dim text-[12.5px]">{sourceName(ref)}</span>
               <span className="text-fg text-[13.5px] font-medium">
                 {recordTitle(ref)}
-                {ref.record_id ? (
+                {ref.record_id && !isInternalId(ref.record_id) ? (
                   <small className="text-fg-dim block font-mono text-[11.5px] font-normal">
                     {ref.record_id}
                   </small>
@@ -144,7 +147,7 @@ function ClaimRow({ claim, openFound }: { claim: Claim; openFound: boolean }) {
           ))
         ) : (
           <p className="text-fg-muted py-2.5 text-[13.5px]">
-            {claim.note ? `${claim.note} — 조회했지만 찾지 못했어요` : "조회한 기록에서 찾지 못했어요"}
+            {chips.length > 0 ? `${chips.join(" · ")} — 조회했지만 찾지 못했어요` : "조회한 기록에서 찾지 못했어요"}
           </p>
         )}
 
