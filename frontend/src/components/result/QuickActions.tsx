@@ -5,8 +5,6 @@ import Link from "next/link";
 import { Download, RotateCcw, Share2, Bookmark, BookmarkCheck } from "lucide-react";
 
 import { Button } from "@/components/primitives/Button";
-import { Card } from "@/components/primitives/Card";
-import { SectionHeader } from "@/components/primitives/SectionHeader";
 import { apiAddWatchlist } from "@/lib/api/auth";
 import { useAuth } from "@/lib/auth";
 import type { AnalysisResult } from "@/types/analysis";
@@ -61,11 +59,11 @@ export function QuickActions({ data, historyId }: QuickActionsProps) {
 
   return (
     <>
-      <Card>
-        <SectionHeader eyebrow="actions" title="빠른 작업" />
-        <div className="flex flex-col gap-2 px-5 pt-1 pb-5">
+      {/* 결과 화면 맨 아래 한 줄. 결과 화면이 한 단이 되면서 사이드바의
+          세로 카드에서 가로 줄로 옮겼다. */}
+      <div className="no-print flex flex-wrap gap-2">
           {/* 새 분석 */}
-          <Button asChild variant="cta" size="lg" className="w-full">
+          <Button asChild variant="cta" size="lg" className="flex-[2_1_12rem]">
             <Link href="/">
               <RotateCcw size={16} aria-hidden />
               새 분석 시작
@@ -76,8 +74,8 @@ export function QuickActions({ data, historyId }: QuickActionsProps) {
           <Button
             type="button"
             variant="secondary"
-            size="md"
-            className="w-full"
+            size="lg"
+            className="flex-[1_1_9rem]"
             onClick={handleShare}
           >
             <Share2 size={14} aria-hidden />
@@ -90,8 +88,8 @@ export function QuickActions({ data, historyId }: QuickActionsProps) {
           <Button
             type="button"
             variant="secondary"
-            size="md"
-            className="w-full"
+            size="lg"
+            className="flex-[1_1_9rem]"
             onClick={handlePdf}
           >
             <Download size={14} aria-hidden />
@@ -102,8 +100,8 @@ export function QuickActions({ data, historyId }: QuickActionsProps) {
           <Button
             type="button"
             variant="secondary"
-            size="md"
-            className="w-full"
+            size="lg"
+            className="flex-[1_1_9rem]"
             onClick={handleBookmark}
             disabled={bookmarked || bmBusy || !user}
             style={
@@ -121,8 +119,7 @@ export function QuickActions({ data, historyId }: QuickActionsProps) {
               : <><Bookmark size={14} aria-hidden /> {bmBusy ? "저장 중…" : "북마크에 저장"}</>
             }
           </Button>
-        </div>
-      </Card>
+      </div>
 
       {/* 토스트 — 규칙은 globals.css 의 `.qa-toast` 에 있다. 이전에는 인라인
           스타일에 자체 색과 `'Inter'` 를 박고, 토스트가 뜰 때마다 `<style>`
