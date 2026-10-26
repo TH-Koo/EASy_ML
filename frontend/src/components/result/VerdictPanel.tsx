@@ -1,8 +1,8 @@
-import { Check, ChevronDown, Minus, Plus, X } from "lucide-react";
+import { Minus, Plus } from "lucide-react";
 
+import { VerdictClaimList } from "@/components/result/VerdictClaimList";
 import { cn } from "@/lib/cn";
 import {
-  CLAIM_META,
   SCORE_BINS,
   SCORE_SAMPLE_SIZE,
   VERDICT_STEPS,
@@ -14,7 +14,7 @@ import {
   verdictLevel,
   verdictTitle,
 } from "@/lib/resultSummary";
-import type { AnalysisResult, ClaimStatus } from "@/types/analysis";
+import type { AnalysisResult } from "@/types/analysis";
 
 /**
  * 결과 화면 맨 위 결론 타일.
@@ -25,12 +25,10 @@ import type { AnalysisResult, ClaimStatus } from "@/types/analysis";
  */
 export function VerdictPanel({ data }: { data: AnalysisResult }) {
   const level = verdictLevel(data.scores.overall_label);
-  // 실제 분석은 주장이 수십 개 나온다. 결론 타일에는 문제가 되는 것부터
-  // 몇 개만 보이고, 전체는 아래 팩트체크로 보낸다.
+  // 실제 분석은 주장이 수십 개 나온다. 문제가 되는 것부터 몇 개만 보이고
+  // 나머지는 그 자리에서 펼친다(VerdictClaimList).
   const claims = sortClaims(data.claims ?? [], true);
   const counts = countByStatus(claims);
-  const shown = claims.slice(0, VERDICT_LIST_MAX);
-  const rest = claims.length - shown.length;
 
   return (
     <section
@@ -63,47 +61,12 @@ export function VerdictPanel({ data }: { data: AnalysisResult }) {
             <Count dot="bg-[var(--claim-no-on-dark)]" label="미확인" n={counts.unsupported} />
           </p>
           <StatusBar counts={counts} total={claims.length} />
-          <ul className="mt-1 divide-y divide-white/10">
-            {shown.map((c) => (
-              <li key={c.id}>
-                <a
-                  href={`#claim-${c.id}`}
-                  className="flex items-center gap-3 rounded-lg px-1 py-2.5 hover:bg-white/10"
-                >
-                  <StatusMark status={c.status} />
-                  <span className="min-w-0 flex-1 truncate text-[15px] font-semibold tracking-[var(--tracking-tight)]">
-                    {c.text}
-                  </span>
-                  <span
-                    className={cn(
-                      "text-[13px] font-bold",
-                      c.status === "partial" && "text-[#c9d3f7]",
-                      c.status === "unsupported" && "text-[#ffb07a]",
-                    )}
-                  >
-                    {CLAIM_META[c.status].label}
-                  </span>
-                </a>
-              </li>
-            ))}
-          </ul>
-          {rest > 0 ? (
-            <a
-              href="#factcheck-h"
-              className="mt-1 flex items-center justify-between rounded-lg border-t border-white/15 px-1 pt-3 pb-1 text-[13px] font-semibold text-white/85 hover:text-white"
-            >
-              나머지 {rest}개 기능 보기
-              <ChevronDown size={16} aria-hidden />
-            </a>
-          ) : null}
+          <VerdictClaimList claims={claims} />
         </div>
       ) : null}
     </section>
   );
 }
-
-/** 결론 타일에 이름까지 보여 줄 주장 수. 나머지는 팩트체크 목록에 있다. */
-const VERDICT_LIST_MAX = 5;
 
 /** 확인 · 일부 · 미확인 비율 막대. 주장이 많을수록 목록보다 이게 먼저 읽힌다. */
 function StatusBar({
@@ -132,24 +95,6 @@ function Count({ dot, label, n }: { dot: string; label: string; n: number }) {
     <span className="inline-flex items-center gap-1.5 tabular-nums">
       <i className={cn("size-2 rounded-full", dot)} aria-hidden />
       {label} {n}
-    </span>
-  );
-}
-
-const MARK: Record<ClaimStatus, { Icon: typeof Check; cls: string }> = {
-  verified: { Icon: Check, cls: "bg-white text-[#0f35b4]" },
-  partial: { Icon: Minus, cls: "bg-[var(--claim-part-on-dark)] text-[#08195f]" },
-  unsupported: { Icon: X, cls: "bg-[var(--claim-no-on-dark)] text-white" },
-};
-
-function StatusMark({ status }: { status: ClaimStatus }) {
-  const { Icon, cls } = MARK[status];
-  return (
-    <span
-      aria-hidden
-      className={cn("grid size-6 shrink-0 place-items-center rounded-full", cls)}
-    >
-      <Icon size={14} strokeWidth={3} />
     </span>
   );
 }
