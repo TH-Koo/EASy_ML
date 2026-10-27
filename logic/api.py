@@ -19,6 +19,7 @@ from sqlalchemy import create_engine
 import requests
 import xml.etree.ElementTree as ET
 
+
 current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(current_dir)
 if parent_dir not in sys.path:
@@ -290,20 +291,37 @@ def verify_kaiac(company: str) -> dict:
 # =====================================================================
 # [API 그룹] NTIS 국가 R&D 연구보고서 실적 검증 (NTIS 전용 규격 적용)
 # =====================================================================
-def verify_ntis_rnd(company_aliases: list) -> dict:
-    if not NTIS_API_KEY: 
+def verify_ntis_rnd(company_aliases: list, product_keyword: str = "") -> dict:
+    if not NTIS_API_KEY:
         return {"score": 0, "error": "NTIS API 키 미설정"}
 
-    search_names = list(set([clean_name(name) for name in company_aliases if len(clean_name(name)) > 1]))
-    if not search_names:
-        return {"score": 0, "detail": "NTIS 조회 유효 기업명 없음", "evidence": None}
+    search_names = list(dict.fromkeys(
+        clean_name(name)
+        for name in company_aliases
+        if name and len(clean_name(name)) > 1
+    ))
 
-    ai_keywords = {"인공지능", "AI", "딥러닝", "머신러닝", "온디바이스", "비전인식", "객체인식", "자율주행", "신경망", "NPU", "알고리즘"}
-    
+    if not search_names:
+        return {
+            "score": 0,
+            "detail": "NTIS 조회 유효 기업명 없음",
+            "evidence": None
+        }
+
+    ai_keywords = {
+        "인공지능", "artificial intelligence", "딥러닝", "deep learning",
+        "머신러닝", "machine learning", "생성형 ai", "generative ai",
+        "온디바이스 ai", "ai 모델", "ai 기반", "ai 기술", "ai 솔루션",
+        "ai 프로세싱", "멀티모달 ai", "신경망", "neural network",
+        "컴퓨터 비전", "computer vision", "음성인식", "이미지 인식",
+        "객체 인식", "사물인식",
+    }
+
     url = "https://www.ntis.go.kr/rndopen/openApi/public_project"
-    
     raw_key = NTIS_API_KEY.strip()
-    valid_projects = []
+
+    valid_projects = {}
+    api_errors = []
 
     for name in search_names:
         try:
@@ -315,47 +333,119 @@ def verify_ntis_rnd(company_aliases: list) -> dict:
                 "startPosition": 1,
                 "displayCnt": 50
             }
-            response = requests.get(url, params=params, timeout=30)
-            
-            if response.status_code == 200:
-                if response.text.strip().startswith("<?xml") or "<error>" in response.text:
-                    print(f"[NTIS API 인증 거부] 서버 응답: {response.text.strip()}")
-                    continue
-                res_json = response.json()
-                
-                result_set = res_json.get('RESULT', {}).get('RESULTSET', {})
-                hits = result_set.get('HIT', [])
-                
-                if isinstance(hits, dict): 
-                    hits = [hits]
-                
-                for item in hits:
-                    project_name = item.get('ProjectTitle', '')
-                    if not project_name:
-                        title_info = item.get('ResultTitle', {})
-                        project_name = title_info.get('Korean', '') if isinstance(title_info, dict) else ''
-                    
-                    if any(kw.lower() in project_name.lower() for kw in ai_keywords):
-                        valid_projects.append({
-                            "project_name": project_name,
-                            "lead_company": name,
-                            "status": "verified"
-                        })
-        except Exception as e:
-            print(f"[NTIS 통신 에러] '{name}' 검색 중 예외 발생: {e}")
-            continue
 
-    if valid_projects:
-        title = valid_projects[0].get("project_name", "AI R&D 과제")
+            response = requests.get(url, params=params, timeout=30)
+
+            if response.status_code != 200:
+                api_errors.append(f"{name}: HTTP {response.status_code}")
+                continue
+
+            try:
+                import xml.etree.ElementTree as ET
+                root = ET.fromstring(response.text)
+            except ET.ParseError:
+                api_errors.append(f"{name}: NTIS 응답 XML 파싱 실패")
+                continue
+
+            error_text = " ".join(
+                (elem.text or "").strip()
+                for elem in root.iter()
+                if elem.tag.split("}")[-1].lower() in {"error", "errormessage", "message"}
+            )
+
+            if root.tag.split("}")[-1].lower() in {"error", "exception"}:
+                api_errors.append(f"{name}: {error_text or 'NTIS API 오류 응답'}")
+                continue
+
+            for item in root.iter():
+                if item.tag.split("}")[-1] != "HIT":
+                    continue
+
+                def get_text(path):
+                    elem = item.find(path)
+                    if elem is None:
+                        return ""
+                    return " ".join(
+                        part.strip()
+                        for part in elem.itertext()
+                        if part and part.strip()
+                    )
+
+                project_name = get_text("./ProjectTitle/Korean")
+                if not project_name:
+                    project_name = get_text("./ProjectTitle")
+
+                if not project_name:
+                    continue
+
+                searchable_text = " ".join([
+                    project_name,
+                    get_text("./Goal/Full"),
+                    get_text("./Abstract/Full"),
+                    get_text("./Keyword/Korean"),
+                    get_text("./Effect/Full")
+                ]).lower()
+
+                if not any(keyword in searchable_text for keyword in ai_keywords):
+                    continue
+
+                clean_kw = re.sub(r'[^가-힣a-zA-Z0-9\s]', ' ', product_keyword)
+                category_tokens = [k.strip() for k in clean_kw.split() if len(k.strip()) >= 2]
+                
+                is_category_matched = False
+                if category_tokens:
+                    is_category_matched = any(token.lower() in searchable_text for token in category_tokens)
+
+                project_number = get_text("./ProjectNumber")
+                project_id = project_number or project_name
+
+                if project_id not in valid_projects:
+                    valid_projects[project_id] = {
+                        "project_name": project_name,
+                        "project_number": project_number or None,
+                        "lead_company": name,
+                        "relevance_type": "product_ai" if is_category_matched else "general_ai",
+                        "status": "verified"
+                    }
+
+        except requests.RequestException as e:
+            api_errors.append(f"{name}: 요청 오류 ({type(e).__name__})")
+        except Exception as e:
+            import traceback
+            traceback.print_exc()
+            api_errors.append(f"{name}: 처리 오류 ({type(e).__name__}: {e})")
+
+    projects = list(valid_projects.values())
+    
+    if projects:
+        title = projects[0]["project_name"]
+        company = projects[0]["lead_company"]
+
         return {
             "score": 20,
-            "evidence": f"NTIS R&D 과제 수행: {title} 등 {len(valid_projects)}건",
-            "detail": f"NTIS 조회 결과, [{valid_projects[0]['lead_company']}] 명의의 정부 AI 연구개발 과제 수행 실적이 확인되었습니다.",
-            "records": valid_projects,
+            "evidence": f"NTIS R&D AI 관련 과제 확인: {title} 등 총 {len(projects)}건",
+            "detail": f"NTIS에서 [{company}] 검색어로 조회한 결과, AI 관련 과제 {len(projects)}건이 확인되었습니다.",
+            "records": projects,
             "status": "verified"
         }
 
-    return {"score": 0, "detail": "NTIS 국가 R&D AI 과제 수행 내역 없음", "evidence": None}
+    if api_errors:
+        return {
+            "score": 0,
+            "detail": "NTIS 검색 결과를 정상적으로 확인하지 못했습니다.",
+            "error": "; ".join(api_errors[:5]),
+            "evidence": None,
+            "status": "error"
+        }
+
+    return {
+        "score": 0,
+        "detail": "NTIS 검색 결과에서 AI 관련 과제를 확인하지 못했습니다.",
+        "evidence": None,
+        "records": [],
+        "status": "not_found"
+    }
+
 
 
 def verify_iitp(company_names, product_keyword=""):
@@ -389,7 +479,6 @@ def verify_iitp(company_names, product_keyword=""):
             
             if response.status_code == 200:
                 if response.text.strip().startswith("<?xml") or "<error>" in response.text:
-                    print(f"[IITP/NTIS API 에러] {response.text.strip()}")
                     continue
                 
                 res_json = response.json()

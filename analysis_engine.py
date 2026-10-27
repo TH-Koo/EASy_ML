@@ -41,7 +41,6 @@ from fides_config import (
 )
 from fides_scoring import CHANNELS, calculate_accs, validate_weights
 
-
 # ---------------------------------------------------------------------------
 # Data structures
 # ---------------------------------------------------------------------------
@@ -725,6 +724,7 @@ class OntologyAnalysisEngine:
         enable_dynamic_weighting: bool = True,
         engine_config: Optional[EngineConfig] = None,
         weight_predictor: Optional[Any] = None,
+
     ):
         self.repo = OntologyRepository(ontology_dir)
         self.engine_config = engine_config or DEFAULT_ENGINE_CONFIG
@@ -1187,9 +1187,9 @@ class OntologyAnalysisEngine:
 
                 if record.source_type in {"kipris", "dart", "ntis"} and component_relevance >= 0.50:
                     if record.meta.get("relevance_type") == "product_ai":
-                        support = max(support, component_relevance * 0.92) 
+                        support = max(support,min(0.80, support + 0.15 * component_relevance),)
                     else:
-                        support = max(support, component_relevance * 0.46)
+                        support = support = max(support,min(0.65, support + 0.10 * component_relevance),)
                 elif record.source_type in {"net", "nep"} and component_relevance >= 0.50:
                     support = max(support, component_relevance * 0.98)
                 elif record.source_type in {"gs", "rra", "sandbox"} and component_relevance >= 0.50:
@@ -1673,6 +1673,8 @@ class OntologyAnalysisEngine:
                     capability_score = 0
                     score = 0
 
+            
+
             source_counts: Dict[str, int] = {}
             relation_counts: Dict[str, int] = {}
             for item in selected:
@@ -1838,29 +1840,48 @@ class OntologyAnalysisEngine:
         cfg = self.dynamic_weight_config
         scores = {"hes": hes, "tes": tes, "ces": ces}
         active = {key: value for key, value in scores.items() if value > 0}
+        
         logits: Dict[str, float] = {}
         prediction = None
+
         if self.weight_predictor is not None:
-            # Call before ACCS/CONF/verdict exist. The returned object supplies
-            # weights only; even extra score/verdict fields cannot override us.
             mask = {c: c in active for c in CHANNELS}
+
             prediction = self.weight_predictor.predict_weights(
-                channel_scores=dict(scores), channel_details=channel_details,
-                product_type=product_type, channel_mask=mask,
+                channel_scores=dict(scores),
+                channel_details=channel_details,
+                product_type=product_type,
+                channel_mask=mask,
             )
-            if not isinstance(prediction, Mapping) or not isinstance(prediction.get("weights"), Mapping):
-                raise ValueError("Weight predictor must return a weights mapping")
+
+            if (
+                not isinstance(prediction, Mapping)
+                or not isinstance(prediction.get("weights"), Mapping)
+            ):
+                raise ValueError(
+                    "Weight predictor must return a weights mapping"
+                )
+
             weights = validate_weights(prediction["weights"], mask)
             expected_status = "ok" if active else "no_usable_channels"
+
             if prediction.get("status", expected_status) != expected_status:
-                raise ValueError("Weight predictor status disagrees with channel availability")
+                raise ValueError(
+                    "Weight predictor status disagrees with channel availability"
+                )
+
         else:
             for channel in active:
-                prior = max(1e-6, cfg.base_channel_priors.get(channel, 1.0 / 3.0))
+                prior = max(
+                    1e-6,
+                    cfg.base_channel_priors.get(channel, 1.0 / 3.0),
+                )
                 detail = channel_details[channel]
+
                 diversity = min(len(detail["source_types"]) / 3.0, 1.0)
                 count_signal = min(detail["evidence_count"] / 4.0, 1.0)
                 avg_recency = float(detail.get("avg_recency", 0.5))
+
                 logits[channel] = (
                     log(prior)
                     + cfg.directness_signal * detail["avg_directness"]
@@ -1869,22 +1890,49 @@ class OntologyAnalysisEngine:
                     + cfg.recency_signal * avg_recency
                     - cfg.concentration_penalty * detail["max_source_share"]
                 )
+
             weights = _softmax(logits)
-        full_weights = {c: weights.get(c, 0.0) for c in CHANNELS}
-        scored = calculate_accs(scores, full_weights, ecs,
-                                evidence_alpha=cfg.evidence_alpha, ecs_alpha=cfg.ecs_alpha)
+
+        full_weights = {
+            channel: weights.get(channel, 0.0)
+            for channel in CHANNELS
+        }
+
+        scored = calculate_accs(
+            scores,
+            full_weights,
+            ecs,
+            evidence_alpha=cfg.evidence_alpha,
+            ecs_alpha=cfg.ecs_alpha,
+        )
+
         dynamic_evidence_score = scored["evidence_score"]
         dynamic_accs = clamp(scored["accs"])
-        evidence_alpha, ecs_alpha = scored["evidence_alpha"], scored["ecs_alpha"]
-        # Preserve exact learned coefficients for contribution reconstruction.
-        complete_weights = full_weights if prediction is not None else {c: round(full_weights[c], 4) for c in CHANNELS}
+        evidence_alpha = scored["evidence_alpha"]
+        ecs_alpha = scored["ecs_alpha"]
+
+        # 학습된 가중치는 원래 정밀도를 유지
+        complete_weights = (
+            full_weights
+            if prediction is not None
+            else {
+                channel: round(full_weights[channel], 4)
+                for channel in CHANNELS
+            }
+        )
+
         result = {
             "enabled": self.enable_dynamic_weighting,
             "method": "quality_context_softmax_hes_tes_ces_with_ecs_blend",
             "weights": complete_weights,
-            "logits": {key: round(value, 4) for key, value in logits.items()},
+            "logits": {
+                key: round(value, 4)
+                for key, value in logits.items()
+            },
             "active_channels": list(active),
-            "excluded_channels": [key for key in scores if key not in active],
+            "excluded_channels": [
+                key for key in scores if key not in active
+            ],
             "dynamic_evidence_score": round(dynamic_evidence_score, 2),
             "dynamic_accs": round(dynamic_accs, 2),
             "base_scores": {
@@ -1894,8 +1942,13 @@ class OntologyAnalysisEngine:
                 "ecs": round(ecs, 2),
             },
             "formula": {
-                "dynamic_evidence_score": "sum(dynamic_channel_weight * channel_score)",
-                "dynamic_accs": "evidence_alpha * dynamic_evidence_score + ecs_alpha * ECS",
+                "dynamic_evidence_score": (
+                    "sum(dynamic_channel_weight * channel_score)"
+                ),
+                "dynamic_accs": (
+                    "evidence_alpha * dynamic_evidence_score "
+                    "+ ecs_alpha * ECS"
+                ),
                 "evidence_alpha": round(evidence_alpha, 4),
                 "ecs_alpha": round(ecs_alpha, 4),
                 "weight_signals": [
@@ -1905,21 +1958,41 @@ class OntologyAnalysisEngine:
                     "deduplicated_evidence_count",
                     "source_concentration",
                 ],
-                "note": "Channel score itself is not used to increase its own dynamic weight.",
+                "note": (
+                    "Channel score itself is not used to increase "
+                    "its own dynamic weight."
+                ),
             },
         }
+
         if prediction is not None:
             result.update({
-                "method": str(prediction.get("method", "learned_weights")),
-                "model_version": str(prediction.get("model_version", "unknown")),
-                "weight_status": "ok" if active else "no_usable_channels",
+                "method": str(
+                    prediction.get("method", "learned_weights")
+                ),
+                "model_version": str(
+                    prediction.get("model_version", "unknown")
+                ),
+                "weight_status": (
+                    "ok" if active else "no_usable_channels"
+                ),
                 "score_calculated_by": "OntologyAnalysisEngine",
                 "contributions": scored["contributions"],
                 "unrounded_accs": scored["accs"],
             })
-            result["formula"]["weight_signals"] = ["product_type", "evidence_quality", "channel_mask"]
-            result["formula"]["note"] = "The learned module returns weights only. ACCS and verdict are computed by AnalysisEngine."
+
+            result["formula"]["weight_signals"] = [
+                "product_type",
+                "evidence_quality",
+                "channel_mask",
+            ]
+            result["formula"]["note"] = (
+                "The learned module returns weights only. "
+                "ACCS and verdict are computed by AnalysisEngine."
+            )
+
         return result
+
 
     # ------------------------------------------------------------------
     # Confidence, sufficiency, verdict
@@ -2473,7 +2546,6 @@ def bundle_to_evidence_records(
     append_single_result(koraia_result, "koraia", "KORAIA 결과")
     append_single_result(kaiac_result, "kaiac", "KAIAC 결과")
     append_single_result(nipa_result, "nipa", "NIPA 결과")
-    append_single_result(ntis_result, "ntis", "NTIS R&D 과제 실적")
 
     # Patents are often searched by company. That makes company matching valid,
     # but not product/model matching. Capability relevance is evaluated later.
@@ -2552,6 +2624,80 @@ def bundle_to_evidence_records(
             record.relation_type = "company_general"
             record.match_confidence = min(record.match_confidence, 0.78)
         records.append(record)
+
+    if isinstance(ntis_result, Mapping) and not _looks_negative_result(ntis_result):
+        ntis_rows = ntis_result.get("records", []) or ntis_result.get("items", [])
+
+        for row in ntis_rows:
+            if not isinstance(row, Mapping) or not row:
+                continue
+
+            is_product_ai = row.get("relevance_type") == "product_ai"
+
+            normalized_row = {
+                **row,
+                "title": (
+                    row.get("project_name")
+                    or row.get("title")
+                    or "NTIS R&D 과제"
+                ),
+                "source_record_id": (
+                    row.get("source_record_id")
+                    or row.get("project_number")
+                    or row.get("과제번호")
+                ),
+                "company_name": (
+                    row.get("lead_company")
+                    or row.get("company_name")
+                    or row.get("기업명")
+                ),
+            }
+
+            record = _record_from_mapping(
+                normalized_row,
+                "ntis",
+                target_company_name,
+                model_param,
+                "NTIS R&D 과제 실적",
+                assume_company_filtered=True,
+            )
+
+            if record.matched_model:
+                record.relation_type = "direct_model"
+            elif record.matched_product:
+                record.relation_type = "direct_product"
+            elif is_product_ai:
+                record.relation_type = "product_family"
+                record.match_confidence = 0.88
+            else:
+                record.relation_type = "company_capability"
+                record.match_confidence = max(record.match_confidence, 0.65,)
+
+            records.append(record)
+
+    if ntis_result and isinstance(ntis_result, dict):
+        for row in ntis_result.get("records", []):
+            if isinstance(row, dict) and row:
+                rel_type = row.get("relevance_type", "general_ai")
+                
+                if rel_type == "product_ai":
+                    relation = "product_family"
+                    confidence = 0.92
+                else:
+                    relation = "company_capability"
+                    confidence = 0.72
+
+                records.append(
+                    EvidenceRecord(
+                        evidence_id=str(f"ntis_{len(records)}"),
+                        source_type="ntis",
+                        title=row.get("project_name", "NTIS R&D 과제"),
+                        relation_type=relation,
+                        match_confidence=confidence,
+                        status="verified",
+                        meta=dict(row),
+                    )
+                )
 
 
     if iitp_result and isinstance(iitp_result, dict):

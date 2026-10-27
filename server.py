@@ -106,7 +106,7 @@ app = FastAPI(title="Fides API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:3001"],
+    allow_origins=["http://localhost:3000", "http://localhost:3001", "http://3.39.41.117:3000"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
