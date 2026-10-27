@@ -178,6 +178,16 @@
   --color-fg-fixed:       #101317;
   --color-fg-fixed-dim:   #6c727d;
   --color-fg-fixed-faint: #9aa0aa;
+
+  /* 결과 화면 주장 판정색. 판정 3색(verified/partial/missing)과 따로 둔다 —
+     결과 화면은 "일부"를 약한 네이비, "미확인"을 주황으로 쓰고, 랜딩의
+     대조 뷰는 기존 3색을 그대로 쓴다. 어두운 결론 타일 위에서는 밝은 쪽을 쓴다. */
+  --claim-ok:          #0f35b4;
+  --claim-ok-soft:     #e8edfb;
+  --claim-part:        #6b82d6;
+  --claim-no:          #e8701f;
+  --claim-part-on-dark: #a9b8f0;
+  --claim-no-on-dark:   #ff9a52;
 }
 
 /* 라벨은 본문과 같은 글꼴이 되었으므로 굵기로 구분한다. 11px 산세리프를
