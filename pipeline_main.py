@@ -657,7 +657,7 @@ def run_full_pipeline(url: str):
             executor.submit(verify_pps_mall, search_payload["pps_mall"]): '조달몰',
             executor.submit(verify_koneps, search_payload["koneps"]): '나라장터',
             executor.submit(verify_kaiac, search_payload["local_db"]): 'KAIAC',
-            executor.submit(verify_ntis_rnd, search_payload["koneps"]): 'NTIS',
+            executor.submit(verify_ntis_rnd, search_payload["koneps"], product_category): 'NTIS',
             executor.submit(verify_iitp, search_payload["koneps"], product_category): 'IITP',
         }
 
@@ -774,7 +774,16 @@ def run_full_pipeline(url: str):
                 if records:
                     print(f" 주요 검색 결과:")
                     for i, rec in enumerate(records[:3], 1):
-                        name_val = rec.get('발명의명칭(한글)') or rec.get('title') or rec.get('equip_name') or rec.get('product_name') or rec.get('model_name') or '확인된 실적'
+                        
+                        name_val = (
+                            rec.get('project_name')
+                            or rec.get('발명의명칭(한글)')
+                            or rec.get('title')
+                            or rec.get('equip_name')
+                            or rec.get('product_name')
+                            or rec.get('model_name')
+                            or '확인된 실적'
+                        )
                         
                         cert_type = rec.get('cert_type') or rec.get('인증종류') or rec.get('type', '')
                         cert_mark = f"[{cert_type}] " if cert_type else ""
@@ -847,5 +856,5 @@ def run_full_pipeline(url: str):
 
 
 if __name__ == "__main__":
-    target_url = "https://prod.danawa.com/info/?pcode=122626369"
+    target_url = "https://prod.danawa.com/info/?pcode=75854861"
     run_full_pipeline(target_url)
