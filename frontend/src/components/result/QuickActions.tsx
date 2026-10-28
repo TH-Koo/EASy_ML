@@ -62,8 +62,15 @@ export function QuickActions({ data, historyId }: QuickActionsProps) {
       {/* 결과 화면 맨 아래 한 줄. 결과 화면이 한 단이 되면서 사이드바의
           세로 카드에서 가로 줄로 옮겼다. */}
       <div className="no-print flex flex-wrap gap-2">
-          {/* 다른 제품 검색 — 홈의 검색창으로 */}
-          <Button asChild variant="cta" size="lg" className="flex-[2_1_12rem]">
+          {/* 다른 제품 검색 — 홈의 검색창으로. 결과 화면은 보라 테마라 cta 의
+              네이비 그라데이션 대신 브랜드 색 한 가지로 채운다. */}
+          <Button
+            asChild
+            variant="cta"
+            size="lg"
+            className="flex-[2_1_12rem]"
+            style={{ background: "var(--color-brand)" }}
+          >
             <Link href="/">
               <Search size={16} aria-hidden />
               다른 제품 검색하기
