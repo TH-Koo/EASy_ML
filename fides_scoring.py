@@ -35,6 +35,27 @@ def calculate_accs(scores, weights, ecs, *, evidence_alpha=0.85, ecs_alpha=0.15)
             "evidence_alpha": a, "ecs_alpha": b}
 
 
+# Display-only stretch (v2). Raw ACCS sits in 5..63 with half of evaluated
+# products at 45..52, so it reads as "always low". Verdicts, training and
+# threshold calibration keep using raw ACCS; only what users see is mapped.
+# Anchors pin the verdict thresholds (fides_config: 21.8 / 35 / 67.5) to
+# 20 / 40 / 95 so the shown number and the verdict always agree.
+# Alternatives compared in scripts/score_scale_study.py.
+DISPLAY_ANCHORS = (
+    (0.0, 0.0), (6.4, 5.0), (21.8, 20.0), (35.0, 40.0), (45.0, 55.0),
+    (52.0, 70.0), (60.0, 85.0), (67.5, 95.0), (100.0, 100.0),
+)
+
+
+def display_score(accs):
+    """Map raw ACCS (0..100) to the 0..100 score shown to users. Monotonic."""
+    x = min(100.0, max(0.0, float(accs)))
+    for (x0, y0), (x1, y1) in zip(DISPLAY_ANCHORS, DISPLAY_ANCHORS[1:]):
+        if x <= x1:
+            return y0 + (y1 - y0) * (x - x0) / (x1 - x0)
+    return 100.0
+
+
 def validate_weights(weights, channel_mask):
     """Reject malformed model outputs before they affect the authoritative score."""
     if set(weights) != set(CHANNELS) or set(channel_mask) != set(CHANNELS):

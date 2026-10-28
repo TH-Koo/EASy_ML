@@ -34,9 +34,10 @@ export interface CompareViewProps {
 const LABEL =
   "font-mono text-xs tracking-[var(--tracking-label)] text-fg-faint";
 
+/* accs_score 는 표시 점수다. 85·40 은 원점수 60·35 와 같은 자리. */
 function toneFor(score: number) {
-  if (score >= 60) return "var(--color-verified)";
-  if (score >= 35) return "var(--color-partial)";
+  if (score >= 85) return "var(--color-verified)";
+  if (score >= 40) return "var(--color-partial)";
   return "var(--color-missing)";
 }
 
