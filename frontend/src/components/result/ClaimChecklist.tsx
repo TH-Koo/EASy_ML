@@ -165,7 +165,7 @@ function ClaimRow({ claim, openFound }: { claim: Claim; openFound: boolean }) {
               ))}
             </Explain>
           ) : null}
-          <Explain tag="판정">{ex.role}</Explain>
+          <Explain tag="이유">{ex.role}</Explain>
         </div>
       </div>
     </details>

@@ -76,6 +76,8 @@ export interface ProductInfo {
   ai_claims_count: number;
   analysis_duration_seconds: number;
   analysis_date: string; // YYYY-MM-DD
+  /** 분석한 상품 페이지 주소. 예전 기록에는 없을 수 있다. */
+  url?: string;
 }
 
 export interface Scores {

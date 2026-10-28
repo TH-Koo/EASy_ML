@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import Link from "next/link";
-import { Download, RotateCcw, Share2, Bookmark, BookmarkCheck } from "lucide-react";
+import { Download, Search, Share2, Bookmark, BookmarkCheck } from "lucide-react";
 
 import { Button } from "@/components/primitives/Button";
 import { apiAddWatchlist } from "@/lib/api/auth";
@@ -62,11 +62,11 @@ export function QuickActions({ data, historyId }: QuickActionsProps) {
       {/* 결과 화면 맨 아래 한 줄. 결과 화면이 한 단이 되면서 사이드바의
           세로 카드에서 가로 줄로 옮겼다. */}
       <div className="no-print flex flex-wrap gap-2">
-          {/* 새 분석 */}
+          {/* 다른 제품 검색 — 홈의 검색창으로 */}
           <Button asChild variant="cta" size="lg" className="flex-[2_1_12rem]">
             <Link href="/">
-              <RotateCcw size={16} aria-hidden />
-              새 분석 시작
+              <Search size={16} aria-hidden />
+              다른 제품 검색하기
             </Link>
           </Button>
 
