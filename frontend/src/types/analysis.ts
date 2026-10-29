@@ -79,7 +79,10 @@ export interface ProductInfo {
 }
 
 export interface Scores {
+  /** 화면용 표시 점수(0~100, v2 변환). 판정은 원점수로 한다. */
   overall: number;
+  /** 엔진 원점수 ACCS. 옛 응답에는 없다. */
+  overall_raw?: number;
   overall_label: OverallLabel;
   text_credibility: number;
   verification_credibility: number;

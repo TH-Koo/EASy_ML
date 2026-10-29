@@ -194,15 +194,15 @@ export function explain(claim: Claim): PlainExplanation {
 /* ── 점수 위치 ───────────────────────────────────────────────────────── */
 
 /**
- * 지금까지 분석해 둔 제품의 ACCS 분포(5점 단위 개수).
+ * 지금까지 분석해 둔 제품의 표시 점수 분포(5점 단위 개수).
  *
- * artifacts/rescore_v2_ontology/features.csv 의 rule_dynamic_accs 1,251건으로
- * 셌다. 점수가 35~55점에 몰리고 60점을 넘는 제품이 1% 남짓이라, 숫자만
- * 보여 주면 "늘 낮은 점수"로 읽힌다. 그래서 이 분포 안에서의 위치를 같이
- * 보여 준다. 표본이 바뀌면 이 배열을 다시 세어 갱신한다.
+ * artifacts/rescore_v2_ontology/features.csv 의 rule_dynamic_accs 1,251건에
+ * 표시 변환(fides_scoring.display_score, v2)을 씌워 셌다. 화면의 점수가
+ * 표시 점수라 분포도 같은 눈금이어야 한다. 원점수는 35~55점에 몰려 있어
+ * 변환 뒤에도 50~75점이 두텁다. 표본이나 변환 앵커가 바뀌면 다시 센다.
  */
 export const SCORE_BINS: readonly number[] = [
-  0, 277, 0, 0, 0, 0, 8, 80, 146, 333, 328, 68, 11, 0, 0, 0, 0, 0, 0, 0,
+  276, 1, 0, 0, 0, 0, 0, 8, 37, 131, 58, 74, 203, 284, 99, 46, 23, 11, 0, 0,
 ];
 
 export const SCORE_SAMPLE_SIZE = SCORE_BINS.reduce((a, b) => a + b, 0);

@@ -46,6 +46,7 @@ from normalizer import normalize_data, expand_company_aliases, is_valid_model_nu
 from patent_scraper import get_company_patent_data
 from llm_resolver import resolve_real_company_name, resolve_model_name
 from dart_scraper import check_dart_ai_washing  # 🔥 DART 스크래퍼 추가
+from fides_scoring import display_score
 
 """
 설정은 config.py 하나에서만 읽는다 (gitignore 되어 있다).
@@ -888,7 +889,10 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
             "analysis_date": datetime.now().date().isoformat(),
         },
         "scores": {
-            "overall": accs,
+            # 화면에는 표시 점수(v2)를, 판정·비교용 원점수는 overall_raw 로 같이 싣는다.
+            # DB·result_json 에는 원점수가 남으므로 옛 기록도 여기서 같은 변환을 탄다.
+            "overall": round(display_score(accs), 1),
+            "overall_raw": accs,
             "overall_label": overall_label,
             "text_credibility": tes,
             "verification_credibility": hes,
@@ -1138,7 +1142,7 @@ async def get_history(authorization: Optional[str] = Header(None)):
                 "product_name": r[2] or "알 수 없음",
                 "company_name": r[3] or "",
                 "verdict":      r[4] or "",
-                "accs_score":   round(r[5] or 0, 1),
+                "accs_score":   round(display_score(r[5] or 0), 1),
                 "risk_level":   r[6] or "",
                 "created_at":   r[7].strftime("%Y.%m.%d %H:%M") if r[7] else "",
                 "category":     category,
@@ -1445,7 +1449,7 @@ async def compare_items(body: CompareRequest, authorization: Optional[str] = Hea
                     "id":           row[0],
                     "product_name": row[1] or "알 수 없음",
                     "company_name": row[2] or "",
-                    "accs_score":   round(float(row[3] or 0), 1),
+                    "accs_score":   round(display_score(row[3] or 0), 1),
                     "verdict":      row[4] or "",
                     "risk_level":   row[5] or "",
                     "created_at":   row[7].strftime("%Y.%m.%d") if row[7] else "",
@@ -1518,7 +1522,9 @@ async def get_dashboard(authorization: Optional[str] = Header(None)):
             ).fetchall()
 
         total       = int(s[0] or 0)
-        avg_score   = round(float(s[1]), 1) if s[1] is not None else None
+        # DB 에는 원점수가 있다. 변환이 단조라 최소·최대는 정확하고, 평균은
+        # "원점수 평균의 표시 점수"라 표시 점수 평균과 조금 다를 수 있다.
+        avg_score   = round(display_score(s[1]), 1) if s[1] is not None else None
         ok_count    = int(s[2] or 0)
         warn_count  = int(s[3] or 0)
         danger_count= int(s[4] or 0)
@@ -1535,9 +1541,9 @@ async def get_dashboard(authorization: Optional[str] = Header(None)):
                 {
                     "company_name": r[0],
                     "count":        int(r[1]),
-                    "avg_score":    round(float(r[2]), 1) if r[2] is not None else 0,
-                    "min_score":    round(float(r[3]), 1) if r[3] is not None else 0,
-                    "max_score":    round(float(r[4]), 1) if r[4] is not None else 0,
+                    "avg_score":    round(display_score(r[2]), 1) if r[2] is not None else 0,
+                    "min_score":    round(display_score(r[3]), 1) if r[3] is not None else 0,
+                    "max_score":    round(display_score(r[4]), 1) if r[4] is not None else 0,
                 }
                 for r in company_rows
             ],
@@ -1548,7 +1554,7 @@ async def get_dashboard(authorization: Optional[str] = Header(None)):
                     "product_name": r[2] or "알 수 없음",
                     "company_name": r[3] or "",
                     "verdict":      r[4] or "",
-                    "accs_score":   round(float(r[5] or 0), 1),
+                    "accs_score":   round(display_score(r[5] or 0), 1),
                     "risk_level":   r[6] or "",
                     "created_at":   r[7].strftime("%Y.%m.%d %H:%M") if r[7] else "",
                 }
