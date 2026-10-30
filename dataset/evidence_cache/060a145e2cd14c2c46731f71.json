@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=67509095",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "ASUS TUF Gaming A16 FA608WV-QT005W (SSD 1TB)",
       "name": "ASUS TUF Gaming A16 FA608WV-QT005W (SSD 1TB)",
       "description": "",
-      "ocr_text": "ASUS TUF Gaming A16 FA6O8WV-QTOO5W (SSD ITB) 가격비교 상품 상세정보 의견리뷰 20 뉴스커유니티 연관상품 무게 2 2kg 운명제제(OS) 원도우11움 판매유형 제조사기본상품 [화면] 화면 비율 1610 해상도 2560x1600(WQXGA) sRGB 10096 '화면 회전각 180도 주사물 165Hz 밝기 4OOnit 파널 표면 처리 안티글레이 디스플레이 특징 이딩티브심크 G-SYNC [CPU] CPU 제조사 AMD CPU 세분류 라이젠Al 9 CPU 코드명 스트리스 포인트 CPU 넘버 HX 370 (5.1GHz) CPU 코이 12코이 CPU 스레드 24스레드 NPU 종류 AMD 라이젠 Al NPU 5OTOPS [그래픽] GPU 종류 외장그래픽 GPU 제조사 엔비디야 GPU 침셋 RTX4O6O GPU 메모리 VRAM: 8GB GPU TOPS 233 Al TOPS TGP 140W 게임 관련 기능 MUX 스위치 [구성]",
+      "ocr_text": "ASUS TUF Gaming A16 FA6O8WV-QTOO5W (SSD ITB) 가격비교 상품 상세정보 의견리뷰 20 뉴스커유니티 연관상품 무게 2.2kg 운영제제(OS) 원도우11롬 판매유형 제조사기본상품 [화면] 화면 비율 1610 허상도 2560x160O(WQXGA) sRGB 10096 화면 회전각 180도 주사물 165Hz 밝기 40Onit 패널 표면 처리 안티글레어 디스플레이 특징 어자티브심크 -SYNC [CPU] CPU 제조사 AMD CPU 세분류 라이젠시 9 CPU 코드명 스트렉스 포인트 CPU 넘버 HX 370 (5.1GHz) CPU 코어 12코어 CPU 스레드 24스레드 NPU 종류 AMD 라이젠 Al NPU 50TOPS [그래픽] GPU 종류 외장그래픽 GPU 제조사  엔비디아 GPU 집셋 RTX4O6O GPU 메모리 VRAM: 8GB Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "AI노트북": "지원",
         "40.6cm(16인치)": "지원",
@@ -34,11 +34,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=67509095",
       "manufacturer": "ASUS, Asus",
-      "model_name": "FA608WV"
+      "model_name": "FA608WV-QT005W"
     },
     "norm_info": {
       "company_name": "ASUS, Asus",
-      "model_name": "FA608WV",
+      "model_name": "FA608WV-QT005W",
       "product_name": "ASUS TUF Gaming A16 FA608WV-QT005W (SSD 1TB)"
     },
     "db_results": [
@@ -539,14 +539,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "ASUS, Asus",
-    "model_param": "FA608WV",
+    "model_param": "FA608WV-QT005W",
     "ocr_result": {
-      "extracted_text": "ASUS TUF Gaming A16 FA6O8WV-QTOO5W (SSD ITB) 가격비교 상품 상세정보 의견리뷰 20 뉴스커유니티 연관상품 무게 2 2kg 운명제제(OS) 원도우11움 판매유형 제조사기본상품 [화면] 화면 비율 1610 해상도 2560x1600(WQXGA) sRGB 10096 '화면 회전각 180도 주사물 165Hz 밝기 4OOnit 파널 표면 처리 안티글레이 디스플레이 특징 이딩티브심크 G-SYNC [CPU] CPU 제조사 AMD CPU 세분류 라이젠Al 9 CPU 코드명 스트리스 포인트 CPU 넘버 HX 370 (5.1GHz) CPU 코이 12코이 CPU 스레드 24스레드 NPU 종류 AMD 라이젠 Al NPU 5OTOPS [그래픽] GPU 종류 외장그래픽 GPU 제조사 엔비디야 GPU 침셋 RTX4O6O GPU 메모리 VRAM: 8GB GPU TOPS 233 Al TOPS TGP 140W 게임 관련 기능 MUX 스위치 [구성]",
+      "extracted_text": "ASUS TUF Gaming A16 FA6O8WV-QTOO5W (SSD ITB) 가격비교 상품 상세정보 의견리뷰 20 뉴스커유니티 연관상품 무게 2.2kg 운영제제(OS) 원도우11롬 판매유형 제조사기본상품 [화면] 화면 비율 1610 허상도 2560x160O(WQXGA) sRGB 10096 화면 회전각 180도 주사물 165Hz 밝기 40Onit 패널 표면 처리 안티글레어 디스플레이 특징 어자티브심크 -SYNC [CPU] CPU 제조사 AMD CPU 세분류 라이젠시 9 CPU 코드명 스트렉스 포인트 CPU 넘버 HX 370 (5.1GHz) CPU 코어 12코어 CPU 스레드 24스레드 NPU 종류 AMD 라이젠 Al NPU 50TOPS [그래픽] GPU 종류 외장그래픽 GPU 제조사  엔비디아 GPU 집셋 RTX4O6O GPU 메모리 VRAM: 8GB Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\ASUS TUF Gaming A16 FA608WV-QT005W (SSD 1TB)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/ASUS TUF Gaming A16 FA608WV-QT005W (SSD 1TB)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/ASUS TUF Gaming A16 FA608WV-QT005W (SSD 1TB)/detail_scan.png",
+        "image_size": 94940,
+        "image_sha256": "bcf1f1c339f6601f3082fc98b57f8b0a160e87f5b71b6788389b4c6ddfdad04f"
+      }
     }
   }
 }

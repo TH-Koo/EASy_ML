@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=93387431",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "표준PC DPG 게임용 250723 (16GB, M.2 1TB)",
       "name": "표준PC DPG 게임용 250723 (16GB, M.2 1TB)",
       "description": "",
-      "ocr_text": "다나외표준PC DPG 게임용 250723 (16GB, M.2 ITB) Pc4allo 2,680,000원  무료배승 최저가 구매하기 가격비교 14 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 메인보드 침셋 (인텔) B860 운명제제 OS미포함 파뭐 출력 850W CPU 제조사 인텔 CPU 시리즈 코어울트라 시리즈2 CPU 종류 군이 울드라7 CPU 코드명 애로우레이크 코이 개수 8+12코어 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M2 SSD 용량 ITB 그래픽 제조사 NVIDIA 그래픽 종류 외장 그래픽 그래픽 메모리 8GB 네트위크 IGbps 유선 전원 파위서플라이 본체 형대 미들타위 외형 이향령 수캠컬러 LED콜러 [@ 인종",
+      "ocr_text": "다나와표준PC DPG 게임용 250723 (16GB,M.2 ITB) PcAallo 2,648,000원 무료배승  최저가 구매하기 가격비교 14 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 메인보드 집셋 (인텔) B860 운영제제 OS미포함 파뭐 출력 850W CPU 제조사  인텔 CPU 시리즈 코어울트라 시리즈2 CPU 종류 코어 울드라7 CPU 코드명 애로우레이크 코어 개수 8+12코어 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량  16GB 저장장치 SSD 형태 M2 SSD 용량 ITB 그래픽 제조사 NVIDIA 그래픽 종류 외장 그래픽 그래픽 메모리 8GB 네트위크 IGbps 유선 전원 파워서플라이 본체 형태 미들타위 외형 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "265KF": "지원",
         "RTX 5060 Ti": "지원",
@@ -37,18 +37,39 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=93387431",
       "manufacturer": "표준PC, Standard PC",
-      "model_name": "250723"
+      "model_name": "B860"
     },
     "norm_info": {
       "company_name": "표준PC, Standard PC",
-      "model_name": "250723",
+      "model_name": "B860",
       "product_name": "표준PC DPG 게임용 250723 (16GB, M.2 1TB)"
     },
     "db_results": [],
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 미숙아 만성 폐질환 예방을 위한 EIT 기반 정밀 호흡치료 시스템 구축 및 영상 바이오마커 발굴 연구 등 총 2건",
+      "detail": "NTIS에서 [STANDARD PC] 검색어로 조회한 결과, AI 관련 과제 2건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "미숙아 만성 폐질환 예방을 위한 EIT 기반 정밀 호흡치료 시스템 구축 및 영상 바이오마커 발굴 연구",
+          "project_number": "2710114171",
+          "lead_company": "STANDARD PC",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "멀티모달(음성/시각) VDF(Vector Diagnostic Framework) 기반 한국어 발음 진단 AI-KPDI 개발",
+          "project_number": "2420028706",
+          "lead_company": "STANDARD PC",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -58,14 +79,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "표준PC, Standard PC",
-    "model_param": "250723",
+    "model_param": "B860",
     "ocr_result": {
-      "extracted_text": "다나외표준PC DPG 게임용 250723 (16GB, M.2 ITB) Pc4allo 2,680,000원  무료배승 최저가 구매하기 가격비교 14 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 메인보드 침셋 (인텔) B860 운명제제 OS미포함 파뭐 출력 850W CPU 제조사 인텔 CPU 시리즈 코어울트라 시리즈2 CPU 종류 군이 울드라7 CPU 코드명 애로우레이크 코이 개수 8+12코어 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M2 SSD 용량 ITB 그래픽 제조사 NVIDIA 그래픽 종류 외장 그래픽 그래픽 메모리 8GB 네트위크 IGbps 유선 전원 파위서플라이 본체 형대 미들타위 외형 이향령 수캠컬러 LED콜러 [@ 인종",
+      "extracted_text": "다나와표준PC DPG 게임용 250723 (16GB,M.2 ITB) PcAallo 2,648,000원 무료배승  최저가 구매하기 가격비교 14 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 메인보드 집셋 (인텔) B860 운영제제 OS미포함 파뭐 출력 850W CPU 제조사  인텔 CPU 시리즈 코어울트라 시리즈2 CPU 종류 코어 울드라7 CPU 코드명 애로우레이크 코어 개수 8+12코어 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량  16GB 저장장치 SSD 형태 M2 SSD 용량 ITB 그래픽 제조사 NVIDIA 그래픽 종류 외장 그래픽 그래픽 메모리 8GB 네트위크 IGbps 유선 전원 파워서플라이 본체 형태 미들타위 외형 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\표준PC DPG 게임용 250723 (16GB, M.2 1TB)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/표준PC DPG 게임용 250723 (16GB, M.2 1TB)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/표준PC DPG 게임용 250723 (16GB, M.2 1TB)/detail_scan.png",
+        "image_size": 93315,
+        "image_sha256": "d3b7dc79d8c5365f3f2aea41f2a6509ac761e638265f65923863ffdae8271cdc"
+      }
     }
   }
 }

@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=123962552",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "이노스 34WQ200M UWQHD IPS USB-C HDR Ai GEN 게이밍 멀티스탠드",
       "name": "이노스 34WQ200M UWQHD IPS USB-C HDR Ai GEN 게이밍 멀티스탠드",
       "description": "",
-      "ocr_text": "이노스 34WQ2OOM UWQHD IPS USB-C HDR Ai GEN 게이망 멀티스랜드 11> 284,040원 (284,040+무료배송) 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 해삼도 Ultra WQHD(3440 1440) 쇠대 주사물 2OOHz 패널 종류 IPS 화면 비율 올드라와이드(219) 파닐 형대 평면 응답 속도 Ims(OD) 화면 밝기 42Onits 명양비 500.1 HDR 지원 HDR 시력보호 기능 끌리커 프리 불무라이트 자단 눈부심 밤지 안티글레이 화면 기능 고정종훨비 지원 크로마서브생플림 부가 기능 스피커 내장 해드끈 아옷 LED 조명 USB PD 지원 스피키 출력 3W X 2 스랜드 기능 엘리베이선(도낮이) 탤트(상하) 스위블(좌우) 규격 VESA봄 100 1oOmm 크기(가로x세로x깊 816.3*520.5x217mnmn 무게 소비전력 34.1W 7kg",
+      "ocr_text": "이노스 34WQZOOM UWQHD IPS USB-C HDR Ai GEN 게이망 멀티스랜드 11> 287,030원 (287,030+무료버송) 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 해상도 Ultra WQHD(3440 1440) 최대 주사물 20OHz 패널 종류 IPS 화면 비율 울드라와이드(219) 패널 형태 평면 응답 속도 ImsloD) 화면 밝기 420nits 명양비 1,5001 HDR 지원 HDR 시력보호 기능 플리커 프리 불루라이트 차단 눈부심 방지 안티글레어 화면 기능 고정증히비 지원 크로마서브심플림 부가 기능 스피커 내장 헤드포 아옷 LED 조명 USB PD 지원 스피커 출력 3WX 2 스랜드 기능 엘리베이센높낮이) 털드상하) 스위블(좌우) Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "모니터": "지원",
         "86.5cm(34인치)": "지원",
@@ -39,11 +39,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=123962552",
       "manufacturer": "인노스, InnoS",
-      "model_name": "34WQ200M"
+      "model_name": "G-SYNC"
     },
     "norm_info": {
       "company_name": "인노스, InnoS",
-      "model_name": "34WQ200M",
+      "model_name": "G-SYNC",
       "product_name": "이노스 34WQ200M UWQHD IPS USB-C HDR Ai GEN 게이밍 멀티스탠드"
     },
     "db_results": [
@@ -69,7 +69,35 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: LAMPAD-AI 기반의 네트워크 이상현상 자율관리시스템 기술개발(LAMPAD-A3M) 등 총 3건",
+      "detail": "NTIS에서 [인노스] 검색어로 조회한 결과, AI 관련 과제 3건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "LAMPAD-AI 기반의 네트워크 이상현상 자율관리시스템 기술개발(LAMPAD-A3M)",
+          "project_number": "1711196550",
+          "lead_company": "인노스",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "LAMPAD-AI 기반의 네트워크 이상현상 자율관리시스템 기술개발(LAMPAD-A3M)",
+          "project_number": "2710008099",
+          "lead_company": "인노스",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "건설현장 등 전문가를 위한 AI파트너 개발",
+          "project_number": "1711123893",
+          "lead_company": "인노스",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -292,14 +320,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "인노스, InnoS",
-    "model_param": "34WQ200M",
+    "model_param": "G-SYNC",
     "ocr_result": {
-      "extracted_text": "이노스 34WQ2OOM UWQHD IPS USB-C HDR Ai GEN 게이망 멀티스랜드 11> 284,040원 (284,040+무료배송) 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 해삼도 Ultra WQHD(3440 1440) 쇠대 주사물 2OOHz 패널 종류 IPS 화면 비율 올드라와이드(219) 파닐 형대 평면 응답 속도 Ims(OD) 화면 밝기 42Onits 명양비 500.1 HDR 지원 HDR 시력보호 기능 끌리커 프리 불무라이트 자단 눈부심 밤지 안티글레이 화면 기능 고정종훨비 지원 크로마서브생플림 부가 기능 스피커 내장 해드끈 아옷 LED 조명 USB PD 지원 스피키 출력 3W X 2 스랜드 기능 엘리베이선(도낮이) 탤트(상하) 스위블(좌우) 규격 VESA봄 100 1oOmm 크기(가로x세로x깊 816.3*520.5x217mnmn 무게 소비전력 34.1W 7kg",
+      "extracted_text": "이노스 34WQZOOM UWQHD IPS USB-C HDR Ai GEN 게이망 멀티스랜드 11> 287,030원 (287,030+무료버송) 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 해상도 Ultra WQHD(3440 1440) 최대 주사물 20OHz 패널 종류 IPS 화면 비율 울드라와이드(219) 패널 형태 평면 응답 속도 ImsloD) 화면 밝기 420nits 명양비 1,5001 HDR 지원 HDR 시력보호 기능 플리커 프리 불루라이트 차단 눈부심 방지 안티글레어 화면 기능 고정증히비 지원 크로마서브심플림 부가 기능 스피커 내장 헤드포 아옷 LED 조명 USB PD 지원 스피커 출력 3WX 2 스랜드 기능 엘리베이센높낮이) 털드상하) 스위블(좌우) Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\이노스 34WQ200M UWQHD IPS USB-C HDR Ai GEN 게이밍 멀티스탠드\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/이노스 34WQ200M UWQHD IPS USB-C HDR Ai GEN 게이밍 멀티스탠드/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/이노스 34WQ200M UWQHD IPS USB-C HDR Ai GEN 게이밍 멀티스탠드/detail_scan.png",
+        "image_size": 95419,
+        "image_sha256": "9c22f90afa978188d306a7105d29924253e20c6d6d72ba69f79c39b2c4c990cd"
+      }
     }
   }
 }

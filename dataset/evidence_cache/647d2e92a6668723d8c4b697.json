@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=92149979",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "샥즈 오픈핏 2+ T921 (정품)",
       "name": "샥즈 오픈핏 2+ T921 (정품)",
       "description": "",
-      "ocr_text": "삭즈 오른핏 2+ T921 (정품) 1L> 254,320원 무료매승 최저가 구매하기 가격비교 141 상품 상세정보 의견리뷰 201 뉴스커유니티 연관상품 외형 귀걸이형 용도 음악+통화용 무선연결 불무투스 V5.4 노이즈권트록 시I노이즈랜늘림가이 사운드채널 스데레오 드라이버크기 유넷 17.3mr(저주파) 드라이버 다이나막 드라이버구성 고주파 1개 저주파 1개 드라이버 개스 2개 코덕 SBC AAC 불루투스 프로파일 AVRCP A2DP HFP 무선언결거리 iOm 서라운드 돌비오디오",
+      "ocr_text": "삭즈 오른핏 2+ T921 (정품) emart hall   244,148원 무료배승  최저가 구매하기 가격비교 143 상품 상세정보 의견리뷰 202 뉴스커유니티 연관상품 용도 음악+통화용 이어프타입 오른이어형 외형 귀걸이형 무선연결 불루투스 V5.4 노이즈권트록 시I노이즈랜되림마이 사운드채널 스데레오 드라이버크기 유듯17.3mm(저주파) 드라이버 다이나막 드라이버구성 고주파 1개, 저주파 1개 드라이버 개수 2개 코댁 SBC AAC 불루투스 프로파일 AVRCP A2DP Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "오픈이어형": "지원",
         "귀걸이형": "지원",
@@ -114,7 +114,28 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 미래교육을 위한 학습모델 개발:  지식 생성을 위한 인공지능의 도구적 활용과 <span class=\"search_word\">Z</span>세대 학습자의 배움에 대한 연구 등 총 2건",
+      "detail": "NTIS에서 [Z.] 검색어로 조회한 결과, AI 관련 과제 2건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "미래교육을 위한 학습모델 개발:  지식 생성을 위한 인공지능의 도구적 활용과 <span class=\"search_word\">Z</span>세대 학습자의 배움에 대한 연구",
+          "project_number": "2340041066",
+          "lead_company": "Z.",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "미래교육을 위한 학습모델 개발:  지식 생성을 위한 인공지능의 도구적 활용과 <span class=\"search_word\">Z</span>세대 학습자의 배움에 대한 연구",
+          "project_number": "2340002911",
+          "lead_company": "Z.",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -126,10 +147,10 @@
     "target_company_name": "샥즈,  Z.",
     "model_param": "T921",
     "ocr_result": {
-      "extracted_text": "삭즈 오른핏 2+ T921 (정품) 1L> 254,320원 무료매승 최저가 구매하기 가격비교 141 상품 상세정보 의견리뷰 201 뉴스커유니티 연관상품 외형 귀걸이형 용도 음악+통화용 무선연결 불무투스 V5.4 노이즈권트록 시I노이즈랜늘림가이 사운드채널 스데레오 드라이버크기 유넷 17.3mr(저주파) 드라이버 다이나막 드라이버구성 고주파 1개 저주파 1개 드라이버 개스 2개 코덕 SBC AAC 불루투스 프로파일 AVRCP A2DP HFP 무선언결거리 iOm 서라운드 돌비오디오",
+      "extracted_text": "삭즈 오른핏 2+ T921 (정품) emart hall   244,148원 무료배승  최저가 구매하기 가격비교 143 상품 상세정보 의견리뷰 202 뉴스커유니티 연관상품 용도 음악+통화용 이어프타입 오른이어형 외형 귀걸이형 무선연결 불루투스 V5.4 노이즈권트록 시I노이즈랜되림마이 사운드채널 스데레오 드라이버크기 유듯17.3mm(저주파) 드라이버 다이나막 드라이버구성 고주파 1개, 저주파 1개 드라이버 개수 2개 코댁 SBC AAC 불루투스 프로파일 AVRCP A2DP Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\샥즈 오픈핏 2+ T921 (정품)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/샥즈 오픈핏 2+ T921 (정품)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }

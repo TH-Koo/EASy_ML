@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=90116270",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "샤오미 레드미 버즈 6 M2429E1 (정품)",
       "name": "샤오미 레드미 버즈 6 M2429E1 (정품)",
       "description": "",
-      "ocr_text": "사오미 레드미 버즈 6 M2429E1 (정품) 가격비교 상품 상세정보 의견리뷰 연관상품 외형 코드리스 용도 음악+통화용 무선연결 불무투스 v5.4 불무투스 LE 노이즈권트록 액티브노이즈랜슬림 (ANC) 적응형ANC 주변소리듬기 [Al 기능] [Al 기능] Al 기능 Al 노이즈권쓸림다이 사운드채널 스데레오 드라이버크기 유넷:5.5mnm 12.4mmn 드라이버 다이나막 드라이버구성 다이나벤 2개 드라이버 개스 2개 코덕 LC3 AAC 불루투스 프로파일 AVRCP A2DP",
+      "ocr_text": "사오미 레드미 버즈 6 M2429E1 (정품) 가격비교 상품 상세정보 의견리뷰 연관상품 용도 음악+통화용 이어프타입 커형 외형 코드리스 무선연결 불루투스 V5.4 불무투스 LE 노이즈권트록 액티브노이즈랜슬림 (ANC) 적응형ANC 주변소리듬기 [AI 기능] [AI 기능] AI 기능 Al 노이즈랜되림마이 사운드채널 스데레오 드라이버크기 유딪5.5mm 12,4mm 드라이버 다이나w Close 드라이버구서 다이D 라이버  We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "커널형": "지원",
         "코드리스": "지원",
@@ -494,7 +494,56 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 근 미래 혁신로봇 서비스를 위한 차세대 로봇 디자인 융합 기술 개발 등 총 6건",
+      "detail": "NTIS에서 [XIAOMI] 검색어로 조회한 결과, AI 관련 과제 6건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "근 미래 혁신로봇 서비스를 위한 차세대 로봇 디자인 융합 기술 개발",
+          "project_number": "1415148057",
+          "lead_company": "XIAOMI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "패러독스 경영: AI 시대, 글로벌 전략의 새로운 균형",
+          "project_number": "2340060604",
+          "lead_company": "XIAOMI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "유체-고체 해석기반 인공지능을 이용한 영상분석기법",
+          "project_number": "1711069630",
+          "lead_company": "XIAOMI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "진화연산 기반 다목적 대규모 네트워크 최적화 연구",
+          "project_number": "1711201113",
+          "lead_company": "XIAOMI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "유체-고체 해석기반 인공지능을 이용한 영상분석기법",
+          "project_number": "1711059896",
+          "lead_company": "XIAOMI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "유체-고체 해석기반 인공지능을 이용한 영상분석기법",
+          "project_number": "1711084523",
+          "lead_company": "XIAOMI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -506,10 +555,10 @@
     "target_company_name": "샤오미 (Xiaomi),  Xiaomi",
     "model_param": "M2429E1",
     "ocr_result": {
-      "extracted_text": "사오미 레드미 버즈 6 M2429E1 (정품) 가격비교 상품 상세정보 의견리뷰 연관상품 외형 코드리스 용도 음악+통화용 무선연결 불무투스 v5.4 불무투스 LE 노이즈권트록 액티브노이즈랜슬림 (ANC) 적응형ANC 주변소리듬기 [Al 기능] [Al 기능] Al 기능 Al 노이즈권쓸림다이 사운드채널 스데레오 드라이버크기 유넷:5.5mnm 12.4mmn 드라이버 다이나막 드라이버구성 다이나벤 2개 드라이버 개스 2개 코덕 LC3 AAC 불루투스 프로파일 AVRCP A2DP",
+      "extracted_text": "사오미 레드미 버즈 6 M2429E1 (정품) 가격비교 상품 상세정보 의견리뷰 연관상품 용도 음악+통화용 이어프타입 커형 외형 코드리스 무선연결 불루투스 V5.4 불무투스 LE 노이즈권트록 액티브노이즈랜슬림 (ANC) 적응형ANC 주변소리듬기 [AI 기능] [AI 기능] AI 기능 Al 노이즈랜되림마이 사운드채널 스데레오 드라이버크기 유딪5.5mm 12,4mm 드라이버 다이나w Close 드라이버구서 다이D 라이버  We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\샤오미 레드미 버즈 6 M2429E1 (정품)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/샤오미 레드미 버즈 6 M2429E1 (정품)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }

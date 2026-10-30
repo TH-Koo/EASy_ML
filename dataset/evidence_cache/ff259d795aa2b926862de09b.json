@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=123800066",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "팅크웨어 아이나비 퀀텀4 2채널 (64GB)",
       "name": "팅크웨어 아이나비 퀀텀4 2채널 (64GB)",
       "description": "",
-      "ocr_text": "팅크웨어 아이나비 권싫4 2채널 (64GB) LOTTE ON 555,840원   무료배승 최저가 구매하기 가격비교 15 상품 상세정보 의견리뷰 연관상품 카메라 수(재널) 2채널 전방 UHD 4K(3840x2160) 전방 프레임 3Ofps 저장마제 Micro-SD 저장용량 64GB 센서 Sony Exmor R STARVIS 2 후밤 대상도 QHD(2560x1440) 후방 프레인 30fps 안전관련기능 자선이발경보(LDW Al ADAS 전방주돌경고(FCW 앞자출발알림(FVSA) 저속전방추돌경고나 CWS) 안전운전도우미 전원관련기능 주차저전력모드 녹화방식 주차녹화 녹화관련기능 타입컵스 자동포멋 야간보점 울드라나이트비전 GPS GPS내잠 스마트론 연동 Wi-Fi 연결 커넥티드 연결 [@ 인종 적합성평가인승 상세설명 판매 사이트 문의 인증번호 확인",
+      "ocr_text": "텅크웨어 아이나비 권64 2채널 (64GB) LOTTE ON 564,520원   무료배송  최저가 구매하기 가격비교 15 상품 상세정보 의견리뷰 연관상품 카메라 수(채널) 2채널 전방 UHD 4K(3840*2160) 전방 프레임 30fps 저장머체 Micro-SD 저장용량 64GB 센서 Sony Exmor R STARVIS 2 후방 해상도 QHD(2560*1440) 후방 프레임 3Ofps 안전관련기능 Al ADAS 차선이탈경보LW 전방주돌경고FCW 앞차출발알림(FVSA) 저속전방추돌경고u CWS) 안전운전도우미 전원관련기능 주차저전력모드 녹화방식 주차녹화 녹화관련기능 타입램스 자동포멋 야간보정 울드라나이트비전 GPS GPS내장 Close 스마트혼 연동 We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "블랙박스": "지원",
         "2채널": "지원",
@@ -31,22 +31,427 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=123800066",
       "manufacturer": "팅크웨어, Tinkingwear",
-      "model_name": "이모델번호"
+      "model_name": ""
     },
     "norm_info": {
       "company_name": "팅크웨어, Tinkingwear",
-      "model_name": "이모델번호",
+      "model_name": "",
       "product_name": "팅크웨어 아이나비 퀀텀4 2채널 (64GB)"
     },
     "db_results": [
       {
         "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "MAN",
+        "equip_name": "네비게이션",
+        "model_name": "M1000",
         "country": "한국",
-        "cert_date": "2019-05-16",
+        "cert_date": "2022-07-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-INO3-TG822G1"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "Rear Camera",
+        "model_name": "BCFH-50U",
+        "country": "한국",
+        "cert_date": "2020-06-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IAOB-T20F1"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "검역용 인체 열화상 카메라",
+        "model_name": "MAG21MINI",
+        "country": "중국",
+        "cert_date": "2020-05-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-MAG21MINI"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "검역용 인체 열화상 카메라",
+        "model_name": "MAG14",
+        "country": "중국",
+        "cert_date": "2020-05-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-MAG14"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "검역용 인체 열화상 카메라",
+        "model_name": "MAG32",
+        "country": "중국",
+        "cert_date": "2020-05-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-MAG32"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "CAR BLACK BOX",
+        "model_name": "QXD5000",
+        "country": "한국",
+        "cert_date": "2020-04-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IBRQ-TN32041"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "BAB-115",
+        "country": "한국",
+        "cert_date": "2020-03-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IAOB-E20D3"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "Rechargeable Li-ion(LiFePO4) Battery Pack",
+        "model_name": "BAB-105",
+        "country": "한국",
+        "cert_date": "2020-03-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IAOB-E20D2"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "Rechargeable Li-ion(LiFePO4) Battery Pack",
+        "model_name": "G-1000 Hybrid",
+        "country": "한국",
+        "cert_date": "2020-03-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IAOC-E20D1"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "Rechargeable Li-ion(LiFePO4) Battery Pack",
+        "model_name": "BAB-55",
+        "country": "한국",
+        "cert_date": "2020-03-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IAOB-E20D1"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "아이나비 Connected 동글",
+        "model_name": "TWB-U450L",
+        "country": "한국",
+        "cert_date": "2020-03-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IAOB-T2051"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "F200",
+        "country": "한국",
+        "cert_date": "2020-02-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IBRF-TN02041"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "ACP-R1",
+        "country": "중국",
+        "cert_date": "2020-02-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IAOC-T20A1"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "전동킥보드",
+        "model_name": "아이나비SPORTS Road Gear GT",
+        "country": "중국",
+        "cert_date": "2020-01-09",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-SMK002"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "CAR BLACK BOX REAR CAM",
+        "model_name": "BCQH-200",
+        "country": "한국",
+        "cert_date": "2020-01-09",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IAOB-T19L1"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "Rear Camera",
+        "model_name": "BCFH-50",
+        "country": "한국",
+        "cert_date": "2020-01-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IAOB-T20B4"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "Socket",
+        "model_name": "Socket Without ETC module",
+        "country": "중국",
+        "cert_date": "2021-11-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-ACE3Socket"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "SNAP G",
+        "model_name": "IU-100",
+        "country": "한국",
+        "cert_date": "2021-11-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IU100"
+      },
+      {
+        "company_name": "팅크웨어모바일 주식회사",
+        "equip_name": "미약 전계강도 무선기기",
+        "model_name": "SHC-30",
+        "country": "중국",
+        "cert_date": "2021-11-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-tm0-SHC-30"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "CAR BLACK BOX",
+        "model_name": "Z7000",
+        "country": "한국",
+        "cert_date": "2021-10-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IBRQ-TN321J1"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "SNAP G Battery Charger",
+        "model_name": "SGA-BC200",
+        "country": "한국",
+        "cert_date": "2021-10-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-BC200"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "Rear Camera",
+        "model_name": "BCFH-50SW",
+        "country": "한국",
+        "cert_date": "2021-10-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IBRF-TN221J1"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "가습기",
+        "model_name": "SH-U100BS",
+        "country": "중국",
+        "cert_date": "2021-09-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IAOC-U100BS"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "Thinkware BSD ECU",
+        "model_name": "TW-TBE-100",
+        "country": "한국",
+        "cert_date": "2021-09-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IAOC-T21L1"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "CAR BLACK BOX",
+        "model_name": "QXD7000",
+        "country": "한국",
+        "cert_date": "2021-08-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IBRQ-TN321H1"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "Rear Camera",
+        "model_name": "BCFH-70U",
+        "country": "한국",
+        "cert_date": "2021-06-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IBRF-TN221G1"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "CAR BLACK BOX",
+        "model_name": "QXD5500mini",
+        "country": "한국",
+        "cert_date": "2021-06-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IBFQ-TN221G1"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "소형 공기청정기",
+        "model_name": "ACP-20",
+        "country": "중국",
+        "cert_date": "2021-05-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IAOC-G21H1"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "CAR BLACK BOX",
+        "model_name": "S Shot",
+        "country": "한국",
+        "cert_date": "2021-04-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IBRF-TN021E1"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "전동킥보드",
+        "model_name": "S2000",
+        "country": "중국",
+        "cert_date": "2021-03-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-SMK005"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "전동킥보드",
+        "model_name": "K1000",
+        "country": "중국",
+        "cert_date": "2021-03-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-SMK006"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MC-1",
+        "country": "중국",
+        "cert_date": "2021-03-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IABC-S21E1"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "CAR BLACKBOX",
+        "model_name": "아이나비 T1000",
+        "country": "한국",
+        "cert_date": "2021-03-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IBFF-TGN21A1"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "Rear Camera",
+        "model_name": "BCFH-59U",
+        "country": "한국",
+        "cert_date": "2021-03-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IBRF-TGN21A1"
+      },
+      {
+        "company_name": "팅크웨어모바일 주식회사",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "UT-77L",
+        "country": "중국",
+        "cert_date": "2021-03-03",
         "cert_status": "적합인증",
-        "cert_no": "R-C-TWI-INI3-TN719E1"
+        "cert_no": "R-C-tm0-UT-77L"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "CAR BLACK BOX REAR CAM",
+        "model_name": "BCFH-60",
+        "country": "한국",
+        "cert_date": "2021-02-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IAOB-T21D1"
+      },
+      {
+        "company_name": "팅크웨어모바일 주식회사",
+        "equip_name": "직류전원장치",
+        "model_name": "STC-A51D-K",
+        "country": "중국",
+        "cert_date": "2021-01-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-tm0-STC-A51D-K"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "레이더 모듈",
+        "model_name": "iRADAR-200",
+        "country": "한국",
+        "cert_date": "2021-01-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-iRADAR-200"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "전동킥보드",
+        "model_name": "E10",
+        "country": "중국",
+        "cert_date": "2021-01-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-SMK004"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "VEHICLE INTERFACE",
+        "model_name": "ITF-FD300",
+        "country": "한국",
+        "cert_date": "2021-01-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IAON-T20J7"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "CAR BLACK BOX",
+        "model_name": "VX1000",
+        "country": "한국",
+        "cert_date": "2022-11-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IBRQ-TN322L1"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "Rechargeable  Li-ion(LiFePO4) Battery Pack",
+        "model_name": "BAB-210Q",
+        "country": "한국",
+        "cert_date": "2022-11-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IABB-E22K1"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "Rear Camera",
+        "model_name": "BCFH-80U",
+        "country": "한국",
+        "cert_date": "2022-10-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IAOB-T22L1"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "MC10",
+        "country": "중국",
+        "cert_date": "2022-09-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-IABC-S22I1"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "응원봉",
+        "model_name": "ATNN22JOS901NN0",
+        "country": "한국",
+        "cert_date": "2022-08-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-ATEAMOLS"
+      },
+      {
+        "company_name": "팅크웨어(주)",
+        "equip_name": "네비게이션",
+        "model_name": "MXI",
+        "country": "한국",
+        "cert_date": "2022-07-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-TWI-INI3-TG822I1"
       },
       {
         "company_name": "팅크웨어(주)",
@@ -67,262 +472,77 @@
         "cert_no": "R-R-TWI-IAOC-T2481"
       },
       {
-        "company_name": "팅크웨어모바일 주식회사",
-        "equip_name": "차량용 무선충전거치대",
-        "model_name": "SHC-40",
+        "company_name": "팅크웨어(주)",
+        "equip_name": "듀얼 와이파이 동글",
+        "model_name": "J7",
         "country": "중국",
-        "cert_date": "2022-05-30",
+        "cert_date": "2024-06-14",
         "cert_status": "적합등록",
-        "cert_no": "R-R-tm0-SHC-40"
+        "cert_no": "R-R-TWI-JVIS-J7"
       },
       {
         "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "MC10",
-        "country": "중국",
-        "cert_date": "2022-09-23",
+        "equip_name": "Rear Camera",
+        "model_name": "BCFH-90UIR",
+        "country": "한국",
+        "cert_date": "2024-08-12",
         "cert_status": "적합등록",
-        "cert_no": "R-R-TWI-IABC-S22I1"
-      },
-      {
-        "company_name": "팅크웨어모바일 주식회사",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
-        "model_name": "UT-77L",
-        "country": "중국",
-        "cert_date": "2021-03-03",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-tm0-UT-77L"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "MC-1",
-        "country": "중국",
-        "cert_date": "2021-03-12",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-TWI-IABC-S21E1"
-      },
-      {
-        "company_name": "팅크웨어모바일 주식회사",
-        "equip_name": "미약 전계강도 무선기기",
-        "model_name": "SHC-30",
-        "country": "중국",
-        "cert_date": "2021-11-11",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-tm0-SHC-30"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "ACP-R1",
-        "country": "중국",
-        "cert_date": "2020-02-06",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-TWI-IAOC-T20A1"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "F200",
-        "country": "한국",
-        "cert_date": "2020-02-24",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-TWI-IBRF-TN02041"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "BAB-115",
-        "country": "한국",
-        "cert_date": "2020-03-31",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-TWI-IAOB-E20D3"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "Kangaroo",
-        "country": "중국",
-        "cert_date": "2020-08-06",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-TWI-IABC-F20J1"
-      },
-      {
-        "company_name": "팅크웨어모바일 주식회사",
-        "equip_name": "미약 전계강도 무선기기",
-        "model_name": "SHC20",
-        "country": "중국",
-        "cert_date": "2020-08-14",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-tm0-SHC20"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "FL/FE AVN",
-        "country": "한국",
-        "cert_date": "2020-12-08",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-TWI-INI3-TNA20L1"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "F800",
-        "country": "한국",
-        "cert_date": "2019-02-19",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-TWI-IBRF-TG019C1"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "WVTW-100",
-        "country": "한국",
-        "cert_date": "2019-05-09",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-TWI-WVTW-100"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "ITP-XD10W",
-        "country": "중국",
-        "cert_date": "2016-05-16",
-        "cert_status": "적합인증",
-        "cert_no": "MSIP-CMI-TWI-ITPXD10W"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "미약 전계강도 무선기기",
-        "model_name": "SHC-10",
-        "country": "중국",
-        "cert_date": "2019-05-23",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-TWI-IAOC-C1961"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "아이나비SPORTS Road Gear XT",
-        "country": "중국",
-        "cert_date": "2019-12-19",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-TWI-SMK003"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "TC-1",
-        "country": "중국",
-        "cert_date": "2018-03-09",
-        "cert_status": "적합인증",
-        "cert_no": "R-CMI-TWI-IAOC-M18D1"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(기타)",
-        "model_name": "LML-U300",
-        "country": "한국",
-        "cert_date": "2018-03-29",
-        "cert_status": "적합인증",
-        "cert_no": "R-CRS-TWI-LML-U300"
-      },
-      {
-        "company_name": "팅크웨어모바일 주식회사",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
-        "model_name": "UT-55L",
-        "country": "중국",
-        "cert_date": "2018-04-19",
-        "cert_status": "적합인증",
-        "cert_no": "R-CMI-tm0-UT-55L"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "물체감지센서용 무선기기(24GHz 주파수대를 사용하는 기기)",
-        "model_name": "iRADAR-100",
-        "country": "한국",
-        "cert_date": "2018-05-17",
-        "cert_status": "적합인증",
-        "cert_no": "R-CRS-TWI-iRADAR-100"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "inavi sports M1",
-        "country": "한국",
-        "cert_date": "2018-06-28",
-        "cert_status": "적합인증",
-        "cert_no": "R-CMM-TWI-IBRF-TG018F1"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
-        "model_name": "LML-U311",
-        "country": "한국",
-        "cert_date": "2018-11-14",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-TWI-LML-U311"
-      },
-      {
-        "company_name": "팅크웨어모바일 주식회사",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
-        "model_name": "ITP-XD80L",
-        "country": "중국",
-        "cert_date": "2017-02-15",
-        "cert_status": "적합인증",
-        "cert_no": "MSIP-CMI-tm0-ITPXD80L"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "ITP-XD11P",
-        "country": "중국",
-        "cert_date": "2017-06-13",
-        "cert_status": "적합인증",
-        "cert_no": "MSIP-CMI-TWI-XD11P"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "BAB-110",
-        "country": "한국",
-        "cert_date": "2017-08-24",
-        "cert_status": "적합인증",
-        "cert_no": "MSIP-CMS-TWI-BAB-110"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신장치)",
-        "model_name": "LML-U200",
-        "country": "한국",
-        "cert_date": "2017-10-19",
-        "cert_status": "적합인증",
-        "cert_no": "MSIP-CRS-TWI-LML-U200"
-      },
-      {
-        "company_name": "팅크웨어모바일 주식회사",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "WM-BR815032GB",
-        "country": "중국",
-        "cert_date": "2016-01-26",
-        "cert_status": "적합인증",
-        "cert_no": "MSIP-CMI-tm0-WMBR8150"
-      },
-      {
-        "company_name": "팅크웨어(주)",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "ITP-XD97W",
-        "country": "중국",
-        "cert_date": "2016-03-07",
-        "cert_status": "적합인증",
-        "cert_no": "MSIP-CMI-TWI-ITPXD97W"
+        "cert_no": "R-R-TWI-IAOB-T2481"
       }
     ],
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 커넥티드 차량 빅데이터 분석기술 및 비즈니스 서비스 개발 등 총 6건",
+      "detail": "NTIS에서 [팅크웨어] 검색어로 조회한 결과, AI 관련 과제 6건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "커넥티드 차량 빅데이터 분석기술 및 비즈니스 서비스 개발",
+          "project_number": "1415155866",
+          "lead_company": "팅크웨어",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "커넥티드 차량 빅데이터 분석기술 및 비즈니스 서비스 개발",
+          "project_number": "1415166955",
+          "lead_company": "팅크웨어",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "커넥티드 차량 빅데이터 분석기술 및 비즈니스 서비스 개발",
+          "project_number": "1415158471",
+          "lead_company": "팅크웨어",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "커넥티드 차량 빅데이터 분석기술 및 비즈니스 서비스 개발",
+          "project_number": "1415162925",
+          "lead_company": "팅크웨어",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "차량 ICT 기반 긴급구난체계(e-Call) 표준 및 차량 단말기 개발",
+          "project_number": "1711043634",
+          "lead_company": "팅크웨어",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI 기반 운전자 상태 모니터링 및 차량 서비스 통합 시스템 상용화 수준 개발",
+          "project_number": "2410019197",
+          "lead_company": "팅크웨어",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -372,14 +592,19 @@
       "detail": "DART 분석 결과 [팅크웨어] 실적 총 1건 확인."
     },
     "target_company_name": "팅크웨어, Tinkingwear",
-    "model_param": "이모델번호",
+    "model_param": "",
     "ocr_result": {
-      "extracted_text": "팅크웨어 아이나비 권싫4 2채널 (64GB) LOTTE ON 555,840원   무료배승 최저가 구매하기 가격비교 15 상품 상세정보 의견리뷰 연관상품 카메라 수(재널) 2채널 전방 UHD 4K(3840x2160) 전방 프레임 3Ofps 저장마제 Micro-SD 저장용량 64GB 센서 Sony Exmor R STARVIS 2 후밤 대상도 QHD(2560x1440) 후방 프레인 30fps 안전관련기능 자선이발경보(LDW Al ADAS 전방주돌경고(FCW 앞자출발알림(FVSA) 저속전방추돌경고나 CWS) 안전운전도우미 전원관련기능 주차저전력모드 녹화방식 주차녹화 녹화관련기능 타입컵스 자동포멋 야간보점 울드라나이트비전 GPS GPS내잠 스마트론 연동 Wi-Fi 연결 커넥티드 연결 [@ 인종 적합성평가인승 상세설명 판매 사이트 문의 인증번호 확인",
+      "extracted_text": "텅크웨어 아이나비 권64 2채널 (64GB) LOTTE ON 564,520원   무료배송  최저가 구매하기 가격비교 15 상품 상세정보 의견리뷰 연관상품 카메라 수(채널) 2채널 전방 UHD 4K(3840*2160) 전방 프레임 30fps 저장머체 Micro-SD 저장용량 64GB 센서 Sony Exmor R STARVIS 2 후방 해상도 QHD(2560*1440) 후방 프레임 3Ofps 안전관련기능 Al ADAS 차선이탈경보LW 전방주돌경고FCW 앞차출발알림(FVSA) 저속전방추돌경고u CWS) 안전운전도우미 전원관련기능 주차저전력모드 녹화방식 주차녹화 녹화관련기능 타입램스 자동포멋 야간보정 울드라나이트비전 GPS GPS내장 Close 스마트혼 연동 We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\팅크웨어 아이나비 퀀텀4 2채널 (64GB)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/팅크웨어 아이나비 퀀텀4 2채널 (64GB)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/팅크웨어 아이나비 퀀텀4 2채널 (64GB)/detail_scan.png",
+        "image_size": 95543,
+        "image_sha256": "f920e00a368e0cb94de2e4316bb9bbcb6e814afbd256130b7a3e28580ed1f2b4"
+      }
     }
   }
 }

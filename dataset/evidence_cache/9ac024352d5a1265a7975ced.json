@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=108416801",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "필립스 에브니아 27M2N3501PF QHD 260 FAST IPS 지싱크 Ai HDR 게이밍 무결점",
       "name": "필립스 에브니아 27M2N3501PF QHD 260 FAST IPS 지싱크 Ai HDR 게이밍 무결점",
       "description": "",
-      "ocr_text": "필립스 에브니야 27M2N3501PF QHD 260 FAST IPS 지상크 Ai HDR 게이망 무결점 공식필립스모니터 249,000원 (249,000+무료배송) 최저가 구매하기 가격비교 62 상품 상세정보 의견리뷰 43 뉴스커유니티 연관상품 해삼도 QHD(2560 1440) 쇠대 주사물 26OHz 패널 종류 Fast IPS 화면 비율 라이드(16.9) 파닐 형대 평면 시야각 광시야각 퍽설피치 0.2331mm 응답 속도 O.3ms(MPRT) 화면 밝기 35Onits 명만비 1000.1 통적명압비 무한(이 7 HDR 지원 HDR HDR 인종 HDR1O 시력보호 기능 끌리커 프리 불루라이트 자단 눈부십 방지 논글레어 화면 기능 크로마서브다플림 부가 기능 테드문 아웃 스랜드 기능 빌드(상하) 규격 VESA봄 100 1oOmm 크기(가로x세로x깊 614x462x215mnm 무게 4.25kg 소비전력 37W",
+      "ocr_text": "필립스 에브니야 27M2N3501PF QHD 260 FAST IPS 지싱크 Ai HDR 게이망 무결점 공식필립스모니터 259,000원 (259,000+무료버송) 최저가 구매하기 가격비교 63 상품 상세정보 의견리뷰 46 뉴스커유니티 연관상품 해상도 QHD(2560 1440) 최대 주사물 260Hz 패널 종류 FastIPS 화면 비율 와이드(169) 패널 형태 평면 시야각 광시아각 퍽실피치 0.2331mm 응답 속도 O.3ms(MPRT) 화면 밝기 35Onits 명양비 1000.1 동적명임비   무한(이:1 HDR 지원 HDR HDR 인종 HDR1O 시력보호 기능 플리커 프리 불루라이트 차단 눈부심 방지 논글레어 화면 기능 크로마서브심플림 부가 기능 헤드끈 아옷 스랜드 기능 털트상하) Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "모니터": "지원",
         "68.5cm(27인치)": "지원",
@@ -35,11 +35,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=108416801",
       "manufacturer": "필립스, Philipps",
-      "model_name": "27M2N3501PF"
+      "model_name": "G-SYNC"
     },
     "norm_info": {
       "company_name": "필립스, Philipps",
-      "model_name": "27M2N3501PF",
+      "model_name": "G-SYNC",
       "product_name": "필립스 에브니아 27M2N3501PF QHD 260 FAST IPS 지싱크 Ai HDR 게이밍 무결점"
     },
     "db_results": [
@@ -592,7 +592,7 @@
       },
       {
         "source_record_id": "1020257011867",
-        "일련번호": "3",
+        "일련번호": "2",
         "출원번호": "1020257011867",
         "발명의명칭(한글)": "다중 채널 오디오 신호 및 다중 채널 오디오 신호를 나타내는 데이터 신호의 생성",
         "출원일자": "2023-09-06",
@@ -610,7 +610,7 @@
       },
       {
         "source_record_id": "1020257011862",
-        "일련번호": "2",
+        "일련번호": "3",
         "출원번호": "1020257011862",
         "발명의명칭(한글)": "다중 채널 오디오 신호의 생성",
         "출원일자": "2023-09-05",
@@ -666,14 +666,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "필립스, Philipps",
-    "model_param": "27M2N3501PF",
+    "model_param": "G-SYNC",
     "ocr_result": {
-      "extracted_text": "필립스 에브니야 27M2N3501PF QHD 260 FAST IPS 지상크 Ai HDR 게이망 무결점 공식필립스모니터 249,000원 (249,000+무료배송) 최저가 구매하기 가격비교 62 상품 상세정보 의견리뷰 43 뉴스커유니티 연관상품 해삼도 QHD(2560 1440) 쇠대 주사물 26OHz 패널 종류 Fast IPS 화면 비율 라이드(16.9) 파닐 형대 평면 시야각 광시야각 퍽설피치 0.2331mm 응답 속도 O.3ms(MPRT) 화면 밝기 35Onits 명만비 1000.1 통적명압비 무한(이 7 HDR 지원 HDR HDR 인종 HDR1O 시력보호 기능 끌리커 프리 불루라이트 자단 눈부십 방지 논글레어 화면 기능 크로마서브다플림 부가 기능 테드문 아웃 스랜드 기능 빌드(상하) 규격 VESA봄 100 1oOmm 크기(가로x세로x깊 614x462x215mnm 무게 4.25kg 소비전력 37W",
+      "extracted_text": "필립스 에브니야 27M2N3501PF QHD 260 FAST IPS 지싱크 Ai HDR 게이망 무결점 공식필립스모니터 259,000원 (259,000+무료버송) 최저가 구매하기 가격비교 63 상품 상세정보 의견리뷰 46 뉴스커유니티 연관상품 해상도 QHD(2560 1440) 최대 주사물 260Hz 패널 종류 FastIPS 화면 비율 와이드(169) 패널 형태 평면 시야각 광시아각 퍽실피치 0.2331mm 응답 속도 O.3ms(MPRT) 화면 밝기 35Onits 명양비 1000.1 동적명임비   무한(이:1 HDR 지원 HDR HDR 인종 HDR1O 시력보호 기능 플리커 프리 불루라이트 차단 눈부심 방지 논글레어 화면 기능 크로마서브심플림 부가 기능 헤드끈 아옷 스랜드 기능 털트상하) Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\필립스 에브니아 27M2N3501PF QHD 260 FAST IPS 지싱크 Ai HDR 게이밍 무결점\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/필립스 에브니아 27M2N3501PF QHD 260 FAST IPS 지싱크 Ai HDR 게이밍 무결점/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/필립스 에브니아 27M2N3501PF QHD 260 FAST IPS 지싱크 Ai HDR 게이밍 무결점/detail_scan.png",
+        "image_size": 92798,
+        "image_sha256": "8320588c59a3abe925b3f373689d7d6baf46ae237f64ef07a94a125dd5787931"
+      }
     }
   }
 }

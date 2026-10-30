@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=123621548",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "ASUS V600 AiO VM670KA-675W (16GB, M.2 512GB)",
       "name": "ASUS V600 AiO VM670KA-675W (16GB, M.2 512GB)",
       "description": "",
-      "ocr_text": "ASUS V6OO Aio VM67OKA-675W (16GB, M.2 512GB) HIMART 1,899,000원  무료배송 최저가 구매하기 가격비교 32 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 운영체제 원도우17 파뭐 줄력 120W CPU 제조사 AMD CPU 시리즈 라이젠 300시리즈 CPU 종류 라이젠시 5 CPU 코드명 크라권 포인트 군이 개수 귀드(스) 굳이 NPU 종류 AMD 라이젠 Al NPU TOPS 50TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M2 SSD 용량 512GB 그래픽 특징 그래픽 제조사 AMD 그래픽 종류 내장 그래픽 디스플레이 화면크기 68cm(27인치) 해상도 1920x1080 디스플레이 특징 눈부신방지 광시야각 사운드 출력 사운드 지원 스피커 너장형 네트위크 802.11ax(Wi-Fi 6) 무선 1Gbps 유선 불무튼스",
+      "ocr_text": "ASUS V6OO Aio VM67OKA-675W (16GB, M.2 512GB) ASUS 브랜드스토어 1,899,000원   무료배송 최저가 구매하기 가격비교 34 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 운영제제 웬도우1 파위 졸력 12oW CPU 제조사 AMD CPU 시리즈 라이젠 300시리즈 CPU 종류 라이젠시 5 CPU 코드명 크라권 포인트 코어 개수 귀드시코어 NPU 종류 AMD 라이젠 AIl NPU TOPS 5oTOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형태 M2 SSD 용량 512GB 그래픽 특징 그래픽 제조사 AMD 그래픽 종류 내장 그래픽 디스플레이 화면크기 68cm(27인치) 해상도 1920*1080 디스플레이 특징 눈부심방지 광시야각 사운드 출력 사운드 지원 스피커 내장형 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "330": "지원",
         "820M": "지원",
@@ -44,11 +44,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=123621548",
       "manufacturer": "ASUS, Asus",
-      "model_name": "V600"
+      "model_name": "VM670KA-675W"
     },
     "norm_info": {
       "company_name": "ASUS, Asus",
-      "model_name": "V600",
+      "model_name": "VM670KA-675W",
       "product_name": "ASUS V600 AiO VM670KA-675W (16GB, M.2 512GB)"
     },
     "db_results": [
@@ -510,18 +510,51 @@
     "iitp_result": null,
     "patent_items_df": [
       {
-        "title": "AI 특허 내역 없음 None"
+        "source_record_id": "1020250142585",
+        "일련번호": "1",
+        "출원번호": "1020250142585",
+        "발명의명칭(한글)": "무선 통신 시스템에서 AIML 보조 이동성에 대한 방법 및 장치",
+        "출원일자": "2025-09-30",
+        "출원인": "아서스 테크놀러지 라이센싱 아이엔씨.",
+        "등록상태": "공개",
+        "초록": "무선 통신 시스템에서 인공 지능/기계 학습(artificial intelligence/machine learning; ai/ml) 보조 이동성에 대한 방법들, 시스템들, 및 장치들이 제공되며 여기서 사용자 단말(user equipment; ue)의 방법은, 측정 보고를 트리거하는 단계, 및 셀에 대해 다수의 시간 인스턴스들에서, 측정 보고에 다수의 측정 결과들을 포함시키는 단계 - 다수의 시간 인스턴스들은: (i) 네트워크(network; nw)에 의해 구성된 시간 인스턴스들; 및 (ii) nw에 의해 구성된 시간 윈도우 내의 시간 인스턴스들 중 하나 이상을 포함함 - 를 포함한다.",
+        "IPC": "H04W 36/00|H04W 36/30",
+        "CPC": "",
+        "relevance_type": "general_ai",
+        "match_confidence": 0.45,
+        "search_alias": "ASUS",
+        "search_type": "AI 특허 [일반]",
+        "search_query": "AP=[ASUS]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
+        "status": "verified"
+      },
+      {
+        "source_record_id": "1020250099220",
+        "일련번호": "2",
+        "출원번호": "1020250099220",
+        "발명의명칭(한글)": "무선 통신 시스템에서 AIML 보조 이동성을 위한 방법 및 장치",
+        "출원일자": "2025-07-22",
+        "출원인": "아서스 테크놀러지 라이센싱 아이엔씨.",
+        "등록상태": "공개",
+        "초록": "무선 통신 시스템에서 인공 지능/기계 학습(artificial intelligence/machine learning; ai/ml) 보조 이동성을 위한 방법들, 시스템들, 및 장치들이 제공되며, 여기서 사용자 단말(user equipment; ue)에 대한 방법은, 측정 예측을 위한 ai/ml 기능성의 제1 구성을 수신하는 단계, 및 적어도 측정 예측으로부터의 셀의 품질의 평가에 기초하여 적어도 하나의 액션을 수행하는 단계 - 적어도 하나의 액션은 평가의 결과를 네트워크로 보고하는 것을 포함함 - 를 포함한다.",
+        "IPC": "H04W 36/00|H04W 36/30|G06N 20/00",
+        "CPC": "",
+        "relevance_type": "general_ai",
+        "match_confidence": 0.45,
+        "search_alias": "ASUS",
+        "search_type": "AI 특허 [일반]",
+        "search_query": "AP=[ASUS]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
+        "status": "verified"
       }
     ],
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "ASUS, Asus",
-    "model_param": "V600",
+    "model_param": "VM670KA-675W",
     "ocr_result": {
-      "extracted_text": "ASUS V6OO Aio VM67OKA-675W (16GB, M.2 512GB) HIMART 1,899,000원  무료배송 최저가 구매하기 가격비교 32 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 운영체제 원도우17 파뭐 줄력 120W CPU 제조사 AMD CPU 시리즈 라이젠 300시리즈 CPU 종류 라이젠시 5 CPU 코드명 크라권 포인트 군이 개수 귀드(스) 굳이 NPU 종류 AMD 라이젠 Al NPU TOPS 50TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M2 SSD 용량 512GB 그래픽 특징 그래픽 제조사 AMD 그래픽 종류 내장 그래픽 디스플레이 화면크기 68cm(27인치) 해상도 1920x1080 디스플레이 특징 눈부신방지 광시야각 사운드 출력 사운드 지원 스피커 너장형 네트위크 802.11ax(Wi-Fi 6) 무선 1Gbps 유선 불무튼스",
+      "extracted_text": "ASUS V6OO Aio VM67OKA-675W (16GB, M.2 512GB) ASUS 브랜드스토어 1,899,000원   무료배송 최저가 구매하기 가격비교 34 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 운영제제 웬도우1 파위 졸력 12oW CPU 제조사 AMD CPU 시리즈 라이젠 300시리즈 CPU 종류 라이젠시 5 CPU 코드명 크라권 포인트 코어 개수 귀드시코어 NPU 종류 AMD 라이젠 AIl NPU TOPS 5oTOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형태 M2 SSD 용량 512GB 그래픽 특징 그래픽 제조사 AMD 그래픽 종류 내장 그래픽 디스플레이 화면크기 68cm(27인치) 해상도 1920*1080 디스플레이 특징 눈부심방지 광시야각 사운드 출력 사운드 지원 스피커 내장형 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\ASUS V600 AiO VM670KA-675W (16GB, M.2 512GB)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/ASUS V600 AiO VM670KA-675W (16GB, M.2 512GB)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }

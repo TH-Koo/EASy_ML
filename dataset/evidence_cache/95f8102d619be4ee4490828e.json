@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=78716027",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "ANKER Soundcore P30i A3959 (정품)",
       "name": "ANKER Soundcore P30i A3959 (정품)",
       "description": "",
-      "ocr_text": "ANKER Soundcore P3Oi A3959 (정품) 오늘의집 32,900원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.4 노이즈권트록 액티브노이즈랜슬림 (ANC) 적응형ANC 주변소리듬기 바람소리감소 [Al 기능] [Al 기능] Al 기능 Al 노이즈권쓸림다이 사운드채널 스데레오 드라이버크기 유넷 1Omm 드라이버 다이나막 코덕 SBC AAC 무선언결거리 iOm [배티리] [배터리] 1회증전시 7시간(ANC ON) 10시간(ANC OFF) 쇠대재생 30시간(ANC ON) 45시간(ANC OFF)",
+      "ocr_text": "ANKER Soundcore P3Oi A3959 (정품) 언커 공식스토어 32,900원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 용도 음악+통화용 이어프타입 커형 외형 코드리스 무선연결 불루투스 V5.4 노이즈권트록 액티브노이즈랜슬림 (ANC) 적응형ANC 주변소리듬기 바람소리감소 [AI 기능] [AI 기능] AI 기능 Al 노이즈랜되림마이 사운드채널 스데레오 드라이버크기 유털iOmm 드라이버 다이나w Close 구데 We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "커널형": "지원",
         "코드리스": "지원",
@@ -493,7 +493,28 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: Meta Federated Learning 기반 Satellite-Air-Ground 통합 네트워킹 시스템 핵심 구조 개발 등 총 2건",
+      "detail": "NTIS에서 [ANKER] 검색어로 조회한 결과, AI 관련 과제 2건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "Meta Federated Learning 기반 Satellite-Air-Ground 통합 네트워킹 시스템 핵심 구조 개발",
+          "project_number": "2710000559",
+          "lead_company": "ANKER",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "Meta Federated Learning 기반 Satellite-Air-Ground 통합 네트워킹 시스템 핵심 구조 개발",
+          "project_number": "1711194179",
+          "lead_company": "ANKER",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -505,10 +526,10 @@
     "target_company_name": "ANKER, Anker",
     "model_param": "A3959",
     "ocr_result": {
-      "extracted_text": "ANKER Soundcore P3Oi A3959 (정품) 오늘의집 32,900원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.4 노이즈권트록 액티브노이즈랜슬림 (ANC) 적응형ANC 주변소리듬기 바람소리감소 [Al 기능] [Al 기능] Al 기능 Al 노이즈권쓸림다이 사운드채널 스데레오 드라이버크기 유넷 1Omm 드라이버 다이나막 코덕 SBC AAC 무선언결거리 iOm [배티리] [배터리] 1회증전시 7시간(ANC ON) 10시간(ANC OFF) 쇠대재생 30시간(ANC ON) 45시간(ANC OFF)",
+      "extracted_text": "ANKER Soundcore P3Oi A3959 (정품) 언커 공식스토어 32,900원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 용도 음악+통화용 이어프타입 커형 외형 코드리스 무선연결 불루투스 V5.4 노이즈권트록 액티브노이즈랜슬림 (ANC) 적응형ANC 주변소리듬기 바람소리감소 [AI 기능] [AI 기능] AI 기능 Al 노이즈랜되림마이 사운드채널 스데레오 드라이버크기 유털iOmm 드라이버 다이나w Close 구데 We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\ANKER Soundcore P30i A3959 (정품)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/ANKER Soundcore P30i A3959 (정품)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }
