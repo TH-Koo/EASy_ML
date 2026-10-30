@@ -115,6 +115,13 @@ def resolve_real_company_name(brand_name, product_name=""):
 
 def resolve_model_name(product_title, specs_text=""):
     """모델번호 추출도 로컬 LLM으로 안전하게 수행합니다."""
+    cache_key = f"model_extract_{product_title}" 
+    cache = load_cache()
+    
+    if cache_key in cache:
+        print(f"   🗄️ [캐시 적중] 모델명 추출 재사용: '{product_title}' -> '{cache[cache_key]}'")
+        return cache[cache_key]
+
     prompt = (
         f"제품명 '{product_title}'에서 전파인증 검색에 필요한 공식 모델번호만 출력해.\n"
         f"규칙: 부가 설명이나 인사말 없이 모델명 딱 하나만 단답형으로 출력해.\n"
@@ -122,11 +129,15 @@ def resolve_model_name(product_title, specs_text=""):
     )
     result = _ask_local_llm(prompt)
     
-    # 🚀 [안전망 작동] 모델명 추출 시에도 헛소리를 하면 빈 값을 반환하여 
-    # 파이프라인 정규화 모듈이 뽑아둔 모델명을 쓰도록 유도
     if _is_hallucinating(result):
         print(f"   ⚠️ [LLM 헛소리 필터링 작동] 모델명 추출 실패. 기본 정규화 로직으로 대체합니다.")
         return ""
         
     clean_result = result.replace('\n', '').replace('**', '').replace('*', '').strip()
+    
+    if clean_result:
+        cache[cache_key] = clean_result
+        save_cache(cache)
+        print(f"   👉 결과 저장: [{clean_result}]")
+        
     return clean_result
