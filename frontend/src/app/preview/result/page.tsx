@@ -152,7 +152,9 @@ const SAMPLE: AnalysisResult = {
   },
   scores: {
     overall: ACCS,
-    overall_label: "위험 구간",
+    // 엔진 기준(fides_config: suspected 21.8 · normal 35)으로 31.4점은 '워싱 의심' = 주의 구간이다.
+    // 예전 값 '위험 구간'은 점수와 맞지 않아 막대에서 핀과 칠한 구간이 어긋나 보였다.
+    overall_label: "주의 구간",
     text_credibility: AXES[0].value,
     verification_credibility: AXES[1].value,
     relational_credibility: AXES[2].value,

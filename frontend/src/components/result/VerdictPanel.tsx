@@ -148,8 +148,9 @@ function ScoreBar({ score, level }: { score: number; level: number }) {
         ))}
         <span
           aria-hidden
-          className="absolute -top-1.5 -bottom-1.5 w-1 -translate-x-1/2 rounded-sm bg-[var(--claim-ok)] shadow-[0_0_0_3px_var(--color-surface)]"
-          style={{ left: `${s}%` }}
+          className="absolute -top-1.5 -bottom-1.5 w-1 -translate-x-1/2 rounded-sm shadow-[0_0_0_3px_var(--color-surface)]"
+          // 핀은 지금 판정 색. 같은 색 구간 위에서도 흰 테두리로 떠 보인다.
+          style={{ left: `${s}%`, background: VERDICT_COLOR[level] }}
         >
           <b className="text-fg absolute bottom-[calc(100%+6px)] left-1/2 -translate-x-1/2 text-sm font-extrabold whitespace-nowrap tabular-nums">
             {s}점
