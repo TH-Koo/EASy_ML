@@ -31,6 +31,7 @@ from logic.api import (
     verify_iitp,
 )
 
+from fides_scoring import display_score
 from fides_integration import (
     infer_product_type,
     load_weight_predictor,
@@ -815,7 +816,9 @@ def run_full_pipeline(url: str):
     print(f"[채널 가중치] HES {w.get('hes', 0):.3f} / TES {w.get('tes', 0):.3f} / CES {w.get('ces', 0):.3f}")
     print(f"└ 방식: {weighting['method']} | 모델 버전: {weighting['model_version'] or '없음(규칙 기반)'}")
     print("-" * 85)
-    print(f"⭐ 최종 AI 주장 신뢰도 (ACCS) : {analysis_result.accs:05.2f} / 100 점")
+    # 화면과 같은 표시 점수(v2)를 앞에 보여 준다. 판정·저장은 원점수 ACCS 로 한다.
+    print(f"⭐ 최종 AI 주장 신뢰도 : {display_score(analysis_result.accs):05.2f} / 100 점"
+          f"  (원점수 ACCS {analysis_result.accs:05.2f})")
 
     verdict_icon = "🟢" if "신뢰" in analysis_result.verdict else "🟡" if "검토" in analysis_result.verdict else "🔴"
     print(f"{verdict_icon} 최종 판정 : {analysis_result.verdict} (위험도: {analysis_result.risk_level})")
