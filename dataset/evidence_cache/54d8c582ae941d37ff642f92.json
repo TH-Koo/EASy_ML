@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=92041769",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "에어메이드 스마트타워 엑스 AMC-5501A",
       "name": "에어메이드 스마트타워 엑스 AMC-5501A",
       "description": "",
-      "ocr_text": "게어메이드 스마트타위 액스 AMC-5501A HIMART 229,000원 무료배승 최저가 구매하기 가격비교 54 상품 상세정보 의견리뷰 170 연관상품 집입력(W) 570W 사용시간 53분(최대) 소비전력 570W 스테이선 먼지비움 랜드거치 액세서리오배터리거 청소기능 시청소 먼지감지센서 LED라이트 UV실군 모티 BLDC모티 필터 헤파필터 테파필터등금 H13금 필터단계 5단계어과 배터리 충전시간 5시간 배터리 분리험 (그개) 배티리용량 3,00OmAh 메인터러쉬 일반 추가e러쉬 침구널러쉬 슬널러쉬 슬형부러쉬 틈사 널러쉬 편의기능 디스플레이표시 배터리잔량표시",
+      "ocr_text": "게어메이드 스마트타위 액스 AMC-5501A HIMART 229,000원 무료배승  최저가 구매하기 가격비교 19 상품 상세정보 의견리뷰 173 연관상품 밤식 집입전용 필터단계 5단계여과 모터 BLDC모터 집입력 570W 배터리 사용시간 53분(최대) 충전시간 5시간 필터 혜파필터 스테이선 먼지비움 중전 액세서리요배터리거 랜드거지 청소기능 시청소 먼지감지센서 LED라이트 UV살군 소비전력 570W 배터리 배터리 분리형개) 출시연도 2025년형 배터리 Close We value your personal information Detailed (Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy; outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "핸디스틱청소기": "지원",
         "무선": "지원",
@@ -131,7 +131,35 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: AI 홈 플랫폼 및 서비스 커뮤니티 솔루션 개발 등 총 3건",
+      "detail": "NTIS에서 [에어메이드] 검색어로 조회한 결과, AI 관련 과제 3건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "AI 홈 플랫폼 및 서비스 커뮤니티 솔루션 개발",
+          "project_number": "1415182763",
+          "lead_company": "에어메이드",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI 홈 플랫폼 및 서비스 커뮤니티 솔루션 개발",
+          "project_number": "1415176290",
+          "lead_company": "에어메이드",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI 홈 플랫폼 및 서비스 커뮤니티 솔루션 개발",
+          "project_number": "1415189587",
+          "lead_company": "에어메이드",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -143,10 +171,10 @@
     "target_company_name": "에어메이드, AirMed",
     "model_param": "AMC-5501A",
     "ocr_result": {
-      "extracted_text": "게어메이드 스마트타위 액스 AMC-5501A HIMART 229,000원 무료배승 최저가 구매하기 가격비교 54 상품 상세정보 의견리뷰 170 연관상품 집입력(W) 570W 사용시간 53분(최대) 소비전력 570W 스테이선 먼지비움 랜드거치 액세서리오배터리거 청소기능 시청소 먼지감지센서 LED라이트 UV실군 모티 BLDC모티 필터 헤파필터 테파필터등금 H13금 필터단계 5단계어과 배터리 충전시간 5시간 배터리 분리험 (그개) 배티리용량 3,00OmAh 메인터러쉬 일반 추가e러쉬 침구널러쉬 슬널러쉬 슬형부러쉬 틈사 널러쉬 편의기능 디스플레이표시 배터리잔량표시",
+      "extracted_text": "게어메이드 스마트타위 액스 AMC-5501A HIMART 229,000원 무료배승  최저가 구매하기 가격비교 19 상품 상세정보 의견리뷰 173 연관상품 밤식 집입전용 필터단계 5단계여과 모터 BLDC모터 집입력 570W 배터리 사용시간 53분(최대) 충전시간 5시간 필터 혜파필터 스테이선 먼지비움 중전 액세서리요배터리거 랜드거지 청소기능 시청소 먼지감지센서 LED라이트 UV살군 소비전력 570W 배터리 배터리 분리형개) 출시연도 2025년형 배터리 Close We value your personal information Detailed (Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy; outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\에어메이드 스마트타워 엑스 AMC-5501A\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/에어메이드 스마트타워 엑스 AMC-5501A/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }

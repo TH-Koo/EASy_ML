@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=93071342",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "다이슨 V16 피스톤 애니멀 DS60",
       "name": "다이슨 V16 피스톤 애니멀 DS60",
       "description": "",
-      "ocr_text": "다이손 V16 피스톤 애니멀 DS6O Gmarket   1,172,080원 무료내송 최저가 구매하기 가격비교 91 상품 상세정보 의견리뷰 13 뉴스커유니티 연관상품 집입력 315W 사용시간 1시간기0분 (쇠대) 스테이선 충전 스템드거지 액세서리오배터리거 청소기능 시청소 먼지감지선서 필터 (파필터 필터단계 5단계어과 배터리 충전시간 4시간30분 배터리 분리형 (1개) 메인터러쉬 레이저 추가브러쉬 슬널러쉬 틈새부러쉬 틈새(내장형) 널리- 패브렉브러쉬 편의기능 스마드근제어 디스플레이표시 배티리잔랑표시 색상 불택 코피 무게 [@ 인종 적합성평가인층 상세설명 판매 사이드 분의 | 인종번호 확인  무 -녀 하다b I-r 싸 {그  5kg",
+      "ocr_text": "다이손 V16 피스톤 애니멀 DS6o AUCTION 1,178,880원  무료배송 최저가 구매하기 가격비교 93 상품 상세정보 의견리뷰 13 뉴스커유니티 연관상품 밤식 집입전용 필터단계 5단계여과 집입력 315W 배터리 사용시간 1시간기이분(최대) 충전시간 4시간30분 필터 혜파필터 스테이선 충전 스랜드거지 액세서리8내터리거 청소기능 시청소 먼지감지센서 배터리 배터리 분리형개) 출시연도 2025년형 메인터러쉬 레이저 추가브러쉬 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "핸디스틱청소기": "지원",
         "무선": "지원",
@@ -281,11 +281,47 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 기계 학습을 활용한 3-큐빗 제어 게이트 설계 연구 등 총 2건",
+      "detail": "NTIS에서 [DYSON] 검색어로 조회한 결과, AI 관련 과제 2건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "기계 학습을 활용한 3-큐빗 제어 게이트 설계 연구",
+          "project_number": "1711202876",
+          "lead_company": "DYSON",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "튜링테스트기반 AI가전 참조모델 및 서비스 상용화 기술개발사업 기획연구",
+          "project_number": "1415176178",
+          "lead_company": "다이슨",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
-        "title": "AI 특허 내역 없음 None"
+        "source_record_id": "1020237039192",
+        "일련번호": "1",
+        "출원번호": "1020237039192",
+        "발명의명칭(한글)": "전해질 조성물",
+        "출원일자": "2022-03-22",
+        "출원인": "다이슨 테크놀러지 리미티드",
+        "등록상태": "거절",
+        "초록": "리튬 이온 배터리용 전해질 조성물이 개시된다. 상기 조성물은: (a) 5 내지 35 wt%의 리튬 염; (b) 2 내지 10 wt%의 첨가제; 및 (c) 55 내지 93 wt%의 용매를 포함하며, 리튬 염은: (ai) 리튬 2-트리플루오로메틸-4,5-디시아노이미다졸라이드, 리튬 디플루오로(옥살라토)보레이트, 리튬 비스(옥살라토)보레이트 및 리튬 테트라플루오로보레이트로부터 선택되는 염; 및 (aⅱ) 선택적으로, 리튬 비스(트리플루오로메탄설포닐)이미드 및/또는 리튬 비스(플루오로설포닐)이미드로부터 선택되는 공염을 포함하고, 염 대 공염의 몰 비는 상기 조성물이 리튬 디플루오로(옥살라토)보레이트 또는 리튬 테트라플루오로보레이트와 함께 리튬 비스(플루오로설포닐)이미드를 포함하지 않는다는 조건으로, 100:0 내지 5:95이며, 첨가제는 비닐렌 카보네이트 및 선택적으로 플루오로에틸렌 카보네이트를 포함하고, 용매는 (ci) 에틸렌 카보네이트 및 10 내지 30 mol% 프로필렌 카보네이트, 또는 (cⅱ) γ-부티로락톤 및 선택적으로 에틸렌 카보네이트를 포함한다.",
+        "IPC": "H01M 10/0568|H01M 10/0567|H01M 10/0569|H01M 10/0525",
+        "CPC": "",
+        "relevance_type": "general_ai",
+        "match_confidence": 0.45,
+        "search_alias": "다이슨",
+        "search_type": "AI 특허 [일반]",
+        "search_query": "AP=[다이슨]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
+        "status": "verified"
       }
     ],
     "cert_results": [],
@@ -293,10 +329,10 @@
     "target_company_name": "다이슨, Dyson",
     "model_param": "DS60",
     "ocr_result": {
-      "extracted_text": "다이손 V16 피스톤 애니멀 DS6O Gmarket   1,172,080원 무료내송 최저가 구매하기 가격비교 91 상품 상세정보 의견리뷰 13 뉴스커유니티 연관상품 집입력 315W 사용시간 1시간기0분 (쇠대) 스테이선 충전 스템드거지 액세서리오배터리거 청소기능 시청소 먼지감지선서 필터 (파필터 필터단계 5단계어과 배터리 충전시간 4시간30분 배터리 분리형 (1개) 메인터러쉬 레이저 추가브러쉬 슬널러쉬 틈새부러쉬 틈새(내장형) 널리- 패브렉브러쉬 편의기능 스마드근제어 디스플레이표시 배티리잔랑표시 색상 불택 코피 무게 [@ 인종 적합성평가인층 상세설명 판매 사이드 분의 | 인종번호 확인  무 -녀 하다b I-r 싸 {그  5kg",
+      "extracted_text": "다이손 V16 피스톤 애니멀 DS6o AUCTION 1,178,880원  무료배송 최저가 구매하기 가격비교 93 상품 상세정보 의견리뷰 13 뉴스커유니티 연관상품 밤식 집입전용 필터단계 5단계여과 집입력 315W 배터리 사용시간 1시간기이분(최대) 충전시간 4시간30분 필터 혜파필터 스테이선 충전 스랜드거지 액세서리8내터리거 청소기능 시청소 먼지감지센서 배터리 배터리 분리형개) 출시연도 2025년형 메인터러쉬 레이저 추가브러쉬 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\다이슨 V16 피스톤 애니멀 DS60\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/다이슨 V16 피스톤 애니멀 DS60/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }

@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=69468491",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "JBL TOUR PRO 3 (정품)",
       "name": "JBL TOUR PRO 3 (정품)",
       "description": "",
-      "ocr_text": "JBL TOUR PRO 3 (정품) 심성공식파트너 씨만에이치 289,000원 무료래승 최저가 구매하기 가격비교 86 상품 상세정보 의견리뷰 390 뉴스커유니티 연관상품 MAKMAN UBL 누미 프로 } 국내 타  회조 되미 테미스 종미료 UBL TOURPRO3 기미 사려적완전체TWS 제조회사 JBL (제조사 웬사이트 바로가기) 등록년원 2024년 10밑 분류 무선이어논 이어프타입 커널형 외형 크드리스 용도 음악+통화용 무선연결 불무투스 V5.3 노이즈런트론 댁티브노이즈랜슬림 (ANC) 적응형ANC 주버스리드기 대화이지",
+      "ocr_text": "JBL TOUR PRO 3 (정품) 삼성파트너 테이원에미브이 259,000원 무료배송  최저가 구매하기 가격비교 87 상품 상세정보 의견리뷰 389 뉴스커유니티 연관상품 ' DaL 무미 프로} ~_덕 | 회조 입 테어스 농0표 JBL TOURPRO3 가 사려적적완전체 TWS 제조회사 JBL (제조사 웬사이트 바로가기) 등록년월 2024년 10월 분류- 무선이어프 용도 음악+통화용 이어프타입 커널형 외형 코드리스 무선연결 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "커널형": "지원",
         "코드리스": "지원",
@@ -39,11 +39,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=69468491",
       "manufacturer": "JBL Corp.   JBL",
-      "model_name": "JBLTOURPRO3"
+      "model_name": "V5"
     },
     "norm_info": {
       "company_name": "JBL Corp.   JBL",
-      "model_name": "JBLTOURPRO3",
+      "model_name": "V5",
       "product_name": "JBL TOUR PRO 3 (정품)"
     },
     "db_results": [],
@@ -60,12 +60,12 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "JBL Corp.   JBL",
-    "model_param": "JBLTOURPRO3",
+    "model_param": "V5",
     "ocr_result": {
-      "extracted_text": "JBL TOUR PRO 3 (정품) 심성공식파트너 씨만에이치 289,000원 무료래승 최저가 구매하기 가격비교 86 상품 상세정보 의견리뷰 390 뉴스커유니티 연관상품 MAKMAN UBL 누미 프로 } 국내 타  회조 되미 테미스 종미료 UBL TOURPRO3 기미 사려적완전체TWS 제조회사 JBL (제조사 웬사이트 바로가기) 등록년원 2024년 10밑 분류 무선이어논 이어프타입 커널형 외형 크드리스 용도 음악+통화용 무선연결 불무투스 V5.3 노이즈런트론 댁티브노이즈랜슬림 (ANC) 적응형ANC 주버스리드기 대화이지",
+      "extracted_text": "JBL TOUR PRO 3 (정품) 삼성파트너 테이원에미브이 259,000원 무료배송  최저가 구매하기 가격비교 87 상품 상세정보 의견리뷰 389 뉴스커유니티 연관상품 ' DaL 무미 프로} ~_덕 | 회조 입 테어스 농0표 JBL TOURPRO3 가 사려적적완전체 TWS 제조회사 JBL (제조사 웬사이트 바로가기) 등록년월 2024년 10월 분류- 무선이어프 용도 음악+통화용 이어프타입 커널형 외형 코드리스 무선연결 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\JBL TOUR PRO 3 (정품)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/JBL TOUR PRO 3 (정품)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }

@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=108354947",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "레노버 리전 Y700 5세대 (램12GB,256GB)",
       "name": "레노버 리전 Y700 5세대 (램12GB,256GB)",
       "description": "",
-      "ocr_text": "레노버 리전 Y7OO 5세대 (캠12GB,256GB) HIMART 999,000원  무료배승 최저가 구매하기 가격비교 39 상품 상세정보 의견리뷰 42 소모품|액세서리 뉴스커유니티 연관상품 화면크기 8.8인지 디스플레이 IPS-LCD 해상도 3040x1904 정설 수(ppi) 화면비율 16:10 쇠대주사율 165Hz 색감 DCI-P3 쇠대밝기 75Onits HDR규격 HDR1O 돌비비전 시스템 12GB 용량 256GB 저장매체 UFS4 기(너장) 외장메도리 microSD지I원 외장메모리용량 TnicroSD 쇠대2TB 프로세서 스년드래근8 엘리트 Gens 코어 개수 8코이 코이클럭 4.6GHz+3.62GHz GPU Adreno 840 벤치마크 AP CPU 99점 AP 게이망 100점 CPU(싱글) 3718 CPU(밀리) 11810 Al NPU 컬럽 핵사곧 카메라 후면카메라 후면 5,0OO만화소 전면카메라 전면 800만화소 카메라기능 408PPi",
+      "ocr_text": "레노버 리전 Y7OO 5세대 (캠12GB,256GB) 주식회사예찬씨언데스   999,000원 무료배승 최저가 구매하기 가격비교 69 상품 상세정보 의견리뷰 43 소모품|액세서리 뉴스커유니티 연관상품 모델명 ZAH20O87KR 화면크기 8,8인치 화면크기 8인치대 디스플레이 IPS-LCD 해상도 3040*1904 퍽설 수(ppi) 408 화면비올 1610 최대주사물 165Hz 색감 DCI-P3 최대밝기 75Onits 시스템 12GB 용량 256GB 저장매체 UFS4기내장) 외장메모리 microSD지원 외장메모리용량 microSD최대2TB 프로세서 스냄드래근8 엘리트 Gen5 코어 개수 8코어 코어클력 4.6GHz+3.62GHz GPU Adreno 840 벤치마크 AP CPU 99점 AP 게이망 100점 AP CPU상글) 3718 AP CPU멀리) 11810 Al NPU 칠럽 핵사곧 네트위크 Wi-Fi버전 Wi-Fi7 불루투스버전 틀루투스v6.0 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "태블릿PC": "지원",
         "Wi-Fi": "지원",
@@ -37,11 +37,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=108354947",
       "manufacturer": "레노버, Lenober",
-      "model_name": "Y700"
+      "model_name": "IPS-LCD"
     },
     "norm_info": {
       "company_name": "레노버, Lenober",
-      "model_name": "Y700",
+      "model_name": "IPS-LCD",
       "product_name": "레노버 리전 Y700 5세대 (램12GB,256GB)"
     },
     "db_results": [
@@ -509,12 +509,12 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "레노버, Lenober",
-    "model_param": "Y700",
+    "model_param": "IPS-LCD",
     "ocr_result": {
-      "extracted_text": "레노버 리전 Y7OO 5세대 (캠12GB,256GB) HIMART 999,000원  무료배승 최저가 구매하기 가격비교 39 상품 상세정보 의견리뷰 42 소모품|액세서리 뉴스커유니티 연관상품 화면크기 8.8인지 디스플레이 IPS-LCD 해상도 3040x1904 정설 수(ppi) 화면비율 16:10 쇠대주사율 165Hz 색감 DCI-P3 쇠대밝기 75Onits HDR규격 HDR1O 돌비비전 시스템 12GB 용량 256GB 저장매체 UFS4 기(너장) 외장메도리 microSD지I원 외장메모리용량 TnicroSD 쇠대2TB 프로세서 스년드래근8 엘리트 Gens 코어 개수 8코이 코이클럭 4.6GHz+3.62GHz GPU Adreno 840 벤치마크 AP CPU 99점 AP 게이망 100점 CPU(싱글) 3718 CPU(밀리) 11810 Al NPU 컬럽 핵사곧 카메라 후면카메라 후면 5,0OO만화소 전면카메라 전면 800만화소 카메라기능 408PPi",
+      "extracted_text": "레노버 리전 Y7OO 5세대 (캠12GB,256GB) 주식회사예찬씨언데스   999,000원 무료배승 최저가 구매하기 가격비교 69 상품 상세정보 의견리뷰 43 소모품|액세서리 뉴스커유니티 연관상품 모델명 ZAH20O87KR 화면크기 8,8인치 화면크기 8인치대 디스플레이 IPS-LCD 해상도 3040*1904 퍽설 수(ppi) 408 화면비올 1610 최대주사물 165Hz 색감 DCI-P3 최대밝기 75Onits 시스템 12GB 용량 256GB 저장매체 UFS4기내장) 외장메모리 microSD지원 외장메모리용량 microSD최대2TB 프로세서 스냄드래근8 엘리트 Gen5 코어 개수 8코어 코어클력 4.6GHz+3.62GHz GPU Adreno 840 벤치마크 AP CPU 99점 AP 게이망 100점 AP CPU상글) 3718 AP CPU멀리) 11810 Al NPU 칠럽 핵사곧 네트위크 Wi-Fi버전 Wi-Fi7 불루투스버전 틀루투스v6.0 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\레노버 리전 Y700 5세대 (램12GB,256GB)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/레노버 리전 Y700 5세대 (램12GB,256GB)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }

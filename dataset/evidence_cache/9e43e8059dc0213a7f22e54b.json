@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=101189063",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "MSI Cubi Z AI 라이젠7 8845HS (베어본)",
       "name": "MSI Cubi Z AI 라이젠7 8845HS (베어본)",
       "description": "",
-      "ocr_text": "MSI Cubi Z AI 라이젠7 8845HS (베어본) 11> 798,860원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 운영체제 OS미포함 파뭐 줄력 120W CPU 제조사 AMD CPU 시리즈 라이젠 8000시리즈 CPU 종류 라이젠7-4세대 CPU 코드명 호크포인트 군이 개수 욕타(8) 코이 NPU 종류 AMD 라이젠 Al NPU TOPS 16ToPS 메모리 메모리 타입 DDR5 메모리 용량 메모리 미포함 메모리 규격 SO-DIMM (노트북용) 저장장치 HDD 용량 HDD 저장장지 미포함 그래픽 제조사 AMD 그래픽 종류 내장 그래픽 사운드 출력 사운드 지원 스피거 내장험 네트위크 2.5Gbps 유선 802.11ax(Wi-Fi 6E) 무선 불무투스 뉴얼런 영상출력 HDMI DP Alt Mode 단자 USB C타입 40GbP USB3 X 10Gbps",
+      "ocr_text": "MSI Cubi Z AI 라이젠7 8845HS (베어본) phcne 800,000원 무료배승  최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 운영제제 OS미포함 파워 출력 12oW CPU 제조사 AMD CPU 시리즈 라이젠 8000시리즈 CPU 종류 라이젠7-4세대 CPU 코드명 호크포인트 코어 개수 목타(8)코어 NPU 종류 AMD 라이젠 Al NPU TOPS 16TOPS 메모리 메모리 타입 DDR5 메모리 용량 메모리 미포함 메모리 규격 SO-DIMM (노트북용) 저장장치 HDD 용량 HDD저장장지 미포함 그래픽 제조사 AMD 그래픽 종류 내장 그래픽 사운드 출력 사운드 지원 스피커 내장형 네트위크 2.5Gbps 유선 802.11ax(Wi-Fi 6E) 무선 불루투스 두얼런 영상출력 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "8845HS": "지원",
         "780M": "지원",
@@ -38,11 +38,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=101189063",
       "manufacturer": "MSI, Multi-Solution Inc.",
-      "model_name": "8845HS"
+      "model_name": "DDR5"
     },
     "norm_info": {
       "company_name": "MSI, Multi-Solution Inc.",
-      "model_name": "8845HS",
+      "model_name": "DDR5",
       "product_name": "MSI Cubi Z AI 라이젠7 8845HS (베어본)"
     },
     "db_results": [
@@ -320,7 +320,35 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 재료과학 기반 AI(<span class=\"search_word\">MSI</span>-AI)와 Drone-to-BoQ 기술을 활용한 대공간 막 구조 포렌식 및 무인 유지관리 플랫폼 개발 등 총 3건",
+      "detail": "NTIS에서 [MSI] 검색어로 조회한 결과, AI 관련 과제 3건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "재료과학 기반 AI(<span class=\"search_word\">MSI</span>-AI)와 Drone-to-BoQ 기술을 활용한 대공간 막 구조 포렌식 및 무인 유지관리 플랫폼 개발",
+          "project_number": "2710111979",
+          "lead_company": "MSI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "Physical AI 기반 Kiro-Nix 하이퍼 스트레인 센서 및 실시간 자가보정 <span class=\"search_word\">MSI</span>(소재-구조-지능) 통합 플랫폼 연구",
+          "project_number": "2710113772",
+          "lead_company": "MSI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI 광신호처리 기반 능동형 간섭 방어용 LiDAR 개발",
+          "project_number": "2420034117",
+          "lead_company": "MSI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -379,7 +407,7 @@
       },
       {
         "source_record_id": "1020250097401",
-        "일련번호": "32",
+        "일련번호": "34",
         "출원번호": "1020250097401",
         "발명의명칭(한글)": "대규모 언어 모델 기반 멀티 에이전트 시스템의 자동화된 최적화 의사 결정 방법",
         "출원일자": "2025-07-18",
@@ -397,7 +425,7 @@
       },
       {
         "source_record_id": "1020250093690",
-        "일련번호": "39",
+        "일련번호": "40",
         "출원번호": "1020250093690",
         "발명의명칭(한글)": "AI 기반 사용자 친화적 지역 맞춤형 영상 광고 제작 및 송출 시스템",
         "출원일자": "2025-07-11",
@@ -433,7 +461,7 @@
       },
       {
         "source_record_id": "1020250010013",
-        "일련번호": "34",
+        "일련번호": "36",
         "출원번호": "1020250010013",
         "발명의명칭(한글)": "데이터 기반 사용자 맞춤형 건강관리 시스템 및 방법",
         "출원일자": "2025-01-23",
@@ -469,7 +497,7 @@
       },
       {
         "source_record_id": "1020250007328",
-        "일련번호": "37",
+        "일련번호": "38",
         "출원번호": "1020250007328",
         "발명의명칭(한글)": "기후변화 대응을 위한 디지털 기반 도시단위 기능성소재를 적용한 AI 기반의 예측 시뮬레이션 모니터링 시스템",
         "출원일자": "2025-01-17",
@@ -487,7 +515,7 @@
       },
       {
         "source_record_id": "1020240179199",
-        "일련번호": "36",
+        "일련번호": "37",
         "출원번호": "1020240179199",
         "발명의명칭(한글)": "AI 기반 뉴스 기사 작성 지원 시스템 및 방법",
         "출원일자": "2024-12-05",
@@ -505,7 +533,7 @@
       },
       {
         "source_record_id": "1020267021398",
-        "일련번호": "31",
+        "일련번호": "33",
         "출원번호": "1020267021398",
         "발명의명칭(한글)": "LWIR 비디오를 이용한 차량 기반 위협 검출 및 추적",
         "출원일자": "2024-12-03",
@@ -523,7 +551,7 @@
       },
       {
         "source_record_id": "1020240174341",
-        "일련번호": "27",
+        "일련번호": "29",
         "출원번호": "1020240174341",
         "발명의명칭(한글)": "콘텐츠 네트워크 분석 및 인공 지능 기반 초개인화 여행 정보 추천 방법",
         "출원일자": "2024-11-29",
@@ -541,7 +569,7 @@
       },
       {
         "source_record_id": "1020240173903",
-        "일련번호": "33",
+        "일련번호": "35",
         "출원번호": "1020240173903",
         "발명의명칭(한글)": "IoT 기반 자율 운영 스마트 RTU 시스템",
         "출원일자": "2024-11-28",
@@ -595,7 +623,7 @@
       },
       {
         "source_record_id": "1020240149331",
-        "일련번호": "5",
+        "일련번호": "3",
         "출원번호": "1020240149331",
         "발명의명칭(한글)": "자가학습 기반의 인공지능 모델을 활용한 이미지 상의 이상 탐지 방법 및 이미지 이상 탐지 장치",
         "출원일자": "2024-10-29",
@@ -631,7 +659,7 @@
       },
       {
         "source_record_id": "1020240101079",
-        "일련번호": "35",
+        "일련번호": "27",
         "출원번호": "1020240101079",
         "발명의명칭(한글)": "AI 큐레이션 기반 맞춤형 화장품 및 맞춤형 전문가 추천 시스템",
         "출원일자": "2024-07-30",
@@ -649,7 +677,7 @@
       },
       {
         "source_record_id": "1020267000216",
-        "일련번호": "29",
+        "일련번호": "31",
         "출원번호": "1020267000216",
         "발명의명칭(한글)": "개환 또는 중축합에 의한 중합 방법",
         "출원일자": "2024-07-04",
@@ -685,7 +713,7 @@
       },
       {
         "source_record_id": "1020257040824",
-        "일련번호": "30",
+        "일련번호": "32",
         "출원번호": "1020257040824",
         "발명의명칭(한글)": "개환 또는 중축합 중합 방법",
         "출원일자": "2024-06-06",
@@ -721,7 +749,7 @@
       },
       {
         "source_record_id": "1020240064947",
-        "일련번호": "4",
+        "일련번호": "5",
         "출원번호": "1020240064947",
         "발명의명칭(한글)": "전기자극을 인가하여 신경근육계 평가를 수행하는 방법 및 장치",
         "출원일자": "2024-05-20",
@@ -757,7 +785,7 @@
       },
       {
         "source_record_id": "1020257031791",
-        "일련번호": "28",
+        "일련번호": "30",
         "출원번호": "1020257031791",
         "발명의명칭(한글)": "개환 중합 방법",
         "출원일자": "2024-03-22",
@@ -775,7 +803,7 @@
       },
       {
         "source_record_id": "1020257025817",
-        "일련번호": "40",
+        "일련번호": "28",
         "출원번호": "1020257025817",
         "발명의명칭(한글)": "슈퍼 해상도를 개별적인 대역에 적용할 때의 원본 컬러의 유지",
         "출원일자": "2023-12-27",
@@ -811,7 +839,7 @@
       },
       {
         "source_record_id": "1020230145553",
-        "일련번호": "3",
+        "일련번호": "4",
         "출원번호": "1020230145553",
         "발명의명칭(한글)": "신경근육계 상태 평가를 수행하는 방법 및 장치",
         "출원일자": "2023-10-27",
@@ -1027,7 +1055,7 @@
       },
       {
         "source_record_id": "1020237004668",
-        "일련번호": "38",
+        "일련번호": "39",
         "출원번호": "1020237004668",
         "발명의명칭(한글)": "채널 제약 하드웨어 가속기에 의해 구현되는 신경망을 사용하여 이미지 향상을 수행하기 위한 시스템 및 방법",
         "출원일자": "2021-08-19",
@@ -1065,18 +1093,18 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "MSI, Multi-Solution Inc.",
-    "model_param": "8845HS",
+    "model_param": "DDR5",
     "ocr_result": {
-      "extracted_text": "MSI Cubi Z AI 라이젠7 8845HS (베어본) 11> 798,860원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 운영체제 OS미포함 파뭐 줄력 120W CPU 제조사 AMD CPU 시리즈 라이젠 8000시리즈 CPU 종류 라이젠7-4세대 CPU 코드명 호크포인트 군이 개수 욕타(8) 코이 NPU 종류 AMD 라이젠 Al NPU TOPS 16ToPS 메모리 메모리 타입 DDR5 메모리 용량 메모리 미포함 메모리 규격 SO-DIMM (노트북용) 저장장치 HDD 용량 HDD 저장장지 미포함 그래픽 제조사 AMD 그래픽 종류 내장 그래픽 사운드 출력 사운드 지원 스피거 내장험 네트위크 2.5Gbps 유선 802.11ax(Wi-Fi 6E) 무선 불무투스 뉴얼런 영상출력 HDMI DP Alt Mode 단자 USB C타입 40GbP USB3 X 10Gbps",
+      "extracted_text": "MSI Cubi Z AI 라이젠7 8845HS (베어본) phcne 800,000원 무료배승  최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 운영제제 OS미포함 파워 출력 12oW CPU 제조사 AMD CPU 시리즈 라이젠 8000시리즈 CPU 종류 라이젠7-4세대 CPU 코드명 호크포인트 코어 개수 목타(8)코어 NPU 종류 AMD 라이젠 Al NPU TOPS 16TOPS 메모리 메모리 타입 DDR5 메모리 용량 메모리 미포함 메모리 규격 SO-DIMM (노트북용) 저장장치 HDD 용량 HDD저장장지 미포함 그래픽 제조사 AMD 그래픽 종류 내장 그래픽 사운드 출력 사운드 지원 스피커 내장형 네트위크 2.5Gbps 유선 802.11ax(Wi-Fi 6E) 무선 불루투스 두얼런 영상출력 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\MSI Cubi Z AI 라이젠7 8845HS (베어본)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/MSI Cubi Z AI 라이젠7 8845HS (베어본)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1,
       "_cache_meta": {
-        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\MSI Cubi Z AI 라이젠7 8845HS (베어본)\\detail_scan.png",
-        "image_size": 73822,
-        "image_sha256": "52afd858eb8ff3c7fa330679caf53627f17f22d74d8a5fbbcc90f0d9a62d3161"
+        "image_path": "/home/projects/EASy_ML/product_images/MSI Cubi Z AI 라이젠7 8845HS (베어본)/detail_scan.png",
+        "image_size": 94382,
+        "image_sha256": "15ad2dc624d245cef4d2245420331b6d9c4ee6eef72f09f23d1d95dba092553b"
       }
     }
   }

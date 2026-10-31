@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=36793505",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "Seagate SkyHawk AI 7200/512M (24TB, ST24000VE002)",
       "name": "Seagate SkyHawk AI 7200/512M (24TB, ST24000VE002)",
       "description": "",
-      "ocr_text": "Seagate SkyHawk Al 7200/512M (24TB,ST24000VE002) 근오럼 1,699,000원 2,900원 최저가 구매하기 가격비교 111 상품 상세정보 의견리뷰 306 뉴스커유니티 연관상품 '안김사 \" DD 부: 다음에서 보기: IYoulube 제조회사 Seagate (제조사 웬사이트 바로가기) 등록년원 2024년 02원 제품 분류 HDD (CCTV용) 디스크 크기 8.9cm(3.5인지) 디스크 용량 24TB 인터데이스 SATA3 (6GbIs) 회전스 Z,20ORPM 버피 용량 메모리 512MB 전송 속도 285MB/s 기록밤식 CMR(PMR) 두께 26.1mm 부가기능 필롭증전 RV센서 내구성소음 작업부하량 550 TBIY 사용보증 250만시간 Als 정보",
+      "ocr_text": "Seagate SkyHawk Al 7200/512M (24TB, ST24O00VE002) '근오럼 1,699,000원 2,900원 최저가 구매하기 가격비교 87 상품 상세정보 의견리뷰 306 뉴스커유니티 연관상품  :안큼사  DD 부 ? Watch on Ioulube 제조회사 Seagate (제조사 웬사이트 바로가기) 등록년월 2024년 02월 제품 분류 HDD (CCTV용) 디스크 크기 8.9cm(3.5인지) 디스크 용량 24TB 인터페이스 SATA3 (6GbIs) 회전수 Z20ORPM 버퍼 용량 메모리 512MB 전승 속도 285MBIs 기록방식 CMR(PMR) 두께 26.Imm 부가기능 헬름중전 RV센서 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "HDD (CCTV용)": "지원",
         "8.9cm(3.5인치)": "지원",
@@ -490,7 +490,35 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 재생에너지 발전사업 경험 기반으로 AI적용 P2X 스마트그리드모델 지향하는 클라우드 구독방식 통합 EMS구축 등 총 3건",
+      "detail": "NTIS에서 [INC.] 검색어로 조회한 결과, AI 관련 과제 3건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "재생에너지 발전사업 경험 기반으로 AI적용 P2X 스마트그리드모델 지향하는 클라우드 구독방식 통합 EMS구축",
+          "project_number": "1711202165",
+          "lead_company": "INC.",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "탑승객 모니터링 기반 자율주행 안전확보 및 AI 통합 운영 기술 개발",
+          "project_number": "1415182734",
+          "lead_company": "INC.",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "실내 물류창고 전용 자율비행 드론 운용 시스템",
+          "project_number": "1425109397",
+          "lead_company": "INC.",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -502,12 +530,17 @@
     "target_company_name": "Seagate Technology Korea, Inc.",
     "model_param": "ST24000VE002",
     "ocr_result": {
-      "extracted_text": "Seagate SkyHawk Al 7200/512M (24TB,ST24000VE002) 근오럼 1,699,000원 2,900원 최저가 구매하기 가격비교 111 상품 상세정보 의견리뷰 306 뉴스커유니티 연관상품 '안김사 \" DD 부: 다음에서 보기: IYoulube 제조회사 Seagate (제조사 웬사이트 바로가기) 등록년원 2024년 02원 제품 분류 HDD (CCTV용) 디스크 크기 8.9cm(3.5인지) 디스크 용량 24TB 인터데이스 SATA3 (6GbIs) 회전스 Z,20ORPM 버피 용량 메모리 512MB 전송 속도 285MB/s 기록밤식 CMR(PMR) 두께 26.1mm 부가기능 필롭증전 RV센서 내구성소음 작업부하량 550 TBIY 사용보증 250만시간 Als 정보",
+      "extracted_text": "Seagate SkyHawk Al 7200/512M (24TB, ST24O00VE002) '근오럼 1,699,000원 2,900원 최저가 구매하기 가격비교 87 상품 상세정보 의견리뷰 306 뉴스커유니티 연관상품  :안큼사  DD 부 ? Watch on Ioulube 제조회사 Seagate (제조사 웬사이트 바로가기) 등록년월 2024년 02월 제품 분류 HDD (CCTV용) 디스크 크기 8.9cm(3.5인지) 디스크 용량 24TB 인터페이스 SATA3 (6GbIs) 회전수 Z20ORPM 버퍼 용량 메모리 512MB 전승 속도 285MBIs 기록방식 CMR(PMR) 두께 26.Imm 부가기능 헬름중전 RV센서 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\Seagate SkyHawk AI 7200512M (24TB, ST24000VE002)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/Seagate SkyHawk AI 7200512M (24TB, ST24000VE002)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/Seagate SkyHawk AI 7200512M (24TB, ST24000VE002)/detail_scan.png",
+        "image_size": 412034,
+        "image_sha256": "8c9367a21415b9bdfdefb957b02bf4bf6b3338fa7fe8ec23bcd37908e83bfe86"
+      }
     }
   }
 }

@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=71155355",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "APPLE 2024 iPad mini A17 Pro 7세대 (128GB)",
       "name": "APPLE 2024 iPad mini A17 Pro 7세대 (128GB)",
       "description": "",
-      "ocr_text": "APPLE 2024 iPad mini A17 Pro 7세대 (128GB) Gmarket  829,510원 무료배송 최저가 구매하기 가격비교 247 상품 상세정보 의견리뷰 297 소모품|액세서리 뉴스커유니티 13 연관상품 호기심의 02 [리더십 고맙 _ 숨니다 ? Voutbe hg 제조회사 APPLE (제조사 웬사이트 바로가기) 등록년원 2024년 1밑 대불릿연결 Wi-Fi 모델명 A2996 화면크기 8.3인치 디스플레이 IPS-LCD 해상도 2266x1488 퍽설 수(ppi) 326ppi 화면비율 32 쇠대주사물 6OHz 색감 DCI-P3 쇠대밝기 50Onits 8GB 용탕 128GB 외장데모리 ricroSD미지원 프로세서 A17 Pro 군이 개수 67이 GPU Apple GPU 5군이",
+      "ocr_text": "APPLE 2024 iPad mini A17 Pro 7세대 (128GB) AUCTION 821,760원 무료배승 최저가 구매하기 가격비교 204 상품 상세정보 의견리뷰 299 소모품 액세서리 뉴스커유니티 13 연관상품 호기심의 02 [리더십 M443Ku+4T { 볶부교\" A 고맙 _숨니다  22 Watch-onl Voulube kg 제조회사 APPLE (제조사 웬사이트 바로가기) 등록년일 2024년 11월 태들릿형태 태들릿PC 태들릿연결 Wi-Fi 모델명 A2996 화면크기 8.3인지 화면크기 8인치대 디스플레이 IPS-LCD 해상도 2266*1488 퍽실 쉬ppi) 326 화면비율 3.2 최대주사물 6OHz Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "태블릿PC": "지원",
         "Wi-Fi": "지원",
@@ -41,11 +41,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=71155355",
       "manufacturer": "Apple Inc.  Apple",
-      "model_name": "MP321X4/A"
+      "model_name": "IPS-LCD"
     },
     "norm_info": {
       "company_name": "Apple Inc.  Apple",
-      "model_name": "MP321X4/A",
+      "model_name": "IPS-LCD",
       "product_name": "APPLE 2024 iPad mini A17 Pro 7세대 (128GB)"
     },
     "db_results": [],
@@ -62,12 +62,12 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "Apple Inc.  Apple",
-    "model_param": "MP321X4/A",
+    "model_param": "IPS-LCD",
     "ocr_result": {
-      "extracted_text": "APPLE 2024 iPad mini A17 Pro 7세대 (128GB) Gmarket  829,510원 무료배송 최저가 구매하기 가격비교 247 상품 상세정보 의견리뷰 297 소모품|액세서리 뉴스커유니티 13 연관상품 호기심의 02 [리더십 고맙 _ 숨니다 ? Voutbe hg 제조회사 APPLE (제조사 웬사이트 바로가기) 등록년원 2024년 1밑 대불릿연결 Wi-Fi 모델명 A2996 화면크기 8.3인치 디스플레이 IPS-LCD 해상도 2266x1488 퍽설 수(ppi) 326ppi 화면비율 32 쇠대주사물 6OHz 색감 DCI-P3 쇠대밝기 50Onits 8GB 용탕 128GB 외장데모리 ricroSD미지원 프로세서 A17 Pro 군이 개수 67이 GPU Apple GPU 5군이",
+      "extracted_text": "APPLE 2024 iPad mini A17 Pro 7세대 (128GB) AUCTION 821,760원 무료배승 최저가 구매하기 가격비교 204 상품 상세정보 의견리뷰 299 소모품 액세서리 뉴스커유니티 13 연관상품 호기심의 02 [리더십 M443Ku+4T { 볶부교\" A 고맙 _숨니다  22 Watch-onl Voulube kg 제조회사 APPLE (제조사 웬사이트 바로가기) 등록년일 2024년 11월 태들릿형태 태들릿PC 태들릿연결 Wi-Fi 모델명 A2996 화면크기 8.3인지 화면크기 8인치대 디스플레이 IPS-LCD 해상도 2266*1488 퍽실 쉬ppi) 326 화면비율 3.2 최대주사물 6OHz Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\APPLE 2024 iPad mini A17 Pro 7세대 (128GB)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/APPLE 2024 iPad mini A17 Pro 7세대 (128GB)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }

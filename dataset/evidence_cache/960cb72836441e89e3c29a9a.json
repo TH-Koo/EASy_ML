@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=71964602",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "더함 치크 AMG 스마트 43 QLED 120HZ 돌비 AI 구글 5.0 (스탠드)",
       "name": "더함 치크 AMG 스마트 43 QLED 120HZ 돌비 AI 구글 5.0 (스탠드)",
       "description": "",
-      "ocr_text": "더함 치크 AMG 스마트 43 QLED 120HZ 돌비 Al 구글 5.0 (스랜드) emart all   419,000원 20,000원 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 디스플레이 QLED 해상도 4K UHD 패널 VA패널계열 주사율 12OHz 디팅방식 로컬디망 +FALD 명만비 500만:1 밝기 400cd 서브관실 RGB 에너지효물 1등금 소비전력 1O0W 년형 2024년형 프로세서 MT9603 화질 4K업스레일림 모선보간(MEMC) HDR 돌비비전 HDRiO HLG 색표현인증 DCI-P3 9396이삼 RAM 2GB ROM 16GB 크로마생플림 4.4*4 게임 VRR(I2OHz) ALLM 게임모드 게임종류 플레이스테이선 액스박스시리즈",
+      "ocr_text": "더함 치크 AMG 스마트 43 QLED 120HZ 돌비 Al 구글 5.0 (스랜드) At-Gns 399,000원 20,000원 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 10 연관상품 디스플레이 QLED 해상도 4K UHD 패널 VA패널계열 주사율 12OHz 디망방식 로걸디망+FALD 명양비 500만:1 밝기 400cd 서브l실 RGB 에너지효올 1등급 소비전력 10oW 년형  2024년형 프로세서 MT9603 화질 4K업스레일림 모선보간(MEMC) HDR 돌비비전 HDRIO HLG 색표현인종 DCI-P3 9396이상 RAM 2GB ROM 16GB 크로마생플림 44.4 게임 VRR(I2OHz) ALLM Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "QLED TV": "지원",
         "43인치(109cm)": "지원",
@@ -35,11 +35,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=71964602",
       "manufacturer": "더함, THD",
-      "model_name": "AMG-43QLED"
+      "model_name": "200X200MM"
     },
     "norm_info": {
       "company_name": "더함, THD",
-      "model_name": "AMG-43QLED",
+      "model_name": "200X200MM",
       "product_name": "더함 치크 AMG 스마트 43 QLED 120HZ 돌비 AI 구글 5.0 (스탠드)"
     },
     "db_results": [
@@ -236,7 +236,147 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 신재생 연계 자가 발전 설비의 인공지능 기술을 적용한 역조류 억제 및 PCS 군집제어를 통한 <span class=\"search_word\">THD</span> 저감기술 등 총 19건",
+      "detail": "NTIS에서 [THD] 검색어로 조회한 결과, AI 관련 과제 19건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "신재생 연계 자가 발전 설비의 인공지능 기술을 적용한 역조류 억제 및 PCS 군집제어를 통한 <span class=\"search_word\">THD</span> 저감기술",
+          "project_number": "2710081791",
+          "lead_company": "THD",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "신재생 연계 자가 발전 설비의 인공지능 기술을 적용한 역조류 억제 및 PCS 군집제어를 통한 <span class=\"search_word\">THD</span> 저감기술",
+          "project_number": "2710006400",
+          "lead_company": "THD",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "보이스 커머스용 디스플레이 AI 스피커 개발",
+          "project_number": "1425161202",
+          "lead_company": "THD",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "단발성·다발성 유방암 및 동반 관상피내암의 머신러닝을 적용한 임상·병리·유전체학적 통합연구",
+          "project_number": "1711120702",
+          "lead_company": "더함",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "실용적 양자 동역학 전산모사를 위한 인공지능 응용 연구",
+          "project_number": "1711182616",
+          "lead_company": "더함",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "국소 결합 제어 및 AI 연계를 통한 무기 광학 소재의 결함 화학 설계와 차세대 광전자 소자 응용",
+          "project_number": "2710111554",
+          "lead_company": "더함",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "인공지능 학습을 위한 레이블드 패션데이터의 활용 전략 연구",
+          "project_number": "2340007608",
+          "lead_company": "더함",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "인공지능 학습을 위한 레이블드 패션데이터의 활용 전략 연구",
+          "project_number": "1345350274",
+          "lead_company": "더함",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "인공지능 학습을 위한 레이블드 패션데이터의 활용 전략 연구",
+          "project_number": "2340040572",
+          "lead_company": "더함",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "인공지능 학습을 위한 레이블드 패션데이터의 활용 전략 연구",
+          "project_number": "2340056719",
+          "lead_company": "더함",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "운동 자세 및 신체 둘레 측정 기반의 모바일 비대면 PT 솔루션 개발",
+          "project_number": "2420002618",
+          "lead_company": "더함",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "실용적 양자 동역학 전산모사를 위한 인공지능 응용 연구",
+          "project_number": "1711171648",
+          "lead_company": "더함",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI를 활용한 웹 기반의 Legal RPA 솔루션 개발",
+          "project_number": "1425152355",
+          "lead_company": "더함",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "원스톱 온열저주파치료 시스템",
+          "project_number": "1425122732",
+          "lead_company": "더함",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "멀티모달 생체신호 및 행동 데이터 통합 분석을 통한 정신질환 사전 탐지 및 개인 맞춤형 예측 모델 개발",
+          "project_number": "2340049060",
+          "lead_company": "더함",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "멀티모달 생체신호 및 행동 데이터 통합 분석을 통한 정신질환 사전 탐지 및 개인 맞춤형 예측 모델 개발",
+          "project_number": "2340053869",
+          "lead_company": "더함",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "소아환자에 대한 비침습/비접촉 센서의 임상적 적용 : 신생아 생명징후 모니터링 및 소아 ADHD 운동량 정량화",
+          "project_number": "1711103647",
+          "lead_company": "더함",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "원스톱 온열저주파치료 시스템",
+          "project_number": "1425115762",
+          "lead_company": "더함",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "소아환자에 대한 비침습/비접촉 센서의 임상적 적용 : 신생아 생명징후 모니터링 및 소아 ADHD 운동량 정량화",
+          "project_number": "1711129886",
+          "lead_company": "더함",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -261,14 +401,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "더함, THD",
-    "model_param": "AMG-43QLED",
+    "model_param": "200X200MM",
     "ocr_result": {
-      "extracted_text": "더함 치크 AMG 스마트 43 QLED 120HZ 돌비 Al 구글 5.0 (스랜드) emart all   419,000원 20,000원 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 디스플레이 QLED 해상도 4K UHD 패널 VA패널계열 주사율 12OHz 디팅방식 로컬디망 +FALD 명만비 500만:1 밝기 400cd 서브관실 RGB 에너지효물 1등금 소비전력 1O0W 년형 2024년형 프로세서 MT9603 화질 4K업스레일림 모선보간(MEMC) HDR 돌비비전 HDRiO HLG 색표현인증 DCI-P3 9396이삼 RAM 2GB ROM 16GB 크로마생플림 4.4*4 게임 VRR(I2OHz) ALLM 게임모드 게임종류 플레이스테이선 액스박스시리즈",
+      "extracted_text": "더함 치크 AMG 스마트 43 QLED 120HZ 돌비 Al 구글 5.0 (스랜드) At-Gns 399,000원 20,000원 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 10 연관상품 디스플레이 QLED 해상도 4K UHD 패널 VA패널계열 주사율 12OHz 디망방식 로걸디망+FALD 명양비 500만:1 밝기 400cd 서브l실 RGB 에너지효올 1등급 소비전력 10oW 년형  2024년형 프로세서 MT9603 화질 4K업스레일림 모선보간(MEMC) HDR 돌비비전 HDRIO HLG 색표현인종 DCI-P3 9396이상 RAM 2GB ROM 16GB 크로마생플림 44.4 게임 VRR(I2OHz) ALLM Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\더함 치크 AMG 스마트 43 QLED 120HZ 돌비 AI 구글 5.0 (스탠드)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/더함 치크 AMG 스마트 43 QLED 120HZ 돌비 AI 구글 5.0 (스탠드)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/더함 치크 AMG 스마트 43 QLED 120HZ 돌비 AI 구글 5.0 (스탠드)/detail_scan.png",
+        "image_size": 87444,
+        "image_sha256": "22c4bdba315e4660ba3872ef1e8bfe67e76f7043e24c7c00493105c8026b1692"
+      }
     }
   }
 }

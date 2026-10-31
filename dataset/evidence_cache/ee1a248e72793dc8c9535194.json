@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=78981929",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "TCL 55Q6C (스탠드)",
       "name": "TCL 55Q6C (스탠드)",
       "description": "",
-      "ocr_text": "TCL 55Q6C (스랜드) 가격비교 상품 상세정보 의견리뷰 연관상품 디스플레이 QLED 해상도 4K UHD 패널 VA패널계열 주사율 12OHz 디팅방식 로컬디망 +FALD 명만비 6선:7 에너지효물 3등금 소비전력 220W 년형 2025년형 프로세서 MT9653 화질 4K업스레일림 장르맛출화면 모선보간(MEMC) HDR 돌비비전Q HDRIO+ HLG 아이먹스인핸스드 색표현인증 DCI-P3 9396이삼 시력보호기능 플리커프리 RAM 3GB ROM 32GB 게임 HDMI2.1 VRR(I44Hz) ALLM FreeSync 게임모드",
+      "ocr_text": "TCL 5596C (스랜드) 가격비교 상품 상세정보 의견리뷰 연관상품 디스플레이 QLED 해상도 4K UHD 패널 VA패널계열 주사율 120Hz 디망방식 로걸디망+FALD 명양비 6천:1 에너지효올 3등급 소비전력 220W 년형 2025년형 프로세서 MT9653 화질 4K업스레일림 장르맞춥화면 모선보간(MEMC) HDR 돌비비전Q HDRIO+ HLG 아이먹스인핸스드 색표현인종 DCI-P3 9396이삼 시력보호기능 플리커프리 RAM 3GB ROM 32GB 게임 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "미니LED TV": "지원",
         "55인치(139cm)": "지원",
@@ -49,7 +49,35 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 온디바이스 LLM 데이터 플로우에 최적화된 차세대 LPDDR PIM 구조 및 반도체 개발 등 총 3건",
+      "detail": "NTIS에서 [TCL CO.] 검색어로 조회한 결과, AI 관련 과제 3건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "온디바이스 LLM 데이터 플로우에 최적화된 차세대 LPDDR PIM 구조 및 반도체 개발",
+          "project_number": "2710107756",
+          "lead_company": "TCL CO.",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "생성형 AI 및 클라우드 기반 콘텐츠 제작 R&D 인재 양성",
+          "project_number": "2370000140",
+          "lead_company": "TCL CO.",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "위성·AI 기반 전국 조경수목 자원 디지털화 및 탄소가치 계량 플랫폼 개발",
+          "project_number": "2420033285",
+          "lead_company": "TCL CO.",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -61,12 +89,17 @@
     "target_company_name": "TCL Co., LTD.   TCL",
     "model_param": "55Q6C",
     "ocr_result": {
-      "extracted_text": "TCL 55Q6C (스랜드) 가격비교 상품 상세정보 의견리뷰 연관상품 디스플레이 QLED 해상도 4K UHD 패널 VA패널계열 주사율 12OHz 디팅방식 로컬디망 +FALD 명만비 6선:7 에너지효물 3등금 소비전력 220W 년형 2025년형 프로세서 MT9653 화질 4K업스레일림 장르맛출화면 모선보간(MEMC) HDR 돌비비전Q HDRIO+ HLG 아이먹스인핸스드 색표현인증 DCI-P3 9396이삼 시력보호기능 플리커프리 RAM 3GB ROM 32GB 게임 HDMI2.1 VRR(I44Hz) ALLM FreeSync 게임모드",
+      "extracted_text": "TCL 5596C (스랜드) 가격비교 상품 상세정보 의견리뷰 연관상품 디스플레이 QLED 해상도 4K UHD 패널 VA패널계열 주사율 120Hz 디망방식 로걸디망+FALD 명양비 6천:1 에너지효올 3등급 소비전력 220W 년형 2025년형 프로세서 MT9653 화질 4K업스레일림 장르맞춥화면 모선보간(MEMC) HDR 돌비비전Q HDRIO+ HLG 아이먹스인핸스드 색표현인종 DCI-P3 9396이삼 시력보호기능 플리커프리 RAM 3GB ROM 32GB 게임 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\TCL 55Q6C (스탠드)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/TCL 55Q6C (스탠드)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/TCL 55Q6C (스탠드)/detail_scan.png",
+        "image_size": 76172,
+        "image_sha256": "1b94e5c7c4eae777c95e8b24c55bb530d9fd94c92de28d90ccca8c9e5e9efb12"
+      }
     }
   }
 }

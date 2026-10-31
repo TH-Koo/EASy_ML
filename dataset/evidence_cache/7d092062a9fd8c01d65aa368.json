@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=8121520",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
-      "title": "다원디엔에스 파워매니저 AI 스마트 플러그",
-      "name": "다원디엔에스 파워매니저 AI 스마트 플러그",
+      "title": "다원디엔에스 파워매니저 AI 스마트 플러그 [KC인증]",
+      "name": "다원디엔에스 파워매니저 AI 스마트 플러그 [KC인증]",
       "description": "",
-      "ocr_text": "다원디엔에스 파워매니저 AI 스마트 플러그 오늘의집 30,800원 망 3,000원 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 39 뉴스커유니티 연관상품 본센트형 코드수 허용전력 3520W 점격전류 16A 언선 트형대 T자형 안전기능 과부하자다 전원스위치 '위치없음 특징 스드플러그(IoT) 설전타이머 KC인승 [@ 인종 적합성평가인층 상세설명 판매 사이드 분의 | 인종번호 확인 안전확인인승 JH04151-17007A 인증번호 꽉인 상품 설명 복사하기",
+      "ocr_text": "다원디엔에스 파워매니저 AlI 스마트 플러그 [KC인종] Gmarket   29,570원 3,000원 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 39 뉴스커유니티 연관상품 종류- 큰센트형 코드수 허용전력 352oW 정격전류 16A 큰센트형태 T자형 안전기능 과부하차단 전원스위치 스위치없음 특징 스마트플러그(IoT) 절전다이머 KC인종 [@ 인종 적합성평가인증  상세설명 판매 사이트 문의 인공번호 확인 안전확인인증  JH04151-17007A 인증번호 확인 상품 설명 목사하기",
       "specs": {
         "멀티탭": "지원",
         "콘센트형": "지원",
@@ -25,50 +25,14 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=8121520",
       "manufacturer": "다원디엔에스, DaWonDienes",
-      "model_name": "다원디엔에스 파워매니저 AI 스마트 플러그"
+      "model_name": ""
     },
     "norm_info": {
       "company_name": "다원디엔에스, DaWonDienes",
-      "model_name": "다원디엔에스 파워매니저 AI 스마트 플러그",
-      "product_name": "다원디엔에스 파워매니저 AI 스마트 플러그"
+      "model_name": "",
+      "product_name": "다원디엔에스 파워매니저 AI 스마트 플러그 [KC인증]"
     },
     "db_results": [
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "IoT스마트 플러그",
-        "model_name": "PM-B350L-WE",
-        "country": "한국",
-        "cert_date": "2022-03-28",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-DaW-PM-B350L-WE"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "스마트 카드 홀더",
-        "model_name": "KB-HD100-ZB",
-        "country": "한국",
-        "cert_date": "2021-12-07",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-DaW-KB-HD100-ZB"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "NB-IoT스마트 플러그",
-        "model_name": "PM-B350E-NB",
-        "country": "한국",
-        "cert_date": "2021-11-15",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-DaW-PM-B350E-NB"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "NBIoT스마트플러그",
-        "model_name": "PM-B350-NB-Z",
-        "country": "한국",
-        "cert_date": "2021-10-22",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-DaW-PM-B350-NB-Z"
-      },
       {
         "company_name": "주식회사 다원디엔에스",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
@@ -77,60 +41,6 @@
         "cert_date": "2021-10-20",
         "cert_status": "적합등록",
         "cert_no": "R-R-DaW-NM-G200L-ZB"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "IoT스마트 플러그",
-        "model_name": "PM-B550E-W",
-        "country": "한국",
-        "cert_date": "2021-07-19",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-DaW-PM-B550E-W"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "IoT스마트 리모콘",
-        "model_name": "SR-R200-C-WE",
-        "country": "한국",
-        "cert_date": "2021-05-27",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-DaW-SR-R200-C-WE"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "PM-C150-ZB",
-        "country": "한국",
-        "cert_date": "2021-05-07",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-DaW-PM-C150-ZB"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "IoT스마트 전원 컨트롤러",
-        "model_name": "PM-B440-W",
-        "country": "한국",
-        "cert_date": "2021-03-10",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-DaW-PM-B440-W"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "IoT 스마트 가스락",
-        "model_name": "SG-V100-ZB",
-        "country": "한국",
-        "cert_date": "2021-01-04",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-DaW-SG-V100-ZB"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "IoT ZigBee Gateway",
-        "model_name": "MN-G200E-ZB",
-        "country": "한국",
-        "cert_date": "2022-12-19",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-DaW-MN-G200E-ZB"
       },
       {
         "company_name": "주식회사 다원디엔에스",
@@ -143,6 +53,78 @@
       },
       {
         "company_name": "주식회사 다원디엔에스",
+        "equip_name": "IoT ZigBee Gateway",
+        "model_name": "MN-G200E-ZB",
+        "country": "한국",
+        "cert_date": "2022-12-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-MN-G200E-ZB"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "IoT 스마트 가스락",
+        "model_name": "SG-V100-ZB",
+        "country": "한국",
+        "cert_date": "2021-01-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-SG-V100-ZB"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "전자식 스위치",
+        "model_name": "NM-P200-NB-N",
+        "country": "한국",
+        "cert_date": "2021-02-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-NM-P200-NB-N"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "IoT스마트 전원 컨트롤러",
+        "model_name": "PM-B440-W",
+        "country": "한국",
+        "cert_date": "2021-03-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-PM-B440-W"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "전기기기용 접속기(전원분배기)",
+        "model_name": "NM-P400-ETH",
+        "country": "한국",
+        "cert_date": "2021-03-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-NM-P400-ETH"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PM-C150-ZB",
+        "country": "한국",
+        "cert_date": "2021-05-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-DaW-PM-C150-ZB"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "IoT스마트 리모콘",
+        "model_name": "SR-R200-C-WE",
+        "country": "한국",
+        "cert_date": "2021-05-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-SR-R200-C-WE"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "IoT스마트 플러그",
+        "model_name": "PM-B550E-W",
+        "country": "한국",
+        "cert_date": "2021-07-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-PM-B550E-W"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
         "equip_name": "IoT온습도계",
         "model_name": "TH-110-ZB",
         "country": "중국",
@@ -152,12 +134,39 @@
       },
       {
         "company_name": "주식회사 다원디엔에스",
-        "equip_name": "IoT전원제어기",
-        "model_name": "PM-B630-WE",
+        "equip_name": "NBIoT스마트플러그",
+        "model_name": "PM-B350-NB-Z",
         "country": "한국",
-        "cert_date": "2022-07-26",
+        "cert_date": "2021-10-22",
         "cert_status": "적합등록",
-        "cert_no": "R-R-DaW-PM-B630-WE"
+        "cert_no": "R-R-DaW-PM-B350-NB-Z"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "NB-IoT스마트 플러그",
+        "model_name": "PM-B350E-NB",
+        "country": "한국",
+        "cert_date": "2021-11-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-PM-B350E-NB"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "전기기기용 접속기",
+        "model_name": "NM-P410-ETH",
+        "country": "한국",
+        "cert_date": "2021-11-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-NM-P410-ETH"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "스마트 카드 홀더",
+        "model_name": "KB-HD100-ZB",
+        "country": "한국",
+        "cert_date": "2021-12-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-KB-HD100-ZB"
       },
       {
         "company_name": "주식회사 다원디엔에스",
@@ -170,39 +179,30 @@
       },
       {
         "company_name": "주식회사 다원디엔에스",
-        "equip_name": "IoT스마트리모콘",
-        "model_name": "SR-R300-C-WE",
+        "equip_name": "3상4선식 전력측정기",
+        "model_name": "PM-P280-SR",
         "country": "한국",
-        "cert_date": "2023-11-29",
+        "cert_date": "2020-01-07",
         "cert_status": "적합등록",
-        "cert_no": "R-R-DaW-SR-R300-C-WE"
+        "cert_no": "R-R-DaW-PM-P280-SR"
       },
       {
         "company_name": "주식회사 다원디엔에스",
-        "equip_name": "IoT SOS 응급태그",
-        "model_name": "PM-A100-ZB",
+        "equip_name": "전자식 스위치",
+        "model_name": "NM-P200-NB",
         "country": "한국",
-        "cert_date": "2023-11-29",
+        "cert_date": "2020-02-17",
         "cert_status": "적합등록",
-        "cert_no": "R-R-DaW-PM-A100-ZB"
+        "cert_no": "R-R-DaW-NM-P200-NB"
       },
       {
         "company_name": "주식회사 다원디엔에스",
-        "equip_name": "스마트 플러그",
-        "model_name": "PM-B360-WE",
-        "country": "한국",
-        "cert_date": "2023-11-03",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-DaW-PM-B360-WE"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "NBIoT스마트플러그",
-        "model_name": "PM-B350-NB-ZN",
-        "country": "한국",
-        "cert_date": "2023-11-01",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-DaW-PM-B350-NB-ZN"
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PM-S340-ZB",
+        "country": "베트남",
+        "cert_date": "2020-03-20",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-DaW-PM-S340-ZB"
       },
       {
         "company_name": "주식회사 다원디엔에스",
@@ -215,57 +215,12 @@
       },
       {
         "company_name": "주식회사 다원디엔에스",
-        "equip_name": "IoT전원제어기",
-        "model_name": "PM-B650-NB-Z",
+        "equip_name": "IoT3상전력측정기",
+        "model_name": "PM-P270U-WE",
         "country": "한국",
-        "cert_date": "2023-03-27",
+        "cert_date": "2026-01-12",
         "cert_status": "적합등록",
-        "cert_no": "R-R-DaW-PM-B650-NB-Z"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "IoT전력 절감기",
-        "model_name": "PM-P230-ES-WE_30",
-        "country": "한국",
-        "cert_date": "2024-04-26",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-DaW-PMP230ESWE30"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "IoT전력 절감기",
-        "model_name": "PM-P110-ES-WE",
-        "country": "한국",
-        "cert_date": "2024-04-26",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-DaW-PM-P110-ES-WE"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "CCTV함체 IoT센서 플러그",
-        "model_name": "SS-D360-ETH",
-        "country": "한국",
-        "cert_date": "2024-02-22",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-DaW-SS-D360-ETH"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
-        "model_name": "PM-K100-LTE",
-        "country": "한국",
-        "cert_date": "2025-11-18",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-DaW-PM-K100-LTE"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "IOT GATEWAY",
-        "model_name": "NM-G230-S",
-        "country": "한국",
-        "cert_date": "2025-03-28",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-DaW-NM-G230-S"
+        "cert_no": "R-R-DaW-PM-P270U-WE"
       },
       {
         "company_name": "주식회사 다원디엔에스",
@@ -278,57 +233,147 @@
       },
       {
         "company_name": "주식회사 다원디엔에스",
-        "equip_name": "IoT3상전력측정기",
-        "model_name": "PM-P270U-WE",
+        "equip_name": "IOT GATEWAY",
+        "model_name": "NM-G230-S",
         "country": "한국",
-        "cert_date": "2026-01-12",
+        "cert_date": "2025-03-28",
         "cert_status": "적합등록",
-        "cert_no": "R-R-DaW-PM-P270U-WE"
+        "cert_no": "R-R-DaW-NM-G230-S"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "3상4선식전력측정기",
+        "model_name": "PM-P280U-SR",
+        "country": "한국",
+        "cert_date": "2025-03-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-PM-P280U-SR"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "LTE 이동통신용 무선설비의 기기(육상이동국의 송수신 장치)",
+        "model_name": "PM-K100-LTE",
+        "country": "한국",
+        "cert_date": "2025-11-18",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-DaW-PM-K100-LTE"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "CCTV함체 IoT센서 플러그",
+        "model_name": "SS-D360-ETH",
+        "country": "한국",
+        "cert_date": "2024-02-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-SS-D360-ETH"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "IoT전력 절감기",
+        "model_name": "PM-P110-ES-WE",
+        "country": "한국",
+        "cert_date": "2024-04-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-PM-P110-ES-WE"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "IoT전력 절감기",
+        "model_name": "PM-P230-ES-WE_30",
+        "country": "한국",
+        "cert_date": "2024-04-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-PMP230ESWE30"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "IoT전원제어기",
+        "model_name": "PM-B650-NB-Z",
+        "country": "한국",
+        "cert_date": "2023-03-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-PM-B650-NB-Z"
       },
       {
         "company_name": "주식회사 다원디엔에스",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "PM-B530-ZB",
+        "model_name": "SR-R110-WE",
         "country": "한국",
-        "cert_date": "2019-12-18",
+        "cert_date": "2020-05-18",
         "cert_status": "적합인증",
-        "cert_no": "R-C-DaW-PM-B530-ZB"
+        "cert_no": "R-C-DaW-SR-R110-WE"
       },
       {
         "company_name": "주식회사 다원디엔에스",
-        "equip_name": "RFID/USN용 무선기기(900MHz 대역 사용 기기)",
-        "model_name": "PM-M130-ZW",
+        "equip_name": "NBIoT스마트플러그",
+        "model_name": "PM-B350-NB-ZN",
         "country": "한국",
-        "cert_date": "2016-12-23",
-        "cert_status": "적합인증",
-        "cert_no": "MSIP-CMM-DaW-PM-M130-ZW"
+        "cert_date": "2023-11-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-PM-B350-NB-ZN"
       },
       {
         "company_name": "주식회사 다원디엔에스",
-        "equip_name": "RFID/USN용 무선기기(900MHz 대역 사용 기기)",
-        "model_name": "PM-B530-ZW",
+        "equip_name": "단상전력측정기",
+        "model_name": "PM-P110I-WE",
         "country": "한국",
-        "cert_date": "2016-12-23",
-        "cert_status": "적합인증",
-        "cert_no": "MSIP-CMM-DaW-PM-B530-ZW"
+        "cert_date": "2023-11-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-PM-P110I-WE"
       },
       {
         "company_name": "주식회사 다원디엔에스",
-        "equip_name": "RFID/USN용 무선기기(900MHz 대역 사용 기기)",
-        "model_name": "PM-B400ZW-N",
+        "equip_name": "스마트 플러그",
+        "model_name": "PM-B360-WE",
         "country": "한국",
-        "cert_date": "2016-08-24",
-        "cert_status": "적합인증",
-        "cert_no": "MSIP-CMM-DaW-PM-B400ZW-N"
+        "cert_date": "2023-11-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-PM-B360-WE"
       },
       {
         "company_name": "주식회사 다원디엔에스",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "PM-B430-ZB",
+        "equip_name": "IoT SOS 응급태그",
+        "model_name": "PM-A100-ZB",
         "country": "한국",
-        "cert_date": "2016-07-25",
-        "cert_status": "적합인증",
-        "cert_no": "MSIP-CMM-DaW-PM-B430-ZB"
+        "cert_date": "2023-11-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-PM-A100-ZB"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "IoT스마트리모콘",
+        "model_name": "SR-R300-C-WE",
+        "country": "한국",
+        "cert_date": "2023-11-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-SR-R300-C-WE"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "IoT스마트 플러그",
+        "model_name": "PM-B350L-WE",
+        "country": "한국",
+        "cert_date": "2022-03-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-PM-B350L-WE"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "IoT전원제어기",
+        "model_name": "PM-B630-WE",
+        "country": "한국",
+        "cert_date": "2022-07-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-PM-B630-WE"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "원격감지온도체크기",
+        "model_name": "PM-B350E-NB-N",
+        "country": "한국",
+        "cert_date": "2022-07-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-DaW-PM-B350E-NB-N"
       },
       {
         "company_name": "주식회사 다원디엔에스",
@@ -342,47 +387,11 @@
       {
         "company_name": "주식회사 다원디엔에스",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "PM-B530-WE",
+        "model_name": "PM-C140-B",
         "country": "한국",
-        "cert_date": "2017-09-29",
+        "cert_date": "2018-06-29",
         "cert_status": "적합인증",
-        "cert_no": "MSIP-CMM-DaW-PM-B530-WE"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "PM-M130-WE",
-        "country": "한국",
-        "cert_date": "2017-09-29",
-        "cert_status": "적합인증",
-        "cert_no": "MSIP-CMM-DaW-PM-M130-WE"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "PM-C240-B",
-        "country": "한국",
-        "cert_date": "2018-12-14",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-DaW-PM-C240-B"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "PM-B540-W",
-        "country": "한국",
-        "cert_date": "2018-12-05",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-DaW-PM-B540-W"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "PM-L100-WE",
-        "country": "한국",
-        "cert_date": "2018-08-13",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-DaW-PM-L100-WE"
+        "cert_no": "R-CMM-DaW-PM-C140-B"
       },
       {
         "company_name": "주식회사 다원디엔에스",
@@ -396,11 +405,65 @@
       {
         "company_name": "주식회사 다원디엔에스",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "PM-C140-B",
+        "model_name": "PM-L100-WE",
         "country": "한국",
-        "cert_date": "2018-06-29",
+        "cert_date": "2018-08-13",
         "cert_status": "적합인증",
-        "cert_no": "R-CMM-DaW-PM-C140-B"
+        "cert_no": "R-C-DaW-PM-L100-WE"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PM-B540-W",
+        "country": "한국",
+        "cert_date": "2018-12-05",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-DaW-PM-B540-W"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PM-C240-B",
+        "country": "한국",
+        "cert_date": "2018-12-14",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-DaW-PM-C240-B"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "콘센트(어댑터)",
+        "model_name": "PM-B310-S2",
+        "country": "한국",
+        "cert_date": "2017-04-17",
+        "cert_status": "적합등록",
+        "cert_no": "MSIP-REM-DaW-PM-B310-S2"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PM-M130-WE",
+        "country": "한국",
+        "cert_date": "2017-09-29",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-DaW-PM-M130-WE"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
+        "model_name": "PM-B530-WE",
+        "country": "한국",
+        "cert_date": "2017-09-29",
+        "cert_status": "적합인증",
+        "cert_no": "MSIP-CMM-DaW-PM-B530-WE"
+      },
+      {
+        "company_name": "주식회사 다원디엔에스",
+        "equip_name": "콘센트(이동형멀티콘센트)(직류전원장치)",
+        "model_name": "PM-M300-U",
+        "country": "한국",
+        "cert_date": "2017-12-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-REM-DaW-PM-M300-U"
       },
       {
         "company_name": "주식회사 다원디엔에스",
@@ -413,85 +476,58 @@
       },
       {
         "company_name": "주식회사 다원디엔에스",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "PM-B400-WN",
+        "equip_name": "콘센트",
+        "model_name": "PM-B400-W",
         "country": "한국",
-        "cert_date": "2016-12-28",
-        "cert_status": "적합인증",
-        "cert_no": "MSIP-CMM-DaW-PM-B400-WN"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "NM-G100-ZB",
-        "country": "한국",
-        "cert_date": "2019-10-17",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-DaW-NM-G100-ZB"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "PM-C240-ZB",
-        "country": "한국",
-        "cert_date": "2019-10-17",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-DaW-PM-C240-ZB"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "IOT 3상 전력 측정기",
-        "model_name": "PM-P280-NB",
-        "country": "한국",
-        "cert_date": "2019-10-17",
+        "cert_date": "2016-05-30",
         "cert_status": "적합등록",
-        "cert_no": "R-R-DaW-PM-P280-NB"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "PM-C140-ZB",
-        "country": "한국",
-        "cert_date": "2019-07-08",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-DaW-PM-C140-ZB"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "IOT 3상 전력 측정기",
-        "model_name": "PM-P230-WE",
-        "country": "한국",
-        "cert_date": "2019-06-28",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-DaW-PM-P230-WE"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "PM-J100-WE",
-        "country": "한국",
-        "cert_date": "2019-04-24",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-DaW-PM-J100-WE"
-      },
-      {
-        "company_name": "주식회사 다원디엔에스",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "PM-H140-ZB",
-        "country": "한국",
-        "cert_date": "2019-04-11",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-DaW-PM-H140-ZB"
+        "cert_no": "MSIP-RMM-DaW-PM-B400-W"
       }
     ],
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 지능형 케어 서비스 개발 등 총 2건",
+      "detail": "NTIS에서 [다원디엔에스] 검색어로 조회한 결과, AI 관련 과제 2건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "지능형 케어 서비스 개발",
+          "project_number": "1415180186",
+          "lead_company": "다원디엔에스",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "지능형 케어 서비스 개발",
+          "project_number": "1415186014",
+          "lead_company": "다원디엔에스",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
-        "title": "AI 특허 내역 없음 None"
+        "source_record_id": "1020250077366",
+        "일련번호": "1",
+        "출원번호": "1020250077366",
+        "발명의명칭(한글)": "소규모 가압장 원격 감시 시스템",
+        "출원일자": "2025-06-12",
+        "출원인": "한국수자원공사|주식회사 다원디엔에스",
+        "등록상태": "등록",
+        "초록": "본 발명은 소규모 가압장을 원격 감시하며 누수를 탐지하기 위한 소규모 가압장 원격 감시 시스템에 관한 것으로서, 가압펌프의 전력 소비량 데이터와 가압펌프를 가동 후 정지시킬 시의 수압 데이터를 근거로 단계적으로 누수 여부를 판정하는 가압장 감시 장치(10)와, 가압장 감시 장치(10)에서 누수로 판정할 시에 수압 데이터로 미리 학습시킨 AI 모델로 보다 정확하게 누수 여부를 판정한 후 수압 데이터 패턴의 반복 여부에 따라 검증하며 가압장 감시 장치(10)에서 적용할 누수 여부의 판정 기준을 갱신시키는 중앙 감시 서버(20)를 포함한다.",
+        "IPC": "G06Q 50/06|G06Q 50/10|G01M 3/26|G08C 17/02|G08B 21/18|G08B 25/14|G01F 23/28",
+        "CPC": "",
+        "relevance_type": "general_ai",
+        "match_confidence": 0.45,
+        "search_alias": "다원디엔에스",
+        "search_type": "AI 특허 [일반]",
+        "search_query": "AP=[다원디엔에스]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
+        "status": "verified"
       }
     ],
     "cert_results": [
@@ -512,22 +548,27 @@
         "cert_no": "2023-870-품004",
         "product_name": "AI 스마트 플러그",
         "company_name": "(주)다원디엔에스",
-        "biz_no": null,
-        "representative": null,
+        "biz_no": NaN,
+        "representative": NaN,
         "cert_date": "2024-01-01",
-        "expire_date": null
+        "expire_date": NaN
       }
     ],
     "dart_result": null,
     "target_company_name": "다원디엔에스, DaWonDienes",
-    "model_param": "다원디엔에스 파워매니저 AI 스마트 플러그",
+    "model_param": "",
     "ocr_result": {
-      "extracted_text": "다원디엔에스 파워매니저 AI 스마트 플러그 오늘의집 30,800원 망 3,000원 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 39 뉴스커유니티 연관상품 본센트형 코드수 허용전력 3520W 점격전류 16A 언선 트형대 T자형 안전기능 과부하자다 전원스위치 '위치없음 특징 스드플러그(IoT) 설전타이머 KC인승 [@ 인종 적합성평가인층 상세설명 판매 사이드 분의 | 인종번호 확인 안전확인인승 JH04151-17007A 인증번호 꽉인 상품 설명 복사하기",
+      "extracted_text": "다원디엔에스 파워매니저 AlI 스마트 플러그 [KC인종] Gmarket   29,570원 3,000원 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 39 뉴스커유니티 연관상품 종류- 큰센트형 코드수 허용전력 352oW 정격전류 16A 큰센트형태 T자형 안전기능 과부하차단 전원스위치 스위치없음 특징 스마트플러그(IoT) 절전다이머 KC인종 [@ 인종 적합성평가인증  상세설명 판매 사이트 문의 인공번호 확인 안전확인인증  JH04151-17007A 인증번호 확인 상품 설명 목사하기",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\다원디엔에스 파워매니저 AI 스마트 플러그\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/다원디엔에스 파워매니저 AI 스마트 플러그 [KC인증]/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/다원디엔에스 파워매니저 AI 스마트 플러그 [KC인증]/detail_scan.png",
+        "image_size": 57080,
+        "image_sha256": "a0155f4c1e2c000ab5c41f00dc507abadb74169832157c2ebf9a7ae697caf4ed"
+      }
     }
   }
 }

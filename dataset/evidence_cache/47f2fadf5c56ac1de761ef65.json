@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=104320955",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "DJI ROMO P (단품)",
       "name": "DJI ROMO P (단품)",
       "description": "",
-      "ocr_text": "DJI ROMO P (단품) 디카물 1,299,000원   무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 25 뉴스커유니티 연관상품 (dyson) 삼성:로보락?드리미? 그게원데  다음에서 보기: Ioulube 제조회사 DJI (제조사 \"사이트 바로가기) 등록년원 2026년 01월 품목 로봇청소기 용도 졸입+물걸레 집입력 25,OOOPa 센서 LDS 카메라 사용시간 3시간(최대) 인식 A사물인식 감지회피",
+      "ocr_text": "DJI ROMO P (단품) GK코리마 1,299,000원   무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 25 뉴스커유니티 연관상품 (dyson) 삼성: 로보락? 드리미? 그게원데  Watch on Voulube 제조회사 DJI (제조사 웬사이트 바로가기) 등록년일 2026년 01월 품목 로봇청소기 용도 졸입+물걸레 집입력 25,o0oPa 센서 LDS 카메라 사용시간 3시간(최대) Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "로봇청소기": "지원",
         "흡입+물걸레": "지원",
@@ -37,11 +37,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=104320955",
       "manufacturer": "DJI, DJI",
-      "model_name": "R0M0P"
+      "model_name": "425X453X440MM"
     },
     "norm_info": {
       "company_name": "DJI, DJI",
-      "model_name": "R0M0P",
+      "model_name": "425X453X440MM",
       "product_name": "DJI ROMO P (단품)"
     },
     "db_results": [
@@ -499,7 +499,77 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 농경지에서 다수 무인 비행체 자율 협업주행 시스템 기반의 농작물 표현형 측정 등 총 9건",
+      "detail": "NTIS에서 [DJI] 검색어로 조회한 결과, AI 관련 과제 9건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "농경지에서 다수 무인 비행체 자율 협업주행 시스템 기반의 농작물 표현형 측정",
+          "project_number": "1711135600",
+          "lead_company": "DJI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "K-드론 탐지 및 안티 드론 연동 시스템 개발",
+          "project_number": "1711152866",
+          "lead_company": "DJI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "(약제 편차없는 균일 살포를 위한) 수관부 위치/깊이 인지 및 자체 중량 변화 적응형 자동비행(방제) 기술",
+          "project_number": "2420034193",
+          "lead_company": "DJI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "농경지에서 다수 무인 비행체 자율 협업주행 시스템 기반의 농작물 표현형 측정",
+          "project_number": "1711167050",
+          "lead_company": "DJI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "플러그앤플레이 방식으로 설명가능성을 제공하는 인공지능 기술 개발 및 인공지능 시스템에 대한 설명 제공 검증",
+          "project_number": "1711193255",
+          "lead_company": "DJI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI 기반 다크팩토리 설계-구축 솔루션 개발",
+          "project_number": "2710111763",
+          "lead_company": "DJI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "인공지능(AI) 및 삼중 다중화 융합 기반 고신뢰 무인항공기 비행제어 컴퓨터 개발",
+          "project_number": "2710108666",
+          "lead_company": "DJI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "뇌·인지 발달과정의 기초-영아단계 모사형 실세계 상호작용 경험 기반 객체 관련 개념의 기계학습 기술 개발",
+          "project_number": "1711159715",
+          "lead_company": "DJI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "Edge AI Vision 기반 드론·로봇 Physical AI를 위한 Fast Real-to-Sim 3D 디지털 트윈 플랫폼 개발",
+          "project_number": "2420033388",
+          "lead_company": "DJI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -524,14 +594,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "DJI, DJI",
-    "model_param": "R0M0P",
+    "model_param": "425X453X440MM",
     "ocr_result": {
-      "extracted_text": "DJI ROMO P (단품) 디카물 1,299,000원   무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 25 뉴스커유니티 연관상품 (dyson) 삼성:로보락?드리미? 그게원데  다음에서 보기: Ioulube 제조회사 DJI (제조사 \"사이트 바로가기) 등록년원 2026년 01월 품목 로봇청소기 용도 졸입+물걸레 집입력 25,OOOPa 센서 LDS 카메라 사용시간 3시간(최대) 인식 A사물인식 감지회피",
+      "extracted_text": "DJI ROMO P (단품) GK코리마 1,299,000원   무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 25 뉴스커유니티 연관상품 (dyson) 삼성: 로보락? 드리미? 그게원데  Watch on Voulube 제조회사 DJI (제조사 웬사이트 바로가기) 등록년일 2026년 01월 품목 로봇청소기 용도 졸입+물걸레 집입력 25,o0oPa 센서 LDS 카메라 사용시간 3시간(최대) Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\DJI ROMO P (단품)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/DJI ROMO P (단품)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/DJI ROMO P (단품)/detail_scan.png",
+        "image_size": 307086,
+        "image_sha256": "c51fd147438bc97baf0a76f6e6ea1e091d89c3358b3221f3d9166aa14087ebb1"
+      }
     }
   }
 }

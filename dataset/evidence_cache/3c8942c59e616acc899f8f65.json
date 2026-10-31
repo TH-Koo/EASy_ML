@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=122686317",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "레노버 요가 Slim 7i Ultra Aura Edition 83QK001JKR (리퍼비시)",
       "name": "레노버 요가 Slim 7i Ultra Aura Edition 83QK001JKR (리퍼비시)",
       "description": "",
-      "ocr_text": "레노버 요가 Slim 7i Ultra Aura Edition 83QK001JKR (리퍼비시) 노트클럽 1,890,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 화면 크기 35.56cmn(14인지) 무게 975g 최대사용시간 신대 26.5시간 운영제제 (OS) 원도우11흡 [화면] 화면 비율 1610 해상도 2880x1800(WQXGA+) sRGB 10076 Adobe RGB 1009 DCI-P3 1007 주사율 12OHz 밝기 50Onit 패널 종류 OLED 디스플레이 특징 터치스크린 광시야각 [CPU] CPU 제조사 인텔 CPU 세분류 굳어 울드라5(S3) CPU 코드명 괜서레이크 CPU 넘버 325 (4.5GHz) CPU 코이 옥타코어(4P+4LE) CPU 스레드 8스레드 NPU 종류 인텔 Al Boost NPU 47TOPS [그래픽] GPU 종류 내장그래픽 GPU 제조사 GPU 침셋 Intel Graphics [구성] 댐 타입 LPDDR5x(온보드) 32GB 쓰 대역쪽 7467MHz 램 교체 불가능",
+      "ocr_text": "레노버 요가 slim 7i Ultra Aura Edition 83QK001JKR (리퍼비시) 노트클럽 1,899,000원 무료배송  최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 화면 크기 35.56cm(i4인지) 무게 975g 최대사용시간 최대 26.5시간 운영제제(OS) 원도우기흡 [화면] 화면 비율 1610 허상도 2880x180O(WQXGA+) sRGB 10096 Adobe RGB 10096 DCI-P3 1009 주사율 I2OHz 밝기 5oOnit 패널 종류 OLED 디스플레이 특징 터지스크린 광시야각 [CPU] CPU 제조사 인텔 CPU 세분류 코어 울드라5(S3) CPU 코드명 팬서레이크 CPU 넘버 325 (4.5GHz) CPU 코어 목타코어(4P+4LE) CPU 스레드 8스레드 NPU 종류 인텔 Al Boost NPU 47TOPS [그래픽] GPU 종류 내장그래픽 GPU 제조사  인텔 GPU 집셋 Intel Graphics Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "리퍼비시": "지원",
         "AI노트북": "지원",
@@ -36,11 +36,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=122686317",
       "manufacturer": "레노버, Lenober",
-      "model_name": "83QK001JKR"
+      "model_name": "DCI-P3"
     },
     "norm_info": {
       "company_name": "레노버, Lenober",
-      "model_name": "83QK001JKR",
+      "model_name": "DCI-P3",
       "product_name": "레노버 요가 Slim 7i Ultra Aura Edition 83QK001JKR (리퍼비시)"
     },
     "db_results": [
@@ -508,14 +508,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "레노버, Lenober",
-    "model_param": "83QK001JKR",
+    "model_param": "DCI-P3",
     "ocr_result": {
-      "extracted_text": "레노버 요가 Slim 7i Ultra Aura Edition 83QK001JKR (리퍼비시) 노트클럽 1,890,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 화면 크기 35.56cmn(14인지) 무게 975g 최대사용시간 신대 26.5시간 운영제제 (OS) 원도우11흡 [화면] 화면 비율 1610 해상도 2880x1800(WQXGA+) sRGB 10076 Adobe RGB 1009 DCI-P3 1007 주사율 12OHz 밝기 50Onit 패널 종류 OLED 디스플레이 특징 터치스크린 광시야각 [CPU] CPU 제조사 인텔 CPU 세분류 굳어 울드라5(S3) CPU 코드명 괜서레이크 CPU 넘버 325 (4.5GHz) CPU 코이 옥타코어(4P+4LE) CPU 스레드 8스레드 NPU 종류 인텔 Al Boost NPU 47TOPS [그래픽] GPU 종류 내장그래픽 GPU 제조사 GPU 침셋 Intel Graphics [구성] 댐 타입 LPDDR5x(온보드) 32GB 쓰 대역쪽 7467MHz 램 교체 불가능",
+      "extracted_text": "레노버 요가 slim 7i Ultra Aura Edition 83QK001JKR (리퍼비시) 노트클럽 1,899,000원 무료배송  최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 화면 크기 35.56cm(i4인지) 무게 975g 최대사용시간 최대 26.5시간 운영제제(OS) 원도우기흡 [화면] 화면 비율 1610 허상도 2880x180O(WQXGA+) sRGB 10096 Adobe RGB 10096 DCI-P3 1009 주사율 I2OHz 밝기 5oOnit 패널 종류 OLED 디스플레이 특징 터지스크린 광시야각 [CPU] CPU 제조사 인텔 CPU 세분류 코어 울드라5(S3) CPU 코드명 팬서레이크 CPU 넘버 325 (4.5GHz) CPU 코어 목타코어(4P+4LE) CPU 스레드 8스레드 NPU 종류 인텔 Al Boost NPU 47TOPS [그래픽] GPU 종류 내장그래픽 GPU 제조사  인텔 GPU 집셋 Intel Graphics Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\레노버 요가 Slim 7i Ultra Aura Edition 83QK001JKR (리퍼비시)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/레노버 요가 Slim 7i Ultra Aura Edition 83QK001JKR (리퍼비시)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/레노버 요가 Slim 7i Ultra Aura Edition 83QK001JKR (리퍼비시)/detail_scan.png",
+        "image_size": 102347,
+        "image_sha256": "e6bfa38afba136f1683769d2bd9d7ddc18f5ea20a7de94b041cc61746df2eec9"
+      }
     }
   }
 }
