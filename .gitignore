@@ -23,3 +23,6 @@ env/
 # IDE
 .vscode/
 .idea/
+
+# 로컬 분석 결과 캐시 (server.py save_result_cache)
+logs/
