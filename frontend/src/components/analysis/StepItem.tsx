@@ -6,9 +6,9 @@ import type { StageStatus } from "@/types/analysis";
 /**
  * 파이프라인 한 단계.
  *
- * 홈·결과 화면과 같은 말씨와 색을 쓴다. 끝난 단계는 보라 체크, 지금
- * 단계는 연보라 바탕 위 연보라 점이 숨 쉬듯 깜빡이고, 기다리는 단계는
- * 회색이다. 오류만 로즈다(결과 화면에서 로즈는 '문제'를 뜻한다).
+ * 홈·결과 화면과 같은 말씨와 색을 쓴다. 연보라 카드 위에서 끝난 단계는
+ * 보라 체크, 지금 단계는 흰 줄 위 연보라 점이 숨 쉬듯 깜빡이고, 기다리는
+ * 단계는 옅은 보라 점이다. 오류만 로즈다(결과 화면에서 로즈는 '문제'를 뜻한다).
  */
 
 interface StepItemProps {
@@ -29,9 +29,10 @@ export function StepItem({ stage }: StepItemProps) {
   return (
     <li
       className={cn(
-        "border-border flex min-w-0 items-center gap-3 border-b py-3",
-        // 지금 단계는 연보라 바탕으로 띄운다 — 결과 화면에서 연보라는 '일부(진행 중인 확인)'다
-        stage.state === "running" && "-mx-3 rounded-xl border-transparent bg-[var(--claim-ok-soft)] px-3",
+        "flex min-w-0 items-center gap-3 border-b border-[rgba(103,65,217,.10)] py-3",
+        // 연보라 카드 위에서 지금 단계 줄만 흰 바탕으로 띄운다
+        stage.state === "running" &&
+          "bg-surface -mx-3 rounded-xl border-transparent px-3 shadow-[0_1px_3px_rgba(103,65,217,.10)]",
       )}
     >
       <Mark state={stage.state} />
@@ -77,7 +78,7 @@ function Mark({ state }: { state: StageStatus["state"] }) {
   }
   return (
     <span aria-hidden className="grid size-5 shrink-0 place-items-center">
-      <span className="bg-border size-2.5 rounded-full" />
+      <span className="size-2.5 rounded-full bg-[rgba(103,65,217,.18)]" />
     </span>
   );
 }

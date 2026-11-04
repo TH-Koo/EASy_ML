@@ -20,7 +20,7 @@ import {
  * 말씨와 조형을 그대로 잇는다. 검색창에서 넘어와 결과가 나올 때까지 한
  * 서비스처럼 보이게 하려는 것이다.
  *
- *   제목       무엇을 하고 있는지 한 문장
+ *   제목       "분석 중" 한 마디
  *   진행 카드  지금 단계 · n/6 · 진행 막대 · 경과/남은 시간 · 여섯 단계
  *
  * 남은 예상 시간은 서버에서 소식을 들은 뒤에만 보인다. computeEta 는 소식이
@@ -132,20 +132,15 @@ export function PipelineProgress({ analysisId, progress }: PipelineProgressProps
       aria-busy={status === "running" || status === "queued"}
     >
       <div className="w-full max-w-[720px]">
-        <div className="text-center">
-          <h1 className="text-fg text-[clamp(26px,3.6vw,36px)] leading-[1.3] font-bold tracking-[-0.03em]">
-            광고 속 AI 기능을
-            <br />
-            <span className="text-brand-fg">공공 기록과 맞춰 보는 중이에요</span>
-          </h1>
-          <p className="text-fg-muted mt-3 text-[15px]">
-            공공 기록 조회는 기관 응답을 기다려서, 단계마다 걸리는 시간이 달라요.
-          </p>
-        </div>
+        {/* 제목은 짧게 한 마디. 무엇을 하는지는 아래 카드가 말한다 */}
+        <h1 className="text-fg text-center text-[clamp(26px,3.6vw,36px)] leading-[1.3] font-bold tracking-[-0.03em]">
+          분석 <span className="text-brand-fg">중</span>
+        </h1>
 
         {url ? <AddressPill url={url} /> : null}
 
-        <div className="bg-surface-strong mt-6 rounded-[20px] px-6 pt-5 pb-3 md:px-7">
+        {/* 카드 바탕은 아주 연한 보라. 지금 단계 줄만 흰색으로 띄운다 */}
+        <div className="mt-6 rounded-[20px] bg-[#f7f5fe] px-6 pt-5 pb-3 md:px-7">
           <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
             <p className="text-fg text-[17px] font-bold tracking-[var(--tracking-tight)]">
               {current}
@@ -165,7 +160,7 @@ export function PipelineProgress({ analysisId, progress }: PipelineProgressProps
             aria-valuemax={100}
             aria-valuenow={percent}
             aria-label="분석 진행률"
-            className="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-[var(--claim-ok-soft)]"
+            className="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-[rgba(103,65,217,.12)]"
           >
             {/* 연보라에서 보라로 — 끝으로 갈수록 진해진다 */}
             <div
