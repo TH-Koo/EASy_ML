@@ -1,6 +1,6 @@
 "use client";
 
-import { AlertTriangle, RotateCcw } from "lucide-react";
+import { AlertTriangle, Search } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
@@ -131,30 +131,28 @@ export function AnalysisRunner({ id }: AnalysisRunnerProps) {
 /**
  * 실패 화면.
  *
- * 카드를 걷어냈다. 실패 하나를 알리려고 테두리와 그림자를 두른 상자를
- * 세우면 상자가 먼저 보인다. 진행 화면과 같은 폭·같은 조판을 쓰고,
- * 판정 색 중 `missing` 하나만 얹는다.
+ * 진행 화면과 같은 흰 바탕·가운데 제목을 쓰고, 문제를 뜻하는 로즈 하나만
+ * 얹는다. 할 수 있는 일은 다른 제품을 다시 검색하는 것 하나다.
  */
 function ErrorPanel({ message }: { message: string }) {
   return (
-    <section className="bg-bg flex flex-1 justify-center px-5 py-16 md:px-10">
-      <div className="w-full max-w-[540px]">
-        <p
-          className="flex items-center gap-2 font-mono text-xs tracking-[var(--tracking-label)]"
-          style={{ color: "var(--color-missing)" }}
+    <section className="theme-violet bg-surface flex flex-1 justify-center px-5 pt-16 pb-20 md:pt-20">
+      <div className="w-full max-w-[560px] text-center">
+        <span
+          aria-hidden
+          className="mx-auto grid size-11 place-items-center rounded-full bg-[var(--claim-no-soft)] text-[var(--claim-no)]"
         >
-          <AlertTriangle size={13} aria-hidden />
-          Failed
-        </p>
-        <h1 className="text-fg mt-4 text-2xl font-medium tracking-[var(--tracking-heading)]">
-          분석을 표시할 수 없습니다
+          <AlertTriangle size={20} />
+        </span>
+        <h1 className="text-fg mt-5 text-[clamp(24px,3.2vw,30px)] leading-snug font-bold tracking-[-0.03em]">
+          분석을 끝내지 못했어요
         </h1>
-        <p className="text-fg-dim mt-3 text-xs leading-loose">{message}</p>
-        <div className="border-border mt-8 border-t pt-6">
-          <Button asChild variant="primary">
+        <p className="text-fg-muted mt-3 text-[15px] leading-relaxed">{message}</p>
+        <div className="mt-8 flex justify-center">
+          <Button asChild variant="cta" size="lg" style={{ background: "var(--color-brand)" }}>
             <Link href="/">
-              <RotateCcw size={16} aria-hidden />
-              새 분석 시작
+              <Search size={16} aria-hidden />
+              다른 제품 검색하기
             </Link>
           </Button>
         </div>
