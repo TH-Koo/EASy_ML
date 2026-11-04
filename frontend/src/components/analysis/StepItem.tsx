@@ -6,8 +6,8 @@ import type { StageStatus } from "@/types/analysis";
 /**
  * 파이프라인 한 단계.
  *
- * 홈·결과 화면과 같은 말씨와 색을 쓴다. 색은 보라 하나 — 끝난 단계는
- * 보라 체크, 지금 단계는 보라 점이 숨 쉬듯 깜빡이고, 기다리는 단계는
+ * 홈·결과 화면과 같은 말씨와 색을 쓴다. 끝난 단계는 보라 체크, 지금
+ * 단계는 연보라 바탕 위 연보라 점이 숨 쉬듯 깜빡이고, 기다리는 단계는
  * 회색이다. 오류만 로즈다(결과 화면에서 로즈는 '문제'를 뜻한다).
  */
 
@@ -27,7 +27,13 @@ export function StepItem({ stage }: StepItemProps) {
   const isError = stage.state === "error";
 
   return (
-    <li className="border-border flex min-w-0 items-center gap-3 border-b py-3">
+    <li
+      className={cn(
+        "border-border flex min-w-0 items-center gap-3 border-b py-3",
+        // 지금 단계는 연보라 바탕으로 띄운다 — 결과 화면에서 연보라는 '일부(진행 중인 확인)'다
+        stage.state === "running" && "-mx-3 rounded-xl border-transparent bg-[var(--claim-ok-soft)] px-3",
+      )}
+    >
       <Mark state={stage.state} />
       <div className="min-w-0 flex-1">
         <p
@@ -65,7 +71,7 @@ function Mark({ state }: { state: StageStatus["state"] }) {
   if (state === "running") {
     return (
       <span aria-hidden className="grid size-5 shrink-0 place-items-center">
-        <span className="bg-brand size-2.5 animate-pulse rounded-full shadow-[0_0_0_5px_var(--color-brand-soft)] motion-reduce:animate-none" />
+        <span className="size-2.5 animate-pulse rounded-full bg-[var(--claim-part)] shadow-[0_0_0_5px_rgba(160,139,234,.25)] motion-reduce:animate-none" />
       </span>
     );
   }

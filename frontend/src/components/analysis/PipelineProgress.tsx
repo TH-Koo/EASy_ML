@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { Link2 } from "lucide-react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 
 import { StepItem } from "@/components/analysis/StepItem";
 import { computeEta } from "@/lib/timing";
@@ -54,6 +55,44 @@ const DOING: Record<StageName, string> = {
   score: "판정을 계산하는 중",
 };
 
+/**
+ * 홈 검색창에서 넣은 주소. 진행 이벤트에는 주소가 없어서, 검증을 시작할 때
+ * VerifyForm 이 sessionStorage 에 남긴 값을 읽는다. 다른 경로로 들어왔으면 없다.
+ */
+export const analyzedUrlKey = (id: string) => `fides_url_${id}`;
+
+function useAnalyzedUrl(id: string): string | null {
+  return useSyncExternalStore(
+    () => () => {},
+    () => {
+      try {
+        return sessionStorage.getItem(analyzedUrlKey(id));
+      } catch {
+        return null;
+      }
+    },
+    () => null,
+  );
+}
+
+/** 홈 검색창과 같은 모양 — 넣은 주소가 그대로 확인되고 있다는 걸 이어서 보여 준다. */
+function AddressPill({ url }: { url: string }) {
+  return (
+    <div className="bg-surface border-border mx-auto mt-8 flex max-w-[700px] items-center gap-3 rounded-[14px] border-[1.5px] py-1.5 pr-1.5 pl-2 shadow-[0_1px_2px_rgba(16,24,40,.04)]">
+      <span aria-hidden className="bg-brand-soft text-brand-fg grid size-[38px] shrink-0 place-items-center rounded-[10px]">
+        <Link2 size={18} />
+      </span>
+      <span className="text-fg min-w-0 flex-1 truncate py-2.5 text-[15px]" title={url}>
+        {url}
+      </span>
+      <span className="text-brand-fg inline-flex h-[42px] shrink-0 items-center gap-2 rounded-[10px] bg-[var(--claim-ok-soft)] px-4 text-sm font-bold">
+        <span aria-hidden className="size-2 animate-pulse rounded-full bg-[var(--claim-part)] motion-reduce:animate-none" />
+        확인 중
+      </span>
+    </div>
+  );
+}
+
 /** 75 → "1분 15초", 9 → "9초" */
 function duration(sec: number): string {
   const s = Math.max(0, Math.round(sec));
@@ -84,6 +123,7 @@ export function PipelineProgress({ analysisId, progress }: PipelineProgressProps
         ? "확인 완료"
         : "확인하는 중";
   const eta = computeEta(progress);
+  const url = useAnalyzedUrl(analysisId);
 
   return (
     <section
@@ -103,7 +143,9 @@ export function PipelineProgress({ analysisId, progress }: PipelineProgressProps
           </p>
         </div>
 
-        <div className="bg-surface-strong mt-10 rounded-[20px] px-6 pt-5 pb-3 md:px-7">
+        {url ? <AddressPill url={url} /> : null}
+
+        <div className="bg-surface-strong mt-6 rounded-[20px] px-6 pt-5 pb-3 md:px-7">
           <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
             <p className="text-fg text-[17px] font-bold tracking-[var(--tracking-tight)]">
               {current}
@@ -123,11 +165,15 @@ export function PipelineProgress({ analysisId, progress }: PipelineProgressProps
             aria-valuemax={100}
             aria-valuenow={percent}
             aria-label="분석 진행률"
-            className="bg-border mt-3 h-1.5 w-full overflow-hidden rounded-full"
+            className="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-[var(--claim-ok-soft)]"
           >
+            {/* 연보라에서 보라로 — 끝으로 갈수록 진해진다 */}
             <div
-              className="bg-brand h-full rounded-full transition-[width] duration-500 ease-out"
-              style={{ width: `${percent}%` }}
+              className="h-full rounded-full transition-[width] duration-500 ease-out"
+              style={{
+                width: `${percent}%`,
+                background: "linear-gradient(90deg, var(--claim-part), var(--color-brand))",
+              }}
             />
           </div>
 
@@ -137,6 +183,20 @@ export function PipelineProgress({ analysisId, progress }: PipelineProgressProps
               <StepItem key={s.name} stage={s} />
             ))}
           </ol>
+        </div>
+
+        {/* 결과에서 쓸 색을 미리 보여 준다 — 보라 · 연보라 · 로즈 */}
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-2 text-[13px]">
+          <span className="text-fg-dim mr-1">결과는 이렇게 알려 드려요</span>
+          <span className="rounded-full bg-[var(--claim-ok-soft)] px-3 py-1 font-semibold text-[var(--claim-ok)]">
+            근거 충분
+          </span>
+          <span className="rounded-full bg-[rgba(160,139,234,.16)] px-3 py-1 font-semibold text-[#8a72e0]">
+            근거 일부 확인
+          </span>
+          <span className="rounded-full bg-[var(--claim-no-soft)] px-3 py-1 font-semibold text-[var(--claim-no)]">
+            근거 미확인
+          </span>
         </div>
 
         <p className="text-fg-dim mt-5 text-center text-xs tabular-nums">분석 번호 {analysisId}</p>

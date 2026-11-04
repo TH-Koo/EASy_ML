@@ -4,6 +4,7 @@ import { Check, Link2, Loader2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useRef, useState } from "react";
 
+import { analyzedUrlKey } from "@/components/analysis/PipelineProgress";
 import { startAnalysis } from "@/lib/api";
 import { getStoredToken } from "@/lib/auth";
 import { cn } from "@/lib/cn";
@@ -95,6 +96,12 @@ export function VerifyForm({ onGuide }: { onGuide?: (cell: GuideCell) => void })
     setBusy(true);
     try {
       const res = await startAnalysis(checked.url, token);
+      // 진행 화면이 '지금 이 주소를 확인 중'이라고 이어서 보여 줄 수 있게 남긴다
+      try {
+        sessionStorage.setItem(analyzedUrlKey(res.analysis_id), checked.url);
+      } catch {
+        /* 사생활 보호 모드 등에서는 저장이 막힌다. 주소 줄만 안 보일 뿐이다. */
+      }
       router.push(`/analysis/${res.analysis_id}`);
     } catch (err: unknown) {
       setError(err instanceof Error ? err.message : "분석 요청 중 오류가 발생했어요.");
