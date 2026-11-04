@@ -535,6 +535,7 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
             f"ECS={analysis_result.ecs}, verdict={analysis_result.verdict}, "
             f"weights={weighting['weights']}, model_version={weighting['model_version']}"
         )
+        log_claim_breakdown(analysis_result.capability_scores)
 
         # 📊 Step 7: 프론트엔드용 JSON 결과 조립
         push(6, "분석 완료 및 결과 반환")
@@ -594,6 +595,7 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
         }
 
         _tasks[task_id]["events"].append({"type": "result", "data": result_payload})
+        save_result_cache(task_id, result_payload)
 
         # 📝 히스토리 저장 (로그인 사용자에 한해서만)
         if user_id:
@@ -672,6 +674,10 @@ def build_claims(capability_scores: list) -> list:
     몇 건인지까지만 알 뿐 "어느 주장에 근거가 없는가"를 말할 수 없었는데,
     그게 이 서비스의 결론이다.
 
+    capability_scores 에는 온톨로지의 기능 전부(28개)가 들어 있다. 광고에서
+    실제로 걸린 것(positive_claim)만 주장이다. 거르지 않으면 모니터 결과에
+    "AI 건조 코스 추천" 같은 남의 기능이 광고한 기능처럼 나온다.
+
     판정 기준:
         근거 소스가 하나도 없으면            unsupported
         있으나 필수 요건을 다 못 채웠으면      partial
@@ -680,6 +686,8 @@ def build_claims(capability_scores: list) -> list:
     claims = []
     for i, c in enumerate(capability_scores or []):
         if not isinstance(c, dict):
+            continue
+        if not c.get("positive_claim", True):
             continue
 
         sources = [s for s in (c.get("supporting_sources") or []) if s]
@@ -713,6 +721,39 @@ def build_claims(capability_scores: list) -> list:
             "note": " · ".join(missing) if missing else None,
         })
     return claims
+
+
+def log_claim_breakdown(capability_scores: list) -> None:
+    """광고에서 잡힌 주장마다 판정과 세부점수를 한 줄씩 찍는다."""
+    claims = {c["id"]: c for c in build_claims(capability_scores)}
+    roll = claims_rollup(claims.values())
+    print(f"[Claims] 확인 {roll['verified']} · 일부 {roll['partial']} · 미확인 {roll['missing']}")
+    for c in capability_scores or []:
+        claim = claims.get(c.get("capability_id"))
+        if claim is None:
+            continue
+        print(
+            f"  {claim['status']:<11} {c.get('capability_name_ko')} "
+            f"final={c.get('final_score')} claim={c.get('base_claim_score')} "
+            f"req={c.get('required_fulfillment_ratio')} opt={c.get('optional_fulfillment_ratio')} "
+            f"src={','.join(c.get('supporting_sources') or []) or '-'} "
+            f"missing={' · '.join(c.get('missing_required_components') or []) or '-'}"
+        )
+
+
+# DB 없이도 분석 결과를 다시 볼 수 있게 로컬에 남긴다. result_json 과 같은 모양이다.
+RESULT_CACHE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logs", "analysis")
+
+
+def save_result_cache(task_id: str, result_payload: dict) -> None:
+    try:
+        os.makedirs(RESULT_CACHE_DIR, exist_ok=True)
+        name = f"{datetime.now():%Y%m%d_%H%M%S}_{task_id[:8]}.json"
+        with open(os.path.join(RESULT_CACHE_DIR, name), "w", encoding="utf-8") as f:
+            json.dump(result_payload, f, ensure_ascii=False, indent=2, default=str)
+        print(f"[Cache] saved {name}")
+    except Exception as ce:
+        print(f"[Cache] save failed: {ce}")
 
 
 def claims_rollup(claims: list) -> dict:
