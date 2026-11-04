@@ -30,5 +30,5 @@ const SAMPLE: ProgressEvent = {
 };
 
 export default function ProgressPreviewPage() {
-  return <PipelineProgress analysisId={SAMPLE.analysis_id} progress={SAMPLE} />;
+  return <PipelineProgress progress={SAMPLE} />;
 }

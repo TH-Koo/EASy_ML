@@ -125,7 +125,7 @@ export function AnalysisRunner({ id }: AnalysisRunnerProps) {
   if (phase === "complete" && result) {
     return <ResultView data={result} elapsedSeconds={elapsed} />;
   }
-  return <PipelineProgress analysisId={id} progress={progress} />;
+  return <PipelineProgress progress={progress} />;
 }
 
 /**
