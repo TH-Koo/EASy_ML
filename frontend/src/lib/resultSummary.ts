@@ -18,7 +18,19 @@ import type {
 
 export type VerdictLevel = 0 | 1 | 2;
 
-export const VERDICT_STEPS = ["충분", "부족", "매우 부족"] as const;
+/* "부족" 은 광고가 틀렸다고 단정하는 말이라, 찾지 못했다는 사실 그대로
+   "미확인" 으로 쓴다. 제목에는 앞에 "근거" 를 붙인다(근거 일부 확인). */
+export const VERDICT_STEPS = ["충분", "일부 확인", "미확인"] as const;
+
+/** 판정 단계 색 — 큰 판정 글씨와 점수 막대의 지금 구간에 쓴다. */
+export const VERDICT_COLOR = ["var(--claim-ok)", "var(--claim-part)", "var(--claim-no)"] as const;
+
+/**
+ * 점수 막대의 구간 경계. fides_config.py 의 VerdictThresholds
+ * (suspected 21.8 · normal 35)와 같다. 엔진은 신뢰도도 함께 보므로 드물게
+ * 핀이 판정과 다른 구간에 설 수 있다 — 막대는 판정 단계 색을 따른다.
+ */
+export const SCORE_ZONES = { low: 21.8, high: 35 } as const;
 
 /** 백엔드 구간 라벨 → 화면 3단계. "판정 제외"는 단계가 없다. */
 export function verdictLevel(label: OverallLabel): VerdictLevel | null {
@@ -152,6 +164,34 @@ export function evidenceChips(claim: Claim): string[] {
     counts.set(name, (counts.get(name) ?? 0) + 1);
   }
   return [...counts].map(([name, n]) => (n > 1 ? `${name} ${n}` : name));
+}
+
+/**
+ * 찾은 공공 기록을 종류별로 센다 — 요약 띠의 "찾은 공공 기록" 칸.
+ * 판매 페이지는 공공 기록이 아니라 뺀다.
+ */
+const RECORD_KIND: Record<string, string> = {
+  kipris: "특허",
+  kc: "인증",
+  rra: "인증",
+  gs: "인증",
+  nep: "인증",
+  dart: "공시",
+  tipa: "이력",
+  koraia: "이력",
+  procurement: "이력",
+};
+
+export function recordTally(claims: Claim[]): { total: number; kinds: [string, number][] } {
+  const counts = new Map<string, number>();
+  for (const c of claims) {
+    for (const e of c.evidence) {
+      const kind = RECORD_KIND[e.source.toLowerCase()];
+      if (kind) counts.set(kind, (counts.get(kind) ?? 0) + 1);
+    }
+  }
+  const kinds = [...counts].sort((a, b) => b[1] - a[1]);
+  return { total: kinds.reduce((n, [, v]) => n + v, 0), kinds };
 }
 
 /* ── "쉽게 말하면" ────────────────────────────────────────────────────── */

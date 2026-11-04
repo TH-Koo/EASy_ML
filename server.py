@@ -887,6 +887,8 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
             "ai_claims_count": len(top_caps) or len(reasons),
             "analysis_duration_seconds": round(duration, 1),
             "analysis_date": datetime.now().date().isoformat(),
+            # 결과 화면의 '다나와에서 보기' 바로가기. 저장된 기록에도 같은 값이 들어 있다.
+            "url": payload.get("url", ""),
         },
         "scores": {
             # 화면에는 표시 점수(v2)를, 판정·비교용 원점수는 overall_raw 로 같이 싣는다.

@@ -17,7 +17,7 @@ export function TrustBar({ data }: { data: AnalysisResult }) {
     {
       Icon: CalendarDays,
       title: `${data.product.analysis_date.replaceAll("-", ".")} 기준`,
-      note: "이후 등록분은 빠져 있어요",
+      note: "이후 등록된 기록은 빠져 있어요",
     },
   ];
 

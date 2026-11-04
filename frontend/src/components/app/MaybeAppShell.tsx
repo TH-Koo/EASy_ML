@@ -1,12 +1,15 @@
 "use client";
 
-import { AppShell } from "@/components/app/AppShell";
+import { TopBar } from "@/components/app/TopBar";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { useAuth } from "@/lib/auth";
 
 /**
- * 로그인했으면 셸 안에서, 아니면 그대로.
+ * 로그인했으면 위 한 줄 메뉴(TopBar) 아래에서, 아니면 그대로.
+ *
+ * 예전에는 기록 사이드바(AppShell)를 붙였다. 첫 화면과 같은 한 줄 메뉴로
+ * 바꿨다 — 지난 기록은 '내 기록'(대시보드)에서 본다.
  *
  * 사이드바는 그 사람의 기록을 보여주는 물건이라 세션이 없으면 채울 게
  * 없다. 그런데 셸을 붙일지 말지는 경로만으로 정할 수 없다 — `/about` 도
@@ -33,7 +36,14 @@ export function MaybeAppShell({
 }) {
   const { user, mounted } = useAuth();
 
-  if (mounted && user) return <AppShell user={user}>{children}</AppShell>;
+  if (mounted && user) {
+    return (
+      <>
+        <TopBar user={user} />
+        <main className="flex flex-1 flex-col">{children}</main>
+      </>
+    );
+  }
 
   if (signedOutChrome === "site") {
     return (
