@@ -1,8 +1,6 @@
 "use client";
 
 import { TopBar } from "@/components/app/TopBar";
-import { SiteFooter } from "@/components/layout/SiteFooter";
-import { SiteHeader } from "@/components/layout/SiteHeader";
 import { useAuth } from "@/lib/auth";
 
 /**
@@ -28,7 +26,7 @@ export function MaybeAppShell({
   /**
    * 로그인하지 않았을 때 무엇으로 감쌀지.
    *
-   * `site` — 공용 헤더·푸터. 셸이 없으면 돌아갈 길도 없는 화면에 쓴다
+   * `site` — 같은 위 메뉴(로그인 · 회원가입 표시). 돌아갈 길이 필요한 화면에 쓴다
    *          (분석 진행 화면이 그렇다)
    * `none` — 아무것도. 자체 내비를 가진 화면에 쓴다 (소개 서사)
    */
@@ -48,9 +46,8 @@ export function MaybeAppShell({
   if (signedOutChrome === "site") {
     return (
       <>
-        <SiteHeader />
+        <TopBar user={null} />
         <main className="flex flex-1 flex-col">{children}</main>
-        <SiteFooter />
       </>
     );
   }

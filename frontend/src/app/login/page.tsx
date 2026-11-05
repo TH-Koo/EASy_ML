@@ -8,6 +8,7 @@ import { Button } from "@/components/primitives/Button";
 import { apiLogin, apiRegister } from "@/lib/api/auth";
 import { useAuth } from "@/lib/auth";
 import { cn } from "@/lib/cn";
+import { safeNext } from "@/lib/loginLink";
 
 /**
  * 로그인 · 회원가입.
@@ -46,7 +47,8 @@ function LoginContent() {
 
   const done = (d: { token: string; email: string; nickname: string }) => {
     saveUser(d);
-    router.push("/");
+    // 북마크·내 기록을 누르다 왔으면 하던 화면으로 돌려보낸다
+    router.push(safeNext(searchParams.get("next")));
   };
 
   return (

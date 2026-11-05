@@ -8,7 +8,10 @@ import { cn } from "@/lib/cn";
 import type { AuthUser } from "@/types/auth";
 
 /**
- * 로그인한 사람의 첫 화면 — 위 한 줄 메뉴 + 가운데 검색창 + 주소 안내.
+ * 검색 화면 — 위 한 줄 메뉴 + 가운데 검색창 + 주소 안내.
+ *
+ * 로그인하지 않아도 그대로 쓴다(`user` 가 null). 계정이 필요한 건 기록과
+ * 북마크뿐이라, 그 버튼을 누를 때 로그인으로 보낸다.
  *
  * 사이드바(기록·폴더)를 걷어냈다. 처음 쓰는 사람과 시연에서 QR 로 들어온
  * 사람에게 필요한 건 "주소 넣기 → 결과 보기" 하나다. 지난 기록은 위 메뉴의
@@ -17,7 +20,7 @@ import type { AuthUser } from "@/types/auth";
  * 색은 보라 하나로 둔다. 로즈는 분석 화면에서 '미확인'을 뜻하므로 여기서는
  * 안 되는 주소를 알릴 때만 쓴다.
  */
-export function SignedInHome({ user }: { user: AuthUser }) {
+export function SearchHome({ user }: { user: AuthUser | null }) {
   // 에러가 난 주소와 관련된 안내 칸을 잠깐 반짝인다. key 를 바꿔 애니메이션을 다시 튼다.
   const [flash, setFlash] = useState<{ cell: GuideCell; n: number } | null>(null);
 

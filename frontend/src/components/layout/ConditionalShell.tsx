@@ -12,7 +12,7 @@ export function ConditionalShell({ children }: { children: React.ReactNode }) {
      길을 열어 둘 이유가 없고, 셸의 로고와 페이지 자신의 로고가 나란히 두
      번 보이는 문제도 여기서 없어진다. */
   /* `/` 는 로그인 여부에 따라 셸이 필요할 때와 아닐 때가 갈린다. 여기서는
-     경로만 보이므로 언제나 셸 밖에 두고, 로그인 화면(SignedInHome)이 자기
+     경로만 보이므로 언제나 셸 밖에 두고, 검색 화면(SearchHome)이 자기
      껍데기를 직접 그린다.
 
      `/history/{id}` 와 `/analysis/{id}` 도 마찬가지다 — 둘 다 MaybeAppShell
@@ -20,6 +20,7 @@ export function ConditionalShell({ children }: { children: React.ReactNode }) {
      고른다. 여기서 SiteHeader 를 또 붙이면 내비가 두 벌이 된다. */
   const isBare =
     pathname === "/" ||
+    pathname === "/search" ||
     pathname === "/about" ||
     pathname === "/login" ||
     pathname === "/demo" ||

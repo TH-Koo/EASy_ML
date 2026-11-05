@@ -19,7 +19,7 @@ import { cn } from "@/lib/cn";
  */
 export function HeroCta({ className }: { className?: string }) {
   const { user, mounted } = useAuth();
-  const href = mounted && user ? "/" : "/login";
+  const href = mounted && user ? "/" : "/search";
 
   return (
     <Link
