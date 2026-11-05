@@ -27,8 +27,11 @@ export function TopBar({ user }: { user: AuthUser | null }) {
           <i aria-hidden className="ml-0.5 inline-block size-[7px] -translate-y-3 rounded-full bg-[var(--claim-no)]" />
         </Link>
         <nav className="text-fg-muted flex items-center gap-5 text-sm font-semibold">
-          <Link href={user ? "/" : "/search"} className="hover:text-fg hidden sm:inline">
+          <Link href="/" className="hover:text-fg hidden sm:inline">
             확인하기
+          </Link>
+          <Link href="/about" className="hover:text-fg">
+            서비스 소개
           </Link>
           {/* 기록은 계정에 쌓이므로, 비로그인이면 로그인 뒤 그리로 보낸다 */}
           <Link href={user ? "/dashboard" : loginHref("/dashboard")} className="hover:text-fg">
