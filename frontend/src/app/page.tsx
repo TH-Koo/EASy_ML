@@ -1,14 +1,14 @@
 "use client";
 
-import { SignedInHome } from "@/components/home/SignedInHome";
+import { SearchHome } from "@/components/home/SearchHome";
 import { LandingStory } from "@/components/landing/LandingStory";
 import { useAuth } from "@/lib/auth";
 
 /**
  * 첫 화면 — 로그인 여부로 갈린다.
  *
- *   로그인 전 → 서사 (LandingStory). 마지막 칸은 `시작하기` 다
- *   로그인 후 → 검색창 + 최근 분석 (SignedInHome)
+ *   로그인 전 → 서사 (LandingStory). `시작하기` 는 검색 화면(/search)으로 간다
+ *   로그인 후 → 검색 화면 (SearchHome)
  *
  * 소개는 /about 에 그대로 있어 로그인한 뒤에도 헤더에서 갈 수 있다.
  *
@@ -22,6 +22,6 @@ import { useAuth } from "@/lib/auth";
 export default function HomePage() {
   const { user, mounted } = useAuth();
 
-  if (mounted && user) return <SignedInHome user={user} />;
+  if (mounted && user) return <SearchHome user={user} />;
   return <LandingStory signedIn={false} />;
 }

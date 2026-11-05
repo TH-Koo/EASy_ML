@@ -9,7 +9,7 @@ import { getStoredToken } from "@/lib/auth";
 import { cn } from "@/lib/cn";
 
 /**
- * 로그인 첫 화면의 주소 입력.
+ * 검색 화면의 주소 입력.
  *
  * 보내기 전에 여기서 거른다. 서버도 다나와가 아닌 주소는 400 으로 막지만
  * (server.py), 그 응답을 받고서야 알리면 사용자는 한 번 기다린 뒤에 실패를
@@ -86,15 +86,11 @@ export function VerifyForm({ onGuide }: { onGuide?: (cell: GuideCell) => void })
       inputRef.current?.focus();
       return;
     }
-    const token = getStoredToken();
-    if (!token) {
-      router.push("/login");
-      return;
-    }
     setError(null);
     setBusy(true);
     try {
-      const res = await startAnalysis(checked.url, token);
+      // 비로그인도 분석할 수 있다. 토큰이 없으면 기록에만 남지 않는다(server.py).
+      const res = await startAnalysis(checked.url, getStoredToken() ?? undefined);
       router.push(`/analysis/${res.analysis_id}`);
     } catch (err: unknown) {
       setError(err instanceof Error ? err.message : "분석 요청 중 오류가 발생했어요.");

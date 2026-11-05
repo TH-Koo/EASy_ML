@@ -2,11 +2,13 @@
 
 import { useRef, useState } from "react";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import { Download, Search, Share2, Bookmark, BookmarkCheck } from "lucide-react";
 
 import { Button } from "@/components/primitives/Button";
 import { apiAddWatchlist } from "@/lib/api/auth";
 import { useAuth } from "@/lib/auth";
+import { loginHref } from "@/lib/loginLink";
 import type { AnalysisResult } from "@/types/analysis";
 
 interface QuickActionsProps {
@@ -15,7 +17,9 @@ interface QuickActionsProps {
 }
 
 export function QuickActions({ data, historyId }: QuickActionsProps) {
-  const { user } = useAuth();
+  const { user, mounted } = useAuth();
+  const router = useRouter();
+  const pathname = usePathname();
   const [toast,      setToast]      = useState("");
   const [bookmarked, setBookmarked] = useState(false);
   const [bmBusy,     setBmBusy]     = useState(false);
@@ -41,7 +45,12 @@ export function QuickActions({ data, historyId }: QuickActionsProps) {
   }
 
   async function handleBookmark() {
-    if (!user || bookmarked || bmBusy) return;
+    if (bookmarked || bmBusy) return;
+    // 북마크는 계정에 저장된다. 비로그인이면 로그인 뒤 이 결과로 돌아오게 보낸다.
+    if (!user) {
+      router.push(loginHref(pathname));
+      return;
+    }
     setBmBusy(true);
     try {
       const url = historyId
@@ -110,7 +119,7 @@ export function QuickActions({ data, historyId }: QuickActionsProps) {
             size="lg"
             className="flex-[1_1_9rem]"
             onClick={handleBookmark}
-            disabled={bookmarked || bmBusy || !user}
+            disabled={bookmarked || bmBusy}
             style={
               bookmarked
                 ? {
@@ -127,6 +136,21 @@ export function QuickActions({ data, historyId }: QuickActionsProps) {
             }
           </Button>
       </div>
+
+      {/* 비로그인: 이 결과는 어디에도 저장되지 않는다는 걸 미리 알려 준다 */}
+      {mounted && !user ? (
+        <p className="no-print text-fg-muted -mt-8 text-center text-[13.5px]">
+          이 결과는 저장되지 않아요.{" "}
+          <Link href={loginHref(pathname)} className="text-brand-fg font-semibold hover:underline">
+            로그인
+          </Link>{" "}
+          또는{" "}
+          <Link href={loginHref(pathname, "register")} className="text-brand-fg font-semibold hover:underline">
+            회원가입
+          </Link>
+          하면 내 기록과 북마크를 쓸 수 있어요.
+        </p>
+      ) : null}
 
       {/* 토스트 — 규칙은 globals.css 의 `.qa-toast` 에 있다. 이전에는 인라인
           스타일에 자체 색과 `'Inter'` 를 박고, 토스트가 뜰 때마다 `<style>`
