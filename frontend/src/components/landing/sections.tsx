@@ -635,7 +635,7 @@ export function StartSection({ signedIn }: { signedIn?: boolean }) {
           <CtaBanner
             headline="근거 없는 “AI 탑재”를 지금 걸러내세요"
             actionLabel="상품 URL로 검증해보기"
-            href="/search"
+            href="/"
           />
         )}
         <LandingFooter />
