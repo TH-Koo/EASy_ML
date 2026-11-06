@@ -9,6 +9,7 @@ import {
   countByStatus,
   headline,
   sortClaims,
+  splitProductName,
   verdictLevel,
   verdictTitle,
 } from "@/lib/resultSummary";
@@ -29,6 +30,7 @@ export function VerdictPanel({ data }: { data: AnalysisResult }) {
   const claims = sortClaims(data.claims ?? [], true);
   const counts = countByStatus(claims);
   const url = data.product.url;
+  const name = splitProductName(data.product.name);
 
   return (
     <section
@@ -36,10 +38,15 @@ export function VerdictPanel({ data }: { data: AnalysisResult }) {
       className="bg-surface grid gap-6 rounded-[var(--radius-panel)] p-6 shadow-[var(--shadow-panel)] md:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] md:gap-8 md:p-8"
     >
       <div className="min-w-0">
-        <div className="flex flex-wrap items-center gap-2.5">
-          <p className="text-fg text-[21px] leading-snug font-bold tracking-[var(--tracking-heading)]">
-            {data.product.name}
-          </p>
+        {/* 다나와 이름은 괄호에 옵션까지 붙어 길다. 이름은 두 줄까지, 옵션은 아랫줄에 작게. */}
+        <p
+          title={data.product.name}
+          className="text-fg line-clamp-2 text-[21px] leading-snug font-bold tracking-[var(--tracking-heading)]"
+        >
+          {name.title}
+        </p>
+        <div className="mt-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-1">
+          {name.detail ? <span className="text-fg-dim text-[13px]">{name.detail}</span> : null}
           {url ? (
             <a
               href={url}
@@ -54,19 +61,24 @@ export function VerdictPanel({ data }: { data: AnalysisResult }) {
           ) : null}
         </div>
         <h1
-          className="mt-2 text-[34px] leading-tight font-extrabold tracking-[var(--tracking-display)] md:text-[40px]"
+          className="mt-3 text-[34px] leading-tight font-extrabold tracking-[var(--tracking-display)] md:text-[40px]"
           style={{ color: level !== null ? VERDICT_COLOR[level] : undefined }}
         >
           {verdictTitle(data.scores.overall_label)}
         </h1>
         <p className="text-fg-muted mt-1 text-[15px]">{headline(data)}</p>
 
-        {level !== null ? <ScoreBar score={data.scores.overall} level={level} /> : null}
-
-        <p className="text-fg-dim mt-4 text-[12.5px]">
-          제품 성능이 아니라 광고 문구가 공공 기록과 맞는지 본 결과예요
-        </p>
+        {level !== null ? (
+          <>
+            <ScoreBar score={data.scores.overall} level={level} />
+            <p className="text-fg-dim mt-4 text-[12.5px]">
+              제품 성능이 아니라 광고 문구가 공공 기록과 맞는지 본 결과예요
+            </p>
+          </>
+        ) : null}
       </div>
+
+      {level === null && claims.length === 0 ? <NotEvaluatedNote /> : null}
 
       {claims.length > 0 ? (
         <div className="bg-surface-strong min-w-0 rounded-[14px] px-4 py-3.5">
@@ -80,6 +92,28 @@ export function VerdictPanel({ data }: { data: AnalysisResult }) {
         </div>
       ) : null}
     </section>
+  );
+}
+
+/**
+ * 판정하지 않은 이유. 엔진이 광고에서 AI 기능 주장을 하나도 찾지 못하면 비교할
+ * 대상이 없어 판정을 내리지 않는다(analysis_engine `_decide_verdict`). 이유 없이
+ * "제외"만 보여 주면 분석이 고장 났거나 나쁜 제품으로 읽힌다.
+ */
+function NotEvaluatedNote() {
+  return (
+    <div className="bg-surface-strong text-fg-muted min-w-0 rounded-[14px] px-5 py-4 text-[14px] leading-relaxed">
+      <p className="text-fg text-[15px] font-bold">왜 판정하지 않았나요?</p>
+      <p className="mt-2">
+        Fides는 광고에 적힌 AI 기능이 공공 기록과 맞는지 봐요. 이 제품은 상세 페이지에서 그런 기능 설명을 찾지 못해
+        맞춰 볼 대상이 없었어요.
+      </p>
+      <ul className="mt-2.5 flex list-disc flex-col gap-1 pl-[18px]">
+        <li>제품 이름에만 ‘AI’가 들어 있는 경우</li>
+        <li>설명이 이미지 안에 있어 글자를 읽지 못한 경우</li>
+      </ul>
+      <p className="text-fg mt-2.5 font-semibold">제품이 나쁘다는 뜻은 아니에요.</p>
+    </div>
   );
 }
 

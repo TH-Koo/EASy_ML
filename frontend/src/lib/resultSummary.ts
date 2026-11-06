@@ -53,7 +53,7 @@ export function verdictLevelFromText(verdict: string): VerdictLevel | null {
 
 export function verdictTitle(label: OverallLabel): string {
   const level = verdictLevel(label);
-  if (level === null) return "판정 제외";
+  if (level === null) return "판정하지 않았어요";
   return `근거 ${VERDICT_STEPS[level]}`;
 }
 
@@ -90,6 +90,11 @@ export function sortClaims(claims: Claim[], worstFirst: boolean): Claim[] {
 /** 결론 타일의 한 줄 요약 */
 export function headline(data: AnalysisResult): string {
   const claims = data.claims ?? [];
+  // 판정 제외는 광고에서 AI 기능을 찾지 못했다는 뜻이다. ai_claims_count 는 이때도
+  // 0 이 아닐 수 있어(판정 이유 개수로 채워진다) "N개를 맞춰 봤어요"라고 하면 틀린다.
+  if (verdictLevel(data.scores.overall_label) === null && claims.length === 0) {
+    return "이 제품 광고에서 확인할 AI 기능을 찾지 못했어요";
+  }
   if (claims.length === 0) {
     const n = data.product.ai_claims_count;
     return n > 0
@@ -104,6 +109,22 @@ export function headline(data: AnalysisResult): string {
     return `광고한 AI 기능 ${claims.length}개 중 공공 기록으로 확인된 게 없어요`;
   }
   return `광고한 AI 기능 ${claims.length}개 중 ${verified}개만 공공 기록으로 확인됐어요`;
+}
+
+/* ── 제품 이름 ─────────────────────────────────────────────────────── */
+
+/** 판매처·구매 조건처럼 제품을 설명하지 않는 괄호 내용 */
+const NAME_NOISE = /일반\s*판매처|일반\s*구매|전국\s*무료|공식\s*인증|설치|단품|정품|해외\s*구매|병행\s*수입/;
+
+/**
+ * 다나와 이름 → 이름 + 옵션. `Seagate SkyHawk AI 7200/512M (12TB, ST12000VE003)` 은
+ * 제목으로 쓰기에 길어서, 끝의 괄호를 떼어 아랫줄에 작게 쓴다. 판매처 같은 내용은 뺀다.
+ */
+export function splitProductName(raw: string): { title: string; detail: string | null } {
+  const name = raw.replaceAll("&amp;", "&").trim();
+  const match = /^(.+?)\s*\(([^()]+)\)\s*$/.exec(name);
+  if (!match) return { title: name, detail: null };
+  return { title: match[1], detail: NAME_NOISE.test(match[2]) ? null : match[2] };
 }
 
 /* ── 공공 기록 출처 ───────────────────────────────────────────────────── */
