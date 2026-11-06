@@ -790,9 +790,27 @@ class OntologyAnalysisEngine:
         print("====================================\n")
 
 
-        claim_text = self._build_claim_text(ad_text, ocr_text, extra_texts, records)
+        claim_text = self._build_claim_text(
+            ad_text, ocr_text, extra_texts, records
+        )
 
-        import re
+        capability_scores = self._score_all_capabilities(
+            records, claim_text
+        )
+
+        positive_caps = [
+            score for score in capability_scores
+            if score.positive_claim
+        ]
+
+        # AI 관련 주장 자체가 존재하는지 별도로 확인
+        ai_claim_detected = bool(
+            re.search(
+                r"(?<![a-z0-9])ai(?![a-z0-9])|인공지능|artificial\s+intelligence",
+                claim_text,
+                flags=re.IGNORECASE
+            )
+        )
 
         for match in re.finditer(
             r"LLM",
@@ -806,6 +824,27 @@ class OntologyAnalysisEngine:
             
         capability_scores = self._score_all_capabilities(records, claim_text)
         positive_caps = [score for score in capability_scores if score.positive_claim]
+
+        print("\n========== CLAIM DIAGNOSTIC ==========")
+        print("CLAIM TEXT:", claim_text[:1000])
+
+        for cap in capability_scores:
+            if (
+                cap.base_claim_score > 0
+                or cap.matched_strong_patterns
+                or cap.matched_weak_patterns
+            ):
+                print(
+                    cap.capability_id,
+                    "base:", cap.base_claim_score,
+                    "strong:", cap.matched_strong_patterns,
+                    "weak:", cap.matched_weak_patterns,
+                    "positive:", cap.positive_claim,
+                )
+
+        print("POSITIVE CAPS:", len(positive_caps))
+        print("======================================")
+
         used_caps = positive_caps if positive_caps else []
 
         channel_details = self._calculate_channel_scores(used_caps, records, all_caps=capability_scores)
@@ -880,6 +919,7 @@ class OntologyAnalysisEngine:
             confidence=conf,
             sufficiency=sufficiency,
             positive_caps=used_caps,
+            ai_claim_detected=ai_claim_detected,
         )
 
         top_caps = sorted(used_caps, key=lambda item: item.final_score, reverse=True)[:5]
@@ -2310,10 +2350,15 @@ class OntologyAnalysisEngine:
         confidence: float,
         sufficiency: float,
         positive_caps: List[CapabilityScore],
+        ai_claim_detected: bool = False,
     ) -> Tuple[str, str]:
+
         thresholds = self.engine_config.thresholds
 
         if not positive_caps:
+            if ai_claim_detected:
+                return "AI 주장 검증 불충분 / Unverified", "판정 보류"
+
             return "AI 기능 주장 미확인 / Not Evaluated", "판정 제외"
 
         # 실제 AI 기능과 연결된 외부 검증 근거가 있는지 확인
