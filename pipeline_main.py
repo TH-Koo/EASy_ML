@@ -636,12 +636,17 @@ def run_full_pipeline(url: str):
     official_company = resolve_real_company_name(norm_result.get("raw_company", ""), scraped_item.get("model_name", ""))
     official_model = (
         _spec_table_model(scraped_item)
+        or norm_result.get("final_norm_model")
         or resolve_model_name(scraped_item.get("model_name", ""), ocr_text)
-        or norm_result.get("final_norm_model", "미확인")
+        or "미확인"
     )
     product_category = scraped_item.get("category", "") if isinstance(scraped_item.get("category"), str) else ""
     llm_aliases = scraped_item.get("aliases", [])
-    search_payload = generate_tailored_search_payload(official_company, llm_aliases)
+    # Preserve the crawler's original manufacturer and deterministic aliases.
+    # Never inject historical unreviewed Ollama cache values into agency searches.
+    raw_company = norm_result.get("raw_company", "")
+    safe_aliases = [raw_company] if raw_company and raw_company != "미확인" else []
+    search_payload = generate_tailored_search_payload(official_company, safe_aliases)
 
     print(f"\n 분석 대상: {official_company} / {official_model}")
     print("⏳ 로컬 DB 및 다중 API 통신을 병렬로 진행합니다...\n")
@@ -859,5 +864,5 @@ def run_full_pipeline(url: str):
 
 
 if __name__ == "__main__":
-    target_url = "https://prod.danawa.com/info/?pcode=75854861"
+    target_url = "https://prod.danawa.com/info/?cate=10346783&pcode=104967173&utm_source=chatgpt.com"
     run_full_pipeline(target_url)
