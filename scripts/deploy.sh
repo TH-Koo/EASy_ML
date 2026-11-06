@@ -2,7 +2,7 @@
 set -euo pipefail
 
 PROJECT_DIR="/home/projects/EASy_ML"
-PYTHON="/home/projects/venv/bin/python"
+PYTHON="/home/projects/.venv/bin/python"
 
 cd "$PROJECT_DIR"
 
