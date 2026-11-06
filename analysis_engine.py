@@ -817,7 +817,6 @@ class OntologyAnalysisEngine:
             confidence=conf,
             sufficiency=sufficiency,
             positive_caps=used_caps,
-            ai_claim_detected=ai_claim_detected,
         )
 
         top_caps = sorted(used_caps, key=lambda item: item.final_score, reverse=True)[:5]
