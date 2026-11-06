@@ -756,54 +756,10 @@ class OntologyAnalysisEngine:
             record if isinstance(record, EvidenceRecord) else EvidenceRecord(**record)
             for record in (evidence_records or [])
         ]
-
-        
-        validated = [
-            record for record in validated
-            if is_valid_evidence_status(record.status)
-            and not (
-                record.source_type == "kipris"
-                and (
-                    "AI 특허 내역 없음" in record.title
-                    or "AI 특허 내역 없음" in record.text
-                )
-            )
-        ]
-
+        validated = [record for record in validated if is_valid_evidence_status(record.status)]
         records = self._dedup_evidence(validated)
 
-
-        print("\n========== INPUT EVIDENCE ==========")
-
-        for record in records:
-            print({
-                "evidence_id": record.evidence_id,
-                "source_type": record.source_type,
-                "status": record.status,
-                "title": record.title,
-                "relation_type": record.relation_type,
-                "capability_ids": record.capability_ids,
-                "source_record_id": record.source_record_id,
-                "text": record.text[:300],
-            })
-
-        print("====================================\n")
-
-
         claim_text = self._build_claim_text(ad_text, ocr_text, extra_texts, records)
-
-        import re
-
-        for match in re.finditer(
-            r"LLM",
-            claim_text,
-            flags=re.IGNORECASE
-        ):
-            start = max(0, match.start() - 100)
-            end = min(len(claim_text), match.end() + 100)
-
-            print("[LLM MATCH]", claim_text[start:end])
-            
         capability_scores = self._score_all_capabilities(records, claim_text)
         positive_caps = [score for score in capability_scores if score.positive_claim]
         used_caps = positive_caps if positive_caps else []
@@ -813,46 +769,6 @@ class OntologyAnalysisEngine:
         tes = channel_details["tes"]["score"]
         ces = channel_details["ces"]["score"]
         ecs = self._calculate_ecs(channel_details, records)
-
-
-        # ===== 디버깅 코드 시작 =====
-        import json
-
-        print("\n========== CHANNEL DEBUG ==========")
-        print(json.dumps(
-            channel_details,
-            ensure_ascii=False,
-            indent=2,
-            default=str,
-        ))
-
-        print("\n========== CAPABILITY DEBUG ==========")
-        for cap in used_caps:
-            print(
-                cap.capability_id,
-                "score =", cap.final_score,
-                "strong =", cap.matched_strong_patterns,
-                "weak =", cap.matched_weak_patterns,
-            )
-
-        print("\n========== EVIDENCE DEBUG ==========")
-        for cap in used_caps:
-            contributions = self._contributions_by_cap.get(
-                cap.capability_id, []
-            )
-
-            print(f"\n[Capability] {cap.capability_id}")
-
-            for c in contributions:
-                print({
-                    "evidence_id": c.evidence_id,
-                    "source_type": c.source_type,
-                    "relation_type": c.relation_type,
-                    "support": c.support,
-                })
-
-        print("===================================\n")
-
 
         legacy = self._calculate_legacy_accs(hes, tes, ces, ecs)
         dynamic = self._calculate_dynamic_weighting(
@@ -1068,37 +984,20 @@ class OntologyAnalysisEngine:
             evidence_ids=evidence_ids,
         )
 
-    
     def _match_positive_patterns(
         self, capability_id: str, claim_text: str
     ) -> Tuple[List[str], List[str]]:
         strong: List[str] = []
         weak: List[str] = []
-
         for row in self.repo.get_patterns(capability_id):
             pattern = normalize_text(row.get("pattern_text_ko", ""))
-            if not pattern:
-                continue
-
-            # 영문 패턴은 다른 영문 단어 내부에서 매칭하지 않음
-            if re.search(r"[a-z]", pattern):
-                regex = rf"(?<![a-z0-9]){re.escape(pattern)}(?![a-z0-9])"
-                matched = re.search(regex, claim_text) is not None
-            else:
-                matched = pattern in claim_text
-
-            if not matched:
-                continue
-
-            original = str(row.get("pattern_text_ko", "")).strip()
-
-            if normalize_text(row.get("evidence_strength", "")) == "strong":
-                strong.append(original)
-            else:
-                weak.append(original)
-
+            if pattern and pattern in claim_text:
+                original = str(row.get("pattern_text_ko", "")).strip()
+                if normalize_text(row.get("evidence_strength", "")) == "strong":
+                    strong.append(original)
+                else:
+                    weak.append(original)
         return unique_keep_order(strong), unique_keep_order(weak)
-
 
     def _match_negative_patterns(
         self, capability_id: str, claim_text: str
@@ -1697,70 +1596,10 @@ class OntologyAnalysisEngine:
 
                 # 4. 서로 다른 출처 보상
                 bonus += min(unique_sources * 2, 8)
-                
+
                 # Saturation
                 bonus = 15 * (1 - exp(-bonus / 12))
-
-                # 판매 페이지의 기술 검증 근거 품질 평가
-                if channel == "tes":
-                    seller_items = [
-                        item for item in selected
-                        if item.source_type == "seller_page"
-                    ]
-
-                    external_items = [
-                        item for item in selected
-                        if item.source_type not in {"seller_page", "review"}
-                    ]
-
-                    if seller_items:
-                        implementation_patterns = [
-                            r"신경망",
-                            r"딥러닝",
-                            r"머신러닝",
-                            r"온디바이스",
-                            r"모델\s*(?:구조|아키텍처|학습)",
-                            r"추론\s*(?:엔진|모델|처리)",
-                            r"neural\s*network",
-                            r"deep\s*learning",
-                            r"machine\s*learning",
-                            r"on[- ]device\s*ai",
-                            r"inference\s*engine",
-                        ]
-
-                        implementation_found = any(
-                            re.search(
-                                pattern,
-                                record_by_id[item.evidence_id].text,
-                                flags=re.IGNORECASE
-                            )
-                            for item in seller_items
-                            if item.evidence_id in record_by_id
-                            for pattern in implementation_patterns
-                        )
-
-                        # 구현 설명이 없는 판매 페이지는
-                        # 기술 검증 근거로서 기여도를 제한
-                        if not implementation_found:
-                            seller_support = max(
-                                item.support for item in seller_items
-                            ) * 100.0
-
-                            # 기술 구현 설명이 없을 때는
-                            # 판매자 주장에 대한 기본적인 기여만 인정
-                            seller_support *= 0.35
-
-                            if not external_items:
-                                evidence_score = seller_support
-                                capability_score *= 0.50
-                                bonus = 0.0
-
-                score = clamp(
-                    evidence_score * 0.55
-                    + capability_score * 0.30
-                    + bonus
-                )
-
+                score = clamp(evidence_score * 0.55 + capability_score * 0.30 + bonus)
             else:
                 supporting_cap_ids = []
 
@@ -2303,7 +2142,6 @@ class OntologyAnalysisEngine:
             for cap in used_caps
         )
 
-    
     def _decide_verdict(
         self,
         accs: float,
@@ -2312,39 +2150,21 @@ class OntologyAnalysisEngine:
         positive_caps: List[CapabilityScore],
     ) -> Tuple[str, str]:
         thresholds = self.engine_config.thresholds
-
         if not positive_caps:
             return "AI 기능 주장 미확인 / Not Evaluated", "판정 제외"
-
-        # 실제 AI 기능과 연결된 외부 검증 근거가 있는지 확인
-        external_evidence_ids = {
-            c.evidence_id
-            for cap in positive_caps
-            for c in self._contributions_by_cap.get(cap.capability_id, [])
-            if c.source_type not in {"seller_page", "review"}
-            and c.support > 0
-        }
-
-        if not external_evidence_ids:
-            return "검증 근거 부족 / Unverified", "판정 보류"
-
         if (
             accs >= thresholds.credible
             and sufficiency >= thresholds.minimum_sufficiency_for_credible
         ):
             return "높은 신뢰 상품 / Credible", "매우 낮음"
-
         if (
             accs >= thresholds.normal
             and sufficiency >= thresholds.minimum_sufficiency_for_normal
         ):
             return "신뢰 상품 / Normal", "낮음"
-
         if accs >= thresholds.suspected or confidence >= 35.0:
             return "워싱 의심 상품 / Suspected", "중간"
-
         return "AI 워싱 상품 / Washing", "높음"
-
 
     # ------------------------------------------------------------------
     # Explanations and future attention features
