@@ -13,7 +13,7 @@ import type { AuthUser } from "@/types/auth";
  * 왼쪽 사이드바(기록·폴더)를 걷어내고 이 한 줄로 바꿨다. 처음 쓰는 사람과
  * 시연에서 QR 로 들어온 사람에게 필요한 건 "주소 넣기 → 결과 보기" 하나라서,
  * 지난 기록을 늘 옆에 세워 둘 이유가 없었다. 지난 기록과 북마크는 '내 기록'
- * (대시보드)에 모여 있다.
+ * (/history)에 모여 있다.
  */
 export function TopBar({ user }: { user: AuthUser | null }) {
   const router = useRouter();
@@ -34,7 +34,7 @@ export function TopBar({ user }: { user: AuthUser | null }) {
             서비스 소개
           </Link>
           {/* 기록은 계정에 쌓이므로, 비로그인이면 로그인 뒤 그리로 보낸다 */}
-          <Link href={user ? "/dashboard" : loginHref("/dashboard")} className="hover:text-fg">
+          <Link href={user ? "/history" : loginHref("/history")} className="hover:text-fg">
             내 기록
           </Link>
           {user ? (

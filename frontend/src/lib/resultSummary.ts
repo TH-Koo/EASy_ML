@@ -40,6 +40,17 @@ export function verdictLevel(label: OverallLabel): VerdictLevel | null {
   return null;
 }
 
+/**
+ * 저장된 기록의 판정 문구 → 화면 3단계. 기록 목록에는 구간 라벨 없이 엔진 문구만
+ * 온다. server.py 가 문구를 구간 라벨로 바꾸는 기준과 같다.
+ */
+export function verdictLevelFromText(verdict: string): VerdictLevel | null {
+  if (verdict.includes("신뢰")) return 0;
+  if (verdict.includes("AI 워싱 상품")) return 2;
+  if (verdict.includes("워싱 의심")) return 1;
+  return null;
+}
+
 export function verdictTitle(label: OverallLabel): string {
   const level = verdictLevel(label);
   if (level === null) return "판정 제외";
