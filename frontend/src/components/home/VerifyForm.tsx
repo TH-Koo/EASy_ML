@@ -29,13 +29,18 @@ export type GuideCell = 0 | 1;
 
 type Check = { ok: true; url: string } | { ok: false; message: string; cell?: GuideCell };
 
-/** 지금까지 분석해 본 제품 중 카테고리별 하나씩 (artifacts/rescore_v2_ontology/features.csv) */
+/**
+ * 예시 주소 — 근거가 있는 제품 3개와 없는 제품 3개를 섞어 둔다
+ * (artifacts/run_01 의 genuine · washing 라벨 기준). 이름에는 일부러 판정을 적지
+ * 않는다. 실제 회사 제품에 단정하는 표현을 붙이지 않고, 눌러 봐야 결과를 알게 한다.
+ */
 const EXAMPLES = [
   { name: "AI 세탁기", url: "https://prod.danawa.com/info/?pcode=109483526" },
-  { name: "AI 공기청정기", url: "https://prod.danawa.com/info/?pcode=57505811" },
-  { name: "AI 로봇청소기", url: "https://prod.danawa.com/info/?pcode=108367196" },
-  { name: "AI 냉장고", url: "https://prod.danawa.com/info/?pcode=122700668" },
+  { name: "AI 가습기", url: "https://prod.danawa.com/info/?pcode=99839723" },
+  { name: "AI 하드디스크", url: "https://prod.danawa.com/info/?pcode=94811081" },
   { name: "AI 에어컨", url: "https://prod.danawa.com/info/?pcode=104987522" },
+  { name: "AI 로봇청소기", url: "https://prod.danawa.com/info/?pcode=108367196" },
+  { name: "AI 이어폰", url: "https://prod.danawa.com/info/?pcode=14957273" },
 ] as const;
 
 export function checkDanawaUrl(raw: string): Check {
