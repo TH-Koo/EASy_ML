@@ -18,9 +18,9 @@ test -x "$PYTHON" || {
 }
 
 echo "[3/4] 패키지 설치"
-"$PYTHON" -m pip install -r requirements.txt
+#"$PYTHON" -m pip install -r /home/projects/requirements-shared.txt
 
 echo "[4/4] Python 문법 확인"
-"$PYTHON" -m compileall -q .
+"$PYTHON" -m compileall -q -x '(^|/)(node_modules|\.venv|venv|\.git)(/|$)' .
 
 echo "배포 완료"
