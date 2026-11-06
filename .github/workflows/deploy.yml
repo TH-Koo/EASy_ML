@@ -22,4 +22,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           port: 22
           script: |
+            whoami
+            id
+            ls -ld /home/projects/EASy_ML/frontend/node_modules/.bin
             bash /home/projects/EASy_ML/scripts/deploy.sh
