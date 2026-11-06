@@ -62,7 +62,8 @@ export function VerdictPanel({ data }: { data: AnalysisResult }) {
         </div>
         <h1
           className="mt-3 text-[34px] leading-tight font-extrabold tracking-[var(--tracking-display)] md:text-[40px]"
-          style={{ color: level !== null ? VERDICT_COLOR[level] : undefined }}
+          // 판정 제외는 판정이 아니므로 판정 색을 쓰지 않는다. 짙은 회색으로 "결과 없음"을 나타낸다.
+          style={{ color: level !== null ? VERDICT_COLOR[level] : "var(--color-fg-muted)" }}
         >
           {verdictTitle(data.scores.overall_label)}
         </h1>
