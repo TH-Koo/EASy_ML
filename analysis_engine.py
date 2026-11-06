@@ -1080,12 +1080,8 @@ class OntologyAnalysisEngine:
             if not pattern:
                 continue
 
-            # 영문 패턴은 다른 영문 단어 내부에서 매칭하지 않음
-            if re.search(r"[a-z]", pattern):
-                regex = rf"(?<![a-z0-9]){re.escape(pattern)}(?![a-z0-9])"
-                matched = re.search(regex, claim_text) is not None
-            else:
-                matched = pattern in claim_text
+            matched = pattern in claim_text
+    
 
             if not matched:
                 continue
@@ -2313,8 +2309,10 @@ class OntologyAnalysisEngine:
     ) -> Tuple[str, str]:
         thresholds = self.engine_config.thresholds
 
+        #if not positive_caps:
+        #    return "AI 기능 주장 미확인 / Not Evaluated", "판정 제외"
         if not positive_caps:
-            return "AI 기능 주장 미확인 / Not Evaluated", "판정 제외"
+            print("[DEMO WARNING] AI 기능 미탐지 - ACCS 기반 임시 판정")
 
         if (
             accs >= thresholds.credible
