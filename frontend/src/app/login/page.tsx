@@ -89,7 +89,11 @@ function LoginContent() {
 
         {/* 분석은 로그인 없이도 된다. 막다른 길로 느껴지지 않게 나가는 길을 분명히 둔다. */}
         <p className="mt-5 text-center">
-          <Link href={next} className="text-fg-muted hover:text-brand-fg text-sm font-semibold transition-colors">
+          {/* 기록 화면은 로그인이 필요해 다시 여기로 돌아오므로, 그때는 첫 화면으로 보낸다 */}
+          <Link
+            href={/^\/(history|dashboard)/.test(next) ? "/" : next}
+            className="text-fg-muted hover:text-brand-fg text-sm font-semibold transition-colors"
+          >
             로그인 없이 계속하기 →
           </Link>
         </p>
