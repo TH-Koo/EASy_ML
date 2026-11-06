@@ -1246,10 +1246,12 @@ class OntologyAnalysisEngine:
                     continue
                 if component_type == "SW" and capability_relevance < 0.40:
                     continue
-                #if relation_type == "company_general":
-                    # General company existence is not technical evidence. It may be
-                    # retained in the audit but does not satisfy requirements.
-                    #continue
+                if relation_type == "company_general":
+                    # Company identity/general business records are audit data,
+                    # not AI technical proof.  A semantically relevant record
+                    # has already been promoted to company_capability by
+                    # _effective_relation_type and remains eligible.
+                    continue
 
                 relation_weight = self._relation_weight(relation_type)
                 source_quality = self._source_quality(record)
@@ -1282,11 +1284,28 @@ class OntologyAnalysisEngine:
                 support = context_score * relevance_score * max(0.8, base_weight)
                 support = clamp01(support)
 
-                if record.source_type in {"kipris", "dart", "ntis"} and component_relevance >= 0.50:
-                    if record.meta.get("relevance_type") == "product_ai":
-                        support = max(support,min(0.80, support + 0.15 * component_relevance),)
-                    else:
-                        support = support = max(support,min(0.65, support + 0.10 * component_relevance),)
+                if record.source_type in {"kipris", "dart", "ntis"}:
+                    # "product_ai" is metadata supplied by a search/ETL stage, not
+                    # proof that the record is about this exact product.  A
+                    # company-level patent or R&D project remains indirect.
+                    direct_relation = relation_type in {"direct_model", "direct_product"}
+                    product_specific = (
+                        direct_relation
+                        and record.meta.get("relevance_type") == "product_ai"
+                    )
+                    if product_specific and component_relevance >= 0.50:
+                        support = min(0.80, support + 0.15 * component_relevance)
+                    elif direct_relation and component_relevance >= 0.50:
+                        # Preserve the earlier handling of directly matched
+                        # product/model evidence without the optional metadata.
+                        support = max(
+                            support,
+                            min(0.65, support + 0.10 * component_relevance),
+                        )
+                    elif not direct_relation and component_relevance >= 0.50:
+                        support = min(0.65, support + 0.10 * component_relevance)
+                    elif not direct_relation:
+                        support = min(0.65, support)
                 elif record.source_type in {"net", "nep"} and component_relevance >= 0.50:
                     support = max(support, component_relevance * 0.98)
                 elif record.source_type in {"gs", "rra", "sandbox"} and component_relevance >= 0.50:
@@ -1764,10 +1783,10 @@ class OntologyAnalysisEngine:
                 # 해당 채널의 근거가 존재하면 기본 점수 부여
 
                 if channel == "ces":
-                    fallback = [
-                        r for r in records
-                        if r.source_type in self.CES_SOURCES
-                    ]
+                    # An unlinked certificate is NOT verification of a claimed
+                    # AI capability.  Only a matched EvidenceContribution may
+                    # produce a nonzero CES score.
+                    fallback = []
 
                 elif channel == "hes":
                     fallback = [
@@ -2258,7 +2277,15 @@ class OntologyAnalysisEngine:
             if contribution.source_type not in {"seller_page", "review"}
         ]
         
-        external_count = len(external_contributions)
+        # One external document can support several capabilities/components,
+        # but it remains ONE independent item of evidence.  Counting every
+        # contribution inflated sufficiency and could unlock Normal/Credible.
+        external_keys = {
+            contribution.independent_source_key
+            or f"{contribution.source_type}:{contribution.evidence_id}"
+            for contribution in external_contributions
+        }
+        external_count = len(external_keys)
         count_score = 1.0 - exp(-external_count / 4.0)
 
         direct_present = any(contribution.direct for contribution in external_contributions)
