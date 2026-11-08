@@ -27,8 +27,9 @@ export function SearchHome({ user }: { user: AuthUser | null }) {
   return (
     <div className="theme-violet bg-surface flex min-h-dvh flex-col">
       <TopBar user={user} />
-      <main className="flex flex-1 flex-col">
-        <section className="px-5 pt-[72px] pb-6 text-center">
+      {/* 내용이 화면보다 짧으면 세로 가운데보다 살짝 위에 둔다(아래 여백을 더 준다). */}
+      <main className="flex flex-1 flex-col justify-center pt-10 pb-[10vh]">
+        <section className="px-5 pb-6 text-center">
           <h1 className="text-fg text-[clamp(30px,4.4vw,44px)] leading-[1.3] font-bold tracking-[-0.03em]">
             이 광고 속 AI,
             <br />
@@ -40,7 +41,7 @@ export function SearchHome({ user }: { user: AuthUser | null }) {
           <VerifyForm onGuide={(cell) => setFlash((f) => ({ cell, n: (f?.n ?? 0) + 1 }))} />
         </section>
 
-        <section aria-labelledby="guide-h" className="mx-auto w-full max-w-[1040px] px-5 pt-8 pb-20">
+        <section aria-labelledby="guide-h" className="mx-auto w-full max-w-[1040px] px-5 pt-8">
           <h2 id="guide-h" className="text-fg mb-[18px] text-[22px] font-bold tracking-[-0.03em]">
             이런 주소를 넣어 주세요
           </h2>
