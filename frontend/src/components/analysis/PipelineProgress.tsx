@@ -63,8 +63,9 @@ export function PipelineProgress({ progress }: PipelineProgressProps) {
         : "확인하는 중";
 
   return (
+    // 내용이 화면보다 짧으면 세로 가운데보다 살짝 위에 둔다(아래 여백을 더 준다).
     <section
-      className="theme-violet bg-surface flex flex-1 justify-center px-5 pt-16 pb-20 md:pt-20"
+      className="theme-violet bg-surface flex flex-1 items-center justify-center px-5 pt-12 pb-[14vh]"
       aria-live="polite"
       aria-busy={status === "running" || status === "queued"}
     >
