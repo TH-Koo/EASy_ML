@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=74415257",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "파나소닉 테크닉스 EAH-AZ100 (해외구매)",
       "name": "파나소닉 테크닉스 EAH-AZ100 (해외구매)",
       "description": "",
-      "ocr_text": "파나소님 테크나스 EAH-AZ10O (해외구매) 11> 363,500원   무료배승 최저가 구매하기 가격비교 60 상품 상세정보 의견리뷰 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.3 노이즈권트록 액티브노이즈랜슬림 (ANC) 적응형ANC 주변소리듬기 [Al 기능] [Al 기능] Al 기능 Al 노이즈권쓸림다이 사운드채널 스데레오 사운드성능 HRA 드라이버크기 유듯1Ommn 코덕 LDAC LC3 SBC AAC 불르트스 프근파일",
+      "ocr_text": "파나소님 테크니스 EAH-AZ1OO (해외구매) SSG.COM 334,999원 7,900원 최저가 구매하기 가격비교 60 상품 상세정보 의견리뷰 연관상품 용도 음악+통화용 이어프타입 커형 외형 코드리스 무선연결 불루투스 V5.3 노이즈권트록 액티브노이즈랜슬림 (ANC) 적응형ANC 주변소리듬기 [AI 기능] [AI 기능] AI 기능 Al 노이즈랜되림마이 사운드채널 스데레오 사운드성능 HRA Close 드라이버크기 유뇌1Omm We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "커널형": "지원",
         "코드리스": "지원",
@@ -493,11 +493,54 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 객체 추적 처리 가속기 H/W 개발을 통한 지능형 충격 객체 추적 카메라 개발 등 총 3건",
+      "detail": "NTIS에서 [PANASONIC] 검색어로 조회한 결과, AI 관련 과제 3건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "객체 추적 처리 가속기 H/W 개발을 통한 지능형 충격 객체 추적 카메라 개발",
+          "project_number": "1425109414",
+          "lead_company": "PANASONIC",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "(GCS)고신뢰 고위험(의료,항공,차량) 소프트웨어 시험 검증을 위한 연동형 클라우드 플랫폼",
+          "project_number": "1711055311",
+          "lead_company": "파나소닉",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "컴퓨터 비전을 이용한 콘택트렌즈 자동 검사시스템 개발",
+          "project_number": "1425110601",
+          "lead_company": "파나소닉",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
-        "title": "AI 특허 내역 없음 None"
+        "source_record_id": "1020267002599",
+        "일련번호": "1",
+        "출원번호": "1020267002599",
+        "발명의명칭(한글)": "통신 장치, 및, 통신 방법",
+        "출원일자": "2024-07-30",
+        "출원인": "파나소닉 인텔렉츄얼 프로퍼티 코포레이션 오브 아메리카",
+        "등록상태": "공개",
+        "초록": "통신 장치는, AI(Artificial Intelligence)/ML(Machine Learning) 모델에 관한 정보의 통신 장치 간의 공유에 관련된 타입에 대응하여, AI/ML 모델의 설정, AI/ML 모델의 파라미터의 설정, 및, AI/ML 모델에 이용되는 데이터에 관한 설정 중 적어도 하나의 설정을 행하는 제어 회로와, 적어도 하나의 설정에 대응하는 정보를 다른 통신 장치로 송신하는 송신 회로를 구비한다.",
+        "IPC": "H04W 24/02|H04W 24/08|H04W 8/24|H04W 84/12|G06N 20/00",
+        "CPC": "",
+        "relevance_type": "general_ai",
+        "match_confidence": 0.45,
+        "search_alias": "파나소닉",
+        "search_type": "AI 특허 [일반]",
+        "search_query": "AP=[파나소닉]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
+        "status": "verified"
       }
     ],
     "cert_results": [],
@@ -505,10 +548,10 @@
     "target_company_name": "파나소닉, Panasonic",
     "model_param": "EAH-AZ100",
     "ocr_result": {
-      "extracted_text": "파나소님 테크나스 EAH-AZ10O (해외구매) 11> 363,500원   무료배승 최저가 구매하기 가격비교 60 상품 상세정보 의견리뷰 연관상품 외형 크드리스 용도 음악+통화용 무선연결 불무투스 v5.3 노이즈권트록 액티브노이즈랜슬림 (ANC) 적응형ANC 주변소리듬기 [Al 기능] [Al 기능] Al 기능 Al 노이즈권쓸림다이 사운드채널 스데레오 사운드성능 HRA 드라이버크기 유듯1Ommn 코덕 LDAC LC3 SBC AAC 불르트스 프근파일",
+      "extracted_text": "파나소님 테크니스 EAH-AZ1OO (해외구매) SSG.COM 334,999원 7,900원 최저가 구매하기 가격비교 60 상품 상세정보 의견리뷰 연관상품 용도 음악+통화용 이어프타입 커형 외형 코드리스 무선연결 불루투스 V5.3 노이즈권트록 액티브노이즈랜슬림 (ANC) 적응형ANC 주변소리듬기 [AI 기능] [AI 기능] AI 기능 Al 노이즈랜되림마이 사운드채널 스데레오 사운드성능 HRA Close 드라이버크기 유뇌1Omm We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\파나소닉 테크닉스 EAH-AZ100 (해외구매)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/파나소닉 테크닉스 EAH-AZ100 (해외구매)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }

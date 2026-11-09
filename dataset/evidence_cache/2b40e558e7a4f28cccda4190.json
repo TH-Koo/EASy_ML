@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=62069267",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "레노버 샤오신패드 프로 2025 12.7 해외구매 (램8GB,128GB)",
       "name": "레노버 샤오신패드 프로 2025 12.7 해외구매 (램8GB,128GB)",
       "description": "",
-      "ocr_text": "레노버 사오신패드 프로 2025 12.7 해외구매 (캠8GB,128GB) croket 234,500원 무료배승 최저가 구매하기 가격비교 150 상품 상세정보 의견리뷰 1,515 소모품|액세서리 뉴스커유니티 연관상품 프  ]_ N표am드nTD '외미다 [만리미-신어신터및 2세대 IDDmE 프로 12.7 언학낌 & 까용기 E때 k8 사오신 때드 프로 12.7서20m5 글로변p 컴밀가리드 글로범p 인휴기 미드 제조회사 레노버 (제조사 웬사이트 바로가기) 등록년원 2024년 07원 대불릿연결 Wi-Fi 화면크기 12.7인치 디스플레이 LCD 해상도 2944x1840 최대주사물 144Hz 쇠대밝기 400nits 시스템 8GB 용량 128GB 저장매체 UFS3 1(내장) 외장메모리 microSD지원 외장데모리용량 rnicroSD 쇠대ITB 프로세서 디멘시터 8300 코이 개수 8코이 벤치마크 AP CPU 52점 AP 게이망 37점",
+      "ocr_text": "레노버 사오신패드 프로 2025 12.7 해외구매 (캠8GB,128GB) croket 231,900원 무료배승  최저가 구매하기 가격비교 166 상품 상세정보 의견리뷰 1,519 소모품|액세서리 뉴스커유니티 연관상품 진I 니나라_ 유포스내드pT다 이비다 [D만l대 임심머신마및 매대 I오DImE I로 127 언짐 & 까운기 E따t k8 사오신 패드 프로 12.7ao2O0mi5 \"__ - 신 근로번p 너리가의드 -_다 _ a 글로러퓨보류 ) 미드 제조회사 레노버 (제조사 웬사이트 바로가기) 등록년월 2024년 07월 태들릿형태 태들릿PC 태들릿연결 Wi-Fi 화면크기 12.7인치 화면크기 12인지대 디스플레이 LCD 해상도 2944*1840 최대주사물 144Hz 최대밝기 40Onits 시스템 8GB 용량 128GB 저장매체 UFS3 기(내장) 외장메모리 microSD지원 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "태블릿PC": "지원",
         "Wi-Fi": "지원",
@@ -39,11 +39,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=62069267",
       "manufacturer": "레노버, Lenober",
-      "model_name": "샤오신패드"
+      "model_name": "USB3"
     },
     "norm_info": {
       "company_name": "레노버, Lenober",
-      "model_name": "샤오신패드",
+      "model_name": "USB3",
       "product_name": "레노버 샤오신패드 프로 2025 12.7 해외구매 (램8GB,128GB)"
     },
     "db_results": [
@@ -511,12 +511,12 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "레노버, Lenober",
-    "model_param": "샤오신패드",
+    "model_param": "USB3",
     "ocr_result": {
-      "extracted_text": "레노버 사오신패드 프로 2025 12.7 해외구매 (캠8GB,128GB) croket 234,500원 무료배승 최저가 구매하기 가격비교 150 상품 상세정보 의견리뷰 1,515 소모품|액세서리 뉴스커유니티 연관상품 프  ]_ N표am드nTD '외미다 [만리미-신어신터및 2세대 IDDmE 프로 12.7 언학낌 & 까용기 E때 k8 사오신 때드 프로 12.7서20m5 글로변p 컴밀가리드 글로범p 인휴기 미드 제조회사 레노버 (제조사 웬사이트 바로가기) 등록년원 2024년 07원 대불릿연결 Wi-Fi 화면크기 12.7인치 디스플레이 LCD 해상도 2944x1840 최대주사물 144Hz 쇠대밝기 400nits 시스템 8GB 용량 128GB 저장매체 UFS3 1(내장) 외장메모리 microSD지원 외장데모리용량 rnicroSD 쇠대ITB 프로세서 디멘시터 8300 코이 개수 8코이 벤치마크 AP CPU 52점 AP 게이망 37점",
+      "extracted_text": "레노버 사오신패드 프로 2025 12.7 해외구매 (캠8GB,128GB) croket 231,900원 무료배승  최저가 구매하기 가격비교 166 상품 상세정보 의견리뷰 1,519 소모품|액세서리 뉴스커유니티 연관상품 진I 니나라_ 유포스내드pT다 이비다 [D만l대 임심머신마및 매대 I오DImE I로 127 언짐 & 까운기 E따t k8 사오신 패드 프로 12.7ao2O0mi5 \"__ - 신 근로번p 너리가의드 -_다 _ a 글로러퓨보류 ) 미드 제조회사 레노버 (제조사 웬사이트 바로가기) 등록년월 2024년 07월 태들릿형태 태들릿PC 태들릿연결 Wi-Fi 화면크기 12.7인치 화면크기 12인지대 디스플레이 LCD 해상도 2944*1840 최대주사물 144Hz 최대밝기 40Onits 시스템 8GB 용량 128GB 저장매체 UFS3 기(내장) 외장메모리 microSD지원 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\레노버 샤오신패드 프로 2025 12.7 해외구매 (램8GB,128GB)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/레노버 샤오신패드 프로 2025 12.7 해외구매 (램8GB,128GB)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }

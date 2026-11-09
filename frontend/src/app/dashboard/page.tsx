@@ -327,9 +327,9 @@ export default function DashboardPage() {
                           style={{
                             width: `${c.avg_score}%`,
                             background: riskTone(
-                              c.avg_score >= 60
+                              c.avg_score >= 85
                                 ? "낮음"
-                                : c.avg_score >= 35
+                                : c.avg_score >= 40
                                   ? "보통"
                                   : "높음",
                             ).color,
@@ -340,9 +340,9 @@ export default function DashboardPage() {
                         className="tnum text-right text-sm font-medium"
                         style={{
                           color: riskTone(
-                            c.avg_score >= 60
+                            c.avg_score >= 85
                               ? "낮음"
-                              : c.avg_score >= 35
+                              : c.avg_score >= 40
                                 ? "보통"
                                 : "높음",
                           ).color,

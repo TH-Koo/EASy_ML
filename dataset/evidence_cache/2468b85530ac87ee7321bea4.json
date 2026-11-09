@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=100691606",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "BUTTONS CLIP (정품)",
       "name": "BUTTONS CLIP (정품)",
       "description": "",
-      "ocr_text": "BUTTONS CLIP (정품) 아미스카이삼 251,000원 무료배송 최저가 구매하기 가격비교 14 상품 상세정보 의견리뷰 연관상품 외형 이이클립형 용도 음악+통화용 무선연결 플루투스 V5.4 노이즈권트록 바람소리감소 [Al 기능] [Al 기능] Al 기능 노이즈권되랗마이 Al 실시간 번역 통역 사운드채널 스테레오 드라이버크기 유넷i2mm 무선연결거리 IOm 서라운드 360도공간음항 360도 공간음향 [배티리] [배티리] 1회중전시 5시간 최대재생 15시간 배터리용량 45mAh 충전켜이스 48OmAh 충전 USB-C",
+      "ocr_text": "BUTTONS CLIP (정품) 아이스카이삼   245,000원 무료배송  최저가 구매하기 가격비교 14 상품 상세정보 의견리뷰 연관상품 용도 음악+통화용 이어프타입 오른이어형 외형 이어클립형 무선연결 불루투스 V5.4 노이즈권트록 바람소리감소 [AI 기능] [AI 기능] AI기능 Al 노이즈랜쓸림마이 시 실시간 번역통역 사운드채널 스데레오 드라이버크기 유낫:12mm 무선연결거리 10m 서라운드 360도공간음향 360도 공간음합 [배터리] [배터리] 1회중전시 5시간 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "오픈이어형": "지원",
         "이어클립형": "지원",
@@ -28,11 +28,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=100691606",
       "manufacturer": "BUTTONS, Buttons",
-      "model_name": "BUTTONS CLIP (정품)"
+      "model_name": "V5"
     },
     "norm_info": {
       "company_name": "BUTTONS, Buttons",
-      "model_name": "BUTTONS CLIP (정품)",
+      "model_name": "V5",
       "product_name": "BUTTONS CLIP (정품)"
     },
     "db_results": [
@@ -67,7 +67,35 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: TFT COLOR LCD를 사용한 통합형(RF,음성인식, 학습, IR송수신,MACRO)REMOTE CONTROL SYSTEM개발 등 총 3건",
+      "detail": "NTIS에서 [BUTTONS] 검색어로 조회한 결과, AI 관련 과제 3건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "TFT COLOR LCD를 사용한 통합형(RF,음성인식, 학습, IR송수신,MACRO)REMOTE CONTROL SYSTEM개발",
+          "project_number": "1420002632",
+          "lead_company": "BUTTONS",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "지능형 음성인식 기반 블랙박스 및 추적시스템 개발",
+          "project_number": "1415143466",
+          "lead_company": "BUTTONS",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "몇 수 내다보기: 여러 단계가 필요한 의사 결정에서가 불확실성을 고려하는 기전 연구",
+          "project_number": "1711203595",
+          "lead_company": "BUTTONS",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -77,12 +105,12 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "BUTTONS, Buttons",
-    "model_param": "BUTTONS CLIP (정품)",
+    "model_param": "V5",
     "ocr_result": {
-      "extracted_text": "BUTTONS CLIP (정품) 아미스카이삼 251,000원 무료배송 최저가 구매하기 가격비교 14 상품 상세정보 의견리뷰 연관상품 외형 이이클립형 용도 음악+통화용 무선연결 플루투스 V5.4 노이즈권트록 바람소리감소 [Al 기능] [Al 기능] Al 기능 노이즈권되랗마이 Al 실시간 번역 통역 사운드채널 스테레오 드라이버크기 유넷i2mm 무선연결거리 IOm 서라운드 360도공간음항 360도 공간음향 [배티리] [배티리] 1회중전시 5시간 최대재생 15시간 배터리용량 45mAh 충전켜이스 48OmAh 충전 USB-C",
+      "extracted_text": "BUTTONS CLIP (정품) 아이스카이삼   245,000원 무료배송  최저가 구매하기 가격비교 14 상품 상세정보 의견리뷰 연관상품 용도 음악+통화용 이어프타입 오른이어형 외형 이어클립형 무선연결 불루투스 V5.4 노이즈권트록 바람소리감소 [AI 기능] [AI 기능] AI기능 Al 노이즈랜쓸림마이 시 실시간 번역통역 사운드채널 스데레오 드라이버크기 유낫:12mm 무선연결거리 10m 서라운드 360도공간음향 360도 공간음합 [배터리] [배터리] 1회중전시 5시간 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\BUTTONS CLIP (정품)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/BUTTONS CLIP (정품)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }

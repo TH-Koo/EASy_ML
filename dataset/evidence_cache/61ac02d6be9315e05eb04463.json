@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=104989514",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "GEEKOM A9 MAX HX370 Win11Pro (32GB, SSD 1TB)",
       "name": "GEEKOM A9 MAX HX370 Win11Pro (32GB, SSD 1TB)",
       "description": "",
-      "ocr_text": "GEEKOM A9 MAX HX37O WiniiPro (32GB, SSD ITB) GEEKOM 2,339,000원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 22 연관상품 운영체제 원도우11 프로 파뭐 줄력 120W CPU 제조사 AMD CPU 종류 라이젠A 9 HX CPU 코드명 스트렉스 포인트 코어 개스 도데카(12) 굳어 NPU 종류 AMD 라이젠 Al NPU TOPS 5OTOPS 메모리 메모리 타입 DDR5 메모리 용량 32GB 저장장치 SSD 형대 SSD SSD 용량 ITB 그래픽 제조사 AMD 그래픽 종류 내장 그래픽 네트위크 802.11be(Wi-Fi7) 무선 2.5Gbps 유선 불무투스 두얼런 영상출력 HDMI 단자 USB C타입 40Gbp USB3 X 10Gbps 전원 형대 미니PC [g 인종",
+      "ocr_text": "GEEKOM A9 MAX HX37O WiniiPro (32GB,SSD ITB) GEEKOM 2,339,000원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 23 연관상품 운영제제 원도우11 프로 파워 출력 12oW CPU 제조사 AMD CPU 종류- 라이젠시 9 HX CPU 코드명 스트렉스 포인트 코어 개수 도데카(12) 코어 NPU 종류 AMD 라이젠 Al NPU TOPS 50TOPS 메모리 메모리 타입 DDR5 메모리 용량 32GB 저장장치 SSD 형태 SSD SSD 용량 ITB 그래픽 제조사 AMD 그래픽 종류 내장 그래픽 네트위크 2.5Gbps 유선 802.11be(Wi-Fi7)  무선 불무투스 두얼런 영상출력 HDMI 단자 USB C타입 40Gbp Close ISR3 ioChns We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "370": "지원",
         "890M": "지원",
@@ -36,11 +36,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=104989514",
       "manufacturer": "GEEKOM, GEEKOM",
-      "model_name": "HX370"
+      "model_name": "WIN11PRO"
     },
     "norm_info": {
       "company_name": "GEEKOM, GEEKOM",
-      "model_name": "HX370",
+      "model_name": "WIN11PRO",
       "product_name": "GEEKOM A9 MAX HX370 Win11Pro (32GB, SSD 1TB)"
     },
     "db_results": [],
@@ -57,14 +57,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "GEEKOM, GEEKOM",
-    "model_param": "HX370",
+    "model_param": "WIN11PRO",
     "ocr_result": {
-      "extracted_text": "GEEKOM A9 MAX HX37O WiniiPro (32GB, SSD ITB) GEEKOM 2,339,000원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 22 연관상품 운영체제 원도우11 프로 파뭐 줄력 120W CPU 제조사 AMD CPU 종류 라이젠A 9 HX CPU 코드명 스트렉스 포인트 코어 개스 도데카(12) 굳어 NPU 종류 AMD 라이젠 Al NPU TOPS 5OTOPS 메모리 메모리 타입 DDR5 메모리 용량 32GB 저장장치 SSD 형대 SSD SSD 용량 ITB 그래픽 제조사 AMD 그래픽 종류 내장 그래픽 네트위크 802.11be(Wi-Fi7) 무선 2.5Gbps 유선 불무투스 두얼런 영상출력 HDMI 단자 USB C타입 40Gbp USB3 X 10Gbps 전원 형대 미니PC [g 인종",
+      "extracted_text": "GEEKOM A9 MAX HX37O WiniiPro (32GB,SSD ITB) GEEKOM 2,339,000원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 뉴스커유니티 23 연관상품 운영제제 원도우11 프로 파워 출력 12oW CPU 제조사 AMD CPU 종류- 라이젠시 9 HX CPU 코드명 스트렉스 포인트 코어 개수 도데카(12) 코어 NPU 종류 AMD 라이젠 Al NPU TOPS 50TOPS 메모리 메모리 타입 DDR5 메모리 용량 32GB 저장장치 SSD 형태 SSD SSD 용량 ITB 그래픽 제조사 AMD 그래픽 종류 내장 그래픽 네트위크 2.5Gbps 유선 802.11be(Wi-Fi7)  무선 불무투스 두얼런 영상출력 HDMI 단자 USB C타입 40Gbp Close ISR3 ioChns We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\GEEKOM A9 MAX HX370 Win11Pro (32GB, SSD 1TB)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/GEEKOM A9 MAX HX370 Win11Pro (32GB, SSD 1TB)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/GEEKOM A9 MAX HX370 Win11Pro (32GB, SSD 1TB)/detail_scan.png",
+        "image_size": 93054,
+        "image_sha256": "016e319449a366b716730cfe44eb42a2cdf3d1ab11f473593742bdfa0a3d9e47"
+      }
     }
   }
 }

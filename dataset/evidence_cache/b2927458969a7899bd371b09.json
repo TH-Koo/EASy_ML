@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=122617399",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "영웅컴퓨터 영웅컴퓨터 H게이밍 U5256 250KF RTX5060Ti (32GB, M.2 1TB)",
       "name": "영웅컴퓨터 영웅컴퓨터 H게이밍 U5256 250KF RTX5060Ti (32GB, M.2 1TB)",
       "description": "",
-      "ocr_text": "영웅컴퓨터 영웅컴퓨터 H게이망 U5256 250KF RTX5O6OTi (32GB,M.2 ITB) 11> 2,219,620원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 메인보드 침셋 (인텔) B860 운명제제 OS미포함 파뭐 출력 750W CPU 제조사 인텔 CPU 시리즈 코어올드라 시리즈2 CPU 종류 굳이 올드라5-2세대 CPU 코드명 애로우레이크 코이 개수 6+12 코어 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량 32GB 저장장치 SSD 형대 M.2 SSD 용량 1TB 그래픽 제조사 NVIDIA 그래픽 종류 외장 그래픽 그래픽 메모리 8GB 네트위크 1Gbps 유선 영상출력 HDMI DP포트 전원 파위서플라이 형대 미들타뭐 외형 이향형 LED컬러 [@ 인종",
+      "ocr_text": "영웅컴퓨터 영웅컴퓨터 H게이망 U5256 250KF RTX5O6OTi (32GB,M.2 ITB) 11> 2,239,600원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 메인보드 집셋 (인텔) B860 운영제제 OS미포함 파뭐 출력 750W CPU 제조사  인텔 CPU 시리즈 코어울트라 시리즈2 CPU 종류 코어 울드라5-2세대 CPU 코드명 애로우레이크 코어 개수 6+12코어 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량 32GB 저장장치 SSD 형태 M2 SSD 용량 ITB 그래픽 제조사  NVIDIA 그래픽 종류 외장 그래픽 그래픽 메모리 8GB 네트위크 1Gbps 유선 영상출력 HDMI DP포트 파워서플라이 형태 미들타뭐 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies 전원",
       "specs": {
         "250KF Plus": "지원",
         "RTX 5060 Ti": "지원",
@@ -38,18 +38,46 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=122617399",
       "manufacturer": "영웅컴퓨터, Yongwoon Computer",
-      "model_name": "U5256"
+      "model_name": "RTX5060TI"
     },
     "norm_info": {
       "company_name": "영웅컴퓨터, Yongwoon Computer",
-      "model_name": "U5256",
+      "model_name": "RTX5060TI",
       "product_name": "영웅컴퓨터 영웅컴퓨터 H게이밍 U5256 250KF RTX5060Ti (32GB, M.2 1TB)"
     },
     "db_results": [],
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 산업현장 안전예측 및 실시간 의사결정을 위한 이동식 Edge Computing 통합 모니터링 시스템 기술개발 (작업자 안전정보, 작업환경정보, 작업자 모니터링) 등 총 3건",
+      "detail": "NTIS에서 [영웅컴퓨터] 검색어로 조회한 결과, AI 관련 과제 3건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "산업현장 안전예측 및 실시간 의사결정을 위한 이동식 Edge Computing 통합 모니터링 시스템 기술개발 (작업자 안전정보, 작업환경정보, 작업자 모니터링)",
+          "project_number": "2420003748",
+          "lead_company": "영웅컴퓨터",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "산업현장 안전예측 및 실시간 의사결정을 위한 이동식 Edge Computing 통합 모니터링 시스템 기술개발 (작업자 안전정보, 작업환경정보, 작업자 모니터링)",
+          "project_number": "1425167396",
+          "lead_company": "영웅컴퓨터",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "산업현장 안전예측 및 실시간 의사결정을 위한 이동식 Edge Computing 통합 모니터링 시스템 기술개발 (작업자 안전정보, 작업환경정보, 작업자 모니터링)",
+          "project_number": "1425173182",
+          "lead_company": "영웅컴퓨터",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -59,14 +87,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "영웅컴퓨터, Yongwoon Computer",
-    "model_param": "U5256",
+    "model_param": "RTX5060TI",
     "ocr_result": {
-      "extracted_text": "영웅컴퓨터 영웅컴퓨터 H게이망 U5256 250KF RTX5O6OTi (32GB,M.2 ITB) 11> 2,219,620원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 메인보드 침셋 (인텔) B860 운명제제 OS미포함 파뭐 출력 750W CPU 제조사 인텔 CPU 시리즈 코어올드라 시리즈2 CPU 종류 굳이 올드라5-2세대 CPU 코드명 애로우레이크 코이 개수 6+12 코어 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량 32GB 저장장치 SSD 형대 M.2 SSD 용량 1TB 그래픽 제조사 NVIDIA 그래픽 종류 외장 그래픽 그래픽 메모리 8GB 네트위크 1Gbps 유선 영상출력 HDMI DP포트 전원 파위서플라이 형대 미들타뭐 외형 이향형 LED컬러 [@ 인종",
+      "extracted_text": "영웅컴퓨터 영웅컴퓨터 H게이망 U5256 250KF RTX5O6OTi (32GB,M.2 ITB) 11> 2,239,600원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 메인보드 집셋 (인텔) B860 운영제제 OS미포함 파뭐 출력 750W CPU 제조사  인텔 CPU 시리즈 코어울트라 시리즈2 CPU 종류 코어 울드라5-2세대 CPU 코드명 애로우레이크 코어 개수 6+12코어 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량 32GB 저장장치 SSD 형태 M2 SSD 용량 ITB 그래픽 제조사  NVIDIA 그래픽 종류 외장 그래픽 그래픽 메모리 8GB 네트위크 1Gbps 유선 영상출력 HDMI DP포트 파워서플라이 형태 미들타뭐 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies 전원",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\영웅컴퓨터 영웅컴퓨터 H게이밍 U5256 250KF RTX5060Ti (32GB, M.2 1TB)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/영웅컴퓨터 영웅컴퓨터 H게이밍 U5256 250KF RTX5060Ti (32GB, M.2 1TB)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/영웅컴퓨터 영웅컴퓨터 H게이밍 U5256 250KF RTX5060Ti (32GB, M.2 1TB)/detail_scan.png",
+        "image_size": 95090,
+        "image_sha256": "0b4cf58310fe57efd3f4bc9f5337d6179003206d6ea170919c96d9f23ea26b4f"
+      }
     }
   }
 }

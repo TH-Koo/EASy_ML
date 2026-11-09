@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=123743060",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "APPLE 맥북프로14 M5프로 15코어 CPU, 16코어 GPU 블랙 (리퍼비시)",
       "name": "APPLE 맥북프로14 M5프로 15코어 CPU, 16코어 GPU 블랙 (리퍼비시)",
       "description": "",
-      "ocr_text": "APPLE 맥북프로14 M5프로 15코어 CPU, 16코어 GPU 불택 (리퍼비시) HIMART 4,690,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 14 연관상품 화면 크기 35.9cm(i4 2인치) 무게 1.6kg 최대사용시간 시대 22시간 운영제제 (OS) macOS Tahoe 모델명 MJLW스KHIA [화면] 화면 비율 16.10.3 해상도 3024*x19641254ppi) DCI-P3 주사물 12OHz 밝기 1ooonit 패널 종류 miniLED 디스플레이 특징 트루튼 광시야각 노지령 [CPU] CPU 제조사 애플(ARM) CPU 세분류 M5 Pro CPU 코이 15 굳이 NPU 종류 애플 뉴렬엔진 [그래픽] GPU 종류 내장그래픽 GPU 제조사 애플 GPU 군이 16굳이 [구성] 24GB 램 교체 불가능 [저장장치]",
+      "ocr_text": "APPLE 맥북프로14 M5프로 15코어 CPU, 16코어 GPU 불렉 (리퍼비시) HIMART 4,640,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 15 연관상품 화면 크기 35.9cm(14 2인치) 무게 16kg 최대사용시간 최대 22시간 운영제제(OS) macOS Tahoe 모델명 MJLW4KHIA [화면] 화면 비율 16.10.3 해상도 3024x19641254ppi) DCI-P3 지원 주사물 120Hz 밝기  1ooOnit 패널 종류 miniLED 디스플레이 특징 트루튼 광시야각 노지형 [CPU] CPU 제조사 애들ARM) CPU 세분류 M5 Pro CPU 코어 15코어 NPU 종류 애뜰 뉴렬엔진 [그래픽] GPU 종류 내장그래픽 GPU 제조사  애뜰 GPU 코어 16코어 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "리퍼비시": "지원",
         "AI노트북": "지원",
@@ -33,11 +33,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=123743060",
       "manufacturer": "Apple Inc.  Apple",
-      "model_name": "M5"
+      "model_name": "USB-PD"
     },
     "norm_info": {
       "company_name": "Apple Inc.  Apple",
-      "model_name": "M5",
+      "model_name": "USB-PD",
       "product_name": "APPLE 맥북프로14 M5프로 15코어 CPU, 16코어 GPU 블랙 (리퍼비시)"
     },
     "db_results": [],
@@ -54,18 +54,18 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "Apple Inc.  Apple",
-    "model_param": "M5",
+    "model_param": "USB-PD",
     "ocr_result": {
-      "extracted_text": "APPLE 맥북프로14 M5프로 15코어 CPU, 16코어 GPU 불택 (리퍼비시) HIMART 4,690,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 14 연관상품 화면 크기 35.9cm(i4 2인치) 무게 1.6kg 최대사용시간 시대 22시간 운영제제 (OS) macOS Tahoe 모델명 MJLW스KHIA [화면] 화면 비율 16.10.3 해상도 3024*x19641254ppi) DCI-P3 주사물 12OHz 밝기 1ooonit 패널 종류 miniLED 디스플레이 특징 트루튼 광시야각 노지령 [CPU] CPU 제조사 애플(ARM) CPU 세분류 M5 Pro CPU 코이 15 굳이 NPU 종류 애플 뉴렬엔진 [그래픽] GPU 종류 내장그래픽 GPU 제조사 애플 GPU 군이 16굳이 [구성] 24GB 램 교체 불가능 [저장장치]",
+      "extracted_text": "APPLE 맥북프로14 M5프로 15코어 CPU, 16코어 GPU 불렉 (리퍼비시) HIMART 4,640,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 15 연관상품 화면 크기 35.9cm(14 2인치) 무게 16kg 최대사용시간 최대 22시간 운영제제(OS) macOS Tahoe 모델명 MJLW4KHIA [화면] 화면 비율 16.10.3 해상도 3024x19641254ppi) DCI-P3 지원 주사물 120Hz 밝기  1ooOnit 패널 종류 miniLED 디스플레이 특징 트루튼 광시야각 노지형 [CPU] CPU 제조사 애들ARM) CPU 세분류 M5 Pro CPU 코어 15코어 NPU 종류 애뜰 뉴렬엔진 [그래픽] GPU 종류 내장그래픽 GPU 제조사  애뜰 GPU 코어 16코어 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\APPLE 맥북프로14 M5프로 15코어 CPU, 16코어 GPU 블랙 (리퍼비시)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/APPLE 맥북프로14 M5프로 15코어 CPU, 16코어 GPU 블랙 (리퍼비시)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1,
       "_cache_meta": {
-        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\APPLE 맥북프로14 M5프로 15코어 CPU, 16코어 GPU 블랙 (리퍼비시)\\detail_scan.png",
-        "image_size": 68261,
-        "image_sha256": "bfcef2aa476bfc21d8cf62d09e888c5d2ef4b8aa6feef1a9c87a83f5cb3f2528"
+        "image_path": "/home/projects/EASy_ML/product_images/APPLE 맥북프로14 M5프로 15코어 CPU, 16코어 GPU 블랙 (리퍼비시)/detail_scan.png",
+        "image_size": 91276,
+        "image_sha256": "f4fbbc749220613085da1d0f654fe0cd3d13aecd6ac61835f4468d772eca54f9"
       }
     }
   }

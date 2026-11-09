@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=74248601",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "레노버 아이디어탭 프로 12.7 (128GB)",
       "name": "레노버 아이디어탭 프로 12.7 (128GB)",
       "description": "",
-      "ocr_text": "레노버 아이디어탤 프로 12.7 (128GB) Gmarket   458,990원 무료내승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 266 소모품[액세서리 뉴스커유니티 연관상품 레노버 12 잔미고히 몇달 사용수 만족도-1 2.33 t F - 벼 S paer T1u  미미_머  프로{하; 한번 집취반 T  LENoVOIDIA TAolPRo 5296 중문데? 레노어 ldea Tan Pro 12 Ynlube Lemoyu TanPio 제조회사 레노버 (제조사 웬사이트 바로가기) 등록년원 2025년 01민 대불릿연결 Wi-Fi 모델명 ZAE4OO7gKR 화면크기 12 7인지 디스끌레이 IPS-LCD 해상도 2944x1840 퍽설 수(ppi) 400ppi 쇠대주사물 144H2 쇠대밝기 40Onits 시스템 8GB 용탕 128GB 저장매체 UFS3.1(나장) 외장메도리 microSD지I원 외장메모리용량 TnicroSD 쇠대ITB 프로세서 디멘시터 8300 코어 개수 8코이 코이클럭 3.35GH2+3.2GH2+2.2GHz",
+      "ocr_text": "레노버 아이디어램 프로 12.7 (128GB) 노트북월드   459,000원 무료배승  최저가 구매하기 가격비교 18 상품 상세정보 의견리뷰 266 소모품|액세서리 뉴스커유니티 연관상품 레노버 72 M023 u다 가짜- 만족로 7 2.33 ' 버'다 U 3 가 Jluiv 미미디어태 프로{2 한번 잡취바~ LENoVOIDEA TAalwo 5296 중은데? 레노버 [dea Tab Pron on 12 Lunulyiu TalFio 제조회사 레노버 (제조사 웬사이트 바로가기) 등록년월 2025년 01월 태들릿형태 태들릿PC 태들릿연결 Wi-Fi 모델명 ZAE4OO7SKR 화면크기 12.7인치 화면크기 12인치대 디스플레이 IPS-LCD 해상도 2944*1840 퍽실 쉬ppi) 400 최대주사율 144Hz 최대밝기 40Onits 시스템 8GB 용량 128GB Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies Y:no",
       "specs": {
         "태블릿PC": "지원",
         "Wi-Fi": "지원",
@@ -512,10 +512,10 @@
     "target_company_name": "레노버, Lenober",
     "model_param": "IPS-LCD",
     "ocr_result": {
-      "extracted_text": "레노버 아이디어탤 프로 12.7 (128GB) Gmarket   458,990원 무료내승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 266 소모품[액세서리 뉴스커유니티 연관상품 레노버 12 잔미고히 몇달 사용수 만족도-1 2.33 t F - 벼 S paer T1u  미미_머  프로{하; 한번 집취반 T  LENoVOIDIA TAolPRo 5296 중문데? 레노어 ldea Tan Pro 12 Ynlube Lemoyu TanPio 제조회사 레노버 (제조사 웬사이트 바로가기) 등록년원 2025년 01민 대불릿연결 Wi-Fi 모델명 ZAE4OO7gKR 화면크기 12 7인지 디스끌레이 IPS-LCD 해상도 2944x1840 퍽설 수(ppi) 400ppi 쇠대주사물 144H2 쇠대밝기 40Onits 시스템 8GB 용탕 128GB 저장매체 UFS3.1(나장) 외장메도리 microSD지I원 외장메모리용량 TnicroSD 쇠대ITB 프로세서 디멘시터 8300 코어 개수 8코이 코이클럭 3.35GH2+3.2GH2+2.2GHz",
+      "extracted_text": "레노버 아이디어램 프로 12.7 (128GB) 노트북월드   459,000원 무료배승  최저가 구매하기 가격비교 18 상품 상세정보 의견리뷰 266 소모품|액세서리 뉴스커유니티 연관상품 레노버 72 M023 u다 가짜- 만족로 7 2.33 ' 버'다 U 3 가 Jluiv 미미디어태 프로{2 한번 잡취바~ LENoVOIDEA TAalwo 5296 중은데? 레노버 [dea Tab Pron on 12 Lunulyiu TalFio 제조회사 레노버 (제조사 웬사이트 바로가기) 등록년월 2025년 01월 태들릿형태 태들릿PC 태들릿연결 Wi-Fi 모델명 ZAE4OO7SKR 화면크기 12.7인치 화면크기 12인치대 디스플레이 IPS-LCD 해상도 2944*1840 퍽실 쉬ppi) 400 최대주사율 144Hz 최대밝기 40Onits 시스템 8GB 용량 128GB Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies Y:no",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\레노버 아이디어탭 프로 12.7 (128GB)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/레노버 아이디어탭 프로 12.7 (128GB)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }

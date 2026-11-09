@@ -1,16 +1,15 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=9265791",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "아마존 Echo Show 5 (해외구매)",
       "name": "아마존 Echo Show 5 (해외구매)",
       "description": "",
-      "ocr_text": "아마존 Echo Show 5 (해외구매) 보다 BODA 226,870원   무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 전원 ACIDC전원 사운드출력 불무투스버전 불무투스 불루투스프로파일 AVRCP A2DP 입출력 AUX 네트위크 Wi-Fi 재생지원 라디오 멀티미디어 전화통화 시계 알람 외관특징 화면 편의기능 음성비서내장 내장 음성비서 알렉사 인식가능언어 6다 - -다",
+      "ocr_text": "아마존 Echo Show 5 (해외구매) 보다 BODA 226,870원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 불무투스버전 불로투스 불루투스프로파일 AVRCP A2DP 입출력 AUX 네트위크 Wi-Fi 재생지원 라디오 멀티미디어 전화통화 시계 알람 외관특징 화면 편의기능 음성비서내장 내장 음성비서 알렉사 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
-        "AI스피커": "지원",
-        "AC/DC전원": "지원",
         "4W": "지원",
+        "AI스피커": "지원",
         "블루투스": "지원",
         "입출력": "AUX",
         "Wi-Fi": "지원",
@@ -20,20 +19,291 @@
         "알람": "지원",
         "화면": "지원",
         "음성비서내장": "지원",
-        "영어인식": "지원"
+        "영어인식": "지원",
+        "AC/DC전원": "지원"
       },
-      "raw_specs": "AI스피커 / AC/DC전원 / 4W / 블루투스 / 입출력 : AUX / Wi-Fi / 라디오 / 전화통화 / 시계 / 알람 / 화면 / 음성비서내장 / 영어인식",
+      "raw_specs": "4W / AI스피커 / 블루투스 / 입출력 : AUX / Wi-Fi / 라디오 / 전화통화 / 시계 / 알람 / 화면 / 음성비서내장 / 영어인식 / AC/DC전원",
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=9265791",
       "manufacturer": "아마존, Amazon",
-      "model_name": "EL-F40"
+      "model_name": ""
     },
     "norm_info": {
       "company_name": "아마존, Amazon",
-      "model_name": "EL-F40",
+      "model_name": "",
       "product_name": "아마존 Echo Show 5 (해외구매)"
     },
     "db_results": [
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Server",
+        "model_name": "HOPPER27CX",
+        "country": "대만",
+        "cert_date": "2025-03-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-HOPPER27CX"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Server",
+        "model_name": "Timberwolf",
+        "country": "대만",
+        "cert_date": "2024-01-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-TIMBERWOLF"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Mother Board",
+        "model_name": "BHMobo",
+        "country": "대만",
+        "cert_date": "2025-12-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-BHMobo"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Mother Board",
+        "model_name": "HNMobo",
+        "country": "대만",
+        "cert_date": "2025-12-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-HNMobo"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Server",
+        "model_name": "SZ2366",
+        "country": "미국",
+        "cert_date": "2025-12-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-SZ2366"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Server",
+        "model_name": "Bahubali",
+        "country": "중국",
+        "cert_date": "2025-12-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-Bahubali"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Mother Board",
+        "model_name": "Makalu Mobo",
+        "country": "대만",
+        "cert_date": "2025-10-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-MakaluMobo"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Server",
+        "model_name": "Hotdog",
+        "country": "미국",
+        "cert_date": "2025-10-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-Hotdog"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "SERVER",
+        "model_name": "Humboldt",
+        "country": "미국",
+        "cert_date": "2025-10-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-Humboldt"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Server",
+        "model_name": "Monza",
+        "country": "미국",
+        "cert_date": "2025-09-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-Monza"
+      },
+      {
+        "company_name": "Amazon.com Services LLC ,특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5150∼5350㎒",
+        "equip_name": "5470∼5850㎒ 주파수 대역))",
+        "model_name": "P5N8EC",
+        "country": "중국",
+        "cert_date": "2025-08-14",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-E40-P5N8EC"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Server",
+        "model_name": "NANAKA",
+        "country": "대만",
+        "cert_date": "2025-05-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-NANAKA"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Sled Server",
+        "model_name": "Hanuman",
+        "country": "멕시코",
+        "cert_date": "2025-03-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-Hanuman"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Ambrose Server Platform-DVT (JBOG)",
+        "model_name": "S22708FGP",
+        "country": "미국",
+        "cert_date": "2025-03-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-S22708FGP"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Ambrose Server Platform-DVT (Headnode)",
+        "model_name": "C22201FQU",
+        "country": "미국",
+        "cert_date": "2025-03-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-C22201FQU"
+      },
+      {
+        "company_name": "아마존인터내셔널 주식회사",
+        "equip_name": "웰리드 LED바1550",
+        "model_name": "웰리드 LED바",
+        "country": "중국",
+        "cert_date": "2024-01-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Ti3-LEDBAR"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Server",
+        "model_name": "TETON2NH",
+        "country": "대만",
+        "cert_date": "2025-03-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-TETON2NH"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Server",
+        "model_name": "TETON2PJ",
+        "country": "대만",
+        "cert_date": "2025-03-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-TETON2PJ"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Server",
+        "model_name": "TETON2NJ",
+        "country": "대만",
+        "cert_date": "2025-03-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-TETON2NJ"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Server",
+        "model_name": "TETON2PH",
+        "country": "대만",
+        "cert_date": "2025-03-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-TETON2PH"
+      },
+      {
+        "company_name": "아마존인터내셔널 주식회사",
+        "equip_name": "웰리드 멀티라이트",
+        "model_name": "ML12A",
+        "country": "한국",
+        "cert_date": "2026-03-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-RS-Ti3-ML12A"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Server",
+        "model_name": "HP89j",
+        "country": "미국",
+        "cert_date": "2026-03-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-HP89j"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Server",
+        "model_name": "HP87j",
+        "country": "미국",
+        "cert_date": "2026-03-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-HP87j"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "SWITCH",
+        "model_name": "AZ9074-64X-DC-42",
+        "country": "태국",
+        "cert_date": "2026-02-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-AZ907464XDC42"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Server",
+        "model_name": "HP78j",
+        "country": "대만",
+        "cert_date": "2026-02-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-HP78j"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Sled Server",
+        "model_name": "HP78h",
+        "country": "대만",
+        "cert_date": "2026-02-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-HP78h"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Mother Board",
+        "model_name": "24W06",
+        "country": "대만",
+        "cert_date": "2026-01-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-GV4"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Sled Server",
+        "model_name": "Husky",
+        "country": "중국",
+        "cert_date": "2026-01-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-Husky"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Server",
+        "model_name": "Hotdog1U5",
+        "country": "미국",
+        "cert_date": "2026-01-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-Hotdog1U5"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "SERVER",
+        "model_name": "Ambrose",
+        "country": "대만",
+        "cert_date": "2024-12-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-Ambrose"
+      },
       {
         "company_name": "Amazon Data Services, Inc.",
         "equip_name": "RFID용 무선기기(13.56㎒ 주파수 대역)",
@@ -45,18 +315,404 @@
       },
       {
         "company_name": "Amazon.com Services, Inc.",
+        "equip_name": "Security Token",
+        "model_name": "Z8UL8T",
+        "country": "미국",
+        "cert_date": "2019-11-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-E48-Z8UL8T"
+      },
+      {
+        "company_name": "아마존피쉬",
+        "equip_name": "RESUN 자동먹이급여기",
+        "model_name": "AF-2005D",
+        "country": "중국",
+        "cert_date": "2019-01-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AmZ-AF-2005D"
+      },
+      {
+        "company_name": "아마존피쉬",
+        "equip_name": "RESUN 자동먹이급여기",
+        "model_name": "AF-2009D",
+        "country": "중국",
+        "cert_date": "2019-01-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AmZ-AF-2009D"
+      },
+      {
+        "company_name": "아마존피쉬",
+        "equip_name": "RESUN 자동먹이급여기",
+        "model_name": "AF-2003",
+        "country": "중국",
+        "cert_date": "2019-01-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AmZ-AF-2003"
+      },
+      {
+        "company_name": "Amazon.com Services, Inc.",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
         "model_name": "PQ94WIF",
         "country": "중국",
         "cert_date": "2021-12-28",
         "cert_status": "적합인증",
         "cert_no": "R-C-E48-PQ94WIF"
+      },
+      {
+        "company_name": "Amazon.com Services, Inc.,특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5150∼5350㎒",
+        "equip_name": "5470∼5850㎒ 주파수 대역))",
+        "model_name": "M8S26G",
+        "country": "중국",
+        "cert_date": "2021-12-28",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-E48-M8S26G"
+      },
+      {
+        "company_name": "Amazon.com Services, Inc.,특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5150∼5350㎒",
+        "equip_name": "5470∼5850㎒ 주파수 대역))",
+        "model_name": "K29A5E",
+        "country": "중국",
+        "cert_date": "2021-11-02",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-E48-K29A5E"
+      },
+      {
+        "company_name": "아마존인터내셔널 주식회사",
+        "equip_name": "Control switch",
+        "model_name": "HTLB-KZ-AC",
+        "country": "중국",
+        "cert_date": "2023-10-26",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Ti3-HTLB-KZ-AC"
+      },
+      {
+        "company_name": "Amazon.com Services, Inc.,특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기(5150∼5350㎒",
+        "equip_name": "5470∼5850㎒ 주파수 대역))",
+        "model_name": "WM-BAC-MT-53",
+        "country": "중국",
+        "cert_date": "2023-10-11",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-E48-1021"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Server",
+        "model_name": "C21105FCA",
+        "country": "중국",
+        "cert_date": "2023-10-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-C21105FCA"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Server",
+        "model_name": "RoverC16C",
+        "country": "미국",
+        "cert_date": "2023-03-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-RoverC16C"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Server",
+        "model_name": "Bruno",
+        "country": "미국",
+        "cert_date": "2023-02-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-Bruno"
+      },
+      {
+        "company_name": "Amazon.com Services, Inc.",
+        "equip_name": "Security Token",
+        "model_name": "U05U83",
+        "country": "미국",
+        "cert_date": "2018-09-04",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-E48-U05U83"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Server",
+        "model_name": "Makalu56",
+        "country": "대만",
+        "cert_date": "2024-12-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-Makalu56"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Server",
+        "model_name": "Ambrose87",
+        "country": "대만",
+        "cert_date": "2024-11-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-Ambrose87"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Server",
+        "model_name": "Ambrose76",
+        "country": "대만",
+        "cert_date": "2024-11-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-Ambrose76"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "PCle card",
+        "model_name": "K2V5-DVD",
+        "country": "미국",
+        "cert_date": "2024-11-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-K2V5-DVD"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Sled JBOD",
+        "model_name": "HN8J",
+        "country": "미국",
+        "cert_date": "2024-10-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-HN8J"
+      },
+      {
+        "company_name": "Amazon Data Services, Inc.",
+        "equip_name": "Server",
+        "model_name": "HN8",
+        "country": "미국",
+        "cert_date": "2024-10-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-amz-HN8"
       }
     ],
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 웨어러블 인공지능 비서를 위한 RTOS기반 초소형 인공지능 비서 모듈 및 기기 개발 등 총 31건",
+      "detail": "NTIS에서 [AMAZON] 검색어로 조회한 결과, AI 관련 과제 31건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "웨어러블 인공지능 비서를 위한 RTOS기반 초소형 인공지능 비서 모듈 및 기기 개발",
+          "project_number": "1425130277",
+          "lead_company": "AMAZON",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "Retro-fit(기존설비활용)형 컴퓨터 비전 기반 완전무인매장 및 사용자 행동분석 플랫폼 개발",
+          "project_number": "1425182645",
+          "lead_company": "AMAZON",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "웨어러블 인공지능 비서를 위한 RTOS기반 초소형 인공지능 비서 모듈 및 기기 개발",
+          "project_number": "1425121824",
+          "lead_company": "AMAZON",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "골프 스윙운동 3차원 센서데이타의 머신러닝 데이터 분석을 통한 개인 맞춤형 코칭 시스템 개발",
+          "project_number": "1425134363",
+          "lead_company": "AMAZON",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "한국관광의 디지털 문화매개자로서의 한국유학경험자 연구: 딥러닝 기반 영상콘텐츠 분석과 내러티브 분석을 중심으로",
+          "project_number": "1345352883",
+          "lead_company": "AMAZON",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI기반 웹 애널리틱스 툴 Bigin",
+          "project_number": "1425136437",
+          "lead_company": "AMAZON",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "지능화된 콘텐트 분석과 네트노그래피를 활용한 플랫폼 기반 기업의 혁신활동, 기술성과, 시장효과에 대한 연구",
+          "project_number": "1345335917",
+          "lead_company": "AMAZON",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "튜브 다이어트 결정을 위한 클라우드 인공지능 비디오 분석 시스템",
+          "project_number": "1465039257",
+          "lead_company": "AMAZON",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "부동산 자산관리 서비스 SaaS플랫폼 개발 및 사업화",
+          "project_number": "2420030923",
+          "lead_company": "AMAZON",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "정확하고 공정한 머신러닝을 위한 선택적 데이터 수집",
+          "project_number": "1711133027",
+          "lead_company": "AMAZON",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "전세계 비대면 동영상 미디어 사업자를 위한 동영상 미디어 기술 패키지 개발 (동영상 재생, 스트리밍, 보안, 빅데이터, 딥러닝 기술 개발)",
+          "project_number": "1425152875",
+          "lead_company": "AMAZON",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "산업재해 저감을 위한 산업현장 안전 장비용 인식률 90%이상급 딥러닝기반 음성인식 긴급 정지 장치 개발",
+          "project_number": "1315001416",
+          "lead_company": "AMAZON",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "주상(100kVA급), 지상(500kVA급) 소형 고효율 배전용 변압기 개발",
+          "project_number": "1415160112",
+          "lead_company": "AMAZON",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "환경변화에 스스로 대응하고 처음 가는 환경에서도 목표장소에 도달할 수 있는 딥러닝 기반의 서비스 로봇용 실내 자율주행 원천기술 개발",
+          "project_number": "1415172379",
+          "lead_company": "AMAZON",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "인공지능을 활용한 비대면 방식의 저비용 어린이 그림 심리평가 시스템",
+          "project_number": "1425139811",
+          "lead_company": "AMAZON",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "앉은 자세 모니터링을 위한 필름형 압력분포 센서 및 딥러닝 기반 스마트 의자 개발",
+          "project_number": "1415152418",
+          "lead_company": "AMAZON",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "튜브 다이어트 결정을 위한 클라우드 인공지능 비디오 분석 시스템",
+          "project_number": "1465037547",
+          "lead_company": "AMAZON",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "배터리/연료전지 시스템에 적용을 위한 임피던스 모듈 및 AI를 접목한 진단모델 개발",
+          "project_number": "1425172487",
+          "lead_company": "AMAZON",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "생산성의 극대화를 위한 목표(Target)와 보상구조(Incentives)의 최적화",
+          "project_number": "1711157653",
+          "lead_company": "AMAZON",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "지능화된 콘텐트 분석과 네트노그래피를 활용한 플랫폼 기반 기업의 혁신활동, 기술성과, 시장효과에 대한 연구",
+          "project_number": "1345315907",
+          "lead_company": "AMAZON",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "<span class=\"search_word\">아마존</span> D2C 무역 프로세스를 통해 해외 수출 지원을 위한 AI 판매수요 예측 시스템 및 가상공간 VR 마케팅 애플리케이션 개발",
+          "project_number": "1425142141",
+          "lead_company": "아마존",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "<span class=\"search_word\">아마존</span> D2C 무역 프로세스를 통해 해외 수출 지원을 위한 AI 판매수요 예측 시스템 및 가상공간 VR 마케팅 애플리케이션 개발",
+          "project_number": "1425135804",
+          "lead_company": "아마존",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "IoT기반 미용사 업무 보조 스마트 미러 디스플레이",
+          "project_number": "1425150836",
+          "lead_company": "아마존",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI 챗봇과 이용자 간 감정 공감대 형성 부족에 의한 서비스 실패 상황에 대한 연구: 챗봇 보이스의 음성학적 특성이 만들어내는 불쾌한 골짜기(Uncanny Valley)와 극복 방안을 중심으로.",
+          "project_number": "2340003216",
+          "lead_company": "아마존",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "패션 정보 분석(NER, 검색 랭킹) 및 디자인(조건부 생성) AI 기술 개발",
+          "project_number": "1425129412",
+          "lead_company": "아마존",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "IoT 및 인공지능(Artificial Intelligence)을 기반으로 사용자와 인터렉티브(Interactive)하는 화분을 개발",
+          "project_number": "1425119962",
+          "lead_company": "아마존",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "인공지능 사물인터넷 스마트호텔 서비스 플랫폼 기반의 글로벌 시장 진출이 가능한 AI 음성인식 스피커로 구현되는 비대면 서비스 개발",
+          "project_number": "1415182706",
+          "lead_company": "아마존",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "크라우드 기반 투자 알고리즘 엔진과 플랫폼",
+          "project_number": "1425119162",
+          "lead_company": "아마존",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "잠재 확산 모델 기반 게임 디자인 리소스 생성 솔루션",
+          "project_number": "1425182032",
+          "lead_company": "아마존",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "외부카메라와 AI인식기술을 활용한 여성범죄안전시스템",
+          "project_number": "1425170086",
+          "lead_company": "아마존",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "인공 지능과 자동화 봇 기술을 활용한 공동구매 중개 통합 플랫폼",
+          "project_number": "1425153877",
+          "lead_company": "아마존",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -66,18 +722,18 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "아마존, Amazon",
-    "model_param": "EL-F40",
+    "model_param": "",
     "ocr_result": {
-      "extracted_text": "아마존 Echo Show 5 (해외구매) 보다 BODA 226,870원   무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 전원 ACIDC전원 사운드출력 불무투스버전 불무투스 불루투스프로파일 AVRCP A2DP 입출력 AUX 네트위크 Wi-Fi 재생지원 라디오 멀티미디어 전화통화 시계 알람 외관특징 화면 편의기능 음성비서내장 내장 음성비서 알렉사 인식가능언어 6다 - -다",
+      "extracted_text": "아마존 Echo Show 5 (해외구매) 보다 BODA 226,870원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 불무투스버전 불로투스 불루투스프로파일 AVRCP A2DP 입출력 AUX 네트위크 Wi-Fi 재생지원 라디오 멀티미디어 전화통화 시계 알람 외관특징 화면 편의기능 음성비서내장 내장 음성비서 알렉사 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\아마존 Echo Show 5 (해외구매)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/아마존 Echo Show 5 (해외구매)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1,
       "_cache_meta": {
-        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\아마존 Echo Show 5 (해외구매)\\detail_scan.png",
-        "image_size": 46965,
-        "image_sha256": "0dbe99758a833363d96d2e70e99bd4da6ad032127f53fad573b6cc893882e31b"
+        "image_path": "/home/projects/EASy_ML/product_images/아마존 Echo Show 5 (해외구매)/detail_scan.png",
+        "image_size": 66212,
+        "image_sha256": "443ffee8ed8f56131eedb187020145ac91b7b7a2c3159eaadcd196e3ba2621c1"
       }
     }
   }

@@ -1,29 +1,29 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=92357951",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "프리플로우 MCHOSE V9 PRO (정품)",
       "name": "프리플로우 MCHOSE V9 PRO (정품)",
       "description": "",
-      "ocr_text": "프리플로우 MCHOSE V9 PRO (정품) 오늘의집 72,900원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 52 연관상품 유넷크기 53mm 채널지원 가상 71자널 연결방식 USB-C USB능글 USB-C동글 2.4GHz 불무투스 불무투스 V5.0 인디터스 322 감도 113dB 주파수 2OHz~2OkHz 사운드기능 A노이즈랜쓸림가이 편의기능 저지언게이망모드 전용 소프트웨어 사용시간 250시간 배터리용량 2,OOOmAh 충전단자 USB-C 패드형대 오버이어 권트론러형태 일제형조작부 권트물러기능 볼룹 조설 마이크 ONOFF 마이크형태 플렉시블 탈작형",
+      "ocr_text": "프리플로우 MCHOSE V9 PRO (정품) 오늘의집 72,900원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 52 연관상품 유냉크기 53mm 채널지원 가상 71채널 연결방식 USB-C USB동글 USB-C동글 2.4GHz 불무투스 불루투스 V5.0 임피던스 320 감도 113dB 주파수 2OHz-2OkHz 사용시간 250시간 배터리용량 2,ooOmAh 충전단자 USB-C 사운드기능 AI노이즈랜되림마이 편의기능 저지연제이망모드 전용 소프트웨어 패드형태 오버이어 권트물러형태 일제형조작부 권트물러기능 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "유무선겸용 PC헤드셋": "지원",
         "가상 7.1채널": "지원",
         "USB-C": "지원",
+        "2.4GHz": "지원",
         "USB동글": "지원",
         "USB-C동글": "지원",
-        "2.4GHz": "지원",
         "블루투스 v5.0": "지원",
         "32Ω": "지원",
         "113dB": "지원",
         "20Hz~20kHz": "지원",
-        "AI노이즈캔슬링마이크": "지원",
-        "저지연게이밍모드": "지원",
-        "전용 소프트웨어": "지원",
         "사용시간": "250시간",
         "배터리용량": "2,000mAh",
         "충전단자": "USB-C",
+        "AI노이즈캔슬링마이크": "지원",
+        "전용 소프트웨어": "지원",
+        "저지연게이밍모드": "지원",
         "[형태] 오버이어": "지원",
         "일체형조작부": "지원",
         "컨트롤러기능": "볼륨 조절 , 마이크 ON,OFF",
@@ -32,15 +32,15 @@
         "색상": "블랙 , 화이트",
         "무게": "275g"
       },
-      "raw_specs": "유무선겸용 PC헤드셋 / 가상 7.1채널 / USB-C / USB동글 / USB-C동글 / 2.4GHz / 블루투스 v5.0 / 32Ω / 113dB / 20Hz~20kHz / AI노이즈캔슬링마이크 / 저지연게이밍모드 / 전용 소프트웨어 / 사용시간 : 250시간 / 배터리용량 : 2,000mAh / 충전단자 : USB-C / [형태] 오버이어 / 일체형조작부 / 컨트롤러기능 : 볼륨 조절 , 마이크 ON,OFF / 마이크형태 : 플렉시블 , 탈착형 / 밴드형태 : 슬라이더형 / 색상 : 블랙 , 화이트 / 무게 : 275g",
+      "raw_specs": "유무선겸용 PC헤드셋 / 가상 7.1채널 / USB-C / 2.4GHz / USB동글 / USB-C동글 / 블루투스 v5.0 / 32Ω / 113dB / 20Hz~20kHz / 사용시간 : 250시간 / 배터리용량 : 2,000mAh / 충전단자 : USB-C / AI노이즈캔슬링마이크 / 전용 소프트웨어 / 저지연게이밍모드 / [형태] 오버이어 / 일체형조작부 / 컨트롤러기능 : 볼륨 조절 , 마이크 ON,OFF / 마이크형태 : 플렉시블 , 탈착형 / 밴드형태 : 슬라이더형 / 색상 : 블랙 , 화이트 / 무게 : 275g",
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=92357951",
       "manufacturer": "프리플로우, Freelou",
-      "model_name": "V9 PRO"
+      "model_name": "V9"
     },
     "norm_info": {
       "company_name": "프리플로우, Freelou",
-      "model_name": "V9 PRO",
+      "model_name": "V9",
       "product_name": "프리플로우 MCHOSE V9 PRO (정품)"
     },
     "db_results": [
@@ -327,7 +327,119 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: K-콘텐츠의 가치 확산을 위한 AI 기반 2차 창작 <span class=\"search_word\">프리</span>프로덕션 기술 개발 등 총 15건",
+      "detail": "NTIS에서 [프리플로우] 검색어로 조회한 결과, AI 관련 과제 15건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "K-콘텐츠의 가치 확산을 위한 AI 기반 2차 창작 <span class=\"search_word\">프리</span>프로덕션 기술 개발",
+          "project_number": "2370000482",
+          "lead_company": "프리플로우",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "콘텐츠 데이터 기반 숏폼 영상 <span class=\"search_word\">프리</span>프로덕션 자동화 및 성과예측 AI 기술 개발",
+          "project_number": "2420032148",
+          "lead_company": "프리플로우",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "멀티모달·생성형AI 기반의 배리어<span class=\"search_word\">프리</span> 콘텐츠 자동생성 파이프라인 및 영상·음성 맥락인지형 자동제작 기술개발",
+          "project_number": "2420027352",
+          "lead_company": "프리플로우",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "멀티모달·생성형AI 기반의 배리어<span class=\"search_word\">프리</span> 콘텐츠 자동생성 파이프라인 및 영상·음성 맥락인지형 자동제작 기술개발",
+          "project_number": "2420026182",
+          "lead_company": "프리플로우",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI 기반 설문 응답 데이터 분석 및 시각화 솔루션",
+          "project_number": "2420016986",
+          "lead_company": "프리플로우",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI 기반 인물·캐릭터 교체 자동화 및 AFX(AI+VFX) 제작 파이프라인 통합 기술 개발",
+          "project_number": "2710110861",
+          "lead_company": "프리플로우",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "제로에너지 건축물 인증 등급 3단계 구현을 위한 인공지능 기반 액티브-패시브 융합 친환경 건축 설계 솔루션 개발",
+          "project_number": "1615010602",
+          "lead_company": "프리플로우",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "제어된 연속흐름합성을 통한 InP/ZnS 나노입자의 고속 합성 및 다축 폴더블 디스플레이로 활용",
+          "project_number": "2710095462",
+          "lead_company": "프리플로우",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "(3세부) 비디오 이해를 위한 데이터 수집 및 보정 자동화 시스템 개발",
+          "project_number": "1711073581",
+          "lead_company": "프리플로우",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "제로에너지 건축물 인증 등급 3단계 구현을 위한 인공지능 기반 액티브-패시브 융합 친환경 건축 설계 솔루션 개발",
+          "project_number": "1615010177",
+          "lead_company": "프리플로우",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "Embodied AI 기반 의료 초음파 3차원 영상 및 중재술 내비게이션 기술 개발",
+          "project_number": "2710104915",
+          "lead_company": "프리플로우",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "신체·심리 변화 통합 관리를 위한 맞춤형 UX 디자인 개발",
+          "project_number": "2410016963",
+          "lead_company": "프리플로우",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "1,000 TOPS/W 급 고성능 뉴로모픽 컴퓨팅 구현을 위한 모노리틱 적층형 뉴런-시냅스 공동 집적 하드웨어 개발",
+          "project_number": "2710096187",
+          "lead_company": "프리플로우",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "1,000 TOPS/W 급 고성능 뉴로모픽 컴퓨팅 구현을 위한 모노리틱 적층형 뉴런-시냅스 공동 집적 하드웨어 개발",
+          "project_number": "2710086334",
+          "lead_company": "프리플로우",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "제로에너지 건축물 인증 등급 3단계 구현을 위한 인공지능 기반 액티브-패시브 융합 친환경 건축 설계 솔루션 개발",
+          "project_number": "1615011283",
+          "lead_company": "프리플로우",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -337,12 +449,12 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "프리플로우, Freelou",
-    "model_param": "V9 PRO",
+    "model_param": "V9",
     "ocr_result": {
-      "extracted_text": "프리플로우 MCHOSE V9 PRO (정품) 오늘의집 72,900원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 52 연관상품 유넷크기 53mm 채널지원 가상 71자널 연결방식 USB-C USB능글 USB-C동글 2.4GHz 불무투스 불무투스 V5.0 인디터스 322 감도 113dB 주파수 2OHz~2OkHz 사운드기능 A노이즈랜쓸림가이 편의기능 저지언게이망모드 전용 소프트웨어 사용시간 250시간 배터리용량 2,OOOmAh 충전단자 USB-C 패드형대 오버이어 권트론러형태 일제형조작부 권트물러기능 볼룹 조설 마이크 ONOFF 마이크형태 플렉시블 탈작형",
+      "extracted_text": "프리플로우 MCHOSE V9 PRO (정품) 오늘의집 72,900원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 52 연관상품 유냉크기 53mm 채널지원 가상 71채널 연결방식 USB-C USB동글 USB-C동글 2.4GHz 불무투스 불루투스 V5.0 임피던스 320 감도 113dB 주파수 2OHz-2OkHz 사용시간 250시간 배터리용량 2,ooOmAh 충전단자 USB-C 사운드기능 AI노이즈랜되림마이 편의기능 저지연제이망모드 전용 소프트웨어 패드형태 오버이어 권트물러형태 일제형조작부 권트물러기능 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\프리플로우 MCHOSE V9 PRO (정품)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/프리플로우 MCHOSE V9 PRO (정품)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }

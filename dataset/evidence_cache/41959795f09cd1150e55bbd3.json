@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=96423329",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "MSI MAG 274QF Rapid IPS 게이밍 WQHD 180 AI Vision 무결점",
       "name": "MSI MAG 274QF Rapid IPS 게이밍 WQHD 180 AI Vision 무결점",
       "description": "",
-      "ocr_text": "MSI MAG 274QF Rapid IPS 게이망 WQHD 180 Al Vision 무결점 립오아시스 223,920원 (223,920+무료배송) 최저가 구매하기 가격비교 18 상품 상세정보 의견리뷰 30 뉴스커유니티 연관상품 해삼도 QHD(2560 1440) 쇠대 주사물 18OHz 패널 종류 Rapid IPS 화면 비율 라이드(16.9) 파닐 형대 평면 시야각 광시야각 퍽설피치 0.2331mm 응답 속도 O.5ms(GTG) 화면 밝기 25Onits 명상비 1,000.1 HDR 지원 HDR 시력보호 기능 끌리커 프리 불루라이트 자단 눈부십 방지 안티글레이 부가 기능 테드문 아웃 스랜드 기능 리드(상하) 규격 VESA봄 100 1oOmm 크기(가로x세로x깊 614x439x25Ommn 무게 소비전력 57W 색상영역 색 깊이 iObit (8bit FRC) sRGB 12496 Adobe RGB 939 DCI-P3 959 게임 관련 기능 7k9",
+      "ocr_text": "MSI MAG 274QF Rapid IPS 게이망 WQHD 180 Al Vision 무결점 검오아시스 222,920원 (222,920+무료버송) 최저가 구매하기 가격비교 18 상품 상세정보 의견리뷰 30 뉴스커유니티 연관상품 해상도 QHD(2560 1440) 최대 주사물 18OHz 패널 종류 Rapid IPS 화면 비율 와이드(169) 패널 형태 평면 시야각 광시아각 퍽실피치 0.2331mm 응답 속도 O.5ms(GTG) 화면 밝기 25Onits 명양비 1000.1 HDR 지원 HDR 시력보호 기능 플리커 프리 불루라이트 차단 눈부심 방지 안티글레어 부가 기능 헤드끈 아옷 스랜드 기능 털트상하) 규격 크기가로x세로x깊 VESA혼 100 ioOmm 614*439x25Omm 무게 47kg 소비전력 57W 색상영역 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "모니터": "지원",
         "68.58cm(27인치)": "지원",
@@ -30,289 +30,497 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=96423329",
       "manufacturer": "MSI, Multi-Solution Inc.",
-      "model_name": "274QF"
+      "model_name": ""
     },
     "norm_info": {
       "company_name": "MSI, Multi-Solution Inc.",
-      "model_name": "274QF",
+      "model_name": "",
       "product_name": "MSI MAG 274QF Rapid IPS 게이밍 WQHD 180 AI Vision 무결점"
     },
     "db_results": [
       {
-        "company_name": "HMS Industrial Networks A.B.",
-        "equip_name": "산업용 통신 게이트웨이",
-        "model_name": "X-Gateway",
-        "country": "스웨덴",
-        "cert_date": "2020-03-06",
+        "company_name": "Epiphan Systems Inc.",
+        "equip_name": "Video Production Encoder",
+        "model_name": "Pearl-2",
+        "country": "대만",
+        "cert_date": "2022-10-18",
         "cert_status": "적합등록",
-        "cert_no": "R-R-ABJ-ABX"
+        "cert_no": "R-R-5S7-Pearl2"
       },
       {
-        "company_name": "MICROHARD SYSTEMS Inc.",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "pMDDL2450",
-        "country": "캐나다",
-        "cert_date": "2025-07-28",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-MhI-pMDDL2450"
-      },
-      {
-        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
-        "equip_name": "Portrait VSM",
-        "model_name": "Portrait VSM",
-        "country": "중국",
-        "cert_date": "2024-05-14",
+        "company_name": "AJA Video Systems Inc.",
+        "equip_name": "12G-SDI to Optical Fiber converter card",
+        "model_name": "OG-FiDO-2T-12G",
+        "country": "미국",
+        "cert_date": "2021-03-19",
         "cert_status": "적합등록",
-        "cert_no": "R-R-GeM-PortraitVSM"
+        "cert_no": "R-R-AJA-OG-FiDO-2T-12G"
       },
       {
-        "company_name": "HMS Industrial Networks S.A.",
-        "equip_name": "IIOT remote access gateway with Ethernet connectivity",
-        "model_name": "01003",
-        "country": "벨기에",
-        "cert_date": "2024-11-06",
+        "company_name": "AJA Video Systems Inc.",
+        "equip_name": "12G-SDI to Optical Fiber ST converter card",
+        "model_name": "OG-FiDO-T-12G-ST",
+        "country": "미국",
+        "cert_date": "2021-03-19",
         "cert_status": "적합등록",
-        "cert_no": "R-R-22S-01003"
+        "cert_no": "R-R-AJA-OG-FiDO-T12GST"
       },
       {
-        "company_name": "HMS Industrial Networks S.A.",
-        "equip_name": "IIOT remote access gateway with Ethernet connectivity",
-        "model_name": "11702",
-        "country": "벨기에",
-        "cert_date": "2024-11-15",
+        "company_name": "AJA Video Systems Inc.",
+        "equip_name": "Optical Fiber to 12G-SDI converter card",
+        "model_name": "OG-FiDO-2R-12G",
+        "country": "미국",
+        "cert_date": "2021-03-19",
         "cert_status": "적합등록",
-        "cert_no": "R-R-22S-11702"
+        "cert_no": "R-R-AJA-OG-FiDO-2R-12G"
       },
       {
-        "company_name": "Cadence Design Systems Inc",
-        "equip_name": "PALLADIUM Z3 AIR-COOLED L SYSTEM 8 ALWAYS-ON-DOMAINS",
-        "model_name": "39HQL1A",
-        "country": "멕시코",
-        "cert_date": "2024-12-23",
+        "company_name": "AJA Video Systems Inc.",
+        "equip_name": "Optical Fiber ST to 12G-SDI converter card",
+        "model_name": "OG-FiDO-R-12G-ST",
+        "country": "미국",
+        "cert_date": "2021-03-19",
         "cert_status": "적합등록",
-        "cert_no": "R-R-C3S-Z3LSYSTEM"
+        "cert_no": "R-R-AJA-OG-FiDO-R12GST"
       },
       {
-        "company_name": "HMS Industrial Networks A.B.",
-        "equip_name": "산업용 통신 게이트웨이",
-        "model_name": "EtherCAT Main Device",
-        "country": "스웨덴",
-        "cert_date": "2023-04-28",
+        "company_name": "AJA Video Systems Inc.,12G-SDI",
+        "equip_name": "4-Channel Balanced Audio Embedder/Disembedder",
+        "model_name": "12G-AMA",
+        "country": "미국",
+        "cert_date": "2021-03-11",
         "cert_status": "적합등록",
-        "cert_no": "R-R-ABJ-ABC_ECT_MD"
-      },
-      {
-        "company_name": "MICROHARD SYSTEMS Inc.",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "p2400",
-        "country": "캐나다",
-        "cert_date": "2023-05-15",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-MhI-p2400"
+        "cert_no": "R-R-AJA-12G-AMA"
       },
       {
         "company_name": "QNAP SYSTEMS INC",
-        "equip_name": "Hardware RAID Enclosure",
-        "model_name": "TR-002",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-832PX",
         "country": "대만",
-        "cert_date": "2023-11-24",
+        "cert_date": "2021-03-10",
         "cert_status": "적합등록",
-        "cert_no": "R-R-QNP-TR-002"
+        "cert_no": "R-R-QNP-TS-832PX"
       },
       {
-        "company_name": "HMS Industrial Networks A.B.",
-        "equip_name": "산업용 통신 게이트웨이",
-        "model_name": "CAN Bridge & Gateway",
-        "country": "독일",
-        "cert_date": "2021-04-27",
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Ethernet Switch",
+        "model_name": "QSW-M804-4C",
+        "country": "대만",
+        "cert_date": "2021-03-08",
         "cert_status": "적합등록",
-        "cert_no": "R-R-ABJ-Ixxat_CANBG"
+        "cert_no": "R-R-QNP-QSW-M804-4C"
       },
       {
-        "company_name": "HMS Industrial Networks A.B.",
-        "equip_name": "산업용 통신 게이트웨이",
-        "model_name": "Ixxat Automotive",
-        "country": "독일",
-        "cert_date": "2021-05-14",
+        "company_name": "AJA Video Systems Inc.",
+        "equip_name": "Conversion Gateway Appliance",
+        "model_name": "BRIDGE NDI 3G",
+        "country": "미국",
+        "cert_date": "2021-02-24",
         "cert_status": "적합등록",
-        "cert_no": "R-R-ABJ-Ixxat_Auto"
+        "cert_no": "R-R-AJA-BRIDGENDI3G"
       },
       {
-        "company_name": "HPC Systems Inc.",
-        "equip_name": "AI Server",
-        "model_name": "EMB-S622SPI-R4-AI",
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Ethernet Switch",
+        "model_name": "QSW-M408S",
+        "country": "대만",
+        "cert_date": "2021-02-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-QSW-M408S"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Ethernet Switch",
+        "model_name": "QSW-1105-5T",
+        "country": "대만",
+        "cert_date": "2021-02-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-QSW-1105-5T"
+      },
+      {
+        "company_name": "AJA Video Systems Inc.",
+        "equip_name": "Compact 64x64 12G-SDI Router",
+        "model_name": "KUMO 6464-12G",
+        "country": "미국",
+        "cert_date": "2021-02-09",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AJA-KUMO646412G"
+      },
+      {
+        "company_name": "ExaGrid Systems Inc.",
+        "equip_name": "Network Storage Appliance",
+        "model_name": "CMNEXG2U",
+        "country": "미국",
+        "cert_date": "2021-02-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-EXG-NEXG2U"
+      },
+      {
+        "company_name": "ExaGrid Systems Inc.",
+        "equip_name": "Network Storage Appliance",
+        "model_name": "CMNEXG3U",
+        "country": "미국",
+        "cert_date": "2021-02-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-EXG-NEXG3U"
+      },
+      {
+        "company_name": "ExaGrid Systems Inc.",
+        "equip_name": "Network Storage Appliance",
+        "model_name": "CMNEXG4U",
+        "country": "미국",
+        "cert_date": "2021-02-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-EXG-NEXG4U"
+      },
+      {
+        "company_name": "AJA Video Systems Inc.",
+        "equip_name": "External Media Reader",
+        "model_name": "PAK Dock Pro",
+        "country": "미국",
+        "cert_date": "2021-01-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AJA-PAKDOCKPRO"
+      },
+      {
+        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
+        "equip_name": "Patient Monitor",
+        "model_name": "B125M",
+        "country": "중국",
+        "cert_date": "2021-01-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-GeM-B125M"
+      },
+      {
+        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
+        "equip_name": "Patient Monitor",
+        "model_name": "B105M",
+        "country": "중국",
+        "cert_date": "2021-01-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-GeM-B105M"
+      },
+      {
+        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
+        "equip_name": "Patient Monitor",
+        "model_name": "B155M",
+        "country": "중국",
+        "cert_date": "2021-01-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-GeM-B155M"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TVS-h1288X",
+        "country": "대만",
+        "cert_date": "2021-01-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TVS-h1288X"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-262",
+        "country": "대만",
+        "cert_date": "2022-12-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TS-262"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-264",
+        "country": "대만",
+        "cert_date": "2022-12-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TS-264"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-453E",
+        "country": "대만",
+        "cert_date": "2022-11-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TS-453E"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-253E",
+        "country": "대만",
+        "cert_date": "2022-11-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TS-253E"
+      },
+      {
+        "company_name": "Furukawa Automotive Systems INC.",
+        "equip_name": "24 GHz pulse radar system",
+        "model_name": "24GMMR20",
         "country": "일본",
-        "cert_date": "2021-05-17",
+        "cert_date": "2022-11-11",
         "cert_status": "적합등록",
-        "cert_no": "R-R-MV0-EMB-S622SPIR4"
+        "cert_no": "R-R-Fas-24GMMR20"
       },
       {
-        "company_name": "HMS Industrial Networks S.A.",
-        "equip_name": "4G APAC Extension Card for IIOT Remote Access Gateway",
-        "model_name": "03501",
-        "country": "벨기에",
-        "cert_date": "2021-06-15",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-22S-03501"
-      },
-      {
-        "company_name": "QNAP SYSTEMS INC",
-        "equip_name": "RAID Enclosure",
-        "model_name": "TR-106CT",
-        "country": "대만",
-        "cert_date": "2021-07-01",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-QNP-TR-106CT"
-      },
-      {
-        "company_name": "QNAP SYSTEMS INC",
-        "equip_name": "RAID Enclosure",
-        "model_name": "TR-108CT",
-        "country": "대만",
-        "cert_date": "2021-07-01",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-QNP-TR-108CT"
-      },
-      {
-        "company_name": "Varian Medical Systems Imaging Laboratory GmbH",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "VCD",
-        "country": "스위스",
-        "cert_date": "2017-12-14",
-        "cert_status": "적합인증",
-        "cert_no": "R-CMM-Var-VCD"
-      },
-      {
-        "company_name": "HMS Industrial Networks A.B.",
-        "equip_name": "산업용 통신 변환 장치",
-        "model_name": "HMS-EN2PB-R",
-        "country": "스웨덴",
-        "cert_date": "2020-03-31",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-ABJ-LinkingDevice"
-      },
-      {
-        "company_name": "HMS Industrial Networks A.B.",
-        "equip_name": "산업용 통신 게이트웨이",
-        "model_name": "Communicator",
-        "country": "스웨덴",
-        "cert_date": "2020-04-01",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-ABJ-ABC"
-      },
-      {
-        "company_name": "HMS Industrial Networks A.B.",
-        "equip_name": "산업용 통신 게이트웨이",
-        "model_name": "SG-Gateway",
-        "country": "스웨덴",
-        "cert_date": "2020-04-23",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-ABJ-SG-Gateway"
-      },
-      {
-        "company_name": "HMS Industrial Networks A.B.",
-        "equip_name": "산업용 통신 게이트웨이",
-        "model_name": "Anybus Communicator",
-        "country": "스웨덴",
-        "cert_date": "2020-06-29",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-ABJ-Communicator"
-      },
-      {
-        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스 템용 무선기기)",
-        "model_name": "MAC 7",
+        "company_name": "AJA Video Systems Inc.",
+        "equip_name": "ColorBox",
+        "model_name": "ColorBox-R0",
         "country": "미국",
-        "cert_date": "2020-10-30",
+        "cert_date": "2022-11-10",
         "cert_status": "적합등록",
-        "cert_no": "R-R-GeM-MAC7"
+        "cert_no": "R-R-AJA-COLORBOX"
+      },
+      {
+        "company_name": "AJA Video Systems Inc.",
+        "equip_name": "HELO Plus",
+        "model_name": "HELO-PLUS",
+        "country": "미국",
+        "cert_date": "2022-11-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-AJA-HELOPLUS"
       },
       {
         "company_name": "QNAP SYSTEMS INC",
-        "equip_name": "Hardware RAID Enclosure",
-        "model_name": "TR-004",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-464T4",
         "country": "대만",
-        "cert_date": "2019-02-18",
+        "cert_date": "2022-11-02",
         "cert_status": "적합등록",
-        "cert_no": "R-R-QNP-TR-004"
-      },
-      {
-        "company_name": "NetScout Systems Inc.",
-        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
-        "model_name": "EW-7822UNC ? EU",
-        "country": "미국",
-        "cert_date": "2019-08-06",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-NSZ-EW-7822UNC"
-      },
-      {
-        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
-        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
-        "model_name": "MAC VU360",
-        "country": "멕시코",
-        "cert_date": "2019-11-18",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-GeM-MACVU360"
-      },
-      {
-        "company_name": "Oce Display Graphics Systems Inc",
-        "equip_name": "RFID/USN용 무선기기(13.56MHz 대역 사용 기기)",
-        "model_name": "3010120604",
-        "country": "캐나다",
-        "cert_date": "2018-02-08",
-        "cert_status": "적합인증",
-        "cert_no": "R-CRM-ODG-3010120604"
+        "cert_no": "R-R-QNP-TS-464T4"
       },
       {
         "company_name": "QNAP SYSTEMS INC",
-        "equip_name": "IoT mini Server",
-        "model_name": "QBoat Sunny",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-h2287XU-RP",
         "country": "대만",
-        "cert_date": "2018-06-05",
+        "cert_date": "2022-11-02",
         "cert_status": "적합등록",
-        "cert_no": "R-REM-QNP-QBoat_Sunny"
+        "cert_no": "R-R-QNP-TS-h2287XU-RP"
       },
       {
-        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
-        "equip_name": "특정소출력 무선기기(무선랜을 포함한 무선접속시스템용 무선기기)",
-        "model_name": "MAC 2000",
-        "country": "인도",
-        "cert_date": "2018-09-19",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-GeM-ECGMAC2000LDWX"
-      },
-      {
-        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "MAC Link(Acquisition Module)",
-        "country": "중국",
-        "cert_date": "2017-07-24",
-        "cert_status": "적합인증",
-        "cert_no": "MSIP-CMM-GeM-MACLinkAM53223"
-      },
-      {
-        "company_name": "GE MEDICAL SYSTEMS INFORMATION TECHNOLOGIES, INC.",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "MAC Link(Host Module)",
-        "country": "중국",
-        "cert_date": "2017-08-24",
-        "cert_status": "적합인증",
-        "cert_no": "MSIP-CMM-GeM-MACLinkHM53223"
-      },
-      {
-        "company_name": "NetScout Systems Inc.",
-        "equip_name": "무선 신호 분석기",
-        "model_name": "SENSOR6-R1S0W1-E",
+        "company_name": "SambaNova Systems Inc.",
+        "equip_name": "Reconfigurable Dataflow Unit Module",
+        "model_name": "SN30-2",
         "country": "미국",
-        "cert_date": "2017-11-21",
+        "cert_date": "2022-10-28",
         "cert_status": "적합등록",
-        "cert_no": "MSIP-RRM-NSZ-SENSOR6"
+        "cert_no": "R-R-Sa9-SN30-2"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-h3087XU-RP",
+        "country": "대만",
+        "cert_date": "2022-10-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TS-h3087XU-RP"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Ethernet Switch",
+        "model_name": "QSW-M2106-4S",
+        "country": "대만",
+        "cert_date": "2022-06-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-QSW-M2106-4S"
+      },
+      {
+        "company_name": "Furukawa Automotive Systems INC.",
+        "equip_name": "24 GHz pulse radar system",
+        "model_name": "24GMMR1A",
+        "country": "일본",
+        "cert_date": "2022-01-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-Fas-24GMMR1A"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-h2477XU-RP",
+        "country": "대만",
+        "cert_date": "2022-01-21",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TS-h2477XU-RP"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-864eU-RP",
+        "country": "대만",
+        "cert_date": "2022-03-11",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TS-864eU-RP"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-464U-RP",
+        "country": "대만",
+        "cert_date": "2022-03-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TS-464U-RP"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TDS-h2489FU",
+        "country": "대만",
+        "cert_date": "2022-03-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TDS-h2489FU"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-1264U-RP",
+        "country": "대만",
+        "cert_date": "2022-03-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TS-1264U-RP"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-h1886XU-RP-R2",
+        "country": "대만",
+        "cert_date": "2022-03-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TS-h1886XU-RP"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-233",
+        "country": "대만",
+        "cert_date": "2022-03-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TS-233"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-873AeU-RP",
+        "country": "대만",
+        "cert_date": "2022-04-07",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TS-873AeU-RP"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-133",
+        "country": "대만",
+        "cert_date": "2022-04-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TS-133"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-231K",
+        "country": "대만",
+        "cert_date": "2022-05-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TS-231K"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-435XeU",
+        "country": "대만",
+        "cert_date": "2022-05-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TS-435XeU"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-364",
+        "country": "대만",
+        "cert_date": "2022-06-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TS-364"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-h1290FX",
+        "country": "대만",
+        "cert_date": "2022-06-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TS-h1290FX"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-464",
+        "country": "대만",
+        "cert_date": "2022-09-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TS-464"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-664",
+        "country": "대만",
+        "cert_date": "2022-09-05",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TS-664"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-h987XU-RP",
+        "country": "대만",
+        "cert_date": "2022-09-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TS-h987XU-RP"
+      },
+      {
+        "company_name": "QNAP SYSTEMS INC",
+        "equip_name": "Network Attached Storage",
+        "model_name": "TS-433",
+        "country": "대만",
+        "cert_date": "2022-08-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-QNP-TS-433"
       }
     ],
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 재료과학 기반 AI(<span class=\"search_word\">MSI</span>-AI)와 Drone-to-BoQ 기술을 활용한 대공간 막 구조 포렌식 및 무인 유지관리 플랫폼 개발 등 총 3건",
+      "detail": "NTIS에서 [MSI] 검색어로 조회한 결과, AI 관련 과제 3건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "재료과학 기반 AI(<span class=\"search_word\">MSI</span>-AI)와 Drone-to-BoQ 기술을 활용한 대공간 막 구조 포렌식 및 무인 유지관리 플랫폼 개발",
+          "project_number": "2710111979",
+          "lead_company": "MSI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "Physical AI 기반 Kiro-Nix 하이퍼 스트레인 센서 및 실시간 자가보정 <span class=\"search_word\">MSI</span>(소재-구조-지능) 통합 플랫폼 연구",
+          "project_number": "2710113772",
+          "lead_company": "MSI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI 광신호처리 기반 능동형 간섭 방어용 LiDAR 개발",
+          "project_number": "2420034117",
+          "lead_company": "MSI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -371,7 +579,7 @@
       },
       {
         "source_record_id": "1020250097401",
-        "일련번호": "32",
+        "일련번호": "34",
         "출원번호": "1020250097401",
         "발명의명칭(한글)": "대규모 언어 모델 기반 멀티 에이전트 시스템의 자동화된 최적화 의사 결정 방법",
         "출원일자": "2025-07-18",
@@ -389,7 +597,7 @@
       },
       {
         "source_record_id": "1020250093690",
-        "일련번호": "39",
+        "일련번호": "40",
         "출원번호": "1020250093690",
         "발명의명칭(한글)": "AI 기반 사용자 친화적 지역 맞춤형 영상 광고 제작 및 송출 시스템",
         "출원일자": "2025-07-11",
@@ -425,7 +633,7 @@
       },
       {
         "source_record_id": "1020250010013",
-        "일련번호": "34",
+        "일련번호": "36",
         "출원번호": "1020250010013",
         "발명의명칭(한글)": "데이터 기반 사용자 맞춤형 건강관리 시스템 및 방법",
         "출원일자": "2025-01-23",
@@ -461,7 +669,7 @@
       },
       {
         "source_record_id": "1020250007328",
-        "일련번호": "37",
+        "일련번호": "38",
         "출원번호": "1020250007328",
         "발명의명칭(한글)": "기후변화 대응을 위한 디지털 기반 도시단위 기능성소재를 적용한 AI 기반의 예측 시뮬레이션 모니터링 시스템",
         "출원일자": "2025-01-17",
@@ -479,7 +687,7 @@
       },
       {
         "source_record_id": "1020240179199",
-        "일련번호": "36",
+        "일련번호": "37",
         "출원번호": "1020240179199",
         "발명의명칭(한글)": "AI 기반 뉴스 기사 작성 지원 시스템 및 방법",
         "출원일자": "2024-12-05",
@@ -497,7 +705,7 @@
       },
       {
         "source_record_id": "1020267021398",
-        "일련번호": "31",
+        "일련번호": "33",
         "출원번호": "1020267021398",
         "발명의명칭(한글)": "LWIR 비디오를 이용한 차량 기반 위협 검출 및 추적",
         "출원일자": "2024-12-03",
@@ -515,7 +723,7 @@
       },
       {
         "source_record_id": "1020240174341",
-        "일련번호": "27",
+        "일련번호": "29",
         "출원번호": "1020240174341",
         "발명의명칭(한글)": "콘텐츠 네트워크 분석 및 인공 지능 기반 초개인화 여행 정보 추천 방법",
         "출원일자": "2024-11-29",
@@ -533,7 +741,7 @@
       },
       {
         "source_record_id": "1020240173903",
-        "일련번호": "33",
+        "일련번호": "35",
         "출원번호": "1020240173903",
         "발명의명칭(한글)": "IoT 기반 자율 운영 스마트 RTU 시스템",
         "출원일자": "2024-11-28",
@@ -587,7 +795,7 @@
       },
       {
         "source_record_id": "1020240149331",
-        "일련번호": "5",
+        "일련번호": "3",
         "출원번호": "1020240149331",
         "발명의명칭(한글)": "자가학습 기반의 인공지능 모델을 활용한 이미지 상의 이상 탐지 방법 및 이미지 이상 탐지 장치",
         "출원일자": "2024-10-29",
@@ -623,7 +831,7 @@
       },
       {
         "source_record_id": "1020240101079",
-        "일련번호": "35",
+        "일련번호": "27",
         "출원번호": "1020240101079",
         "발명의명칭(한글)": "AI 큐레이션 기반 맞춤형 화장품 및 맞춤형 전문가 추천 시스템",
         "출원일자": "2024-07-30",
@@ -641,7 +849,7 @@
       },
       {
         "source_record_id": "1020267000216",
-        "일련번호": "29",
+        "일련번호": "31",
         "출원번호": "1020267000216",
         "발명의명칭(한글)": "개환 또는 중축합에 의한 중합 방법",
         "출원일자": "2024-07-04",
@@ -677,7 +885,7 @@
       },
       {
         "source_record_id": "1020257040824",
-        "일련번호": "30",
+        "일련번호": "32",
         "출원번호": "1020257040824",
         "발명의명칭(한글)": "개환 또는 중축합 중합 방법",
         "출원일자": "2024-06-06",
@@ -713,7 +921,7 @@
       },
       {
         "source_record_id": "1020240064947",
-        "일련번호": "4",
+        "일련번호": "5",
         "출원번호": "1020240064947",
         "발명의명칭(한글)": "전기자극을 인가하여 신경근육계 평가를 수행하는 방법 및 장치",
         "출원일자": "2024-05-20",
@@ -749,7 +957,7 @@
       },
       {
         "source_record_id": "1020257031791",
-        "일련번호": "28",
+        "일련번호": "30",
         "출원번호": "1020257031791",
         "발명의명칭(한글)": "개환 중합 방법",
         "출원일자": "2024-03-22",
@@ -767,7 +975,7 @@
       },
       {
         "source_record_id": "1020257025817",
-        "일련번호": "40",
+        "일련번호": "28",
         "출원번호": "1020257025817",
         "발명의명칭(한글)": "슈퍼 해상도를 개별적인 대역에 적용할 때의 원본 컬러의 유지",
         "출원일자": "2023-12-27",
@@ -803,7 +1011,7 @@
       },
       {
         "source_record_id": "1020230145553",
-        "일련번호": "3",
+        "일련번호": "4",
         "출원번호": "1020230145553",
         "발명의명칭(한글)": "신경근육계 상태 평가를 수행하는 방법 및 장치",
         "출원일자": "2023-10-27",
@@ -1019,7 +1227,7 @@
       },
       {
         "source_record_id": "1020237004668",
-        "일련번호": "38",
+        "일련번호": "39",
         "출원번호": "1020237004668",
         "발명의명칭(한글)": "채널 제약 하드웨어 가속기에 의해 구현되는 신경망을 사용하여 이미지 향상을 수행하기 위한 시스템 및 방법",
         "출원일자": "2021-08-19",
@@ -1057,14 +1265,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "MSI, Multi-Solution Inc.",
-    "model_param": "274QF",
+    "model_param": "",
     "ocr_result": {
-      "extracted_text": "MSI MAG 274QF Rapid IPS 게이망 WQHD 180 Al Vision 무결점 립오아시스 223,920원 (223,920+무료배송) 최저가 구매하기 가격비교 18 상품 상세정보 의견리뷰 30 뉴스커유니티 연관상품 해삼도 QHD(2560 1440) 쇠대 주사물 18OHz 패널 종류 Rapid IPS 화면 비율 라이드(16.9) 파닐 형대 평면 시야각 광시야각 퍽설피치 0.2331mm 응답 속도 O.5ms(GTG) 화면 밝기 25Onits 명상비 1,000.1 HDR 지원 HDR 시력보호 기능 끌리커 프리 불루라이트 자단 눈부십 방지 안티글레이 부가 기능 테드문 아웃 스랜드 기능 리드(상하) 규격 VESA봄 100 1oOmm 크기(가로x세로x깊 614x439x25Ommn 무게 소비전력 57W 색상영역 색 깊이 iObit (8bit FRC) sRGB 12496 Adobe RGB 939 DCI-P3 959 게임 관련 기능 7k9",
+      "extracted_text": "MSI MAG 274QF Rapid IPS 게이망 WQHD 180 Al Vision 무결점 검오아시스 222,920원 (222,920+무료버송) 최저가 구매하기 가격비교 18 상품 상세정보 의견리뷰 30 뉴스커유니티 연관상품 해상도 QHD(2560 1440) 최대 주사물 18OHz 패널 종류 Rapid IPS 화면 비율 와이드(169) 패널 형태 평면 시야각 광시아각 퍽실피치 0.2331mm 응답 속도 O.5ms(GTG) 화면 밝기 25Onits 명양비 1000.1 HDR 지원 HDR 시력보호 기능 플리커 프리 불루라이트 차단 눈부심 방지 안티글레어 부가 기능 헤드끈 아옷 스랜드 기능 털트상하) 규격 크기가로x세로x깊 VESA혼 100 ioOmm 614*439x25Omm 무게 47kg 소비전력 57W 색상영역 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\MSI MAG 274QF Rapid IPS 게이밍 WQHD 180 AI Vision 무결점\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/MSI MAG 274QF Rapid IPS 게이밍 WQHD 180 AI Vision 무결점/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/MSI MAG 274QF Rapid IPS 게이밍 WQHD 180 AI Vision 무결점/detail_scan.png",
+        "image_size": 94805,
+        "image_sha256": "e5a5124b3ff4382769b96d1c5fa40dbafe034ab7e7c5e2f8fd8e81939cf4e766"
+      }
     }
   }
 }

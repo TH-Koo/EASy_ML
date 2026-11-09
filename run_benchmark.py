@@ -36,11 +36,10 @@ def run_benchmark_automation(csv_file_path):
         print(f"❌ CSV 파일을 읽는 중 오류가 발생했습니다: {e}")
         return
 
-    if '주소' not in df.columns:
-        print("❌ CSV 파일에 '주소' 열(Column)이 없습니다. 파일 형식을 확인해주세요.")
-        return
+    if "url" not in df.columns:
+        print("❌ CSV 파일에 'url' 열(Column)이 없습니다. 파일 형식을 확인해주세요.")
 
-    urls = df['주소'].dropna().tolist()
+    urls = df['url'].dropna().tolist()
     total_urls = len(urls)
     
     processed_urls = load_processed_urls()
@@ -76,5 +75,5 @@ def run_benchmark_automation(csv_file_path):
     print("="*85)
 
 if __name__ == "__main__":
-    TARGET_CSV = os.path.join(DATASET_DIR, "test.csv") 
+    TARGET_CSV = os.path.join(DATASET_DIR, "dataset_v2.csv") 
     run_benchmark_automation(TARGET_CSV)

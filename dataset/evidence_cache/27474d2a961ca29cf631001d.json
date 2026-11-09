@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=122667900",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "레노버 아이디어센터 AIO 27AKP10 F0JE000UKR (16GB, M.2 1TB)",
       "name": "레노버 아이디어센터 AIO 27AKP10 F0JE000UKR (16GB, M.2 1TB)",
       "description": "",
-      "ocr_text": "레노버 아이디어센터 AlO 27AKP1O FOJEOOOUKR (I6GB, M.2 ITB) 두키미마이 1,449,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 운영체제 OS미포랑 CPU 제조사 AMD CPU 시리즈 라이젠 200시리즈 CPU 종류 라이젠7-4세대 CPU 코드명 호크포인트 NPU 종류 AMD 라이전 Al NPU TOPS 16TOPs 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M2 SSD 용량 ITB 그래픽 제조사 AMD 그래픽 종류 내장 그래픽 디스플레이 화면크기 68cm(27인지) 해상도 1920x1080 디스플레이 특징 눈부신방지 털드(상하) 사운드 출력 사운드 지원 스피커 내장령 네트위크 802.11ax(Wi-Fi6) 무선 1Gbps 유선 불무투스 영상출력",
+      "ocr_text": "레노버 아이디어센터 AlO 27AKP1O FOJEOOOUKR (16GB, M.2 ITB) 투레이마이 1,449,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 운영제제 OS미포함 CPU 제조사 AMD CPU 시리즈 '라이젠 200시리즈 CPU 종류 라이젠7 CPU 코드명 호크포인트 NPU 종류 AMD 라이젠 Al NPU TOPS 16ToPS 메모리 메모리 타입 DDR5 메모리 용량  16GB 저장장치 SSD 형태 M2 SSD 용량 ITB 그래픽 제조사 AMD 그래픽 종류 내장 그래픽 디스플레이 화면크기 68cm(27인지) 해상도 1920x1080 디스플레이 특징 눈부심방지 털드상하) 사운드 출력 사운드 지원 스피커 내장형 네트위크 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "250": "지원",
         "780M": "지원",
@@ -43,23 +43,14 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=122667900",
       "manufacturer": "레노버, Lenober",
-      "model_name": "27AKP10"
+      "model_name": "F0JE000UKR"
     },
     "norm_info": {
       "company_name": "레노버, Lenober",
-      "model_name": "27AKP10",
+      "model_name": "F0JE000UKR",
       "product_name": "레노버 아이디어센터 AIO 27AKP10 F0JE000UKR (16GB, M.2 1TB)"
     },
     "db_results": [
-      {
-        "company_name": "한국레노버 유한회사",
-        "equip_name": "퍼스널 컴퓨터",
-        "model_name": "IdeaCentre AIO 27AKP10",
-        "country": "중국",
-        "cert_date": "2025-05-30",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-LVK-AIO-F0JE"
-      },
       {
         "company_name": "한국레노버 유한회사",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
@@ -500,6 +491,15 @@
         "cert_date": "2023-05-16",
         "cert_status": "적합인증",
         "cert_no": "R-C-LVK-VRX6060"
+      },
+      {
+        "company_name": "한국레노버 유한회사",
+        "equip_name": "5G NR 이동통신용 무선설비의 기기(3.5 ㎓)(육상이동국의 송수신장치)",
+        "model_name": "TB360ZU",
+        "country": "중국",
+        "cert_date": "2023-06-07",
+        "cert_status": "적합인증",
+        "cert_no": "R-C-LVK-TB360ZU"
       }
     ],
     "jodale_result": null,
@@ -515,12 +515,12 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "레노버, Lenober",
-    "model_param": "27AKP10",
+    "model_param": "F0JE000UKR",
     "ocr_result": {
-      "extracted_text": "레노버 아이디어센터 AlO 27AKP1O FOJEOOOUKR (I6GB, M.2 ITB) 두키미마이 1,449,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 운영체제 OS미포랑 CPU 제조사 AMD CPU 시리즈 라이젠 200시리즈 CPU 종류 라이젠7-4세대 CPU 코드명 호크포인트 NPU 종류 AMD 라이전 Al NPU TOPS 16TOPs 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M2 SSD 용량 ITB 그래픽 제조사 AMD 그래픽 종류 내장 그래픽 디스플레이 화면크기 68cm(27인지) 해상도 1920x1080 디스플레이 특징 눈부신방지 털드(상하) 사운드 출력 사운드 지원 스피커 내장령 네트위크 802.11ax(Wi-Fi6) 무선 1Gbps 유선 불무투스 영상출력",
+      "extracted_text": "레노버 아이디어센터 AlO 27AKP1O FOJEOOOUKR (16GB, M.2 ITB) 투레이마이 1,449,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 운영제제 OS미포함 CPU 제조사 AMD CPU 시리즈 '라이젠 200시리즈 CPU 종류 라이젠7 CPU 코드명 호크포인트 NPU 종류 AMD 라이젠 Al NPU TOPS 16ToPS 메모리 메모리 타입 DDR5 메모리 용량  16GB 저장장치 SSD 형태 M2 SSD 용량 ITB 그래픽 제조사 AMD 그래픽 종류 내장 그래픽 디스플레이 화면크기 68cm(27인지) 해상도 1920x1080 디스플레이 특징 눈부심방지 털드상하) 사운드 출력 사운드 지원 스피커 내장형 네트위크 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\레노버 아이디어센터 AIO 27AKP10 F0JE000UKR (16GB, M.2 1TB)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/레노버 아이디어센터 AIO 27AKP10 F0JE000UKR (16GB, M.2 1TB)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }

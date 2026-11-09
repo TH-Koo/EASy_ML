@@ -178,6 +178,47 @@
   --color-fg-fixed:       #101317;
   --color-fg-fixed-dim:   #6c727d;
   --color-fg-fixed-faint: #9aa0aa;
+
+  /* 결과 화면 주장 판정색. 판정 3색(verified/partial/missing)과 따로 둔다 —
+     결과 화면은 "일부"를 약한 네이비, "미확인"을 주황으로 쓰고, 랜딩의
+     대조 뷰는 기존 3색을 그대로 쓴다. 어두운 결론 타일 위에서는 밝은 쪽을 쓴다. */
+  --claim-ok:          #0f35b4;
+  --claim-ok-soft:     #e8edfb;
+  --claim-part:        #6b82d6;
+  --claim-no:          #e8701f;
+  --claim-part-on-dark: #a9b8f0;
+  --claim-no-on-dark:   #ff9a52;
+}
+
+/* 보라 + 로즈 테마 — 로그인 후 홈과 결과 화면에만 씌운다.
+   보라는 브랜드·누를 것과 '확인', 연한 보라는 '일부', 로즈는 '미확인'·에러.
+   랜딩(소개)은 기존 네이비 그대로 둔다. */
+.theme-violet {
+  --color-brand:      #6741d9;
+  --color-brand-fg:   #6741d9;
+  --color-brand-soft: rgba(103, 65, 217, 0.08);
+  --color-brand-deep: #3b1f9e;
+  --color-brand-mid:  #8b6cf0;
+
+  --claim-ok:      #6741d9;
+  --claim-ok-soft: #f1edfd;
+  --claim-part:    #a08bea;
+  --claim-no:      #e0457b;
+  --claim-no-soft: #fdeef3;
+}
+
+/* 홈: 안 되는 주소를 넣었을 때 관련 안내 칸을 잠깐 반짝인다 */
+.guide-flash {
+  animation: guide-flash 1.6s ease;
+}
+@keyframes guide-flash {
+  20%, 55% {
+    background: var(--claim-no-soft);
+    box-shadow: inset 0 0 0 1.5px var(--claim-no);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .guide-flash { animation: none; background: var(--claim-no-soft); }
 }
 
 /* 라벨은 본문과 같은 글꼴이 되었으므로 굵기로 구분한다. 11px 산세리프를

@@ -204,7 +204,7 @@ def _setup_driver():
             options = _build_chrome_options(headless=headless)
 
             driver = webdriver.Chrome(options=options)
-            driver.set_page_load_timeout(40)
+            driver.set_page_load_timeout(60)
             driver.implicitly_wait(2)
 
             print(f"Chrome 드라이버 초기화 성공: selenium, {mode_text}")

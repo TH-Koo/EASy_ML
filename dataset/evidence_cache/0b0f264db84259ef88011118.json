@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=74997158",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "크로스오버 32QD180G IPS WQHD 게이밍 AI",
       "name": "크로스오버 32QD180G IPS WQHD 게이밍 AI",
       "description": "",
-      "ocr_text": "크로스오버 320D1806 IPS WQHD 게이망 Al 검오아시스   238,980원 (238,980+무료배송) 최저가 구매하기 가격비교 54 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 해삼도 QHD(2560 1440) 쇠대 주사물 165Hz 패널 종류 IPS 화면 비율 라이드(16.9) 파닐 형대 평면 시야각 광시야각 퍽설피치 272mmn 응답 속도 화면 밝기 350nits 명만비 200.1 통적명압반 OOO,0OO:1 HDR 지원 HDR 시력보호 기능 끌리커 프리 불루라이트 자단 눈부십 방지 안티글레이 화면 기능 크로마서브다플림 부가 기능 스피커 내장 해드시 아옷 스랜드 기능 발트(상하) 규격 VESA봄 100 1oOmm 크기(가로x세로x깊 718x514x196mnm 무게 소비전력 34W 대기전력 0.5W 이하 색상영역 Ims 9kg",
+      "ocr_text": "크로스오버 329D180G IPS WQHD 게이망 AI 립오아시스 238,980원 (238,980+무료버송) 최저가 구매하기 가격비교 54 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 해상도 QHD(2560 1440) 최대 주사물 165Hz 패널 종류 IPS 화면 비율 와이드(169) 패널 형태 평면 시야각 광시아각 퍽실피치 0.272mm 응답 속도 화면 밝기 35Onits 명양비 1,200:1 동적명임비   5,000,000.1 HDR 지원 HDR 시력보호 기능 플리커 프리 불루라이트 차단 눈부심 방지 안티글레어 화면 기능 크로마서브심플림 부가 기능 스피커 내장 헤드포 아옷 스랜드 기능 털트상하) 규격 VESA셈 100 ioOmm 크기가로x세로x깊 718*514x196mm Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies Ims",
       "specs": {
         "모니터": "지원",
         "81.3cm(32인치)": "지원",
@@ -33,23 +33,14 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=74997158",
       "manufacturer": "크로스오버, Crossover",
-      "model_name": "32QD180G"
+      "model_name": "G-SYNC"
     },
     "norm_info": {
       "company_name": "크로스오버, Crossover",
-      "model_name": "32QD180G",
+      "model_name": "G-SYNC",
       "product_name": "크로스오버 32QD180G IPS WQHD 게이밍 AI"
     },
     "db_results": [
-      {
-        "company_name": "(주) 크로스오버존",
-        "equip_name": "LED 모니터",
-        "model_name": "32QD100SM IPS WQHD 멀티스탠드",
-        "country": "중국",
-        "cert_date": "2024-11-06",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-CSO-32QD100SM"
-      },
       {
         "company_name": "(주) 크로스오버존",
         "equip_name": "텔레비전수상기",
@@ -99,7 +90,35 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 신체화 인공지능 장시간 구동을 위한 고출력 직접 에탄올 연료전지 MEA 기술 개발 등 총 3건",
+      "detail": "NTIS에서 [크로스오버] 검색어로 조회한 결과, AI 관련 과제 3건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "신체화 인공지능 장시간 구동을 위한 고출력 직접 에탄올 연료전지 MEA 기술 개발",
+          "project_number": "2710106690",
+          "lead_company": "크로스오버",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI 기반 한국형 초가공식품 정밀평가체계 개발을 기반으로 한 대체식 중재 연구",
+          "project_number": "2710103940",
+          "lead_company": "CROSSOVER",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "보상경로의 GABA 농도와 기능적 연결성 증강도를 통한 무의욕의 병태생리 규명",
+          "project_number": "1345265761",
+          "lead_company": "CROSSOVER",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -109,14 +128,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "크로스오버, Crossover",
-    "model_param": "32QD180G",
+    "model_param": "G-SYNC",
     "ocr_result": {
-      "extracted_text": "크로스오버 320D1806 IPS WQHD 게이망 Al 검오아시스   238,980원 (238,980+무료배송) 최저가 구매하기 가격비교 54 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 해삼도 QHD(2560 1440) 쇠대 주사물 165Hz 패널 종류 IPS 화면 비율 라이드(16.9) 파닐 형대 평면 시야각 광시야각 퍽설피치 272mmn 응답 속도 화면 밝기 350nits 명만비 200.1 통적명압반 OOO,0OO:1 HDR 지원 HDR 시력보호 기능 끌리커 프리 불루라이트 자단 눈부십 방지 안티글레이 화면 기능 크로마서브다플림 부가 기능 스피커 내장 해드시 아옷 스랜드 기능 발트(상하) 규격 VESA봄 100 1oOmm 크기(가로x세로x깊 718x514x196mnm 무게 소비전력 34W 대기전력 0.5W 이하 색상영역 Ims 9kg",
+      "extracted_text": "크로스오버 329D180G IPS WQHD 게이망 AI 립오아시스 238,980원 (238,980+무료버송) 최저가 구매하기 가격비교 54 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 해상도 QHD(2560 1440) 최대 주사물 165Hz 패널 종류 IPS 화면 비율 와이드(169) 패널 형태 평면 시야각 광시아각 퍽실피치 0.272mm 응답 속도 화면 밝기 35Onits 명양비 1,200:1 동적명임비   5,000,000.1 HDR 지원 HDR 시력보호 기능 플리커 프리 불루라이트 차단 눈부심 방지 안티글레어 화면 기능 크로마서브심플림 부가 기능 스피커 내장 헤드포 아옷 스랜드 기능 털트상하) 규격 VESA셈 100 ioOmm 크기가로x세로x깊 718*514x196mm Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies Ims",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\크로스오버 32QD180G IPS WQHD 게이밍 AI\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/크로스오버 32QD180G IPS WQHD 게이밍 AI/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/크로스오버 32QD180G IPS WQHD 게이밍 AI/detail_scan.png",
+        "image_size": 93292,
+        "image_sha256": "8db20412e6f7aae2abfdd481b40e19cd0fa6d87df4f0d8e5b910e0a44e0390f3"
+      }
     }
   }
 }

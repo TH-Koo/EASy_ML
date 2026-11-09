@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=28805123",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "피씨스토어 베스트 게이밍PC 울트라5 250K PLUS RTX 5060 (16GB, M.2 500GB)",
       "name": "피씨스토어 베스트 게이밍PC 울트라5 250K PLUS RTX 5060 (16GB, M.2 500GB)",
       "description": "",
-      "ocr_text": "피씨스토어 베스트 게이망PC 울트라5 25OK PLUS RTX 5060 (16GB, M.2 500GB) 1L> 2,090,040원 무료래승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 26 연관상품 메인보드 침셋 (인텔) B860 운명제제 OS미포함 파뭐 출력 750W CPU 제조사 인텔 CPU 시리즈 코어올드라 시리즈2 CPU 종류 굳이 올드라5-2세대 CPU 코드명 애로우레이크 코이 개수 6+12 코어 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M2 SSD 용량 500GB 그래픽 특징 그래픽 제조사 NVIDIA 그래픽 종류 외장 그래픽 그래픽 메모리 8GB 네트위크 1Gbps 유선 영상출력 HDMI DP포트 전원 파위서플라이 형대 미들타뭐 외형 LED콜러 용도",
+      "ocr_text": "피씨스토어 베스트 게이망PC 울드라5 250K PLUS RTX 5060 (16GB,M.2 500GB) LOTTE ON 2,074,740원   무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 26 연관상품 메인보드 집셋 (인텔) B860 운영제제 OS미포함 파뭐 출력 750W CPU 제조사  인텔 CPU 시리즈 코어울트라 시리즈2 CPU 종류 코어 울드라5-2세대 CPU 코드명 애로우레이크 코어 개수 6+12코어 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량  16GB 저장장치 SSD 형태 M2 SSD 용량 500GB 그래픽 특징 그래픽 제조사 NVIDIA 그래픽 종류 외장 그래픽 그래픽 메모리 8GB 네트위크 1Gbps 유선 영상출력 HDMI DP포트 파워서플라이 형태 미들타뭐 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies 전원",
       "specs": {
         "250K Plus": "지원",
         "RTX 5060": "지원",
@@ -37,18 +37,130 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=28805123",
       "manufacturer": "피씨스토어, PC Store",
-      "model_name": "PF-Ultrath5"
+      "model_name": "B860"
     },
     "norm_info": {
       "company_name": "피씨스토어, PC Store",
-      "model_name": "PF-Ultrath5",
+      "model_name": "B860",
       "product_name": "피씨스토어 베스트 게이밍PC 울트라5 250K PLUS RTX 5060 (16GB, M.2 500GB)"
     },
     "db_results": [],
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 글로벌 시장용 주소록 정리/수정/편집/공유를 위한 인공지능 기술 개발과 Google서비스 기반 글로벌 1위 G Suite Marketplace와 Chrome Web <span class=\"search_word\">Store</span>용 주소록 소프트웨어 서비스 및 모바일 서비스 개발 등 총 15건",
+      "detail": "NTIS에서 [PC STORE] 검색어로 조회한 결과, AI 관련 과제 15건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "글로벌 시장용 주소록 정리/수정/편집/공유를 위한 인공지능 기술 개발과 Google서비스 기반 글로벌 1위 G Suite Marketplace와 Chrome Web <span class=\"search_word\">Store</span>용 주소록 소프트웨어 서비스 및 모바일 서비스 개발",
+          "project_number": "1425143157",
+          "lead_company": "PC STORE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "글로벌 시장용 주소록 정리/수정/편집/공유를 위한 인공지능 기술 개발과 Google서비스 기반 글로벌 1위 G Suite Marketplace와 Chrome Web <span class=\"search_word\">Store</span>용 주소록 소프트웨어 서비스 및 모바일 서비스 개발",
+          "project_number": "1425151866",
+          "lead_company": "PC STORE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "글로벌 시장용 주소록 정리/수정/편집/공유를 위한 인공지능 기술 개발과  Google서비스 기반 글로벌 1위 G Suite Marketplace와 Chrome Web <span class=\"search_word\">Store</span>용 주소록 소프트웨어 서비스 및 모바일 서비스 개발",
+          "project_number": "1425159269",
+          "lead_company": "PC STORE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI 알고리즘 기반 치매 전용 디지털 엑스선 치료 시스템 개발",
+          "project_number": "2420017645",
+          "lead_company": "PC STORE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "IOT, 인공지능 기술을 접목한 사용자 수익형 Visual SNS",
+          "project_number": "1711076527",
+          "lead_company": "PC STORE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "딥러닝 기반 위상최적설계 InnovilTop 앱을 적용한 자가지지 수평지향 건축구조 프레임워크 개발",
+          "project_number": "1711156164",
+          "lead_company": "PC STORE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "딥러닝 기반 위상최적설계 InnovilTop 앱을 적용한 자가지지 수평지향 건축구조 프레임워크 개발",
+          "project_number": "2710063970",
+          "lead_company": "PC STORE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "발성 장애인을 위한 개인 맞춤형 내장형 명령어 인식기 개발",
+          "project_number": "1415110888",
+          "lead_company": "PC STORE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "발성 장애인을 위한 개인 맞춤형 내장형 명령어 인식기 개발",
+          "project_number": "1415129900",
+          "lead_company": "PC STORE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "발성 장애인을 위한 개인 맞춤형 내장형 명령어 인식기 개발",
+          "project_number": "1415122971",
+          "lead_company": "PC STORE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "Edge AI기반 OLED 증착기 통합 자율 운영 시스템 개발",
+          "project_number": "2410019726",
+          "lead_company": "PC STORE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI 알고리즘 기반 치매 전용 디지털 엑스선 치료 시스템 개발",
+          "project_number": "2420005830",
+          "lead_company": "PC STORE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "소매점 판매 정보 (POS 시스템)을 활용한 AI/ML/DL 형 자동발주(보충) Robot S/W 시스템 개발",
+          "project_number": "1615013011",
+          "lead_company": "PC STORE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "무인매장 자율 관리를 위한 비전 AI기반 키오스크 상용화 기술 개발",
+          "project_number": "1425178727",
+          "lead_company": "PC STORE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "24시간 실시간 무인 점포, 점포 도난 방지 보안 시스템 개발",
+          "project_number": "1425173673",
+          "lead_company": "PC STORE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -58,14 +170,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "피씨스토어, PC Store",
-    "model_param": "PF-Ultrath5",
+    "model_param": "B860",
     "ocr_result": {
-      "extracted_text": "피씨스토어 베스트 게이망PC 울트라5 25OK PLUS RTX 5060 (16GB, M.2 500GB) 1L> 2,090,040원 무료래승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 26 연관상품 메인보드 침셋 (인텔) B860 운명제제 OS미포함 파뭐 출력 750W CPU 제조사 인텔 CPU 시리즈 코어올드라 시리즈2 CPU 종류 굳이 올드라5-2세대 CPU 코드명 애로우레이크 코이 개수 6+12 코어 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량 16GB 저장장치 SSD 형대 M2 SSD 용량 500GB 그래픽 특징 그래픽 제조사 NVIDIA 그래픽 종류 외장 그래픽 그래픽 메모리 8GB 네트위크 1Gbps 유선 영상출력 HDMI DP포트 전원 파위서플라이 형대 미들타뭐 외형 LED콜러 용도",
+      "extracted_text": "피씨스토어 베스트 게이망PC 울드라5 250K PLUS RTX 5060 (16GB,M.2 500GB) LOTTE ON 2,074,740원   무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 26 연관상품 메인보드 집셋 (인텔) B860 운영제제 OS미포함 파뭐 출력 750W CPU 제조사  인텔 CPU 시리즈 코어울트라 시리즈2 CPU 종류 코어 울드라5-2세대 CPU 코드명 애로우레이크 코어 개수 6+12코어 NPU 종류 인텔 Al Boost NPU TOPS 13TOPS 메모리 메모리 타입 DDR5 메모리 용량  16GB 저장장치 SSD 형태 M2 SSD 용량 500GB 그래픽 특징 그래픽 제조사 NVIDIA 그래픽 종류 외장 그래픽 그래픽 메모리 8GB 네트위크 1Gbps 유선 영상출력 HDMI DP포트 파워서플라이 형태 미들타뭐 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies 전원",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\피씨스토어 베스트 게이밍PC 울트라5 250K PLUS RTX 5060 (16GB, M.2 500GB)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/피씨스토어 베스트 게이밍PC 울트라5 250K PLUS RTX 5060 (16GB, M.2 500GB)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/피씨스토어 베스트 게이밍PC 울트라5 250K PLUS RTX 5060 (16GB, M.2 500GB)/detail_scan.png",
+        "image_size": 95537,
+        "image_sha256": "0e758d11d096d63447675ffb0a8ee290f04fb309f4619892e76aebe2dfb43a10"
+      }
     }
   }
 }

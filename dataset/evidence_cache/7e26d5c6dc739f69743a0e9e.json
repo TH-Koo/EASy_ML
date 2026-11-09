@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=65303081",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "샥즈 오픈런 프로 2 미니 S821MINI (정품)",
       "name": "샥즈 오픈런 프로 2 미니 S821MINI (정품)",
       "description": "",
-      "ocr_text": "삭즈 오른런 프로 2 미니 S821MINI (정품) 레드템 209,900원  무료배승 최저가 구매하기 가격비교 359 상품 상세정보 의견리뷰 350 뉴스커유니티 연관상품 어쪽권로물움 SHOKZ 그러도물 미터 신수_ 크키 다t기요적 미머표 골전도 음질이 왜 중음? 야외 스포츠 원탑 이어품 제조회사 식즈 (제조사 입사이트 바로가기) 등록년원 2024년 09일 분류 무선이어논 이어프타입 골전도 + 공기전도형 외형 백레 드형 용도 음악+통화용 무선연결 불무투스 V5.3 노이즈런트론 시I노이즈랜쓸림가이 사운드채널 스테레오 드라이버 개수 2개",
+      "ocr_text": "삭즈 오른런 프로 2 미니 5821MINI (정품) AAte-Gze 210,356원 무료배승  최저가 구매하기 가격비교 433 상품 상세정보 의견리뷰 352 뉴스커유니티 연관상품 어쪽권로 & sHoKZ 오전도 미언 신수_크크 마 L 요]빼줄 미머표 골전도 음질이 왜 종음? 야외 스포츠 원탑 이어풍 제조회사 식즈 (제조사 웬사이트 바로가기) 등록년월 2024년 09월 분류- 무선이어프 용도 음악+통화용 이어프타입 골전도+공기전도형 외형 백해드형 무선연결 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "골전도+공기전도형": "지원",
         "백헤드형": "지원",
@@ -113,7 +113,28 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 미래교육을 위한 학습모델 개발:  지식 생성을 위한 인공지능의 도구적 활용과 <span class=\"search_word\">Z</span>세대 학습자의 배움에 대한 연구 등 총 2건",
+      "detail": "NTIS에서 [Z.] 검색어로 조회한 결과, AI 관련 과제 2건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "미래교육을 위한 학습모델 개발:  지식 생성을 위한 인공지능의 도구적 활용과 <span class=\"search_word\">Z</span>세대 학습자의 배움에 대한 연구",
+          "project_number": "2340041066",
+          "lead_company": "Z.",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "미래교육을 위한 학습모델 개발:  지식 생성을 위한 인공지능의 도구적 활용과 <span class=\"search_word\">Z</span>세대 학습자의 배움에 대한 연구",
+          "project_number": "2340002911",
+          "lead_company": "Z.",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -125,10 +146,10 @@
     "target_company_name": "샥즈,  Z.",
     "model_param": "S821MINI",
     "ocr_result": {
-      "extracted_text": "삭즈 오른런 프로 2 미니 S821MINI (정품) 레드템 209,900원  무료배승 최저가 구매하기 가격비교 359 상품 상세정보 의견리뷰 350 뉴스커유니티 연관상품 어쪽권로물움 SHOKZ 그러도물 미터 신수_ 크키 다t기요적 미머표 골전도 음질이 왜 중음? 야외 스포츠 원탑 이어품 제조회사 식즈 (제조사 입사이트 바로가기) 등록년원 2024년 09일 분류 무선이어논 이어프타입 골전도 + 공기전도형 외형 백레 드형 용도 음악+통화용 무선연결 불무투스 V5.3 노이즈런트론 시I노이즈랜쓸림가이 사운드채널 스테레오 드라이버 개수 2개",
+      "extracted_text": "삭즈 오른런 프로 2 미니 5821MINI (정품) AAte-Gze 210,356원 무료배승  최저가 구매하기 가격비교 433 상품 상세정보 의견리뷰 352 뉴스커유니티 연관상품 어쪽권로 & sHoKZ 오전도 미언 신수_크크 마 L 요]빼줄 미머표 골전도 음질이 왜 종음? 야외 스포츠 원탑 이어풍 제조회사 식즈 (제조사 웬사이트 바로가기) 등록년월 2024년 09월 분류- 무선이어프 용도 음악+통화용 이어프타입 골전도+공기전도형 외형 백해드형 무선연결 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\샥즈 오픈런 프로 2 미니 S821MINI (정품)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/샥즈 오픈런 프로 2 미니 S821MINI (정품)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }

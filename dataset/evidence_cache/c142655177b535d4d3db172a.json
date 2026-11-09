@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=122707840",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "파인디지털 파인뷰 LXQ EX 2채널 (32GB)",
       "name": "파인디지털 파인뷰 LXQ EX 2채널 (32GB)",
       "description": "",
-      "ocr_text": "파인디지털 파인뷰 LXQ EX 2채널 (32GB) 파인뷰 본사 429,000원  무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 카메라 수(재널) 2채널 전방 QHD 3K(3072x1728) 패널종류 IPS패널 저장마제 Micro-SD 센서 Sony STARVIS 후방 해상도 QHD(2560x1440) 안전관련기능 자선이날경보 (LDW Al ADAS 앞차출발알림(FVSA) 안전운전도우미 전원관련기능 주차-저전력모드 배터리방전방지 녹화방식 주차녹화 증격감지속화 녹화관련기능 고온자단 자능포멋 번호판식별강화 야간보점 오도슈퍼나이트비전 스마트혼 연동 Wi-Fi 연결 불무투스 연결 [@ 인종 적합성평가인층 상세설명 판매 사이트 문의 인증번호 확인 안전확인인층 상세설명 판매 사이트 문의 인증번호 확인 상품 설명 복사하기",
+      "ocr_text": "파인디지털 파인뷰 LXQ EX 2채널 (32GB) 파인부 본사 429,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 카메라 수(채널) 2채널 전방 QHD 3K(3072*1728) 패널종류 IPS패널 저장머체 Micro-SD 센서 Sony STARVIS 후방 해상도  QHD(2560x1440) 안전관련기능 차선이달경보(LDW Al ADAS 앞자출발알림FVSA) 안전운전도우미 전원관련기능 주차저전력모드 배터리방전방지 녹화방식 주차녹화 충격감지녹화 녹화관련기능 고온자단 자동포멋 번호판식별강화 야간보정 오토슈퍼나이트비전 스마트포 연동 Wi-Fi 연결 불루투스 연결 [@ 인종 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "블랙박스": "지원",
         "2채널": "지원",
@@ -30,49 +30,112 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=122707840",
       "manufacturer": "파인디지털, Pinda Digital",
-      "model_name": "LXQ EX"
+      "model_name": ""
     },
     "norm_info": {
       "company_name": "파인디지털, Pinda Digital",
-      "model_name": "LXQ EX",
+      "model_name": "",
       "product_name": "파인디지털 파인뷰 LXQ EX 2채널 (32GB)"
     },
     "db_results": [
       {
         "company_name": "(주)파인디지털",
-        "equip_name": "미약 전계강도 무선기기",
-        "model_name": "FC100",
-        "country": "중국",
-        "cert_date": "2019-07-08",
-        "cert_status": "적합등록",
-        "cert_no": "R-R-FDK-FC100"
-      },
-      {
-        "company_name": "(주)파인디지털",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "AW-NM372SM",
-        "country": "중국",
-        "cert_date": "2023-07-25",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-FDK-FineA004"
-      },
-      {
-        "company_name": "(주)파인디지털",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "FineVu K100",
+        "equip_name": "차량 영상 녹화 장치",
+        "model_name": "LXQ2000",
         "country": "한국",
-        "cert_date": "2022-09-13",
+        "cert_date": "2022-01-11",
         "cert_status": "적합등록",
-        "cert_no": "R-R-FDK-FinedriveA036"
+        "cert_no": "R-R-FDK-FineR042"
       },
       {
         "company_name": "(주)파인디지털",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "FineVu K30",
-        "country": "중국",
-        "cert_date": "2021-04-05",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-FDK-FinedriveA028"
+        "equip_name": "레이저 골프거리측정기",
+        "model_name": "UPL100",
+        "country": "한국",
+        "cert_date": "2020-03-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FinedriveA026"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "차량 영상 녹화 장치",
+        "model_name": "X3000 UP",
+        "country": "한국",
+        "cert_date": "2020-03-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR025"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "차량 영상 녹화 장치",
+        "model_name": "X2020",
+        "country": "한국",
+        "cert_date": "2020-03-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR024"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "차량 영상 녹화 장치",
+        "model_name": "X7",
+        "country": "한국",
+        "cert_date": "2020-02-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR022"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "차량 영상 녹화 장치",
+        "model_name": "LX3000",
+        "country": "한국",
+        "cert_date": "2020-01-17",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR021"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "차량 영상 녹화 장치",
+        "model_name": "LX5500 TB",
+        "country": "한국",
+        "cert_date": "2021-12-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR040"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "블랙박스용 보조배터리",
+        "model_name": "FinePower 205",
+        "country": "한국",
+        "cert_date": "2021-12-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FinedriveA035"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "블랙박스용 보조배터리",
+        "model_name": "FinePower 220",
+        "country": "한국",
+        "cert_date": "2021-12-09",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FinedriveA033"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "Digital Video Recorder",
+        "model_name": "X950 POWER",
+        "country": "한국",
+        "cert_date": "2021-12-03",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR039"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "Digital Video Recorder",
+        "model_name": "LX7000 POWER",
+        "country": "한국",
+        "cert_date": "2021-11-18",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR035"
       },
       {
         "company_name": "(주)파인디지털",
@@ -85,135 +148,491 @@
       },
       {
         "company_name": "(주)파인디지털",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "UPX1000",
+        "equip_name": "차량 영상 녹화 장치",
+        "model_name": "GX33",
         "country": "한국",
-        "cert_date": "2020-05-27",
+        "cert_date": "2021-09-30",
         "cert_status": "적합등록",
-        "cert_no": "R-R-FDK-Finedrive065"
+        "cert_no": "R-R-FDK-FineR038"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "차량 영상 녹화 장치",
+        "model_name": "GX303",
+        "country": "한국",
+        "cert_date": "2021-08-31",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR037"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "차량 영상 녹화 장치",
+        "model_name": "GX5",
+        "country": "한국",
+        "cert_date": "2021-08-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR036"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "차량 영상 녹화 장치",
+        "model_name": "X6",
+        "country": "한국",
+        "cert_date": "2021-08-10",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR034"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "Golf Laser Rangefinder",
+        "model_name": "UPL1000",
+        "country": "한국",
+        "cert_date": "2021-07-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FinedriveA031"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "블랙박스용 보조배터리",
+        "model_name": "FINEPOWER210",
+        "country": "한국",
+        "cert_date": "2021-07-28",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FinedriveA030"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "블랙박스용 보조배터리",
+        "model_name": "FINEPOWER210",
+        "country": "한국",
+        "cert_date": "2021-04-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FinedriveA029"
       },
       {
         "company_name": "(주)파인디지털",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "FineVu K3",
+        "model_name": "FineVu K30",
         "country": "중국",
-        "cert_date": "2020-07-29",
+        "cert_date": "2021-04-05",
         "cert_status": "적합인증",
-        "cert_no": "R-C-FDK-FinedriveA027"
+        "cert_no": "R-C-FDK-FinedriveA028"
       },
       {
         "company_name": "(주)파인디지털",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "M500α",
+        "equip_name": "Digital Video Recorder",
+        "model_name": "X900",
         "country": "한국",
-        "cert_date": "2019-02-18",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-FDK-Finedrive058"
+        "cert_date": "2021-01-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR033"
       },
       {
         "company_name": "(주)파인디지털",
-        "equip_name": "미약 전계강도 무선기기",
-        "model_name": "TC100",
+        "equip_name": "차량 영상 녹화 장치",
+        "model_name": "GX300",
+        "country": "한국",
+        "cert_date": "2021-01-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR032"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "차량 영상 녹화 장치",
+        "model_name": "LXQ2000 NEW",
+        "country": "한국",
+        "cert_date": "2022-12-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR048"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "차량용 위치 관제기",
+        "model_name": "커넥티드 Power",
+        "country": "한국",
+        "cert_date": "2022-12-15",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineA051"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "홈CCTV",
+        "model_name": "K70",
         "country": "중국",
-        "cert_date": "2019-03-22",
+        "cert_date": "2022-11-17",
         "cert_status": "적합등록",
-        "cert_no": "R-RS-FDK-Finedrive059"
+        "cert_no": "R-R-FDK-FinedriveA038"
       },
       {
         "company_name": "(주)파인디지털",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "Finedrive AI",
+        "equip_name": "차량영상녹화장치",
+        "model_name": "X1200 POWER",
         "country": "한국",
-        "cert_date": "2019-06-25",
-        "cert_status": "적합인증",
-        "cert_no": "R-C-FDK-Finedrive062"
-      },
-      {
-        "company_name": "(주)파인디지털",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "Finedrive Audio/TFT Trip Computer(4th)",
-        "country": "한국",
-        "cert_date": "2016-12-26",
-        "cert_status": "적합인증",
-        "cert_no": "MSIP-CMM-FDK-FinedriveA020"
-      },
-      {
-        "company_name": "(주)파인디지털",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "Finedrive Q100",
-        "country": "중국",
-        "cert_date": "2018-01-08",
-        "cert_status": "적합인증",
-        "cert_no": "R-CMM-FDK-Finedrive054"
-      },
-      {
-        "company_name": "(주)파인디지털",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "Finedrive A1",
-        "country": "중국",
-        "cert_date": "2018-01-08",
-        "cert_status": "적합인증",
-        "cert_no": "R-CMM-FDK-Finedrive053"
-      },
-      {
-        "company_name": "(주)파인디지털",
-        "equip_name": "Finedrive 무선충전 거치대",
-        "model_name": "Finedrive 충전 거치대",
-        "country": "한국",
-        "cert_date": "2017-01-10",
+        "cert_date": "2022-11-11",
         "cert_status": "적합등록",
-        "cert_no": "MSIP-REM-FDK-FinedriveA021"
+        "cert_no": "R-R-FDK-FineR047"
       },
       {
         "company_name": "(주)파인디지털",
-        "equip_name": "Finedrive 무선충전 거치대",
-        "model_name": "Finedrive 무선충전 거치대 대시보드형",
+        "equip_name": "차량영상녹화장치",
+        "model_name": "X7000 POWER",
         "country": "한국",
-        "cert_date": "2017-02-24",
+        "cert_date": "2022-11-09",
         "cert_status": "적합등록",
-        "cert_no": "MSIP-REM-FDK-FinedriveA023"
+        "cert_no": "R-R-FDK-FineR053"
       },
       {
         "company_name": "(주)파인디지털",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "R2",
+        "equip_name": "Dash Cam",
+        "model_name": "GX500",
         "country": "한국",
-        "cert_date": "2016-01-06",
-        "cert_status": "적합인증",
-        "cert_no": "MSIP-CMM-FDK-R2"
-      },
-      {
-        "company_name": "(주)파인디지털",
-        "equip_name": "미약 전계강도 무선기기",
-        "model_name": "Fine FMT",
-        "country": "한국",
-        "cert_date": "2016-11-30",
+        "cert_date": "2022-10-20",
         "cert_status": "적합등록",
-        "cert_no": "MSIP-RRM-FDK-FinedriveA022"
+        "cert_no": "R-R-FDK-FineR049"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "차량영상녹화장치",
+        "model_name": "LX7700 POWER",
+        "country": "한국",
+        "cert_date": "2022-09-22",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR046"
       },
       {
         "company_name": "(주)파인디지털",
         "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "Finedrive Audio Trip Computer(KorandoSports)",
+        "model_name": "FineVu K100",
         "country": "한국",
-        "cert_date": "2016-12-02",
-        "cert_status": "적합인증",
-        "cert_no": "MSIP-CMM-FDK-FinedriveA018"
+        "cert_date": "2022-09-13",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FinedriveA036"
       },
       {
         "company_name": "(주)파인디지털",
-        "equip_name": "특정소출력 무선기기(무선데이터통신시스템용 무선기기)",
-        "model_name": "Finedrive Audio Trip Computer(TheNextSpark)",
+        "equip_name": "차량영상녹화장치",
+        "model_name": "LX9000",
         "country": "한국",
-        "cert_date": "2016-12-06",
-        "cert_status": "적합인증",
-        "cert_no": "MSIP-CRM-FDK-FinedriveA019"
+        "cert_date": "2022-07-14",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR045"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "Car Navigation",
+        "model_name": "Finedrive iQ 7 NEW",
+        "country": "한국",
+        "cert_date": "2022-06-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-Finedrive070"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "Car Navigation",
+        "model_name": "Finedrive MONSTER 8 NEW",
+        "country": "한국",
+        "cert_date": "2022-06-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-Finedrive067"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "Car Navigation",
+        "model_name": "Finedrive Q300 NEW",
+        "country": "한국",
+        "cert_date": "2022-06-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-Finedrive069"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "Car Navigation",
+        "model_name": "Finedrive MONSTER 7 Truck NEW",
+        "country": "한국",
+        "cert_date": "2022-06-30",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-Finedrive066"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "레이저 골프거리측정기",
+        "model_name": "UPL3",
+        "country": "한국",
+        "cert_date": "2022-04-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FinedriveA034"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "실내카메라",
+        "model_name": "BDA5",
+        "country": "한국",
+        "cert_date": "2022-03-24",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR043"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "차량 영상 녹화 장치",
+        "model_name": "LXQ300",
+        "country": "한국",
+        "cert_date": "2022-03-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR044"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "차량 영상 녹화 장치",
+        "model_name": "X3000 NEW",
+        "country": "한국",
+        "cert_date": "2022-01-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR041"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "차량영상녹화장치",
+        "model_name": "GX1600",
+        "country": "한국",
+        "cert_date": "2025-08-27",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR075"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "Digital Video Recorder",
+        "model_name": "X330 CLOUD",
+        "country": "한국",
+        "cert_date": "2024-03-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR065"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "차량영상녹화장치",
+        "model_name": "LXQ600 POWER",
+        "country": "한국",
+        "cert_date": "2024-02-20",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR063"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "지능형 도어캠",
+        "model_name": "D100",
+        "country": "한국",
+        "cert_date": "2024-01-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineC001"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "블랙박스용 보조배터리",
+        "model_name": "FinePower1200",
+        "country": "한국",
+        "cert_date": "2025-12-29",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineA081"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "차량영상 녹화 장치",
+        "model_name": "Roadview Alpha",
+        "country": "한국",
+        "cert_date": "2025-12-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR081"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "차량영상녹화장치",
+        "model_name": "GX8",
+        "country": "한국",
+        "cert_date": "2025-12-02",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR079"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "차량영상녹화장치",
+        "model_name": "SF3500",
+        "country": "한국",
+        "cert_date": "2025-12-02",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR078"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "차량영상녹화장치",
+        "model_name": "X4K",
+        "country": "한국",
+        "cert_date": "2025-10-01",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR077"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "차량영상 녹화 장치",
+        "model_name": "RK1000",
+        "country": "한국",
+        "cert_date": "2025-09-12",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR076"
+      },
+      {
+        "company_name": "(주)파인디지털",
+        "equip_name": "차량영상녹화장치",
+        "model_name": "X3700",
+        "country": "한국",
+        "cert_date": "2026-02-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-FDK-FineR080"
       }
     ],
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 인공지능 기반 파킨슨병 말-언어 <span class=\"search_word\">디지털</span> 치료기기 개발 등 총 19건",
+      "detail": "NTIS에서 [파인디지털] 검색어로 조회한 결과, AI 관련 과제 19건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "인공지능 기반 파킨슨병 말-언어 <span class=\"search_word\">디지털</span> 치료기기 개발",
+          "project_number": "2420029232",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "인공지능 기반 파킨슨병 말-언어 <span class=\"search_word\">디지털</span> 치료기기 개발",
+          "project_number": "2420006363",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "인공지능 기반 파킨슨병 말-언어 <span class=\"search_word\">디지털</span> 치료기기 개발",
+          "project_number": "2420016224",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "휴대형 한/영 자동통역 기술 개발",
+          "project_number": "1415115388",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "언어학습을 위한 자유발화형 음성대화처리 원천기술 개발",
+          "project_number": "1711026844",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "언어학습을 위한 자유발화형 음성대화처리 원천기술 개발",
+          "project_number": "1711035241",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "모바일 플랫폼 기반 대화모델 적용 자연어 음성 인터페이스 기술 개발",
+          "project_number": "1711006598",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "유아 교육 현장의 <span class=\"search_word\">디지털</span> 전환을 위한 행동 발달 분석 AI 에이전트 및 스마트 <span class=\"search_word\">디지털</span> 놀이 시스템 개발",
+          "project_number": "2420031371",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "VITAL-VD: <span class=\"search_word\">디지털</span> AI 멀티모달 세포 모델 검증 및 신약개발",
+          "project_number": "2710109170",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI가 적용된 모바일 타입 휴머노이드 로봇의 디스플레이 공정 적용 기술 개발",
+          "project_number": "2410020061",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "건설업 <span class=\"search_word\">디지털</span> 전환을 위한 멀티모달 LLM 합성 데이터 자동화 프레임워크 개발",
+          "project_number": "2340047014",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "<span class=\"search_word\">디지털</span> 성범죄 고위험군 스크리닝 인공지능 시스템 개발",
+          "project_number": "1711166192",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "중소기업 사업 도메인 맞춤형 <span class=\"search_word\">디지털</span> 전환(DX) 교육 및 자가학습 기반 기업특화 AI솔루션 [DX-ONE] 기술개발",
+          "project_number": "1425174684",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "<span class=\"search_word\">디지털</span> 성범죄 고위험군 스크리닝 인공지능 시스템 개발",
+          "project_number": "1711128374",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "봉제 명장 암묵지의 <span class=\"search_word\">디지털</span> 영속화를 위한 멀티모달 AI 모델 개발: 작업자 역량 격상 및 Physical AI 연계",
+          "project_number": "2410019792",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "비정형 대출 정보의 <span class=\"search_word\">디지털</span> 자산화를 위한 U2P(Unstructured-to-Product) AI 및 미래 이득 추론형 sLLM 기반 지능형 대출 생애주기 관리 솔루션 개발",
+          "project_number": "2420031353",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "오가노이드-<span class=\"search_word\">디지털</span> 트윈 융합 AI 모델 기반 동물대체 유효성/안전성 평가 플랫폼 구축",
+          "project_number": "2460004971",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "에너지특화형 <span class=\"search_word\">디지털</span>트윈 및 sLLM을 활용한 주조공장 ESG 대응 시스템 개발",
+          "project_number": "2420029776",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "에너지특화형 <span class=\"search_word\">디지털</span>트윈 및 sLLM을 활용한 주조공장 ESG 대응 시스템 개발",
+          "project_number": "2420023138",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -223,18 +642,18 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "파인디지털, Pinda Digital",
-    "model_param": "LXQ EX",
+    "model_param": "",
     "ocr_result": {
-      "extracted_text": "파인디지털 파인뷰 LXQ EX 2채널 (32GB) 파인뷰 본사 429,000원  무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 카메라 수(재널) 2채널 전방 QHD 3K(3072x1728) 패널종류 IPS패널 저장마제 Micro-SD 센서 Sony STARVIS 후방 해상도 QHD(2560x1440) 안전관련기능 자선이날경보 (LDW Al ADAS 앞차출발알림(FVSA) 안전운전도우미 전원관련기능 주차-저전력모드 배터리방전방지 녹화방식 주차녹화 증격감지속화 녹화관련기능 고온자단 자능포멋 번호판식별강화 야간보점 오도슈퍼나이트비전 스마트혼 연동 Wi-Fi 연결 불무투스 연결 [@ 인종 적합성평가인층 상세설명 판매 사이트 문의 인증번호 확인 안전확인인층 상세설명 판매 사이트 문의 인증번호 확인 상품 설명 복사하기",
+      "extracted_text": "파인디지털 파인뷰 LXQ EX 2채널 (32GB) 파인부 본사 429,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 카메라 수(채널) 2채널 전방 QHD 3K(3072*1728) 패널종류 IPS패널 저장머체 Micro-SD 센서 Sony STARVIS 후방 해상도  QHD(2560x1440) 안전관련기능 차선이달경보(LDW Al ADAS 앞자출발알림FVSA) 안전운전도우미 전원관련기능 주차저전력모드 배터리방전방지 녹화방식 주차녹화 충격감지녹화 녹화관련기능 고온자단 자동포멋 번호판식별강화 야간보정 오토슈퍼나이트비전 스마트포 연동 Wi-Fi 연결 불루투스 연결 [@ 인종 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\파인디지털 파인뷰 LXQ EX 2채널 (32GB)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/파인디지털 파인뷰 LXQ EX 2채널 (32GB)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1,
       "_cache_meta": {
-        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\파인디지털 파인뷰 LXQ EX 2채널 (32GB)\\detail_scan.png",
-        "image_size": 74594,
-        "image_sha256": "57bc966c8033c29524552c1c71a1f09e3524a90509b7f4853061bd407682b8f2"
+        "image_path": "/home/projects/EASy_ML/product_images/파인디지털 파인뷰 LXQ EX 2채널 (32GB)/detail_scan.png",
+        "image_size": 91463,
+        "image_sha256": "6564486e4f2cd95a0d00fe71ac15ca3707ec24e517a319b758ea9ac13e43f813"
       }
     }
   }

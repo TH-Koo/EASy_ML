@@ -2,13 +2,13 @@
 
 import { useRef, useState } from "react";
 import Link from "next/link";
-import { Download, RotateCcw, Share2, Bookmark, BookmarkCheck } from "lucide-react";
+import { usePathname, useRouter } from "next/navigation";
+import { Download, Search, Share2, Bookmark, BookmarkCheck } from "lucide-react";
 
 import { Button } from "@/components/primitives/Button";
-import { Card } from "@/components/primitives/Card";
-import { SectionHeader } from "@/components/primitives/SectionHeader";
 import { apiAddWatchlist } from "@/lib/api/auth";
 import { useAuth } from "@/lib/auth";
+import { loginHref } from "@/lib/loginLink";
 import type { AnalysisResult } from "@/types/analysis";
 
 interface QuickActionsProps {
@@ -17,7 +17,9 @@ interface QuickActionsProps {
 }
 
 export function QuickActions({ data, historyId }: QuickActionsProps) {
-  const { user } = useAuth();
+  const { user, mounted } = useAuth();
+  const router = useRouter();
+  const pathname = usePathname();
   const [toast,      setToast]      = useState("");
   const [bookmarked, setBookmarked] = useState(false);
   const [bmBusy,     setBmBusy]     = useState(false);
@@ -43,7 +45,12 @@ export function QuickActions({ data, historyId }: QuickActionsProps) {
   }
 
   async function handleBookmark() {
-    if (!user || bookmarked || bmBusy) return;
+    if (bookmarked || bmBusy) return;
+    // 북마크는 계정에 저장된다. 비로그인이면 로그인 뒤 이 결과로 돌아오게 보낸다.
+    if (!user) {
+      router.push(loginHref(pathname));
+      return;
+    }
     setBmBusy(true);
     try {
       const url = historyId
@@ -61,14 +68,21 @@ export function QuickActions({ data, historyId }: QuickActionsProps) {
 
   return (
     <>
-      <Card>
-        <SectionHeader eyebrow="actions" title="빠른 작업" />
-        <div className="flex flex-col gap-2 px-5 pt-1 pb-5">
-          {/* 새 분석 */}
-          <Button asChild variant="cta" size="lg" className="w-full">
+      {/* 결과 화면 맨 아래 한 줄. 결과 화면이 한 단이 되면서 사이드바의
+          세로 카드에서 가로 줄로 옮겼다. */}
+      <div className="no-print flex flex-wrap gap-2">
+          {/* 다른 제품 검색 — 홈의 검색창으로. 결과 화면은 보라 테마라 cta 의
+              네이비 그라데이션 대신 브랜드 색 한 가지로 채운다. */}
+          <Button
+            asChild
+            variant="cta"
+            size="lg"
+            className="flex-[2_1_12rem]"
+            style={{ background: "var(--color-brand)" }}
+          >
             <Link href="/">
-              <RotateCcw size={16} aria-hidden />
-              새 분석 시작
+              <Search size={16} aria-hidden />
+              다른 제품 검색하기
             </Link>
           </Button>
 
@@ -76,8 +90,8 @@ export function QuickActions({ data, historyId }: QuickActionsProps) {
           <Button
             type="button"
             variant="secondary"
-            size="md"
-            className="w-full"
+            size="lg"
+            className="flex-[1_1_9rem]"
             onClick={handleShare}
           >
             <Share2 size={14} aria-hidden />
@@ -90,8 +104,8 @@ export function QuickActions({ data, historyId }: QuickActionsProps) {
           <Button
             type="button"
             variant="secondary"
-            size="md"
-            className="w-full"
+            size="lg"
+            className="flex-[1_1_9rem]"
             onClick={handlePdf}
           >
             <Download size={14} aria-hidden />
@@ -102,10 +116,10 @@ export function QuickActions({ data, historyId }: QuickActionsProps) {
           <Button
             type="button"
             variant="secondary"
-            size="md"
-            className="w-full"
+            size="lg"
+            className="flex-[1_1_9rem]"
             onClick={handleBookmark}
-            disabled={bookmarked || bmBusy || !user}
+            disabled={bookmarked || bmBusy}
             style={
               bookmarked
                 ? {
@@ -121,8 +135,22 @@ export function QuickActions({ data, historyId }: QuickActionsProps) {
               : <><Bookmark size={14} aria-hidden /> {bmBusy ? "저장 중…" : "북마크에 저장"}</>
             }
           </Button>
-        </div>
-      </Card>
+      </div>
+
+      {/* 비로그인: 이 결과는 어디에도 저장되지 않는다는 걸 미리 알려 준다 */}
+      {mounted && !user ? (
+        <p className="no-print text-fg-muted -mt-8 text-center text-[13.5px]">
+          이 결과는 저장되지 않아요.{" "}
+          <Link href={loginHref(pathname)} className="text-brand-fg font-semibold hover:underline">
+            로그인
+          </Link>{" "}
+          또는{" "}
+          <Link href={loginHref(pathname, "register")} className="text-brand-fg font-semibold hover:underline">
+            회원가입
+          </Link>
+          하면 내 기록과 북마크를 쓸 수 있어요.
+        </p>
+      ) : null}
 
       {/* 토스트 — 규칙은 globals.css 의 `.qa-toast` 에 있다. 이전에는 인라인
           스타일에 자체 색과 `'Inter'` 를 박고, 토스트가 뜰 때마다 `<style>`

@@ -1,27 +1,27 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=20631407",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "MUZEN OTR 메탈 블루투스 스피커 MW-2AI (정품)",
       "name": "MUZEN OTR 메탈 블루투스 스피커 MW-2AI (정품)",
       "description": "",
-      "ocr_text": "MUZEN OTR 메달 불루투스 스피커 MW-2AI (정품) 오늘의집 129,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 전원 너장내터리 형다 탁상형 쇠대출력 5W 스피커유능크기 4Omnm 감도 75dB 불무투스버전 불무투스 V5.0 쇠대연결거리 1Omn 입출력 AUX 재생지원 라디오 사용시간 10시간 배터리용량 100OmAh 충전단자 USB-C 무게 4369 색상 불력 불루 그린 레드 핑크 무선지원 [@ 인종 적합성평가인층 R-R-IEK-MW-2AI 인공번호 확인 안전확인인즘 상세설명 판매 사이트 문의 인증번호 확인 롯데ON",
+      "ocr_text": "MUZEN OTR 메달 불루투스 스피커 MW-2AI (정품) 오늘의집 129,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 최대출력 5W 스피커유넷크기  4Omm 감도 75dB 불루투스버전 불루투스 V5.0 최대연결거리 10m 입출력 AUX 재생지원 라디오 사용시간 10시간 배터리용량 1ooOmAh 충전단자 USB-C 무게 436g 색상 불택 불루 그런 레드 핑크 전원 내장배터리 무선지원 [@ 인종 적합성평가인증  R-R-IEK-MW-2AI 인공번호 확인 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
-        "블루투스 스피커": "지원",
-        "내장배터리": "지원",
         "최대출력": "5W",
-        "75dB": "지원",
+        "블루투스 스피커": "지원",
+        "색상": "블랙 , 블루 , 그린 , 레드 , 핑크",
         "블루투스 v5.0": "지원",
+        "75dB": "지원",
         "입출력": "AUX",
         "라디오": "지원",
         "사용시간": "10시간",
         "배터리용량": "1,000mAh",
         "무게": "436g",
-        "색상": "블랙 , 블루 , 그린 , 레드 , 핑크",
+        "내장배터리": "지원",
         "크기(가로x세로x깊이)": "88x65x56mm"
       },
-      "raw_specs": "블루투스 스피커 / 내장배터리 / 최대출력 : 5W / 75dB / 블루투스 v5.0 / 입출력 : AUX / 라디오 / 사용시간 : 10시간 / 배터리용량 : 1,000mAh / 무게 : 436g / 색상 : 블랙 , 블루 , 그린 , 레드 , 핑크 / 크기(가로x세로x깊이): 88x65x56mm",
+      "raw_specs": "최대출력 : 5W / 블루투스 스피커 / 색상 : 블랙 , 블루 , 그린 , 레드 , 핑크 / 블루투스 v5.0 / 75dB / 입출력 : AUX / 라디오 / 사용시간 : 10시간 / 배터리용량 : 1,000mAh / 무게 : 436g / 내장배터리 / 크기(가로x세로x깊이): 88x65x56mm",
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=20631407",
       "manufacturer": "MUZEN, Muzen",
@@ -48,12 +48,17 @@
     "target_company_name": "MUZEN, Muzen",
     "model_param": "MW-2AI",
     "ocr_result": {
-      "extracted_text": "MUZEN OTR 메달 불루투스 스피커 MW-2AI (정품) 오늘의집 129,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 전원 너장내터리 형다 탁상형 쇠대출력 5W 스피커유능크기 4Omnm 감도 75dB 불무투스버전 불무투스 V5.0 쇠대연결거리 1Omn 입출력 AUX 재생지원 라디오 사용시간 10시간 배터리용량 100OmAh 충전단자 USB-C 무게 4369 색상 불력 불루 그린 레드 핑크 무선지원 [@ 인종 적합성평가인층 R-R-IEK-MW-2AI 인공번호 확인 안전확인인즘 상세설명 판매 사이트 문의 인증번호 확인 롯데ON",
+      "extracted_text": "MUZEN OTR 메달 불루투스 스피커 MW-2AI (정품) 오늘의집 129,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 최대출력 5W 스피커유넷크기  4Omm 감도 75dB 불루투스버전 불루투스 V5.0 최대연결거리 10m 입출력 AUX 재생지원 라디오 사용시간 10시간 배터리용량 1ooOmAh 충전단자 USB-C 무게 436g 색상 불택 불루 그런 레드 핑크 전원 내장배터리 무선지원 [@ 인종 적합성평가인증  R-R-IEK-MW-2AI 인공번호 확인 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\MUZEN OTR 메탈 블루투스 스피커 MW-2AI (정품)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/MUZEN OTR 메탈 블루투스 스피커 MW-2AI (정품)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/MUZEN OTR 메탈 블루투스 스피커 MW-2AI (정품)/detail_scan.png",
+        "image_size": 78531,
+        "image_sha256": "a881f58a82c6534c6548072ab79692a0441986acd39d923b17041b3cef4aab37"
+      }
     }
   }
 }

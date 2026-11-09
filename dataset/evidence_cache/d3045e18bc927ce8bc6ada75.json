@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=16898933",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "샤오미 미지아 B101CN (해외구매)",
       "name": "샤오미 미지아 B101CN (해외구매)",
       "description": "",
-      "ocr_text": "사오미 미지아 B1OICN (해외구매) AUCTION 610,910원 무료배송 최저가 구매하기 가격비교 10 상품 상세정보 의견리뷰 107 연관상품 집입력 4,OOOPa 센서 LDS 3D인식 카메라 맵끔 3D 사용시간 2시간(쇠대) 인식 시사물인식 감지회피 잠애물회피 낙하방지 눈렉등반 리프팀 7ci 분늑님기 2cm 통과높이 1Ocm 브러쉬 메인 사이드 먼지통 35L 소비 [진력 70W 청소기능 카켓부스트 물걸레리프팀 스마트론제어 금지구역 구역지점",
+      "ocr_text": "사오미 미지아 B1OICN (해외구매) AUCTION 643,780원   무료배송  최저가 구매하기 가격비교 상품 상세정보 의견리뷰 107 연관상품 집입력 4,000Pa 센서 LDS 3D인식 카메라 맵핑 3D 사용시간 2시간(최대) 인식 시사물인식 감지회피 장애물회피 낙하방지 문렉등반 리프팅 O.7cm 문택넘기 2cm 통과높이 10cm 브러쉬 메인 사이드 먼지통 0.35L 소비전력 7oW Close 처스기느 We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "로봇청소기": "지원",
         "흡입+물걸레": "지원",
@@ -492,7 +492,56 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 근 미래 혁신로봇 서비스를 위한 차세대 로봇 디자인 융합 기술 개발 등 총 6건",
+      "detail": "NTIS에서 [XIAOMI] 검색어로 조회한 결과, AI 관련 과제 6건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "근 미래 혁신로봇 서비스를 위한 차세대 로봇 디자인 융합 기술 개발",
+          "project_number": "1415148057",
+          "lead_company": "XIAOMI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "패러독스 경영: AI 시대, 글로벌 전략의 새로운 균형",
+          "project_number": "2340060604",
+          "lead_company": "XIAOMI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "유체-고체 해석기반 인공지능을 이용한 영상분석기법",
+          "project_number": "1711069630",
+          "lead_company": "XIAOMI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "진화연산 기반 다목적 대규모 네트워크 최적화 연구",
+          "project_number": "1711201113",
+          "lead_company": "XIAOMI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "유체-고체 해석기반 인공지능을 이용한 영상분석기법",
+          "project_number": "1711059896",
+          "lead_company": "XIAOMI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "유체-고체 해석기반 인공지능을 이용한 영상분석기법",
+          "project_number": "1711084523",
+          "lead_company": "XIAOMI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -504,10 +553,10 @@
     "target_company_name": "샤오미 (Xiaomi),  Xiaomi",
     "model_param": "B101CN",
     "ocr_result": {
-      "extracted_text": "사오미 미지아 B1OICN (해외구매) AUCTION 610,910원 무료배송 최저가 구매하기 가격비교 10 상품 상세정보 의견리뷰 107 연관상품 집입력 4,OOOPa 센서 LDS 3D인식 카메라 맵끔 3D 사용시간 2시간(쇠대) 인식 시사물인식 감지회피 잠애물회피 낙하방지 눈렉등반 리프팀 7ci 분늑님기 2cm 통과높이 1Ocm 브러쉬 메인 사이드 먼지통 35L 소비 [진력 70W 청소기능 카켓부스트 물걸레리프팀 스마트론제어 금지구역 구역지점",
+      "extracted_text": "사오미 미지아 B1OICN (해외구매) AUCTION 643,780원   무료배송  최저가 구매하기 가격비교 상품 상세정보 의견리뷰 107 연관상품 집입력 4,000Pa 센서 LDS 3D인식 카메라 맵핑 3D 사용시간 2시간(최대) 인식 시사물인식 감지회피 장애물회피 낙하방지 문렉등반 리프팅 O.7cm 문택넘기 2cm 통과높이 10cm 브러쉬 메인 사이드 먼지통 0.35L 소비전력 7oW Close 처스기느 We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\샤오미 미지아 B101CN (해외구매)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/샤오미 미지아 B101CN (해외구매)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }

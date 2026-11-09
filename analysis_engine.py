@@ -771,7 +771,39 @@ class OntologyAnalysisEngine:
             )
         ]
 
+
+        
+        validated = [
+            record for record in validated
+            if is_valid_evidence_status(record.status)
+            and not (
+                record.source_type == "kipris"
+                and (
+                    "AI 특허 내역 없음" in record.title
+                    or "AI 특허 내역 없음" in record.text
+                )
+            )
+        ]
+
         records = self._dedup_evidence(validated)
+
+
+        print("\n========== INPUT EVIDENCE ==========")
+
+        for record in records:
+            print({
+                "evidence_id": record.evidence_id,
+                "source_type": record.source_type,
+                "status": record.status,
+                "title": record.title,
+                "relation_type": record.relation_type,
+                "capability_ids": record.capability_ids,
+                "source_record_id": record.source_record_id,
+                "text": record.text[:300],
+            })
+
+        print("====================================\n")
+
 
 
         print("\n========== INPUT EVIDENCE ==========")
@@ -805,6 +837,19 @@ class OntologyAnalysisEngine:
 
             print("[LLM MATCH]", claim_text[start:end])
             
+
+        import re
+
+        for match in re.finditer(
+            r"LLM",
+            claim_text,
+            flags=re.IGNORECASE
+        ):
+            start = max(0, match.start() - 100)
+            end = min(len(claim_text), match.end() + 100)
+
+            print("[LLM MATCH]", claim_text[start:end])
+            
         capability_scores = self._score_all_capabilities(records, claim_text)
         positive_caps = [score for score in capability_scores if score.positive_claim]
         used_caps = positive_caps if positive_caps else []
@@ -814,6 +859,46 @@ class OntologyAnalysisEngine:
         tes = channel_details["tes"]["score"]
         ces = channel_details["ces"]["score"]
         ecs = self._calculate_ecs(channel_details, records)
+
+
+        # ===== 디버깅 코드 시작 =====
+        import json
+
+        print("\n========== CHANNEL DEBUG ==========")
+        print(json.dumps(
+            channel_details,
+            ensure_ascii=False,
+            indent=2,
+            default=str,
+        ))
+
+        print("\n========== CAPABILITY DEBUG ==========")
+        for cap in used_caps:
+            print(
+                cap.capability_id,
+                "score =", cap.final_score,
+                "strong =", cap.matched_strong_patterns,
+                "weak =", cap.matched_weak_patterns,
+            )
+
+        print("\n========== EVIDENCE DEBUG ==========")
+        for cap in used_caps:
+            contributions = self._contributions_by_cap.get(
+                cap.capability_id, []
+            )
+
+            print(f"\n[Capability] {cap.capability_id}")
+
+            for c in contributions:
+                print({
+                    "evidence_id": c.evidence_id,
+                    "source_type": c.source_type,
+                    "relation_type": c.relation_type,
+                    "support": c.support,
+                })
+
+        print("===================================\n")
+
 
 
         # ===== 디버깅 코드 시작 =====
@@ -1070,11 +1155,14 @@ class OntologyAnalysisEngine:
         )
 
     
+
+    
     def _match_positive_patterns(
         self, capability_id: str, claim_text: str
     ) -> Tuple[List[str], List[str]]:
         strong: List[str] = []
         weak: List[str] = []
+
 
         for row in self.repo.get_patterns(capability_id):
             pattern = normalize_text(row.get("pattern_text_ko", ""))
@@ -1094,7 +1182,24 @@ class OntologyAnalysisEngine:
             else:
                 weak.append(original)
 
+            if not pattern:
+                continue
+
+            matched = pattern in claim_text
+    
+
+            if not matched:
+                continue
+
+            original = str(row.get("pattern_text_ko", "")).strip()
+
+            if normalize_text(row.get("evidence_strength", "")) == "strong":
+                strong.append(original)
+            else:
+                weak.append(original)
+
         return unique_keep_order(strong), unique_keep_order(weak)
+
 
 
     def _match_negative_patterns(
@@ -1722,6 +1827,7 @@ class OntologyAnalysisEngine:
                 # 4. 서로 다른 출처 보상
                 bonus += min(unique_sources * 2, 8)
                 
+                
                 # Saturation
                 bonus = 15 * (1 - exp(-bonus / 12))
 
@@ -2343,6 +2449,8 @@ class OntologyAnalysisEngine:
         )
 
     
+
+    
     def _decide_verdict(
         self,
         accs: float,
@@ -2354,7 +2462,12 @@ class OntologyAnalysisEngine:
 
         #if not positive_caps:
         #    return "AI 기능 주장 미확인 / Not Evaluated", "판정 제외"
+
+        #if not positive_caps:
+        #    return "AI 기능 주장 미확인 / Not Evaluated", "판정 제외"
         if not positive_caps:
+            print("[DEMO WARNING] AI 기능 미탐지 - ACCS 기반 임시 판정")
+
             print("[DEMO WARNING] AI 기능 미탐지 - ACCS 기반 임시 판정")
 
         if (
@@ -2363,16 +2476,20 @@ class OntologyAnalysisEngine:
         ):
             return "높은 신뢰 상품 / Credible", "매우 낮음"
 
+
         if (
             accs >= thresholds.normal
             and sufficiency >= thresholds.minimum_sufficiency_for_normal
         ):
             return "신뢰 상품 / Normal", "낮음"
 
+
         if accs >= thresholds.suspected or confidence >= 35.0:
             return "워싱 의심 상품 / Suspected", "중간"
 
+
         return "AI 워싱 상품 / Washing", "높음"
+
 
 
     # ------------------------------------------------------------------

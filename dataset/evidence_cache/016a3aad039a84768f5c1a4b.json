@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=78238649",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "파인디지털 파인뷰 X7700 프로 2채널 (32GB)",
       "name": "파인디지털 파인뷰 X7700 프로 2채널 (32GB)",
       "description": "",
-      "ocr_text": "파인디지털 파인뷰 X7700 프로 2채널 (32GB) AUCTION 185,220원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 342 연관상품 X7700 PRO 다음에서 보기: 가부 다a다556다다 \"퓨\"@{전 껍다하G끓이다 스리UL Ioulube 가다 제조회사 파인디지털 (제조사 웬사이트 바로가기) 등록년원 2025년 03원 제품구분 불렉박스 제품 형대 거치형 칸메라 수(재널) 2채널 전방 QHD(2560x1440) 전방 화소 350만화소 쇠대지원용량 쇠대 128GB 전밤 시야각 141도 화면 8.9cm(3.5인지) 파닐승류 IPS패널 저장매제 Micro-SD 전원 12-24V 전장용량 32GB 센서 Sony STARVIS 2 후방 해상도 QHD(2560x1440) 후밤 화소 350만화소 후방 시야각 141도",
+      "ocr_text": "파인디지털 파인뷰 X7700 프로 2채널 (32GB) AUCTION 179,550원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 339 연관상품 X7700 PRO Watch on a다 W내L '나무 불임국:_히하로기다다 Voulube 2 제조회사 파인디지털 (제조사 웬사이트 바로가기) 등록년월 2025년 03월 제품구분 불렉박스 제품 형태 거치형 카메라 수재널) 2채널 전방 QHD(2560*1440) 전방 화소 350만화소 최대지원용량 최대 128GB 전방 시야각 147도 화면 8.9cm(3.5인지) 패널종류 IPS때널 저장머제 Micro-SD Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "블랙박스": "지원",
         "2채널": "지원",
@@ -231,7 +231,147 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 인공지능 기반 파킨슨병 말-언어 <span class=\"search_word\">디지털</span> 치료기기 개발 등 총 19건",
+      "detail": "NTIS에서 [파인디지털] 검색어로 조회한 결과, AI 관련 과제 19건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "인공지능 기반 파킨슨병 말-언어 <span class=\"search_word\">디지털</span> 치료기기 개발",
+          "project_number": "2420029232",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "인공지능 기반 파킨슨병 말-언어 <span class=\"search_word\">디지털</span> 치료기기 개발",
+          "project_number": "2420006363",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "인공지능 기반 파킨슨병 말-언어 <span class=\"search_word\">디지털</span> 치료기기 개발",
+          "project_number": "2420016224",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "휴대형 한/영 자동통역 기술 개발",
+          "project_number": "1415115388",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "언어학습을 위한 자유발화형 음성대화처리 원천기술 개발",
+          "project_number": "1711026844",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "언어학습을 위한 자유발화형 음성대화처리 원천기술 개발",
+          "project_number": "1711035241",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "모바일 플랫폼 기반 대화모델 적용 자연어 음성 인터페이스 기술 개발",
+          "project_number": "1711006598",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "유아 교육 현장의 <span class=\"search_word\">디지털</span> 전환을 위한 행동 발달 분석 AI 에이전트 및 스마트 <span class=\"search_word\">디지털</span> 놀이 시스템 개발",
+          "project_number": "2420031371",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "VITAL-VD: <span class=\"search_word\">디지털</span> AI 멀티모달 세포 모델 검증 및 신약개발",
+          "project_number": "2710109170",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI가 적용된 모바일 타입 휴머노이드 로봇의 디스플레이 공정 적용 기술 개발",
+          "project_number": "2410020061",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "건설업 <span class=\"search_word\">디지털</span> 전환을 위한 멀티모달 LLM 합성 데이터 자동화 프레임워크 개발",
+          "project_number": "2340047014",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "<span class=\"search_word\">디지털</span> 성범죄 고위험군 스크리닝 인공지능 시스템 개발",
+          "project_number": "1711166192",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "중소기업 사업 도메인 맞춤형 <span class=\"search_word\">디지털</span> 전환(DX) 교육 및 자가학습 기반 기업특화 AI솔루션 [DX-ONE] 기술개발",
+          "project_number": "1425174684",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "<span class=\"search_word\">디지털</span> 성범죄 고위험군 스크리닝 인공지능 시스템 개발",
+          "project_number": "1711128374",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "봉제 명장 암묵지의 <span class=\"search_word\">디지털</span> 영속화를 위한 멀티모달 AI 모델 개발: 작업자 역량 격상 및 Physical AI 연계",
+          "project_number": "2410019792",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "비정형 대출 정보의 <span class=\"search_word\">디지털</span> 자산화를 위한 U2P(Unstructured-to-Product) AI 및 미래 이득 추론형 sLLM 기반 지능형 대출 생애주기 관리 솔루션 개발",
+          "project_number": "2420031353",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "오가노이드-<span class=\"search_word\">디지털</span> 트윈 융합 AI 모델 기반 동물대체 유효성/안전성 평가 플랫폼 구축",
+          "project_number": "2460004971",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "에너지특화형 <span class=\"search_word\">디지털</span>트윈 및 sLLM을 활용한 주조공장 ESG 대응 시스템 개발",
+          "project_number": "2420029776",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "에너지특화형 <span class=\"search_word\">디지털</span>트윈 및 sLLM을 활용한 주조공장 ESG 대응 시스템 개발",
+          "project_number": "2420023138",
+          "lead_company": "파인디지털",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -243,12 +383,17 @@
     "target_company_name": "파인디지털, Pinda Digital",
     "model_param": "X7700",
     "ocr_result": {
-      "extracted_text": "파인디지털 파인뷰 X7700 프로 2채널 (32GB) AUCTION 185,220원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 342 연관상품 X7700 PRO 다음에서 보기: 가부 다a다556다다 \"퓨\"@{전 껍다하G끓이다 스리UL Ioulube 가다 제조회사 파인디지털 (제조사 웬사이트 바로가기) 등록년원 2025년 03원 제품구분 불렉박스 제품 형대 거치형 칸메라 수(재널) 2채널 전방 QHD(2560x1440) 전방 화소 350만화소 쇠대지원용량 쇠대 128GB 전밤 시야각 141도 화면 8.9cm(3.5인지) 파닐승류 IPS패널 저장매제 Micro-SD 전원 12-24V 전장용량 32GB 센서 Sony STARVIS 2 후방 해상도 QHD(2560x1440) 후밤 화소 350만화소 후방 시야각 141도",
+      "extracted_text": "파인디지털 파인뷰 X7700 프로 2채널 (32GB) AUCTION 179,550원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 339 연관상품 X7700 PRO Watch on a다 W내L '나무 불임국:_히하로기다다 Voulube 2 제조회사 파인디지털 (제조사 웬사이트 바로가기) 등록년월 2025년 03월 제품구분 불렉박스 제품 형태 거치형 카메라 수재널) 2채널 전방 QHD(2560*1440) 전방 화소 350만화소 최대지원용량 최대 128GB 전방 시야각 147도 화면 8.9cm(3.5인지) 패널종류 IPS때널 저장머제 Micro-SD Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\파인디지털 파인뷰 X7700 프로 2채널 (32GB)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/파인디지털 파인뷰 X7700 프로 2채널 (32GB)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/파인디지털 파인뷰 X7700 프로 2채널 (32GB)/detail_scan.png",
+        "image_size": 368195,
+        "image_sha256": "0a86f9a47f313a93b2ce94a8422ded708e3819143975fcca1a69651760258521"
+      }
     }
   }
 }

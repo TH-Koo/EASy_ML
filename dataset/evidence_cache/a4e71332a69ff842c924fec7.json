@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=77461730",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "팅크웨어 아이나비 QXD1 2채널 (본품)",
       "name": "팅크웨어 아이나비 QXD1 2채널 (본품)",
       "description": "",
-      "ocr_text": "팅크웨어 아이나비 QXD1 2채널 (본품) 1L> 298,990원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 60 연관상품 카메라 수(재널) 2채널 전방 QHD(2560x1440) 전방 프레임 3Ofps 쇠대지원용량 쇠대 512GB 전방 시야각 146.5도 화면 8.9cr(3.5인지) 저장매체 Micro-SD 전원 12-24V 센서 Sony Exmor R STARVIS 후방 해상도 QHD(2560x1440) 후방 프레임 3Ofps 후방 시야각 172도 안전관련기능 자선이발경보 (LDW Al ADAS 전방추돌경고(FCW 앞자출발알림(FVSA) 신혼변경알림(TLDS) 앞자후진알림(FVBA) 저속전방추들경고u CWS) 과속단속알림 안전운전도우미 전원관련기능 주차저전런모드 스마드방전방지 배티리방전방지 캐째시터내장 녹화방식 상시녹화 스등녹화 주차녹화 증격감지녹화",
+      "ocr_text": "텅크웨어 아이나비 QXD1 2채널 (본품) 11> 298,990원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 60 연관상품 카메라 수(채널) 2채널 전방 QHD(2560x1440) 전방 프레임 30fps 최대지원용량 최대 512GB 전방 시야각 146.5도 화면 8.9cm(3.5인지) 저장매체 Micro-SD 전원 12-24V 센서 Sony Exmor R STARVIS 후방 해상도  QHD(2560x1440) 후밤 프레임 30fps 후방 시아각 172도 안전관련기능 차선이달경보(LDW Al ADAS 전방추돌경고FCW 앞차출발알림(FVSA) 신호변경알림(TLDS) 앞자후진알림FVBA) 저속전방추돌경고나 CWS) 과속단속알림 안전운전도우미  전원관련기능 주차저전력모드 스마드방전방지 배터리방전방지 캐때시터내장 Close 숙나a다 We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "블랙박스": "지원",
         "2채널": "지원",
@@ -367,7 +367,56 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 커넥티드 차량 빅데이터 분석기술 및 비즈니스 서비스 개발 등 총 6건",
+      "detail": "NTIS에서 [팅크웨어] 검색어로 조회한 결과, AI 관련 과제 6건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "커넥티드 차량 빅데이터 분석기술 및 비즈니스 서비스 개발",
+          "project_number": "1415155866",
+          "lead_company": "팅크웨어",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "커넥티드 차량 빅데이터 분석기술 및 비즈니스 서비스 개발",
+          "project_number": "1415166955",
+          "lead_company": "팅크웨어",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "커넥티드 차량 빅데이터 분석기술 및 비즈니스 서비스 개발",
+          "project_number": "1415158471",
+          "lead_company": "팅크웨어",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "커넥티드 차량 빅데이터 분석기술 및 비즈니스 서비스 개발",
+          "project_number": "1415162925",
+          "lead_company": "팅크웨어",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "차량 ICT 기반 긴급구난체계(e-Call) 표준 및 차량 단말기 개발",
+          "project_number": "1711043634",
+          "lead_company": "팅크웨어",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI 기반 운전자 상태 모니터링 및 차량 서비스 통합 시스템 상용화 수준 개발",
+          "project_number": "2410019197",
+          "lead_company": "팅크웨어",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -419,16 +468,16 @@
     "target_company_name": "팅크웨어, Tinkingwear",
     "model_param": "QXD1",
     "ocr_result": {
-      "extracted_text": "팅크웨어 아이나비 QXD1 2채널 (본품) 1L> 298,990원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 60 연관상품 카메라 수(재널) 2채널 전방 QHD(2560x1440) 전방 프레임 3Ofps 쇠대지원용량 쇠대 512GB 전방 시야각 146.5도 화면 8.9cr(3.5인지) 저장매체 Micro-SD 전원 12-24V 센서 Sony Exmor R STARVIS 후방 해상도 QHD(2560x1440) 후방 프레임 3Ofps 후방 시야각 172도 안전관련기능 자선이발경보 (LDW Al ADAS 전방추돌경고(FCW 앞자출발알림(FVSA) 신혼변경알림(TLDS) 앞자후진알림(FVBA) 저속전방추들경고u CWS) 과속단속알림 안전운전도우미 전원관련기능 주차저전런모드 스마드방전방지 배티리방전방지 캐째시터내장 녹화방식 상시녹화 스등녹화 주차녹화 증격감지녹화",
+      "extracted_text": "텅크웨어 아이나비 QXD1 2채널 (본품) 11> 298,990원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 60 연관상품 카메라 수(채널) 2채널 전방 QHD(2560x1440) 전방 프레임 30fps 최대지원용량 최대 512GB 전방 시야각 146.5도 화면 8.9cm(3.5인지) 저장매체 Micro-SD 전원 12-24V 센서 Sony Exmor R STARVIS 후방 해상도  QHD(2560x1440) 후밤 프레임 30fps 후방 시아각 172도 안전관련기능 차선이달경보(LDW Al ADAS 전방추돌경고FCW 앞차출발알림(FVSA) 신호변경알림(TLDS) 앞자후진알림FVBA) 저속전방추돌경고나 CWS) 과속단속알림 안전운전도우미  전원관련기능 주차저전력모드 스마드방전방지 배터리방전방지 캐때시터내장 Close 숙나a다 We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\팅크웨어 아이나비 QXD1 2채널 (본품)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/팅크웨어 아이나비 QXD1 2채널 (본품)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1,
       "_cache_meta": {
-        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\팅크웨어 아이나비 QXD1 2채널 (본품)\\detail_scan.png",
-        "image_size": 80705,
-        "image_sha256": "a0cc6f9fde0a83e66af847a1c393025f0dacfbf7b02fb7716dad9dac34afdd3b"
+        "image_path": "/home/projects/EASy_ML/product_images/팅크웨어 아이나비 QXD1 2채널 (본품)/detail_scan.png",
+        "image_size": 103224,
+        "image_sha256": "6f2db8e15ac1d87c11a1c659dfd71c4855791149281067eab6ecb8c90ddcaead"
       }
     }
   }

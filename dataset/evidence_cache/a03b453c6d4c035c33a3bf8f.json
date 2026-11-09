@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=47831780",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "타마 올인원 Ai",
       "name": "타마 올인원 Ai",
       "description": "",
-      "ocr_text": "타마 올인원 Ai Gmarket   939,080원  무료배송 최저가 구매하기 가격비교 12 상품 상세정보 의견리뷰 278 연관상품 집입력 8400Pa 센서 LDS 적외선R 맵핑 복층 사용시간 스시간(최대) 인식 시사물인식 감지회피 낙하방지 눈렉등반 카켓회피 리프팅 Icm 낙하감지 8cm 분늑년기 2cm 통과뇨이 10cm 브러쉬 메인 사이드2가 엉림방지재질 필터 헤파필터 헤파필터등금 H14금 배티리용탕 640OmnAh 청소기능 카켓부스트 물걸레리프팀 스마트혼제어",
+      "ocr_text": "타마 올인원 Ai AUCTION 520,930원 무료배승 최저가 구매하기 가격비교 12 상품 상세정보 의견리뷰 278 연관상품 집입력 8,400Pa 센서 LDS 적외센R 맵핑 복층 사용시간 4시간최대) 인식 시사물인식 감지회피 낙하방지  문득등반 카켓회피 리프팅 Icm 낙하감지 8cm 문택넘기 2cm 통과높이 iOcm 브러쉬 메인 사이드2개 엉림방지저질 필터 혜파필터 헤파필터등급 H14금 Close 배터리오락 64oOmAh We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "로봇청소기": "지원",
         "흡입+물걸레": "지원",
@@ -34,18 +34,81 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=47831780",
       "manufacturer": "타마, 타마",
-      "model_name": "타마 올인원 Ai"
+      "model_name": "400X463X433MM"
     },
     "norm_info": {
       "company_name": "타마, 타마",
-      "model_name": "타마 올인원 Ai",
+      "model_name": "400X463X433MM",
       "product_name": "타마 올인원 Ai"
     },
     "db_results": [],
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 국내산 참나무속 목재자원의 고도 이용기술 개발 등 총 8건",
+      "detail": "NTIS에서 [타마] 검색어로 조회한 결과, AI 관련 과제 8건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "국내산 참나무속 목재자원의 고도 이용기술 개발",
+          "project_number": "1711187476",
+          "lead_company": "타마",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "소재 빅데이터 플랫폼 기반 고성능 전극 신물질 개발",
+          "project_number": "1711077098",
+          "lead_company": "타마",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "영상 기반 급성 감염 중환자 상태 악화 예측",
+          "project_number": "1465036527",
+          "lead_company": "타마",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "IoT 및 지능정보 기반 동남권 제조 IT 기술 혁신 및 인재양성",
+          "project_number": "1711160598",
+          "lead_company": "타마",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "IoT 및 지능정보 기반 동남권 제조 IT 기술 혁신 및 인재양성",
+          "project_number": "1711125957",
+          "lead_company": "타마",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "기만공격에 의한 AI 역기능 방지 기술 개발",
+          "project_number": "1711073998",
+          "lead_company": "타마",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "기만공격에 의한 AI 역기능 방지 기술 개발",
+          "project_number": "1711082850",
+          "lead_company": "타마",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "국내산 참나무속 목재자원의 고도 이용기술 개발",
+          "project_number": "1711153265",
+          "lead_company": "타마",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -70,14 +133,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "타마, 타마",
-    "model_param": "타마 올인원 Ai",
+    "model_param": "400X463X433MM",
     "ocr_result": {
-      "extracted_text": "타마 올인원 Ai Gmarket   939,080원  무료배송 최저가 구매하기 가격비교 12 상품 상세정보 의견리뷰 278 연관상품 집입력 8400Pa 센서 LDS 적외선R 맵핑 복층 사용시간 스시간(최대) 인식 시사물인식 감지회피 낙하방지 눈렉등반 카켓회피 리프팅 Icm 낙하감지 8cm 분늑년기 2cm 통과뇨이 10cm 브러쉬 메인 사이드2가 엉림방지재질 필터 헤파필터 헤파필터등금 H14금 배티리용탕 640OmnAh 청소기능 카켓부스트 물걸레리프팀 스마트혼제어",
+      "extracted_text": "타마 올인원 Ai AUCTION 520,930원 무료배승 최저가 구매하기 가격비교 12 상품 상세정보 의견리뷰 278 연관상품 집입력 8,400Pa 센서 LDS 적외센R 맵핑 복층 사용시간 4시간최대) 인식 시사물인식 감지회피 낙하방지  문득등반 카켓회피 리프팅 Icm 낙하감지 8cm 문택넘기 2cm 통과높이 iOcm 브러쉬 메인 사이드2개 엉림방지저질 필터 혜파필터 헤파필터등급 H14금 Close 배터리오락 64oOmAh We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\타마 올인원 Ai\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/타마 올인원 Ai/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/타마 올인원 Ai/detail_scan.png",
+        "image_size": 72166,
+        "image_sha256": "686381d74f2599074dfde28b3955d34f2e0bee5457189cf5b7b276575423eab7"
+      }
     }
   }
 }

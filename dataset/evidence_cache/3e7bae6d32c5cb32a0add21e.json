@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=68538818",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "샤오미 ArtDog S6",
       "name": "샤오미 ArtDog S6",
       "description": "",
-      "ocr_text": "사오미 ArtDog S6 Gmarket 69,890원 무료배송 최저가 구매하기 가격비교 13 상품 상세정보 의견리뷰 연관상품 집입력 3,20OPa 인식 시사물인식 감지회피 잠애물회피 충돌방지 통과높이 Zcm 소비전력 72W 물걸레 회전형 물통 O.O6L 편의부가 음싱안내 스마토h제어 리모권 연동맵 자제맨 색상 화이트 주요기능 비상전원공수 낙하방지로프 양방향 물분산 무게 1.05kg [g 인종 적합성평가인층 R-R-yiT-S6 인증번호 확인 안전확인인승 HU101040-19003B [ 인종번호 확인 사T 서머 드시히기",
+      "ocr_text": "사오미 ArtDog S6 후이니상가 69,900원 무료배송 최저가 구매하기 가격비교 13 상품 상세정보 의견리뷰 연관상품 집입력 3,2o0Pa 인식 시사물인식 감지회피 장애물회피 충돌방지 통과높이 Tcm 소비전력 72W 물걸레 '회전형 물통 O.06L 편의부가 음성안내 스마토프제어 리모권 연동업 자제맵 색삼 화이트 주요기능 비상전원공급 낙하방지로프 양방향 물분사 무게 1.05kg [g 인종 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "로봇청소기": "지원",
         "창문용": "지원",
@@ -485,7 +485,56 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 근 미래 혁신로봇 서비스를 위한 차세대 로봇 디자인 융합 기술 개발 등 총 6건",
+      "detail": "NTIS에서 [XIAOMI] 검색어로 조회한 결과, AI 관련 과제 6건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "근 미래 혁신로봇 서비스를 위한 차세대 로봇 디자인 융합 기술 개발",
+          "project_number": "1415148057",
+          "lead_company": "XIAOMI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "패러독스 경영: AI 시대, 글로벌 전략의 새로운 균형",
+          "project_number": "2340060604",
+          "lead_company": "XIAOMI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "유체-고체 해석기반 인공지능을 이용한 영상분석기법",
+          "project_number": "1711069630",
+          "lead_company": "XIAOMI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "진화연산 기반 다목적 대규모 네트워크 최적화 연구",
+          "project_number": "1711201113",
+          "lead_company": "XIAOMI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "유체-고체 해석기반 인공지능을 이용한 영상분석기법",
+          "project_number": "1711059896",
+          "lead_company": "XIAOMI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "유체-고체 해석기반 인공지능을 이용한 영상분석기법",
+          "project_number": "1711084523",
+          "lead_company": "XIAOMI",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -497,12 +546,17 @@
     "target_company_name": "샤오미 (Xiaomi),  Xiaomi",
     "model_param": "S6",
     "ocr_result": {
-      "extracted_text": "사오미 ArtDog S6 Gmarket 69,890원 무료배송 최저가 구매하기 가격비교 13 상품 상세정보 의견리뷰 연관상품 집입력 3,20OPa 인식 시사물인식 감지회피 잠애물회피 충돌방지 통과높이 Zcm 소비전력 72W 물걸레 회전형 물통 O.O6L 편의부가 음싱안내 스마토h제어 리모권 연동맵 자제맨 색상 화이트 주요기능 비상전원공수 낙하방지로프 양방향 물분산 무게 1.05kg [g 인종 적합성평가인층 R-R-yiT-S6 인증번호 확인 안전확인인승 HU101040-19003B [ 인종번호 확인 사T 서머 드시히기",
+      "extracted_text": "사오미 ArtDog S6 후이니상가 69,900원 무료배송 최저가 구매하기 가격비교 13 상품 상세정보 의견리뷰 연관상품 집입력 3,2o0Pa 인식 시사물인식 감지회피 장애물회피 충돌방지 통과높이 Tcm 소비전력 72W 물걸레 '회전형 물통 O.06L 편의부가 음성안내 스마토프제어 리모권 연동업 자제맵 색삼 화이트 주요기능 비상전원공급 낙하방지로프 양방향 물분사 무게 1.05kg [g 인종 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\샤오미 ArtDog S6\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/샤오미 ArtDog S6/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/샤오미 ArtDog S6/detail_scan.png",
+        "image_size": 72165,
+        "image_sha256": "219210deb1440c6b56bf0d0e424ea644fa99b704559893ffcafcbf7c9e54a95a"
+      }
     }
   }
 }

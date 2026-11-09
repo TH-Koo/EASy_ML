@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=59090219",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "망고슬래브 네모닉 AI",
       "name": "망고슬래브 네모닉 AI",
       "description": "",
-      "ocr_text": "망고슬래브 네모넉 Al 주식회사 제이씨엘검퍼니 126,990원   무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 21 연관상품 인쇄방식 감옥식 용도 일반/사무용 편집방식 PC연결 안드로이드 iOS 출력대상 돌 라엘지 민사 해상도 203dpi 용지 폭 72mmn 컷팅 자동컷팀 인터페이스 USB 불무투스 부가기능 한글출력 Mac지원 모바일 출력 [크기] 가로 112mmn 세로 112mnm 표이 gomm 무게 O.56kg [g인종 적합성평가인승 상세설명 판매 사이트 문의 인증번호 확인 안전확인인승 ZH10O40-19001B 인증번호 확인",
+      "ocr_text": "망고슬래브 네모넉 Al Gmarket 136,680원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 21 연관상품 인쇄방식 감옥식 용도 일반|사무용 출렉색상 흑백모노) 출력 편집방식 PC연결 안드로이드 iOS 출력대상 물라엘지 인쇄 해상도 2o3dpi 용지 폭 72mm 컷팅 자동컷팅 인터페이스 USB 불루투스 부가기능 한글출력 Mac지원 모바일 출력 [크기] 가로 112mm 세로 112mm Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "라벨프린터": "지원",
         "휴대형": "지원",
@@ -21,21 +21,21 @@
         "[용지] 용지 폭": "72mm",
         "컷팅": "자동컷팅",
         "[연결/부가기능] 인터페이스": "USB , 블루투스",
-        "한글출력": "지원",
         "Mac지원": "지원",
         "모바일 출력": "지원",
+        "한글출력": "지원",
         "네모닉 AI 전용 앱": "지원",
         "강점착 메모지": "지원"
       },
-      "raw_specs": "라벨프린터 / 휴대형 / 감열식 / 일반/사무용 / [출력] 흑백(모노) 출력 / PC연결 / 안드로이드 / iOS / 출력대상 : 롤 라벨지 / 203dpi / [용지] 용지 폭 : 72mm / 컷팅 : 자동컷팅 / [연결/부가기능] 인터페이스 : USB , 블루투스 / 한글출력 / Mac지원 / 모바일 출력 / 네모닉 AI 전용 앱 / 강점착 메모지",
+      "raw_specs": "라벨프린터 / 휴대형 / 감열식 / 일반/사무용 / [출력] 흑백(모노) 출력 / PC연결 / 안드로이드 / iOS / 출력대상 : 롤 라벨지 / 203dpi / [용지] 용지 폭 : 72mm / 컷팅 : 자동컷팅 / [연결/부가기능] 인터페이스 : USB , 블루투스 / Mac지원 / 모바일 출력 / 한글출력 / 네모닉 AI 전용 앱 / 강점착 메모지",
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=59090219",
       "manufacturer": "망고 슬래브, Mangoslab",
-      "model_name": "망고슬래브 네모닉 AI"
+      "model_name": ""
     },
     "norm_info": {
       "company_name": "망고 슬래브, Mangoslab",
-      "model_name": "망고슬래브 네모닉 AI",
+      "model_name": "",
       "product_name": "망고슬래브 네모닉 AI"
     },
     "db_results": [
@@ -47,6 +47,24 @@
         "cert_date": "2017-08-01",
         "cert_status": "적합인증",
         "cert_no": "MSIP-CMM-MGJ-MIP-001"
+      },
+      {
+        "company_name": "망고슬래브 주식회사",
+        "equip_name": "점착식 메모 프린터",
+        "model_name": "MIP-101",
+        "country": "한국",
+        "cert_date": "2020-01-06",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGJ-MIP-101"
+      },
+      {
+        "company_name": "망고슬래브 주식회사",
+        "equip_name": "휴대용 핸드헬드 프린터",
+        "model_name": "C310BT",
+        "country": "태국",
+        "cert_date": "2021-08-25",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGJ-C310BT"
       },
       {
         "company_name": "망고슬래브 주식회사",
@@ -77,6 +95,15 @@
       },
       {
         "company_name": "망고슬래브 주식회사",
+        "equip_name": "점착식 메모 프린터",
+        "model_name": "MIP-201",
+        "country": "한국",
+        "cert_date": "2024-02-23",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-MGJ-MIP-201"
+      },
+      {
+        "company_name": "망고슬래브 주식회사",
         "equip_name": "Wired Hair Straightener",
         "model_name": "CBI-BTS10LK",
         "country": "중국",
@@ -88,7 +115,70 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: AI 음성인식 및 비솔레노이드 방식의 점자 프린터 개발 등 총 8건",
+      "detail": "NTIS에서 [망고 슬래브] 검색어로 조회한 결과, AI 관련 과제 8건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "AI 음성인식 및 비솔레노이드 방식의 점자 프린터 개발",
+          "project_number": "2420006657",
+          "lead_company": "망고 슬래브",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "한번의 촬영으로 점착 메모지를 정리하는 솔루션 개발",
+          "project_number": "1415153849",
+          "lead_company": "망고 슬래브",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI 음성인식 및 비솔레노이드 방식의 점자 프린터 개발",
+          "project_number": "2420029821",
+          "lead_company": "망고 슬래브",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI 음성인식 및 비솔레노이드 방식의 점자 프린터 개발",
+          "project_number": "2420023664",
+          "lead_company": "망고 슬래브",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "냉장·냉동 식품의 정보 접근성 향상을 위한 AI 기반 가변데이터 처리 및 고내구성 고속 점자 라벨링 시스템 개발",
+          "project_number": "2540001506",
+          "lead_company": "망고 슬래브",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "머신 러닝 기반 클리닉 모드를 이용한 헤어 케어 솔루션 개발",
+          "project_number": "1425162499",
+          "lead_company": "망고 슬래브",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "머신 러닝 기반 클리닉 모드를 이용한 헤어 케어 솔루션 개발",
+          "project_number": "1425153727",
+          "lead_company": "망고 슬래브",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "유럽 접근성 법(EAA) 대응을 위한 AI 기반 행정·생활 문서 핵심 정보 점자 요약 및 글로벌 표준 투명 점자 라벨링 시스템 개발",
+          "project_number": "2420033806",
+          "lead_company": "망고 슬래브",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -98,12 +188,12 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "망고 슬래브, Mangoslab",
-    "model_param": "망고슬래브 네모닉 AI",
+    "model_param": "",
     "ocr_result": {
-      "extracted_text": "망고슬래브 네모넉 Al 주식회사 제이씨엘검퍼니 126,990원   무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 21 연관상품 인쇄방식 감옥식 용도 일반/사무용 편집방식 PC연결 안드로이드 iOS 출력대상 돌 라엘지 민사 해상도 203dpi 용지 폭 72mmn 컷팅 자동컷팀 인터페이스 USB 불무투스 부가기능 한글출력 Mac지원 모바일 출력 [크기] 가로 112mmn 세로 112mnm 표이 gomm 무게 O.56kg [g인종 적합성평가인승 상세설명 판매 사이트 문의 인증번호 확인 안전확인인승 ZH10O40-19001B 인증번호 확인",
+      "extracted_text": "망고슬래브 네모넉 Al Gmarket 136,680원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 21 연관상품 인쇄방식 감옥식 용도 일반|사무용 출렉색상 흑백모노) 출력 편집방식 PC연결 안드로이드 iOS 출력대상 물라엘지 인쇄 해상도 2o3dpi 용지 폭 72mm 컷팅 자동컷팅 인터페이스 USB 불루투스 부가기능 한글출력 Mac지원 모바일 출력 [크기] 가로 112mm 세로 112mm Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\망고슬래브 네모닉 AI\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/망고슬래브 네모닉 AI/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }

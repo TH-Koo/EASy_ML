@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=93383075",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "ASUS TUF Gaming A14 FA401KM-RG006 (SSD 1TB)",
       "name": "ASUS TUF Gaming A14 FA401KM-RG006 (SSD 1TB)",
       "description": "",
-      "ocr_text": "ASUS TUF Gaming A14 FA4O1KM-RG0O6 (SSD ITB) phcnc 3,849,000원  무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 18 뉴스커유니티 연관상품 무게 1.46kg 운명제제(OS) OS미I포함(프리도스) 판매유형 제조사기본상품 [화면] 화면 비율 1610 해상도 2560x1600(WQXGA) sRGB 10096 '화면 회전각 180도 주사물 165Hz 밝기 4OOnit 파널 표면 처리 안티글레이 패널 종류 IPS레벌 디스플레이 특징 광시아각 G-SYNC [CPU] CPU 제조사 AMD CPU 세분류 라이젠A 7 CPU 코드명 그라권 포인트 CPU 넘버 350 (5.OGHz) CPU 코이 욕타(8) 코어 CPU 스레드 16스레드 NPU 종류 AMD 라이젠 Al NPU 5OTOPS [그래픽] GPU 종류 외장그래픽 GPU 제조사 엔비디야 GPU 침셋 RTX5O6O GPU 메모리 VRAM: 8GB GPU TOPS 572 TOPS TGP 105W 게임 관련 기능 MUX 스위치 [구성]",
+      "ocr_text": "ASUS TUF Gaming A14 FA4OIKM-RG006 (SSD ITB) phcne 3,849,000원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 18 뉴스커유니티 연관상품 무게 1.46kg 운영제제(OS) OS미포함(프리도스) 판매유형 제조사기본상품 [화면] 화면 비율 1610 허상도 2560x160O(WQXGA) sRGB 10096 화면 회전각 180도 주사율 165Hz 밝기 40Onit 패널 표면 처리 안티글레어 패널 종류 IPS레벌 디스플레이 특징 광시아각 G-SYNC [CPU] CPU 제조사 AMD CPU 세분류 라이젠시 7 CPU 코드명 크라권 포인트 CPU 넘버 350 (5.0GHz) CPU 코어 욕타(이코어 CPU 스레드 16스레드 NPU 종류 AMD 라이젠 Al NPU 50TOPS [그래픽] GPU 종류 외장그래픽 GPU 제조사  엔비디아 GPU 집셋 RTX5o6O GPU 메모리 VRAM: 8GB Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "AI노트북": "지원",
         "35.56cm(14인치)": "지원",
@@ -541,12 +541,17 @@
     "target_company_name": "ASUS, Asus",
     "model_param": "FA401KM-RG006",
     "ocr_result": {
-      "extracted_text": "ASUS TUF Gaming A14 FA4O1KM-RG0O6 (SSD ITB) phcnc 3,849,000원  무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 18 뉴스커유니티 연관상품 무게 1.46kg 운명제제(OS) OS미I포함(프리도스) 판매유형 제조사기본상품 [화면] 화면 비율 1610 해상도 2560x1600(WQXGA) sRGB 10096 '화면 회전각 180도 주사물 165Hz 밝기 4OOnit 파널 표면 처리 안티글레이 패널 종류 IPS레벌 디스플레이 특징 광시아각 G-SYNC [CPU] CPU 제조사 AMD CPU 세분류 라이젠A 7 CPU 코드명 그라권 포인트 CPU 넘버 350 (5.OGHz) CPU 코이 욕타(8) 코어 CPU 스레드 16스레드 NPU 종류 AMD 라이젠 Al NPU 5OTOPS [그래픽] GPU 종류 외장그래픽 GPU 제조사 엔비디야 GPU 침셋 RTX5O6O GPU 메모리 VRAM: 8GB GPU TOPS 572 TOPS TGP 105W 게임 관련 기능 MUX 스위치 [구성]",
+      "extracted_text": "ASUS TUF Gaming A14 FA4OIKM-RG006 (SSD ITB) phcne 3,849,000원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 18 뉴스커유니티 연관상품 무게 1.46kg 운영제제(OS) OS미포함(프리도스) 판매유형 제조사기본상품 [화면] 화면 비율 1610 허상도 2560x160O(WQXGA) sRGB 10096 화면 회전각 180도 주사율 165Hz 밝기 40Onit 패널 표면 처리 안티글레어 패널 종류 IPS레벌 디스플레이 특징 광시아각 G-SYNC [CPU] CPU 제조사 AMD CPU 세분류 라이젠시 7 CPU 코드명 크라권 포인트 CPU 넘버 350 (5.0GHz) CPU 코어 욕타(이코어 CPU 스레드 16스레드 NPU 종류 AMD 라이젠 Al NPU 50TOPS [그래픽] GPU 종류 외장그래픽 GPU 제조사  엔비디아 GPU 집셋 RTX5o6O GPU 메모리 VRAM: 8GB Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\ASUS TUF Gaming A14 FA401KM-RG006 (SSD 1TB)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/ASUS TUF Gaming A14 FA401KM-RG006 (SSD 1TB)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/ASUS TUF Gaming A14 FA401KM-RG006 (SSD 1TB)/detail_scan.png",
+        "image_size": 102977,
+        "image_sha256": "7f18a59a77c232a28fea24dfb60bcbc5b9360fd1dd6263bb74b51c60326024b9"
+      }
     }
   }
 }

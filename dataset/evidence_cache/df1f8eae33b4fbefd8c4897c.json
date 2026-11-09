@@ -1,7 +1,7 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=25359881",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "AI-오토페인팅액자 머신러닝 1인용 RSZ",
       "name": "AI-오토페인팅액자 머신러닝 1인용 RSZ",
@@ -16,18 +16,32 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=25359881",
       "manufacturer": "AI오토페인팅액자, AI Auto Painting",
-      "model_name": "RSZ"
+      "model_name": ""
     },
     "norm_info": {
       "company_name": "AI오토페인팅액자, AI Auto Painting",
-      "model_name": "RSZ",
+      "model_name": "",
       "product_name": "AI-오토페인팅액자 머신러닝 1인용 RSZ"
     },
     "db_results": [],
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 컴퓨터비전 <span class=\"search_word\">AI</span> 이미지 보간(Interpolation) 기술을 활용한2D애니메이션 동화/컬러 및 스톱모션 연결프레임 이미지 자동생성 솔루션 개발 등 총 1건",
+      "detail": "NTIS에서 [AI AUTO PAINTING] 검색어로 조회한 결과, AI 관련 과제 1건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "컴퓨터비전 <span class=\"search_word\">AI</span> 이미지 보간(Interpolation) 기술을 활용한2D애니메이션 동화/컬러 및 스톱모션 연결프레임 이미지 자동생성 솔루션 개발",
+          "project_number": "1375027515",
+          "lead_company": "AI AUTO PAINTING",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -37,7 +51,7 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "AI오토페인팅액자, AI Auto Painting",
-    "model_param": "RSZ",
+    "model_param": "",
     "ocr_result": {}
   }
 }

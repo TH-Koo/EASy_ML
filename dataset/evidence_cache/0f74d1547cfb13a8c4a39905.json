@@ -1,0 +1,67 @@
+{
+  "url": "https://prod.danawa.com/info/?pcode=20359253",
+  "bundle_kwargs": {
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
+    "product_json": {
+      "title": "에코백스 디봇 T20 옴니 (일반구매)",
+      "name": "에코백스 디봇 T20 옴니 (일반구매)",
+      "description": "",
+      "ocr_text": "에코백스 디롯 T20 음니 (일반구매) 러불리가전 399,990원 무료배송 최저가 구매하기 가격비교 31 상품 상세정보 의견리뷰 1,861 소모품[액세서리 연관상품 극봇청: 오기 부문 Watch on Youlube 제조회사 에코백스 (제조사 웬사이트 바로가기) 등록년월 2023년 06월 품목 로봇청소기 용도 졸입+물걸레 집입력 6,O0OPa 센서 3D인식 조음파 범퍼 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies ToF",
+      "specs": {
+        "로봇청소기": "지원",
+        "흡입+물걸레": "지원",
+        "센서": "ToF , 3D인식 , 초음파 , 범퍼",
+        "흡입력": "6,000Pa",
+        "AI사물인식": "지원",
+        "문턱넘기": "2cm",
+        "카펫부스트": "지원",
+        "물걸레리프팅": "지원",
+        "물걸레": "회전형",
+        "[스테이션] 먼지비움": "지원",
+        "걸레세척(온수)": "지원",
+        "걸레건조(온풍)": "지원",
+        "자동충전": "지원",
+        "[규격] 색상": "화이트",
+        "크기(가로x세로x깊이)": "청소기 350x105x350mm 스테이션 448x578x430mm"
+      },
+      "raw_specs": "로봇청소기 / 흡입+물걸레 / 센서 : ToF , 3D인식 , 초음파 , 범퍼 / 흡입력 : 6,000Pa / AI사물인식 / 문턱넘기 : 2cm / 카펫부스트 / 물걸레리프팅 / 물걸레 : 회전형 / [스테이션] 먼지비움 / 걸레세척(온수) / 걸레건조(온풍) / 자동충전 / [규격] 색상 : 화이트 / 크기(가로x세로x깊이): 청소기 350x105x350mm 스테이션 448x578x430mm",
+      "category": "",
+      "url": "https://prod.danawa.com/info/?pcode=20359253",
+      "manufacturer": "에코백스, EcoPeaks",
+      "model_name": "T20"
+    },
+    "norm_info": {
+      "company_name": "에코백스, EcoPeaks",
+      "model_name": "T20",
+      "product_name": "에코백스 디봇 T20 옴니 (일반구매)"
+    },
+    "db_results": [],
+    "jodale_result": null,
+    "nipa_result": null,
+    "kaiac_result": null,
+    "ntis_result": null,
+    "iitp_result": null,
+    "patent_items_df": [
+      {
+        "title": "AI 특허 내역 없음 None"
+      }
+    ],
+    "cert_results": [],
+    "dart_result": null,
+    "target_company_name": "에코백스, EcoPeaks",
+    "model_param": "T20",
+    "ocr_result": {
+      "extracted_text": "에코백스 디롯 T20 음니 (일반구매) 러불리가전 399,990원 무료배송 최저가 구매하기 가격비교 31 상품 상세정보 의견리뷰 1,861 소모품[액세서리 연관상품 극봇청: 오기 부문 Watch on Youlube 제조회사 에코백스 (제조사 웬사이트 바로가기) 등록년월 2023년 06월 품목 로봇청소기 용도 졸입+물걸레 집입력 6,O0OPa 센서 3D인식 조음파 범퍼 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies ToF",
+      "ocr_device": "CPU",
+      "cache_hit": false,
+      "cache_path": "product_images/에코백스 디봇 T20 옴니 (일반구매)/detail_scan.ocr_cache.json",
+      "chunk_size": 2000,
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/에코백스 디봇 T20 옴니 (일반구매)/detail_scan.png",
+        "image_size": 438558,
+        "image_sha256": "e526ecc214d6c72b9463738c7170852e58d859dab34fb3d0185ba020bcb56b74"
+      }
+    }
+  }
+}

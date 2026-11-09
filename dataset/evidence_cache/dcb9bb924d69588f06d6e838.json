@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=74051327",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "레노버 리전 Y700 3세대 (램12GB,256GB)",
       "name": "레노버 리전 Y700 3세대 (램12GB,256GB)",
       "description": "",
-      "ocr_text": "레노버 리전 Y7OO 3세대 (캠12GB,256GB) AUCTION 598,990원 무료배승 최저가 구매하기 가격비교 12 상품 상세정보 의견리뷰 74 소모품|액세서리 뉴스커유니티 연관상품 메느3터  7UJ르세대 UB민치 데미Y 태책 LEGICN 3aoy3센대' n3 미내가비람' Mllfaluill ' LEGIoN TAB 의E물  Lennvo 가격이 많이 올컷네;? 레노버 Y7O3 언빨생 IYolllibe 다 포근데 막하나 아쉬요 리리_DD3세매) '매소   'G]:  남때} 제조회사 레노버 (제조사 웬사이트 바로가기) 등록년원 2025년 01민 대불릿연결 Wi-Fi 화면크기 8.8인치 디스플레이 IPS-LCD 해상도 2560x1600 퍽설 수(ppi) 343ppi 화면비율 16.10 쇠대주사물 165Hz 색감 DCI-P3 최대밝기 50Onits HDR규격 HDR1O 돌비비전 시스템 12GB 용량 256GB 저장매체 UFS4 이(내장) 외장메모리 microSD미i지원",
+      "ocr_text": "레노버 리전 Y7OO 3세대 (캠12GB,256GB) 오늘의집 599,000원 무료배승 최저가 구매하기 가격비교 12 상품 상세정보 의견리뷰 75 소모품|액세서리 뉴스커유니티 연관상품 드 점 _  [기스기대 @@민치 레미망 태체터 LEGIGN Vyao 3P' 3 미\" 거비드' LGioN TAB GEO  총inovo 가격이 많이 올컷네 ? 레노버 Y703 언박심 on Ioullube 다로으데 막하다 마쉬요 리린_ YDDa네매) '51   'Gny:  'ia 제조회사 레노버 (제조사 웬사이트 바로가기) 등록년월 2025년 01월 태들릿형태 태들릿PC 태들릿연결 Wi-Fi 화면크기 8.8인지 화면크기 8인치대 디스플레이 IPS-LCD 해상도 2560x1600 퍽실 수 ppi) 343 화면비율 16.10 최대주사율 165Hz 색감 DCI-P3 최대밝기 5oOnits 시스템 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "태블릿PC": "지원",
         "Wi-Fi": "지원",
@@ -38,11 +38,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=74051327",
       "manufacturer": "레노버, Lenober",
-      "model_name": "Y700"
+      "model_name": "IPS-LCD"
     },
     "norm_info": {
       "company_name": "레노버, Lenober",
-      "model_name": "Y700",
+      "model_name": "IPS-LCD",
       "product_name": "레노버 리전 Y700 3세대 (램12GB,256GB)"
     },
     "db_results": [
@@ -510,12 +510,12 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "레노버, Lenober",
-    "model_param": "Y700",
+    "model_param": "IPS-LCD",
     "ocr_result": {
-      "extracted_text": "레노버 리전 Y7OO 3세대 (캠12GB,256GB) AUCTION 598,990원 무료배승 최저가 구매하기 가격비교 12 상품 상세정보 의견리뷰 74 소모품|액세서리 뉴스커유니티 연관상품 메느3터  7UJ르세대 UB민치 데미Y 태책 LEGICN 3aoy3센대' n3 미내가비람' Mllfaluill ' LEGIoN TAB 의E물  Lennvo 가격이 많이 올컷네;? 레노버 Y7O3 언빨생 IYolllibe 다 포근데 막하나 아쉬요 리리_DD3세매) '매소   'G]:  남때} 제조회사 레노버 (제조사 웬사이트 바로가기) 등록년원 2025년 01민 대불릿연결 Wi-Fi 화면크기 8.8인치 디스플레이 IPS-LCD 해상도 2560x1600 퍽설 수(ppi) 343ppi 화면비율 16.10 쇠대주사물 165Hz 색감 DCI-P3 최대밝기 50Onits HDR규격 HDR1O 돌비비전 시스템 12GB 용량 256GB 저장매체 UFS4 이(내장) 외장메모리 microSD미i지원",
+      "extracted_text": "레노버 리전 Y7OO 3세대 (캠12GB,256GB) 오늘의집 599,000원 무료배승 최저가 구매하기 가격비교 12 상품 상세정보 의견리뷰 75 소모품|액세서리 뉴스커유니티 연관상품 드 점 _  [기스기대 @@민치 레미망 태체터 LEGIGN Vyao 3P' 3 미\" 거비드' LGioN TAB GEO  총inovo 가격이 많이 올컷네 ? 레노버 Y703 언박심 on Ioullube 다로으데 막하다 마쉬요 리린_ YDDa네매) '51   'Gny:  'ia 제조회사 레노버 (제조사 웬사이트 바로가기) 등록년월 2025년 01월 태들릿형태 태들릿PC 태들릿연결 Wi-Fi 화면크기 8.8인지 화면크기 8인치대 디스플레이 IPS-LCD 해상도 2560x1600 퍽실 수 ppi) 343 화면비율 16.10 최대주사율 165Hz 색감 DCI-P3 최대밝기 5oOnits 시스템 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\레노버 리전 Y700 3세대 (램12GB,256GB)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/레노버 리전 Y700 3세대 (램12GB,256GB)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }

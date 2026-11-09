@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=96369875",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "비브르 다루마 DVC820",
       "name": "비브르 다루마 DVC820",
       "description": "",
-      "ocr_text": "비브로 다루마 DVC820 11> 158,000원   무료배송 최저가 구매하기 가격비교 10 상품 상세정보 의견리뷰 22 연관상품 집입력(Pa) 25,OOOPa 급인력 25 OOOPa 소비전력 20OW 스테이선 먼지비움 랜드거치 액세서리오배터리거 청소기능 시청소 먼지감지센서 모티 BLDC모티 필터 워서불데파필터 필티단계 2단계여과 배터리 충전시간 5시간 배터리 내장형 배티리종류 리롭이온 배터리용량 2,200mAh 전안 14.8V 메인터러쉬 전방향회전 추가e러쉬 침구널러쉬 슬널러쉬 틈사 널러쉬 편의기능 디스플레이표시 배터리잔량표시",
+      "ocr_text": "비브로 다루마 DVC820 11> 158,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 22 연관상품 밤식 집입전용 필터단계 2단계여과 모터 BLDC모터 집입력 25,oo0Pa 배터리 충전시간 5시간 필터 뭐서불헤파필터 스테이션 먼지비움 충전 액세서리요배터리거 랜드거지 청소기능 시청소 먼지감지센서 소비전력 200W 배터리 배터리 내장형 출시연도 2025년형 배터리 배터리종류 리듬이온 배터리용량  2,2o0mAh Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "핸디스틱청소기": "지원",
         "무선": "지원",
@@ -156,11 +156,145 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: AI 바이브코딩을 활용한 중국어 교육용 웹앱 개발 및 프롬프트 프로토타입 설계 등 총 16건",
+      "detail": "NTIS에서 [VIBE] 검색어로 조회한 결과, AI 관련 과제 16건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "AI 바이브코딩을 활용한 중국어 교육용 웹앱 개발 및 프롬프트 프로토타입 설계",
+          "project_number": "2340060502",
+          "lead_company": "VIBE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "게임 에셋 리소스의 AI 활용을 위한 표준화 및 AI 기반 게임 제작 자동화 엔진 'F-1' 개발",
+          "project_number": "2420029304",
+          "lead_company": "VIBE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "인기 편향을 넘어 가치 연결로: 스몰 브랜드 공진화를 위한 뉴로-심볼릭(Neuro-Symbolic) 기반 멀티모달 가치 추론 및 TBL 공정 추천 프레임워크",
+          "project_number": "2710101949",
+          "lead_company": "VIBE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "지속 가능 개발 목표(SDGs) 실현을 위한 사물 인터넷(IoT) 활용 실천 지향 과학 교육 프로그램 개발 및 적용",
+          "project_number": "2340059850",
+          "lead_company": "VIBE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "성능구획 기반 세그멘탈 PSC 교량의 지능형 최적 설계 플랫폼 개발",
+          "project_number": "2340064249",
+          "lead_company": "VIBE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "지속 가능 개발 목표(SDGs) 실현을 위한 사물 인터넷(IoT) 활용 실천 지향 과학 교육 프로그램 개발 및 적용",
+          "project_number": "2340038701",
+          "lead_company": "VIBE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "게임 에셋 리소스의 AI 활용을 위한 표준화 및 AI 기반 게임 제작 자동화 엔진 'F-1' 개발",
+          "project_number": "2420025442",
+          "lead_company": "VIBE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "단말 인공지능 IoT 진동 모니터링 솔루션",
+          "project_number": "1425144805",
+          "lead_company": "VIBE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "단말 인공지능 IoT 진동 모니터링 솔루션",
+          "project_number": "1425152279",
+          "lead_company": "VIBE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI 기반 지체장애 노인 수중재활 및 통합 건강관리 시스템 구축 연구: 실시간 동작 분석 및 데이터 기반 LTC 연계를 중심으로",
+          "project_number": "2340062188",
+          "lead_company": "VIBE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "바이브 코딩 기반 인간?AI 협력 통번역 교육 모델의 설계와 검증: AI 피드백 활용 방안과 교수자 개입 가이드라인을 중심으로",
+          "project_number": "2340060587",
+          "lead_company": "VIBE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "바이브 코딩 기반 영어 학습 웹프로그램 개발의  교육적 효과와 상용화 모델 구축 연구",
+          "project_number": "2340060331",
+          "lead_company": "VIBE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI기반의 패션 이미지 분석 고도화를 위한  소비자 관점의 패션 브랜드 감성 예측 모형 개발 및 검증",
+          "project_number": "2710062970",
+          "lead_company": "VIBE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI기반의 패션 이미지 분석 고도화를 위한  소비자 관점의 패션 브랜드 감성 예측 모형 개발 및 검증",
+          "project_number": "1711187966",
+          "lead_company": "VIBE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI기반의 패션 이미지 분석 고도화를 위한  소비자 관점의 패션 브랜드 감성 예측 모형 개발 및 검증",
+          "project_number": "1711153603",
+          "lead_company": "VIBE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "미디어 바이브 편집 기술개발",
+          "project_number": "2570000010",
+          "lead_company": "VIBE",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
-        "title": "AI 특허 내역 없음 None"
+        "source_record_id": "1020250016816",
+        "일련번호": "1",
+        "출원번호": "1020250016816",
+        "발명의명칭(한글)": "인공지능 챗봇을 이용한 플랫폼 응답 시스템",
+        "출원일자": "2025-02-10",
+        "출원인": "주식회사 비브르",
+        "등록상태": "공개",
+        "초록": "본 발명의 인공지능 챗봇을 이용한 플랫폼 응답 시스템은, 사용자의 선호도 또는 요청 데이터를 분석하고 상기 사용자 맞춤형 응답을 제공하기 위한 응답 플랫폼을 제공하는 플랫폼 서버; 및 상기 응답 플랫폼이 출력되는 사용자 단말을 포함하고, 상기 플랫폼 서버는, 사용자의 입력 데이터를 기반으로 선호도 검사, 정보 탐색, 응답 데이터 설계, 자료 제공 및 사용자 인터페이스 모듈을 포함하며, 상기 입력된 정보에 기반하여 맞춤형 응답 데이터를 생성하고, 상기 응답 데이터를 시각화하여 사용자 단말로 제공할 수 있도록 가이드하는 인공지능 챗봇 모듈을 포함할 수 있다.",
+        "IPC": "G06Q 50/10|H04L 51/02|G06Q 50/50|G06F 16/3329|G06F 16/951|G06N 3/0475",
+        "CPC": "",
+        "relevance_type": "general_ai",
+        "match_confidence": 0.45,
+        "search_alias": "비브르",
+        "search_type": "AI 특허 [일반]",
+        "search_query": "AP=[비브르]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
+        "status": "verified"
       }
     ],
     "cert_results": [],
@@ -168,10 +302,10 @@
     "target_company_name": "비브르, Vibe",
     "model_param": "DVC820",
     "ocr_result": {
-      "extracted_text": "비브로 다루마 DVC820 11> 158,000원   무료배송 최저가 구매하기 가격비교 10 상품 상세정보 의견리뷰 22 연관상품 집입력(Pa) 25,OOOPa 급인력 25 OOOPa 소비전력 20OW 스테이선 먼지비움 랜드거치 액세서리오배터리거 청소기능 시청소 먼지감지센서 모티 BLDC모티 필터 워서불데파필터 필티단계 2단계여과 배터리 충전시간 5시간 배터리 내장형 배티리종류 리롭이온 배터리용량 2,200mAh 전안 14.8V 메인터러쉬 전방향회전 추가e러쉬 침구널러쉬 슬널러쉬 틈사 널러쉬 편의기능 디스플레이표시 배터리잔량표시",
+      "extracted_text": "비브로 다루마 DVC820 11> 158,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 22 연관상품 밤식 집입전용 필터단계 2단계여과 모터 BLDC모터 집입력 25,oo0Pa 배터리 충전시간 5시간 필터 뭐서불헤파필터 스테이션 먼지비움 충전 액세서리요배터리거 랜드거지 청소기능 시청소 먼지감지센서 소비전력 200W 배터리 배터리 내장형 출시연도 2025년형 배터리 배터리종류 리듬이온 배터리용량  2,2o0mAh Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\비브르 다루마 DVC820\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/비브르 다루마 DVC820/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }
