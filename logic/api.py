@@ -8,15 +8,15 @@ credibility judgment; collection functions must not discard evidence text.
 
 import os
 import re
+import html
 import sys
 import urllib.parse
 from datetime import datetime, timedelta
 
 import pandas as pd
 import requests
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, text
 
-import requests
 import xml.etree.ElementTree as ET
 
 
@@ -34,7 +34,7 @@ try:
 except ImportError:
     print("❌ 에러: config.py 파일을 찾을 수 없습니다.")
     config = None
-    COMMON_DATAGO_KEY = KIPRIS_KEY = NIPA_KEY = ""
+    COMMON_DATAGO_KEY = KIPRIS_KEY = NIPA_KEY = NTIS_API_KEY = ""
 
 # DB 접속 문자열은 코드에 두지 않는다: 환경변수 FIDES_DB_URL → config.DB_URL.
 DB_URL = os.environ.get("FIDES_DB_URL") or getattr(config, "DB_URL", None)
@@ -62,6 +62,53 @@ def _record_text(row):
     if not isinstance(row, dict):
         return str(row or "")
     return " ".join(str(v) for v in row.values() if v not in (None, ""))
+
+
+# =====================================================================
+# NTIS validation helpers (integrated into this module)
+# =====================================================================
+
+
+
+def clean_markup(value: object) -> str:
+    value = html.unescape(str(value or ""))
+    value = re.sub(r"<[^>]*>", " ", value)
+    return " ".join(value.split())
+
+
+def normalize_organization(value: object) -> str:
+    value = clean_markup(value).lower()
+    value = value.replace("㈜", "").replace("（株）", "")
+    value = re.sub(r"\(\s*주\s*\)|\(\s*유\s*\)|주식회사|유한회사|\bco\.?\s*,?\s*ltd\.?\b", "", value)
+    return re.sub(r"[^0-9a-z가-힣]", "", value)
+
+
+def same_organization(actual: object, expected: object) -> bool:
+    actual_norm = normalize_organization(actual)
+    expected_norm = normalize_organization(expected)
+    return bool(actual_norm and expected_norm and actual_norm == expected_norm)
+
+
+_AI_PHRASES = (
+    "인공지능", "딥러닝", "머신러닝", "신경망", "자연어처리", "음성인식",
+    "음성 인식", "객체인식", "객체 인식", "이미지인식", "이미지 인식",
+    "컴퓨터비전", "컴퓨터 비전", "생성형 ai", "멀티모달 ai", "ai 기반",
+    "ai 기술", "ai 모델", "ai 솔루션", "온디바이스 ai",
+    "artificial intelligence", "deep learning", "machine learning",
+    "neural network", "computer vision", "speech recognition",
+    "object detection", "natural language processing", "generative ai",
+)
+
+
+def is_ai_project(text: object) -> bool:
+    normalized = clean_markup(text).lower()
+    compact = re.sub(r"\s+", "", normalized)
+    return any(re.sub(r"\s+", "", phrase) in compact for phrase in _AI_PHRASES)
+
+
+def project_identity(project_number: object, title: object) -> str:
+    number = re.sub(r"\s+", "", str(project_number or ""))
+    return number or re.sub(r"\W+", "", clean_markup(title).lower())
 
 
 # =====================================================================
@@ -308,14 +355,8 @@ def verify_ntis_rnd(company_aliases: list, product_keyword: str = "") -> dict:
             "evidence": None
         }
 
-    ai_keywords = {
-        "인공지능", "artificial intelligence", "딥러닝", "deep learning",
-        "머신러닝", "machine learning", "생성형 ai", "generative ai",
-        "온디바이스 ai", "ai 모델", "ai 기반", "ai 기술", "ai 솔루션",
-        "ai 프로세싱", "멀티모달 ai", "신경망", "neural network",
-        "컴퓨터 비전", "computer vision", "음성인식", "이미지 인식",
-        "객체 인식", "사물인식",
-    }
+    # 회사 검색어가 과제명에 포함되었다고 수행기관으로 인정하지 않는다.
+    # 실제 소속기관은 HIT/ResearchAgency/Name 응답 필드에서 읽는다.
 
     url = "https://www.ntis.go.kr/rndopen/openApi/public_project"
     raw_key = NTIS_API_KEY.strip()
@@ -329,7 +370,7 @@ def verify_ntis_rnd(company_aliases: list, product_keyword: str = "") -> dict:
                 "apprvKey": raw_key,
                 "collection": "project",
                 "SRWR": name,
-                "returnType": "json",
+                "returnType": "xml",
                 "startPosition": 1,
                 "displayCnt": 50
             }
@@ -386,28 +427,45 @@ def verify_ntis_rnd(company_aliases: list, product_keyword: str = "") -> dict:
                     get_text("./Effect/Full")
                 ]).lower()
 
-                if not any(keyword in searchable_text for keyword in ai_keywords):
+                if not is_ai_project(searchable_text):
                     continue
 
-                clean_kw = re.sub(r'[^가-힣a-zA-Z0-9\s]', ' ', product_keyword)
-                category_tokens = [k.strip() for k in clean_kw.split() if len(k.strip()) >= 2]
-                
-                is_category_matched = False
-                if category_tokens:
-                    is_category_matched = any(token.lower() in searchable_text for token in category_tokens)
-
                 project_number = get_text("./ProjectNumber")
-                project_id = project_number or project_name
+                # NTIS 과제 검색 응답에서 실제 연구기관을 추출한다.
+                # 검색어(name)를 lead_company에 복사하지 않는다.
+                research_agency = (
+                    get_text("./ResearchAgency/Name")
+                    or get_text(".//ResearchAgency/Name")
+                )
+                company_verified = same_organization(research_agency, name)
 
+                # 실제 연구 수행기관이 검색한 기업과 다르면 제외
+                if not company_verified:
+                    continue
+
+                project_name = clean_markup(project_name)
+                project_id = project_identity(project_number, project_name)
+                if not project_id:
+                    continue
+
+                # 'product_ai'를 카테고리 단어만으로 확정하지 않는다.
+                # 실제 AI 기능 일치 판정은 온톨로지 패턴으로 수행한다.
+                project = {
+                    "project_name": project_name,
+                    "project_number": project_number or None,
+                    "source_record_id": project_number or project_id,
+                    "research_agency": research_agency,
+                    "lead_company": research_agency,
+                    "searched_name": name,
+                    "company_verified": company_verified,
+                    "is_ai_project": True,
+                    "project_summary": clean_markup(searchable_text)[:2000],
+                    "relevance_type": "general_ai",
+                    "status": "verified",
+                }
+                prior = valid_projects.get(project_id)
                 if project_id not in valid_projects:
-                    valid_projects[project_id] = {
-                        "project_name": project_name,
-                        "project_number": project_number or None,
-                        "lead_company": name,
-                        "relevance_type": "product_ai" if is_category_matched else "general_ai",
-                        "status": "verified"
-                    }
-
+                    valid_projects[project_id] = project
         except requests.RequestException as e:
             api_errors.append(f"{name}: 요청 오류 ({type(e).__name__})")
         except Exception as e:
@@ -419,12 +477,12 @@ def verify_ntis_rnd(company_aliases: list, product_keyword: str = "") -> dict:
     
     if projects:
         title = projects[0]["project_name"]
-        company = projects[0]["lead_company"]
+        verified_count = sum(bool(row["company_verified"]) for row in projects)
 
         return {
-            "score": 20,
-            "evidence": f"NTIS R&D AI 관련 과제 확인: {title} 등 총 {len(projects)}건",
-            "detail": f"NTIS에서 [{company}] 검색어로 조회한 결과, AI 관련 과제 {len(projects)}건이 확인되었습니다.",
+            "score": 0,  # 점수는 단일 온톨로지 엔진에서만 산출
+            "evidence": f"NTIS AI 관련 과제 검색: {title} 등 총 {len(projects)}건",
+            "detail": f"NTIS AI 관련 과제 {len(projects)}건 검색, 수행기관 일치 확인 {verified_count}건. 기술 관련성은 별도 검증합니다.",
             "records": projects,
             "status": "verified"
         }
