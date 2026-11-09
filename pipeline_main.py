@@ -832,9 +832,6 @@ def run_full_pipeline(url: str):
     # 화면과 같은 표시 점수(v2)를 앞에 보여 준다. 판정·저장은 원점수 ACCS 로 한다.
     print(f"⭐ 최종 AI 주장 신뢰도 : {display_score(analysis_result.accs):05.2f} / 100 점"
           f"  (원점수 ACCS {analysis_result.accs:05.2f})")
-    # 화면과 같은 표시 점수(v2)를 앞에 보여 준다. 판정·저장은 원점수 ACCS 로 한다.
-    print(f"⭐ 최종 AI 주장 신뢰도 : {display_score(analysis_result.accs):05.2f} / 100 점"
-          f"  (원점수 ACCS {analysis_result.accs:05.2f})")
 
     verdict_icon = "🟢" if "신뢰" in analysis_result.verdict else "🟡" if "검토" in analysis_result.verdict else "🔴"
     print(f"{verdict_icon} 최종 판정 : {analysis_result.verdict} (위험도: {analysis_result.risk_level})")
