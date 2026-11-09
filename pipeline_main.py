@@ -31,6 +31,7 @@ from logic.api import (
     verify_iitp,
 )
 
+from fides_scoring import display_score
 from fides_integration import (
     infer_product_type,
     load_weight_predictor,
@@ -635,12 +636,17 @@ def run_full_pipeline(url: str):
     official_company = resolve_real_company_name(norm_result.get("raw_company", ""), scraped_item.get("model_name", ""))
     official_model = (
         _spec_table_model(scraped_item)
+        or norm_result.get("final_norm_model")
         or resolve_model_name(scraped_item.get("model_name", ""), ocr_text)
-        or norm_result.get("final_norm_model", "미확인")
+        or "미확인"
     )
     product_category = scraped_item.get("category", "") if isinstance(scraped_item.get("category"), str) else ""
     llm_aliases = scraped_item.get("aliases", [])
-    search_payload = generate_tailored_search_payload(official_company, llm_aliases)
+    # Preserve the crawler's original manufacturer and deterministic aliases.
+    # Never inject historical unreviewed Ollama cache values into agency searches.
+    raw_company = norm_result.get("raw_company", "")
+    safe_aliases = [raw_company] if raw_company and raw_company != "미확인" else []
+    search_payload = generate_tailored_search_payload(official_company, safe_aliases)
 
     print(f"\n 분석 대상: {official_company} / {official_model}")
     print("⏳ 로컬 DB 및 다중 API 통신을 병렬로 진행합니다...\n")
@@ -815,7 +821,9 @@ def run_full_pipeline(url: str):
     print(f"[채널 가중치] HES {w.get('hes', 0):.3f} / TES {w.get('tes', 0):.3f} / CES {w.get('ces', 0):.3f}")
     print(f"└ 방식: {weighting['method']} | 모델 버전: {weighting['model_version'] or '없음(규칙 기반)'}")
     print("-" * 85)
-    print(f"⭐ 최종 AI 주장 신뢰도 (ACCS) : {analysis_result.accs:05.2f} / 100 점")
+    # 화면과 같은 표시 점수(v2)를 앞에 보여 준다. 판정·저장은 원점수 ACCS 로 한다.
+    print(f"⭐ 최종 AI 주장 신뢰도 : {display_score(analysis_result.accs):05.2f} / 100 점"
+          f"  (원점수 ACCS {analysis_result.accs:05.2f})")
 
     verdict_icon = "🟢" if "신뢰" in analysis_result.verdict else "🟡" if "검토" in analysis_result.verdict else "🔴"
     print(f"{verdict_icon} 최종 판정 : {analysis_result.verdict} (위험도: {analysis_result.risk_level})")
@@ -856,5 +864,5 @@ def run_full_pipeline(url: str):
 
 
 if __name__ == "__main__":
-    target_url = "https://prod.danawa.com/info/?pcode=75854861"
+    target_url = "https://prod.danawa.com/info/?pcode=56062199"
     run_full_pipeline(target_url)

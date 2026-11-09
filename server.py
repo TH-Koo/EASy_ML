@@ -38,6 +38,7 @@ import pandas as pd
 from google import genai
 from google.genai import types as genai_types
 
+
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logic'))
 
 from crawler import get_product_data
@@ -45,7 +46,9 @@ from ocr_analyzer import analyze_ai_washing
 from normalizer import normalize_data, expand_company_aliases, is_valid_model_number
 from patent_scraper import get_company_patent_data
 from llm_resolver import resolve_real_company_name, resolve_model_name
-from dart_scraper import check_dart_ai_washing  # 🔥 DART 스크래퍼 추가
+from dart_scraper import check_dart_ai_washing 
+from fides_scoring import display_score
+from logic.api import verify_ntis_rnd
 
 """
 설정은 config.py 하나에서만 읽는다 (gitignore 되어 있다).
@@ -467,12 +470,15 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
             f_tipa = executor.submit(check_tipa_ai, api_company)
             f_koraia = executor.submit(check_koraia, api_company)
             f_dart = executor.submit(check_dart_ai_washing, api_company, model_param) # 🔥 DART 추가
-            
+            f_ntis = executor.submit(verify_ntis_rnd,[api_company], product_category
+)
+
             db_results_df = f_db.result()
             jodale_result = f_jodale.result()
             tipa_result = f_tipa.result()
             koraia_result = f_koraia.result()
             dart_result = f_dart.result()
+            ntis_result = f_ntis.result()
 
         # Step 5: 특허 + GS 인증
         raw_specs_str = product_json.get('raw_specs', '')
@@ -509,6 +515,7 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
             product_json=product_for_ontology,
             norm_info=norm_info,
             db_results=db_records,
+            ntis_result=ntis_result,
             # 원본 dict를 전달해 상태·레코드 ID·상세 근거를 보존한다.
             jodale_result=jodale_result,
             tipa_result=tipa_result,
@@ -534,6 +541,7 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
             f"ECS={analysis_result.ecs}, verdict={analysis_result.verdict}, "
             f"weights={weighting['weights']}, model_version={weighting['model_version']}"
         )
+        log_claim_breakdown(analysis_result.capability_scores)
 
         # 📊 Step 7: 프론트엔드용 JSON 결과 조립
         push(6, "분석 완료 및 결과 반환")
@@ -593,6 +601,7 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
         }
 
         _tasks[task_id]["events"].append({"type": "result", "data": result_payload})
+        save_result_cache(task_id, result_payload)
 
         # 📝 히스토리 저장 (로그인 사용자에 한해서만)
         if user_id:
@@ -671,6 +680,10 @@ def build_claims(capability_scores: list) -> list:
     몇 건인지까지만 알 뿐 "어느 주장에 근거가 없는가"를 말할 수 없었는데,
     그게 이 서비스의 결론이다.
 
+    capability_scores 에는 온톨로지의 기능 전부(28개)가 들어 있다. 광고에서
+    실제로 걸린 것(positive_claim)만 주장이다. 거르지 않으면 모니터 결과에
+    "AI 건조 코스 추천" 같은 남의 기능이 광고한 기능처럼 나온다.
+
     판정 기준:
         근거 소스가 하나도 없으면            unsupported
         있으나 필수 요건을 다 못 채웠으면      partial
@@ -679,6 +692,8 @@ def build_claims(capability_scores: list) -> list:
     claims = []
     for i, c in enumerate(capability_scores or []):
         if not isinstance(c, dict):
+            continue
+        if not c.get("positive_claim", True):
             continue
 
         sources = [s for s in (c.get("supporting_sources") or []) if s]
@@ -712,6 +727,39 @@ def build_claims(capability_scores: list) -> list:
             "note": " · ".join(missing) if missing else None,
         })
     return claims
+
+
+def log_claim_breakdown(capability_scores: list) -> None:
+    """광고에서 잡힌 주장마다 판정과 세부점수를 한 줄씩 찍는다."""
+    claims = {c["id"]: c for c in build_claims(capability_scores)}
+    roll = claims_rollup(claims.values())
+    print(f"[Claims] 확인 {roll['verified']} · 일부 {roll['partial']} · 미확인 {roll['missing']}")
+    for c in capability_scores or []:
+        claim = claims.get(c.get("capability_id"))
+        if claim is None:
+            continue
+        print(
+            f"  {claim['status']:<11} {c.get('capability_name_ko')} "
+            f"final={c.get('final_score')} claim={c.get('base_claim_score')} "
+            f"req={c.get('required_fulfillment_ratio')} opt={c.get('optional_fulfillment_ratio')} "
+            f"src={','.join(c.get('supporting_sources') or []) or '-'} "
+            f"missing={' · '.join(c.get('missing_required_components') or []) or '-'}"
+        )
+
+
+# DB 없이도 분석 결과를 다시 볼 수 있게 로컬에 남긴다. result_json 과 같은 모양이다.
+RESULT_CACHE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logs", "analysis")
+
+
+def save_result_cache(task_id: str, result_payload: dict) -> None:
+    try:
+        os.makedirs(RESULT_CACHE_DIR, exist_ok=True)
+        name = f"{datetime.now():%Y%m%d_%H%M%S}_{task_id[:8]}.json"
+        with open(os.path.join(RESULT_CACHE_DIR, name), "w", encoding="utf-8") as f:
+            json.dump(result_payload, f, ensure_ascii=False, indent=2, default=str)
+        print(f"[Cache] saved {name}")
+    except Exception as ce:
+        print(f"[Cache] save failed: {ce}")
 
 
 def claims_rollup(claims: list) -> dict:
@@ -886,9 +934,14 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
             "ai_claims_count": len(top_caps) or len(reasons),
             "analysis_duration_seconds": round(duration, 1),
             "analysis_date": datetime.now().date().isoformat(),
+            # 결과 화면의 '다나와에서 보기' 바로가기. 저장된 기록에도 같은 값이 들어 있다.
+            "url": payload.get("url", ""),
         },
         "scores": {
-            "overall": accs,
+            # 화면에는 표시 점수(v2)를, 판정·비교용 원점수는 overall_raw 로 같이 싣는다.
+            # DB·result_json 에는 원점수가 남으므로 옛 기록도 여기서 같은 변환을 탄다.
+            "overall": round(display_score(accs), 1),
+            "overall_raw": accs,
             "overall_label": overall_label,
             "text_credibility": tes,
             "verification_credibility": hes,
@@ -1138,7 +1191,7 @@ async def get_history(authorization: Optional[str] = Header(None)):
                 "product_name": r[2] or "알 수 없음",
                 "company_name": r[3] or "",
                 "verdict":      r[4] or "",
-                "accs_score":   round(r[5] or 0, 1),
+                "accs_score":   round(display_score(r[5] or 0), 1),
                 "risk_level":   r[6] or "",
                 "created_at":   r[7].strftime("%Y.%m.%d %H:%M") if r[7] else "",
                 "category":     category,
@@ -1445,7 +1498,7 @@ async def compare_items(body: CompareRequest, authorization: Optional[str] = Hea
                     "id":           row[0],
                     "product_name": row[1] or "알 수 없음",
                     "company_name": row[2] or "",
-                    "accs_score":   round(float(row[3] or 0), 1),
+                    "accs_score":   round(display_score(row[3] or 0), 1),
                     "verdict":      row[4] or "",
                     "risk_level":   row[5] or "",
                     "created_at":   row[7].strftime("%Y.%m.%d") if row[7] else "",
@@ -1518,7 +1571,9 @@ async def get_dashboard(authorization: Optional[str] = Header(None)):
             ).fetchall()
 
         total       = int(s[0] or 0)
-        avg_score   = round(float(s[1]), 1) if s[1] is not None else None
+        # DB 에는 원점수가 있다. 변환이 단조라 최소·최대는 정확하고, 평균은
+        # "원점수 평균의 표시 점수"라 표시 점수 평균과 조금 다를 수 있다.
+        avg_score   = round(display_score(s[1]), 1) if s[1] is not None else None
         ok_count    = int(s[2] or 0)
         warn_count  = int(s[3] or 0)
         danger_count= int(s[4] or 0)
@@ -1535,9 +1590,9 @@ async def get_dashboard(authorization: Optional[str] = Header(None)):
                 {
                     "company_name": r[0],
                     "count":        int(r[1]),
-                    "avg_score":    round(float(r[2]), 1) if r[2] is not None else 0,
-                    "min_score":    round(float(r[3]), 1) if r[3] is not None else 0,
-                    "max_score":    round(float(r[4]), 1) if r[4] is not None else 0,
+                    "avg_score":    round(display_score(r[2]), 1) if r[2] is not None else 0,
+                    "min_score":    round(display_score(r[3]), 1) if r[3] is not None else 0,
+                    "max_score":    round(display_score(r[4]), 1) if r[4] is not None else 0,
                 }
                 for r in company_rows
             ],
@@ -1548,7 +1603,7 @@ async def get_dashboard(authorization: Optional[str] = Header(None)):
                     "product_name": r[2] or "알 수 없음",
                     "company_name": r[3] or "",
                     "verdict":      r[4] or "",
-                    "accs_score":   round(float(r[5] or 0), 1),
+                    "accs_score":   round(display_score(r[5] or 0), 1),
                     "risk_level":   r[6] or "",
                     "created_at":   r[7].strftime("%Y.%m.%d %H:%M") if r[7] else "",
                 }
