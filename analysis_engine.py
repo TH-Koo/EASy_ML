@@ -1322,6 +1322,11 @@ class OntologyAnalysisEngine:
             evidence_match_type = normalize_text(mapping.get("evidence_match_type", ""))
 
             for record in records:
+                # NTIS verifies the manufacturer's general AI R&D capability,
+                # not an individual product's required hardware/software component.
+                # Count it once at the TES channel level instead of here.
+                if record.source_type == "ntis":
+                    continue
                 if record.source_type != source and not (
                     (record.source_type == "ntis" and source in {"kipris", "dart", "nipa"})
                     or (record.source_type in {"net", "sandbox"} and source in {"gs", "nep", "kc", "rra"})
@@ -1762,6 +1767,35 @@ class OntologyAnalysisEngine:
     # Channel scores and ACCS
     # ------------------------------------------------------------------
 
+    @staticmethod
+    def _ntis_company_projects(records: Sequence[EvidenceRecord]) -> List[EvidenceRecord]:
+        """Verified company AI projects, deduplicated by research topic.
+
+        NTIS may return annual rows with distinct project numbers but the same
+        project title. Those rows represent one company capability for scoring.
+        This deliberately does NOT require a product/model or capability match.
+        """
+        unique: Dict[str, EvidenceRecord] = {}
+        for record in records:
+            if (
+                record.source_type != "ntis"
+                or record.status != "verified"
+                or not record.matched_company
+                or record.meta.get("organization_verified") is not True
+                or record.meta.get("is_ai_project") is not True
+                or not record.meta.get("research_agency")
+            ):
+                continue
+            # A year-specific project number must not split the same AI topic.
+            title = clean_markup(record.meta.get("title") or record.title)
+            key = compact_text(title)
+            if not key:
+                # Only use an official identifier if title data is missing.
+                key = str(record.source_record_id or record.evidence_id).strip()
+            if key:
+                unique.setdefault(key, record)
+        return list(unique.values())
+
     def _calculate_channel_scores(
         self,
         used_caps: List[CapabilityScore],
@@ -1780,6 +1814,7 @@ class OntologyAnalysisEngine:
             for cap in used_caps
             for contribution in self._contributions_by_cap.get(cap.capability_id, [])
         ]
+        ntis_projects = self._ntis_company_projects(records)
 
         result: Dict[str, Dict[str, Any]] = {}
         for channel in ("hes", "tes", "ces"):
@@ -1920,9 +1955,11 @@ class OntologyAnalysisEngine:
                     ]
 
                 elif channel == "tes":
+                    # NTIS has its own bounded company-capability score below.
+                    # Exclude it here to prevent counting it twice.
                     fallback = [
                         r for r in records
-                        if r.source_type in self.TES_SOURCES
+                        if r.source_type in self.TES_SOURCES and r.source_type != "ntis"
                     ]
 
                 else:
@@ -1976,14 +2013,31 @@ class OntologyAnalysisEngine:
 
             
 
+            # Independent, bounded manufacturer AI capability evidence.
+            # 1 distinct topic: 22 TES points; 2: 26; 3+: 30.
+            # Combine via the remaining score headroom, not raw addition.
+            # AI research is manufacturer-level evidence even when the product's
+            # precise functional claim is not covered by the ontology patterns.
+            ntis_company_score = 0.0
+            non_ntis_score = score
+            active_ntis = ntis_projects if channel == "tes" else []
+            if active_ntis:
+                ntis_company_score = min(30.0, 22.0 + 4.0 * (len(active_ntis) - 1))
+                score = clamp(score + (100.0 - score) * ntis_company_score / 100.0)
+
             source_counts: Dict[str, int] = {}
             relation_counts: Dict[str, int] = {}
             for item in selected:
                 source_counts[item.source_type] = source_counts.get(item.source_type, 0) + 1
                 relation_counts[item.relation_type] = relation_counts.get(item.relation_type, 0) + 1
-            total = len(selected)
+            for record in active_ntis:
+                source_counts["ntis"] = source_counts.get("ntis", 0) + 1
+                relation_counts["company_capability"] = relation_counts.get("company_capability", 0) + 1
+            total = len(selected) + len(active_ntis)
             directness = (
-                sum(item.relation_weight for item in selected) / total if total else 0.0
+                (sum(item.relation_weight for item in selected)
+                 + sum(self._relation_weight("company_capability") for _ in active_ntis)) / total
+                if total else 0.0
             )
             max_source_share = max(source_counts.values()) / total if total else 0.0
             recency_values = [
@@ -1994,12 +2048,16 @@ class OntologyAnalysisEngine:
                 for item in selected
                 if item.evidence_id in record_by_id
             ]
+            recency_values.extend(
+                _recency_score(record.published_at or record.meta.get("date"))
+                for record in active_ntis
+            )
             avg_recency = (
                 sum(recency_values) / len(recency_values) if recency_values else 0.50
             )
             result[channel] = {
                 "score": round(score, 2),
-                "active": bool(selected and score > 0),
+                "active": bool((selected or active_ntis) and score > 0),
                 "evidence_score": round(evidence_score, 2),
                 "capability_score": round(capability_score, 2),
                 "evidence_count": total,
@@ -2010,8 +2068,17 @@ class OntologyAnalysisEngine:
                 "max_source_share": round(max_source_share, 4),
                 "avg_recency": round(avg_recency, 4),
                 "supporting_capabilities": supporting_cap_ids,
-                "evidence_ids": [item.evidence_id for item in selected],
+                "evidence_ids": [item.evidence_id for item in selected]
+                                + [record.evidence_id for record in active_ntis],
             }
+            if channel == "tes":
+                result[channel].update({
+                    "non_ntis_score": round(non_ntis_score, 2),
+                    "ntis_company_capability_score": round(ntis_company_score, 2),
+                    "ntis_unique_project_count": len(active_ntis),
+                    "ntis_raw_record_count": sum(r.source_type == "ntis" for r in records),
+                    "ntis_scoring_method": "bounded_company_ai_research_headroom",
+                })
         return result
 
     def _contribution_channel(self, item: EvidenceContribution) -> str:
@@ -2974,7 +3041,19 @@ def bundle_to_evidence_records(
             # 'lead_company' from old caches contained only the search keyword.
             # Require an independent, actually returned organization field.
             agency = row.get("research_agency") or row.get("performing_organization")
-            if not same_organization(agency, target_company_name):
+            # Some manufacturers have formally equivalent Korean/English aliases
+            # (e.g. LG전자 / 엘지전자), which strict string matching rejects.
+            # Trust the crawler's verification only when the returned official
+            # agency also matches the actual searched alias, not just a flag.
+            verified_organization = (
+                same_organization(agency, target_company_name)
+                or (
+                    bool(target_company_name)
+                    and row.get("company_verified") is True
+                    and same_organization(agency, row.get("searched_name"))
+                )
+            )
+            if not verified_organization:
                 continue
 
             project_text = clean_markup(
@@ -3000,13 +3079,15 @@ def bundle_to_evidence_records(
                 normalized_row, "ntis", target_company_name, model_param,
                 "NTIS R&D 과제", assume_company_filtered=False,
             )
-            is_exact_model = _model_match(model_param, project_text)
+            # NTIS is manufacturer-level technical capability evidence even
+            # when a model token coincidentally appears in the project text.
+            # Do not present it as proof of the product's implementation.
             record.matched_company = True
-            record.matched_model = is_exact_model
-            record.matched_product = is_exact_model
-            record.relation_type = "direct_model" if is_exact_model else "company_capability"
-            record.scope = "model" if is_exact_model else "company"
-            record.match_confidence = 0.65 if is_exact_model else 0.35
+            record.matched_model = False
+            record.matched_product = False
+            record.relation_type = "company_capability"
+            record.scope = "company"
+            record.match_confidence = 0.72
             records.append(record)
 
     if iitp_result and isinstance(iitp_result, dict):

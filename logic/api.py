@@ -370,7 +370,7 @@ def verify_ntis_rnd(company_aliases: list, product_keyword: str = "") -> dict:
                 "apprvKey": raw_key,
                 "collection": "project",
                 "SRWR": name,
-                "returnType": "json",
+                "returnType": "xml",
                 "startPosition": 1,
                 "displayCnt": 50
             }
@@ -438,6 +438,11 @@ def verify_ntis_rnd(company_aliases: list, product_keyword: str = "") -> dict:
                     or get_text(".//ResearchAgency/Name")
                 )
                 company_verified = same_organization(research_agency, name)
+
+                # 실제 연구 수행기관이 검색한 기업과 다르면 제외
+                if not company_verified:
+                    continue
+
                 project_name = clean_markup(project_name)
                 project_id = project_identity(project_number, project_name)
                 if not project_id:
@@ -459,9 +464,8 @@ def verify_ntis_rnd(company_aliases: list, product_keyword: str = "") -> dict:
                     "status": "verified",
                 }
                 prior = valid_projects.get(project_id)
-                if prior is None or (not prior["company_verified"] and company_verified):
+                if project_id not in valid_projects:
                     valid_projects[project_id] = project
-
         except requests.RequestException as e:
             api_errors.append(f"{name}: 요청 오류 ({type(e).__name__})")
         except Exception as e:
