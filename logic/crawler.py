@@ -21,7 +21,7 @@ import json
 import os
 import re
 import time
-from typing import Any, Dict, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 from urllib.parse import parse_qs, urlparse
 
 from selenium import webdriver
@@ -556,6 +556,20 @@ def _extract_specs(driver) -> Tuple[Dict[str, str], str]:
     return specs, raw_specs
 
 
+def _extract_category(driver) -> List[str]:
+    """상단 분류 경로(예: 태블릿/모바일/디카 > 이어폰/헤드폰 > 무선 이어폰)를 단계별로 읽는다.
+
+    예전에는 스펙 원문의 첫 토막을 카테고리로 썼는데, 스펙 표가 있는 상품은 원문이
+    페이지 본문 전체로 채워져 다나와 상단 메뉴 글자가 카테고리로 들어갔다.
+    """
+    try:
+        buttons = driver.find_elements(By.CSS_SELECTOR, ".location_wrap .loca_item > button.arw")
+        levels = [re.sub(r"\s+", " ", b.text).strip() for b in buttons]
+        return [t for t in levels if t and t != "선택하세요"]
+    except Exception:
+        return []
+
+
 # =====================================================================
 # 공개 함수
 # =====================================================================
@@ -605,6 +619,11 @@ def get_product_data(url: str) -> Optional[Dict[str, Any]]:
         product_data["model_name"] = model_name
 
         print(f"상품명: {model_name}")
+
+        levels = _extract_category(driver)
+        if levels:
+            product_data["category"] = levels[-1]
+            product_data["category_path"] = " > ".join(levels)
 
         _click_more_button_if_exists(driver)
         _slow_scroll_to_bottom(driver)

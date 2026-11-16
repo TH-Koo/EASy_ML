@@ -272,22 +272,24 @@ export default function DashboardPage() {
                     v: String(summary.summary.total),
                     sub: "전체 기록",
                   },
+                  /* 결과 화면의 판정 3단계(근거 충분 · 일부 확인 · 미확인)와 같은 기준.
+                     서버가 엔진 판정 문구로 센 값이다 — 점수 구간으로 다시 나누지 않는다. */
                   {
-                    k: "근거 부족",
+                    k: "근거 미확인",
                     v: String(summary.summary.danger_count),
-                    sub: "ACCS 35 미만",
+                    sub: "위험 구간 판정",
                     color: "var(--color-missing)",
                   },
                   {
-                    k: "검토 필요",
+                    k: "근거 일부 확인",
                     v: String(summary.summary.warn_count),
-                    sub: "35 – 60",
+                    sub: "주의 구간 판정",
                     color: "var(--color-partial)",
                   },
                   {
-                    k: "근거 확인",
+                    k: "근거 충분",
                     v: String(summary.summary.ok_count),
-                    sub: "60 이상",
+                    sub: "양호 구간 판정",
                     color: "var(--color-verified)",
                   },
                 ].map((s) => (

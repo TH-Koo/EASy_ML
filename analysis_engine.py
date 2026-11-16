@@ -2527,15 +2527,10 @@ class OntologyAnalysisEngine:
     ) -> Tuple[str, str]:
         thresholds = self.engine_config.thresholds
 
-        #if not positive_caps:
-        #    return "AI 기능 주장 미확인 / Not Evaluated", "판정 제외"
-
-        #if not positive_caps:
-        #    return "AI 기능 주장 미확인 / Not Evaluated", "판정 제외"
+        # 인정된 AI 주장이 없어도 '판정 제외'로 빼지 않고 ACCS 구간으로 판정한다
+        # (팀 결정, 2026-11-16. 이전 규칙은 "AI 기능 주장 미확인 / Not Evaluated").
         if not positive_caps:
-            print("[DEMO WARNING] AI 기능 미탐지 - ACCS 기반 임시 판정")
-
-            print("[DEMO WARNING] AI 기능 미탐지 - ACCS 기반 임시 판정")
+            print("[Verdict] 인정된 AI 주장 없음 - ACCS 구간으로 판정")
 
         if (
             accs >= thresholds.credible

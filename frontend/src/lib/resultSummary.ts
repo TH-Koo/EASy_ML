@@ -101,14 +101,24 @@ export function headline(data: AnalysisResult): string {
       ? `광고한 AI 기능 ${n}개를 공공 기록과 맞춰 봤어요`
       : "광고에서 AI 기능 주장을 찾지 못했어요";
   }
-  const { verified } = countByStatus(claims);
-  if (verified === claims.length) {
-    return `광고한 AI 기능 ${claims.length}개 모두 공공 기록으로 확인됐어요`;
+  // 위 큰 판정(근거 충분 등)은 점수 구간이라, 여기서 "확인된 게 없어요"처럼
+  // 판정과 반대로 읽히는 말을 하지 않는다. '일부' 근거가 있으면 그 사실을 말한다.
+  const { verified, partial } = countByStatus(claims);
+  const n = claims.length;
+  if (verified === n) {
+    return `광고한 AI 기능 ${n}개 모두 공공 기록으로 확인됐어요`;
+  }
+  if (verified === 0 && partial === 0) {
+    return `광고한 AI 기능 ${n}개 중 공공 기록으로 확인된 게 없어요`;
   }
   if (verified === 0) {
-    return `광고한 AI 기능 ${claims.length}개 중 공공 기록으로 확인된 게 없어요`;
+    return partial === n
+      ? `광고한 AI 기능 ${n}개 모두 관련 공공 기록이 일부 확인됐어요`
+      : `광고한 AI 기능 ${n}개 중 ${partial}개는 관련 공공 기록이 일부 확인됐어요`;
   }
-  return `광고한 AI 기능 ${claims.length}개 중 ${verified}개만 공공 기록으로 확인됐어요`;
+  return partial > 0
+    ? `광고한 AI 기능 ${n}개 중 ${verified}개는 확인, ${partial}개는 일부 확인됐어요`
+    : `광고한 AI 기능 ${n}개 중 ${verified}개만 공공 기록으로 확인됐어요`;
 }
 
 /* ── 제품 이름 ─────────────────────────────────────────────────────── */
@@ -150,6 +160,8 @@ export const SOURCE_INFO: Record<string, SourceInfo> = {
   gs: { name: "GS 인증", role: "소프트웨어가 품질 시험을 통과했다는 인증" },
   nep: { name: "신제품 인증 NEP", role: "새 기술이 처음 적용된 제품에 주는 인증" },
   procurement: { name: "조달청", role: "공공기관 납품을 위해 등록한 제품 목록" },
+  ntis: { name: "국가R&D NTIS", role: "정부 지원 연구개발 과제를 모아 공개하는 곳" },
+  iitp: { name: "정보통신기획평가원 IITP", role: "정보통신 분야 정부 R&D 과제를 관리하는 곳" },
   seller_page: { name: "판매 페이지", role: "판매자가 올린 상세페이지 (공공 기록은 아니에요)" },
 };
 
@@ -212,6 +224,8 @@ const RECORD_KIND: Record<string, string> = {
   tipa: "이력",
   koraia: "이력",
   procurement: "이력",
+  ntis: "R&D",
+  iitp: "R&D",
 };
 
 export function recordTally(claims: Claim[]): { total: number; kinds: [string, number][] } {
