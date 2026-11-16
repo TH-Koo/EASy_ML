@@ -406,6 +406,25 @@ def decode_jwt(token: str) -> Optional[dict]:
     except JWTError:
         return None
 
+def _product_category(product_json: dict) -> str:
+    """제품 분류. 크롤러가 읽은 다나와 분류 경로를 먼저 쓴다.
+
+    예전 캐시처럼 분류가 없으면 스펙 원문의 첫 토막을 쓰되, 스펙 표가 있는 상품은
+    원문이 페이지 본문 전체라 첫 토막이 상단 메뉴 글자다. 짧은 토막만 분류로 인정한다.
+    """
+    category = str(product_json.get("category") or "").strip()
+    if category:
+        return category
+    first = str(product_json.get("raw_specs") or "").split("/")[0].strip()
+    return first if 0 < len(first) <= 20 else ""
+
+
+def _server_error(what: str, exc: Exception) -> HTTPException:
+    """500 응답에는 일반 문구만 싣고, 예외 원문(DB 주소 등)은 서버 로그에만 남긴다."""
+    print(f"[ERROR] {what}: {exc!r}")
+    return HTTPException(500, f"{what}. 잠시 후 다시 시도해 주세요.")
+
+
 def user_from_header(authorization: Optional[str]) -> Optional[dict]:
     """Authorization: Bearer <token> 헤더에서 페이로드 추출. 없거나 만료 시 None 반환."""
     if not authorization or not authorization.startswith("Bearer "):
@@ -463,8 +482,7 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
         api_company = target_company_name.split(',')[0].strip() if target_company_name else raw_brand
 
         # NTIS 조회(Step 4)와 특허 조회(Step 5)가 함께 쓰므로 병렬 조회 전에 계산한다
-        raw_specs_str = product_json.get('raw_specs', '')
-        product_category = raw_specs_str.split('/')[0].strip() if raw_specs_str else ""
+        product_category = _product_category(product_json)
 
         # Step 4: 공공 API + DB + DART 병렬 검색
         push(4, "외부 증거(인증/특허/공시) 병렬 수집 중")
@@ -601,6 +619,9 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
             "_dart_status": dart_result.get("status", "스킵") if dart_result else "스킵",
             "_dart_count": len(dart_result.get("evidence", [])) if dart_result else 0,
             "_category": product_category,
+            # NTIS 국가R&D: 엔진 근거로만 쓰이고 화면에 나오지 않던 조회 결과
+            "_ntis_status": (ntis_result or {}).get("status", "스킵"),
+            "_ntis_count": len((ntis_result or {}).get("records") or []),
         }
 
         _tasks[task_id]["events"].append({"type": "result", "data": result_payload})
@@ -637,7 +658,8 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
     except Exception as e:
         import traceback
         traceback.print_exc()
-        _tasks[task_id]["events"].append({"type": "error", "message": f"서버 오류 발생: {str(e)}"})
+        # 원문은 위 traceback 으로 서버 로그에만 남긴다
+        _tasks[task_id]["events"].append({"type": "error", "message": "서버 오류가 발생했습니다. 잠시 후 다시 시도해 주세요."})
         _tasks[task_id]["done"] = True
 
 # ══════════════════════════════════════════
@@ -673,6 +695,8 @@ SOURCE_LABELS = {
     "gs":          "GS 인증",
     "nep":         "NEP 인증",
     "procurement": "조달청 등록",
+    "ntis":        "NTIS 국가R&D",
+    "iitp":        "IITP 정보통신 R&D",
 }
 
 
@@ -929,6 +953,14 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
     dart_status  = payload.get("_dart_status", "")
     patent_count = payload.get("patent_count", 0)
     gs_count     = payload.get("gs_count", 0)
+    ntis_count   = payload.get("_ntis_count", 0)
+    ntis_status  = payload.get("_ntis_status", "스킵")
+    ntis_shown   = (
+        f"AI 과제 {ntis_count}건" if ntis_count > 0
+        else "AI 과제 없음" if ntis_status == "not_found"
+        else "조회 불가" if ntis_status == "error"
+        else "조회 안 함"
+    )
 
     verification_rows = [
         # ── 로컬 DB ──────────────────────────────────────────────────
@@ -953,6 +985,9 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
         {"source": "kipris", "key": SOURCE_LABELS["kipris"],
          "value": f"{patent_count}건",
          "intent": "ok" if patent_count > 0 else "neutral"},
+        # ── 국가 R&D ─────────────────────────────────────────────────
+        {"source": "ntis", "key": SOURCE_LABELS["ntis"],
+         "value": ntis_shown, "intent": "ok" if ntis_count > 0 else "neutral"},
         # GS 와 NEP 는 한 건수로 함께 세므로 한 줄로 둔다
         {"source": "gs", "key": "GS · NEP 인증",
          "value": f"{gs_count}건",
@@ -1174,7 +1209,7 @@ async def register(req: RegisterRequest):
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(500, f"회원가입 실패: {e}")
+        raise _server_error("회원가입 실패", e)
 
 
 @app.post("/api/auth/login")
@@ -1192,7 +1227,7 @@ async def login(req: LoginRequest):
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(500, f"로그인 실패: {e}")
+        raise _server_error("로그인 실패", e)
 
 
 # ══════════════════════════════════════════
@@ -1252,7 +1287,7 @@ async def get_history(authorization: Optional[str] = Header(None)):
             })
         return items
     except Exception as e:
-        raise HTTPException(500, f"히스토리 조회 실패: {e}")
+        raise _server_error("히스토리 조회 실패", e)
 
 
 @app.get("/api/history/{history_id}")
@@ -1273,7 +1308,7 @@ async def get_history_item(history_id: int, authorization: Optional[str] = Heade
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(500, f"히스토리 조회 실패: {e}")
+        raise _server_error("히스토리 조회 실패", e)
 
 
 @app.get("/api/history/{history_id}/result")
@@ -1295,7 +1330,7 @@ async def get_history_result(history_id: int, authorization: Optional[str] = Hea
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(500, f"히스토리 결과 조회 실패: {e}")
+        raise _server_error("히스토리 결과 조회 실패", e)
 
 
 @app.delete("/api/history/{history_id}", status_code=204)
@@ -1311,7 +1346,7 @@ async def delete_history_item(history_id: int, authorization: Optional[str] = He
                 {"id": history_id, "uid": user_id},
             )
     except Exception as e:
-        raise HTTPException(500, f"삭제 실패: {e}")
+        raise _server_error("삭제 실패", e)
 
 
 @app.patch("/api/history/{history_id}/folder")
@@ -1339,7 +1374,7 @@ async def move_history_item(history_id: int, body: MoveHistoryRequest, authoriza
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(500, f"이동 실패: {e}")
+        raise _server_error("이동 실패", e)
 
 
 # ══════════════════════════════════════════
@@ -1375,7 +1410,7 @@ async def get_folders(authorization: Optional[str] = Header(None)):
             for r in rows
         ]
     except Exception as e:
-        raise HTTPException(500, f"폴더 조회 실패: {e}")
+        raise _server_error("폴더 조회 실패", e)
 
 
 @app.post("/api/folders", status_code=201)
@@ -1398,7 +1433,7 @@ async def create_folder(body: FolderRequest, authorization: Optional[str] = Head
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(500, f"폴더 생성 실패: {e}")
+        raise _server_error("폴더 생성 실패", e)
 
 
 @app.patch("/api/folders/{folder_id}")
@@ -1422,7 +1457,7 @@ async def rename_folder(folder_id: int, body: FolderRequest, authorization: Opti
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(500, f"이름 변경 실패: {e}")
+        raise _server_error("이름 변경 실패", e)
 
 
 @app.delete("/api/folders/{folder_id}", status_code=204)
@@ -1438,7 +1473,7 @@ async def delete_folder(folder_id: int, authorization: Optional[str] = Header(No
                 {"id": folder_id, "uid": user_id},
             )
     except Exception as e:
-        raise HTTPException(500, f"폴더 삭제 실패: {e}")
+        raise _server_error("폴더 삭제 실패", e)
 
 
 @app.get("/api/watchlist")
@@ -1463,7 +1498,7 @@ async def get_watchlist(authorization: Optional[str] = Header(None)):
             for r in rows
         ]
     except Exception as e:
-        raise HTTPException(500, f"북마크 조회 실패: {e}")
+        raise _server_error("북마크 조회 실패", e)
 
 
 @app.post("/api/watchlist", status_code=201)
@@ -1481,7 +1516,7 @@ async def add_watchlist(body: WatchlistRequest, authorization: Optional[str] = H
             new_id = result.lastrowid
         return {"id": new_id, "url": body.url, "product_name": body.product_name, "added_at": ""}
     except Exception as e:
-        raise HTTPException(500, f"북마크 추가 실패: {e}")
+        raise _server_error("북마크 추가 실패", e)
 
 
 @app.delete("/api/watchlist/{watchlist_id}", status_code=204)
@@ -1497,7 +1532,7 @@ async def delete_watchlist(watchlist_id: int, authorization: Optional[str] = Hea
                 {"id": watchlist_id, "uid": user_id},
             )
     except Exception as e:
-        raise HTTPException(500, f"북마크 삭제 실패: {e}")
+        raise _server_error("북마크 삭제 실패", e)
 
 
 @app.post("/api/compare")
@@ -1562,7 +1597,7 @@ async def compare_items(body: CompareRequest, authorization: Optional[str] = Hea
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(500, f"비교 조회 실패: {e}")
+        raise _server_error("비교 조회 실패", e)
 
 
 @app.get("/api/dashboard")
@@ -1579,9 +1614,11 @@ async def get_dashboard(authorization: Optional[str] = Header(None)):
                     SELECT
                         COUNT(*)                                                        AS total,
                         AVG(accs_score)                                                 AS avg_score,
-                        SUM(CASE WHEN accs_score >= 60 THEN 1 ELSE 0 END)              AS ok_count,
-                        SUM(CASE WHEN accs_score >= 35 AND accs_score < 60 THEN 1 ELSE 0 END) AS warn_count,
-                        SUM(CASE WHEN accs_score < 35  THEN 1 ELSE 0 END)              AS danger_count
+                        -- 분류는 결과 화면(overall_label)과 같은 엔진 판정 문구로 센다.
+                        -- 원점수를 35·60 으로 자르면 '신뢰 상품'이 '검토 필요'로 세어졌다.
+                        SUM(CASE WHEN verdict LIKE '%신뢰%' THEN 1 ELSE 0 END)         AS ok_count,
+                        SUM(CASE WHEN verdict LIKE '%워싱 의심%' THEN 1 ELSE 0 END)    AS warn_count,
+                        SUM(CASE WHEN verdict LIKE '%AI 워싱 상품%' THEN 1 ELSE 0 END) AS danger_count
                     FROM analysis_history
                     WHERE user_id = :uid
                 """),
@@ -1671,7 +1708,7 @@ async def get_dashboard(authorization: Optional[str] = Header(None)):
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(500, f"대시보드 조회 실패: {e}")
+        raise _server_error("대시보드 조회 실패", e)
 
 
 if __name__ == "__main__":

@@ -31,8 +31,18 @@ export function bookmarkFor(item: HistoryItem, bookmarks: WatchlistItem[]): Watc
   return bookmarks.find((b) => b.url === item.url || b.url.endsWith(`/history/${item.id}`));
 }
 
+/**
+ * 서버 기록 날짜는 "2026.11.16 09:23"(점 구분, 초 없음)으로 온다. ISO 도 받는다.
+ * `new Date("2026.11.16T09:23")` 은 Invalid Date 라 전부 '날짜 없음'으로 묶였다.
+ */
 function parseDate(s: string): Date | null {
-  const d = new Date(s.includes("T") ? s : s.replace(" ", "T"));
+  if (!s) return null;
+  const m = /^(\d{4})[.-](\d{1,2})[.-](\d{1,2})(?:[ T](\d{1,2}):(\d{2})(?::(\d{2}))?)?/.exec(s.trim());
+  if (m && !s.includes("Z") && !/[+-]\d{2}:\d{2}$/.test(s)) {
+    const [, y, mo, d, h = "0", mi = "0", sec = "0"] = m;
+    return new Date(+y, +mo - 1, +d, +h, +mi, +sec);
+  }
+  const d = new Date(s);
   return Number.isNaN(d.getTime()) ? null : d;
 }
 
