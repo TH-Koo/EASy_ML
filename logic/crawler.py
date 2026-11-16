@@ -498,6 +498,18 @@ def _capture_detail_area(driver, model_name: str) -> str:
         return ""
 
 
+# 새 구조 스펙 표의 칸에 섞여 들어오는 링크·버튼 글자
+_SPEC_LINK_TEXT = ("제조사 웹사이트 바로가기", "인증번호 확인", "상세설명 / 판매 사이트 문의")
+
+
+def _clean_spec_value(text: str) -> str:
+    """'삼성전자 (제조사 웹사이트 바로가기)' → '삼성전자'. 제조회사 값은 회사명 조회에 그대로 쓰인다."""
+    for junk in _SPEC_LINK_TEXT:
+        text = text.replace(junk, " ")
+    text = re.sub(r"\(\s*\)", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
 def _extract_specs(driver) -> Tuple[Dict[str, str], str]:
     """
     다나와 상품 스펙 정보를 수집한다.
@@ -560,7 +572,7 @@ def _extract_specs(driver) -> Tuple[Dict[str, str], str]:
                         key = re.sub(r"\s+", " ", th.get_attribute("textContent") or "").strip()
                         if not key or i >= len(tds):
                             continue
-                        value = re.sub(r"\s+", " ", tds[i].get_attribute("textContent") or "").strip()
+                        value = _clean_spec_value(tds[i].get_attribute("textContent") or "")
                         specs.setdefault(key, value or "지원")
                         pairs.append(f"{key}: {value}" if value else key)
                 raw_specs = " / ".join(pairs)
