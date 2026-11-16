@@ -1058,18 +1058,34 @@ _STAGE_LABELS = {
     "public_verify": "공공 API 검증", "patent_search": "특허·인증 검색", "score": "종합 분석",
 }
 
-def _make_progress_event(task_id: str, step: int, done: bool = False) -> dict:
+def _task_error(task: dict) -> Optional[str]:
+    """분석이 실패했으면 그 안내 문구를, 아니면 None."""
+    for ev in task["events"]:
+        if ev["type"] == "error":
+            return ev.get("message") or "분석에 실패했습니다."
+    return None
+
+
+def _make_progress_event(task_id: str, step: int, done: bool = False,
+                         error: Optional[str] = None) -> dict:
+    # 실패한 분석은 멈춘 단계를 error 로 표시한다. done 만 보고 전부 완료로
+    # 칠하면, 크롤링에서 실패한 분석도 모든 단계가 끝난 것처럼 보인다.
     stages = []
     for i, name in enumerate(_STAGE_NAMES):
-        if done or i < step:
+        if error is not None and i == step:
+            state = "error"
+        elif error is not None and i > step:
+            state = "wait"
+        elif done or i < step:
             state = "done"
         elif i == step:
             state = "running"
         else:
             state = "wait"
         stages.append({"name": name, "label": _STAGE_LABELS[name], "state": state,
-                        "started_at": None, "finished_at": None, "error": None})
-    pct = 100 if done else min(int((step / len(_STAGE_NAMES)) * 100), 99)
+                        "started_at": None, "finished_at": None,
+                        "error": error if state == "error" else None})
+    pct = 100 if done and error is None else min(int((step / len(_STAGE_NAMES)) * 100), 99)
     return {
         "job_id": task_id,
         "overall_percent": pct,
@@ -1155,7 +1171,7 @@ async def progress_snapshot(analysis_id: str):
     for ev in task["events"]:
         if ev["type"] == "progress":
             latest_step = ev["step"]
-    return _make_progress_event(analysis_id, latest_step, done=done)
+    return _make_progress_event(analysis_id, latest_step, done=done, error=_task_error(task))
 
 @app.get("/api/analyze/{analysis_id}/result")
 async def get_result(analysis_id: str):
@@ -1167,6 +1183,10 @@ async def get_result(analysis_id: str):
     for ev in task["events"]:
         if ev["type"] == "result":
             return build_analysis_result(analysis_id, ev["data"])
+    # 분석이 실패해 결과가 없다. 서버 오류(500)가 아니라 실패 안내를 그대로 준다.
+    error = _task_error(task)
+    if error:
+        raise HTTPException(status_code=422, detail=error)
     raise HTTPException(status_code=500, detail="결과 데이터를 찾을 수 없습니다.")
 
 # 하위 호환 (기존 프론트용)

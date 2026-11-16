@@ -12,6 +12,12 @@ import re
 import contextlib
 import io
 import time
+import glob
+import threading
+import traceback
+from datetime import date, datetime
+
+import pandas as pd
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -20,6 +26,99 @@ try:
     DART_KEY = getattr(config, 'DART_API_KEY', getattr(config, 'DART_KEY', ''))
 except ImportError:
     DART_KEY = os.environ.get("DART_API_KEY", "")
+
+
+# ── 기업 고유번호 목록 ─────────────────────────────────────────────────
+#
+# OpenDartReader 생성자는 '현재 작업 폴더'의 docs_cache 를 쓰고, 날짜가 바뀔
+# 때마다 기존 목록 파일을 지운 뒤 DART 에서 통째로 다시 받는다. 배포 서버에서
+# 이 다운로드나 파일 쓰기가 실패하면 모든 분석이 'DART 조회 불가'가 된다.
+# 그래서 생성자를 건너뛰고 목록을 직접 읽는다.
+#   1) 프로젝트 docs_cache 에 최근(_CORP_MAX_AGE_DAYS 이내) 목록이 있으면 그것을 쓴다.
+#   2) 없거나 오래됐으면 새로 받아 저장한다(저장 실패는 무시).
+#   3) 받기도 실패하면 오래된 목록이라도 쓴다. 기업 목록은 천천히 바뀐다.
+# 읽은 목록은 프로세스 안에서 재사용한다.
+_CORP_CACHE_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs_cache")
+_CORP_PREFIX = "opendartreader_corp_codes_"
+_CORP_MAX_AGE_DAYS = 30
+_corp_lock = threading.Lock()
+_corp_state = {"df": None, "day": None}
+
+
+def _corp_files() -> list:
+    """docs_cache 의 목록 파일을 (날짜, 경로) 로, 최신순으로."""
+    out = []
+    for path in glob.glob(os.path.join(_CORP_CACHE_DIR, _CORP_PREFIX + "*.pkl")):
+        stamp = os.path.basename(path)[len(_CORP_PREFIX):-4]
+        try:
+            out.append((datetime.strptime(stamp, "%Y%m%d").date(), path))
+        except ValueError:
+            continue
+    return sorted(out, reverse=True)
+
+
+def _read_corp_file(path: str):
+    """목록 파일을 읽는다. 다른 pandas 버전으로 저장돼 못 읽으면 None."""
+    try:
+        return pd.read_pickle(path)
+    except Exception as e:
+        print(f"[DART] 기업 목록 파일을 읽지 못함({os.path.basename(path)}): {type(e).__name__}")
+        return None
+
+
+def _download_corp_codes(today):
+    try:
+        from opendartreader import dart_list
+    except ImportError:
+        from OpenDartReader import dart_list
+    df = dart_list.corp_codes(DART_KEY)
+    try:
+        os.makedirs(_CORP_CACHE_DIR, exist_ok=True)
+        df.to_pickle(os.path.join(_CORP_CACHE_DIR, f"{_CORP_PREFIX}{today:%Y%m%d}.pkl"))
+    except OSError as e:
+        print(f"[DART] 기업 목록 저장 실패(계속 진행): {e}")
+    return df
+
+
+def _load_corp_codes():
+    today = date.today()
+    with _corp_lock:
+        if _corp_state["df"] is not None and _corp_state["day"] == today:
+            return _corp_state["df"]
+        files = _corp_files()
+        df = None
+        # 1) 최근 목록
+        for stamp, path in files:
+            if (today - stamp).days > _CORP_MAX_AGE_DAYS:
+                break
+            df = _read_corp_file(path)
+            if df is not None:
+                break
+        # 2) 새로 받기
+        if df is None:
+            try:
+                df = _download_corp_codes(today)
+            except Exception as e:
+                print(f"[DART] 기업 목록 받기 실패: {type(e).__name__}: {e}")
+        # 3) 오래된 목록이라도
+        if df is None:
+            for stamp, path in files:
+                df = _read_corp_file(path)
+                if df is not None:
+                    print(f"[DART] {stamp} 기업 목록으로 계속 진행")
+                    break
+        if df is None:
+            raise RuntimeError("DART 기업 목록을 읽지도 받지도 못함")
+        _corp_state.update(df=df, day=today)
+        return df
+
+
+def _make_reader():
+    """생성자 없이 리더를 만든다. 리더 메서드는 api_key 와 corp_codes 만 쓴다."""
+    reader = OpenDartReader.__new__(OpenDartReader)
+    reader.api_key = DART_KEY
+    reader.corp_codes = _load_corp_codes()
+    return reader
 
 
 def _clean_dart_text(text: str) -> str:
@@ -83,7 +182,7 @@ def check_dart_ai_washing(company_aliases: list, product_name: str = "") -> dict
     clean_list = list(set([n for n in search_list if n]))
 
     try:
-        dart = OpenDartReader(DART_KEY)
+        dart = _make_reader()
         corp_list = dart.corp_codes
         
         found_corp_code = None
@@ -171,4 +270,7 @@ def check_dart_ai_washing(company_aliases: list, product_name: str = "") -> dict
         return {"status": status_msg, "total_score": analysis_result.get("total_score", 0), "evidence": evidences, "detail": f"DART 분석 결과 [{found_corp_name_str}] 실적 총 {len(evidences)}건 확인." if evidences else f"[{found_corp_name_str}] 명의의 실질적 AI 관련 공시가 없습니다."}
 
     except Exception as e:
+        # 원인이 서버 로그에 남아야 배포 환경 문제를 찾을 수 있다
+        print(f"[DART] 조회 실패: {type(e).__name__}: {e}")
+        traceback.print_exc()
         return {"status": "조회 불가", "total_score": 0, "detail": f"DART 서버 지연: {str(e)}"}
