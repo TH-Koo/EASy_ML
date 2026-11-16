@@ -26,6 +26,7 @@ from urllib.parse import parse_qs, urlparse
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
@@ -41,6 +42,49 @@ CRAWLER_CACHE_TTL_SECONDS = int(os.getenv("EASY_CRAWLER_CACHE_TTL_SECONDS", str(
 
 PAGE_READY_TIMEOUT = int(os.getenv("EASY_CRAWLER_PAGE_READY_TIMEOUT", "12"))
 DETAIL_READY_TIMEOUT = int(os.getenv("EASY_CRAWLER_DETAIL_READY_TIMEOUT", "8"))
+PAGE_LOAD_TIMEOUT = int(os.getenv("EASY_CRAWLER_PAGE_LOAD_TIMEOUT", "60"))
+IMPLICIT_WAIT = 2
+
+# 다나와는 같은 상품을 두 가지 화면 구조로 내보낸다.
+#   예전 구조: h3.prod_tit / #detail_content_wrap / .spec_list
+#   새 구조  : h1 / section[data-testid="ProductDetailSection"] 안의 스펙 표와 상세 이미지
+# 예전 구조 선택자만 하나씩 기다리면 새 구조에서 단계마다 시간 제한을 다 채워
+# 크롤링이 100초를 넘고, 상세 영역을 못 찾아 스크린샷 없이 끝났다.
+TITLE_SELECTORS = ["h3.prod_tit", ".prod_tit", "h2.title", "h1:not(.blind)", "h1"]
+DETAIL_SELECTORS = [
+    "#detail_content_wrap",
+    "#productDescriptionArea",
+    ".product_detail_area",
+    ".detail_content_wrap",
+    ".prod_detail",
+    ".product_detail",
+    'section[data-testid="ProductDetailSection"]',
+]
+NEW_DETAIL_SECTION = 'section[data-testid="ProductDetailSection"]'
+
+
+def _find_now(driver, selectors: List[str]):
+    """기다리지 않고 selectors 순서대로 찾아 첫 요소를 돌려준다(implicit wait 끔)."""
+    driver.implicitly_wait(0)
+    try:
+        for selector in selectors:
+            elems = driver.find_elements(By.CSS_SELECTOR, selector)
+            if elems:
+                return elems[0]
+        return None
+    finally:
+        driver.implicitly_wait(IMPLICIT_WAIT)
+
+
+def _wait_any(driver, selectors: List[str], timeout: float):
+    """selectors 중 하나라도 나타날 때까지 한 번만 기다린다. 없으면 None."""
+    try:
+        WebDriverWait(driver, timeout, poll_frequency=0.25).until(
+            lambda d: _find_now(d, selectors) is not None
+        )
+    except Exception:
+        return None
+    return _find_now(driver, selectors)
 
 
 # =====================================================================
@@ -204,8 +248,8 @@ def _setup_driver():
             options = _build_chrome_options(headless=headless)
 
             driver = webdriver.Chrome(options=options)
-            driver.set_page_load_timeout(60)
-            driver.implicitly_wait(2)
+            driver.set_page_load_timeout(PAGE_LOAD_TIMEOUT)
+            driver.implicitly_wait(IMPLICIT_WAIT)
 
             print(f"Chrome 드라이버 초기화 성공: selenium, {mode_text}")
             return driver
@@ -222,58 +266,56 @@ def _setup_driver():
 # =====================================================================
 # 페이지 로딩 / 상품 정보 추출
 # =====================================================================
+def _open_page(driver, url: str) -> bool:
+    """페이지를 연다. 시간 안에 안 끝나도 로딩을 멈추고 다음 단계로 넘긴다.
+
+    driver.get 은 광고·추적 스크립트까지 모든 리소스가 받아져야 끝난다.
+    배포 서버에서 그중 하나가 응답하지 않으면, 상품 정보는 이미 그려졌는데도
+    시간 초과 예외로 크롤링 전체가 실패했다(로컬에서는 같은 페이지가 2~6초).
+    상품명이 실제로 있는지는 _wait_for_initial_page / _extract_product_title 이
+    기다려 확인한다. 여기서 바로 실패로 끝내지 않는다. 시간 초과였으면 True.
+    """
+    started = time.time()
+    try:
+        driver.get(url)
+        return False
+    except TimeoutException:
+        try:
+            driver.execute_script("window.stop();")
+        except Exception:
+            pass
+        print(f"[Load] {time.time() - started:.0f}초 안에 페이지 로딩이 끝나지 않아 멈추고 계속")
+        return True
+
+
 def _wait_for_initial_page(driver) -> None:
     """
-    페이지 접속 직후 상품명 또는 본문이 나타날 때까지만 기다린다.
-    기존 고정 5초 대기를 조건부 대기로 대체한다.
+    페이지 접속 직후 상품명(두 화면 구조 중 하나)이 나타날 때까지만 기다린다.
     """
-    selectors = [
-        "h3.prod_tit",
-        ".prod_tit",
-        "h2.title",
-        "h1",
-        "body",
-    ]
-
-    for selector in selectors:
-        try:
-            WebDriverWait(driver, PAGE_READY_TIMEOUT).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, selector))
-            )
-            return
-        except Exception:
-            continue
-
-    # 완전히 실패해도 뒤 단계에서 driver.title 등을 fallback으로 쓰기 위해 종료하지 않는다.
-    time.sleep(1)
+    if _wait_any(driver, TITLE_SELECTORS, PAGE_READY_TIMEOUT) is None:
+        # 완전히 실패해도 뒤 단계에서 driver.title 등을 fallback으로 쓰기 위해 종료하지 않는다.
+        time.sleep(1)
 
 
 def _extract_product_title(driver) -> str:
     """
     다나와 상품명 추출
     """
-    title_selectors = [
-        "h3.prod_tit",
-        ".prod_tit",
-        "h2.title",
-        "h1",
-    ]
-
     raw_title = ""
 
-    for selector in title_selectors:
-        try:
-            title_elem = WebDriverWait(driver, 4).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, selector))
-            )
-
-            raw_title = title_elem.text.strip()
-
+    driver.implicitly_wait(0)
+    try:
+        for selector in TITLE_SELECTORS:
+            for elem in driver.find_elements(By.CSS_SELECTOR, selector):
+                raw_title = (elem.text or elem.get_attribute("textContent") or "").strip()
+                if raw_title:
+                    break
             if raw_title:
                 break
-
-        except Exception:
-            continue
+    except Exception:
+        pass
+    finally:
+        driver.implicitly_wait(IMPLICIT_WAIT)
 
     if not raw_title:
         raw_title = driver.title
@@ -308,7 +350,11 @@ def _click_more_button_if_exists(driver) -> bool:
 
     for xpath in xpaths:
         try:
-            buttons = driver.find_elements(By.XPATH, xpath)
+            driver.implicitly_wait(0)
+            try:
+                buttons = driver.find_elements(By.XPATH, xpath)
+            finally:
+                driver.implicitly_wait(IMPLICIT_WAIT)
 
             if not buttons:
                 continue
@@ -345,7 +391,7 @@ def _detail_image_count(driver) -> int:
     """
     script = """
         return document.querySelectorAll(
-            '#detail_content_wrap img, #productDescriptionArea img, .product_detail_area img, .detail_content_wrap img, .prod_detail img, .product_detail img'
+            '#detail_content_wrap img, #productDescriptionArea img, .product_detail_area img, .detail_content_wrap img, .prod_detail img, .product_detail img, section[data-testid="ProductDetailSection"] img'
         ).length;
     """
     try:
@@ -355,27 +401,7 @@ def _detail_image_count(driver) -> int:
 
 
 def _wait_for_detail_area(driver, timeout: int = DETAIL_READY_TIMEOUT) -> bool:
-    detail_selectors = [
-        "#detail_content_wrap",
-        "#productDescriptionArea",
-        ".product_detail_area",
-        ".detail_content_wrap",
-        ".prod_detail",
-        ".product_detail",
-    ]
-
-    end_time = time.time() + timeout
-    while time.time() < end_time:
-        for selector in detail_selectors:
-            try:
-                elems = driver.find_elements(By.CSS_SELECTOR, selector)
-                if elems:
-                    return True
-            except Exception:
-                continue
-        time.sleep(0.25)
-
-    return False
+    return _wait_any(driver, DETAIL_SELECTORS, timeout) is not None
 
 
 def _slow_scroll_to_bottom(driver) -> None:
@@ -426,28 +452,7 @@ def _slow_scroll_to_bottom(driver) -> None:
 # 상세 영역 캡처 / 스펙 추출
 # =====================================================================
 def _find_detail_area(driver):
-    detail_selectors = [
-        "#detail_content_wrap",
-        "#productDescriptionArea",
-        ".product_detail_area",
-        ".detail_content_wrap",
-        ".prod_detail",
-        ".product_detail",
-    ]
-
-    for selector in detail_selectors:
-        try:
-            detail_area = WebDriverWait(driver, 3).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, selector))
-            )
-
-            if detail_area:
-                return detail_area
-
-        except Exception:
-            continue
-
-    return None
+    return _wait_any(driver, DETAIL_SELECTORS, 3)
 
 
 def _capture_detail_area(driver, model_name: str) -> str:
@@ -544,6 +549,23 @@ def _extract_specs(driver) -> Tuple[Dict[str, str], str]:
                         specs[item] = "지원"
 
         if not raw_specs:
+            # 새 구조: 상세정보 영역의 스펙 표(th/td 쌍)
+            section = _find_now(driver, [NEW_DETAIL_SECTION])
+            if section is not None:
+                pairs = []
+                for row in section.find_elements(By.CSS_SELECTOR, "table tr"):
+                    ths = row.find_elements(By.TAG_NAME, "th")
+                    tds = row.find_elements(By.TAG_NAME, "td")
+                    for i, th in enumerate(ths):
+                        key = re.sub(r"\s+", " ", th.get_attribute("textContent") or "").strip()
+                        if not key or i >= len(tds):
+                            continue
+                        value = re.sub(r"\s+", " ", tds[i].get_attribute("textContent") or "").strip()
+                        specs.setdefault(key, value or "지원")
+                        pairs.append(f"{key}: {value}" if value else key)
+                raw_specs = " / ".join(pairs)
+
+        if not raw_specs:
             try:
                 body_text = driver.find_element(By.TAG_NAME, "body").text
                 raw_specs = re.sub(r"\s+", " ", body_text).strip()[:3000]
@@ -558,7 +580,8 @@ def _extract_specs(driver) -> Tuple[Dict[str, str], str]:
 
 # 분류 경로 읽는 방식이 바뀔 때 올린다. 이보다 낮은 크롤링 캐시는 다시 수집한다.
 # 2: location_wrap(textContent·HTML 원문) + JSON-LD BreadcrumbList
-CATEGORY_VERSION = 2
+# 3: 새 화면 구조의 상품명·상세 영역·스펙 표를 읽음(스크린샷 없이 저장된 캐시 재수집)
+CATEGORY_VERSION = 3
 
 
 def _breadcrumb_from_jsonld(html: str) -> List[str]:
@@ -663,10 +686,12 @@ def get_product_data(url: str) -> Optional[Dict[str, Any]]:
         driver = _setup_driver()
 
         print("[1/3] 페이지 접속 및 로딩 중...")
-        driver.get(url)
+        timed_out = _open_page(driver, url)
         _wait_for_initial_page(driver)
 
         model_name = _extract_product_title(driver)
+        if timed_out and not model_name:
+            raise RuntimeError("페이지 로딩 시간 초과, 상품명을 찾지 못함")
         product_data["model_name"] = model_name
 
         print(f"상품명: {model_name}")
