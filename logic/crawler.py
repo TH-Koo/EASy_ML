@@ -556,6 +556,29 @@ def _extract_specs(driver) -> Tuple[Dict[str, str], str]:
     return specs, raw_specs
 
 
+# 분류 경로 읽는 방식이 바뀔 때 올린다. 이보다 낮은 크롤링 캐시는 다시 수집한다.
+# 2: location_wrap(textContent·HTML 원문) + JSON-LD BreadcrumbList
+CATEGORY_VERSION = 2
+
+
+def _breadcrumb_from_jsonld(html: str) -> List[str]:
+    """<script type="application/ld+json"> 의 BreadcrumbList 에서 분류 이름을 순서대로 꺼낸다."""
+    for raw in re.findall(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>', html, re.S):
+        try:
+            data = json.loads(raw)
+        except ValueError:
+            continue
+        for node in data if isinstance(data, list) else [data]:
+            if not isinstance(node, dict) or node.get("@type") != "BreadcrumbList":
+                continue
+            items = sorted(node.get("itemListElement") or [], key=lambda x: x.get("position", 0))
+            names = [str((it.get("item") or {}).get("name") or it.get("name") or "").strip() for it in items]
+            names = [n for n in names if n]
+            if names:
+                return names
+    return []
+
+
 def _extract_category(driver) -> List[str]:
     """상단 분류 경로(예: 태블릿/모바일/디카 > 이어폰/헤드폰 > 무선 이어폰)를 단계별로 읽는다.
 
@@ -581,6 +604,10 @@ def _extract_category(driver) -> List[str]:
                     html[start:start + 80000],
                 )
                 levels = [t.strip() for t in found if t.strip() and t.strip() != "선택하세요"]
+        if not levels:
+            # 새 화면 구조의 상품 페이지(예: 세탁기)는 location_wrap 이 없고,
+            # 분류 경로를 검색엔진용 JSON-LD BreadcrumbList 로만 싣는다.
+            levels = _breadcrumb_from_jsonld(driver.page_source or "")
         print(f"[Category] {' > '.join(levels) if levels else '분류 경로를 찾지 못함'}")
         return levels
     except Exception as e:
@@ -612,8 +639,9 @@ def get_product_data(url: str) -> Optional[Dict[str, Any]]:
         return None
 
     cached_data = _load_cached_product_data(url)
-    # 분류 경로를 읽기 전에 만든 캐시는 category 가 없다. 한 번 다시 수집해 채운다.
-    if cached_data and "category" in cached_data:
+    # 분류 경로 읽는 방식이 바뀌기 전에 만든 캐시는 category 가 없거나 비어 있다.
+    # 판정 버전이 지금보다 낮으면 한 번 다시 수집해 채운다.
+    if cached_data and cached_data.get("category_version", 0) >= CATEGORY_VERSION:
         return cached_data
 
     driver = None
@@ -628,6 +656,7 @@ def get_product_data(url: str) -> Optional[Dict[str, Any]]:
         # 분류 경로를 못 찾아도 키는 남겨, 캐시가 매번 다시 수집되지 않게 한다
         "category": "",
         "category_path": "",
+        "category_version": CATEGORY_VERSION,
     }
 
     try:
