@@ -564,9 +564,27 @@ def _extract_category(driver) -> List[str]:
     """
     try:
         buttons = driver.find_elements(By.CSS_SELECTOR, ".location_wrap .loca_item > button.arw")
-        levels = [re.sub(r"\s+", " ", b.text).strip() for b in buttons]
-        return [t for t in levels if t and t != "선택하세요"]
-    except Exception:
+        # .text 는 화면에 안 보이는 요소에서 빈 문자열을 돌려준다. 서버(EC2)의 headless
+        # 창에서는 분류 경로가 접혀 있어 늘 비었으므로 textContent 로 읽는다.
+        levels = [
+            re.sub(r"\s+", " ", b.get_attribute("textContent") or "").strip()
+            for b in buttons
+        ]
+        levels = [t for t in levels if t and t != "선택하세요"]
+        if not levels:
+            # 요소를 못 찾으면 HTML 원문에서 같은 자리를 꺼낸다.
+            html = driver.page_source or ""
+            start = html.find("location_wrap")
+            if start >= 0:
+                found = re.findall(
+                    r'class="loca_item"[^>]*>\s*<button class="arw">([^<]+)<',
+                    html[start:start + 80000],
+                )
+                levels = [t.strip() for t in found if t.strip() and t.strip() != "선택하세요"]
+        print(f"[Category] {' > '.join(levels) if levels else '분류 경로를 찾지 못함'}")
+        return levels
+    except Exception as e:
+        print(f"[Category] 분류 경로 읽기 실패: {e}")
         return []
 
 
@@ -594,7 +612,8 @@ def get_product_data(url: str) -> Optional[Dict[str, Any]]:
         return None
 
     cached_data = _load_cached_product_data(url)
-    if cached_data:
+    # 분류 경로를 읽기 전에 만든 캐시는 category 가 없다. 한 번 다시 수집해 채운다.
+    if cached_data and "category" in cached_data:
         return cached_data
 
     driver = None
@@ -606,6 +625,9 @@ def get_product_data(url: str) -> Optional[Dict[str, Any]]:
         "specs": {},
         "raw_specs": "",
         "screenshot_path": "",
+        # 분류 경로를 못 찾아도 키는 남겨, 캐시가 매번 다시 수집되지 않게 한다
+        "category": "",
+        "category_path": "",
     }
 
     try:
