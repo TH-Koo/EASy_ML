@@ -462,6 +462,10 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
         model_param = norm_info.get('final_norm_model', '')
         api_company = target_company_name.split(',')[0].strip() if target_company_name else raw_brand
 
+        # NTIS 조회(Step 4)와 특허 조회(Step 5)가 함께 쓰므로 병렬 조회 전에 계산한다
+        raw_specs_str = product_json.get('raw_specs', '')
+        product_category = raw_specs_str.split('/')[0].strip() if raw_specs_str else ""
+
         # Step 4: 공공 API + DB + DART 병렬 검색
         push(4, "외부 증거(인증/특허/공시) 병렬 수집 중")
         with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
@@ -481,8 +485,6 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
             ntis_result = f_ntis.result()
 
         # Step 5: 특허 + GS 인증
-        raw_specs_str = product_json.get('raw_specs', '')
-        product_category = raw_specs_str.split('/')[0].strip() if raw_specs_str else ""
         patent_count, patent_items_df, patent_search_type = get_company_patent_data(company_aliases, product_category)
         cert_results_df = search_cert_db(company_aliases)
 
