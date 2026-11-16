@@ -592,7 +592,7 @@ def _extract_specs(driver) -> Tuple[Dict[str, str], str]:
 
 # 분류 경로 읽는 방식이 바뀔 때 올린다. 이보다 낮은 크롤링 캐시는 다시 수집한다.
 # 2: location_wrap(textContent·HTML 원문) + JSON-LD BreadcrumbList
-# 3: 새 화면 구조의 상품명·상세 영역·스펙 표를 읽음(스크린샷 없이 저장된 캐시 재수집)
+# 3: 새 화면 구조의 상품명·상세 영역·스펙 표·내장 분류 이름을 읽음(스크린샷 없이 저장된 캐시 재수집)
 CATEGORY_VERSION = 3
 
 
@@ -612,6 +612,19 @@ def _breadcrumb_from_jsonld(html: str) -> List[str]:
             if names:
                 return names
     return []
+
+
+def _category_from_embedded(html: str) -> List[str]:
+    """새 구조 페이지의 내장 데이터에서 "categoryNames": [...] 를 읽는다."""
+    text = html.replace('\\"', '"')
+    m = re.search(r'"categoryNames"\s*:\s*(\[[^\]]*\])', text)
+    if not m:
+        return []
+    try:
+        names = json.loads(m.group(1))
+    except ValueError:
+        return []
+    return [str(n).strip() for n in names if str(n).strip()]
 
 
 def _extract_category(driver) -> List[str]:
@@ -643,6 +656,10 @@ def _extract_category(driver) -> List[str]:
             # 새 화면 구조의 상품 페이지(예: 세탁기)는 location_wrap 이 없고,
             # 분류 경로를 검색엔진용 JSON-LD BreadcrumbList 로만 싣는다.
             levels = _breadcrumb_from_jsonld(driver.page_source or "")
+        if not levels:
+            # JSON-LD 에도 분류 경로가 없는 상품이 있다(예: 전자책). 새 구조 페이지는
+            # 화면 데이터에 "categoryNames": [...] 로 분류 이름을 싣는다.
+            levels = _category_from_embedded(driver.page_source or "")
         print(f"[Category] {' > '.join(levels) if levels else '분류 경로를 찾지 못함'}")
         return levels
     except Exception as e:
