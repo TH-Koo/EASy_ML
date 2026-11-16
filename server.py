@@ -491,7 +491,10 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
             f_jodale = executor.submit(check_jodale_mall, model_param)
             f_tipa = executor.submit(check_tipa_ai, api_company)
             f_koraia = executor.submit(check_koraia, api_company)
-            f_dart = executor.submit(check_dart_ai_washing, api_company, model_param) # 🔥 DART 추가
+            # DART 는 회사명 후보 전체를 넘긴다. 정확히 같은 법인명을 먼저 찾으므로,
+            # 'Samsung' 하나만 넘겨 'SamsungETFsTrust' 처럼 이름이 포함된 엉뚱한 법인에
+            # 붙던 문제를 막는다.
+            f_dart = executor.submit(check_dart_ai_washing, target_company_name or api_company, model_param)
             f_ntis = executor.submit(verify_ntis_rnd,[api_company], product_category
 )
 

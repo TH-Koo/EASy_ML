@@ -178,8 +178,10 @@ def check_dart_ai_washing(company_aliases: list, product_name: str = "") -> dict
             else:
                 search_list.append(name)
     
-    # 중복 제거
-    clean_list = list(set([n for n in search_list if n]))
+    # 중복 제거. 순서를 지키되 한글 법인명을 먼저 본다('LG,엘지전자,LG전자' 에서
+    # 지주사 ㈜LG 보다 LG전자를, 'Samsung,삼성전자' 에서 삼성전자를 먼저 맞춘다).
+    ordered = list(dict.fromkeys(n.strip() for n in search_list if n and n.strip()))
+    clean_list = sorted(ordered, key=lambda n: 0 if re.search(r"[가-힣]", n) else 1)
 
     try:
         dart = _make_reader()
@@ -210,7 +212,8 @@ def check_dart_ai_washing(company_aliases: list, product_name: str = "") -> dict
         if not found_corp_code:
             for name in clean_list:
                 clean = re.sub(r'\(주\)|주식회사|\(유\)|㈜', '', name).strip()
-                if not clean: continue
+                # 'WD' 같은 짧은 이름은 부분 일치로 엉뚱한 법인에 붙는다
+                if len(clean) < 3: continue
                 
                 matches = corp_list[corp_list['corp_name'].str.upper().str.contains(clean.upper(), na=False, regex=False)]
                 if not matches.empty:
@@ -224,7 +227,8 @@ def check_dart_ai_washing(company_aliases: list, product_name: str = "") -> dict
         if not found_corp_code:
             for name in clean_list:
                 clean = re.sub(r'\(주\)|주식회사|\(유\)|㈜', '', name).strip()
-                if not clean: continue
+                # 'WD' 같은 짧은 이름은 부분 일치로 엉뚱한 법인에 붙는다
+                if len(clean) < 3: continue
                 
                 matches = corp_list[corp_list['corp_name'].str.upper().str.contains(clean.upper(), na=False, regex=False)]
                 if not matches.empty:

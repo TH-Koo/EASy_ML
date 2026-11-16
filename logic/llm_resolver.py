@@ -9,6 +9,8 @@ import re
 COMPANY_ALIASES = {
     '삼성': ['삼성전자'],
     '삼성전자': ['삼성전자', 'SAMSUNG ELECTRONICS'],
+    # normalizer 의 회사명 사전이 '삼성'·'삼성전자'를 'Samsung'으로 바꾼다
+    'Samsung': ['삼성전자', 'SAMSUNG ELECTRONICS'],
     'LG': ['엘지전자', 'LG전자'],
     'LG전자': ['엘지전자', 'LG전자'],
     '엘지전자': ['엘지전자', 'LG전자'],
