@@ -447,7 +447,7 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
         push(0, "URL 크롤링 및 OCR 처리 중")
         product_json = get_product_data(url)
         if not product_json:
-            fail("크롤링 실패 — 다나와 제품 URL을 확인하세요.")
+            fail("상품 페이지를 불러오지 못했습니다. 다나와 상품 URL과 네트워크 연결을 확인한 뒤 다시 시도해 주세요.")
             return
 
         # Step 1: OCR

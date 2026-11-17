@@ -21,10 +21,12 @@ import json
 import os
 import re
 import time
+import logging
 from typing import Any, Dict, List, Optional, Tuple
 from urllib.parse import parse_qs, urlparse
 
 from selenium import webdriver
+from selenium.common.exceptions import TimeoutException, WebDriverException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -168,6 +170,8 @@ def _build_chrome_options(headless: bool = True) -> Options:
     Selenium 안정성을 유지하면서 이미지 로딩은 보존한다.
     """
     options = Options()
+    # 외부 리소스 전체 완료 대신 DOM 준비 후 상품 요소를 직접 기다린다.
+    options.page_load_strategy = "eager"
 
     if headless:
         options.add_argument("--headless=new")
@@ -205,7 +209,7 @@ def _setup_driver():
 
             driver = webdriver.Chrome(options=options)
             driver.set_page_load_timeout(60)
-            driver.implicitly_wait(2)
+            driver.implicitly_wait(0)
 
             print(f"Chrome 드라이버 초기화 성공: selenium, {mode_text}")
             return driver
@@ -232,20 +236,29 @@ def _wait_for_initial_page(driver) -> None:
         ".prod_tit",
         "h2.title",
         "h1",
-        "body",
     ]
 
-    for selector in selectors:
-        try:
-            WebDriverWait(driver, PAGE_READY_TIMEOUT).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, selector))
-            )
-            return
-        except Exception:
-            continue
+    WebDriverWait(driver, PAGE_READY_TIMEOUT).until(
+        lambda d: any(element.text.strip() for element in
+                      d.find_elements(By.CSS_SELECTOR, ", ".join(selectors)))
+    )
 
-    # 완전히 실패해도 뒤 단계에서 driver.title 등을 fallback으로 쓰기 위해 종료하지 않는다.
-    time.sleep(1)
+
+def _open_product_page(driver, url: str) -> None:
+    """접속 실패는 한 번 재시도하며 상품 DOM 준비 여부를 확인한다."""
+    for attempt in range(2):
+        try:
+            try:
+                driver.get(url)
+            except TimeoutException:
+                driver.execute_script("window.stop();")
+            _wait_for_initial_page(driver)
+            return
+        except WebDriverException:
+            if attempt == 1:
+                raise
+            logging.getLogger(__name__).warning("페이지 접속 재시도", exc_info=True)
+            time.sleep(1)
 
 
 def _extract_product_title(driver) -> str:
@@ -663,8 +676,7 @@ def get_product_data(url: str) -> Optional[Dict[str, Any]]:
         driver = _setup_driver()
 
         print("[1/3] 페이지 접속 및 로딩 중...")
-        driver.get(url)
-        _wait_for_initial_page(driver)
+        _open_product_page(driver, url)
 
         model_name = _extract_product_title(driver)
         product_data["model_name"] = model_name
@@ -692,6 +704,7 @@ def get_product_data(url: str) -> Optional[Dict[str, Any]]:
 
     except Exception as e:
         print(f"크롤링 오류 발생: {e}")
+        logging.getLogger(__name__).exception("상품 크롤링 실패")
         return None
 
     finally:
