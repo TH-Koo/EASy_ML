@@ -101,12 +101,11 @@ export function AnalysisRunner({ id }: AnalysisRunnerProps) {
       },
       onError: (streamErr) => {
         if (streamErr.kind === "server") {
-          setProgress(streamErr.event);
           const firstError = streamErr.event.stages?.find(
             (s) => s.state === "error",
           );
           setErrorMessage(
-            firstError?.error_message ?? "분석 도중 오류가 발생했습니다.",
+            firstError?.error_message ?? streamErr.event.message ?? "분석 도중 오류가 발생했습니다.",
           );
           setPhase("error");
         } else {
