@@ -77,7 +77,7 @@ export interface ProgressStreamHandlers {
 }
 
 export type ProgressStreamError =
-  | { kind: "server"; event: ProgressEvent }
+  | { kind: "server"; event: ProgressEvent & { message?: string } }
   | { kind: "transport"; error: Event };
 
 /**

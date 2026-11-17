@@ -871,5 +871,24 @@ def run_full_pipeline(url: str):
 
 
 if __name__ == "__main__":
-    target_url = "https://prod.danawa.com/info/?pcode=56062199"
-    run_full_pipeline(target_url)
+    import argparse
+
+    parser = argparse.ArgumentParser(description="다나와 상품 분석 파이프라인")
+    parser.add_argument("url", nargs="?", default="https://prod.danawa.com/info/?pcode=56062199", help="다나와 상품 URL")
+    parser.add_argument("--crawl-only", action="store_true", help="크롤링만 실행하고 결과를 확인")
+    parser.add_argument("--no-crawl-cache", action="store_true", help="크롤링 캐시를 사용하거나 저장하지 않음")
+    args = parser.parse_args()
+
+    if args.no_crawl_cache:
+        import logic.crawler as crawler
+        crawler.USE_CRAWLER_CACHE = False
+
+    if args.crawl_only:
+        result = get_product_data(args.url)
+        if not result:
+            print("크롤링 실패: 위의 오류 로그를 확인하세요.")
+            sys.exit(1)
+        print("\n크롤링 결과:")
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+    else:
+        run_full_pipeline(args.url)
