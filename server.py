@@ -77,6 +77,7 @@ except Exception:
 try:
     from fides_integration import (
         infer_product_type,
+        load_s_only_predictor,
         load_weight_predictor,
         secure_analyze_bundle,
         weighting_summary,
@@ -87,6 +88,9 @@ except ImportError as exc:
 # CEN 가중치 모델은 서버 시작 시 한 번만 불러와 모든 분석 요청에 재사용한다.
 # 체크포인트가 없으면 None 이고, 엔진은 규칙 기반 가중치로 동작한다.
 WEIGHT_PREDICTOR = load_weight_predictor()
+S_ONLY_PREDICTOR = load_s_only_predictor()
+
+from fides_ml.s_only import verdict_label
 
 # DB 접속 문자열은 코드에 두지 않는다.
 #
@@ -550,6 +554,7 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
                 "analysis": product_json.get('ocr_analysis', {}),
             },
             weight_predictor=WEIGHT_PREDICTOR,
+            s_only_predictor=S_ONLY_PREDICTOR,
             product_type=infer_product_type(product_for_ontology),
         )
         weighting = weighting_summary(analysis_result)
@@ -598,12 +603,17 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
             # 보여줘야 하므로 전체를 싣는다.
             "capability_scores": analysis_result.capability_scores,
             "ontology_reasons": analysis_result.reasons,
+            "s_only_correction": (analysis_result.details or {}).get("s_only_correction"),
             # 채널 가중치·기여도·모델 버전. result_json 으로 DB 에도 함께 저장된다.
             "weighting": weighting,
 
             # (기존 UI 호환성을 위한 일부 필드 보존)
             "trust_score": analysis_result.accs / 100, # 0~1 스케일 변환 (색상 바닥용)
-            "verdict_cls": "genuine" if "신뢰" in analysis_result.verdict else "washing" if "워싱" in analysis_result.verdict else "uncertain",
+            "verdict_cls": {
+                "genuine": "genuine",
+                "washing": "washing",
+                "suspicious": "uncertain",
+            }.get(verdict_label(analysis_result.verdict), "uncertain"),
             "text_color": calc_dim_color(analysis_result.tes),
             "verify_color": calc_dim_color(analysis_result.hes),
             "relation_color": calc_dim_color(analysis_result.ces),
@@ -1040,6 +1050,7 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
         "claims": build_claims(payload.get("capability_scores", [])),
         # 이 기능 이전에 저장된 기록에는 weighting 이 없다.
         "weighting": payload.get("weighting"),
+        "s_only_correction": payload.get("s_only_correction"),
         "meta": {
             "backend": "real",
             "pipeline_version": "real-v1",

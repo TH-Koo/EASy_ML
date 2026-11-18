@@ -1,0 +1,3 @@
+# Serving the portable S-only forest; sklearn is needed only for retraining.
+numpy>=1.26,<3
+pandas>=2.2,<3

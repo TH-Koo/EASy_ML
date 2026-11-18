@@ -725,6 +725,7 @@ class OntologyAnalysisEngine:
         enable_dynamic_weighting: bool = True,
         engine_config: Optional[EngineConfig] = None,
         weight_predictor: Optional[Any] = None,
+        s_only_predictor: Optional[Any] = None,
 
     ):
         self.repo = OntologyRepository(ontology_dir)
@@ -735,6 +736,11 @@ class OntologyAnalysisEngine:
             self.dynamic_weight_config = self.engine_config.dynamic_weights
         self.enable_dynamic_weighting = bool(enable_dynamic_weighting)
         self.weight_predictor = weight_predictor
+        self.s_only_predictor = s_only_predictor
+        if s_only_predictor is not None:
+            validate_ontology = getattr(s_only_predictor, "validate_ontology", None)
+            if callable(validate_ontology):
+                validate_ontology(ontology_dir)
         if weight_predictor is not None:
             if not self.enable_dynamic_weighting:
                 raise ValueError("weight_predictor requires enable_dynamic_weighting=True")
@@ -1039,7 +1045,7 @@ class OntologyAnalysisEngine:
             ),
         }
 
-        return AnalysisResult(
+        result = AnalysisResult(
             accs=round(accs, 2),
             raw_accs=round(dynamic["dynamic_evidence_score"] if self.weight_predictor is not None else legacy["raw_accs"], 2),
             hes=round(hes, 2),
@@ -1057,6 +1063,11 @@ class OntologyAnalysisEngine:
             ],
             details=details,
         )
+        if self.s_only_predictor is not None:
+            from fides_ml.s_only import apply_s_only
+
+            result = apply_s_only(result, self.s_only_predictor, product_type)
+        return result
 
     # ------------------------------------------------------------------
     # Claim and capability scoring
