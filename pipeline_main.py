@@ -567,71 +567,42 @@ def _save_evidence_bundle_cache(url: str, bundle_kwargs: dict) -> None:
         print(f"⚠️ [EvidenceCache] 캐시 저장 실패 (무시하고 진행): {e}")
 
 
-def run_full_pipeline(url: str):
-    if not url:
-        print("❌ 실행할 URL이 없습니다.")
-        return
+def run_product_ocr(scraped_item: dict) -> dict:
+    """상세페이지 스크린샷을 OCR 한다. 이미지가 같으면 캐시를 쓴다.
 
-    print("\n" + "=" * 85)
-    print(" [EASy] 실시간 AI 워싱 검증 파이프라인 가동")
-    print("=" * 85)
-
-    scraped_item = get_product_data(url)
-    if not scraped_item:
-        return
-
-    # 상품 페이지가 아닌 것을 받아오는 경우가 있다. 벤치마크에는 제품명이
-    # "뉴스룸"이고 스펙도 본문도 비어 있는 수집 결과가 섞여 있었다. 이런
-    # 입력은 판정할 대상이 없으므로 무거운 공공데이터 통신을 하기 전에
-    # 멈춘다. 스펙과 본문이 모두 비었을 때만 걸러 정상 상품을 놓치지 않는다.
-    if not _looks_like_product_page(scraped_item):
-        print("\n [중단] 상품 페이지로 보이지 않습니다(스펙·본문 없음). 분석을 건너뜁니다.")
-        print(f" 수집된 제목: {scraped_item.get('model_name', '')!r}")
-        return
-
+    터미널 파이프라인과 웹 서버(server.py)가 같은 OCR 결과를 써야 같은 주장을
+    잡는다. 그래서 이 단계를 함수로 떼어 둘 다 여기를 지나게 한다.
+    """
     img_path = scraped_item.get("screenshot_path", "")
-    ocr_result = {}
-    ocr_text = ""
-    is_ai_product = True
+    if not img_path:
+        return {}
+    save_dir = os.path.dirname(img_path) if os.path.dirname(img_path) else "product_images"
+    os.makedirs(save_dir, exist_ok=True)
+    json_path = os.path.join(save_dir, "ocr_result.json")
 
-    if img_path:
-        save_dir = os.path.dirname(img_path) if os.path.dirname(img_path) else "product_images"
-        os.makedirs(save_dir, exist_ok=True)
-        json_path = os.path.join(save_dir, "ocr_result.json")
+    cached_ocr_result = _load_ocr_result_cache(img_path, json_path)
+    if cached_ocr_result is not None:
+        return cached_ocr_result
 
-        cached_ocr_result = _load_ocr_result_cache(img_path, json_path)
+    print("⏳ [OCR] 캐시가 없거나 이미지가 변경되어 OCR을 새로 수행합니다.")
+    ocr_result = analyze_ai_washing(img_path)
+    _save_ocr_result_cache(img_path, json_path, ocr_result)
+    return ocr_result
 
-        if cached_ocr_result is not None:
-            ocr_result = cached_ocr_result
-        else:
-            print("⏳ [OCR] 캐시가 없거나 이미지가 변경되어 OCR을 새로 수행합니다.")
-            ocr_result = analyze_ai_washing(img_path)
-            _save_ocr_result_cache(img_path, json_path, ocr_result)
 
-        ocr_text = ocr_result.get("extracted_text", "")
-        is_ai_product = ocr_result.get("is_ai_product", True)
+def collect_evidence(url: str, scraped_item: dict, ocr_result: dict) -> dict:
+    """제조사·모델을 확정하고 공공 기록 10곳을 병렬로 조회한다.
 
-    if not is_ai_product:
-        print("\n [조기 종료] 광고 이미지 내 AI/인공지능 키워드가 발견되지 않았습니다.")
-        print(" AI 홍보를 하지 않는 일반 상품으로 분류하여 무거운 공공데이터 통신을 스킵합니다.")
+    웹 서버는 예전에 이 단계를 따로 구현해 KC/RRA·조달·TIPA·KORAIA·DART·특허·GS
+    만 조회했다. 그래서 같은 제품을 넣어도 터미널에서는 DART·KIPRIS·NTIS 등이
+    잡히고 화면에는 KIPRIS 만 나오며 점수도 달랐다. 이제 둘 다 이 함수를 쓴다.
 
-        norm_result = normalize_data(scraped_item)
-        fast_company = norm_result.get("norm_company", "미확인")
-        fast_model = norm_result.get("final_norm_model", "미확인")
-
-        save_to_dataset(
-            product_info={
-                "category": scraped_item.get("category", ""),
-                "company": fast_company,
-                "model": fast_model,
-            },
-            scores={"hes": 0, "tes": 0, "ces": 0, "ecs": 0, "has_dart": False},
-            final_score=0,
-            is_ai_product=False,
-            verdict="분석 스킵 (비 AI 상품)",
-            risk_level="없음(일반상품)",
-        )
-        return
+    반환값:
+        official_company, official_model, product_category
+        final_results   기관 키('DART', 'NTIS' …) → API 원본 결과
+        bundle_kwargs   secure_analyze_bundle() 에 그대로 넘길 인자
+    """
+    ocr_text = ocr_result.get("extracted_text", "") if isinstance(ocr_result, dict) else ""
 
     norm_result = normalize_data(scraped_item)
     official_company = resolve_real_company_name(norm_result.get("raw_company", ""), scraped_item.get("model_name", ""))
@@ -664,7 +635,7 @@ def run_full_pipeline(url: str):
         dart_target_list = search_payload["dart"] if search_payload["dart"] else [official_company]
         futures = {
             executor.submit(check_dart_ai_washing, dart_target_list, scraped_item.get("model_name")): 'DART',
-            executor.submit(verify_kipris, search_payload["kipris"], product_category): 'KIPRIS',   
+            executor.submit(verify_kipris, search_payload["kipris"], product_category): 'KIPRIS',
             executor.submit(search_kc_db_local, search_payload["local_db"], official_model): 'RRA',
             executor.submit(search_cert_db_local, search_payload["local_db"]): 'TTA',
             executor.submit(verify_nipa_solution, search_payload["nipa"]): 'AI공급',
@@ -676,9 +647,13 @@ def run_full_pipeline(url: str):
         }
 
         for future in concurrent.futures.as_completed(futures):
-            final_results[futures[future]] = future.result()
-
-    print("\n 온톨로지 기반 AI Claim Credibility Score(ACCS) 산출 중...")
+            key = futures[future]
+            try:
+                final_results[key] = future.result()
+            except Exception as e:
+                # 한 기관이 죽어도 나머지 근거로 분석은 끝까지 간다.
+                print(f"⚠️ [{key}] 조회 실패: {e}")
+                final_results[key] = {"error": str(e)}
 
     ontology_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ontology")
     rra_records = copy.deepcopy(
@@ -697,7 +672,7 @@ def run_full_pipeline(url: str):
     else:
         patent_items_df = None
 
-    analyze_bundle_kwargs = dict(
+    bundle_kwargs = dict(
         ontology_dir=ontology_path,
         product_json={
             # Keep the original Danawa title as claim text; official_model is only
@@ -738,7 +713,73 @@ def run_full_pipeline(url: str):
     # 재크롤링·재호출 없이 채점 로직만 다시 시험할 수 있도록, 실제로 엔진에
     # 넘긴 근거를 그대로 캐시한다 (scripts/calibrate_thresholds.py 등이 사용).
     # 캐시에는 수집 근거만 남긴다. predictor 는 학습 결과라 근거가 아니다.
-    _save_evidence_bundle_cache(url, analyze_bundle_kwargs)
+    _save_evidence_bundle_cache(url, bundle_kwargs)
+
+    return {
+        "official_company": official_company,
+        "official_model": official_model,
+        "product_category": product_category,
+        "final_results": final_results,
+        "bundle_kwargs": bundle_kwargs,
+    }
+
+
+def run_full_pipeline(url: str):
+    if not url:
+        print("❌ 실행할 URL이 없습니다.")
+        return
+
+    print("\n" + "=" * 85)
+    print(" [EASy] 실시간 AI 워싱 검증 파이프라인 가동")
+    print("=" * 85)
+
+    scraped_item = get_product_data(url)
+    if not scraped_item:
+        return
+
+    # 상품 페이지가 아닌 것을 받아오는 경우가 있다. 벤치마크에는 제품명이
+    # "뉴스룸"이고 스펙도 본문도 비어 있는 수집 결과가 섞여 있었다. 이런
+    # 입력은 판정할 대상이 없으므로 무거운 공공데이터 통신을 하기 전에
+    # 멈춘다. 스펙과 본문이 모두 비었을 때만 걸러 정상 상품을 놓치지 않는다.
+    if not _looks_like_product_page(scraped_item):
+        print("\n [중단] 상품 페이지로 보이지 않습니다(스펙·본문 없음). 분석을 건너뜁니다.")
+        print(f" 수집된 제목: {scraped_item.get('model_name', '')!r}")
+        return
+
+    ocr_result = run_product_ocr(scraped_item)
+    ocr_text = ocr_result.get("extracted_text", "") if ocr_result else ""
+    is_ai_product = ocr_result.get("is_ai_product", True) if ocr_result else True
+
+    if not is_ai_product:
+        print("\n [조기 종료] 광고 이미지 내 AI/인공지능 키워드가 발견되지 않았습니다.")
+        print(" AI 홍보를 하지 않는 일반 상품으로 분류하여 무거운 공공데이터 통신을 스킵합니다.")
+
+        norm_result = normalize_data(scraped_item)
+        fast_company = norm_result.get("norm_company", "미확인")
+        fast_model = norm_result.get("final_norm_model", "미확인")
+
+        save_to_dataset(
+            product_info={
+                "category": scraped_item.get("category", ""),
+                "company": fast_company,
+                "model": fast_model,
+            },
+            scores={"hes": 0, "tes": 0, "ces": 0, "ecs": 0, "has_dart": False},
+            final_score=0,
+            is_ai_product=False,
+            verdict="분석 스킵 (비 AI 상품)",
+            risk_level="없음(일반상품)",
+        )
+        return
+
+    collected = collect_evidence(url, scraped_item, ocr_result)
+    official_company = collected["official_company"]
+    official_model = collected["official_model"]
+    product_category = collected["product_category"]
+    final_results = collected["final_results"]
+    analyze_bundle_kwargs = collected["bundle_kwargs"]
+
+    print("\n 온톨로지 기반 AI Claim Credibility Score(ACCS) 산출 중...")
     analysis_result = secure_analyze_bundle(
         **analyze_bundle_kwargs,
         weight_predictor=get_weight_predictor(),
