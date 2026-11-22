@@ -92,14 +92,6 @@ S_ONLY_PREDICTOR = load_s_only_predictor()
 
 from fides_ml.s_only import verdict_label
 
-# 크롤링 이후의 OCR·제조사 확정·공공 기록 조회는 터미널 파이프라인과 같은
-# 함수를 쓴다. 따로 구현하면 화면과 터미널의 근거·점수가 갈라진다.
-from pipeline_main import (  # noqa: E402
-    _looks_like_product_page as pipeline_looks_like_product_page,
-    collect_evidence,
-    run_product_ocr,
-)
-
 # DB 접속 문자열은 코드에 두지 않는다.
 #
 # 여기에 계정과 비밀번호가 그대로 박혀 있었다. server.py 는 깃에 추적되므로
@@ -455,42 +447,115 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
         _tasks[task_id]["done"] = True
 
     try:
-        # 크롤링 → OCR → 제조사·모델 확정 → 공공 기록 조회는 터미널 파이프라인
-        # (pipeline_main) 과 같은 함수를 쓴다. 예전에는 여기서 따로 구현해 조회
-        # 기관이 7곳뿐이었고(NTIS·IITP·NIPA·나라장터 없음) 제조사·모델 해석도
-        # 달라서, 같은 제품이 터미널과 화면에서 다른 근거·다른 점수를 냈다.
-
         # Step 0: 크롤링
         push(0, "URL 크롤링 및 OCR 처리 중")
         product_json = get_product_data(url)
         if not product_json:
             fail("상품 페이지를 불러오지 못했습니다. 다나와 상품 URL과 네트워크 연결을 확인한 뒤 다시 시도해 주세요.")
             return
-        if not pipeline_looks_like_product_page(product_json):
-            fail("상품 페이지로 보이지 않아요 — 다나와 제품 상세 URL을 넣어 주세요.")
-            return
 
-        # Step 1: OCR (이미지가 같으면 캐시를 쓴다)
+        # Step 1: OCR
         push(1, "이미지 OCR 분석 중")
-        ocr_result = run_product_ocr(product_json) or {}
+        image_path = product_json.get("screenshot_path")
+        if image_path and os.path.exists(image_path):
+            ocr_result = analyze_ai_washing(image_path)
+            product_json["ocr_extracted_text"] = ocr_result.get("extracted_text", "")
 
-        # Step 2~3: 제조사·모델 확정 + 공공 기록 병렬 조회
-        push(2, "데이터 정규화 및 제조사 추적 중")
-        push(3, "외부 증거(인증/특허/공시/R&D) 병렬 수집 중")
-        collected = collect_evidence(url, product_json, ocr_result)
-        bundle_kwargs = collected["bundle_kwargs"]
-        final_results = collected["final_results"]
-        api_company = collected["official_company"]
-        product_category = collected["product_category"]
-        push(4, "외부 증거 수집 완료")
+        # Step 2: Gemini 정제
+        push(2, "로컬 AI 텍스트 정제 중")
+        if product_json.get("ocr_extracted_text", "").strip():
+            cleaned = clean_ocr_text_with_gemini(product_json)
+            if cleaned and cleaned.get("cleaned_text"):
+                product_json["ocr_extracted_text"] = cleaned["cleaned_text"]
 
-        # 🧠 Step 5: 온톨로지 기반 최종 분석 엔진 호출 🧠
+        # Step 3: 정규화 + 제조사 추적
+        push(3, "데이터 정규화 및 제조사 추적 중")
+        norm_info = normalize_data(product_json)
+        raw_brand = norm_info.get("norm_company", "")
+        target_company_name = resolve_real_company_name(raw_brand, product_json.get('model_name', ''))
+        has_real_company = bool(target_company_name and target_company_name != raw_brand)
+
+        for name in target_company_name.split(','):
+            name = name.strip()
+            for variant in expand_company_aliases(name):
+                if variant not in norm_info['company_aliases']:
+                    norm_info['company_aliases'].append(variant)
+
+        company_aliases = norm_info.get('company_aliases', [])
+        model_param = norm_info.get('final_norm_model', '')
+        api_company = target_company_name.split(',')[0].strip() if target_company_name else raw_brand
+
+        # NTIS 조회(Step 4)와 특허 조회(Step 5)가 함께 쓰므로 병렬 조회 전에 계산한다
+        product_category = _product_category(product_json)
+
+        # Step 4: 공공 API + DB + DART 병렬 검색
+        push(4, "외부 증거(인증/특허/공시) 병렬 수집 중")
+        with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+            f_db = executor.submit(search_kc_db, norm_info, product_json, has_real_company, target_company_name, model_param)
+            f_jodale = executor.submit(check_jodale_mall, model_param)
+            f_tipa = executor.submit(check_tipa_ai, api_company)
+            f_koraia = executor.submit(check_koraia, api_company)
+            f_dart = executor.submit(check_dart_ai_washing, api_company, model_param) # 🔥 DART 추가
+            f_ntis = executor.submit(verify_ntis_rnd,[api_company], product_category
+)
+
+            db_results_df = f_db.result()
+            jodale_result = f_jodale.result()
+            tipa_result = f_tipa.result()
+            koraia_result = f_koraia.result()
+            dart_result = f_dart.result()
+            ntis_result = f_ntis.result()
+
+        # Step 5: 특허 + GS 인증
+        patent_count, patent_items_df, patent_search_type = get_company_patent_data(company_aliases, product_category)
+        cert_results_df = search_cert_db(company_aliases)
+
+
+        # 🧠 Step 6: 온톨로지 기반 최종 분석 엔진 호출 🧠
         push(5, "온톨로지 엔진 기반 AI 주장 신뢰도(ACCS) 산출 중")
+        
+        ontology_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ontology")
+        
+        # 엔진 입력용 product_json 재구성
+        product_for_ontology = {
+            "title": product_json.get('product_name') or product_json.get('model_name'),
+            "name": product_json.get('product_name') or product_json.get('model_name'),
+            "model_name": model_param,
+            "description": product_json.get('description', ''),
+            "ocr_text": product_json.get('ocr_extracted_text', ''),
+            "specs": product_json.get('specs', {}),
+            "raw_specs": product_json.get('raw_specs', ''),
+            "category": product_json.get('category', ''),
+            "url": url,
+            "manufacturer": api_company,
+        }
+
+        # DataFrame을 dict list로 변환하여 어댑터에 안전하게 전달
+        db_records = db_results_df.to_dict(orient="records") if not db_results_df.empty else []
+        cert_records = cert_results_df.to_dict(orient="records") if not cert_results_df.empty else []
+
         analysis_result = secure_analyze_bundle(
-            **bundle_kwargs,
+            ontology_dir=ontology_dir,
+            product_json=product_for_ontology,
+            norm_info=norm_info,
+            db_results=db_records,
+            ntis_result=ntis_result,
+            # 원본 dict를 전달해 상태·레코드 ID·상세 근거를 보존한다.
+            jodale_result=jodale_result,
+            tipa_result=tipa_result,
+            koraia_result=koraia_result,
+            patent_items_df=patent_items_df,
+            cert_results=cert_records,
+            dart_result=dart_result,
+            target_company_name=api_company,
+            model_param=model_param,
+            ocr_result={
+                "extracted_text": product_json.get('ocr_extracted_text', ''),
+                "analysis": product_json.get('ocr_analysis', {}),
+            },
             weight_predictor=WEIGHT_PREDICTOR,
             s_only_predictor=S_ONLY_PREDICTOR,
-            product_type=infer_product_type(bundle_kwargs["product_json"]),
+            product_type=infer_product_type(product_for_ontology),
         )
         weighting = weighting_summary(analysis_result)
 
@@ -502,14 +567,13 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
             f"weights={weighting['weights']}, model_version={weighting['model_version']}"
         )
         log_claim_breakdown(analysis_result.capability_scores)
+        log_claim_breakdown(analysis_result.capability_scores)
 
         # 📊 Step 7: 프론트엔드용 JSON 결과 조립
         push(6, "분석 완료 및 결과 반환")
 
-        brand = api_company or '미확인'
+        brand = norm_info.get('raw_company', '미확인')
         prod_name = product_json.get('model_name', '')
-        source_rows = summarize_sources(final_results)
-        source_counts = {row["source"]: row["count"] for row in source_rows}
 
         _task_start = _tasks[task_id].get("start_time", datetime.now())
         _task_duration = round((datetime.now() - _task_start).total_seconds(), 1)
@@ -554,21 +618,24 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
             "verify_color": calc_dim_color(analysis_result.hes),
             "relation_color": calc_dim_color(analysis_result.ces),
             
-            # 기관별 조회 결과. 화면의 "조회한 공공기관" 목록이 이걸 그대로 쓴다.
-            "_sources": source_rows,
-            "patent_count": source_counts.get("kipris", 0),
-            "gs_count": source_counts.get("tta", 0),
+            "patent_count": patent_count,
+            "gs_count": len(cert_records),
             "specs": [{"key": k, "value": v} for k, v in product_json.get('specs', {}).items()],
-            "_kc_rra_count": source_counts.get("rra", 0),
-            "_dart_status": (final_results.get("DART") or {}).get("status", "스킵") if isinstance(final_results.get("DART"), dict) else "스킵",
-            "_dart_count": source_counts.get("dart", 0),
+            "_jodale_status": jodale_result.get("status", ""),
+            "_tipa_status": tipa_result.get("status", ""),
+            "_tipa_solution": tipa_result.get("solution_name", ""),
+            "_koraia_status": koraia_result.get("status", ""),
+            "_kc_rra_count": len(db_records),   # 로컬 KC/RRA DB 조회 결과
+            "_dart_status": dart_result.get("status", "스킵") if dart_result else "스킵",
+            "_dart_count": len(dart_result.get("evidence", [])) if dart_result else 0,
             "_category": product_category,
             # NTIS 국가R&D: 엔진 근거로만 쓰이고 화면에 나오지 않던 조회 결과
-            "_ntis_status": (final_results.get("NTIS") or {}).get("status", "스킵") if isinstance(final_results.get("NTIS"), dict) else "스킵",
-            "_ntis_count": source_counts.get("ntis", 0),
+            "_ntis_status": (ntis_result or {}).get("status", "스킵"),
+            "_ntis_count": len((ntis_result or {}).get("records") or []),
         }
 
         _tasks[task_id]["events"].append({"type": "result", "data": result_payload})
+        save_result_cache(task_id, result_payload)
         save_result_cache(task_id, result_payload)
 
         # 📝 히스토리 저장 (로그인 사용자에 한해서만)
@@ -638,74 +705,9 @@ SOURCE_LABELS = {
     "gs":          "GS 인증",
     "nep":         "NEP 인증",
     "procurement": "조달청 등록",
-    "tta":         "TTA·GS 인증",
     "ntis":        "NTIS 국가R&D",
-    "iitp":        "IITP 연구과제",
-    "nipa":        "NIPA AI 공급기업",
-    "koneps":      "나라장터 낙찰",
-    "kaiac":       "KAIAC 인증",
+    "iitp":        "IITP 정보통신 R&D",
 }
-
-# collect_evidence() 의 기관 키 → (화면 id, 이름). 순서가 곧 화면 순서다.
-# KAIAC 는 아직 실제 조회를 하지 않는 자리표시(verify_kaiac)라 목록에서 뺀다.
-# 조회하지 않은 곳을 "없음"으로 적으면 찾아봤는데 없다는 말이 된다.
-PIPELINE_SOURCES = [
-    ("KIPRIS",   "kipris"),
-    ("DART",     "dart"),
-    ("NTIS",     "ntis"),
-    ("IITP",     "iitp"),
-    ("RRA",      "rra"),
-    ("TTA",      "tta"),
-    ("AI공급",   "nipa"),
-    ("조달몰",   "procurement"),
-    ("나라장터", "koneps"),
-]
-
-
-def _result_count(res) -> int:
-    """API 결과 하나에서 찾은 기록 수를 센다. records → evidence 순으로 본다."""
-    if not isinstance(res, dict) or res.get("error"):
-        return 0
-    records = res.get("records")
-    if isinstance(records, list):
-        n = sum(1 for r in records if r)
-        if n:
-            return n
-    evidence = res.get("evidence")
-    if isinstance(evidence, list):
-        return sum(1 for e in evidence if e)
-    return 1 if evidence else 0
-
-
-def summarize_sources(final_results: dict) -> list:
-    """기관별 조회 결과를 화면의 검증 행으로 옮긴다.
-
-    예전 화면은 서버가 따로 조회한 7곳만 적었고 NTIS·IITP 등은 아예 없었다.
-    이제 터미널 파이프라인이 실제로 조회한 결과를 그대로 적는다.
-    """
-    rows = []
-    for key, source in PIPELINE_SOURCES:
-        res = (final_results or {}).get(key)
-        count = _result_count(res)
-        if not isinstance(res, dict):
-            value, intent = "조회 안 함", "neutral"
-        elif res.get("error"):
-            value, intent = "조회 실패", "neutral"
-        elif count > 0:
-            value, intent = f"{count}건 확인", "ok"
-        elif key == "DART" and res.get("status") not in (None, "", "데이터 없음"):
-            # 비상장사·스킵처럼 "없다"와 다른 사정은 그대로 보여 준다.
-            value, intent = ("조회 안 함" if res.get("status") == "스킵" else res["status"]), "neutral"
-        else:
-            value, intent = "없음", "neutral"
-        rows.append({
-            "source": source,
-            "key": SOURCE_LABELS[source],
-            "value": value,
-            "intent": intent,
-            "count": count,
-        })
-    return rows
 
 
 def build_claims(capability_scores: list) -> list:
@@ -956,8 +958,6 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
         s = (status or "").strip()
         return "조회 안 함" if s in ("", "스킵") else s
 
-    # 이 변경 뒤의 기록은 기관별 조회 결과(_sources)를 그대로 싣고 있다.
-    # 그 전 기록만 아래의 옛 7행 표를 만든다.
     kc_rra_count = payload.get("_kc_rra_count", 0)
     dart_count   = payload.get("_dart_count", 0)
     dart_status  = payload.get("_dart_status", "")
@@ -1003,12 +1003,6 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
          "value": f"{gs_count}건",
          "intent": "ok" if gs_count > 0 else "neutral"},
     ]
-
-    if payload.get("_sources"):
-        verification_rows = [
-            {k: row.get(k) for k in ("source", "key", "value", "intent")}
-            for row in payload["_sources"]
-        ]
 
     prod_name = payload.get("product_name", "")
     category  = payload.get("_category", "")
