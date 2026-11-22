@@ -106,6 +106,12 @@ export const SOURCE_INFO: Record<string, SourceInfo> = {
   gs: { name: "GS 인증", role: "소프트웨어가 품질 시험을 통과했다는 인증" },
   nep: { name: "신제품 인증 NEP", role: "새 기술이 처음 적용된 제품에 주는 인증" },
   procurement: { name: "조달청", role: "공공기관 납품을 위해 등록한 제품 목록" },
+  tta: { name: "TTA·GS 인증", role: "소프트웨어 품질 시험·인증 기록" },
+  ntis: { name: "NTIS 국가R&D", role: "나라 돈으로 진행한 연구개발 과제 기록" },
+  iitp: { name: "IITP 연구과제", role: "정보통신 분야 국가 연구과제 기록" },
+  nipa: { name: "NIPA AI 공급기업", role: "정부가 인정한 AI 솔루션 공급기업 명단" },
+  koneps: { name: "나라장터", role: "공공기관 입찰에서 낙찰받은 기록" },
+  kaiac: { name: "KAIAC 인증", role: "AI 제품 품질 인증 기록" },
   seller_page: { name: "판매 페이지", role: "판매자가 올린 상세페이지 (공공 기록은 아니에요)" },
 };
 
