@@ -26,3 +26,6 @@ env/
 
 # 로컬 분석 결과 캐시 (server.py save_result_cache)
 logs/
+
+# DART 공시 원문 하루 캐시 (logic/dart_scraper.py)
+docs_cache/dart_text/

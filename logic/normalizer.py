@@ -180,14 +180,17 @@ def normalize_data(scraped_json):
         if '-' in tm and tm in raw_model_name.upper():
             final_model = tm
             break
+    # 상품명에 들어 있는 토큰을 본문의 하이픈 토큰보다 먼저 본다. 반대 순서였을
+    # 때는 페이지 잡문자(언어 선택 "SK-KR" 등)가 상품명의 진짜 모델번호
+    # (WD90F25AHT)를 이겨 RRA/KC 조회가 엉뚱한 모델로 나갔다.
     if not final_model:
         for tm in tech_models:
-            if '-' in tm and tm in full_text_blob.upper():
+            if tm in raw_model_name.upper():
                 final_model = tm
                 break
     if not final_model:
         for tm in tech_models:
-            if tm in raw_model_name.upper():
+            if '-' in tm and tm in full_text_blob.upper():
                 final_model = tm
                 break
     if not final_model and tech_models:

@@ -66,6 +66,60 @@ def _evaluate_product_focused_rules(product_name: str, dart_text_data: str) -> d
     unique_evidences = list(set(evidence_log))
     return {"total_score": min(rnd_score + ip_score + product_score, 100), "evidence_log": unique_evidences[:5]}
 
+_DART_TEXT_CACHE_DIR = os.path.join("docs_cache", "dart_text")
+
+
+def _dart_text_cache_path(corp_code: str) -> str:
+    return os.path.join(_DART_TEXT_CACHE_DIR, f"{corp_code}_{time.strftime('%Y%m%d')}.txt")
+
+
+def _load_dart_text_cache(corp_code: str):
+    path = _dart_text_cache_path(corp_code)
+    if not os.path.exists(path):
+        return None
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return f.read()
+    except OSError:
+        return None
+
+
+def _save_dart_text_cache(corp_code: str, text: str) -> None:
+    try:
+        os.makedirs(_DART_TEXT_CACHE_DIR, exist_ok=True)
+        with open(_dart_text_cache_path(corp_code), "w", encoding="utf-8") as f:
+            f.write(text)
+    except OSError as e:
+        print(f"[DART] 원문 캐시 저장 실패(무시): {e}")
+
+
+def _fetch_dart_text(dart, found_corp_code: str) -> str:
+    """최근 공시 목록·사업보고서 원문·타법인출자 현황을 한 덩어리 글로 모은다."""
+    dart_text_data = ""
+    with contextlib.redirect_stdout(io.StringIO()):
+        try:
+            recent = dart.list(found_corp_code, start='2023-01-01')
+            if recent is not None and not recent.empty: 
+                dart_text_data += "\n".join(recent['report_nm'].tolist()) + "\n"
+        except: pass
+
+        try:
+            annual = dart.list(found_corp_code, start='2023-01-01', kind='A')
+            if annual is not None and not annual.empty:
+                raw_xml = dart.document(annual.iloc[0]['rcp_no'])
+                if raw_xml: dart_text_data += raw_xml[:150000] + "\n" 
+        except: pass
+
+        for year in ['2024', '2023']:
+            try:
+                investments = dart.report(found_corp_code, '타법인출자', year, '11011')
+                if investments is not None and not investments.empty: 
+                    dart_text_data += investments.to_string() + "\n"
+                break
+            except: time.sleep(0.5)
+    return dart_text_data
+
+
 def check_dart_ai_washing(company_aliases: list, product_name: str = "") -> dict:
     if not DART_KEY or not company_aliases: return {"status": "스킵", "total_score": 0, "detail": "기업명 미확인."}
 
@@ -137,28 +191,13 @@ def check_dart_ai_washing(company_aliases: list, product_name: str = "") -> dict
             return {"status": "비상장사", "total_score": 0, "detail": "DART 미등록 법인."}
 
         # 🚀 [핵심 패치 4] 애매한 이름 대신 고유 8자리 코드(corp_code)로 정확하게 통신 시도
-        dart_text_data = ""
-        with contextlib.redirect_stdout(io.StringIO()):
-            try:
-                recent = dart.list(found_corp_code, start='2023-01-01')
-                if recent is not None and not recent.empty: 
-                    dart_text_data += "\n".join(recent['report_nm'].tolist()) + "\n"
-            except: pass
-
-            try:
-                annual = dart.list(found_corp_code, start='2023-01-01', kind='A')
-                if annual is not None and not annual.empty:
-                    raw_xml = dart.document(annual.iloc[0]['rcp_no'])
-                    if raw_xml: dart_text_data += raw_xml[:150000] + "\n" 
-            except: pass
-
-            for year in ['2024', '2023']:
-                try:
-                    investments = dart.report(found_corp_code, '타법인출자', year, '11011')
-                    if investments is not None and not investments.empty: 
-                        dart_text_data += investments.to_string() + "\n"
-                    break
-                except: time.sleep(0.5)
+        # 공시 원문은 하루 동안 바뀌지 않는다. 사업보고서 원문(document)은 회사에
+        # 따라 수십 MB 라 분석마다 받으면 DART 한 곳에서만 20초 넘게 걸렸다.
+        dart_text_data = _load_dart_text_cache(found_corp_code)
+        if dart_text_data is None:
+            dart_text_data = _fetch_dart_text(dart, found_corp_code)
+            if dart_text_data.strip():
+                _save_dart_text_cache(found_corp_code, dart_text_data)
 
         # 디버깅이 쉽도록 결과에 실제로 매칭된 기업명을 출력합니다.
         if not dart_text_data.strip():
