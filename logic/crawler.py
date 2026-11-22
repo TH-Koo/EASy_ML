@@ -107,7 +107,9 @@ def _is_cache_valid(cache_data: Dict[str, Any], url: str) -> bool:
         return False
 
     screenshot_path = str(cache_data.get("screenshot_path") or "")
-    if screenshot_path and not os.path.exists(screenshot_path):
+    # 상세 이미지를 못 찍은 결과는 다시 크롤링한다. 그대로 쓰면 OCR 이 0자라
+    # 광고 이미지 속 AI 문구를 하나도 못 읽는데, 그 상태가 TTL 동안 굳는다.
+    if not screenshot_path or not os.path.exists(screenshot_path):
         return False
 
     return True
@@ -438,29 +440,110 @@ def _slow_scroll_to_bottom(driver) -> None:
 # =====================================================================
 # 상세 영역 캡처 / 스펙 추출
 # =====================================================================
+_OLD_DETAIL_SELECTORS = [
+    "#detail_content_wrap",
+    "#productDescriptionArea",
+    ".product_detail_area",
+    ".detail_content_wrap",
+    ".prod_detail",
+    ".product_detail",
+]
+
+# 새 화면(React) 상품 페이지의 제조사 제공 상세 이미지.
+# 예: 세탁기 pcode=77965100. 위 옛 선택자가 하나도 없고, 이미지는 lazy 로딩에
+# 높이 제한(max-height) 상자 안에 접혀 있어 요소 스크린샷으로는 찍히지 않는다.
+_NEW_DETAIL_IMAGE_SELECTOR = (
+    '#manufacturer-tabpanel-1 img, '
+    '[data-testid="ProductDetailSection"] img[src*="catalog-content"]'
+)
+
+
 def _find_detail_area(driver):
-    detail_selectors = [
-        "#detail_content_wrap",
-        "#productDescriptionArea",
-        ".product_detail_area",
-        ".detail_content_wrap",
-        ".prod_detail",
-        ".product_detail",
-    ]
+    """옛 화면의 상세 영역을 찾는다. 선택자 전체를 한 번에 기다린다.
 
-    for selector in detail_selectors:
-        try:
-            detail_area = WebDriverWait(driver, 3).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, selector))
-            )
-
-            if detail_area:
-                return detail_area
-
-        except Exception:
-            continue
-
+    예전에는 선택자마다 3초씩 따로 기다려서, 상세 영역이 없는 새 화면
+    페이지에서는 아무것도 못 찾은 채 18초를 버렸다.
+    """
+    combined = ", ".join(_OLD_DETAIL_SELECTORS)
+    try:
+        WebDriverWait(driver, 3).until(
+            lambda d: d.find_elements(By.CSS_SELECTOR, combined)
+        )
+    except Exception:
+        return None
+    for selector in _OLD_DETAIL_SELECTORS:
+        found = driver.find_elements(By.CSS_SELECTOR, selector)
+        if found:
+            return found[0]
     return None
+
+
+# 새 화면 상세 이미지를 이어 붙일 최대 높이(px). OCR 은 2000px 조각마다
+# CPU 로 15초 안팎이 걸려, 이미지 28장(3.3만 px)을 다 읽으면 4~5분이 된다.
+# 광고의 AI 문구는 앞쪽에 몰려 있다: 세탁기 pcode=77965100 은 앞 30%(약 1만 px)
+# 만 읽어도 잡히는 주장 5개와 ACCS 가 전부 읽을 때와 같았다.
+DETAIL_MAX_HEIGHT = int(os.getenv("EASY_DETAIL_MAX_HEIGHT", "12000"))
+
+
+def _new_layout_detail_image_urls(driver) -> List[str]:
+    """새 화면의 상세 이미지 주소를 순서대로 모은다. 없으면 빈 목록."""
+    try:
+        urls = driver.execute_script(
+            "return [...document.querySelectorAll(arguments[0])]"
+            ".map(i => i.currentSrc || i.src || i.getAttribute('data-src') || '')"
+            ".filter(u => u.startsWith('http'));",
+            _NEW_DETAIL_IMAGE_SELECTOR,
+        ) or []
+    except Exception:
+        return []
+    return list(dict.fromkeys(urls))
+
+
+def _stitch_detail_images(urls: List[str], out_path: str, referer: str) -> str:
+    """상세 이미지를 내려받아 세로로 이어 한 장으로 저장한다.
+
+    요소 스크린샷 대신 원본을 받는 이유: 이어 붙인 높이가 3만 px 를 넘는데,
+    headless Chrome 은 그렇게 긴 요소를 한 번에 찍지 못한다.
+    """
+    import io
+
+    import requests
+    from PIL import Image
+
+    target_width = 860
+    tiles = []
+    total = 0
+    for url in urls[:60]:
+        if total >= DETAIL_MAX_HEIGHT:
+            break
+        try:
+            res = requests.get(
+                url,
+                timeout=10,
+                headers={"User-Agent": "Mozilla/5.0", "Referer": referer},
+            )
+            res.raise_for_status()
+            img = Image.open(io.BytesIO(res.content)).convert("RGB")
+        except Exception as e:
+            print(f"   상세 이미지 받기 실패: {url[:80]} ({e})")
+            continue
+        if img.width < 200 or img.height < 50:
+            continue  # 아이콘·구분선
+        if img.width != target_width:
+            img = img.resize((target_width, max(1, round(img.height * target_width / img.width))))
+        tiles.append(img)
+        total += img.height
+
+    if not tiles:
+        return ""
+    canvas = Image.new("RGB", (target_width, total), "white")
+    y = 0
+    for t in tiles:
+        canvas.paste(t, (0, y))
+        y += t.height
+    canvas.save(out_path)
+    print(f"[성공] 새 화면 상세 이미지 {len(tiles)}장을 이어 저장: {out_path} ({total}px)")
+    return out_path
 
 
 def _capture_detail_area(driver, model_name: str) -> str:
@@ -479,6 +562,13 @@ def _capture_detail_area(driver, model_name: str) -> str:
     detail_area = _find_detail_area(driver)
 
     if detail_area is None:
+        urls = _new_layout_detail_image_urls(driver)
+        if urls:
+            try:
+                return _stitch_detail_images(urls, screenshot_file, driver.current_url)
+            except Exception as e:
+                print(f"새 화면 상세 이미지 저장 실패: {e}")
+                return ""
         print("[스킵] 상세 이미지 영역을 찾을 수 없습니다.")
         return ""
 
