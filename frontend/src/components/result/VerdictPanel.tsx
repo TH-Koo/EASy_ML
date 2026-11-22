@@ -68,6 +68,12 @@ export function VerdictPanel({ data }: { data: AnalysisResult }) {
           {verdictTitle(data.scores.overall_label)}
         </h1>
         <p className="text-fg-muted mt-1 text-[15px]">{headline(data)}</p>
+        {data.s_only_correction?.applied ? (
+          <div className="border-border bg-surface-strong mt-3 rounded-xl border px-4 py-3 text-sm leading-relaxed">
+            <p className="text-fg font-semibold">추가 확인이 필요한 제품입니다</p>
+            <p className="text-fg-muted mt-1">{data.s_only_correction.reason}</p>
+          </div>
+        ) : null}
 
         {level !== null ? (
           <>

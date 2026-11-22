@@ -53,7 +53,7 @@ function riskTone(level: string): { color: string; label: string } {
   const v = (level || "").trim();
   if (v.includes("매우 낮") || v === "낮음")
     return { color: "var(--color-verified)", label: v || "—" };
-  if (v.includes("보통")) return { color: "var(--color-partial)", label: v };
+  if (v.includes("보통") || v === "중간") return { color: "var(--color-partial)", label: v };
   if (v.includes("높")) return { color: "var(--color-missing)", label: v };
   return { color: "var(--color-fg-faint)", label: v || "—" };
 }

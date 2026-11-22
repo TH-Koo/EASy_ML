@@ -184,6 +184,21 @@ export interface Weighting {
   ecs_alpha: number | null;
 }
 
+export interface SOnlyCorrection {
+  applied: boolean;
+  status: string;
+  reason_code: string;
+  reason: string;
+  original_verdict: string;
+  original_risk_level: string;
+  original_label: string | null;
+  final_label: string | null;
+  threshold: number | null;
+  suspicious_score: number | null;
+  model_version: string | null;
+  category_known: boolean | null;
+}
+
 export interface AnalysisResult {
   analysis_id: string;
   product: ProductInfo;
@@ -194,6 +209,8 @@ export interface AnalysisResult {
   claims?: Claim[];
   /** 가중치 연결 이전에 저장된 기록에는 없다. */
   weighting?: Weighting | null;
+  /** Suspicious 보정 이전에 저장된 분석에는 없다. */
+  s_only_correction?: SOnlyCorrection | null;
   meta: AnalysisMeta;
   created_at: string;
 }

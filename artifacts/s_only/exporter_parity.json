@@ -1,0 +1,17 @@
+{
+  "training_rows_checked": 1152,
+  "fixture_rows_checked": 24,
+  "export_vs_sklearn_max_absolute_error": 2.220446049250313e-16,
+  "fixture_max_absolute_error": 1.1102230246251565e-16,
+  "threshold_decisions_identical": true,
+  "model_sha256": "3800843409efca8874be9c8cbcf439b11f1d34c6bb9eea4a08908a3d6f0dfb82",
+  "portable_runtime_checked": true,
+  "scope": "Export numerical equivalence using refit training inputs. This report does not estimate prediction accuracy on new products.",
+  "runtime_rows_checked": 1152,
+  "runtime_fixture_rows_checked": 24,
+  "runtime_max_absolute_error": 3.3306690738754696e-16,
+  "runtime_fixture_max_absolute_error": 1.1102230246251565e-16,
+  "runtime_threshold_decision_mismatches": 0,
+  "runtime_fixture_threshold_decision_mismatches": 0,
+  "runtime_argmax_mismatches": 0
+}
