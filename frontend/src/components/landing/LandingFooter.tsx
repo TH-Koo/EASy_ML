@@ -71,7 +71,7 @@ export function LandingFooter() {
         ))}
       </div>
 
-      <div className="border-border mt-8 flex flex-wrap items-center justify-between gap-3 border-t pt-5 pb-2">
+      <div className="border-border mt-8 flex flex-col items-start gap-3 border-t pt-5 pb-16 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between sm:pb-2">
         <span className="text-fg flex items-center gap-2 text-[15px] font-medium tracking-[var(--tracking-tight)]">
           Fides
           <FidesMark size={24} />

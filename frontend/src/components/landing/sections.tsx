@@ -2,7 +2,6 @@ import { CaseCard } from "@/components/landing/CaseCard";
 import { ChromeObject } from "@/components/landing/ChromeObject";
 import { CtaBanner } from "@/components/landing/CtaBanner";
 import { HeroCta } from "@/components/landing/HeroCta";
-import { HeroSearch } from "@/components/landing/HeroSearch";
 import { IconTile } from "@/components/landing/IconTile";
 import { LandingFooter } from "@/components/landing/LandingFooter";
 import { LandingNav } from "@/components/landing/LandingNav";
@@ -213,7 +212,7 @@ export function HeroSection() {
             <br />
             오직 Fides에서
           </h1>
-          {/* 갈 곳은 HeroCta 가 실제 세션을 보고 정한다 */}
+          {/* 첫 화면(검색창)으로 간다 */}
           <HeroCta className="mt-8" />
         </RevealGroup>
 
@@ -615,29 +614,23 @@ export function CasesSection() {
 /**
  * 마지막 칸.
  *
- * 로그인 전에는 검색창을 놓지 않는다. 눌러 봐야 로그인으로 튕기므로,
- * URL 을 붙여넣게 해 놓고 되돌려보내는 셈이 된다.
+ * 검색창 대신 `바로 해보러 가기` 버튼 하나를 둔다. 소개를 읽던 사람에게
+ * URL 을 그 자리에서 붙여넣으라고 하면 폰에서는 앱을 오가야 해서 손이
+ * 많이 간다. 버튼은 첫 화면(검색창)으로 보내고, 거기서 바로 분석할 수
+ * 있다(로그인 불필요).
  *
  * 버튼은 배너가 가진 것을 쓴다. `Button` 프리미티브를 넣으면 안 된다 —
  * 배너 안은 INVERT_TOKENS 가 걸려 `--color-fg` 가 흰색이라, `secondary`
  * 변형이 밝은 바탕에 흰 글씨가 되어 읽히지 않는다.
  */
-export function StartSection({ signedIn }: { signedIn?: boolean }) {
+export function StartSection() {
   return (
     <Section id="start" tone="canvas" bare full snapAlign="end" flow>
       <RevealGroup className="section-motion mx-auto flex w-full max-w-[1200px] flex-col justify-center gap-10 px-5 py-14 md:px-10">
-        {signedIn ? (
-          <CtaBanner
-            headline="근거 없는 “AI 탑재”를 지금 걸러내세요"
-            action={<HeroSearch className="flex flex-col items-center" />}
-          />
-        ) : (
-          <CtaBanner
-            headline="근거 없는 “AI 탑재”를 지금 걸러내세요"
-            actionLabel="상품 URL로 검증해보기"
-            href="/"
-          />
-        )}
+        <CtaBanner
+          headline="근거 없는 “AI 탑재”를 지금 걸러내세요"
+          action={<HeroCta label="바로 해보러 가기" />}
+        />
         <LandingFooter />
       </RevealGroup>
     </Section>

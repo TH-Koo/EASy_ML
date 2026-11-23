@@ -3,7 +3,13 @@ import Link from "next/link";
 import { cn } from "@/lib/cn";
 
 /** 소개 화면의 시작 버튼 — 첫 화면(검색창)으로 간다. 로그인은 필요 없다. */
-export function HeroCta({ className }: { className?: string }) {
+export function HeroCta({
+  className,
+  label = "시작하기",
+}: {
+  className?: string;
+  label?: string;
+}) {
   return (
     <Link
       href="/"
@@ -12,7 +18,7 @@ export function HeroCta({ className }: { className?: string }) {
         className,
       )}
     >
-      시작하기
+      {label}
     </Link>
   );
 }

@@ -15,13 +15,8 @@ import { PageBackdrop } from "@/components/motion/PageBackdrop";
 /**
  * 서사 7단, 화면 8칸.
  *
- * 두 곳에서 쓴다:
- *   `/`      로그인하지 않은 사람이 처음 보는 화면
- *   /about   언제든 다시 볼 수 있는 소개 화면
- *
- * 같은 서사를 두 벌 만들지 않으려고 컴포넌트로 뺐다. 다른 것은 마지막
- * 칸뿐이다 — 로그인 전에는 검색창을 놓아도 누르는 순간 로그인으로
- * 튕기므로 `시작하기` 로 바꾼다.
+ * `/about`(서비스 소개)에서 쓴다. `/` 는 검색창이다. 마지막 칸은
+ * `바로 해보러 가기` 버튼으로 닫아 그 검색창으로 돌려보낸다.
  *
  * 서사 순서로 읽힌다:
  *   실물을 들이대고(문제) → 해법을 꺼내고(3단계)
@@ -42,7 +37,7 @@ const SECTIONS = [
   { id: "start", label: "시작하기" },
 ];
 
-export function LandingStory({ signedIn }: { signedIn?: boolean }) {
+export function LandingStory() {
   return (
     <>
       <PageBackdrop />
@@ -56,7 +51,7 @@ export function LandingStory({ signedIn }: { signedIn?: boolean }) {
       <LedgerSection />
       <EvidenceSection />
       <DifferenceSection />
-      <StartSection signedIn={signedIn} />
+      <StartSection />
     </>
   );
 }
