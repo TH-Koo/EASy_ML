@@ -116,7 +116,9 @@ class ClaimThresholds:
     These are product policy cutoffs, not calibrated ACCS verdict thresholds.
     """
 
-    verified: float = 0.75
+    # 판매 페이지는 부품 근거로 쓰지 않는다. 외부 근거만으로 닿는 상한이 0.6대라
+    # 근거 확인을 0.60으로 둔다. 일부 확인 0.35는 그대로 (2026-11-24, 표본 분포 기준).
+    verified: float = 0.60
     partial: float = 0.35
 
     def classify(self, support: float, has_sources: bool) -> str:

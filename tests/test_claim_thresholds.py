@@ -9,9 +9,10 @@ class ClaimThresholdsTest(unittest.TestCase):
             (0.0, "unsupported"),
             (0.3499, "unsupported"),
             (0.35, "partial"),
-            (0.6671, "partial"),
-            (0.7499, "partial"),
-            (0.75, "verified"),
+            (0.38, "partial"),
+            (0.5999, "partial"),
+            (0.60, "verified"),
+            (0.6429, "verified"),
             (0.8192, "verified"),
             (1.0, "verified"),
         ]

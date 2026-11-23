@@ -9,13 +9,13 @@ class ClaimComponentEvidenceTest(unittest.TestCase):
     def test_api_keeps_required_components_and_real_source_links(self):
         claim = build_claims([{
             "capability_id": "energy", "capability_name_ko": "AI 에너지 최적화",
-            "required_fulfillment_ratio": 0.7, "supporting_sources": ["dart", "kipris"],
+            "required_fulfillment_ratio": 0.5, "supporting_sources": ["dart", "kipris"],
             "fulfilled_required_components": ["분석 모델"], "missing_required_components": ["측정 모듈"],
             "component_support": {"분석 모델": 0.9, "측정 모듈": 0.3, "선택 기능": 1.0},
             "source_evidence": [{"source": "kipris", "components": ["분석 모델"], "record_title": "실제 특허 제목", "record_id": "123", "relation_type": "company_capability", "matched_record_count": 2, "used_for_support": True}],
         }])[0]
         self.assertEqual(claim["status"], "partial")
-        self.assertEqual(claim["required_support"], 0.7)
+        self.assertEqual(claim["required_support"], 0.5)
         self.assertEqual([c["name"] for c in claim["components"]], ["분석 모델", "측정 모듈"])
         self.assertEqual(claim["evidence"][0]["components"], ["분석 모델"])
         self.assertEqual(claim["evidence"][0]["record_title"], "실제 특허 제목")
