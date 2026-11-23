@@ -169,7 +169,11 @@ def _load_model(path: str, modified_ns: int, size: int, ontology_hash: str):
     model = PortableSOnlyModel(path)
     expected = model.metadata.get("ontology_sha256")
     if expected and expected != ontology_hash:
-        raise ValueError("S-only model ontology mismatch; retrain or set FIDES_S_ONLY_ENABLED=0")
+        raise ValueError(
+            f"S-only model ontology mismatch: model={path}; "
+            f"expected={expected}; actual={ontology_hash}. "
+            "Check FIDES_S_ONLY_MODEL and the ontology version used to train that artifact."
+        )
     return model
 
 

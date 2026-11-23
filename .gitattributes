@@ -1,2 +1,2 @@
-# Model ontology checks hash exact file bytes; preserve trained CRLF bytes on every OS.
+# The deployed S-only model hashes exact CSV bytes, including per-file newlines.
 ontology/*.csv -text
