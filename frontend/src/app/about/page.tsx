@@ -7,7 +7,8 @@ import { LandingStory } from "@/components/landing/LandingStory";
  * `/` 는 검색창이므로, "무엇을 근거로 어떻게 판단하는가"는 여기서 본다.
  * 위 메뉴의 '서비스 소개'가 이리로 온다.
  *
- * 마지막 칸에 검색창을 둔다 — 읽다가 바로 분석을 시작할 수 있는 편이 낫다.
+ * 마지막 칸에는 검색창 대신 `바로 해보러 가기` 버튼을 둔다 — 누르면 첫
+ * 화면(검색창)으로 간다.
  */
 
 export const metadata = {
@@ -19,7 +20,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <MaybeAppShell>
-      <LandingStory signedIn />
+      <LandingStory />
     </MaybeAppShell>
   );
 }
