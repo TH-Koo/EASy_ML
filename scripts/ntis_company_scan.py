@@ -17,6 +17,7 @@ import time
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
+sys.path.insert(0, os.getcwd())  # /tmp 로 꺼내 돌릴 때는 저장소 폴더에서 실행한다
 
 DEFAULT_COMPANIES = [
     "삼성전자", "엘지전자", "코웨이", "쿠쿠전자", "쿠쿠홈시스", "에스케이매직", "위닉스",
