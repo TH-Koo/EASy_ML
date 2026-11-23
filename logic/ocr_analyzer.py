@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import json
 import os
+import threading
 from typing import Any, Dict, Optional, Tuple
 
 import cv2
@@ -32,6 +33,7 @@ import numpy as np
 # OCR Reader 전역 캐시
 # =====================================================================
 _READER_CACHE: Dict[str, Tuple[Any, str]] = {}
+_OCR_RUN_LOCK = threading.Lock()
 
 
 def _is_cuda_available() -> bool:
@@ -80,6 +82,10 @@ def get_ocr_reader(use_gpu: Optional[bool] = None):
         return _READER_CACHE[cache_key]
 
     device_name = "GPU(CUDA)" if resolved_gpu else "CPU"
+    if not resolved_gpu:
+        import torch
+        torch.set_num_threads(max(1, int(os.getenv("EASY_OCR_CPU_THREADS", "2"))))
+        cv2.setNumThreads(1)
 
     try:
         print(f"[OCR] EasyOCR Reader 초기화 중... 사용 디바이스: {device_name}")
@@ -184,12 +190,13 @@ def _save_ocr_cache(image_path: str, result: Dict[str, Any]) -> None:
 # =====================================================================
 # OCR 분석 함수
 # =====================================================================
-def analyze_ai_washing(
+def _analyze_ai_washing_locked(
     image_path: str,
     use_gpu: Optional[bool] = None,
     use_cache: bool = True,
     force_refresh: bool = False,
     chunk_size: int = 2000,
+    progress_callback=None,
 ) -> Dict[str, Any]:
     """
     이미지 파일에서 텍스트를 OCR로 추출하여 반환합니다.
@@ -254,7 +261,8 @@ def analyze_ai_washing(
     try:
         # 한글 경로 지원: numpy로 읽어서 CV2로 디코딩
         img_array = np.fromfile(image_path, np.uint8)
-        img = cv2.imdecode(img_array, cv2.IMREAD_COLOR)
+        img = cv2.imdecode(img_array, cv2.IMREAD_GRAYSCALE)
+        del img_array
 
         if img is None:
             print("❌ OCR 실패: 이미지를 OpenCV로 디코딩할 수 없습니다.")
@@ -267,12 +275,15 @@ def analyze_ai_washing(
                 "chunk_count": 0,
             }
 
-        gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        gray_img = img
         height = gray_img.shape[0]
         safe_chunk_size = max(500, int(chunk_size or 2000))
         all_texts = []
         chunk_count = 0
 
+        total_chunks = (height + safe_chunk_size - 1) // safe_chunk_size
+        if progress_callback:
+            progress_callback({"completed": 0, "total": total_chunks, "message": f"이미지 글자 인식 0/{total_chunks}개 구간"})
         for y in range(0, height, safe_chunk_size):
             chunk = gray_img[y:y + safe_chunk_size, :]
             texts = reader.readtext(chunk, detail=0, paragraph=True)
@@ -282,7 +293,9 @@ def analyze_ai_washing(
 
             chunk_count += 1
             current_y = min(y + safe_chunk_size, height)
-            print(f" 청크 스캔 중... ({y}px ~ {current_y}px) / 총 {height}px")
+            print(f" 청크 스캔 중... ({y}px ~ {current_y}px) / 총 {height}px", flush=True)
+            if progress_callback:
+                progress_callback({"completed": chunk_count, "total": total_chunks, "message": f"이미지 글자 인식 {chunk_count}/{total_chunks}개 구간 완료"})
 
         result = {
             "extracted_text": " ".join(all_texts),
@@ -308,3 +321,14 @@ def analyze_ai_washing(
             "chunk_size": chunk_size,
             "chunk_count": 0,
         }
+
+
+def analyze_ai_washing(
+    image_path: str, use_gpu: Optional[bool] = None, use_cache: bool = True,
+    force_refresh: bool = False, chunk_size: int = 2000, progress_callback=None,
+) -> Dict[str, Any]:
+    """하나의 Reader에서 OCR을 겹쳐 실행하지 않아 모델·이미지 메모리 경합을 막는다."""
+    with _OCR_RUN_LOCK:
+        return _analyze_ai_washing_locked(
+            image_path, use_gpu, use_cache, force_refresh, chunk_size, progress_callback,
+        )

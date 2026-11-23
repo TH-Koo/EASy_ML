@@ -34,7 +34,7 @@ export function ManufacturerResearch({ data }: { data: AnalysisResult }) {
                 : row?.value ?? "조회 결과가 제공되지 않았어요";
             const details = sourceDetails(source);
             return (
-              <div key={source} className="bg-surface-strong rounded-lg p-3.5">
+              <div key={source} className="bg-surface-strong min-w-0 rounded-lg p-3.5">
                 <div className="flex items-center justify-between gap-3">
                   <h3 className="text-fg text-[14.5px] font-bold">
                     {sourceName({ source, label: source })}
@@ -58,8 +58,12 @@ export function ManufacturerResearch({ data }: { data: AnalysisResult }) {
                   조회 결과: {result}
                 </p>
                 {records.length > 0 ? (
-                  <ul className="text-fg-dim mt-1 flex flex-col gap-1 text-[12.5px] leading-relaxed">
-                    {records.map((record) => <li key={record}>{record}</li>)}
+                  <ul className="text-fg-dim mt-1 flex flex-col gap-1 text-[12.5px] leading-5">
+                    {records.map((record) => (
+                      <li key={record} className="truncate" title={record}>
+                        {record}
+                      </li>
+                    ))}
                   </ul>
                 ) : confirmed ? null : (
                   <p className="text-fg-dim mt-1 text-[12.5px] leading-relaxed">

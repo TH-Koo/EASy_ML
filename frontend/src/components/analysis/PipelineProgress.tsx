@@ -42,7 +42,7 @@ function initialStages(): StageStatus[] {
 /** 카드 머리에 쓰는 '지금 하는 일'. 단계 이름(명사)보다 사람이 읽기 쉬운 문장으로 쓴다. */
 const DOING: Record<StageName, string> = {
   crawl: "상품 페이지를 읽는 중",
-  ocr: "이미지 속 광고 문구를 읽는 중",
+  ocr: "상세정보 표의 기능을 확인하는 중",
   llm_refine: "AI 기능 주장을 정리하는 중",
   public_verify: "공공 기록을 조회하는 중",
   patent_search: "특허·인증을 찾는 중",
