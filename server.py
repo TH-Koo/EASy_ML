@@ -4,9 +4,9 @@ server.py — Fides 메인 서버 (온톨로지 분석 엔진 연동 완료)
 FastAPI 기반 웹 서버. 다나와 URL을 입력받아 AI 워싱 여부를 분석하고 결과를 스트리밍으로 반환합니다.
 
 분석 파이프라인 (run_analysis):
-    1. 크롤링      — crawler.py로 다나와 상품 페이지 스크래핑 + 스크린샷
-    2. OCR         — ocr_analyzer.py로 상세 이미지에서 텍스트 추출
-    3. Gemini 정제 — OCR 텍스트 오타 교정 및 회사명·모델명 추출
+    1. 크롤링      — 상품명과 HTML 상세정보 표 수집 (기본 경로)
+    2. 기능 확인   — 상세정보 표에 기재된 기능 확인, 이미지 OCR 생략
+    3. 제품 정리   — 회사명·모델명 추출
     4. 정규화      — normalizer.py로 회사명·모델명 정규화 및 동의어 확장
     5. 병렬 검색   — KC DB, 조달청, TIPA, KORAIA, DART 등 동시 조회
     6. 특허·인증   — 특허(KIPRIS) 수, GS/NEP 인증 조회
@@ -43,7 +43,6 @@ from google.genai import types as genai_types
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logic'))
 
 from crawler import get_product_data
-from ocr_analyzer import analyze_ai_washing
 from normalizer import normalize_data, expand_company_aliases, is_valid_model_number
 from patent_scraper import get_company_patent_data
 from llm_resolver import resolve_real_company_name, resolve_model_name
@@ -93,6 +92,7 @@ S_ONLY_PREDICTOR = load_s_only_predictor()
 
 from fides_ml.s_only import verdict_label
 from fides_config import DEFAULT_CLAIM_THRESHOLDS
+from logic.analysis_scheduler import AnalysisScheduler, AnalysisQueueFull
 
 # 크롤링 이후의 OCR·제조사 확정·공공 기록 조회는 터미널 파이프라인과 같은
 # 함수를 쓴다. 따로 구현하면 화면과 터미널의 근거·점수가 갈라진다.
@@ -133,6 +133,10 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # 진행 상황 + 결과 저장소 (메모리)
 _tasks: dict[str, dict] = {}
+_ANALYSIS_SCHEDULER = AnalysisScheduler(
+    _tasks, max_workers=int(os.getenv("EASY_ANALYSIS_WORKERS", "1")),
+    max_pending=int(os.getenv("EASY_ANALYSIS_MAX_PENDING", "8")),
+)
 
 # ══════════════════════════════════════════
 # JWT 인증 설정
@@ -449,8 +453,8 @@ def user_from_header(authorization: Optional[str]) -> Optional[dict]:
 # 분석 파이프라인 (비동기 스레드 실행)
 # ══════════════════════════════════════════
 def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
-    def push(step: int, message: str):
-        _tasks[task_id]["events"].append({"type": "progress", "step": step, "message": message})
+    def push(step: int, message: str, progress=None):
+        _tasks[task_id]["events"].append({"type": "progress", "step": step, "message": message, "progress": progress})
 
     def fail(message: str):
         _tasks[task_id]["events"].append({"type": "error", "message": message})
@@ -463,7 +467,7 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
         # 달라서, 같은 제품이 터미널과 화면에서 다른 근거·다른 점수를 냈다.
 
         # Step 0: 크롤링
-        push(0, "URL 크롤링 및 OCR 처리 중")
+        push(0, "상품명과 상세정보 표 수집 중")
         product_json = get_product_data(url)
         if not product_json:
             fail("상품 페이지를 불러오지 못했습니다. 다나와 상품 URL과 네트워크 연결을 확인한 뒤 다시 시도해 주세요.")
@@ -473,12 +477,14 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
             return
 
         # Step 1: OCR (이미지가 같으면 캐시를 쓴다)
-        push(1, "이미지 OCR 분석 중")
-        ocr_result = run_product_ocr(product_json) or {}
+        push(1, "상세정보 표의 기능 확인 중" if product_json.get("collection_mode") == "specs" else "이미지 OCR 분석 중")
+        ocr_result = run_product_ocr(
+            product_json, progress_callback=lambda info: push(1, info["message"], progress=info),
+        ) or {}
 
         # Step 2~3: 제조사·모델 확정 + 공공 기록 병렬 조회
         push(2, "데이터 정규화 및 제조사 추적 중")
-        push(3, "외부 증거(인증/특허/공시/R&D) 병렬 수집 중")
+        push(3, "외부 증거 병렬 수집 중")
         collected = collect_evidence(url, product_json, ocr_result)
         bundle_kwargs = collected["bundle_kwargs"]
         final_results = collected["final_results"]
@@ -487,7 +493,7 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
         push(4, "외부 증거 수집 완료")
 
         # 🧠 Step 5: 온톨로지 기반 최종 분석 엔진 호출 🧠
-        push(5, "온톨로지 엔진 기반 AI 주장 신뢰도(ACCS) 산출 중")
+        push(5, "온톨로지 엔진 기반 AI 주장 신뢰도 산출 중")
         analysis_result = secure_analyze_bundle(
             **bundle_kwargs,
             weight_predictor=WEIGHT_PREDICTOR,
@@ -522,7 +528,8 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
             "url": url,
             "timestamp": datetime.now().strftime("%Y.%m.%d %H:%M"),
             "analysis_duration_seconds": _task_duration,
-            
+            "ocr_scope_note": product_json.get("ocr_scope_note"),
+
             # 🔥 온톨로지 결과 매핑 (프론트엔드 스펙에 맞춤)
             "ontology_scores": {
                 "accs": analysis_result.accs,
@@ -555,7 +562,7 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
             "text_color": calc_dim_color(analysis_result.tes),
             "verify_color": calc_dim_color(analysis_result.hes),
             "relation_color": calc_dim_color(analysis_result.ces),
-            
+
             # 기관별 조회 결과. 화면의 "조회한 공공기관" 목록이 이걸 그대로 쓴다.
             "_sources": source_rows,
             "patent_count": source_counts.get("kipris", 0),
@@ -741,7 +748,49 @@ def _source_details(source: str, result: dict, model_name: Optional[str]) -> dic
     else:
         return {}
 
-    return {"record_titles": list(dict.fromkeys(title for title in titles if title))[:3]}
+    titles = list(dict.fromkeys(title for title in titles if title))[:3]
+    if source == "dart":
+        titles = _summarize_dart_titles(titles)
+    return {"record_titles": titles}
+
+
+_DART_SUMMARY_CACHE: dict = {}
+
+
+def _summarize_dart_titles(titles: list) -> list:
+    """사업보고서 문장을 결과 화면용 짧은 요약으로 바꾼다. 점수에는 쓰지 않는다.
+
+    요약에 실패하거나 AI 표현이 빠지면 원문을 그대로 둔다(화면에서 한 줄로 잘린다).
+    """
+    pending = [t for t in titles if len(t) > 40 and t not in _DART_SUMMARY_CACHE]
+    if pending and gemini_client:
+        prompt = (
+            "다음은 기업 사업보고서에서 뽑은 문장들이다. 각 문장을 결과 화면에 한 줄로 보여 줄 "
+            "핵심 요약으로 바꿔라.\n"
+            "- 25자 안팎의 명사구로, 예: '에어컨, HVAC, AI 데이터센터 냉각 솔루션 등'\n"
+            "- 문장에 있는 AI 관련 표현(AI, 인공지능 등)은 반드시 남긴다\n"
+            "- 문장에 없는 내용은 추가하지 않는다\n"
+            "- 입력과 같은 순서·개수의 문자열 JSON 배열로만 답한다\n\n"
+            + json.dumps(pending, ensure_ascii=False)
+        )
+        try:
+            response = gemini_client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=prompt,
+                config=genai_types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    temperature=0.1,
+                ),
+            )
+            summaries = json.loads(response.text)
+            if isinstance(summaries, list) and len(summaries) == len(pending):
+                for original, summary in zip(pending, summaries):
+                    summary = _source_text(summary)
+                    if summary and len(summary) < len(original) and _ai_record_text(summary):
+                        _DART_SUMMARY_CACHE[original] = summary
+        except Exception as e:
+            print(f"[WARN] DART 요약 실패(원문 표시): {e}")
+    return [_DART_SUMMARY_CACHE.get(t, t) for t in titles]
 
 
 def summarize_sources(final_results: dict, model_name: Optional[str] = None) -> list:
@@ -1120,6 +1169,7 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
             ],
             "ai_claims_count": len(top_caps) or len(reasons),
             "analysis_duration_seconds": round(duration, 1),
+            "ocr_scope_note": payload.get("ocr_scope_note"),
             "analysis_date": datetime.now().date().isoformat(),
             # 결과 화면의 '다나와에서 보기' 바로가기. 저장된 기록에도 같은 값이 들어 있다.
             "url": payload.get("url", ""),
@@ -1171,26 +1221,40 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
 # ══════════════════════════════════════════
 _STAGE_NAMES  = ["crawl", "ocr", "llm_refine", "public_verify", "patent_search", "score"]
 _STAGE_LABELS = {
-    "crawl": "크롤링", "ocr": "OCR", "llm_refine": "로컬 AI 정제 중",
+    "crawl": "크롤링", "ocr": "상세정보 표 확인", "llm_refine": "제품 정보 정리",
     "public_verify": "공공 API 검증", "patent_search": "특허·인증 검색", "score": "종합 분석",
 }
 
-def _make_progress_event(task_id: str, step: int, done: bool = False) -> dict:
+def _make_progress_event(task_id: str, step: int, done: bool = False, message=None, progress=None) -> dict:
+    task = _tasks.get(task_id, {})
+    queued = not done and task.get("started") is False
+    failed = done and any(ev["type"] == "error" for ev in task.get("events", []))
+    status = "failed" if failed else "completed" if done else "queued" if queued else "running"
     stages = []
     for i, name in enumerate(_STAGE_NAMES):
-        if done or i < step:
+        if queued:
+            state = "wait"
+        elif failed and i == step:
+            state = "error"
+        elif (done and not failed) or i < step:
             state = "done"
         elif i == step:
             state = "running"
         else:
             state = "wait"
         stages.append({"name": name, "label": _STAGE_LABELS[name], "state": state,
-                        "started_at": None, "finished_at": None, "error": None})
-    pct = 100 if done else min(int((step / len(_STAGE_NAMES)) * 100), 99)
+                        "sub_label": message if i == step and not queued else "",
+                        "started_at": None, "finished_at": None, "error": None,
+                        "error_message": message if failed and i == step else None})
+    fraction = min(1.0, max(0.0, progress.get("completed", 0) / progress["total"])) if progress and progress.get("total", 0) > 0 else 0
+    pct = 0 if queued else 100 if done and not failed else min(int(((step + fraction) / len(_STAGE_NAMES)) * 100), 99)
     return {
         "job_id": task_id,
+        "analysis_id": task_id,
+        "status": status,
+        "updated_at": datetime.now().isoformat(),
         "overall_percent": pct,
-        "current_stage": _STAGE_NAMES[min(step, len(_STAGE_NAMES) - 1)],
+        "current_stage": None if queued else _STAGE_NAMES[min(step, len(_STAGE_NAMES) - 1)],
         "stages": stages,
     }
 
@@ -1208,7 +1272,7 @@ async def event_stream(task_id: str) -> AsyncGenerator[str, None]:
         while sent_idx < len(events):
             ev = events[sent_idx]
             if ev["type"] == "progress":
-                pe = _make_progress_event(task_id, ev["step"])
+                pe = _make_progress_event(task_id, ev["step"], message=ev.get("message"), progress=ev.get("progress"))
                 yield f"event: progress\ndata: {json.dumps(pe, ensure_ascii=False)}\n\n"
             elif ev["type"] == "result":
                 pe = _make_progress_event(task_id, len(_STAGE_NAMES), done=True)
@@ -1239,14 +1303,14 @@ async def analyze(req: AnalyzeRequest, authorization: Optional[str] = Header(Non
     req_user = user_from_header(authorization)
     req_user_id: Optional[int] = int(req_user["sub"]) if req_user else None
 
-    task_id = str(uuid.uuid4())
-    _tasks[task_id] = {"events": [], "done": False, "start_time": datetime.now()}
-    loop = asyncio.get_event_loop()
-    executor = concurrent.futures.ThreadPoolExecutor(max_workers=1)
-    loop.run_in_executor(executor, run_analysis, task_id, url, req_user_id)
+    try:
+        task_id, reused = _ANALYSIS_SCHEDULER.submit(url, req_user_id, run_analysis)
+    except AnalysisQueueFull:
+        raise HTTPException(status_code=429, detail="분석 요청이 많아요. 잠시 후 다시 시도해 주세요.")
     return {
         "analysis_id": task_id,
-        "status": "queued",
+        "status": "running" if _tasks[task_id].get("started") else "queued",
+        "reused": reused,
         "progress_url": f"/api/analyze/{task_id}/progress",
         "stream_url": f"/api/analyze/{task_id}/stream",
         "result_url": f"/api/analyze/{task_id}/result",
@@ -1268,11 +1332,15 @@ async def progress_snapshot(analysis_id: str):
         raise HTTPException(status_code=404, detail="task not found")
     task = _tasks[analysis_id]
     latest_step = 0
+    message, progress = None, None
     done = task.get("done", False)
     for ev in task["events"]:
         if ev["type"] == "progress":
             latest_step = ev["step"]
-    return _make_progress_event(analysis_id, latest_step, done=done)
+            message, progress = ev.get("message"), ev.get("progress")
+        elif ev["type"] == "error":
+            message = ev.get("message")
+    return _make_progress_event(analysis_id, latest_step, done=done, message=message, progress=progress)
 
 @app.get("/api/analyze/{analysis_id}/result")
 async def get_result(analysis_id: str):

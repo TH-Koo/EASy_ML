@@ -7,14 +7,14 @@ import unittest
 class OperatingOntologyContractTests(unittest.TestCase):
     def test_csv_bytes_match_operating_model_metadata(self):
         # Metadata read from the actual easy-backend.service artifact on EC2:
-        # artifacts/s_only_final_20261123/model.json, not artifacts/s_only/model.json.
+        # artifacts/s_only_final_20261124/model.json, not artifacts/s_only/model.json.
         root = Path(__file__).resolve().parents[1]
         digest = hashlib.sha256()
         for file in sorted((root / 'ontology').glob('*.csv')):
             digest.update(file.name.encode())
             digest.update(file.read_bytes())
         self.assertEqual(digest.hexdigest(),
-                         'a38b2f30303b30e99a858a146b0b80d6f3a5d3c4e6e01e94f3ee3608121ed6b5',
+                         '297419463e0ddc58feee56df83599a5f5baddd592820d1637af89c4153e3af2d',
                          'Ontology differs from the deployed model: coordinate CSV and model releases.')
 
 

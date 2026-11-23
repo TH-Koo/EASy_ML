@@ -37,8 +37,8 @@ export const STAGE_ORDER: StageName[] = [
 
 export const STAGE_LABELS: Record<StageName, { name: string; sub: string }> = {
   crawl: { name: "URL 크롤링", sub: "페이지 수집" },
-  ocr: { name: "이미지 OCR", sub: "텍스트 추출" },
-  llm_refine: { name: "로컬 AI 정제 중", sub: "Ollama · 주장 구조화" },
+  ocr: { name: "상세정보 표 확인", sub: "표에 기재된 기능 확인" },
+  llm_refine: { name: "제품 정보 정리", sub: "제조사 · 모델명 확인" },
   public_verify: {
     name: "공공 API 검증",
     sub: "전파인증 · 조달청 · TIPA · KORAIA",
@@ -76,6 +76,7 @@ export interface ProductInfo {
   ai_claims_count: number;
   analysis_duration_seconds: number;
   analysis_date: string; // YYYY-MM-DD
+  ocr_scope_note?: string | null;
   /** 분석한 상품 페이지 주소. 예전 기록에는 없을 수 있다. */
   url?: string;
 }

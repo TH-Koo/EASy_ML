@@ -11,6 +11,7 @@ import re
 import html
 import sys
 import urllib.parse
+import threading
 from datetime import datetime, timedelta
 
 import pandas as pd
@@ -176,9 +177,9 @@ def verify_tta(company_aliases: list) -> dict:
 def verify_kipris(company_aliases: list, product_keyword: str = "") -> dict:
     if not KIPRIS_KEY: return {"score": 0, "error": "KIPRIS 키 미설정"}
     if not get_company_patent_data: return {"score": 0, "error": "patent_scraper 모듈 없음"}
-    
+
     company_aliases = list(set([alias.upper() for alias in company_aliases if alias]))
-    
+
     try:
         count, df, search_type = get_company_patent_data(
             company_aliases=company_aliases,
@@ -193,7 +194,7 @@ def verify_kipris(company_aliases: list, product_keyword: str = "") -> dict:
     except Exception as e: 
         print(f"[KIPRIS 에러] {e}")
         return {"score": 0, "error": f"KIPRIS 통신 실패: {e}"}
-    
+
     return {"score": 0, "detail": "AI 특허 내역 없음", "evidence": None}
 
 def verify_koneps(company_aliases: list) -> dict:
@@ -207,6 +208,10 @@ def verify_koneps(company_aliases: list) -> dict:
         set(clean_name(name) for name in company_aliases if len(clean_name(name)) > 1)
     )
 
+    # The request does not contain the company name. Reuse each interval
+    # within this lookup instead of downloading it once per alias.
+    interval_items = {}
+    had_error = False
     for name in search_names:
         for months in [6, 12]:
             end_dt = today
@@ -219,23 +224,32 @@ def verify_koneps(company_aliases: list) -> dict:
                     "inqryEndDt": end_dt.strftime("%Y%m%d%H%M"),
                     "type": "json",
                 }
-                response = requests.get(url, params=params, timeout=3)
-                
-                if response.status_code != 200:
-                    continue
-
-                items = response.json().get('response', {}).get('body', {}).get('items', [])
+                if months not in interval_items:
+                    # Store an empty entry before the request so a failed interval
+                    # is not repeatedly retried for every alias in the same job.
+                    interval_items[months] = []
+                    response = requests.get(url, params=params, timeout=3)
+                    if response.status_code != 200:
+                        had_error = True
+                        continue
+                    items = response.json().get('response', {}).get('body', {}).get('items', [])
+                    if isinstance(items, dict):
+                        items = items.get('item', [])
+                    interval_items[months] = items if isinstance(items, list) else [items]
+                items = interval_items[months]
                 for item in items:
                     entrps_nm = item.get('scsbidEntrpsNm', '')
                     if name in entrps_nm:
                         title = item.get('bidNtceNm', '')
                         if any(kw in title.upper() for kw in ['AI', '인공지능', '빅데이터', '소프트웨어', '시스템', '구축', '유지보수', '개발']):
                             return {
-                                "score": 15, 
+                                "score": 15,
+                                "collection_partial": had_error,
                                 "evidence": f"낙찰: {title}", 
                                 "detail": f"나라장터 조회 결과, [{name}] 명의의 공공 사업 실적(최근 1년 내)이 확인되었습니다."
                             }
             except Exception as e:
+                had_error = True
                 print(f"[나라장터 에러] {name} 조회 중 예외 발생: {e}")
                 continue
 
@@ -351,6 +365,8 @@ _NTIS_PAGE_SIZE = 100
 _NTIS_AI_QUERY_WORDS = ("인공지능", "AI", "딥러닝", "머신러닝")
 _NTIS_MAX_PER_QUERY = int(os.getenv("EASY_NTIS_MAX_PER_QUERY", "1000"))
 _NTIS_CACHE_VERSION = 3
+_NTIS_WORKERS = max(1, min(4, int(os.getenv("EASY_NTIS_WORKERS", "2"))))
+_NTIS_HTTP_SLOTS = threading.BoundedSemaphore(_NTIS_WORKERS)
 
 
 def _ntis_cache_path(name: str) -> str:
@@ -397,7 +413,8 @@ def _ntis_fetch_page(raw_key: str, query: str, position: int):
         "returnType": "xml", "startPosition": position, "displayCnt": _NTIS_PAGE_SIZE,
     }
     try:
-        response = requests.get(_NTIS_URL, params=params, timeout=30)
+        with _NTIS_HTTP_SLOTS:
+            response = requests.get(_NTIS_URL, params=params, timeout=30)
     except requests.RequestException as e:
         return [], 0, f"{query}: 요청 오류 ({type(e).__name__})"
     if response.status_code != 200:
@@ -426,7 +443,7 @@ def _ntis_fetch_all(raw_key: str, query: str, max_results: int = 0):
     if total and limit > _NTIS_PAGE_SIZE:
         # 전체 건수를 알면 나머지 페이지를 한꺼번에 받는다.
         positions = list(range(1 + _NTIS_PAGE_SIZE, limit + 1, _NTIS_PAGE_SIZE))
-        with ThreadPoolExecutor(max_workers=4) as pool:
+        with ThreadPoolExecutor(max_workers=_NTIS_WORKERS) as pool:
             for page_hits, _, page_error in pool.map(lambda pos: _ntis_fetch_page(raw_key, query, pos), positions):
                 hits.extend(page_hits)
                 if page_error:
@@ -502,12 +519,28 @@ def _ntis_projects_for_company(raw_key: str, name: str):
     # 회사 이름만으로 한 검색은 대기업이면 수천 건이라(삼성전자 7천여 건) 첫
     # 페이지만 본다. AI 과제는 AI 단어를 붙인 검색에서 끝까지 찾는다.
     queries = [(name, _NTIS_PAGE_SIZE)] + [(f"{name} {word}", 0) for word in _NTIS_AI_QUERY_WORDS]
-    for query, max_results in queries:
-        hits, query_errors = _ntis_fetch_all(raw_key, query, max_results)
-        errors.extend(query_errors)
-        for item in hits:
-            project = _ntis_project_from_hit(item, name)
-            if project:
+    from concurrent.futures import ThreadPoolExecutor
+
+    def fetch_query(pair):
+        query, max_results = pair
+        try:
+            hits, query_errors = _ntis_fetch_all(raw_key, query, max_results)
+            # 원문 XML은 작업 안에서 걸러 해제한다. 검색어 5개의 전체 XML을
+            # 한꺼번에 보관하지 않고, 확인된 AI 과제의 작은 dict만 전달한다.
+            query_projects = []
+            for item in hits:
+                project = _ntis_project_from_hit(item, name)
+                if project:
+                    query_projects.append(project)
+            return query_projects, query_errors
+        except Exception as exc:
+            return [], [f"{query}: 처리 오류 ({type(exc).__name__})"]
+
+    # map 순서로 합쳐 완료 시점에 따라 대표 과제·중복 제거 결과가 바뀌지 않게 한다.
+    with ThreadPoolExecutor(max_workers=_NTIS_WORKERS) as pool:
+        for query_projects, query_errors in pool.map(fetch_query, queries):
+            errors.extend(query_errors)
+            for project in query_projects:
                 projects.setdefault(_ntis_title_key(project["project_name"]), project)
     rows = list(projects.values())
     if not errors:
@@ -558,6 +591,7 @@ def verify_ntis_rnd(company_aliases: list, product_keyword: str = "") -> dict:
             "evidence": f"NTIS AI 관련 과제 검색: {title} 등 총 {len(projects)}건",
             "detail": f"NTIS AI 관련 과제 {len(projects)}건 검색, 수행기관 일치 확인 {verified_count}건. 기술 관련성은 별도 검증합니다.",
             "records": projects,
+            "collection_partial": bool(api_errors),
             "status": "verified"
         }
 
@@ -608,11 +642,11 @@ def verify_iitp(company_names, product_keyword=""):
         try:
             # 나라장터처럼 멈추지 않도록 timeout 5초 설정
             response = requests.get(url, params=params, timeout=5)
-            
+
             if response.status_code == 200:
                 if response.text.strip().startswith("<?xml") or "<error>" in response.text:
                     continue
-                
+
                 res_json = response.json()
                 hits = res_json.get('RESULT', {}).get('RESULTSET', {}).get('HIT', [])
                 if isinstance(hits, dict):
@@ -628,10 +662,10 @@ def verify_iitp(company_names, product_keyword=""):
                     if not project_name:
                         title_info = item.get('ResultTitle', {})
                         project_name = title_info.get('Korean', '') if isinstance(title_info, dict) else ''
-                    
+
                     task_no = item.get('ProjectNo', '')
                     is_product_related = any(k in project_name for k in product_keyword.split()) if product_keyword else False
-                    
+
                     matched_items.append({
                         "source_record_id": str(task_no),
                         "과제명": project_name,

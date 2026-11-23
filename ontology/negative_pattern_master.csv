@@ -27,3 +27,6 @@ NEG_HVAC_WATER_CONFUSION,물 온도,confusion,CAP_SMART_HVAC,0.8,high,세탁기�
 NEG_HVAC_FRIDGE_CONFUSION,냉장 온도,confusion,CAP_SMART_HVAC,0.8,high,냉장고의 온도 제어를 에어컨 공조 기술로 오인 방지
 NEG_SIMPLE_BUMPER,범퍼 센서,confusion,CAP_AI_OBSTACLE_RECOGNITION,0.5,high,단순 충돌 감지는 AI 사물인식이 아님
 NEG_INFRARED_AVOID,적외선 회피,confusion,CAP_AI_OBSTACLE_RECOGNITION,0.4,medium,단순 거리 감지는 객체 인식이 아님
+NEG_ASSISTANT_PLATFORM,음성인식플랫폼,confusion,CAP_SPEECH_RECOGNITION,0.6,high,스마트폰 음성비서 호출 지원 표기로 기기 자체 음성 인식 근거가 아님
+NEG_ASSISTANT_SIRI,Siri,confusion,CAP_SPEECH_RECOGNITION,0.4,medium,스마트폰 Siri 호출은 기기 자체 음성 인식이 아님
+NEG_ASSISTANT_GOOGLE,구글 어시스턴트,confusion,CAP_SPEECH_RECOGNITION,0.4,medium,스마트폰 구글 어시스턴트 호출은 기기 자체 음성 인식이 아님
