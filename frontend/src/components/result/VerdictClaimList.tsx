@@ -20,13 +20,13 @@ const INITIAL = 5;
 export function VerdictClaimList({ claims }: { claims: Claim[] }) {
   const [expanded, setExpanded] = useState(false);
   const rest = claims.length - INITIAL;
-  const shown = expanded ? claims : claims.slice(0, INITIAL);
 
   return (
     <>
       <ul className="divide-border mt-1 divide-y">
-        {shown.map((c) => (
-          <li key={c.id}>
+        {/* 접힌 줄도 그려 두고 화면에서만 숨긴다. 종이에는 펼칠 버튼이 없다. */}
+        {claims.map((c, i) => (
+          <li key={c.id} className={cn(!expanded && i >= INITIAL && "hidden print:block")}>
             <a
               href={`#claim-${c.id}`}
               className="text-fg hover:bg-surface flex items-center gap-3 rounded-lg px-1 py-2.5"
@@ -54,7 +54,7 @@ export function VerdictClaimList({ claims }: { claims: Claim[] }) {
           type="button"
           aria-expanded={expanded}
           onClick={() => setExpanded((v) => !v)}
-          className="border-border text-fg-muted hover:text-fg mt-1 flex w-full items-center justify-between rounded-lg border-t px-1 pt-3 pb-1 text-[13px] font-semibold"
+          className="border-border text-fg-muted hover:text-fg mt-1 flex w-full print:hidden items-center justify-between rounded-lg border-t px-1 pt-3 pb-1 text-[13px] font-semibold"
         >
           {expanded ? "접기" : `나머지 ${rest}개 기능 보기`}
           <ChevronDown

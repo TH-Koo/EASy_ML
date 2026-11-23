@@ -26,12 +26,12 @@ export function TrustBar({ data }: { data: AnalysisResult }) {
       <h2 id="trust-h" className="text-fg mb-2 px-0.5 text-[22px] font-extrabold tracking-[var(--tracking-heading)]">
         이 결과, 믿을 수 있나요?
       </h2>
-      <div className="bg-surface rounded-[var(--radius-panel)] px-2 py-1.5 shadow-[var(--shadow-panel)]">
-        <div className="grid md:grid-cols-3">
+      <div className="bg-surface print:border-border rounded-[var(--radius-panel)] px-2 py-1.5 shadow-[var(--shadow-panel)] print:border">
+        <div className="grid md:grid-cols-3 print:grid-cols-3">
           {items.map(({ Icon, title, note }, i) => (
             <div
               key={title}
-              className={`flex items-center gap-3 px-4 py-4 ${i > 0 ? "border-border border-t md:border-t-0 md:border-l" : ""}`}
+              className={`flex items-center gap-3 px-4 py-4 ${i > 0 ? "border-border border-t md:border-t-0 md:border-l print:border-t-0 print:border-l" : ""}`}
             >
               <Icon size={28} strokeWidth={1.6} className="text-brand shrink-0" aria-hidden />
               <p className="flex flex-col">
@@ -45,8 +45,10 @@ export function TrustBar({ data }: { data: AnalysisResult }) {
         {rows.length > 0 ? (
           <details className="group border-border mx-1.5 border-t">
             <summary className="text-fg-muted flex cursor-pointer list-none items-center justify-between px-2 py-3 text-[13.5px] font-semibold [&::-webkit-details-marker]:hidden">
-              조회한 공공기관 {rows.length}곳 보기
-              <span aria-hidden className="border-border group-open:bg-fg group-open:border-fg grid size-5 place-items-center rounded-full border group-open:text-white">
+              <span>
+                조회한 공공기관 {rows.length}곳<span className="print:hidden"> 보기</span>
+              </span>
+              <span aria-hidden className="print:hidden border-border group-open:bg-fg group-open:border-fg grid size-5 place-items-center rounded-full border group-open:text-white">
                 <Plus size={11} strokeWidth={3} className="group-open:hidden" />
                 <Minus size={11} strokeWidth={3} className="hidden group-open:block" />
               </span>

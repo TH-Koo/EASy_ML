@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { Download, Search, Share2, Bookmark, BookmarkCheck } from "lucide-react";
@@ -39,6 +39,27 @@ export function QuickActions({ data, historyId }: QuickActionsProps) {
       .then(() => showToast("링크가 클립보드에 복사됐습니다"))
       .catch(() => showToast("복사 실패 — 주소창에서 직접 복사해 주세요"));
   }
+
+  // 종이에는 ＋를 누를 수 없다. 인쇄 직전에 접힌 칸(기능별 근거, 나머지
+  // 기능, 조회한 기관 목록)을 모두 펼치고, 끝나면 사용자가 보던 대로 되돌린다.
+  // 버튼 말고 Ctrl+P 로 인쇄해도 같은 이벤트가 온다.
+  useEffect(() => {
+    let opened: HTMLDetailsElement[] = [];
+    const expand = () => {
+      opened = Array.from(document.querySelectorAll<HTMLDetailsElement>("details:not([open])"));
+      for (const d of opened) d.open = true;
+    };
+    const restore = () => {
+      for (const d of opened) d.open = false;
+      opened = [];
+    };
+    window.addEventListener("beforeprint", expand);
+    window.addEventListener("afterprint", restore);
+    return () => {
+      window.removeEventListener("beforeprint", expand);
+      window.removeEventListener("afterprint", restore);
+    };
+  }, []);
 
   function handlePdf() {
     window.print();

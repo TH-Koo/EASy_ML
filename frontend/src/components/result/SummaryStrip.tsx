@@ -25,7 +25,7 @@ export function SummaryStrip({ data }: { data: AnalysisResult }) {
   return (
     <section
       aria-label="분석 요약"
-      className="bg-surface grid overflow-hidden rounded-[var(--radius-panel)] shadow-[var(--shadow-panel)] md:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)_minmax(0,1fr)_auto]"
+      className="bg-surface print:border-border grid overflow-hidden rounded-[var(--radius-panel)] shadow-[var(--shadow-panel)] md:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)_minmax(0,1fr)_auto] print:auto-cols-fr print:grid-flow-col print:border"
     >
       {claims.length > 0 ? (
         <div className="flex min-w-0 flex-col gap-0.5 px-6 py-4">
@@ -52,19 +52,19 @@ export function SummaryStrip({ data }: { data: AnalysisResult }) {
         label="확인한 곳"
         value={sources > 0 ? `공공기관 ${sources}곳` : "공공기관"}
         note="특허청 · 금융감독원 · 인증 기관 등"
-        className={claims.length > 0 ? "border-border border-t md:border-t-0 md:border-l" : undefined}
+        className={claims.length > 0 ? "border-border border-t md:border-t-0 md:border-l print:border-t-0 print:border-l" : undefined}
       />
       <Cell
         label="기준일"
         value={data.product.analysis_date.replaceAll("-", ".")}
         note="이후 등록된 기록은 빠져 있어요"
-        className="border-border border-t md:border-t-0 md:border-l"
+        className="border-border border-t md:border-t-0 md:border-l print:border-t-0 print:border-l"
       />
       {firstMissing ? (
         <button
           type="button"
           onClick={() => openClaim(firstMissing.id)}
-          className="flex items-center justify-between gap-4 px-6 py-4 text-left text-[15px] leading-snug font-bold text-white hover:brightness-110 md:justify-start"
+          className="flex items-center justify-between gap-4 px-6 py-4 text-left text-[15px] leading-snug font-bold text-white hover:brightness-110 md:justify-start print:hidden"
           style={{ background: "var(--color-brand)" }}
         >
           <span>
@@ -76,7 +76,7 @@ export function SummaryStrip({ data }: { data: AnalysisResult }) {
       ) : (
         <Link
           href="/"
-          className="flex items-center justify-between gap-4 px-6 py-4 text-[15px] font-bold text-white hover:brightness-110 md:justify-start"
+          className="flex items-center justify-between gap-4 px-6 py-4 text-[15px] font-bold text-white hover:brightness-110 md:justify-start print:hidden"
           style={{ background: "var(--color-brand)" }}
         >
           다른 제품 검색하기

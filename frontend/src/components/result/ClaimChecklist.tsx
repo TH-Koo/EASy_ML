@@ -40,7 +40,7 @@ export function ClaimChecklist({ claims }: { claims: Claim[] }) {
           <Legend cls="bg-[var(--claim-no)]" label="미확인" />
         </p>
       </div>
-      <div className="bg-surface rounded-[var(--radius-panel)] px-5 py-1 shadow-[var(--shadow-panel)] md:px-6">
+      <div className="bg-surface print:border-border rounded-[var(--radius-panel)] px-5 py-1 shadow-[var(--shadow-panel)] md:px-6 print:border">
         {head.map((c) => (
           <ClaimRow key={c.id} claim={c} openFound={few} />
         ))}
@@ -95,7 +95,7 @@ function ClaimRow({ claim, openFound }: { claim: Claim; openFound: boolean }) {
       open={found && openFound}
       className="group border-border scroll-mt-4 border-b last:border-b-0"
     >
-      <summary className="grid cursor-pointer list-none grid-cols-[28px_minmax(0,1fr)_44px_24px] items-center gap-x-2.5 gap-y-1.5 py-4 md:grid-cols-[28px_minmax(0,1fr)_auto_56px_24px] md:gap-x-3.5 [&::-webkit-details-marker]:hidden">
+      <summary className="grid cursor-pointer list-none grid-cols-[28px_minmax(0,1fr)_44px_24px] items-center gap-x-2.5 gap-y-1.5 py-4 print:py-3 md:grid-cols-[28px_minmax(0,1fr)_auto_56px_24px] md:gap-x-3.5 [&::-webkit-details-marker]:hidden">
         <span aria-hidden className={cn("grid size-7 place-items-center rounded-full text-white", bg)}>
           <Icon size={15} strokeWidth={3} />
         </span>
@@ -104,10 +104,16 @@ function ClaimRow({ claim, openFound }: { claim: Claim; openFound: boolean }) {
             {claim.text}
           </b>
           {quote ? (
-            <span className="text-fg-dim truncate text-[13px]">“{quote}”</span>
+            <span className="text-fg-dim truncate text-[13px] print:whitespace-normal">“{quote}”</span>
           ) : null}
         </span>
-        <span className="col-start-2 row-start-2 flex flex-wrap gap-1.5 md:col-start-auto md:row-start-auto md:justify-end">
+        <span
+          className={cn(
+            "col-start-2 row-start-2 flex flex-wrap gap-1.5 md:col-start-auto md:row-start-auto md:justify-end",
+            // 종이에서는 바로 아래 기록 줄이 같은 기관 이름을 다시 적는다
+            found && "print:hidden",
+          )}
+        >
           {chips.map((chip) => (
             <span
               key={chip}
@@ -126,12 +132,12 @@ function ClaimRow({ claim, openFound }: { claim: Claim; openFound: boolean }) {
         <Toggle />
       </summary>
 
-      <div className="bg-bg mb-4 rounded-xl px-4 py-1 md:ml-[42px]">
+      <div className="bg-bg mb-4 rounded-xl px-4 py-1 md:ml-[42px] print:mb-3 print:ml-[38px]">
         {found ? (
           claim.evidence.map((ref, i) => (
             <div
               key={`${ref.source}-${ref.record_id ?? i}`}
-              className="border-border grid grid-cols-1 gap-x-3 border-b py-2.5 last:border-b-0 md:grid-cols-[120px_minmax(0,1fr)_auto] md:items-baseline"
+              className="border-border grid grid-cols-1 gap-x-3 border-b py-2.5 last:border-b-0 print:py-2 md:grid-cols-[120px_minmax(0,1fr)_auto] md:items-baseline print:grid-cols-[110px_minmax(0,1fr)_auto] print:items-baseline"
             >
               <span className="text-fg-dim text-[12.5px]">{sourceName(ref)}</span>
               <span className="text-fg text-[13.5px] font-medium">
@@ -151,7 +157,7 @@ function ClaimRow({ claim, openFound }: { claim: Claim; openFound: boolean }) {
           </p>
         )}
 
-        <div className="bg-surface my-3 flex flex-col gap-2 rounded-lg px-3.5 py-3">
+        <div className="bg-surface my-3 flex flex-col gap-2 rounded-lg px-3.5 py-3 print:my-2 print:gap-1.5 print:py-2.5">
           <p className="text-brand-fg text-xs font-bold">쉽게 말하면</p>
           <Explain tag="뜻">{ex.meaning}</Explain>
           {ex.sources.length > 0 ? (
@@ -188,7 +194,7 @@ function Toggle() {
   return (
     <span
       aria-hidden
-      className="border-border text-fg-muted group-open:bg-fg group-open:border-fg grid size-6 place-items-center rounded-full border group-open:text-white"
+      className="border-border text-fg-muted group-open:bg-fg group-open:border-fg grid size-6 place-items-center rounded-full border group-open:text-white print:invisible"
     >
       <Plus size={12} strokeWidth={3} className="group-open:hidden" />
       <Minus size={12} strokeWidth={3} className="hidden group-open:block" />
@@ -206,7 +212,7 @@ export function RecordChecklist({ rows }: { rows: VerificationRow[] }) {
       <h2 id="records-h" className="text-fg mb-2 px-0.5 text-[22px] font-extrabold tracking-[var(--tracking-heading)]">
         조회한 공공 기록
       </h2>
-      <ul className="bg-surface rounded-[var(--radius-panel)] px-5 py-1 shadow-[var(--shadow-panel)] md:px-6">
+      <ul className="bg-surface print:border-border rounded-[var(--radius-panel)] px-5 py-1 shadow-[var(--shadow-panel)] md:px-6 print:border">
         {rows.map((row) => {
           const desc = descriptionFor(row);
           return (
