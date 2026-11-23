@@ -145,6 +145,47 @@ class EvidenceContribution:
     explanation: str
 
 
+# 특정 제품군에만 의미가 있는 기능. 제품군(다나와 분류)이 이 목록과 맞지 않으면
+# 광고 문구에 걸려도 주장으로 인정하지 않는다. TV 상세페이지의 "맞춤"이 세탁
+# 코스 패턴에 걸려 "AI 세탁 코스 추천"이 TV 주장으로 나오던 일을 막는다.
+# 여기 없는 기능(음성 인식, 추천, 스마트홈 제어 등)은 제품군과 무관하게 본다.
+CATEGORY_SCOPED_CAPABILITIES: Dict[str, Tuple[str, ...]] = {
+    "CAP_AI_WASH_COURSE": ("세탁",),
+    "CAP_LAUNDRY_DETECTION": ("세탁",),
+    "CAP_DRY_COURSE": ("건조기", "세탁건조", "의류관리"),
+    "CAP_DISHWASH_COURSE": ("식기세척",),
+    "CAP_COOKING_MODE": ("오븐", "레인지", "에어프라이어", "쿡탑", "인덕션", "밥솥", "전기레인지"),
+    "CAP_DUST_DETECTION": ("청소기",),
+    "CAP_AI_FLOOR_DETECTION": ("청소기",),
+    "CAP_AI_SPATIAL_MAPPING": ("청소기", "로봇"),
+    "CAP_PATH_PLANNING_AVOIDANCE": ("청소기", "로봇", "잔디"),
+    "CAP_AI_OBSTACLE_RECOGNITION": ("청소기", "로봇"),
+    "CAP_AIR_QUALITY_DETECTION": ("공기청정", "에어컨", "냉난방", "제습", "가습", "환기", "공조"),
+    "CAP_SMART_HVAC": ("에어컨", "냉난방", "공기청정", "선풍기", "서큘레이터", "써큘레이터", "제습", "가습", "히터", "환기", "공조"),
+    "CAP_DISPLAY_OPTIMIZATION": ("TV", "모니터", "노트북", "스마트폰", "휴대폰", "태블릿", "프로젝터"),
+    "CAP_AI_NOISE_CANCELLATION": ("이어폰", "헤드폰", "헤드셋", "스피커", "노트북", "스마트폰", "휴대폰", "마이크"),
+    "CAP_AI_TYPING_ASSIST": ("키보드", "스마트폰", "휴대폰", "태블릿", "노트북"),
+}
+
+# 제품군 값을 믿을 수 있는지 가르는 단어. 예전 크롤러는 스펙 원문 첫머리의
+# 다나와 메뉴 글자를 카테고리로 넣었다. 이런 값으로 거르면 진짜 주장을 버리므로,
+# 아는 제품군 단어가 하나도 없으면 거르지 않는다.
+_KNOWN_CATEGORY_WORDS: Tuple[str, ...] = tuple(sorted({
+    word for words in CATEGORY_SCOPED_CAPABILITIES.values() for word in words
+} | {"냉장고", "정수기", "카메라", "CCTV", "워치", "PC", "컴퓨터", "도어락", "전기밥솥"}))
+
+
+def capability_fits_category(capability_id: str, product_type: str) -> bool:
+    """이 기능이 이 제품군에서 주장이 될 수 있는가. 모르면 True."""
+    allowed = CATEGORY_SCOPED_CAPABILITIES.get(capability_id)
+    category = (product_type or "").upper()
+    if not allowed or not category:
+        return True
+    if not any(word.upper() in category for word in _KNOWN_CATEGORY_WORDS):
+        return True
+    return any(word.upper() in category for word in allowed)
+
+
 @dataclass
 class CapabilityScore:
     capability_id: str
@@ -857,6 +898,14 @@ class OntologyAnalysisEngine:
             print("[LLM MATCH]", claim_text[start:end])
             
         capability_scores = self._score_all_capabilities(records, claim_text)
+        # 제품군과 맞지 않는 기능은 점수는 남기되 주장에서는 뺀다.
+        category_filtered = []
+        for score in capability_scores:
+            if score.positive_claim and not capability_fits_category(score.capability_id, product_type):
+                score.positive_claim = False
+                category_filtered.append(score.capability_id)
+        if category_filtered:
+            print(f"[Claims] 제품군({product_type})과 맞지 않아 뺀 주장: {category_filtered}")
         positive_caps = [score for score in capability_scores if score.positive_claim]
         used_caps = positive_caps if positive_caps else []
 
@@ -995,6 +1044,7 @@ class OntologyAnalysisEngine:
         details: Dict[str, Any] = {
             "engine_version": "2.0.1-claim-detection-hotfix",
             "claim_text": claim_text,
+            "category_filtered_capabilities": category_filtered,
             "claim_detection": {
                 "detected": bool(positive_caps),
                 "detected_count": len(positive_caps),
