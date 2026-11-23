@@ -68,6 +68,69 @@ def _evaluate_product_focused_rules(product_name: str, dart_text_data: str) -> d
 
 _DART_TEXT_CACHE_DIR = os.path.join("docs_cache", "dart_text")
 
+# OpenDartReader 는 생성될 때마다 docs_cache/ 의 지난 회사코드 파일을 지우고 오늘
+# 파일을 새로 쓴다. 서버에서 이 폴더가 다른 계정 소유라 쓰기가 막히면 생성 자체가
+# PermissionError 로 실패했고, DART 가 매번 "조회 불가"가 됐다. 쓰기가 막히면
+# 회사코드를 직접 받아 쓸 수 있는 임시 폴더에 캐시하고, 그마저 안 되면 읽을 수
+# 있는 기존 파일이라도 쓴다.
+_DART_READER = None
+_DART_READER_DAY = ""
+
+
+def _dart_fallback_cache_dir() -> str:
+    import tempfile
+    return os.environ.get("EASY_DART_CACHE_DIR") or os.path.join(tempfile.gettempdir(), "easy_dart_cache")
+
+
+def _load_corp_codes_without_docs_cache(api_key: str):
+    import glob
+    import pandas as pd
+    from opendartreader import dart_list
+
+    day = time.strftime("%Y%m%d")
+    cache_dir = _dart_fallback_cache_dir()
+    path = os.path.join(cache_dir, f"opendartreader_corp_codes_{day}.pkl")
+    if os.path.exists(path):
+        return pd.read_pickle(path)
+    try:
+        df = dart_list.corp_codes(api_key)
+    except Exception as e:
+        # 받기도 실패하면 읽을 수 있는 예전 파일 중 가장 최근 것을 쓴다.
+        candidates = sorted(
+            glob.glob(os.path.join(cache_dir, "opendartreader_corp_codes_*.pkl"))
+            + glob.glob(os.path.join("docs_cache", "opendartreader_corp_codes_*.pkl")),
+            key=os.path.basename, reverse=True)
+        for old in candidates:
+            try:
+                return pd.read_pickle(old)
+            except OSError:
+                continue
+        raise e
+    try:
+        os.makedirs(cache_dir, exist_ok=True)
+        df.to_pickle(path)
+    except OSError as e:
+        print(f"[DART] 회사코드 캐시 저장 실패(무시): {e}")
+    return df
+
+
+def _open_dart_reader(api_key: str):
+    """하루 한 번만 만들고 재사용한다. 회사코드 파일(8MB)을 요청마다 읽지 않는다."""
+    global _DART_READER, _DART_READER_DAY
+    day = time.strftime("%Y%m%d")
+    if _DART_READER is not None and _DART_READER_DAY == day:
+        return _DART_READER
+    try:
+        reader = OpenDartReader(api_key)
+    except OSError as e:
+        print(f"[DART] docs_cache 쓰기 불가({e}) → {_dart_fallback_cache_dir()} 사용")
+        from opendartreader.dart import OpenDartReader as reader_cls
+        reader = reader_cls.__new__(reader_cls)
+        reader.api_key = api_key
+        reader.corp_codes = _load_corp_codes_without_docs_cache(api_key)
+    _DART_READER, _DART_READER_DAY = reader, day
+    return reader
+
 
 def _dart_text_cache_path(corp_code: str) -> str:
     return os.path.join(_DART_TEXT_CACHE_DIR, f"{corp_code}_{time.strftime('%Y%m%d')}.txt")
@@ -137,7 +200,7 @@ def check_dart_ai_washing(company_aliases: list, product_name: str = "") -> dict
     clean_list = list(set([n for n in search_list if n]))
 
     try:
-        dart = OpenDartReader(DART_KEY)
+        dart = _open_dart_reader(DART_KEY)
         corp_list = dart.corp_codes
         
         found_corp_code = None
