@@ -50,7 +50,7 @@ export function ClaimChecklist({
           <Legend cls="bg-[var(--claim-no)]" label="미확인" />
         </p>
       </div>
-      <div className="bg-surface print:border-border rounded-[var(--radius-panel)] px-5 py-1 shadow-[var(--shadow-panel)] md:px-6 print:border">
+      <div className="bg-surface print:border-border rounded-[var(--radius-panel)] px-4 py-1 shadow-[var(--shadow-panel)] sm:px-5 md:px-6 print:border">
         {head.map((c) => (
           <ClaimRow key={c.id} claim={c} openFound={few} sourceRows={sourceRows} />
         ))}
@@ -199,7 +199,7 @@ function ClaimRow({
         <Toggle />
       </summary>
 
-      <div className="bg-bg mb-4 rounded-xl px-4 py-1 md:ml-[42px] print:mb-3 print:ml-[38px]">
+      <div className="bg-bg mb-4 rounded-xl px-3 py-1 sm:px-4 md:ml-[42px] print:mb-3 print:ml-[38px]">
         {found ? (
           evidence.map((ref, i) => (
             <EvidenceRow
@@ -216,7 +216,7 @@ function ClaimRow({
           </p>
         )}
 
-        <div className="bg-surface my-3 flex flex-col gap-2 rounded-lg px-3.5 py-3 print:my-2 print:gap-1.5 print:py-2.5">
+        <div className="bg-surface my-3 flex flex-col gap-2 rounded-lg px-3 py-3 sm:px-3.5 print:my-2 print:gap-1.5 print:py-2.5">
           <p className="text-brand-fg text-[12.5px] font-bold">
             왜 이렇게 평가했나요?
           </p>
@@ -337,7 +337,7 @@ export function RecordChecklist({ rows }: { rows: VerificationRow[] }) {
       >
         조회한 공공 기록
       </h2>
-      <ul className="bg-surface print:border-border rounded-[var(--radius-panel)] px-5 py-1 shadow-[var(--shadow-panel)] md:px-6 print:border">
+      <ul className="bg-surface print:border-border rounded-[var(--radius-panel)] px-4 py-1 shadow-[var(--shadow-panel)] sm:px-5 md:px-6 print:border">
         {rows.map((row) => {
           const desc = descriptionFor(row);
           return (
