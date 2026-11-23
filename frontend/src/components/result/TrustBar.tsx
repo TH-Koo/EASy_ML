@@ -79,9 +79,9 @@ export function TrustBar({ data }: { data: AnalysisResult }) {
                 />
               </span>
             </summary>
-            <ul className="flex flex-col gap-2 px-2 pb-3.5">
+            <ul className="flex flex-col gap-4 px-3 pb-4">
               {rows.map((row) => (
-                <li key={row.source ?? row.key} className="text-[13px]">
+                <li key={row.source ?? row.key} className="text-[13.5px] leading-relaxed">
                   <span className="flex flex-wrap items-baseline justify-between gap-x-3">
                     <b className="text-fg font-semibold">{row.key}</b>
                     <span className="text-fg-muted tabular-nums">
@@ -89,7 +89,7 @@ export function TrustBar({ data }: { data: AnalysisResult }) {
                     </span>
                   </span>
                   {descriptionFor(row) ? (
-                    <span className="text-fg-dim block text-[12.5px]">
+                    <span className="text-fg-dim mt-1 block text-[13px] leading-relaxed">
                       {descriptionFor(row)}
                     </span>
                   ) : null}

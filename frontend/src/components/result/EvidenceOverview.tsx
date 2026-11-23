@@ -12,7 +12,7 @@ export function ManufacturerResearch({ data }: { data: AnalysisResult }) {
         제조사가 관련 AI 기술을 개발해 온 기록이 있나요?
       </h2>
       <div className="bg-surface rounded-[var(--radius-panel)] p-5 shadow-[var(--shadow-panel)] md:p-6">
-        <p className="text-fg-muted text-sm leading-relaxed">
+        <p className="text-fg-muted text-[14px] leading-relaxed">
           공시와 연구과제를 각각 최대 3건 보여줘요. 제조사의 투자·연구 이력을
           살펴보는 자료예요. 해당 기능을 이 제품에 적용했는지는 제품과 직접
           연결된 기록으로 확인해요.
@@ -36,11 +36,11 @@ export function ManufacturerResearch({ data }: { data: AnalysisResult }) {
             return (
               <div key={source} className="bg-surface-strong rounded-lg p-3.5">
                 <div className="flex items-center justify-between gap-3">
-                  <h3 className="text-fg text-sm font-bold">
+                  <h3 className="text-fg text-[14.5px] font-bold">
                     {sourceName({ source, label: source })}
                   </h3>
                   <span
-                    className="text-fg-dim inline-flex shrink-0 items-center gap-1.5 text-xs whitespace-nowrap"
+                    className="text-fg-dim inline-flex shrink-0 items-center gap-1.5 text-[12px] whitespace-nowrap"
                     style={{ transform: "translateY(-2px)" }}
                   >
                     <i
@@ -51,18 +51,18 @@ export function ManufacturerResearch({ data }: { data: AnalysisResult }) {
                     {confirmed ? "확인" : "미확인"}
                   </span>
                 </div>
-                <p className="text-fg-muted mt-1 text-xs leading-relaxed">
+                <p className="text-fg-muted mt-1 text-[12.5px] leading-relaxed">
                   {details.role}
                 </p>
-                <p className="text-fg mt-2 text-sm font-semibold">
+                <p className="text-fg mt-2 text-[14px] font-semibold">
                   조회 결과: {result}
                 </p>
                 {records.length > 0 ? (
-                  <ul className="text-fg-dim mt-1 flex flex-col gap-1 text-xs leading-relaxed">
+                  <ul className="text-fg-dim mt-1 flex flex-col gap-1 text-[12.5px] leading-relaxed">
                     {records.map((record) => <li key={record}>{record}</li>)}
                   </ul>
                 ) : confirmed ? null : (
-                  <p className="text-fg-dim mt-1 text-xs leading-relaxed">
+                  <p className="text-fg-dim mt-1 text-[12.5px] leading-relaxed">
                     조회 결과가 없습니다.
                   </p>
                 )}

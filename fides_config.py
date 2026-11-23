@@ -109,4 +109,25 @@ class EngineConfig:
     max_channel_evidence: int = 6
 
 
+@dataclass(frozen=True)
+class ClaimThresholds:
+    """UI claim evidence bands on the raw required-component support average.
+
+    These are product policy cutoffs, not calibrated ACCS verdict thresholds.
+    """
+
+    verified: float = 0.75
+    partial: float = 0.35
+
+    def classify(self, support: float, has_sources: bool) -> str:
+        if not has_sources:
+            return "unsupported"
+        if support >= self.verified:
+            return "verified"
+        if support >= self.partial:
+            return "partial"
+        return "unsupported"
+
+
+DEFAULT_CLAIM_THRESHOLDS = ClaimThresholds()
 DEFAULT_ENGINE_CONFIG = EngineConfig()

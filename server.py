@@ -92,6 +92,7 @@ WEIGHT_PREDICTOR = load_weight_predictor()
 S_ONLY_PREDICTOR = load_s_only_predictor()
 
 from fides_ml.s_only import verdict_label
+from fides_config import DEFAULT_CLAIM_THRESHOLDS
 
 # 크롤링 이후의 OCR·제조사 확정·공공 기록 조회는 터미널 파이프라인과 같은
 # 함수를 쓴다. 따로 구현하면 화면과 터미널의 근거·점수가 갈라진다.
@@ -787,14 +788,11 @@ def build_claims(capability_scores: list) -> list:
     실제로 걸린 것(positive_claim)만 주장이다. 거르지 않으면 모니터 결과에
     "AI 건조 코스 추천" 같은 남의 기능이 광고한 기능처럼 나온다.
 
-    capability_scores 에는 온톨로지의 기능 전부(28개)가 들어 있다. 광고에서
-    실제로 걸린 것(positive_claim)만 주장이다. 거르지 않으면 모니터 결과에
-    "AI 건조 코스 추천" 같은 남의 기능이 광고한 기능처럼 나온다.
-
     판정 기준:
-        근거 소스가 하나도 없으면            unsupported
-        있으나 필수 요건을 다 못 채웠으면      partial
-        있고 필수 요건도 채웠으면            verified
+        근거가 없거나 평균 근거 점수가 0.35 미만이면 unsupported
+        근거가 있고 평균 근거 점수가 0.35 이상이면 partial
+        근거가 있고 평균 근거 점수가 0.75 이상이면 verified
+    평균은 원래 required_fulfillment_ratio를 사용하며 ACCS와 별개다.
     """
     claims = []
     for i, c in enumerate(capability_scores or []):
@@ -802,21 +800,30 @@ def build_claims(capability_scores: list) -> list:
             continue
         if not c.get("positive_claim", True):
             continue
-        if not c.get("positive_claim", True):
-            continue
 
         sources = [s for s in (c.get("supporting_sources") or []) if s]
         ratio = float(c.get("required_fulfillment_ratio") or 0.0)
 
-        if not sources:
-            status = "unsupported"
-        elif ratio >= 1.0:
-            status = "verified"
-        else:
-            status = "partial"
+        status = DEFAULT_CLAIM_THRESHOLDS.classify(ratio, bool(sources))
 
         strong = c.get("matched_strong_patterns") or []
         missing = c.get("missing_required_components") or []
+        fulfilled = c.get("fulfilled_required_components") or []
+        required_names = set(fulfilled + missing)
+        components = [
+            {"name": name, "support": float(value or 0.0), "fulfilled": name in fulfilled}
+            for name, value in (c.get("component_support") or {}).items()
+            if name in required_names
+        ]
+        source_evidence = {
+            row["source"]: row for row in (c.get("source_evidence") or [])
+            if isinstance(row, dict) and row.get("source")
+        }
+        source_order = {source: index for index, source in enumerate(source_evidence)}
+        sources.sort(key=lambda source: (
+            source.lower() != "seller_page",
+            source_order.get(source, len(source_order)),
+        ))
 
         claims.append({
             "id": c.get("capability_id") or f"claim-{i}",
@@ -824,11 +831,22 @@ def build_claims(capability_scores: list) -> list:
             # 페이지에서 실제로 걸린 문구. 없으면 인용을 지어내지 않고 비운다.
             "quote": strong[0] if strong else None,
             "status": status,
+            "required_support": ratio,
+            "components": components,
+            "support_thresholds": {
+                "verified": DEFAULT_CLAIM_THRESHOLDS.verified,
+                "partial": DEFAULT_CLAIM_THRESHOLDS.partial,
+            },
             "evidence": [
                 {
                     "source": s,
                     "label": SOURCE_LABELS.get(s, s.upper()),
-                    "record_id": None,
+                    "record_id": source_evidence.get(s, {}).get("record_id"),
+                    **{
+                        key: source_evidence[s][key]
+                        for key in ("components", "record_title", "matched_record_count", "relation_type", "used_for_support")
+                        if s in source_evidence and key in source_evidence[s]
+                    },
                 }
                 for s in sources
             ],
