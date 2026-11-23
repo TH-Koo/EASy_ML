@@ -28,7 +28,7 @@ class DartReaderFallbackTest(unittest.TestCase):
         codes = pd.DataFrame({"corp_code": ["00126380"], "corp_name": ["삼성전자"], "stock_code": ["005930"]})
         denied = PermissionError(13, "Permission denied", "docs_cache/opendartreader_corp_codes_20260913.pkl")
         with mock.patch.object(dart_scraper, "OpenDartReader", side_effect=denied), \
-                mock.patch("opendartreader.dart_list.corp_codes", return_value=codes) as fetch:
+                mock.patch.object(dart_scraper._DART_LIST_BACKEND, "corp_codes", return_value=codes) as fetch:
             reader = dart_scraper._open_dart_reader("key")
             again = dart_scraper._open_dart_reader("key")
         self.assertIs(reader, again)  # 하루 한 번만 만든다

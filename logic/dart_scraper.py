@@ -5,6 +5,16 @@ try:
     import OpenDartReader
 except ImportError:
     from opendartreader import OpenDartReader
+import importlib
+
+# Both package names are used by OpenDartReader distributions. Keep the real
+# class available when construction fails before docs_cache can be opened.
+try:
+    _DART_READER_BACKEND = importlib.import_module("OpenDartReader.dart")
+    _DART_LIST_BACKEND = importlib.import_module("OpenDartReader.dart_list")
+except ImportError:
+    _DART_READER_BACKEND = importlib.import_module("opendartreader.dart")
+    _DART_LIST_BACKEND = importlib.import_module("opendartreader.dart_list")
 import html
 import json
 import os
@@ -86,7 +96,6 @@ def _dart_fallback_cache_dir() -> str:
 def _load_corp_codes_without_docs_cache(api_key: str):
     import glob
     import pandas as pd
-    from opendartreader import dart_list
 
     day = time.strftime("%Y%m%d")
     cache_dir = _dart_fallback_cache_dir()
@@ -94,7 +103,7 @@ def _load_corp_codes_without_docs_cache(api_key: str):
     if os.path.exists(path):
         return pd.read_pickle(path)
     try:
-        df = dart_list.corp_codes(api_key)
+        df = _DART_LIST_BACKEND.corp_codes(api_key)
     except Exception as e:
         # 받기도 실패하면 읽을 수 있는 예전 파일 중 가장 최근 것을 쓴다.
         candidates = sorted(
@@ -125,7 +134,7 @@ def _open_dart_reader(api_key: str):
         reader = OpenDartReader(api_key)
     except OSError as e:
         print(f"[DART] docs_cache 쓰기 불가({e}) → {_dart_fallback_cache_dir()} 사용")
-        from opendartreader.dart import OpenDartReader as reader_cls
+        reader_cls = _DART_READER_BACKEND.OpenDartReader
         reader = reader_cls.__new__(reader_cls)
         reader.api_key = api_key
         reader.corp_codes = _load_corp_codes_without_docs_cache(api_key)
