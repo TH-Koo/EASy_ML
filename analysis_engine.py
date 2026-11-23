@@ -756,8 +756,10 @@ class OntologyRepository:
 
 
 class OntologyAnalysisEngine:
-    HES_SOURCES = {"kc", "rra", "seller_page"}
-    TES_SOURCES = {"kipris", "dart", "nipa", "kaiac", "tipa", "koraia", "seller_page", "ntis", "iitp"}
+    # 제품이 스스로 적은 내용. 주장 텍스트로만 쓰고 검증 점수에는 넣지 않는다.
+    FIRST_PARTY_SOURCES = {"seller_page", "review", "ocr_text", "product_text"}
+    HES_SOURCES = {"kc", "rra"}
+    TES_SOURCES = {"kipris", "dart", "nipa", "kaiac", "tipa", "koraia", "ntis", "iitp"}
     CES_SOURCES = {"gs", "nep", "procurement", "tta", "kaiac", "nipa", "tipa", "koraia", "net", "sandbox"}
 
     def __init__(
@@ -1370,6 +1372,11 @@ class OntologyAnalysisEngine:
                 # not an individual product's required hardware/software component.
                 # Count it once at the TES channel level instead of here.
                 if record.source_type == "ntis":
+                    continue
+                # 판매 페이지·리뷰는 검증 대상인 주장의 출처일 뿐, 그 주장을
+                # 뒷받침하는 근거가 아니다. 부품 충족·HES·TES·CES 어디에도
+                # 점수로 들어가지 않게 여기서 한 번에 뺀다.
+                if record.source_type in self.FIRST_PARTY_SOURCES:
                     continue
                 if record.source_type != source and not (
                     (record.source_type == "ntis" and source in {"kipris", "dart", "nipa"})

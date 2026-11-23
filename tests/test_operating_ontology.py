@@ -14,7 +14,7 @@ class OperatingOntologyContractTests(unittest.TestCase):
             digest.update(file.name.encode())
             digest.update(file.read_bytes())
         self.assertEqual(digest.hexdigest(),
-                         '8f7c5818e8e1a53e6bb52982859fa3486daf0075af3515446e5a16ae1cd7cc9b',
+                         '297419463e0ddc58feee56df83599a5f5baddd592820d1637af89c4153e3af2d',
                          'Ontology differs from the deployed model: coordinate CSV and model releases.')
 
 
