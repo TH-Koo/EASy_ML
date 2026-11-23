@@ -601,6 +601,16 @@ _NEW_SPEC_TABLE_SELECTOR = '[data-testid="ProductDetailSection"] table'
 _NEW_SPEC_SUMMARY_SELECTOR = '[data-testid="ProductHeader-specs"]'
 
 
+# 새 화면 스펙표 칸에는 링크·버튼 글자가 값에 섞여 들어온다. 제조회사가
+# "삼성전자 (제조사 웹사이트 바로가기)"가 되면 회사명 정규화가 이 글자째로
+# DART·특허·NTIS 를 찾아 전부 실패한다.
+_SPEC_LINK_NOISE = re.compile(r"\s*\(?제조사 웹사이트 바로가기\)?|\s*인증번호 확인")
+
+
+def _clean_spec_value(text: str) -> str:
+    return re.sub(r"\s+", " ", _SPEC_LINK_NOISE.sub("", text or "")).strip()
+
+
 def _extract_specs(driver) -> Tuple[Dict[str, str], str]:
     """
     다나와 상품 스펙 정보를 수집한다.
@@ -639,7 +649,7 @@ def _extract_specs(driver) -> Tuple[Dict[str, str], str]:
                     value = "지원"
 
                     if i < len(tds):
-                        value = tds[i].text.strip()
+                        value = _clean_spec_value(tds[i].text)
 
                     specs[key] = value
 
