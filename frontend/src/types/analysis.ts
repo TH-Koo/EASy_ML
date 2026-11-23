@@ -150,6 +150,10 @@ export interface EvidenceRef {
   components?: string[];
   record_title?: string;
   matched_record_count?: number;
+  /** Literal phrase hits for title selection only; never a claim status or evidence count. */
+  related_record_count?: number;
+  /** Only present when the patent title itself names a related function/component. */
+  display_record_title?: string | null;
   relation_type?: string;
   used_for_support?: boolean;
 }
@@ -168,6 +172,8 @@ export interface Claim {
   evidence: EvidenceRef[];
   /** 연결이 끊긴 이유 — "KIPRIS 0건 · DART 0건" 등 */
   note: string | null;
+  /** Why an advertised feature remains unverified; does not alter model scores. */
+  explanation?: { result: string; criterion: string };
 }
 
 export interface VerificationResult {

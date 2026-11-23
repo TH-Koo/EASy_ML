@@ -92,6 +92,7 @@ S_ONLY_PREDICTOR = load_s_only_predictor()
 
 from fides_ml.s_only import verdict_label
 from fides_config import DEFAULT_CLAIM_THRESHOLDS
+from analysis_engine import capability_fits_category
 from logic.analysis_scheduler import AnalysisScheduler, AnalysisQueueFull
 
 # 크롤링 이후의 OCR·제조사 확정·공공 기록 조회는 터미널 파이프라인과 같은
@@ -893,7 +894,8 @@ def build_claims(capability_scores: list) -> list:
                     "record_id": source_evidence.get(s, {}).get("record_id"),
                     **{
                         key: source_evidence[s][key]
-                        for key in ("components", "record_title", "matched_record_count", "relation_type", "used_for_support")
+                        for key in ("components", "record_title", "matched_record_count", "relation_type", "used_for_support",
+                                    "display_record_title", "related_record_count")
                         if s in source_evidence and key in source_evidence[s]
                     },
                 }
@@ -931,6 +933,57 @@ def _with_product_name_claim(claims: list, product_name: str) -> list:
         "evidence": [],
         "note": "상품명에 AI를 내세웠지만 어떤 AI 기능인지 페이지에서 특정할 수 없어요",
     }]
+
+
+def _claims_for_display(payload: dict) -> list:
+    """Keep advertised features visible without feeding them back into scoring."""
+    capabilities = payload.get("capability_scores") or []
+    claims = build_claims(capabilities)
+    present = {claim["id"] for claim in claims}
+    for capability in capabilities:
+        if not isinstance(capability, dict):
+            continue
+        ident = capability.get("capability_id")
+        strong = capability.get("matched_strong_patterns") or []
+        if not ident or ident in present or not strong:
+            continue
+        if not capability_fits_category(ident, payload.get("_category", "")):
+            continue
+        claim = build_claims([{**capability, "positive_claim": True}])[0]
+        claim["status"] = "unsupported"
+        claim["explanation"] = {
+            "result": "광고에서 이 기능에 관한 표현을 찾았어요. 다만 광고한 기능의 구현을 뒷받침할 근거가 충분하지 않아 ‘미확인’으로 표시했어요.",
+            "criterion": "광고에 기능이 적혀 있는지와 그 기능을 뒷받침하는 자료가 있는지는 따로 확인해요. 광고 문구만으로 기능 구현이나 성능을 검증하지 않아요.",
+        }
+        claims.append(claim)
+        present.add(ident)
+
+    raw_specs = payload.get("specs") or []
+    spec_items = raw_specs.items() if isinstance(raw_specs, dict) else (
+        (row.get("key", ""), row.get("value", "")) for row in raw_specs if isinstance(row, dict)
+    )
+    absent = {"", "-", "x", "×", "✕", "✖", "미지원", "미적용", "지원안함", "없음", "해당없음",
+              "false", "none", "null", "0", "no", "아니오"}
+    spec_keys = {re.sub(r"\s+", "", str(key)).lower() for key, value in spec_items
+                 if re.sub(r"\s+", "", str(value)).lower() not in absent}
+    platform = "음성인식플랫폼" in spec_keys
+    native_speech = bool(spec_keys & {"음성인식", "ai음성인식", "온디바이스음성인식", "음성인식엔진"})
+    speech_id = "CAP_SPEECH_RECOGNITION"
+    if platform and not native_speech:
+        claim = next((claim for claim in claims if claim["id"] == speech_id), None)
+        if claim is None:
+            claim = {"id": speech_id, "text": "음성 인식", "quote": "음성인식플랫폼",
+                     "status": "unsupported", "components": [], "evidence": [], "note": None}
+            claims.append(claim)
+        claim["status"] = "unsupported"
+        claim["explanation"] = {
+            "result": "판매 페이지에 음성인식 플랫폼 지원이 안내돼 있어요. 휴대폰의 Siri·구글 어시스턴트 같은 음성비서를 호출하는 지원일 수 있어, 이 제품 자체의 음성인식 기능을 뒷받침하는 근거는 충분하지 않아요.",
+            "criterion": "음성비서를 연결해 쓰는 기능과 제품이 직접 음성을 분석하는 기능을 구분해요. 회사의 관련 특허만으로 해당 제품에 음성인식 기술이 적용됐다고 판단하지 않아요.",
+        }
+        if not any(ref.get("source", "").lower() == "seller_page" for ref in claim["evidence"]):
+            claim["evidence"].insert(0, {"source": "seller_page", "label": "판매자 기능 설명", "record_id": None})
+        claim["note"] = "판매 페이지 표기: 음성인식플랫폼 지원"
+    return _with_product_name_claim(claims, payload.get("product_name", ""))
 
 
 def log_claim_breakdown(capability_scores: list) -> None:
@@ -1023,10 +1076,7 @@ def claims_from_result_json(raw: str) -> list:
     import json as _json
     try:
         payload = _json.loads(raw or "{}")
-        return _with_product_name_claim(
-            build_claims(payload.get("capability_scores", [])),
-            payload.get("product_name", ""),
-        )
+        return _claims_for_display(payload)
     except Exception:
         # 깨진 행 하나가 목록 전체를 죽이지 않게 한다
         return []
@@ -1186,9 +1236,7 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
 
     prod_name = payload.get("product_name", "")
     category  = payload.get("_category", "")
-    claims = _with_product_name_claim(
-        build_claims(payload.get("capability_scores", [])), prod_name,
-    )
+    claims = _claims_for_display(payload)
     claim_count = len(claims) if claims or "capability_scores" in payload else (len(top_caps) or len(reasons))
 
     return {

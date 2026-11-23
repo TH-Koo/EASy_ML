@@ -194,7 +194,9 @@ function Count({ dot, label, n }: { dot: string; label: string; n: number }) {
  * 떼어 두면 "54점이 좋은 건가"를 다시 묻게 된다.
  */
 function ScoreBar({ score, level }: { score: number; level: number }) {
-  const s = Math.max(0, Math.min(100, Math.round(score)));
+  // 숫자는 정수로 표시하고, 핀은 실제 표시 점수 위치를 유지한다.
+  const position = Math.max(0, Math.min(100, score));
+  const s = Math.round(position);
   const { low, high } = SCORE_ZONES;
   // 왼쪽부터 미확인(2) · 일부 확인(1) · 충분(0)
   const zones = [
@@ -224,7 +226,7 @@ function ScoreBar({ score, level }: { score: number; level: number }) {
           aria-hidden
           className="absolute -top-1.5 -bottom-1.5 w-1 -translate-x-1/2 rounded-sm shadow-[0_0_0_3px_var(--color-surface)]"
           // 핀은 지금 판정 색. 같은 색 구간 위에서도 흰 테두리로 떠 보인다.
-          style={{ left: `${s}%`, background: VERDICT_COLOR[level] }}
+          style={{ left: `${position}%`, background: VERDICT_COLOR[level] }}
         >
           <b className="text-fg absolute bottom-[calc(100%+6px)] left-1/2 -translate-x-1/2 text-sm font-extrabold whitespace-nowrap tabular-nums">
             {s}점

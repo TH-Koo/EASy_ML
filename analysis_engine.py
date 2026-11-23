@@ -1151,6 +1151,40 @@ class OntologyAnalysisEngine:
 
 
 
+    def _patent_display_terms(self, contributions: List[EvidenceContribution]) -> Set[str]:
+        """Specific function/component phrases for presentation, not scoring."""
+        generic = GENERIC_COMPONENT_TOKENS | {
+            "인식", "감지", "탐지", "검출", "처리", "학습", "데이터", "정보",
+            "입력", "출력", "엔진", "신경망", "딥러닝", "머신러닝", "learning",
+        }
+        terms = set()
+        for item in contributions:
+            # Short/general words such as 'AI', '모델', '제어' cannot connect
+            # a vehicle patent to floor detection merely by being present.
+            terms.update(token for token in meaningful_tokens(item.component_name)
+                         if token not in generic and len(token) >= 3)
+        repo = getattr(self, "repo", None)
+        if repo is not None:
+            for ident in {getattr(item, "capability_id", "") for item in contributions}:
+                for pattern in repo.get_patterns(ident):
+                    text = str(pattern.get("pattern_text_ko", ""))
+                    if (normalize_text(pattern.get("evidence_strength", "")) == "strong"
+                            and meaningful_tokens(text) - generic and len(compact_text(text)) >= 3):
+                        terms.add(text)
+        return terms
+
+    @staticmethod
+    def _patent_display_matches(text: str, terms: Set[str]) -> bool:
+        text = clean_markup(text)
+        compact = compact_text(text)
+        for term in terms:
+            if re.fullmatch(r"[a-z0-9]+", term, re.IGNORECASE):
+                if re.search(r"(?<![a-z0-9])" + re.escape(term) + r"(?![a-z0-9])", text, re.IGNORECASE):
+                    return True
+            elif compact_text(term) in compact:
+                return True
+        return False
+
     def _summarize_capability_sources(
         self, contributions: List[EvidenceContribution], records: List[EvidenceRecord]
     ) -> List[Dict[str, Any]]:
@@ -1190,6 +1224,29 @@ class OntologyAnalysisEngine:
                 continue
             items.sort(key=relevance_key, reverse=True)
             top = items[0]
+            display = {}
+            if source == "kipris":
+                terms = self._patent_display_terms(items)
+                related_ids = set()
+                titled = []
+                for item in items:
+                    candidate = by_id[item.evidence_id]
+                    meta = getattr(candidate, "meta", {}) or {}
+                    abstract = _first_nonempty(meta, ["초록", "abstract", "Abstract", "요약", "summary", "description"])
+                    # record.text also contains search_query/search_alias. Those
+                    # query terms are not content of the returned patent.
+                    if not meta:
+                        abstract = getattr(candidate, "text", "")
+                    if self._patent_display_matches(f"{candidate.title} {abstract}", terms):
+                        related_ids.add(item.evidence_id)
+                    if self._patent_display_matches(candidate.title, terms):
+                        titled.append(item)
+                if titled:
+                    top = titled[0]
+                display = {
+                    "display_record_title": by_id[top.evidence_id].title if titled else None,
+                    "related_record_count": len(related_ids),
+                }
             record = by_id[top.evidence_id]
             record_items = [c for c in items if c.evidence_id == top.evidence_id]
             summaries.append((relevance_key(top), {
@@ -1200,6 +1257,7 @@ class OntologyAnalysisEngine:
                 "matched_record_count": len({c.evidence_id for c in items}),
                 "relation_type": top.relation_type,
                 "used_for_support": any((c.component_name, c.evidence_id) in selected for c in record_items),
+                **display,
             }))
         return [row for _, row in sorted(summaries, key=lambda entry: entry[0], reverse=True)]
 
