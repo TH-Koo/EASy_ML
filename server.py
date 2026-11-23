@@ -748,7 +748,49 @@ def _source_details(source: str, result: dict, model_name: Optional[str]) -> dic
     else:
         return {}
 
-    return {"record_titles": list(dict.fromkeys(title for title in titles if title))[:3]}
+    titles = list(dict.fromkeys(title for title in titles if title))[:3]
+    if source == "dart":
+        titles = _summarize_dart_titles(titles)
+    return {"record_titles": titles}
+
+
+_DART_SUMMARY_CACHE: dict = {}
+
+
+def _summarize_dart_titles(titles: list) -> list:
+    """사업보고서 문장을 결과 화면용 짧은 요약으로 바꾼다. 점수에는 쓰지 않는다.
+
+    요약에 실패하거나 AI 표현이 빠지면 원문을 그대로 둔다(화면에서 한 줄로 잘린다).
+    """
+    pending = [t for t in titles if len(t) > 40 and t not in _DART_SUMMARY_CACHE]
+    if pending and gemini_client:
+        prompt = (
+            "다음은 기업 사업보고서에서 뽑은 문장들이다. 각 문장을 결과 화면에 한 줄로 보여 줄 "
+            "핵심 요약으로 바꿔라.\n"
+            "- 25자 안팎의 명사구로, 예: '에어컨, HVAC, AI 데이터센터 냉각 솔루션 등'\n"
+            "- 문장에 있는 AI 관련 표현(AI, 인공지능 등)은 반드시 남긴다\n"
+            "- 문장에 없는 내용은 추가하지 않는다\n"
+            "- 입력과 같은 순서·개수의 문자열 JSON 배열로만 답한다\n\n"
+            + json.dumps(pending, ensure_ascii=False)
+        )
+        try:
+            response = gemini_client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=prompt,
+                config=genai_types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    temperature=0.1,
+                ),
+            )
+            summaries = json.loads(response.text)
+            if isinstance(summaries, list) and len(summaries) == len(pending):
+                for original, summary in zip(pending, summaries):
+                    summary = _source_text(summary)
+                    if summary and len(summary) < len(original) and _ai_record_text(summary):
+                        _DART_SUMMARY_CACHE[original] = summary
+        except Exception as e:
+            print(f"[WARN] DART 요약 실패(원문 표시): {e}")
+    return [_DART_SUMMARY_CACHE.get(t, t) for t in titles]
 
 
 def summarize_sources(final_results: dict, model_name: Optional[str] = None) -> list:
