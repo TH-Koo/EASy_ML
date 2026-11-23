@@ -42,7 +42,7 @@ export function ResultView({
 
       <div className="mt-8 flex flex-col gap-11">
         {claims.length > 0 ? (
-          <ClaimChecklist claims={claims} />
+          <ClaimChecklist claims={claims} sourceRows={data.verification.rows} />
         ) : data.verification.rows.length > 0 ? (
           <RecordChecklist rows={data.verification.rows} />
         ) : null}

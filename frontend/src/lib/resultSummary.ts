@@ -23,7 +23,11 @@ export type VerdictLevel = 0 | 1 | 2;
 export const VERDICT_STEPS = ["충분", "일부 확인", "미확인"] as const;
 
 /** 판정 단계 색 — 큰 판정 글씨와 점수 막대의 지금 구간에 쓴다. */
-export const VERDICT_COLOR = ["var(--claim-ok)", "var(--claim-part)", "var(--claim-no)"] as const;
+export const VERDICT_COLOR = [
+  "var(--claim-ok)",
+  "var(--claim-part)",
+  "var(--claim-no)",
+] as const;
 
 /**
  * 점수 막대의 구간 경계. fides_config.py 의 VerdictThresholds
@@ -67,8 +71,8 @@ export interface ClaimStatusMeta {
 }
 
 export const CLAIM_META: Record<ClaimStatus, ClaimStatusMeta> = {
-  verified: { label: "확인", rank: 0 },
-  partial: { label: "일부", rank: 1 },
+  verified: { label: "근거 확인", rank: 0 },
+  partial: { label: "일부 확인", rank: 1 },
   unsupported: { label: "미확인", rank: 2 },
 };
 
@@ -98,7 +102,7 @@ export function headline(data: AnalysisResult): string {
   if (claims.length === 0) {
     const n = data.product.ai_claims_count;
     return n > 0
-      ? `광고한 AI 기능 ${n}개를 공공 기록과 맞춰 봤어요`
+      ? `광고한 AI 기능 ${n}개와 관련 자료를 대조했어요`
       : "광고에서 AI 기능 주장을 찾지 못했어요";
   }
   // 위 큰 판정(근거 충분 등)은 점수 구간이라, 여기서 "확인된 게 없어요"처럼
@@ -106,35 +110,42 @@ export function headline(data: AnalysisResult): string {
   const { verified, partial } = countByStatus(claims);
   const n = claims.length;
   if (verified === n) {
-    return `광고한 AI 기능 ${n}개 모두 공공 기록으로 확인됐어요`;
+    return `광고한 AI 기능 ${n}개 모두 분석 기준에 맞는 근거가 확인됐어요`;
   }
   if (verified === 0 && partial === 0) {
-    return `광고한 AI 기능 ${n}개 중 공공 기록으로 확인된 게 없어요`;
+    return `광고한 AI 기능 ${n}개를 뒷받침하는 근거가 이번 조회에서 확인되지 않았어요`;
   }
   if (verified === 0) {
     return partial === n
-      ? `광고한 AI 기능 ${n}개 모두 관련 공공 기록이 일부 확인됐어요`
-      : `광고한 AI 기능 ${n}개 중 ${partial}개는 관련 공공 기록이 일부 확인됐어요`;
+      ? `광고한 AI 기능 ${n}개 모두 관련 근거가 일부 확인됐어요`
+      : `광고한 AI 기능 ${n}개 중 ${partial}개는 관련 근거가 일부 확인됐어요`;
   }
   return partial > 0
     ? `광고한 AI 기능 ${n}개 중 ${verified}개는 확인, ${partial}개는 일부 확인됐어요`
-    : `광고한 AI 기능 ${n}개 중 ${verified}개만 공공 기록으로 확인됐어요`;
+    : `광고한 AI 기능 ${n}개 중 ${verified}개는 분석 기준에 맞는 근거가 확인됐어요`;
 }
 
 /* ── 제품 이름 ─────────────────────────────────────────────────────── */
 
 /** 판매처·구매 조건처럼 제품을 설명하지 않는 괄호 내용 */
-const NAME_NOISE = /일반\s*판매처|일반\s*구매|전국\s*무료|공식\s*인증|설치|단품|정품|해외\s*구매|병행\s*수입/;
+const NAME_NOISE =
+  /일반\s*판매처|일반\s*구매|전국\s*무료|공식\s*인증|설치|단품|정품|해외\s*구매|병행\s*수입/;
 
 /**
  * 다나와 이름 → 이름 + 옵션. `Seagate SkyHawk AI 7200/512M (12TB, ST12000VE003)` 은
  * 제목으로 쓰기에 길어서, 끝의 괄호를 떼어 아랫줄에 작게 쓴다. 판매처 같은 내용은 뺀다.
  */
-export function splitProductName(raw: string): { title: string; detail: string | null } {
+export function splitProductName(raw: string): {
+  title: string;
+  detail: string | null;
+} {
   const name = raw.replaceAll("&amp;", "&").trim();
   const match = /^(.+?)\s*\(([^()]+)\)\s*$/.exec(name);
   if (!match) return { title: name, detail: null };
-  return { title: match[1], detail: NAME_NOISE.test(match[2]) ? null : match[2] };
+  return {
+    title: match[1],
+    detail: NAME_NOISE.test(match[2]) ? null : match[2],
+  };
 }
 
 /* ── 공공 기록 출처 ───────────────────────────────────────────────────── */
@@ -151,23 +162,72 @@ export interface SourceInfo {
  * 없는 id 는 레코드의 label 을 그대로 이름으로 쓴다.
  */
 export const SOURCE_INFO: Record<string, SourceInfo> = {
-  kipris: { name: "특허청 KIPRIS", role: "등록된 특허를 누구나 조회하는 곳" },
-  dart: { name: "금융감독원 DART", role: "회사가 법에 따라 사업보고서를 공개하는 곳" },
+  kipris: {
+    name: "특허정보 KIPRIS",
+    role: "특허의 기술 내용과 출원·등록 상태를 검색하는 서비스",
+  },
+  dart: {
+    name: "기업 공시 DART",
+    role: "기업이 제출한 사업보고서에서 사업·연구개발 내용을 확인하는 서비스",
+  },
   kc: { name: "KC 인증", role: "전기용품이 안전 기준을 통과했다는 국가 인증" },
-  rra: { name: "전파인증", role: "무선 기기를 팔기 전에 반드시 받아야 하는 인증" },
+  rra: {
+    name: "제품 인증 RRA",
+    role: "국립전파연구원의 전파·전자파 관련 적합성평가 기록",
+  },
   tipa: { name: "TIPA", role: "AI 공급기업 명단" },
-  koraia: { name: "한국인공지능산업협회", role: "국내 AI 기업들이 모인 협회의 회원 명단" },
+  koraia: {
+    name: "한국인공지능산업협회",
+    role: "국내 AI 기업들이 모인 협회의 회원 명단",
+  },
   gs: { name: "GS 인증", role: "소프트웨어가 품질 시험을 통과했다는 인증" },
-  nep: { name: "신제품 인증 NEP", role: "새 기술이 처음 적용된 제품에 주는 인증" },
-  procurement: { name: "조달청", role: "공공기관 납품을 위해 등록한 제품 목록" },
+  nep: {
+    name: "신제품 인증 NEP",
+    role: "새 기술이 처음 적용된 제품에 주는 인증",
+  },
+  procurement: {
+    name: "조달청",
+    role: "공공기관 납품을 위해 등록한 제품 목록",
+  },
   tta: { name: "TTA·GS 인증", role: "소프트웨어 품질 시험·인증 기록" },
-  ntis: { name: "NTIS 국가R&D", role: "나라 돈으로 진행한 연구개발 과제 기록" },
+  ntis: {
+    name: "국가 연구개발 NTIS",
+    role: "국가 연구개발 과제와 참여기관·성과를 검색하는 서비스",
+  },
   iitp: { name: "IITP 연구과제", role: "정보통신 분야 국가 연구과제 기록" },
-  nipa: { name: "NIPA AI 공급기업", role: "정부가 인정한 AI 솔루션 공급기업 명단" },
+  nipa: {
+    name: "NIPA AI 공급기업",
+    role: "정부가 인정한 AI 솔루션 공급기업 명단",
+  },
   koneps: { name: "나라장터", role: "공공기관 입찰에서 낙찰받은 기록" },
   kaiac: { name: "KAIAC 인증", role: "AI 제품 품질 인증 기록" },
-  seller_page: { name: "판매 페이지", role: "판매자가 올린 상세페이지 (공공 기록은 아니에요)" },
+  seller_page: {
+    name: "판매자 기능 설명",
+    role: "판매자가 제품의 기능과 작동 방식을 설명한 상품 상세페이지",
+  },
 };
+
+/** 출처가 확인해 주는 범위. 자료의 존재와 제품 적용·성능 검증을 구분한다. */
+export const SOURCE_SCOPE: Record<string, string> = {
+  kipris:
+    "관련 기술의 특허 기록을 확인하는 자료예요. 이 제품에 실제 적용됐는지는 별도로 확인해야 해요.",
+  rra: "제품의 전파·전자파 관련 인증 이력을 확인해요. AI 작동 방식이나 절전 성능을 입증하는 자료는 아니에요.",
+  kc: "제품의 안전 인증 이력을 확인해요. AI 기능의 구현 여부나 성능은 별도로 확인해야 해요.",
+  dart: "제조사가 공개한 사업·연구개발 내용을 확인해요. 회사 차원의 기록과 해당 제품의 적용 근거는 구분해요.",
+  ntis: "국가 연구개발 참여·성과를 확인해요. 해당 연구가 이 제품에 적용됐는지는 별도로 확인해야 해요.",
+  seller_page:
+    "판매자가 광고한 기능을 확인해요. 외부 시험이나 실제 성능 검증 결과인지는 별도로 살펴봐야 해요.",
+};
+
+export function sourceDetails(source: string): { role: string; scope: string } {
+  const id = source.toLowerCase();
+  return {
+    role: infoFor(source)?.role ?? "분석에 연결된 관련 자료예요.",
+    scope:
+      SOURCE_SCOPE[id] ??
+      "이 기록이 광고한 기능과 같은 기술·제품을 설명하는지 함께 확인해야 해요.",
+  };
+}
 
 /** 백엔드가 `SELLER_PAGE` 처럼 대문자로 보내는 경우도 같은 항목으로 찾는다. */
 function infoFor(source: string): SourceInfo | undefined {
@@ -185,7 +245,9 @@ export function sourceName(ref: Pick<EvidenceRef, "source" | "label">): string {
  */
 export function isInternalId(text: string | null | undefined): boolean {
   if (!text) return false;
-  return /^[A-Za-z0-9]+(?:[_.:-][A-Za-z0-9]+)+$/.test(text.trim()) && /_/.test(text);
+  return (
+    /^[A-Za-z0-9]+(?:[_.:-][A-Za-z0-9]+)+$/.test(text.trim()) && /_/.test(text)
+  );
 }
 
 /** 화면에 보여 줄 광고 문구. 내부 id 면 null. */
@@ -195,7 +257,10 @@ export function displayQuote(claim: Pick<Claim, "quote">): string | null {
 
 /** 기록 제목. 백엔드가 제목 대신 출처 id(`SELLER_PAGE`)를 넣어 보낸 경우 설명으로 바꾼다. */
 export function recordTitle(ref: Pick<EvidenceRef, "label">): string {
-  return infoFor(ref.label)?.role ?? (isInternalId(ref.label) ? "관련 기록" : ref.label);
+  return (
+    infoFor(ref.label)?.role ??
+    (isInternalId(ref.label) ? "관련 기록" : ref.label)
+  );
 }
 
 /** 근거를 출처별로 묶어 칩으로 쓴다. 예) "특허청 KIPRIS 2" */
@@ -203,7 +268,10 @@ export function evidenceChips(claim: Claim): string[] {
   if (claim.evidence.length === 0) {
     // 근거가 없으면 백엔드가 남긴 사유("KIPRIS 0건 · DART 0건")를 그대로 쓴다.
     return claim.note
-      ? claim.note.split("·").map((s) => s.trim()).filter((s) => s && !isInternalId(s))
+      ? claim.note
+          .split("·")
+          .map((s) => s.trim())
+          .filter((s) => s && !isInternalId(s))
       : [];
   }
   const counts = new Map<string, number>();
@@ -232,10 +300,20 @@ const RECORD_KIND: Record<string, string> = {
   iitp: "R&D",
 };
 
-export function recordTally(claims: Claim[]): { total: number; kinds: [string, number][] } {
+export function recordTally(claims: Claim[]): {
+  total: number;
+  kinds: [string, number][];
+} {
   const counts = new Map<string, number>();
+  const seen = new Set<string>();
   for (const c of claims) {
     for (const e of c.evidence) {
+      const key = JSON.stringify([
+        e.source.toLowerCase(),
+        e.record_id ?? e.label,
+      ]);
+      if (seen.has(key)) continue;
+      seen.add(key);
       const kind = RECORD_KIND[e.source.toLowerCase()];
       if (kind) counts.set(kind, (counts.get(kind) ?? 0) + 1);
     }
@@ -253,17 +331,21 @@ export interface PlainExplanation {
 }
 
 const MEANING: Record<ClaimStatus, string> = {
-  verified: "광고한 기능과 맞는 공공 기록을 찾았어요.",
+  verified:
+    "분석 기준에 따라 이 기능을 뒷받침하는 자료가 확인됐어요. 아래에서 자료의 내용과 확인 범위를 볼 수 있어요.",
   partial:
-    "관련된 공공 기록은 있지만, 광고한 기능 전체를 뒷받침하지는 못해요.",
+    "이 기능에 연결된 자료는 찾았어요. 다만 제품 적용 여부나 구체적인 작동 방식 등 추가 확인이 필요해요.",
   unsupported:
     "확인할 수 있는 공식 기록을 찾지 못했어요. 기능이 없다는 뜻이 아니라, 공개된 기록으로는 확인되지 않는다는 뜻이에요.",
 };
 
 const ROLE: Record<ClaimStatus, string> = {
-  verified: "공공 기록이 광고 문구를 뒷받침해서 ‘확인’이에요.",
-  partial: "기록이 일부만 맞아서 ‘일부’예요.",
-  unsupported: "뒷받침하는 기록이 없어 ‘미확인’이에요.",
+  verified:
+    "연결된 자료가 기능별 확인 기준을 충족한 것으로 분석됐어요. 기능의 실제 성능을 시험한 결과와는 구분해 주세요.",
+  partial:
+    "관련 자료의 존재는 확인했지만, 기능별 확인 기준을 모두 충족하지 못해 ‘일부 확인’으로 표시했어요.",
+  unsupported:
+    "이번 조회에서 기능을 뒷받침하는 자료가 확인되지 않았어요. 기능이 없거나 허위라는 뜻은 아니에요.",
 };
 
 export function explain(claim: Claim): PlainExplanation {
