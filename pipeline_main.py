@@ -634,7 +634,7 @@ def collect_evidence(url: str, scraped_item: dict, ocr_result: dict) -> dict:
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
         dart_target_list = search_payload["dart"] if search_payload["dart"] else [official_company]
         futures = {
-            executor.submit(check_dart_ai_washing, dart_target_list, scraped_item.get("model_name")): 'DART',
+            executor.submit(check_dart_ai_washing, dart_target_list, scraped_item.get("model_name"), product_category or infer_product_type(scraped_item)): 'DART',
             executor.submit(verify_kipris, search_payload["kipris"], product_category): 'KIPRIS',
             executor.submit(search_kc_db_local, search_payload["local_db"], official_model): 'RRA',
             executor.submit(search_cert_db_local, search_payload["local_db"]): 'TTA',

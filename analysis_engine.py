@@ -3056,7 +3056,28 @@ def bundle_to_evidence_records(
             )
         )
 
-    if dart_result is not None and not _looks_negative_result(dart_result):
+    dart_sentences = (
+        [row for row in dart_result.get("records") or [] if isinstance(row, Mapping) and row]
+        if isinstance(dart_result, Mapping) and not dart_result.get("error")
+        else []
+    )
+    if dart_sentences:
+        # 사업보고서 문장 하나를 근거 기록 하나로 둔다. 한 덩어리로 합치면
+        # 회사의 모든 AI 문장이 모든 주장과 겹쳐 보이므로 문장별로 관련도를 잰다.
+        for row in dart_sentences:
+            record = _record_from_mapping(
+                row,
+                "dart",
+                target_company_name,
+                model_param,
+                "DART 사업보고서",
+                assume_company_filtered=True,
+            )
+            if not record.matched_model and not record.matched_product:
+                record.relation_type = "company_general"
+                record.match_confidence = min(record.match_confidence, 0.78)
+            records.append(record)
+    elif dart_result is not None and not _looks_negative_result(dart_result):
         if isinstance(dart_result, Mapping):
             row = dart_result
         else:
