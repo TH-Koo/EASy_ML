@@ -98,7 +98,11 @@ export function VerifyForm({ onGuide }: { onGuide?: (cell: GuideCell) => void })
       const res = await startAnalysis(checked.url, getStoredToken() ?? undefined);
       router.push(`/analysis/${res.analysis_id}`);
     } catch (err: unknown) {
-      setError(err instanceof Error ? err.message : "분석 요청 중 오류가 발생했어요.");
+      setError(
+        err instanceof TypeError
+          ? "분석 서버에 연결하지 못했어요. 잠시 후 다시 시도해 주세요."
+          : err instanceof Error ? err.message : "분석 요청 중 오류가 발생했어요.",
+      );
       setBusy(false);
     }
   }

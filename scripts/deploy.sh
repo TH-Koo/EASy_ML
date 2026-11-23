@@ -36,20 +36,9 @@ trap - EXIT
 
 echo "[6/6] 서비스 응답 확인"
 
-for i in {1..15}; do
-    if curl --fail --silent \
-        http://127.0.0.1:3000/ -o /dev/null; then
-        echo "프런트엔드 정상 실행 확인"
-        break
-    fi
-
-    if [ "$i" -eq 15 ]; then
-        echo "ERROR: 프런트엔드 응답 실패"
-        exit 1
-    fi
-
-    echo "서버 시작 대기 중... ($i/15)"
-    sleep 2
-done
+"$PYTHON" "$PROJECT_DIR/scripts/check_deployment.py" \
+  --frontend-url http://127.0.0.1:3000 \
+  --backend-url http://127.0.0.1:8000 \
+  --timeout 60
 
 echo "자동 배포 완료"
