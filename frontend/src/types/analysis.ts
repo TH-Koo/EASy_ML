@@ -81,6 +81,11 @@ export interface ProductInfo {
 }
 
 export interface Scores {
+  /** 종합 점수와 같은 눈금으로 변환한 표시값. 원래 지표는 기존 필드에 보존한다. */
+  indicator_display?: Partial<Record<
+    "text_credibility" | "verification_credibility" | "relational_credibility" | "ecs" | "conf",
+    number
+  >>;
   /** 화면용 표시 점수(0~100, v2 변환). 판정은 원점수로 한다. */
   overall: number;
   /** 엔진 원점수 ACCS. 옛 응답에는 없다. */
@@ -115,6 +120,9 @@ export interface VerificationRow {
   key: string;
   value: string;
   intent: VerificationIntent;
+  count?: number;
+  record_titles?: string[];
+  matched_model_count?: number;
 }
 
 /* ── 대조 뷰 (Claim–Evidence) ──────────────────────────────────────────────

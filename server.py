@@ -24,6 +24,7 @@ import concurrent.futures
 import re
 import urllib.parse
 from datetime import datetime
+from html import unescape
 from typing import AsyncGenerator, Optional
 
 from fastapi import FastAPI, HTTPException, Header
@@ -48,7 +49,7 @@ from patent_scraper import get_company_patent_data
 from llm_resolver import resolve_real_company_name, resolve_model_name
 from dart_scraper import check_dart_ai_washing 
 from fides_scoring import display_score
-from logic.api import verify_ntis_rnd
+from logic.api import is_ai_project, verify_ntis_rnd
 
 """
 설정은 config.py 하나에서만 읽는다 (gitignore 되어 있다).
@@ -508,7 +509,7 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
 
         brand = api_company or '미확인'
         prod_name = product_json.get('model_name', '')
-        source_rows = summarize_sources(final_results)
+        source_rows = summarize_sources(final_results, bundle_kwargs.get("model_param"))
         source_counts = {row["source"]: row["count"] for row in source_rows}
 
         _task_start = _tasks[task_id].get("start_time", datetime.now())
@@ -677,7 +678,72 @@ def _result_count(res) -> int:
     return 1 if evidence else 0
 
 
-def summarize_sources(final_results: dict) -> list:
+def _source_text(value) -> str:
+    if not isinstance(value, str):
+        return ""
+    return " ".join(re.sub(r"<[^>]*>", "", unescape(value)).split())
+
+
+def _ai_record_text(value) -> bool:
+    text = _source_text(value)
+    return is_ai_project(text) or bool(re.search(r"(?<![a-z])ai(?![a-z])", text, re.IGNORECASE))
+
+
+def _source_details(source: str, result: dict, model_name: Optional[str]) -> dict:
+    """Keep only the public fields needed by the result page."""
+    if not isinstance(result, dict) or result.get("error"):
+        return {}
+
+    records = result.get("records")
+    records = [row for row in records if isinstance(row, dict)] if isinstance(records, list) else []
+    if source == "rra":
+        model_key = re.sub(r"[^A-Z0-9]", "", (model_name or "").upper())
+        if not model_key:
+            return {}
+        matches = [
+            row for row in records
+            if re.sub(r"[^A-Z0-9]", "", str(row.get("model_name") or "").upper()) == model_key
+        ]
+        for row in matches:
+            title = _source_text(row.get("equip_name"))
+            registration = _source_text(row.get("cert_no"))
+            if title or registration:
+                example = f"{title} ({registration})" if title and registration else title or registration
+                return {"record_titles": [example], "matched_model_count": len(matches)}
+        return {}
+    if source == "kipris":
+        for row in records:
+            title = _source_text(row.get("발명의명칭(한글)") or row.get("title"))
+            context = " ".join(_source_text(row.get(key)) for key in ("초록", "abstract", "text"))
+            if title and _ai_record_text(title + " " + context):
+                return {"record_titles": [title]}
+        return {}
+    if source == "ntis":
+        titles = (
+            _source_text(row.get("project_name")) for row in records
+            if _ai_record_text(row.get("project_name"))
+        )
+    elif source == "dart":
+        titles = [
+            _source_text(row.get("text") or row.get("title")) for row in records
+            if _ai_record_text(row.get("text") or row.get("title"))
+        ]
+        if not any(titles):
+            evidence = result.get("evidence")
+            if not isinstance(evidence, list):
+                return {}
+            titles = (
+                re.sub(r"^.*?\[AI (?:제품적용|사업/연구|특허/IP|기술언급)\]\s*", "", _source_text(entry))
+                for entry in evidence
+                if _ai_record_text(re.sub(r"^.*?\[AI [^\]]+\]\s*", "", _source_text(entry)))
+            )
+    else:
+        return {}
+
+    return {"record_titles": list(dict.fromkeys(title for title in titles if title))[:3]}
+
+
+def summarize_sources(final_results: dict, model_name: Optional[str] = None) -> list:
     """기관별 조회 결과를 화면의 검증 행으로 옮긴다.
 
     예전 화면은 서버가 따로 조회한 7곳만 적었고 NTIS·IITP 등은 아예 없었다.
@@ -704,6 +770,7 @@ def summarize_sources(final_results: dict) -> list:
             "value": value,
             "intent": intent,
             "count": count,
+            **_source_details(source, res, model_name),
         })
     return rows
 
@@ -990,14 +1057,16 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
         # ── DART 공시 ────────────────────────────────────────────────
         {"source": "dart", "key": SOURCE_LABELS["dart"],
          "value": f"{dart_count}건 ({dart_status})" if dart_count > 0 else shown(dart_status),
-         "intent": "ok" if dart_count > 0 else intent(dart_status)},
+         "intent": "ok" if dart_count > 0 else intent(dart_status),
+         "count": dart_count},
         # ── 특허 · 인증 ──────────────────────────────────────────────
         {"source": "kipris", "key": SOURCE_LABELS["kipris"],
          "value": f"{patent_count}건",
          "intent": "ok" if patent_count > 0 else "neutral"},
         # ── 국가 R&D ─────────────────────────────────────────────────
         {"source": "ntis", "key": SOURCE_LABELS["ntis"],
-         "value": ntis_shown, "intent": "ok" if ntis_count > 0 else "neutral"},
+         "value": ntis_shown, "intent": "ok" if ntis_count > 0 else "neutral",
+         "count": ntis_count},
         # GS 와 NEP 는 한 건수로 함께 세므로 한 줄로 둔다
         {"source": "gs", "key": "GS · NEP 인증",
          "value": f"{gs_count}건",
@@ -1005,10 +1074,16 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
     ]
 
     if payload.get("_sources"):
+        public_fields = ("source", "key", "value", "intent", "count", "record_titles", "matched_model_count")
         verification_rows = [
-            {k: row.get(k) for k in ("source", "key", "value", "intent")}
+            {key: row[key] for key in public_fields if key in row}
             for row in payload["_sources"]
         ]
+        for row in verification_rows:
+            if row.get("source") in {"dart", "ntis"} and "record_titles" in row:
+                row["record_titles"] = [
+                    title for title in row["record_titles"] if _ai_record_text(title)
+                ][:3]
 
     prod_name = payload.get("product_name", "")
     category  = payload.get("_category", "")
@@ -1048,6 +1123,13 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
             "relational_credibility": ces,
             "ecs": ecs,
             "conf": conf,
+            "indicator_display": {
+                "text_credibility": round(display_score(tes), 2),
+                "verification_credibility": round(display_score(hes), 2),
+                "relational_credibility": round(display_score(ces), 2),
+                "ecs": round(display_score(ecs), 2),
+                "conf": round(display_score(conf), 2),
+            },
         },
         "xai_findings": xai_findings,
         "verification": {"rows": verification_rows},
