@@ -46,7 +46,9 @@ export function VerdictPanel({ data }: { data: AnalysisResult }) {
           {name.title}
         </p>
         <div className="mt-1.5 flex flex-wrap items-center gap-x-2.5 gap-y-1">
-          {name.detail ? <span className="text-fg-dim text-[13px]">{name.detail}</span> : null}
+          {name.detail ? (
+            <span className="text-fg-dim text-[13px]">{name.detail}</span>
+          ) : null}
           {url ? (
             <a
               href={url}
@@ -63,15 +65,22 @@ export function VerdictPanel({ data }: { data: AnalysisResult }) {
         <h1
           className="mt-3 text-[34px] leading-tight font-extrabold tracking-[var(--tracking-display)] md:text-[40px]"
           // 판정 제외는 판정이 아니므로 판정 색을 쓰지 않는다. 짙은 회색으로 "결과 없음"을 나타낸다.
-          style={{ color: level !== null ? VERDICT_COLOR[level] : "var(--color-fg-muted)" }}
+          style={{
+            color:
+              level !== null ? VERDICT_COLOR[level] : "var(--color-fg-muted)",
+          }}
         >
           {verdictTitle(data.scores.overall_label)}
         </h1>
         <p className="text-fg-muted mt-1 text-[15px]">{headline(data)}</p>
         {data.s_only_correction?.applied ? (
           <div className="border-border bg-surface-strong mt-3 rounded-xl border px-4 py-3 text-sm leading-relaxed">
-            <p className="text-fg font-semibold">추가 확인이 필요한 제품입니다</p>
-            <p className="text-fg-muted mt-1">{data.s_only_correction.reason}</p>
+            <p className="text-fg font-semibold">
+              추가 확인이 필요한 제품입니다
+            </p>
+            <p className="text-fg-muted mt-1">
+              {data.s_only_correction.reason}
+            </p>
           </div>
         ) : null}
 
@@ -79,7 +88,8 @@ export function VerdictPanel({ data }: { data: AnalysisResult }) {
           <>
             <ScoreBar score={data.scores.overall} level={level} />
             <p className="text-fg-dim mt-4 text-[12.5px]">
-              제품 성능이 아니라 광고 문구가 공공 기록과 맞는지 본 결과예요
+              광고한 기능과 자료의 연결 정도를 분석한 점수예요. 실제 제품 성능
+              시험 결과는 아니에요.
             </p>
           </>
         ) : null}
@@ -90,9 +100,21 @@ export function VerdictPanel({ data }: { data: AnalysisResult }) {
       {claims.length > 0 ? (
         <div className="bg-surface-strong min-w-0 rounded-[14px] px-4 py-3.5">
           <p className="border-border text-fg-muted flex flex-wrap gap-3.5 border-b px-1 pb-2.5 text-[13px]">
-            <Count dot="bg-[var(--claim-ok)]" label="확인" n={counts.verified} />
-            <Count dot="bg-[var(--claim-part)]" label="일부" n={counts.partial} />
-            <Count dot="bg-[var(--claim-no)]" label="미확인" n={counts.unsupported} />
+            <Count
+              dot="bg-[var(--claim-ok)]"
+              label="근거 확인"
+              n={counts.verified}
+            />
+            <Count
+              dot="bg-[var(--claim-part)]"
+              label="일부 확인"
+              n={counts.partial}
+            />
+            <Count
+              dot="bg-[var(--claim-no)]"
+              label="미확인"
+              n={counts.unsupported}
+            />
           </p>
           <StatusBar counts={counts} total={claims.length} />
           <VerdictClaimList claims={claims} />
@@ -112,14 +134,16 @@ function NotEvaluatedNote() {
     <div className="bg-surface-strong text-fg-muted min-w-0 rounded-[14px] px-5 py-4 text-[14px] leading-relaxed">
       <p className="text-fg text-[15px] font-bold">왜 판정하지 않았나요?</p>
       <p className="mt-2">
-        Fides는 광고에 적힌 AI 기능이 공공 기록과 맞는지 봐요. 이 제품은 상세 페이지에서 그런 기능 설명을 찾지 못해
-        맞춰 볼 대상이 없었어요.
+        Fides는 광고에 적힌 AI 기능이 공공 기록과 맞는지 봐요. 이 제품은 상세
+        페이지에서 그런 기능 설명을 찾지 못해 맞춰 볼 대상이 없었어요.
       </p>
       <ul className="mt-2.5 flex list-disc flex-col gap-1 pl-[18px]">
         <li>제품 이름에만 ‘AI’가 들어 있는 경우</li>
         <li>설명이 이미지 안에 있어 글자를 읽지 못한 경우</li>
       </ul>
-      <p className="text-fg mt-2.5 font-semibold">제품이 나쁘다는 뜻은 아니에요.</p>
+      <p className="text-fg mt-2.5 font-semibold">
+        제품이 나쁘다는 뜻은 아니에요.
+      </p>
     </div>
   );
 }
@@ -138,9 +162,18 @@ function StatusBar({
     { n: counts.unsupported, cls: "bg-[var(--claim-no)]" },
   ];
   return (
-    <div aria-hidden className="mt-3 flex h-2 gap-0.5 overflow-hidden rounded-full">
+    <div
+      aria-hidden
+      className="mt-3 flex h-2 gap-0.5 overflow-hidden rounded-full"
+    >
       {parts.map((p, i) =>
-        p.n > 0 ? <i key={i} className={cn("block h-full", p.cls)} style={{ flex: p.n / total }} /> : null,
+        p.n > 0 ? (
+          <i
+            key={i}
+            className={cn("block h-full", p.cls)}
+            style={{ flex: p.n / total }}
+          />
+        ) : null,
       )}
     </div>
   );
@@ -198,7 +231,10 @@ function ScoreBar({ score, level }: { score: number; level: number }) {
           </b>
         </span>
       </div>
-      <div aria-hidden className="text-fg-dim relative mt-1.5 h-4 text-[11px] tabular-nums">
+      <div
+        aria-hidden
+        className="text-fg-dim relative mt-1.5 h-4 text-[11px] tabular-nums"
+      >
         <span className="absolute left-0">0</span>
         <span className="absolute right-0">100</span>
       </div>

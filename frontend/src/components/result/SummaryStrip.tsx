@@ -18,7 +18,9 @@ export function SummaryStrip({ data }: { data: AnalysisResult }) {
   const sources = data.verification.rows.length;
   const claims = data.claims ?? [];
   const tally = recordTally(claims);
-  const firstMissing = sortClaims(claims, true).find((c) => c.status === "unsupported");
+  const firstMissing = sortClaims(claims, true).find(
+    (c) => c.status === "unsupported",
+  );
   const missing = claims.filter((c) => c.status === "unsupported").length;
   const peak = Math.max(1, ...tally.kinds.map(([, n]) => n));
 
@@ -29,30 +31,46 @@ export function SummaryStrip({ data }: { data: AnalysisResult }) {
     >
       {claims.length > 0 ? (
         <div className="flex min-w-0 flex-col gap-0.5 px-6 py-4">
-          <span className="text-fg-dim text-[12.5px] font-medium">찾은 공공 기록</span>
+          <span className="text-fg-dim text-[12.5px] font-medium">
+            기능에 연결된 공공 자료
+          </span>
           <span className="text-fg text-lg font-bold tracking-[var(--tracking-tight)] tabular-nums">
-            {tally.total}건
+            {tally.total}개
           </span>
           {tally.kinds.length > 0 ? (
             <ul aria-hidden className="mt-1.5 flex flex-col gap-1">
               {tally.kinds.slice(0, 3).map(([kind, n]) => (
-                <li key={kind} className="grid grid-cols-[34px_minmax(0,1fr)_24px] items-center gap-2 text-xs">
+                <li
+                  key={kind}
+                  className="grid grid-cols-[34px_minmax(0,1fr)_24px] items-center gap-2 text-xs"
+                >
                   <span className="text-fg-muted">{kind}</span>
-                  <i className="bg-fg-muted block h-1.5 rounded-full" style={{ width: `${(n / peak) * 100}%` }} />
-                  <span className="text-fg-muted text-right font-semibold tabular-nums">{n}</span>
+                  <i
+                    className="bg-fg-muted block h-1.5 rounded-full"
+                    style={{ width: `${(n / peak) * 100}%` }}
+                  />
+                  <span className="text-fg-muted text-right font-semibold tabular-nums">
+                    {n}
+                  </span>
                 </li>
               ))}
             </ul>
           ) : (
-            <span className="text-fg-dim text-[12.5px]">광고와 맞는 기록을 찾지 못했어요</span>
+            <span className="text-fg-dim text-[12.5px]">
+              광고와 맞는 기록을 찾지 못했어요
+            </span>
           )}
         </div>
       ) : null}
       <Cell
-        label="확인한 곳"
-        value={sources > 0 ? `공공기관 ${sources}곳` : "공공기관"}
-        note="특허청 · 금융감독원 · 인증 기관 등"
-        className={claims.length > 0 ? "border-border border-t md:border-t-0 md:border-l print:border-t-0 print:border-l" : undefined}
+        label="조회 결과"
+        value={sources > 0 ? `${sources}개 항목` : "제공된 결과 없음"}
+        note="특허 · 기업 공시 · 인증 · 연구개발 등"
+        className={
+          claims.length > 0
+            ? "border-border border-t md:border-t-0 md:border-l print:border-t-0 print:border-l"
+            : undefined
+        }
       />
       <Cell
         label="기준일"
@@ -109,7 +127,9 @@ function Cell({
   className?: string;
 }) {
   return (
-    <div className={`flex min-w-0 flex-col gap-0.5 px-6 py-4 ${className ?? ""}`}>
+    <div
+      className={`flex min-w-0 flex-col gap-0.5 px-6 py-4 ${className ?? ""}`}
+    >
       <span className="text-fg-dim text-[12.5px] font-medium">{label}</span>
       <span className="text-fg text-lg font-bold tracking-[var(--tracking-tight)] tabular-nums">
         {value}
