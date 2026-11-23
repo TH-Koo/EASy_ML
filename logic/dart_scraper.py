@@ -5,6 +5,7 @@ try:
     import OpenDartReader
 except ImportError:
     from opendartreader import OpenDartReader
+import html
 import json
 import os
 import sys
@@ -133,7 +134,89 @@ def _open_dart_reader(api_key: str):
 
 
 def _dart_text_cache_path(corp_code: str) -> str:
-    return os.path.join(_DART_TEXT_CACHE_DIR, f"{corp_code}_{time.strftime('%Y%m%d')}.txt")
+    # v2: 사업보고서 '사업의 내용' 문장이 들어간 뒤의 형식. 예전 캐시는 그 부분이
+    # 비어 있으므로 버전으로 갈라 다시 받게 한다.
+    return os.path.join(_DART_TEXT_CACHE_DIR, f"{corp_code}_v2_{time.strftime('%Y%m%d')}.txt")
+
+
+# 사업보고서 문장 가운데 AI·스마트 기능을 말하는 문장만 근거 후보로 쓴다.
+_BUSINESS_MARKER = "<<사업의 내용>>"
+_REPORT_MARKER = "<<보고서>>"
+_FEATURE_PATTERN = re.compile(
+    r"(?<![A-Za-z])AI(?![A-Za-z])|인공지능|딥러닝|머신러닝|음성\s?인식|SmartThings|스마트싱스"
+    r"|ThinQ|씽큐|(?<![A-Za-z])IoT(?![A-Za-z])|사물인터넷|온디바이스|스마트\s?홈",
+    re.IGNORECASE,
+)
+# 제품 분류·이름 → 사업보고서에서 그 제품군을 가리키는 말.
+# 회사 전체의 AI 문장(반도체·스마트폰 등)이 세탁기 주장의 근거로 붙지 않게 거른다.
+_CATEGORY_STEMS = [
+    (("세탁", "건조기", "워시"), ("세탁", "건조기")),
+    (("냉장", "김치"), ("냉장", "김치")),
+    (("에어컨", "냉난방", "냉방", "공조"), ("에어컨", "냉방", "공조", "HVAC")),
+    (("TV", "티비", "텔레비전"), ("TV", "텔레비전")),
+    (("로봇청소기", "청소기"), ("청소기", "청소")),
+    (("공기청정", "제습", "가습"), ("공기청정", "공기", "제습", "가습")),
+    (("식기세척",), ("식기세척",)),
+    (("오븐", "레인지", "인덕션", "쿡탑"), ("오븐", "레인지", "조리", "쿠킹", "인덕션")),
+    (("스마트폰", "휴대폰", "갤럭시"), ("스마트폰", "모바일", "Galaxy", "갤럭시")),
+    (("모니터",), ("모니터",)),
+    (("칫솔",), ("칫솔", "구강")),
+    (("스피커", "이어폰", "헤드폰", "오디오"), ("오디오", "스피커", "이어폰", "헤드폰")),
+]
+_MAX_FEATURE_SENTENCES = 8
+
+
+def _business_section_sentences(raw_xml: str) -> list:
+    """사업보고서 원문에서 'II. 사업의 내용' 부분만 잘라 문장 목록으로 돌려준다."""
+    if not raw_xml:
+        return []
+    text = re.sub(r"<[^>]+>", "\n", raw_xml)
+    text = html.unescape(text)
+    text = re.sub(r"[ \t\xa0　]+", " ", text)
+    start = text.find("II. 사업의 내용")
+    if start < 0:
+        return []
+    end = text.find("III. 재무에 관한 사항", start)
+    section = text[start:end if end > start else start + 200000]
+    sentences, seen = [], set()
+    # "있습니다.2011년 …"처럼 마침표 뒤 띄어쓰기가 빠진 곳도 문장을 가른다.
+    for part in re.split(r"(?<=다\.)\s*|\n+", section):
+        part = re.sub(r"^[\sㆍ·\-•○▶□■◆※]+", "", part).strip()
+        if not (15 <= len(part) <= 400) or part in seen:
+            continue
+        seen.add(part)
+        sentences.append(part)
+    return sentences
+
+
+def _category_stems(product_category: str, product_name: str) -> tuple:
+    source = f"{product_category or ''} {product_name or ''}".upper()
+    stems = []
+    for keys, words in _CATEGORY_STEMS:
+        if any(k.upper() in source for k in keys):
+            stems.extend(words)
+    return tuple(stems)
+
+
+def _extract_feature_sentences(dart_text: str, product_category: str = "", product_name: str = "") -> list:
+    """캐시된 DART 글에서 제품군과 AI 기능을 함께 말하는 사업보고서 문장을 고른다.
+
+    제품군을 알 수 있으면 그 제품군을 언급한 문장만 남긴다. 알 수 없으면
+    AI 기능 문장 전체에서 고른다.
+    """
+    if not dart_text or _BUSINESS_MARKER not in dart_text:
+        return []
+    body = dart_text.split(_BUSINESS_MARKER, 1)[1]
+    candidates = [s.strip() for s in body.split("\n") if s.strip() and _FEATURE_PATTERN.search(s)]
+    stems = _category_stems(product_category, product_name)
+    if stems:
+        candidates = [s for s in candidates if any(w.upper() in s.upper() for w in stems)]
+    return candidates[:_MAX_FEATURE_SENTENCES]
+
+
+def _report_meta(dart_text: str) -> tuple:
+    match = re.search(re.escape(_REPORT_MARKER) + r"(\d+)\|([^\n]*)", dart_text or "")
+    return (match.group(1), match.group(2).strip()) if match else ("", "")
 
 
 def _load_dart_text_cache(corp_code: str):
@@ -159,6 +242,7 @@ def _save_dart_text_cache(corp_code: str, text: str) -> None:
 def _fetch_dart_text(dart, found_corp_code: str) -> str:
     """최근 공시 목록·사업보고서 원문·타법인출자 현황을 한 덩어리 글로 모은다."""
     dart_text_data = ""
+    business_part = ""  # 문장 추출이 마지막 표시 뒤를 읽으므로 맨 끝에 붙인다.
     with contextlib.redirect_stdout(io.StringIO()):
         try:
             recent = dart.list(found_corp_code, start='2023-01-01')
@@ -166,12 +250,21 @@ def _fetch_dart_text(dart, found_corp_code: str) -> str:
                 dart_text_data += "\n".join(recent['report_nm'].tolist()) + "\n"
         except: pass
 
+        # 정기보고서(사업·반기·분기) 가운데 가장 최근 것의 '사업의 내용'.
+        # 예전에는 목록의 열 이름을 'rcp_no' 로 읽어(실제는 'rcept_no') 매번
+        # KeyError 가 났고, except 에 묻혀 원문이 한 번도 들어오지 않았다.
         try:
             annual = dart.list(found_corp_code, start='2023-01-01', kind='A')
             if annual is not None and not annual.empty:
-                raw_xml = dart.document(annual.iloc[0]['rcp_no'])
-                if raw_xml: dart_text_data += raw_xml[:150000] + "\n" 
-        except: pass
+                first = annual.iloc[0]
+                rcept_no = str(first.get('rcept_no') or first.get('rcp_no') or "")
+                raw_xml = dart.document(rcept_no) if rcept_no else ""
+                sentences = _business_section_sentences(raw_xml)
+                if sentences:
+                    business_part = (f"{_REPORT_MARKER}{rcept_no}|{first.get('report_nm', '')}\n"
+                                     + _BUSINESS_MARKER + "\n" + "\n".join(sentences) + "\n")
+        except Exception as e:
+            print(f"[DART] 사업보고서 원문 수집 실패(무시): {e}", file=sys.stderr)
 
         for year in ['2024', '2023']:
             try:
@@ -180,10 +273,10 @@ def _fetch_dart_text(dart, found_corp_code: str) -> str:
                     dart_text_data += investments.to_string() + "\n"
                 break
             except: time.sleep(0.5)
-    return dart_text_data
+    return dart_text_data + business_part
 
 
-def check_dart_ai_washing(company_aliases: list, product_name: str = "") -> dict:
+def check_dart_ai_washing(company_aliases: list, product_name: str = "", product_category: str = "") -> dict:
     if not DART_KEY or not company_aliases: return {"status": "스킵", "total_score": 0, "detail": "기업명 미확인."}
 
     search_list = []
@@ -266,11 +359,40 @@ def check_dart_ai_washing(company_aliases: list, product_name: str = "") -> dict
         if not dart_text_data.strip():
             return {"status": "데이터 없음", "total_score": 0, "detail": f"[{found_corp_name_str}] 명의로 공시된 상세 내역이 없습니다."}
 
-        analysis_result = _evaluate_product_focused_rules(product_name, dart_text_data)
+        # 예전 규칙(공시 목록·출자표의 AI 단어)은 그대로 점수만 매긴다.
+        legacy_text = dart_text_data.split(_REPORT_MARKER, 1)[0]
+        analysis_result = _evaluate_product_focused_rules(product_name or "", legacy_text)
         evidences = analysis_result.get("evidence_log", [])
-        status_msg = "공시 실적 검증 완료" if analysis_result.get("total_score", 0) >= 50 else "AI 핵심 역량 미흡 (워싱 의심)"
-        
-        return {"status": status_msg, "total_score": analysis_result.get("total_score", 0), "evidence": evidences, "detail": f"DART 분석 결과 [{found_corp_name_str}] 실적 총 {len(evidences)}건 확인." if evidences else f"[{found_corp_name_str}] 명의의 실질적 AI 관련 공시가 없습니다."}
+        total_score = analysis_result.get("total_score", 0)
+
+        # 사업보고서에서 이 제품군의 AI 기능을 말한 문장. 문장 하나가 근거 기록
+        # 하나가 되어, 엔진이 주장마다 관련도를 따로 잰다.
+        rcept_no, report_name = _report_meta(dart_text_data)
+        report_url = f"https://dart.fss.or.kr/dsaf001/main.do?rcpNo={rcept_no}" if rcept_no else ""
+        records = [
+            {
+                "title": sentence[:120],
+                "text": sentence,
+                "section": "II. 사업의 내용",
+                "report_name": report_name,
+                "corp_name": found_corp_name_str,
+                "rcept_no": rcept_no,
+                "url": report_url,
+            }
+            for sentence in _extract_feature_sentences(dart_text_data, product_category, product_name or "")
+        ]
+        if records:
+            total_score = max(total_score, 60)
+
+        status_msg = "공시 실적 검증 완료" if total_score >= 50 else "AI 핵심 역량 미흡 (워싱 의심)"
+        if records:
+            detail = f"DART [{found_corp_name_str}] {report_name} 사업의 내용에서 제품 관련 AI 기능 문장 {len(records)}건 확인."
+        elif evidences:
+            detail = f"DART 분석 결과 [{found_corp_name_str}] 실적 총 {len(evidences)}건 확인."
+        else:
+            detail = f"[{found_corp_name_str}] 명의의 실질적 AI 관련 공시가 없습니다."
+        return {"status": status_msg, "total_score": total_score, "evidence": evidences,
+                "records": records, "detail": detail}
 
     except Exception as e:
         return {"status": "조회 불가", "total_score": 0, "detail": f"DART 서버 지연: {str(e)}"}
