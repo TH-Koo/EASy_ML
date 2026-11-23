@@ -145,6 +145,12 @@ export interface EvidenceRef {
   /** 화면에 그대로 노출되는 한 줄 설명 */
   label: string;
   record_id: string | null;
+  /** This representative record's actual links to this claim's components. */
+  components?: string[];
+  record_title?: string;
+  matched_record_count?: number;
+  relation_type?: string;
+  used_for_support?: boolean;
 }
 
 export interface Claim {
@@ -154,6 +160,9 @@ export interface Claim {
   /** 페이지에서 실제로 매칭된 광고 문구 */
   quote: string | null;
   status: ClaimStatus;
+  required_support?: number;
+  components?: { name: string; support: number; fulfilled: boolean }[];
+  support_thresholds?: { verified: number; partial: number };
   /** 빈 배열이면 근거 없음 */
   evidence: EvidenceRef[];
   /** 연결이 끊긴 이유 — "KIPRIS 0건 · DART 0건" 등 */

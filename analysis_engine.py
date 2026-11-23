@@ -212,6 +212,7 @@ class CapabilityScore:
     indirect_evidence_count: int = 0
     component_support: Dict[str, float] = field(default_factory=dict)
     evidence_ids: List[str] = field(default_factory=list)
+    source_evidence: List[Dict[str, Any]] = field(default_factory=list)
 
 
 @dataclass
@@ -1213,11 +1214,64 @@ class OntologyAnalysisEngine:
             indirect_evidence_count=indirect_count,
             component_support=requirement_info["component_support"],
             evidence_ids=evidence_ids,
+            source_evidence=self._summarize_capability_sources(contributions, records),
         )
 
     
 
     
+    def _summarize_capability_sources(
+        self, contributions: List[EvidenceContribution], records: List[EvidenceRecord]
+    ) -> List[Dict[str, Any]]:
+        """Expose actual component-to-record links without changing any score.
+
+        Prefer the closest function/component match, using directness and
+        score selection as tie breakers. Company evidence remains indirect.
+        """
+        by_id = {record.evidence_id: record for record in records}
+        selected = set()
+        for component in unique_keep_order(c.component_name for c in contributions):
+            best = {}
+            for item in contributions:
+                if item.component_name != component:
+                    continue
+                old = best.get(item.independent_source_key)
+                if old is None or item.support > old.support:
+                    best[item.independent_source_key] = item
+            for item in sorted(best.values(), key=lambda c: c.support, reverse=True)[:10]:
+                selected.add((item.component_name, item.evidence_id))
+        def relevance_key(item):
+            # Rank the record's actual function/component match before its
+            # score contribution, which also reflects source quality and age.
+            return (
+                (item.capability_relevance + item.component_relevance) / 2.0,
+                item.capability_relevance,
+                item.required_level == "required",
+                item.relation_weight,
+                (item.component_name, item.evidence_id) in selected,
+                item.support,
+            )
+
+        summaries = []
+        for source in unique_keep_order(c.source_type for c in contributions):
+            items = [c for c in contributions if c.source_type == source and c.evidence_id in by_id]
+            if not items:
+                continue
+            items.sort(key=relevance_key, reverse=True)
+            top = items[0]
+            record = by_id[top.evidence_id]
+            record_items = [c for c in items if c.evidence_id == top.evidence_id]
+            summaries.append((relevance_key(top), {
+                "source": source,
+                "components": unique_keep_order(c.component_name for c in record_items),
+                "record_title": record.title,
+                "record_id": record.source_record_id,
+                "matched_record_count": len({c.evidence_id for c in items}),
+                "relation_type": top.relation_type,
+                "used_for_support": any((c.component_name, c.evidence_id) in selected for c in record_items),
+            }))
+        return [row for _, row in sorted(summaries, key=lambda entry: entry[0], reverse=True)]
+
     def _match_positive_patterns(
         self, capability_id: str, claim_text: str
     ) -> Tuple[List[str], List[str]]:

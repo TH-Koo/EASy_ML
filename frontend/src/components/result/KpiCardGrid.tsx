@@ -52,15 +52,15 @@ export function KpiCardGrid({ scores }: { scores: Scores }) {
           <Minus size={11} strokeWidth={3} className="hidden group-open:block" />
         </span>
       </summary>
-      <p className="text-fg-muted px-2 pb-3 text-[13px]">
+      <p className="text-fg-muted px-2 pb-3 text-[13px] leading-relaxed">
         각 지표는 종합 점수와 같은 표시 눈금으로 변환했어요.
         종합 점수는 지표마다 반영 비중이 달라 단순 평균과 차이가 있어요.
       </p>
-      <ul className="flex flex-col gap-2 px-2 pb-3.5">
+      <ul className="flex flex-col gap-3 px-2 pb-4">
         {INDICATORS.map(({ field, label, description }) => {
           const score = scores.indicator_display?.[field] ?? scores[field];
           return (
-            <li key={field} className="text-[13px]">
+            <li key={field} className="text-[13.5px] leading-relaxed">
               <span className="flex items-baseline justify-between gap-3">
                 <b className="text-fg font-semibold">{label}</b>
                 <span className="text-fg-muted shrink-0 text-right whitespace-nowrap tabular-nums">
@@ -69,7 +69,7 @@ export function KpiCardGrid({ scores }: { scores: Scores }) {
                     : "—"}
                 </span>
               </span>
-              <span className="text-fg-dim block text-[12.5px]">{description}</span>
+              <span className="text-fg-dim mt-0.5 block text-[13px] leading-relaxed">{description}</span>
             </li>
           );
         })}
