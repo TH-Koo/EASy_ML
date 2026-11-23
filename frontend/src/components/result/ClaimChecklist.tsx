@@ -40,7 +40,7 @@ export function ClaimChecklist({ claims }: { claims: Claim[] }) {
           <Legend cls="bg-[var(--claim-no)]" label="미확인" />
         </p>
       </div>
-      <div className="bg-surface rounded-[var(--radius-panel)] px-5 py-1 shadow-[var(--shadow-panel)] md:px-6">
+      <div className="bg-surface rounded-[var(--radius-panel)] px-4 py-1 shadow-[var(--shadow-panel)] sm:px-5 md:px-6">
         {head.map((c) => (
           <ClaimRow key={c.id} claim={c} openFound={few} />
         ))}
@@ -126,7 +126,7 @@ function ClaimRow({ claim, openFound }: { claim: Claim; openFound: boolean }) {
         <Toggle />
       </summary>
 
-      <div className="bg-bg mb-4 rounded-xl px-4 py-1 md:ml-[42px]">
+      <div className="bg-bg mb-4 rounded-xl px-3 py-1 sm:px-4 md:ml-[42px]">
         {found ? (
           claim.evidence.map((ref, i) => (
             <div
@@ -151,7 +151,7 @@ function ClaimRow({ claim, openFound }: { claim: Claim; openFound: boolean }) {
           </p>
         )}
 
-        <div className="bg-surface my-3 flex flex-col gap-2 rounded-lg px-3.5 py-3">
+        <div className="bg-surface my-3 flex flex-col gap-2 rounded-lg px-3 py-3 sm:px-3.5">
           <p className="text-brand-fg text-xs font-bold">쉽게 말하면</p>
           <Explain tag="뜻">{ex.meaning}</Explain>
           {ex.sources.length > 0 ? (
@@ -206,7 +206,7 @@ export function RecordChecklist({ rows }: { rows: VerificationRow[] }) {
       <h2 id="records-h" className="text-fg mb-2 px-0.5 text-[22px] font-extrabold tracking-[var(--tracking-heading)]">
         조회한 공공 기록
       </h2>
-      <ul className="bg-surface rounded-[var(--radius-panel)] px-5 py-1 shadow-[var(--shadow-panel)] md:px-6">
+      <ul className="bg-surface rounded-[var(--radius-panel)] px-4 py-1 shadow-[var(--shadow-panel)] sm:px-5 md:px-6">
         {rows.map((row) => {
           const desc = descriptionFor(row);
           return (
