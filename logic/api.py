@@ -364,7 +364,7 @@ _NTIS_PAGE_SIZE = 100
 # AI 단어를 붙인 검색을 함께 돌리고, 검색마다 끝 페이지까지 읽는다.
 _NTIS_AI_QUERY_WORDS = ("인공지능", "AI", "딥러닝", "머신러닝")
 _NTIS_MAX_PER_QUERY = int(os.getenv("EASY_NTIS_MAX_PER_QUERY", "1000"))
-_NTIS_CACHE_VERSION = 3
+_NTIS_CACHE_VERSION = 4
 _NTIS_WORKERS = max(1, min(4, int(os.getenv("EASY_NTIS_WORKERS", "2"))))
 _NTIS_HTTP_SLOTS = threading.BoundedSemaphore(_NTIS_WORKERS)
 
@@ -475,16 +475,22 @@ def _ntis_project_from_hit(item, name: str):
         return None
     searchable_text = " ".join([
         project_name,
-        get_text("./Goal/Full"),
-        get_text("./Abstract/Full"),
-        get_text("./Keyword/Korean"),
-        get_text("./Effect/Full"),
+        get_text("./Goal/Full") or get_text("./Goal"),
+        get_text("./Abstract/Full") or get_text("./Abstract"),
+        get_text("./Keyword/Korean") or get_text("./Keyword"),
+        get_text("./Effect/Full") or get_text("./Effect"),
     ]).lower()
     if not is_ai_project(searchable_text):
         return None
     # 검색어(name)를 lead_company 에 복사하지 않는다. 실제 수행기관을 읽어
     # 검색한 회사와 정확히 같을 때만 인정한다(엘지디스플레이 ≠ 엘지전자).
-    agency_raw = get_text("./ResearchAgency/Name", "") or get_text(".//ResearchAgency/Name", "")
+    # Live NTIS responses also store the organization directly in ResearchAgency,
+    # often with escaped search-highlight HTML. Keep the nested format supported.
+    agency_raw = (
+        get_text("./ResearchAgency/Name", "")
+        or get_text(".//ResearchAgency/Name", "")
+        or get_text("./ResearchAgency", "")
+    )
     research_agency = clean_markup(re.sub(r"<[^>]*>", "", html.unescape(agency_raw)))
     if not same_organization(research_agency, name):
         return None

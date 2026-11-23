@@ -206,6 +206,7 @@ function ClaimRow({
               key={`${ref.source}-${ref.record_id ?? i}`}
               item={ref}
               sourceRows={sourceRows}
+              claimText={claim.text}
             />
           ))
         ) : (
@@ -240,16 +241,18 @@ const EVIDENCE_ROW_TITLES: Record<string, string> = {
 function EvidenceRow({
   item,
   sourceRows,
+  claimText,
 }: {
   item: EvidenceRef;
   sourceRows: VerificationRow[];
+  claimText: string;
 }) {
   const source = item.source.toLowerCase();
   const title = EVIDENCE_ROW_TITLES[source] ?? sourceName(item);
   const description = spaceMiddleDots(SOURCE_SCOPE[source] ?? sourceDetails(source).role);
   const recordId = isInternalId(item.record_id) ? null : item.record_id;
   const row = sourceRows.find((entry) => entry.source === source);
-  const example = source === "seller_page" ? null : evidenceExample(source, row, item) ?? recordId;
+  const example = source === "seller_page" ? null : evidenceExample(source, row, item, claimText) ?? recordId;
 
   return (
     <div className="border-border grid grid-cols-1 gap-x-3 border-b py-2.5 last:border-b-0 print:py-2 md:grid-cols-[120px_minmax(0,1fr)_auto] md:items-baseline print:grid-cols-[110px_minmax(0,1fr)_auto] print:items-baseline">
@@ -271,7 +274,17 @@ function evidenceExample(
   source: string,
   row?: VerificationRow,
   item?: EvidenceRef,
+  claimText?: string,
 ): string | null {
+  if (source === "kipris") {
+    const feature = claimText || "해당";
+    // The title filter only controls whether an example title is shown. It
+    // must not replace the engine's evidence count/status with literal word hits.
+    return typeof item?.matched_record_count === "number"
+      ? `${feature} 기능에 연결된 자료 ${item.matched_record_count}건`
+        + (item.display_record_title ? ` · 「${item.display_record_title}」` : "")
+      : `${feature} 기능 관련 자료 건수 미확인`;
+  }
   if (item?.record_title && item.components?.length) {
     const components = item.components.filter((name) => !["없음", "없음 또는 상황 의존", "해당 없음"].includes(name)).slice(0, 3).join(" · ");
     const indirect = item.relation_type?.startsWith("company_");
@@ -286,10 +299,6 @@ function evidenceExample(
   if (source === "rra") {
     const count = row.matched_model_count;
     return title + (count ? " · 동일 모델 " + count + "건" : "");
-  }
-  if (source === "kipris") {
-    const count = row.count ?? 1;
-    return "제조사 특허 조회 · 「" + title + "」" + (count > 1 ? " 등 " + count + "건" : "");
   }
   return title;
 }

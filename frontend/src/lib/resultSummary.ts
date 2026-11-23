@@ -30,11 +30,11 @@ export const VERDICT_COLOR = [
 ] as const;
 
 /**
- * 점수 막대의 구간 경계. fides_config.py 의 VerdictThresholds
- * (suspected 21.8 · normal 35)와 같다. 엔진은 신뢰도도 함께 보므로 드물게
- * 핀이 판정과 다른 구간에 설 수 있다 — 막대는 판정 단계 색을 따른다.
+ * 화면 표시 점수의 구간 경계. 원점수 경계(21.8 · 35)에
+ * fides_scoring.display_score를 적용한 값(20 · 40)이다.
+ * 보조모델 등이 판정을 보정한 경우에도 판정 색은 백엔드 결과를 따른다.
  */
-export const SCORE_ZONES = { low: 21.8, high: 35 } as const;
+export const SCORE_ZONES = { low: 20, high: 40 } as const;
 
 /** 백엔드 구간 라벨 → 화면 3단계. "판정 제외"는 단계가 없다. */
 export function verdictLevel(label: OverallLabel): VerdictLevel | null {
@@ -359,6 +359,13 @@ export function explain(claim: Claim): PlainExplanation {
     for (const id of Object.keys(SOURCE_INFO)) {
       if (claim.note.toLowerCase().includes(id)) ids.add(id);
     }
+  }
+  if (claim.explanation) {
+    return {
+      meaning: claim.explanation.result,
+      sources: [...ids].map((id) => SOURCE_INFO[id]).filter(Boolean),
+      role: claim.explanation.criterion,
+    };
   }
   const components = (claim.components ?? [])
     .filter((component) => !["없음", "없음 또는 상황 의존", "해당 없음"].includes(component.name))

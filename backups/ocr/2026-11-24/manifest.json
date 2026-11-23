@@ -1,0 +1,10 @@
+{
+  "backup_date": "2026-11-24",
+  "backup_file": "ocr_analyzer.before_rollback.py",
+  "backup_sha256": "07637ed40822bdcb3ffb90b5ac4231db2f14eb13253a055e0ae40b0d49cadd15",
+  "previous_head": "7ba7a6eea25004497865fe4393d96efd37627f40",
+  "restored_commit": "c7784c8b8092441b2e1f808b012b33127b405270",
+  "restored_file": "logic/ocr_analyzer.py",
+  "restored_sha256": "5c10d6ab38a4331366dc5b1b1b3746367b1ca1d1bdc8315dc31f451bf762e78f",
+  "scope": "Exact OCR file rollback; pipeline cache additionally checks OCR source hash."
+}
