@@ -125,6 +125,11 @@ function ClaimRow({
   const quote = displayQuote(claim);
   const found = evidence.length > 0;
   const ex = explain(claim);
+  const dartContext = sourceRows.find((row) => row.source === "dart");
+  const showDartContext = Boolean(
+    dartContext?.record_titles?.length &&
+    !evidence.some((ref) => ref.source.toLowerCase() === "dart"),
+  );
   const publicLabels = [...new Set(evidence.filter((ref) => !isSellerPage(ref.source)).map(
     (ref) => {
       const source = ref.source.toLowerCase();
@@ -220,6 +225,13 @@ function ClaimRow({
           </p>
         )}
 
+        {showDartContext ? (
+          <EvidenceRow
+            item={{ source: "dart", label: "DART 전자공시", record_id: null }}
+            sourceRows={sourceRows}
+            companyContext
+          />
+        ) : null}
         <div className="bg-surface my-3 flex flex-col gap-2 rounded-lg px-3.5 py-3 print:my-2 print:gap-1.5 print:py-2.5">
           <p className="text-brand-fg text-xs font-bold">
             왜 이렇게 평가했나요?
@@ -239,14 +251,17 @@ const EVIDENCE_ROW_TITLES: Record<string, string> = {
   seller_page: "판매 페이지",
   rra: "RRA 전파인증",
   kipris: "KIPRIS 특허",
+  dart: "DART 전자공시",
 };
 
 function EvidenceRow({
   item,
   sourceRows,
+  companyContext = false,
 }: {
   item: EvidenceRef;
   sourceRows: VerificationRow[];
+  companyContext?: boolean;
 }) {
   const source = item.source.toLowerCase();
   const title = EVIDENCE_ROW_TITLES[source] ?? sourceName(item);
@@ -259,12 +274,14 @@ function EvidenceRow({
     <div className="border-border grid grid-cols-1 gap-x-3 border-b py-2.5 last:border-b-0 print:py-2 md:grid-cols-[120px_minmax(0,1fr)_auto] md:items-baseline print:grid-cols-[110px_minmax(0,1fr)_auto] print:items-baseline">
       <b className="text-fg text-xs font-bold">{title}</b>
       <div className="min-w-0">
-        <p className="text-fg-dim text-xs leading-relaxed">{description}</p>
+        <p className="text-fg-muted text-xs leading-relaxed">{description}</p>
         {example ? (
-          <p className="text-fg-muted mt-1 text-xs leading-relaxed">{example}</p>
+          <p className="text-fg-dim mt-1 text-xs leading-relaxed">{example}</p>
         ) : null}
       </div>
-      <span className="text-xs font-bold text-[var(--claim-part)]">찾음</span>
+      <span className="text-xs font-bold text-[var(--claim-part)]">
+        {companyContext ? "회사 이력" : "찾음"}
+      </span>
     </div>
   );
 }
@@ -280,7 +297,7 @@ function evidenceExample(source: string, row?: VerificationRow): string | null {
     const count = row.count ?? 1;
     return "제조사 특허 조회 · 「" + title + "」" + (count > 1 ? " 등 " + count + "건" : "");
   }
-  return null;
+  return title;
 }
 
 function Explain({

@@ -4,6 +4,7 @@ import {
   ClaimChecklist,
   RecordChecklist,
 } from "@/components/result/ClaimChecklist";
+import { KpiCardGrid } from "@/components/result/KpiCardGrid";
 import { QuickActions } from "@/components/result/QuickActions";
 import { SummaryStrip } from "@/components/result/SummaryStrip";
 import { TrustBar } from "@/components/result/TrustBar";
@@ -16,12 +17,11 @@ import type { AnalysisResult } from "@/types/analysis";
  *   VerdictPanel    판정 + 기능별 결과 + 점수 위치
  *   SummaryStrip    찾은 기록 · 확인한 곳 · 기준일 · 미확인 이유로 가기
  *   ClaimChecklist  광고 문구 팩트체크(근거·쉬운 설명은 펼쳐서)
- *   TrustBar        공공 기록만 쓴다는 근거 · 기관별 조회 결과
+ *   TrustBar        기관별 조회 결과
+ *   KpiCardGrid     접어서 볼 수 있는 지표별 점수와 산정 기준
  *   QuickActions    다른 제품 검색 · 공유 · 인쇄 · 북마크
  *
- * 점수·가중치 표는 보여 주지 않는다. 점수는 결론 타일 안에서 분포 속 위치와
- * 함께 작게만 쓴다. `claims` 가 없는 예전 기록은 기관별 조회 결과를 대신
- * 보여 준다.
+ * `claims` 가 없는 예전 기록은 기관별 조회 결과를 대신 보여 준다.
  */
 export function ResultView({
   data,
@@ -55,7 +55,10 @@ export function ResultView({
           <RecordChecklist rows={data.verification.rows} />
         ) : null}
         <ManufacturerResearch data={data} />
-        <TrustBar data={data} />
+        <div className="flex flex-col gap-3.5">
+          <TrustBar data={data} />
+          <KpiCardGrid scores={data.scores} />
+        </div>
         <QuickActions data={data} historyId={historyId} />
       </div>
     </div>

@@ -49,7 +49,7 @@ from patent_scraper import get_company_patent_data
 from llm_resolver import resolve_real_company_name, resolve_model_name
 from dart_scraper import check_dart_ai_washing 
 from fides_scoring import display_score
-from logic.api import verify_ntis_rnd
+from logic.api import is_ai_project, verify_ntis_rnd
 
 """
 설정은 config.py 하나에서만 읽는다 (gitignore 되어 있다).
@@ -684,6 +684,11 @@ def _source_text(value) -> str:
     return " ".join(re.sub(r"<[^>]*>", "", unescape(value)).split())
 
 
+def _ai_record_text(value) -> bool:
+    text = _source_text(value)
+    return is_ai_project(text) or bool(re.search(r"(?<![a-z])ai(?![a-z])", text, re.IGNORECASE))
+
+
 def _source_details(source: str, result: dict, model_name: Optional[str]) -> dict:
     """Keep only the public fields needed by the result page."""
     if not isinstance(result, dict) or result.get("error"):
@@ -709,13 +714,20 @@ def _source_details(source: str, result: dict, model_name: Optional[str]) -> dic
     if source == "kipris":
         for row in records:
             title = _source_text(row.get("발명의명칭(한글)") or row.get("title"))
-            if title:
+            context = " ".join(_source_text(row.get(key)) for key in ("초록", "abstract", "text"))
+            if title and _ai_record_text(title + " " + context):
                 return {"record_titles": [title]}
         return {}
     if source == "ntis":
-        titles = (_source_text(row.get("project_name")) for row in records)
+        titles = (
+            _source_text(row.get("project_name")) for row in records
+            if _ai_record_text(row.get("project_name"))
+        )
     elif source == "dart":
-        titles = [_source_text(row.get("title")) for row in records]
+        titles = [
+            _source_text(row.get("text") or row.get("title")) for row in records
+            if _ai_record_text(row.get("text") or row.get("title"))
+        ]
         if not any(titles):
             evidence = result.get("evidence")
             if not isinstance(evidence, list):
@@ -723,6 +735,7 @@ def _source_details(source: str, result: dict, model_name: Optional[str]) -> dic
             titles = (
                 re.sub(r"^.*?\[AI (?:제품적용|사업/연구|특허/IP|기술언급)\]\s*", "", _source_text(entry))
                 for entry in evidence
+                if _ai_record_text(re.sub(r"^.*?\[AI [^\]]+\]\s*", "", _source_text(entry)))
             )
     else:
         return {}
@@ -1066,6 +1079,11 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
             {key: row[key] for key in public_fields if key in row}
             for row in payload["_sources"]
         ]
+        for row in verification_rows:
+            if row.get("source") in {"dart", "ntis"} and "record_titles" in row:
+                row["record_titles"] = [
+                    title for title in row["record_titles"] if _ai_record_text(title)
+                ][:3]
 
     prod_name = payload.get("product_name", "")
     category  = payload.get("_category", "")
@@ -1105,6 +1123,13 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
             "relational_credibility": ces,
             "ecs": ecs,
             "conf": conf,
+            "indicator_display": {
+                "text_credibility": round(display_score(tes), 2),
+                "verification_credibility": round(display_score(hes), 2),
+                "relational_credibility": round(display_score(ces), 2),
+                "ecs": round(display_score(ecs), 2),
+                "conf": round(display_score(conf), 2),
+            },
         },
         "xai_findings": xai_findings,
         "verification": {"rows": verification_rows},
