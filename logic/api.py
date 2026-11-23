@@ -106,6 +106,11 @@ def is_ai_project(text: object) -> bool:
     return any(re.sub(r"\s+", "", phrase) in compact for phrase in _AI_PHRASES)
 
 
+def _ntis_title_key(title: object) -> str:
+    """같은 과제가 연차·세부과제마다 번호만 달리 여러 번 나온다. 제목으로 합친다."""
+    return re.sub(r"\W+", "", clean_markup(title).lower())
+
+
 def project_identity(project_number: object, title: object) -> str:
     number = re.sub(r"\s+", "", str(project_number or ""))
     return number or re.sub(r"\W+", "", clean_markup(title).lower())
@@ -345,7 +350,7 @@ _NTIS_PAGE_SIZE = 100
 # AI 단어를 붙인 검색을 함께 돌리고, 검색마다 끝 페이지까지 읽는다.
 _NTIS_AI_QUERY_WORDS = ("인공지능", "AI", "딥러닝", "머신러닝")
 _NTIS_MAX_PER_QUERY = int(os.getenv("EASY_NTIS_MAX_PER_QUERY", "1000"))
-_NTIS_CACHE_VERSION = 2
+_NTIS_CACHE_VERSION = 3
 
 
 def _ntis_cache_path(name: str) -> str:
@@ -408,15 +413,16 @@ def _ntis_fetch_page(raw_key: str, query: str, position: int):
     return hits, _ntis_total_hits(root), ""
 
 
-def _ntis_fetch_all(raw_key: str, query: str):
-    """검색 하나를 끝 페이지까지(최대 _NTIS_MAX_PER_QUERY 건) 읽는다."""
+def _ntis_fetch_all(raw_key: str, query: str, max_results: int = 0):
+    """검색 하나를 끝 페이지까지(최대 max_results, 기본 _NTIS_MAX_PER_QUERY 건) 읽는다."""
     from concurrent.futures import ThreadPoolExecutor
 
     hits, total, error = _ntis_fetch_page(raw_key, query, 1)
     if error:
         return [], [error]
     errors = []
-    limit = min(total, _NTIS_MAX_PER_QUERY) if total else _NTIS_MAX_PER_QUERY
+    cap = max_results or _NTIS_MAX_PER_QUERY
+    limit = min(total, cap) if total else cap
     if total and limit > _NTIS_PAGE_SIZE:
         # 전체 건수를 알면 나머지 페이지를 한꺼번에 받는다.
         positions = list(range(1 + _NTIS_PAGE_SIZE, limit + 1, _NTIS_PAGE_SIZE))
@@ -461,7 +467,8 @@ def _ntis_project_from_hit(item, name: str):
         return None
     # 검색어(name)를 lead_company 에 복사하지 않는다. 실제 수행기관을 읽어
     # 검색한 회사와 정확히 같을 때만 인정한다(엘지디스플레이 ≠ 엘지전자).
-    research_agency = clean_markup(get_text("./ResearchAgency/Name", "") or get_text(".//ResearchAgency/Name", ""))
+    agency_raw = get_text("./ResearchAgency/Name", "") or get_text(".//ResearchAgency/Name", "")
+    research_agency = clean_markup(re.sub(r"<[^>]*>", "", html.unescape(agency_raw)))
     if not same_organization(research_agency, name):
         return None
     project_number = get_text("./ProjectNumber")
@@ -492,14 +499,16 @@ def _ntis_projects_for_company(raw_key: str, name: str):
     if cached is not None:
         return cached, []
     projects, errors = {}, []
-    for query in [name] + [f"{name} {word}" for word in _NTIS_AI_QUERY_WORDS]:
-        hits, query_errors = _ntis_fetch_all(raw_key, query)
+    # 회사 이름만으로 한 검색은 대기업이면 수천 건이라(삼성전자 7천여 건) 첫
+    # 페이지만 본다. AI 과제는 AI 단어를 붙인 검색에서 끝까지 찾는다.
+    queries = [(name, _NTIS_PAGE_SIZE)] + [(f"{name} {word}", 0) for word in _NTIS_AI_QUERY_WORDS]
+    for query, max_results in queries:
+        hits, query_errors = _ntis_fetch_all(raw_key, query, max_results)
         errors.extend(query_errors)
         for item in hits:
             project = _ntis_project_from_hit(item, name)
             if project:
-                key = project_identity(project["project_number"], project["project_name"])
-                projects.setdefault(key, project)
+                projects.setdefault(_ntis_title_key(project["project_name"]), project)
     rows = list(projects.values())
     if not errors:
         _ntis_cache_save(name, rows)
@@ -536,8 +545,7 @@ def verify_ntis_rnd(company_aliases: list, product_keyword: str = "") -> dict:
             rows, errors = [], [f"{name}: 처리 오류 ({type(e).__name__}: {e})"]
         api_errors.extend(errors)
         for project in rows:
-            key = project_identity(project.get("project_number"), project.get("project_name"))
-            valid_projects.setdefault(key, project)
+            valid_projects.setdefault(_ntis_title_key(project.get("project_name")), project)
 
     projects = list(valid_projects.values())
 

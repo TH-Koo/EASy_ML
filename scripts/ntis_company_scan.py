@@ -17,6 +17,7 @@ import time
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
+sys.path.insert(0, os.getcwd())  # /tmp 로 꺼내 돌릴 때는 저장소 폴더에서 실행한다
 
 DEFAULT_COMPANIES = [
     "삼성전자", "엘지전자", "코웨이", "쿠쿠전자", "쿠쿠홈시스", "에스케이매직", "위닉스",
@@ -42,6 +43,32 @@ def old_way_count(api, name):
     if error:
         return f"오류 {error}"
     return sum(1 for h in hits[:50] if api._ntis_project_from_hit(h, name))
+
+
+def diagnose(api, name):
+    """AI 검색 결과가 있는데 0건일 때, 수행기관·AI 판별 중 어디서 떨어지는지 보여 준다."""
+    import collections
+    import html
+    import re
+    hits, _ = api._ntis_fetch_all(api.NTIS_API_KEY.strip(), f"{name} 인공지능")
+    agencies = collections.Counter()
+    same = ai = 0
+    samples = []
+    for h in hits:
+        raw = "".join(h.find("./ResearchAgency/Name").itertext()) if h.find("./ResearchAgency/Name") is not None else ""
+        agency = api.clean_markup(re.sub(r"<[^>]*>", "", html.unescape(raw)))
+        agencies[agency] += 1
+        title = api.clean_markup("".join(h.find("./ProjectTitle/Korean").itertext())) if h.find("./ProjectTitle/Korean") is not None else ""
+        if api.same_organization(agency, name):
+            same += 1
+            if len(samples) < 5:
+                samples.append(title[:60])
+        if api._ntis_project_from_hit(h, agency) is not None:
+            ai += 1
+    print(f"   [진단] '{name} 인공지능' {len(hits)}건: 수행기관 일치 {same}, (기관 무관) AI 과제 {ai}")
+    print(f"   [진단] 수행기관 상위: {agencies.most_common(8)}")
+    for t in samples:
+        print(f"   [진단] 일치 과제 예: {t}")
 
 
 def main():
@@ -73,6 +100,8 @@ def main():
             print(f"   - {r['project_name'][:70]}  [{r.get('research_agency')}]")
         if len(records) > 10:
             print(f"   ... 외 {len(records) - 10}건")
+        if not records and not res.get("error") and any(not t.endswith("=0") for t in totals[1:]):
+            diagnose(api, name)
 
 
 if __name__ == "__main__":
