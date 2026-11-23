@@ -196,29 +196,25 @@ CAP_DISHWASH_COURSE,strong,text,AI세척,공백 없는 형태 직접 언급
 CAP_COOKING_MODE,strong,text,AI조리,공백 없는 형태 직접 언급
 CAP_AI_WASH_COURSE,strong,text,AI 맞춤 세탁,맞춤형 세탁 AI 기능 직접 언급
 CAP_AI_WASH_COURSE,strong,text,AI맞춤세탁,공백 없는 형태 직접 언급
-CAP_AI_WASH_COURSE,strong,text,AI 에너지절약,에너지 절약 AI 직접 언급
-CAP_AI_WASH_COURSE,strong,text,AI에너지절약,공백 없는 형태 직접 언급
 CAP_AI_WASH_COURSE,strong,text,맞춤 세탁 코스,맞춤형 코스 선택 기능
 CAP_AI_WASH_COURSE,strong,text,AI 세탁코스,AI 기반 코스 선택 직접 언급
 CAP_AI_WASH_COURSE,strong,text,AI 코스추천,코스 추천 AI 직접 언급
 CAP_ENERGY_OPTIMIZATION,strong,text,AI 에너지절약,에너지 절약 AI 기능 직접 언급
 CAP_ENERGY_OPTIMIZATION,strong,text,AI에너지절약,공백 없는 형태 직접 언급
-CAP_ENERGY_OPTIMIZATION,strong,text,AI 맞춤,AI 기반 맞춤 제어 직접 언급
 CAP_ENERGY_OPTIMIZATION,strong,text,AI절전모드,절전 AI 모드 직접 언급
 CAP_SMART_HOME_CONTROL,strong,text,AI맞춤보관,삼성 냉장고 AI 맞춤 보관 기능
 CAP_SMART_HOME_CONTROL,strong,text,AI 맞춤보관,삼성 냉장고 AI 맞춤 보관 기능
 CAP_SMART_HOME_CONTROL,strong,text,AI맞춤냉각,AI 맞춤 냉각 기능
 CAP_DRY_COURSE,strong,text,AI 맞춤 건조,맞춤형 건조 AI 기능 직접 언급
 CAP_DRY_COURSE,strong,text,AI맞춤건조,공백 없는 형태 직접 언급
-CAP_DRY_COURSE,strong,text,AI 에너지절약,건조기 에너지 절약 AI 직접 언급
 CAP_ENERGY_OPTIMIZATION,strong,text,AI운전,삼성 에어컨 AI 운전 모드 (환경·패턴 기반 자동 제어)
 CAP_AI_HW_FOUNDATION,weak,text,스냅드래곤8 엘리트,AI 연산 하드웨어 단서이며 특정 얼굴 인식 기능의 직접 근거는 아님
 CAP_AI_HW_FOUNDATION,weak,text,엑시노스2600,AI 연산 하드웨어 단서이며 특정 얼굴 인식 기능의 직접 근거는 아님
 CAP_AI_HW_FOUNDATION,weak,text,엑시노스2400,AI 연산 하드웨어 단서이며 특정 얼굴 인식 기능의 직접 근거는 아님
 CAP_AI_TYPING_ASSIST,weak,text,AI 전용 키,AI 전용 키(Copilot) 탑재 - 타이핑 보조와 다를 수 있음
-CAP_PATH_PLANNING_AVOIDANCE,strong,text,AI사물인식,삼성 AI 사물 인식 기능 직접 언급
-CAP_PATH_PLANNING_AVOIDANCE,strong,text,AI바닥인식,삼성 AI 바닥 재질 인식 기능
-CAP_PATH_PLANNING_AVOIDANCE,strong,text,AI액체인식,삼성 AI 액체 감지 기능
+CAP_AI_OBSTACLE_RECOGNITION,strong,text,AI사물인식,삼성 AI 사물 인식 기능 직접 언급
+CAP_AI_FLOOR_DETECTION,strong,text,AI바닥인식,삼성 AI 바닥 재질 인식 기능
+CAP_AI_FLOOR_DETECTION,strong,text,AI액체인식,삼성 AI 액체 감지 기능(바닥 오염 인식)
 CAP_COOKING_MODE,strong,text,밀키트스캔쿡,밀키트 바코드 스캔 AI 조리 (삼성 Scan Cook)
 CAP_COOKING_MODE,weak,text,자동맞춤요리,자동 맞춤 요리 - AI 여부 불명확
 CAP_COOKING_MODE,strong,text,AI오토포커싱가열,쿠쿠 AI 자동 화구 포커싱 가열 (용기 위치 감지 기반)
