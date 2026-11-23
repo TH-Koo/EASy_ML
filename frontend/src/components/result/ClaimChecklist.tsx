@@ -4,7 +4,6 @@ import { cn } from "@/lib/cn";
 import {
   CLAIM_META,
   SOURCE_SCOPE,
-  displayQuote,
   evidenceChips,
   explain,
   isInternalId,
@@ -123,7 +122,6 @@ function ClaimRow({
     (a, b) => Number(isSellerPage(b.source)) - Number(isSellerPage(a.source)),
   );
   const chips = evidenceChips({ ...claim, evidence }).filter((chip) => !/\bdart\b/i.test(chip));
-  const quote = displayQuote(claim);
   const found = evidence.length > 0;
   const ex = explain(claim);
   const publicLabels = [...new Set(evidence.filter((ref) => !isSellerPage(ref.source)).map(
@@ -165,14 +163,9 @@ function ClaimRow({
           <Icon size={15} strokeWidth={3} />
         </span>
         <span className="flex min-w-0 flex-col">
-          <b className="text-fg text-[15.5px] font-bold tracking-[var(--tracking-tight)]">
+          <b className="text-fg text-[16px] font-bold tracking-[var(--tracking-tight)]">
             {claim.text}
           </b>
-          {quote ? (
-            <span className="text-fg-dim truncate text-[13px] print:whitespace-normal">
-              “{quote}”
-            </span>
-          ) : null}
         </span>
         <span
           className={cn(
