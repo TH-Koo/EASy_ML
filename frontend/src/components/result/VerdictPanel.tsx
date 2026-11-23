@@ -35,7 +35,7 @@ export function VerdictPanel({ data }: { data: AnalysisResult }) {
   return (
     <section
       aria-label="분석 결론"
-      className="bg-surface grid gap-6 rounded-[var(--radius-panel)] p-6 shadow-[var(--shadow-panel)] md:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] md:gap-8 md:p-8"
+      className="bg-surface print:border-border grid gap-6 rounded-[var(--radius-panel)] p-6 shadow-[var(--shadow-panel)] print:border md:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] md:gap-8 md:p-8"
     >
       <div className="min-w-0">
         {/* 다나와 이름은 괄호에 옵션까지 붙어 길다. 이름은 두 줄까지, 옵션은 아랫줄에 작게. */}
@@ -53,7 +53,7 @@ export function VerdictPanel({ data }: { data: AnalysisResult }) {
               target="_blank"
               rel="noopener noreferrer"
               title={url}
-              className="border-border text-fg-muted hover:border-brand hover:text-brand-fg inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors"
+              className="border-border text-fg-muted hover:border-brand hover:text-brand-fg inline-flex print:hidden items-center gap-1 rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors"
             >
               다나와에서 보기
               <ArrowUpRight size={13} aria-hidden />

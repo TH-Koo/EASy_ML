@@ -738,23 +738,44 @@ body {
    `인쇄 · PDF로 저장` 버튼이 여는 화면이다. 화면에서만 뜻이 있는 것들 —
    고정 헤더, 스티키 사이드바, 조작 버튼, 토스트 — 을 걷어내야 종이에서
    읽힌다. 이전에는 배경만 흰색으로 바꾸고 끝이라 사이드바가 본문을 밀고
-   버튼이 그대로 찍혔다. */
+   버튼이 그대로 찍혔다.
+
+   예전에는 사이드바를 내리려고 `.grid` 를 전부 block 으로 바꿨는데, 결과
+   화면이 한 단이 된 뒤로는 줄 안의 격자(기관 이름 | 기록 제목, 아이콘 |
+   이름 | 판정)까지 풀려 글자가 붙어 찍혔다. 격자는 화면 그대로 둔다.
+
+   접힌 칸(<details>)은 인쇄 직전에 QuickActions 가 펼친다. */
+@page {
+  size: A4;
+  margin: 14mm 12mm;
+}
+
 @media print {
-  body { background: #fff !important; }
+  /* html 에도 회색 바탕이 깔려 있어 본문이 끝난 아래가 회색 띠로 찍혔다 */
+  html, body, .bg-bg { background: #fff !important; }
   .no-print { display: none !important; }
 
   /* 고정·스티키는 종이에서 뜻이 없다 */
   header, footer, nav { display: none !important; }
   aside { position: static !important; }
 
-  /* 그림자와 라운드는 잉크만 먹는다 */
   * {
     box-shadow: none !important;
     animation: none !important;
+    /* 크롬은 기본으로 배경색을 빼고 인쇄한다. 판정 막대·상태 아이콘·점이
+       모두 배경색이라 이게 없으면 빈 동그라미만 남는다. */
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
-  /* 사이드바를 본문 아래로 내려 한 단으로 만든다 */
-  .grid { display: block !important; }
+  /* 페이지 경계에서 잘리지 않을 덩어리. 기능 하나를 통째로 묶으면 한 쪽에
+     두 개밖에 안 들어가 아래가 휑하다 — 제목줄, 기록 한 줄, 설명 상자
+     단위로만 묶고, 제목줄은 내용과 떨어지지 않게 한다. */
+  [id^="claim-"] > summary { break-inside: avoid; break-after: avoid; }
+  [id^="claim-"] > div > *,
+  section[aria-label] > *,
+  li { break-inside: avoid; }
+  h2 { break-after: avoid; }
 
   a[href]::after { content: ""; }
 }
