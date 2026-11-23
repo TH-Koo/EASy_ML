@@ -1,5 +1,9 @@
 import { Badge } from "@/components/primitives/Badge";
-import { ClaimChecklist, RecordChecklist } from "@/components/result/ClaimChecklist";
+import { ManufacturerResearch } from "@/components/result/EvidenceOverview";
+import {
+  ClaimChecklist,
+  RecordChecklist,
+} from "@/components/result/ClaimChecklist";
 import { QuickActions } from "@/components/result/QuickActions";
 import { SummaryStrip } from "@/components/result/SummaryStrip";
 import { TrustBar } from "@/components/result/TrustBar";
@@ -32,7 +36,11 @@ export function ResultView({
   return (
     <div className="theme-violet mx-auto flex w-full max-w-[960px] flex-col gap-3.5 px-4 pt-4 pb-16 md:px-0">
       {data.meta.backend === "mock" ? (
-        <Badge intent="warn" className="self-start" title="이 결과는 mock 어댑터가 생성한 합성 데이터입니다.">
+        <Badge
+          intent="warn"
+          className="self-start"
+          title="이 결과는 mock 어댑터가 생성한 합성 데이터입니다."
+        >
           mock data
         </Badge>
       ) : null}
@@ -46,6 +54,7 @@ export function ResultView({
         ) : data.verification.rows.length > 0 ? (
           <RecordChecklist rows={data.verification.rows} />
         ) : null}
+        <ManufacturerResearch data={data} />
         <TrustBar data={data} />
         <QuickActions data={data} historyId={historyId} />
       </div>
