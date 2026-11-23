@@ -596,6 +596,11 @@ def _capture_detail_area(driver, model_name: str) -> str:
         return ""
 
 
+_NEW_SPEC_TABLE_SELECTOR = '[data-testid="ProductDetailSection"] table'
+# 새 화면 상단의 요약 스펙. 옛 spec_list 와 같은 "항목 / 항목 : 값" 모양이다.
+_NEW_SPEC_SUMMARY_SELECTOR = '[data-testid="ProductHeader-specs"]'
+
+
 def _extract_specs(driver) -> Tuple[Dict[str, str], str]:
     """
     다나와 상품 스펙 정보를 수집한다.
@@ -606,7 +611,17 @@ def _extract_specs(driver) -> Tuple[Dict[str, str], str]:
     raw_specs = ""
 
     try:
+        # 새 화면(React)은 prod_spec_table 대신 상세 섹션 안의 이름 없는
+        # 표에 스펙을 둔다(예: 세탁기 pcode=109483526). 이걸 못 읽으면 스펙이
+        # 0개가 돼 "상품 페이지로 보이지 않아요"로 분석이 멈췄다.
         spec_tables = driver.find_elements(By.CLASS_NAME, "prod_spec_table")
+        if not spec_tables:
+            try:
+                spec_tables = WebDriverWait(driver, 5).until(
+                    lambda d: d.find_elements(By.CSS_SELECTOR, _NEW_SPEC_TABLE_SELECTOR)
+                )
+            except Exception:
+                spec_tables = []
 
         if spec_tables:
             rows = spec_tables[0].find_elements(By.TAG_NAME, "tr")
@@ -629,7 +644,8 @@ def _extract_specs(driver) -> Tuple[Dict[str, str], str]:
                     specs[key] = value
 
         if len(specs) < 3:
-            spec_lists = driver.find_elements(By.CLASS_NAME, "spec_list")
+            spec_lists = (driver.find_elements(By.CLASS_NAME, "spec_list")
+                          or driver.find_elements(By.CSS_SELECTOR, _NEW_SPEC_SUMMARY_SELECTOR))
 
             if spec_lists:
                 raw_specs = re.sub(r"\s+", " ", spec_lists[0].text).strip()
@@ -645,6 +661,11 @@ def _extract_specs(driver) -> Tuple[Dict[str, str], str]:
                         specs[key.strip()] = value.strip()
                     else:
                         specs[item] = "지원"
+
+        if not raw_specs:
+            summary = driver.find_elements(By.CSS_SELECTOR, _NEW_SPEC_SUMMARY_SELECTOR)
+            if summary:
+                raw_specs = re.sub(r"\s+", " ", summary[0].text).strip()
 
         if not raw_specs:
             try:
