@@ -8,15 +8,15 @@ credibility judgment; collection functions must not discard evidence text.
 
 import os
 import re
+import html
 import sys
 import urllib.parse
 from datetime import datetime, timedelta
 
 import pandas as pd
 import requests
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, text
 
-import requests
 import xml.etree.ElementTree as ET
 
 
@@ -34,7 +34,7 @@ try:
 except ImportError:
     print("❌ 에러: config.py 파일을 찾을 수 없습니다.")
     config = None
-    COMMON_DATAGO_KEY = KIPRIS_KEY = NIPA_KEY = ""
+    COMMON_DATAGO_KEY = KIPRIS_KEY = NIPA_KEY = NTIS_API_KEY = ""
 
 # DB 접속 문자열은 코드에 두지 않는다: 환경변수 FIDES_DB_URL → config.DB_URL.
 DB_URL = os.environ.get("FIDES_DB_URL") or getattr(config, "DB_URL", None)
@@ -62,6 +62,58 @@ def _record_text(row):
     if not isinstance(row, dict):
         return str(row or "")
     return " ".join(str(v) for v in row.values() if v not in (None, ""))
+
+
+# =====================================================================
+# NTIS validation helpers (integrated into this module)
+# =====================================================================
+
+
+
+def clean_markup(value: object) -> str:
+    value = html.unescape(str(value or ""))
+    value = re.sub(r"<[^>]*>", " ", value)
+    return " ".join(value.split())
+
+
+def normalize_organization(value: object) -> str:
+    value = clean_markup(value).lower()
+    value = value.replace("㈜", "").replace("（株）", "")
+    value = re.sub(r"\(\s*주\s*\)|\(\s*유\s*\)|주식회사|유한회사|\bco\.?\s*,?\s*ltd\.?\b", "", value)
+    return re.sub(r"[^0-9a-z가-힣]", "", value)
+
+
+def same_organization(actual: object, expected: object) -> bool:
+    actual_norm = normalize_organization(actual)
+    expected_norm = normalize_organization(expected)
+    return bool(actual_norm and expected_norm and actual_norm == expected_norm)
+
+
+_AI_PHRASES = (
+    "인공지능", "딥러닝", "머신러닝", "신경망", "자연어처리", "음성인식",
+    "음성 인식", "객체인식", "객체 인식", "이미지인식", "이미지 인식",
+    "컴퓨터비전", "컴퓨터 비전", "생성형 ai", "멀티모달 ai", "ai 기반",
+    "ai 기술", "ai 모델", "ai 솔루션", "온디바이스 ai",
+    "artificial intelligence", "deep learning", "machine learning",
+    "neural network", "computer vision", "speech recognition",
+    "object detection", "natural language processing", "generative ai",
+)
+
+
+def is_ai_project(text: object) -> bool:
+    normalized = clean_markup(text).lower()
+    compact = re.sub(r"\s+", "", normalized)
+    return any(re.sub(r"\s+", "", phrase) in compact for phrase in _AI_PHRASES)
+
+
+def _ntis_title_key(title: object) -> str:
+    """같은 과제가 연차·세부과제마다 번호만 달리 여러 번 나온다. 제목으로 합친다."""
+    return re.sub(r"\W+", "", clean_markup(title).lower())
+
+
+def project_identity(project_number: object, title: object) -> str:
+    number = re.sub(r"\s+", "", str(project_number or ""))
+    return number or re.sub(r"\W+", "", clean_markup(title).lower())
 
 
 # =====================================================================
@@ -291,6 +343,178 @@ def verify_kaiac(company: str) -> dict:
 # =====================================================================
 # [API 그룹] NTIS 국가 R&D 연구보고서 실적 검증 (NTIS 전용 규격 적용)
 # =====================================================================
+_NTIS_URL = "https://www.ntis.go.kr/rndopen/openApi/public_project"
+_NTIS_PAGE_SIZE = 100
+# 회사 이름만으로 찾으면 대기업은 과제가 수천 건이라 상위 일부만 보고 끝났다
+# (예전에는 50건). 그 안에 AI 과제가 없으면 실제로 있어도 "없음"이 됐다.
+# AI 단어를 붙인 검색을 함께 돌리고, 검색마다 끝 페이지까지 읽는다.
+_NTIS_AI_QUERY_WORDS = ("인공지능", "AI", "딥러닝", "머신러닝")
+_NTIS_MAX_PER_QUERY = int(os.getenv("EASY_NTIS_MAX_PER_QUERY", "1000"))
+_NTIS_CACHE_VERSION = 3
+
+
+def _ntis_cache_path(name: str) -> str:
+    import tempfile
+    base = os.environ.get("EASY_NTIS_CACHE_DIR") or os.path.join(tempfile.gettempdir(), "easy_ntis_cache")
+    safe = re.sub(r"[^0-9A-Za-z가-힣]", "_", name)
+    return os.path.join(base, f"{safe}_{datetime.now():%Y%m%d}_v{_NTIS_CACHE_VERSION}.json")
+
+
+def _ntis_cache_load(name: str):
+    import json
+    try:
+        with open(_ntis_cache_path(name), encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return None
+
+
+def _ntis_cache_save(name: str, projects: list) -> None:
+    import json
+    path = _ntis_cache_path(name)
+    try:
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(projects, f, ensure_ascii=False)
+    except OSError as e:
+        print(f"[NTIS] 캐시 저장 실패(무시): {e}")
+
+
+def _ntis_total_hits(root) -> int:
+    for elem in root.iter():
+        if elem.tag.split("}")[-1].lower() in {"totalhits", "total_hits", "totalcount", "total"}:
+            try:
+                return int(re.sub(r"\D", "", elem.text or ""))
+            except ValueError:
+                return 0
+    return 0
+
+
+def _ntis_fetch_page(raw_key: str, query: str, position: int):
+    """NTIS 한 페이지. (HIT 요소 목록, 전체 건수, 오류 문자열) 을 돌려준다."""
+    params = {
+        "apprvKey": raw_key, "collection": "project", "SRWR": query,
+        "returnType": "xml", "startPosition": position, "displayCnt": _NTIS_PAGE_SIZE,
+    }
+    try:
+        response = requests.get(_NTIS_URL, params=params, timeout=30)
+    except requests.RequestException as e:
+        return [], 0, f"{query}: 요청 오류 ({type(e).__name__})"
+    if response.status_code != 200:
+        return [], 0, f"{query}: HTTP {response.status_code}"
+    try:
+        root = ET.fromstring(response.text)
+    except ET.ParseError:
+        return [], 0, f"{query}: NTIS 응답 XML 파싱 실패"
+    if root.tag.split("}")[-1].lower() in {"error", "exception"}:
+        message = " ".join((e.text or "").strip() for e in root.iter() if (e.text or "").strip())
+        return [], 0, f"{query}: {message or 'NTIS API 오류 응답'}"
+    hits = [item for item in root.iter() if item.tag.split("}")[-1] == "HIT"]
+    return hits, _ntis_total_hits(root), ""
+
+
+def _ntis_fetch_all(raw_key: str, query: str, max_results: int = 0):
+    """검색 하나를 끝 페이지까지(최대 max_results, 기본 _NTIS_MAX_PER_QUERY 건) 읽는다."""
+    from concurrent.futures import ThreadPoolExecutor
+
+    hits, total, error = _ntis_fetch_page(raw_key, query, 1)
+    if error:
+        return [], [error]
+    errors = []
+    cap = max_results or _NTIS_MAX_PER_QUERY
+    limit = min(total, cap) if total else cap
+    if total and limit > _NTIS_PAGE_SIZE:
+        # 전체 건수를 알면 나머지 페이지를 한꺼번에 받는다.
+        positions = list(range(1 + _NTIS_PAGE_SIZE, limit + 1, _NTIS_PAGE_SIZE))
+        with ThreadPoolExecutor(max_workers=4) as pool:
+            for page_hits, _, page_error in pool.map(lambda pos: _ntis_fetch_page(raw_key, query, pos), positions):
+                hits.extend(page_hits)
+                if page_error:
+                    errors.append(page_error)
+    elif not total:
+        # 전체 건수가 응답에 없으면 빈 페이지가 나올 때까지 차례로 넘긴다.
+        position = 1 + _NTIS_PAGE_SIZE
+        last = hits
+        while last and len(hits) < limit:
+            last, _, page_error = _ntis_fetch_page(raw_key, query, position)
+            if page_error:
+                errors.append(page_error)
+                break
+            hits.extend(last)
+            position += _NTIS_PAGE_SIZE
+    return hits, errors
+
+
+def _ntis_project_from_hit(item, name: str):
+    """HIT 하나를 과제 기록으로 바꾼다. 수행기관이 다르거나 AI 과제가 아니면 None."""
+    def get_text(path, sep=" "):
+        elem = item.find(path)
+        if elem is None:
+            return ""
+        return sep.join(part.strip() for part in elem.itertext() if part and part.strip())
+
+    project_name = get_text("./ProjectTitle/Korean") or get_text("./ProjectTitle")
+    if not project_name:
+        return None
+    searchable_text = " ".join([
+        project_name,
+        get_text("./Goal/Full"),
+        get_text("./Abstract/Full"),
+        get_text("./Keyword/Korean"),
+        get_text("./Effect/Full"),
+    ]).lower()
+    if not is_ai_project(searchable_text):
+        return None
+    # 검색어(name)를 lead_company 에 복사하지 않는다. 실제 수행기관을 읽어
+    # 검색한 회사와 정확히 같을 때만 인정한다(엘지디스플레이 ≠ 엘지전자).
+    agency_raw = get_text("./ResearchAgency/Name", "") or get_text(".//ResearchAgency/Name", "")
+    research_agency = clean_markup(re.sub(r"<[^>]*>", "", html.unescape(agency_raw)))
+    if not same_organization(research_agency, name):
+        return None
+    project_number = get_text("./ProjectNumber")
+    project_name = clean_markup(project_name)
+    project_id = project_identity(project_number, project_name)
+    if not project_id:
+        return None
+    # 'product_ai'를 카테고리 단어만으로 확정하지 않는다.
+    # 실제 AI 기능 일치 판정은 온톨로지 패턴으로 수행한다.
+    return {
+        "project_name": project_name,
+        "project_number": project_number or None,
+        "source_record_id": project_number or project_id,
+        "research_agency": research_agency,
+        "lead_company": research_agency,
+        "searched_name": name,
+        "company_verified": True,
+        "is_ai_project": True,
+        "project_summary": clean_markup(searchable_text)[:2000],
+        "relevance_type": "general_ai",
+        "status": "verified",
+    }
+
+
+def _ntis_projects_for_company(raw_key: str, name: str):
+    """회사 하나의 AI 과제 전부. 오류가 없을 때만 하루 동안 캐시한다."""
+    cached = _ntis_cache_load(name)
+    if cached is not None:
+        return cached, []
+    projects, errors = {}, []
+    # 회사 이름만으로 한 검색은 대기업이면 수천 건이라(삼성전자 7천여 건) 첫
+    # 페이지만 본다. AI 과제는 AI 단어를 붙인 검색에서 끝까지 찾는다.
+    queries = [(name, _NTIS_PAGE_SIZE)] + [(f"{name} {word}", 0) for word in _NTIS_AI_QUERY_WORDS]
+    for query, max_results in queries:
+        hits, query_errors = _ntis_fetch_all(raw_key, query, max_results)
+        errors.extend(query_errors)
+        for item in hits:
+            project = _ntis_project_from_hit(item, name)
+            if project:
+                projects.setdefault(_ntis_title_key(project["project_name"]), project)
+    rows = list(projects.values())
+    if not errors:
+        _ntis_cache_save(name, rows)
+    return rows, errors
+
+
 def verify_ntis_rnd(company_aliases: list, product_keyword: str = "") -> dict:
     if not NTIS_API_KEY:
         return {"score": 0, "error": "NTIS API 키 미설정"}
@@ -308,123 +532,31 @@ def verify_ntis_rnd(company_aliases: list, product_keyword: str = "") -> dict:
             "evidence": None
         }
 
-    ai_keywords = {
-        "인공지능", "artificial intelligence", "딥러닝", "deep learning",
-        "머신러닝", "machine learning", "생성형 ai", "generative ai",
-        "온디바이스 ai", "ai 모델", "ai 기반", "ai 기술", "ai 솔루션",
-        "ai 프로세싱", "멀티모달 ai", "신경망", "neural network",
-        "컴퓨터 비전", "computer vision", "음성인식", "이미지 인식",
-        "객체 인식", "사물인식",
-    }
-
-    url = "https://www.ntis.go.kr/rndopen/openApi/public_project"
     raw_key = NTIS_API_KEY.strip()
-
     valid_projects = {}
     api_errors = []
 
     for name in search_names:
         try:
-            params = {
-                "apprvKey": raw_key,
-                "collection": "project",
-                "SRWR": name,
-                "returnType": "json",
-                "startPosition": 1,
-                "displayCnt": 50
-            }
-
-            response = requests.get(url, params=params, timeout=30)
-
-            if response.status_code != 200:
-                api_errors.append(f"{name}: HTTP {response.status_code}")
-                continue
-
-            try:
-                import xml.etree.ElementTree as ET
-                root = ET.fromstring(response.text)
-            except ET.ParseError:
-                api_errors.append(f"{name}: NTIS 응답 XML 파싱 실패")
-                continue
-
-            error_text = " ".join(
-                (elem.text or "").strip()
-                for elem in root.iter()
-                if elem.tag.split("}")[-1].lower() in {"error", "errormessage", "message"}
-            )
-
-            if root.tag.split("}")[-1].lower() in {"error", "exception"}:
-                api_errors.append(f"{name}: {error_text or 'NTIS API 오류 응답'}")
-                continue
-
-            for item in root.iter():
-                if item.tag.split("}")[-1] != "HIT":
-                    continue
-
-                def get_text(path):
-                    elem = item.find(path)
-                    if elem is None:
-                        return ""
-                    return " ".join(
-                        part.strip()
-                        for part in elem.itertext()
-                        if part and part.strip()
-                    )
-
-                project_name = get_text("./ProjectTitle/Korean")
-                if not project_name:
-                    project_name = get_text("./ProjectTitle")
-
-                if not project_name:
-                    continue
-
-                searchable_text = " ".join([
-                    project_name,
-                    get_text("./Goal/Full"),
-                    get_text("./Abstract/Full"),
-                    get_text("./Keyword/Korean"),
-                    get_text("./Effect/Full")
-                ]).lower()
-
-                if not any(keyword in searchable_text for keyword in ai_keywords):
-                    continue
-
-                clean_kw = re.sub(r'[^가-힣a-zA-Z0-9\s]', ' ', product_keyword)
-                category_tokens = [k.strip() for k in clean_kw.split() if len(k.strip()) >= 2]
-                
-                is_category_matched = False
-                if category_tokens:
-                    is_category_matched = any(token.lower() in searchable_text for token in category_tokens)
-
-                project_number = get_text("./ProjectNumber")
-                project_id = project_number or project_name
-
-                if project_id not in valid_projects:
-                    valid_projects[project_id] = {
-                        "project_name": project_name,
-                        "project_number": project_number or None,
-                        "lead_company": name,
-                        "relevance_type": "product_ai" if is_category_matched else "general_ai",
-                        "status": "verified"
-                    }
-
-        except requests.RequestException as e:
-            api_errors.append(f"{name}: 요청 오류 ({type(e).__name__})")
+            rows, errors = _ntis_projects_for_company(raw_key, name)
         except Exception as e:
             import traceback
             traceback.print_exc()
-            api_errors.append(f"{name}: 처리 오류 ({type(e).__name__}: {e})")
+            rows, errors = [], [f"{name}: 처리 오류 ({type(e).__name__}: {e})"]
+        api_errors.extend(errors)
+        for project in rows:
+            valid_projects.setdefault(_ntis_title_key(project.get("project_name")), project)
 
     projects = list(valid_projects.values())
-    
+
     if projects:
         title = projects[0]["project_name"]
-        company = projects[0]["lead_company"]
+        verified_count = sum(bool(row["company_verified"]) for row in projects)
 
         return {
-            "score": 20,
-            "evidence": f"NTIS R&D AI 관련 과제 확인: {title} 등 총 {len(projects)}건",
-            "detail": f"NTIS에서 [{company}] 검색어로 조회한 결과, AI 관련 과제 {len(projects)}건이 확인되었습니다.",
+            "score": 0,  # 점수는 단일 온톨로지 엔진에서만 산출
+            "evidence": f"NTIS AI 관련 과제 검색: {title} 등 총 {len(projects)}건",
+            "detail": f"NTIS AI 관련 과제 {len(projects)}건 검색, 수행기관 일치 확인 {verified_count}건. 기술 관련성은 별도 검증합니다.",
             "records": projects,
             "status": "verified"
         }

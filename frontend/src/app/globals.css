@@ -190,6 +190,37 @@
   --claim-no-on-dark:   #ff9a52;
 }
 
+/* 보라 + 로즈 테마 — 로그인 후 홈과 결과 화면에만 씌운다.
+   보라는 브랜드·누를 것과 '확인', 연한 보라는 '일부', 로즈는 '미확인'·에러.
+   랜딩(소개)은 기존 네이비 그대로 둔다. */
+.theme-violet {
+  --color-brand:      #6741d9;
+  --color-brand-fg:   #6741d9;
+  --color-brand-soft: rgba(103, 65, 217, 0.08);
+  --color-brand-deep: #3b1f9e;
+  --color-brand-mid:  #8b6cf0;
+
+  --claim-ok:      #6741d9;
+  --claim-ok-soft: #f1edfd;
+  --claim-part:    #a08bea;
+  --claim-no:      #e0457b;
+  --claim-no-soft: #fdeef3;
+}
+
+/* 홈: 안 되는 주소를 넣었을 때 관련 안내 칸을 잠깐 반짝인다 */
+.guide-flash {
+  animation: guide-flash 1.6s ease;
+}
+@keyframes guide-flash {
+  20%, 55% {
+    background: var(--claim-no-soft);
+    box-shadow: inset 0 0 0 1.5px var(--claim-no);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .guide-flash { animation: none; background: var(--claim-no-soft); }
+}
+
 /* 라벨은 본문과 같은 글꼴이 되었으므로 굵기로 구분한다. 11px 산세리프를
    400 으로 두면 넓은 자간과 겹쳐 흐리게 흩어진다.
 
@@ -726,23 +757,44 @@ body {
    `인쇄 · PDF로 저장` 버튼이 여는 화면이다. 화면에서만 뜻이 있는 것들 —
    고정 헤더, 스티키 사이드바, 조작 버튼, 토스트 — 을 걷어내야 종이에서
    읽힌다. 이전에는 배경만 흰색으로 바꾸고 끝이라 사이드바가 본문을 밀고
-   버튼이 그대로 찍혔다. */
+   버튼이 그대로 찍혔다.
+
+   예전에는 사이드바를 내리려고 `.grid` 를 전부 block 으로 바꿨는데, 결과
+   화면이 한 단이 된 뒤로는 줄 안의 격자(기관 이름 | 기록 제목, 아이콘 |
+   이름 | 판정)까지 풀려 글자가 붙어 찍혔다. 격자는 화면 그대로 둔다.
+
+   접힌 칸(<details>)은 인쇄 직전에 QuickActions 가 펼친다. */
+@page {
+  size: A4;
+  margin: 14mm 12mm;
+}
+
 @media print {
-  body { background: #fff !important; }
+  /* html 에도 회색 바탕이 깔려 있어 본문이 끝난 아래가 회색 띠로 찍혔다 */
+  html, body, .bg-bg { background: #fff !important; }
   .no-print { display: none !important; }
 
   /* 고정·스티키는 종이에서 뜻이 없다 */
   header, footer, nav { display: none !important; }
   aside { position: static !important; }
 
-  /* 그림자와 라운드는 잉크만 먹는다 */
   * {
     box-shadow: none !important;
     animation: none !important;
+    /* 크롬은 기본으로 배경색을 빼고 인쇄한다. 판정 막대·상태 아이콘·점이
+       모두 배경색이라 이게 없으면 빈 동그라미만 남는다. */
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
-  /* 사이드바를 본문 아래로 내려 한 단으로 만든다 */
-  .grid { display: block !important; }
+  /* 페이지 경계에서 잘리지 않을 덩어리. 기능 하나를 통째로 묶으면 한 쪽에
+     두 개밖에 안 들어가 아래가 휑하다 — 제목줄, 기록 한 줄, 설명 상자
+     단위로만 묶고, 제목줄은 내용과 떨어지지 않게 한다. */
+  [id^="claim-"] > summary { break-inside: avoid; break-after: avoid; }
+  [id^="claim-"] > div > *,
+  section[aria-label] > *,
+  li { break-inside: avoid; }
+  h2 { break-after: avoid; }
 
   a[href]::after { content: ""; }
 }

@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=123743750",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "GPD WIN 5 AI Max+ 395 해외구매 32GB, SSD 2TB/해외구매",
       "name": "GPD WIN 5 AI Max+ 395 해외구매 32GB, SSD 2TB/해외구매",
       "description": "",
-      "ocr_text": "GPD WIN 5 Al Max+ 395 해외구매 32GB, SSD 2TBI해외구매 AUCTION 2,808,710원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 화면 비율 169 해상도 1920x1080(FHD) 패널 종류 IPS(터치) 화면 밝기 5OOnit 화면 주사물 I2OHz 운명제제 원도우OS 무게 950g 상품구분 해외상품 [시스템] CPU 종류 라이젠A Max+ CPU 코드네민 스트리스 혜일로 CPU 년버 395 (5.1GHz) CPU 코이스 16코어 CPU 스레드수 GPU 라데온 8060s 32GB 캠 타입 LPDDRSX 쓰 대역쪽 OOOMHz 용량 2TB SSD 뜻렉터 M2 2280 SSD 인터데이스 PCle 4.0(NVMe) [조작부] 권드물러 타입 일체형 파드 권트론러 부가가능 본선서 트리거 [파위단자] 배티리 8owh USB 타입",
+      "ocr_text": "GPD WIN 5 Al Max+ 395 해외구매 32GB, SSD 2TBI해외구매 AUCTION 2,808,710원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 화면 비율 16.9 해상도 1920x10801FHD) 패널 종류 IPS(터치) 화면 밝기 5oOnit 화면 주사물 I20Hz 운영제제 원도우OS 무게 950g 상품구분 해외상품 [시스템] CPU 종류 라이젠시 Max+ CPU 코드네임 스트렉스 혜일로 CPU 넘버 395 (5.1GHz) CPU 코어수 16코어 CPU 스레드수 GPU 라데온 8060S 32GB 램 타입 LPDDRSX 램 대역쪽 8,OOOMHz 용량 2TB SSD 품페터 M.2 2280 SSD 인터페이스 PCle 4.ONVMe) [조작부] 권트물러 타입 일체형 패드  권트물러 부가가능  훨센서 트리거 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "휴대용PC 게임기(UMPC)": "지원",
         "본체": "지원",
@@ -34,18 +34,46 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=123743750",
       "manufacturer": "GPD, GPD",
-      "model_name": "GPD WIN 5 AI Max+"
+      "model_name": "267X111MM"
     },
     "norm_info": {
       "company_name": "GPD, GPD",
-      "model_name": "GPD WIN 5 AI Max+",
+      "model_name": "267X111MM",
       "product_name": "GPD WIN 5 AI Max+ 395 해외구매 32GB, SSD 2TB/해외구매"
     },
     "db_results": [],
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 정형 합성데이터의 생성과 평가를 위한 방법론 개발 및 응용 등 총 3건",
+      "detail": "NTIS에서 [GPD] 검색어로 조회한 결과, AI 관련 과제 3건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "정형 합성데이터의 생성과 평가를 위한 방법론 개발 및 응용",
+          "project_number": "2710090898",
+          "lead_company": "GPD",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "GAN과 분포 이동을 이용한 고해상도 한반도 강우 생성에 관한 연구",
+          "project_number": "2340053199",
+          "lead_company": "GPD",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "GAN과 분포 이동을 이용한 고해상도 한반도 강우 생성에 관한 연구",
+          "project_number": "2340046979",
+          "lead_company": "GPD",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -55,14 +83,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "GPD, GPD",
-    "model_param": "GPD WIN 5 AI Max+",
+    "model_param": "267X111MM",
     "ocr_result": {
-      "extracted_text": "GPD WIN 5 Al Max+ 395 해외구매 32GB, SSD 2TBI해외구매 AUCTION 2,808,710원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 화면 비율 169 해상도 1920x1080(FHD) 패널 종류 IPS(터치) 화면 밝기 5OOnit 화면 주사물 I2OHz 운명제제 원도우OS 무게 950g 상품구분 해외상품 [시스템] CPU 종류 라이젠A Max+ CPU 코드네민 스트리스 혜일로 CPU 년버 395 (5.1GHz) CPU 코이스 16코어 CPU 스레드수 GPU 라데온 8060s 32GB 캠 타입 LPDDRSX 쓰 대역쪽 OOOMHz 용량 2TB SSD 뜻렉터 M2 2280 SSD 인터데이스 PCle 4.0(NVMe) [조작부] 권드물러 타입 일체형 파드 권트론러 부가가능 본선서 트리거 [파위단자] 배티리 8owh USB 타입",
+      "extracted_text": "GPD WIN 5 Al Max+ 395 해외구매 32GB, SSD 2TBI해외구매 AUCTION 2,808,710원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 화면 비율 16.9 해상도 1920x10801FHD) 패널 종류 IPS(터치) 화면 밝기 5oOnit 화면 주사물 I20Hz 운영제제 원도우OS 무게 950g 상품구분 해외상품 [시스템] CPU 종류 라이젠시 Max+ CPU 코드네임 스트렉스 혜일로 CPU 넘버 395 (5.1GHz) CPU 코어수 16코어 CPU 스레드수 GPU 라데온 8060S 32GB 램 타입 LPDDRSX 램 대역쪽 8,OOOMHz 용량 2TB SSD 품페터 M.2 2280 SSD 인터페이스 PCle 4.ONVMe) [조작부] 권트물러 타입 일체형 패드  권트물러 부가가능  훨센서 트리거 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\GPD WIN 5 AI Max+ 395 해외구매 32GB, SSD 2TB해외구매\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/GPD WIN 5 AI Max+ 395 해외구매 32GB, SSD 2TB해외구매/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/GPD WIN 5 AI Max+ 395 해외구매 32GB, SSD 2TB해외구매/detail_scan.png",
+        "image_size": 96424,
+        "image_sha256": "f94900bbba4dffd98c66e3d7d37fbf5fa76ac8fc198a81cd3a3e7822f97ae500"
+      }
     }
   }
 }

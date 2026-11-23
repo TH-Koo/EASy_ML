@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=96650003",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "드리미 매트릭스10 울트라 (블랙)",
       "name": "드리미 매트릭스10 울트라 (블랙)",
       "description": "",
-      "ocr_text": "드리미 매트럭스10 울트라 (불택) Gmarket  1136,930원  무료배송 최저가 구매하기 가격비교 14 상품 상세정보 의견리뷰 23 소모품[액세서리 뉴스커유니티 연관상품 98 83 국이집 종합 도위로청이 제조회사 드리미 등록년원 2025년 08원 품목 로봇청소기 용도 졸입+물걸레 집입력 30,OOOPa 센서 LDS ToF 카메라 보안인증 다이아본드등부 인식",
+      "ocr_text": "드리미 매트럭스10 울트라 (불렉) 11> 998,930원 무료배승 최저가 구매하기 가격비교 14 상품 상세정보 의견리뷰 23 소모품|액세서리 뉴스커유니티 연관상품   회이점 종합 스위로봇징물 제조회사 드리미 등록년월 2025년 08월 품목 로봇청소기 용도 졸입+물걸레 집입력 30,o00Pa 센서 LDS ToF 카메라 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "로봇청소기": "지원",
         "흡입+물걸레": "지원",
@@ -38,11 +38,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=96650003",
       "manufacturer": "드리미, Dremi",
-      "model_name": "DM10U"
+      "model_name": "350X111X351MM"
     },
     "norm_info": {
       "company_name": "드리미, Dremi",
-      "model_name": "DM10U",
+      "model_name": "350X111X351MM",
       "product_name": "드리미 매트릭스10 울트라 (블랙)"
     },
     "db_results": [],
@@ -53,18 +53,33 @@
     "iitp_result": null,
     "patent_items_df": [
       {
-        "title": "AI 특허 내역 없음 None"
+        "source_record_id": "1020250215939",
+        "일련번호": "1",
+        "출원번호": "1020250215939",
+        "발명의명칭(한글)": "인공지능 모델 기반 무효 트래픽 탐지 규칙 관리 방법 및 시스템",
+        "출원일자": "2025-12-31",
+        "출원인": "드리미 주식회사",
+        "등록상태": "등록",
+        "초록": "본 개시는 적어도 하나의 프로세서에 의해 수행되는, 인공지능 모델 기반 무효 트래픽 탐지 규칙 관리 방법에 관한 것이다. 무효 트래픽 탐지 규칙 관리 방법은, 적어도 하나의 사용자에 대한 로그 데이터를 획득하는 단계, 획득된 로그 데이터에 기초하여 무효 트래픽과 관련된 이상 패턴 정보를 추출하는 단계 및 제1 인공지능 모델을 이용하여, 추출된 이상 패턴 정보를 기초로 무효 트래픽 탐지 규칙을 생성하는 단계를 포함한다.",
+        "IPC": "H04L 9/40|G06N 20/00|H04L 43/062",
+        "CPC": "",
+        "relevance_type": "general_ai",
+        "match_confidence": 0.45,
+        "search_alias": "드리미",
+        "search_type": "AI 특허 [일반]",
+        "search_query": "AP=[드리미]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
+        "status": "verified"
       }
     ],
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "드리미, Dremi",
-    "model_param": "DM10U",
+    "model_param": "350X111X351MM",
     "ocr_result": {
-      "extracted_text": "드리미 매트럭스10 울트라 (불택) Gmarket  1136,930원  무료배송 최저가 구매하기 가격비교 14 상품 상세정보 의견리뷰 23 소모품[액세서리 뉴스커유니티 연관상품 98 83 국이집 종합 도위로청이 제조회사 드리미 등록년원 2025년 08원 품목 로봇청소기 용도 졸입+물걸레 집입력 30,OOOPa 센서 LDS ToF 카메라 보안인증 다이아본드등부 인식",
+      "extracted_text": "드리미 매트럭스10 울트라 (불렉) 11> 998,930원 무료배승 최저가 구매하기 가격비교 14 상품 상세정보 의견리뷰 23 소모품|액세서리 뉴스커유니티 연관상품   회이점 종합 스위로봇징물 제조회사 드리미 등록년월 2025년 08월 품목 로봇청소기 용도 졸입+물걸레 집입력 30,o00Pa 센서 LDS ToF 카메라 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\드리미 매트릭스10 울트라 (블랙)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/드리미 매트릭스10 울트라 (블랙)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }

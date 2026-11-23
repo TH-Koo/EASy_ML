@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=103752161",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "로보락 Qrevo Curv 2 Flow",
       "name": "로보락 Qrevo Curv 2 Flow",
       "description": "",
-      "ocr_text": "로보락 Qrevo Curv 2 Flow AUCTION. 799,000원  무료배송 최저가 구매하기 가격비교 20 상품 상세정보 의견리뷰 945 뉴스커유니티 연관상품 집입력 20,OOOPa 센서 LDS 카메라 맵끔 3D 복증 사용시간 3시간48분(쇠대) 인식 시사물인식 감지회피 잠애물회피 오자도감지 리프팀 1.5cm 통과뇨이 11.9cm 청소운전 반복 브러쉬 메인2개 사이드2가 먼지통 0.324L 급인청소면적 316m2 충전시간 3시간 배터리용량 520OmAh 청소기능 브러쉬리프팀 물걸레리프팀 실시간물걸레세칙 물러가드",
+      "ocr_text": "로보락 Qrevo Curv 2 Flow 11> 608,240원 무료배승 최저가 구매하기 가격비교 20 상품 상세정보 의견리뷰 945 뉴스커유니티 연관상품 집입력 20,o00Pa 센서 LDS 카메라 맵핑 3D 복층 사용시간 3시간48분(최대) 인식 시사물인식 감지회피 장애물회피 오염도감지 리프팅 1.5cm 통과높이 11.9cm 청소운전 반복 브러쉬 메인2개 사이드2개 먼지통 0.324L 졸입청소면적 316m2 충전시간 3시간 배터리용량  52oOmAh Close 처스기느 We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "로봇청소기": "지원",
         "흡입+물걸레": "지원",
@@ -29,11 +29,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=103752161",
       "manufacturer": "로보락, RoboLak",
-      "model_name": "Qrevo Curv 2 Flow"
+      "model_name": "353X119X353MM"
     },
     "norm_info": {
       "company_name": "로보락, RoboLak",
-      "model_name": "Qrevo Curv 2 Flow",
+      "model_name": "353X119X353MM",
       "product_name": "로보락 Qrevo Curv 2 Flow"
     },
     "db_results": [],
@@ -65,14 +65,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "로보락, RoboLak",
-    "model_param": "Qrevo Curv 2 Flow",
+    "model_param": "353X119X353MM",
     "ocr_result": {
-      "extracted_text": "로보락 Qrevo Curv 2 Flow AUCTION. 799,000원  무료배송 최저가 구매하기 가격비교 20 상품 상세정보 의견리뷰 945 뉴스커유니티 연관상품 집입력 20,OOOPa 센서 LDS 카메라 맵끔 3D 복증 사용시간 3시간48분(쇠대) 인식 시사물인식 감지회피 잠애물회피 오자도감지 리프팀 1.5cm 통과뇨이 11.9cm 청소운전 반복 브러쉬 메인2개 사이드2가 먼지통 0.324L 급인청소면적 316m2 충전시간 3시간 배터리용량 520OmAh 청소기능 브러쉬리프팀 물걸레리프팀 실시간물걸레세칙 물러가드",
+      "extracted_text": "로보락 Qrevo Curv 2 Flow 11> 608,240원 무료배승 최저가 구매하기 가격비교 20 상품 상세정보 의견리뷰 945 뉴스커유니티 연관상품 집입력 20,o00Pa 센서 LDS 카메라 맵핑 3D 복층 사용시간 3시간48분(최대) 인식 시사물인식 감지회피 장애물회피 오염도감지 리프팅 1.5cm 통과높이 11.9cm 청소운전 반복 브러쉬 메인2개 사이드2개 먼지통 0.324L 졸입청소면적 316m2 충전시간 3시간 배터리용량  52oOmAh Close 처스기느 We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\로보락 Qrevo Curv 2 Flow\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/로보락 Qrevo Curv 2 Flow/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/로보락 Qrevo Curv 2 Flow/detail_scan.png",
+        "image_size": 76820,
+        "image_sha256": "ccfd87e3c9abc88e50026170b3678ddc1302293d3b87e75c9f38dbf6b35ce0ef"
+      }
     }
   }
 }

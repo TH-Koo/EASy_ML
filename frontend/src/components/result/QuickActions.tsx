@@ -1,12 +1,14 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { Download, RotateCcw, Share2, Bookmark, BookmarkCheck } from "lucide-react";
+import { usePathname, useRouter } from "next/navigation";
+import { Download, Search, Share2, Bookmark, BookmarkCheck } from "lucide-react";
 
 import { Button } from "@/components/primitives/Button";
 import { apiAddWatchlist } from "@/lib/api/auth";
 import { useAuth } from "@/lib/auth";
+import { loginHref } from "@/lib/loginLink";
 import type { AnalysisResult } from "@/types/analysis";
 
 interface QuickActionsProps {
@@ -15,7 +17,9 @@ interface QuickActionsProps {
 }
 
 export function QuickActions({ data, historyId }: QuickActionsProps) {
-  const { user } = useAuth();
+  const { user, mounted } = useAuth();
+  const router = useRouter();
+  const pathname = usePathname();
   const [toast,      setToast]      = useState("");
   const [bookmarked, setBookmarked] = useState(false);
   const [bmBusy,     setBmBusy]     = useState(false);
@@ -36,12 +40,38 @@ export function QuickActions({ data, historyId }: QuickActionsProps) {
       .catch(() => showToast("복사 실패 — 주소창에서 직접 복사해 주세요"));
   }
 
+  // 종이에는 ＋를 누를 수 없다. 인쇄 직전에 접힌 칸(기능별 근거, 나머지
+  // 기능, 조회한 기관 목록)을 모두 펼치고, 끝나면 사용자가 보던 대로 되돌린다.
+  // 버튼 말고 Ctrl+P 로 인쇄해도 같은 이벤트가 온다.
+  useEffect(() => {
+    let opened: HTMLDetailsElement[] = [];
+    const expand = () => {
+      opened = Array.from(document.querySelectorAll<HTMLDetailsElement>("details:not([open])"));
+      for (const d of opened) d.open = true;
+    };
+    const restore = () => {
+      for (const d of opened) d.open = false;
+      opened = [];
+    };
+    window.addEventListener("beforeprint", expand);
+    window.addEventListener("afterprint", restore);
+    return () => {
+      window.removeEventListener("beforeprint", expand);
+      window.removeEventListener("afterprint", restore);
+    };
+  }, []);
+
   function handlePdf() {
     window.print();
   }
 
   async function handleBookmark() {
-    if (!user || bookmarked || bmBusy) return;
+    if (bookmarked || bmBusy) return;
+    // 북마크는 계정에 저장된다. 비로그인이면 로그인 뒤 이 결과로 돌아오게 보낸다.
+    if (!user) {
+      router.push(loginHref(pathname));
+      return;
+    }
     setBmBusy(true);
     try {
       const url = historyId
@@ -62,11 +92,18 @@ export function QuickActions({ data, historyId }: QuickActionsProps) {
       {/* 결과 화면 맨 아래 한 줄. 결과 화면이 한 단이 되면서 사이드바의
           세로 카드에서 가로 줄로 옮겼다. */}
       <div className="no-print flex flex-wrap gap-2">
-          {/* 새 분석 */}
-          <Button asChild variant="cta" size="lg" className="flex-[2_1_12rem]">
+          {/* 다른 제품 검색 — 홈의 검색창으로. 결과 화면은 보라 테마라 cta 의
+              네이비 그라데이션 대신 브랜드 색 한 가지로 채운다. */}
+          <Button
+            asChild
+            variant="cta"
+            size="lg"
+            className="flex-[2_1_12rem]"
+            style={{ background: "var(--color-brand)" }}
+          >
             <Link href="/">
-              <RotateCcw size={16} aria-hidden />
-              새 분석 시작
+              <Search size={16} aria-hidden />
+              다른 제품 검색하기
             </Link>
           </Button>
 
@@ -103,7 +140,7 @@ export function QuickActions({ data, historyId }: QuickActionsProps) {
             size="lg"
             className="flex-[1_1_9rem]"
             onClick={handleBookmark}
-            disabled={bookmarked || bmBusy || !user}
+            disabled={bookmarked || bmBusy}
             style={
               bookmarked
                 ? {
@@ -120,6 +157,21 @@ export function QuickActions({ data, historyId }: QuickActionsProps) {
             }
           </Button>
       </div>
+
+      {/* 비로그인: 이 결과는 어디에도 저장되지 않는다는 걸 미리 알려 준다 */}
+      {mounted && !user ? (
+        <p className="no-print text-fg-muted -mt-8 text-center text-[13.5px]">
+          이 결과는 저장되지 않아요.{" "}
+          <Link href={loginHref(pathname)} className="text-brand-fg font-semibold hover:underline">
+            로그인
+          </Link>{" "}
+          또는{" "}
+          <Link href={loginHref(pathname, "register")} className="text-brand-fg font-semibold hover:underline">
+            회원가입
+          </Link>
+          하면 내 기록과 북마크를 쓸 수 있어요.
+        </p>
+      ) : null}
 
       {/* 토스트 — 규칙은 globals.css 의 `.qa-toast` 에 있다. 이전에는 인라인
           스타일에 자체 색과 `'Inter'` 를 박고, 토스트가 뜰 때마다 `<style>`

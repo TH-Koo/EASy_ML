@@ -79,16 +79,10 @@ export function HeroSearch({
       return;
     }
 
-    const token = getStoredToken();
-    if (!token) {
-      router.push("/login");
-      return;
-    }
-
     setError(null);
     setBusy(true);
     try {
-      const result = await startAnalysis(value, token);
+      const result = await startAnalysis(value, getStoredToken() ?? undefined);
       router.push(`/analysis/${result.analysis_id}`);
     } catch (err: unknown) {
       setError(

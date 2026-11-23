@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=123845964",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "아바 스마트 PRO 85 QLED 구글 5.0 TV (스탠드)",
       "name": "아바 스마트 PRO 85 QLED 구글 5.0 TV (스탠드)",
       "description": "",
-      "ocr_text": "아바 스마트 PRO 85 QLED 구글 5.0 TV (스랜드) AVA돌 1,069,000원 30,000원 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 디스플레이 QLED 해상도 4K UHD 패널 IPS때널계열 주사율 6OHz 디팅방식 로컬디망 +FALD 명만비 100만:1 밝기 480cd 서브관실 RGB 에너지효물 1등금 소비전력 105W 년형 2026년형 프로세서 MT9603 시화질 시명답비강화 시장로맛증화면 화질 4K업스레일림 모선보간(MEMC) HDR HDR1O 시력보호기능 끌리커프리 RAM 2GB ROM 16GB 크로마생플림 4:4:4(4K) OS 구글5.0 스마트 넷플렉스 유뉴부 미러림 구글TV 시스마트",
+      "ocr_text": "아바 스마트 PRO 85 QLED 구글 5.0 TV (스랜드) AVA물 1,069,000원 30,000원 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 디스플레이 QLED 해상도 4K UHD 패널 IPS패널계열 주사율 6OHz 디망방식 로걸디망+FALD 명양비 100만:1 밝기 480cd 서브l실 RGB 에너지효올 1등급 소비전력 105W 년형  2026년형 프로세서 MT9603 시화질 시명임비강화 시장르맞중화면 화질 4K업스레일림 모선보간(MEMC) HDR HDR1O 시력보호기능 플리커프리 RAM 2GB ROM 16GB 크로마생플림 4:4:414K) OS 구글5.0 스마트 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "QLED TV": "지원",
         "85인치(215cm)": "지원",
@@ -22,20 +22,20 @@
         "구글TV": "지원",
         "AI음성인식": "지원",
         "AI스마트홈": "지원",
-        "[부가] HDMI(전체)": "3개",
+        "[규격] HDMI(전체)": "3개",
         "베사홀": "400x300mm",
         "크기(가로x세로x깊이)": "1889x1080(1155)x77(352)mm",
         "무게": "32.7(33.6)kg"
       },
-      "raw_specs": "QLED TV / 85인치(215cm) / 4K UHD / 주사율 : 60Hz / 에너지효율 : 1등급 / 2026년형 / [화질] HDR10 / 플리커프리 / [스마트] 넷플릭스 / 유튜브 / 미러링 / 구글TV / AI음성인식 / AI스마트홈 / [부가] HDMI(전체) : 3개 / 베사홀 : 400x300mm / 크기(가로x세로x깊이) : 1889x1080(1155)x77(352)mm / 무게 : 32.7(33.6)kg",
+      "raw_specs": "QLED TV / 85인치(215cm) / 4K UHD / 주사율 : 60Hz / 에너지효율 : 1등급 / 2026년형 / [화질] HDR10 / 플리커프리 / [스마트] 넷플릭스 / 유튜브 / 미러링 / 구글TV / AI음성인식 / AI스마트홈 / [규격] HDMI(전체) : 3개 / 베사홀 : 400x300mm / 크기(가로x세로x깊이) : 1889x1080(1155)x77(352)mm / 무게 : 32.7(33.6)kg",
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=123845964",
       "manufacturer": "아바, ABa",
-      "model_name": "AVB-SP85Q"
+      "model_name": "400X300MM"
     },
     "norm_info": {
       "company_name": "아바, ABa",
-      "model_name": "AVB-SP85Q",
+      "model_name": "400X300MM",
       "product_name": "아바 스마트 PRO 85 QLED 구글 5.0 TV (스탠드)"
     },
     "db_results": [
@@ -358,7 +358,70 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 디지털 휴먼 <span class=\"search_word\">아바</span>타의 기이함이 멀티미디어 학습에서 학습자의 인지 과정 및 감정 상태에 미치는 영향: 생리학적 측정 접근 방식 등 총 8건",
+      "detail": "NTIS에서 [아바] 검색어로 조회한 결과, AI 관련 과제 8건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "디지털 휴먼 <span class=\"search_word\">아바</span>타의 기이함이 멀티미디어 학습에서 학습자의 인지 과정 및 감정 상태에 미치는 영향: 생리학적 측정 접근 방식",
+          "project_number": "2340043538",
+          "lead_company": "아바",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "인간과 <span class=\"search_word\">아바</span>타의 감각 및 경험 공유를 위한 글로벌 스케일 멀티버스 플랫폼 개발",
+          "project_number": "1415187416",
+          "lead_company": "아바",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "2D <span class=\"search_word\">아바</span>타의 인터랙티브 커스터마이징과 실시간 애니메이션 컨트롤을 위한 딥러닝 기반의 빠른 프로토타이핑 시스템",
+          "project_number": "1711168781",
+          "lead_company": "아바",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "디지털 휴먼 <span class=\"search_word\">아바</span>타의 기이함이 멀티미디어 학습에서 학습자의 인지 과정 및 감정 상태에 미치는 영향: 생리학적 측정 접근 방식",
+          "project_number": "2340009302",
+          "lead_company": "아바",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "2D <span class=\"search_word\">아바</span>타의 인터랙티브 커스터마이징과 실시간 애니메이션 컨트롤을 위한 딥러닝 기반의 빠른 프로토타이핑 시스템",
+          "project_number": "1711139629",
+          "lead_company": "아바",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "디지털 휴먼 <span class=\"search_word\">아바</span>타의 기이함이 멀티미디어 학습에서 학습자의 인지 과정 및 감정 상태에 미치는 영향: 생리학적 측정 접근 방식",
+          "project_number": "2340058703",
+          "lead_company": "아바",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "2D <span class=\"search_word\">아바</span>타의 인터랙티브 커스터마이징과 실시간 애니메이션 컨트롤을 위한 딥러닝 기반의 빠른 프로토타이핑 시스템",
+          "project_number": "1711121163",
+          "lead_company": "아바",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "청소년 <span class=\"search_word\">아바</span>타의 복합 감각 디지털 페노타이핑 기반 마음 돌봄 멀티버스 플랫폼",
+          "project_number": "2410005261",
+          "lead_company": "아바",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -488,15 +551,15 @@
         "status": "verified"
       },
       {
-        "source_record_id": "1020230023411",
+        "source_record_id": "1020230023409",
         "일련번호": "11",
-        "출원번호": "1020230023411",
-        "발명의명칭(한글)": "메타버스에서 AI 아바타가 사건의 승소 확률을 알려주고, 가이드 해주는 서비스",
+        "출원번호": "1020230023409",
+        "발명의명칭(한글)": "지역 내 길고양이들의 개체수를 메타버스 환경에서 실시간으로 모니터링해 중성화 수술 및 동물을 대상으로 한 범죄를 예상하는 서비스",
         "출원일자": "2023-02-22",
         "출원인": "(주)아바토리",
         "등록상태": "취하",
-        "초록": "본 발명에 따른 메타버스에서 AI 아바타가 사건의 승소 확률을 알려주고, 가이드 해주는 서비스 시스템은  소송사건에 대한 정보를 수집하는 정보 수집부;  소송사건에 대한 정보를 기초로, 메타버스에서 AI 아바타가 사건의 승소 확률을 계산해서 알려주는 정보 제공부; 및  메타버스에서 AI 아바타가 사건의 대응 방안을 가이드 해 주는 가이드부  를 포함한다.",
-        "IPC": "G06Q 50/10|G06T 13/40|G06T 19/00|G06Q 50/18",
+        "초록": "본 발명에 따른 지역 내 길고양이들의 개체수를 메타버스 환경에서 실시간으로 모니터링해 중성화 수술 및 동물을 대상으로 한 범죄를 예상하는 서비스 시스템은  지역 내 길고양이들의 개체수를 메타버스 환경에서 실시간으로 모니터링하는 모니터링부;  길고양이들에 대한 중성화 수술 관련 정보를 제공하는 정보 제공부; 및  AI를 이용하여 동물을 대상으로 한 범죄를 예상하는 예상부  를 포함한다.",
+        "IPC": "G06Q 50/10|G06Q 50/22|G06Q 10/04",
         "CPC": "",
         "relevance_type": "general_ai",
         "match_confidence": 0.45,
@@ -506,15 +569,15 @@
         "status": "verified"
       },
       {
-        "source_record_id": "1020230023409",
+        "source_record_id": "1020230023411",
         "일련번호": "12",
-        "출원번호": "1020230023409",
-        "발명의명칭(한글)": "지역 내 길고양이들의 개체수를 메타버스 환경에서 실시간으로 모니터링해 중성화 수술 및 동물을 대상으로 한 범죄를 예상하는 서비스",
+        "출원번호": "1020230023411",
+        "발명의명칭(한글)": "메타버스에서 AI 아바타가 사건의 승소 확률을 알려주고, 가이드 해주는 서비스",
         "출원일자": "2023-02-22",
         "출원인": "(주)아바토리",
         "등록상태": "취하",
-        "초록": "본 발명에 따른 지역 내 길고양이들의 개체수를 메타버스 환경에서 실시간으로 모니터링해 중성화 수술 및 동물을 대상으로 한 범죄를 예상하는 서비스 시스템은  지역 내 길고양이들의 개체수를 메타버스 환경에서 실시간으로 모니터링하는 모니터링부;  길고양이들에 대한 중성화 수술 관련 정보를 제공하는 정보 제공부; 및  AI를 이용하여 동물을 대상으로 한 범죄를 예상하는 예상부  를 포함한다.",
-        "IPC": "G06Q 50/10|G06Q 50/22|G06Q 10/04",
+        "초록": "본 발명에 따른 메타버스에서 AI 아바타가 사건의 승소 확률을 알려주고, 가이드 해주는 서비스 시스템은  소송사건에 대한 정보를 수집하는 정보 수집부;  소송사건에 대한 정보를 기초로, 메타버스에서 AI 아바타가 사건의 승소 확률을 계산해서 알려주는 정보 제공부; 및  메타버스에서 AI 아바타가 사건의 대응 방안을 가이드 해 주는 가이드부  를 포함한다.",
+        "IPC": "G06Q 50/10|G06T 13/40|G06T 19/00|G06Q 50/18",
         "CPC": "",
         "relevance_type": "general_ai",
         "match_confidence": 0.45,
@@ -635,14 +698,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "아바, ABa",
-    "model_param": "AVB-SP85Q",
+    "model_param": "400X300MM",
     "ocr_result": {
-      "extracted_text": "아바 스마트 PRO 85 QLED 구글 5.0 TV (스랜드) AVA돌 1,069,000원 30,000원 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 디스플레이 QLED 해상도 4K UHD 패널 IPS때널계열 주사율 6OHz 디팅방식 로컬디망 +FALD 명만비 100만:1 밝기 480cd 서브관실 RGB 에너지효물 1등금 소비전력 105W 년형 2026년형 프로세서 MT9603 시화질 시명답비강화 시장로맛증화면 화질 4K업스레일림 모선보간(MEMC) HDR HDR1O 시력보호기능 끌리커프리 RAM 2GB ROM 16GB 크로마생플림 4:4:4(4K) OS 구글5.0 스마트 넷플렉스 유뉴부 미러림 구글TV 시스마트",
+      "extracted_text": "아바 스마트 PRO 85 QLED 구글 5.0 TV (스랜드) AVA물 1,069,000원 30,000원 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 디스플레이 QLED 해상도 4K UHD 패널 IPS패널계열 주사율 6OHz 디망방식 로걸디망+FALD 명양비 100만:1 밝기 480cd 서브l실 RGB 에너지효올 1등급 소비전력 105W 년형  2026년형 프로세서 MT9603 시화질 시명임비강화 시장르맞중화면 화질 4K업스레일림 모선보간(MEMC) HDR HDR1O 시력보호기능 플리커프리 RAM 2GB ROM 16GB 크로마생플림 4:4:414K) OS 구글5.0 스마트 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\아바 스마트 PRO 85 QLED 구글 5.0 TV (스탠드)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/아바 스마트 PRO 85 QLED 구글 5.0 TV (스탠드)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/아바 스마트 PRO 85 QLED 구글 5.0 TV (스탠드)/detail_scan.png",
+        "image_size": 85321,
+        "image_sha256": "6672c0bc17cc83e28b76ab068ad266fb6172c8066449cf2fc0161760916e6976"
+      }
     }
   }
 }

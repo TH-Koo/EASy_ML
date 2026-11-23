@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=63466001",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "SK매직 올클린 디아트 ACL-16C1A",
       "name": "SK매직 올클린 디아트 ACL-16C1A",
       "description": "",
-      "ocr_text": "SK매직 올흘린 디아트 ACL-16C1A 11> 1,068,290원 무료배송 최저가 구매하기 가격비교 29 상품 상세정보 의견리뷰 연관상품 공기창정기능 360도 필터 센서 먼지 모드 자동 수면 티보 스마트기능 스마드근제어 필터점검 교제일림 부가기능 청정도표시 버튼잠금 판량조절 이동식바퀴 그 외 기능 분리 세칙 가능 / A청점 인종 CA인층 KAA아도디인송 소비전력 45W 무게 크기(가로x세로x깊 306x750x323mnm [g 인종 적합성평가인층 R-R-T8R-ACL-16CIA 인공번호 6인 안전확인인승 YHO7078-23001A 인종번로 확인 5kg",
+      "ocr_text": "SK매직 올플린 디아트 ACL-16C1A 11> 1,068,290원   무료배송 최저가 구매하기 가격비교 29 상품 상세정보 의견리뷰 연관상품 공기청정기능 360도 필터 센서 먼지 모드_ 자동 터보 스마트기능 스마트겨제어 필터점검교체알림 부가기능 청정도표시 버튼잠금 풍량조절 이동식바퀴  그외 기능 분리 세적 가능 / 시청정 인종 CA인종 KAA아I토피인증 소비전력 45W 무게 12.5kg 크기가로x세로x깊 306x750x323mm Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "공기청정기": "지원",
         "16평(52.8㎡)": "지원",
@@ -44,7 +44,42 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 전자부품/제품용 화학소재 유해물질 신속 검출 자동화시스템 개발 등 총 4건",
+      "detail": "NTIS에서 [SK 매직] 검색어로 조회한 결과, AI 관련 과제 4건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "전자부품/제품용 화학소재 유해물질 신속 검출 자동화시스템 개발",
+          "project_number": "2410002643",
+          "lead_company": "SK 매직",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "Vision AI를 활용한 반려동물 원발성 피부병변 탐지 및 피부 질환 진단 솔루션",
+          "project_number": "2420022003",
+          "lead_company": "SK 매직",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "인공지능 기반 300mm Wafer의 Flatness 및 불량 모드 동시 검사 장비 개발",
+          "project_number": "2710084648",
+          "lead_company": "SK MAGIC",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "인공지능 기반 300mm Wafer의 Flatness 및 불량 모드 동시 검사 장비 개발",
+          "project_number": "2710093463",
+          "lead_company": "SK MAGIC",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -56,12 +91,17 @@
     "target_company_name": "SK 매직, SK Magic",
     "model_param": "ACL-16C1A",
     "ocr_result": {
-      "extracted_text": "SK매직 올흘린 디아트 ACL-16C1A 11> 1,068,290원 무료배송 최저가 구매하기 가격비교 29 상품 상세정보 의견리뷰 연관상품 공기창정기능 360도 필터 센서 먼지 모드 자동 수면 티보 스마트기능 스마드근제어 필터점검 교제일림 부가기능 청정도표시 버튼잠금 판량조절 이동식바퀴 그 외 기능 분리 세칙 가능 / A청점 인종 CA인층 KAA아도디인송 소비전력 45W 무게 크기(가로x세로x깊 306x750x323mnm [g 인종 적합성평가인층 R-R-T8R-ACL-16CIA 인공번호 6인 안전확인인승 YHO7078-23001A 인종번로 확인 5kg",
+      "extracted_text": "SK매직 올플린 디아트 ACL-16C1A 11> 1,068,290원   무료배송 최저가 구매하기 가격비교 29 상품 상세정보 의견리뷰 연관상품 공기청정기능 360도 필터 센서 먼지 모드_ 자동 터보 스마트기능 스마트겨제어 필터점검교체알림 부가기능 청정도표시 버튼잠금 풍량조절 이동식바퀴  그외 기능 분리 세적 가능 / 시청정 인종 CA인종 KAA아I토피인증 소비전력 45W 무게 12.5kg 크기가로x세로x깊 306x750x323mm Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\SK매직 올클린 디아트 ACL-16C1A\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/SK매직 올클린 디아트 ACL-16C1A/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/SK매직 올클린 디아트 ACL-16C1A/detail_scan.png",
+        "image_size": 76209,
+        "image_sha256": "fa890449c101088655043c0f49b6c62d60a0ac3f9bc2eaf7125283aeaf5288a4"
+      }
     }
   }
 }

@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=122619279",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "TCL 아이팔콘 55U65A Pro (스탠드)",
       "name": "TCL 아이팔콘 55U65A Pro (스탠드)",
       "description": "",
-      "ocr_text": "TCL 아이팔익 55U65A Pro (스랜드) TCL 공식스토어 559,000원   무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 디스플레이 QLED 해상도 4K UHD 주사물 6OHz 명압비 5선:7 에너지효물 1등금 소비전력 135W 년형 2026년형 프로세서 AiPQ 시화질 A밝기조설 시모선감지 A명답비강화 시장로맛출화면 화질 4K업스레일림 장르맛출화면 모선보간(MEMC) HDR 돌비비전 HDRIO+ HDR자농조설 시력보호기능 루라이드자단 게임 HDMI2.1 VRR(6OHz) ALLM 게임모드 스마트 넷플렉스 유뉴부",
+      "ocr_text": "TCL 아이팔론 55U65A Pro (스랜드) TCL 공식스토어 559,000원 무료배송  최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 디스플레이 QLED 해상도 4K UHD 주사율 6OHz 명양비 5천:1 에너지효물 1등급 소비전력 135W 년형 2026년형 프로세서 AiPQ 시화질 A밝기조절 시모선감지 A명임비강화 시장르맞중화면 화질 4K업스레일림 장르맞춥화면 모선보간(MEMC) HDR 돌비비전 HDRIO+ HDR자동조절 시력보호기능 불루라이트차단 게임 HDMI21 VRR(6OHz) Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "QLED TV": "지원",
         "55인치(139cm)": "지원",
@@ -36,18 +36,46 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=122619279",
       "manufacturer": "TCL Co., LTD.   TCL",
-      "model_name": "55U65A Pro"
+      "model_name": "55U65A"
     },
     "norm_info": {
       "company_name": "TCL Co., LTD.   TCL",
-      "model_name": "55U65A Pro",
+      "model_name": "55U65A",
       "product_name": "TCL 아이팔콘 55U65A Pro (스탠드)"
     },
     "db_results": [],
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 온디바이스 LLM 데이터 플로우에 최적화된 차세대 LPDDR PIM 구조 및 반도체 개발 등 총 3건",
+      "detail": "NTIS에서 [TCL CO.] 검색어로 조회한 결과, AI 관련 과제 3건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "온디바이스 LLM 데이터 플로우에 최적화된 차세대 LPDDR PIM 구조 및 반도체 개발",
+          "project_number": "2710107756",
+          "lead_company": "TCL CO.",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "생성형 AI 및 클라우드 기반 콘텐츠 제작 R&D 인재 양성",
+          "project_number": "2370000140",
+          "lead_company": "TCL CO.",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "위성·AI 기반 전국 조경수목 자원 디지털화 및 탄소가치 계량 플랫폼 개발",
+          "project_number": "2420033285",
+          "lead_company": "TCL CO.",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -57,14 +85,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "TCL Co., LTD.   TCL",
-    "model_param": "55U65A Pro",
+    "model_param": "55U65A",
     "ocr_result": {
-      "extracted_text": "TCL 아이팔익 55U65A Pro (스랜드) TCL 공식스토어 559,000원   무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 디스플레이 QLED 해상도 4K UHD 주사물 6OHz 명압비 5선:7 에너지효물 1등금 소비전력 135W 년형 2026년형 프로세서 AiPQ 시화질 A밝기조설 시모선감지 A명답비강화 시장로맛출화면 화질 4K업스레일림 장르맛출화면 모선보간(MEMC) HDR 돌비비전 HDRIO+ HDR자농조설 시력보호기능 루라이드자단 게임 HDMI2.1 VRR(6OHz) ALLM 게임모드 스마트 넷플렉스 유뉴부",
+      "extracted_text": "TCL 아이팔론 55U65A Pro (스랜드) TCL 공식스토어 559,000원 무료배송  최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 디스플레이 QLED 해상도 4K UHD 주사율 6OHz 명양비 5천:1 에너지효물 1등급 소비전력 135W 년형 2026년형 프로세서 AiPQ 시화질 A밝기조절 시모선감지 A명임비강화 시장르맞중화면 화질 4K업스레일림 장르맞춥화면 모선보간(MEMC) HDR 돌비비전 HDRIO+ HDR자동조절 시력보호기능 불루라이트차단 게임 HDMI21 VRR(6OHz) Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\TCL 아이팔콘 55U65A Pro (스탠드)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/TCL 아이팔콘 55U65A Pro (스탠드)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/TCL 아이팔콘 55U65A Pro (스탠드)/detail_scan.png",
+        "image_size": 82325,
+        "image_sha256": "0d5c5eca35600ca3312cd9cb75ab08d627fb7e601e03eec446aa4bda1a3766ed"
+      }
     }
   }
 }

@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=89527184",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "샤크닌자 샤크 에보파워 시스템 FIT+ LC150KRBL",
       "name": "샤크닌자 샤크 에보파워 시스템 FIT+ LC150KRBL",
       "description": "",
-      "ocr_text": "사크난자 사크 에보파위 시스템 FIT+ LCI5OKRBL 11> 553,180원  무료배송 최저가 구매하기 가격비교 47 상품 상세정보 의견리뷰 61 연관상품 사용시간 41분(최대) 스테이선 먼지비움 랜드거지 청소기능 시청소 먼지감지센서 필터 워서불먼지필터 배터리 배티리 내장령 배터리종류 리롭이온 배티리용탕 3,o0OmAh 전합 11.1V 메인브러쉬 전방향회전 추가e러쉬 침구브러쉬 틈새부러쉬 패부리브러쉬 편의기능 먼지통분리 무게 [@ 인종 적합성평가인층 R-R-sn8-LCI5OKRBL | 인종변호 확인 안전확인인승 XU103298-23001A 인증번호 꽉인 1.7k9",
+      "ocr_text": "사크난자 사크 예보파위 시스템 FIT+ LCI5OKRBL 11> 548,990원 무료배승 최저가 구매하기 가격비교 45 상품 상세정보 의견리뷰 61 연관상품 밤식 집입전용 배터리 사용시간 41분(최대) 필터 워서들먼지필터 스테이선 먼지비움 충전 랜드거지 청소기능 시청소 먼지감지센서 배터리 배터리 내장형 출시연도 2025년형 배터리 배터리종류 리듬이온 배터리용량 3,oo0mAh 전압 117V 메인터러쉬 Close 전방향회전 We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "핸디스틱청소기": "지원",
         "무선": "지원",
@@ -129,10 +129,10 @@
     "target_company_name": "샤크닌자, Sharkninja",
     "model_param": "LC150KRBL",
     "ocr_result": {
-      "extracted_text": "사크난자 사크 에보파위 시스템 FIT+ LCI5OKRBL 11> 553,180원  무료배송 최저가 구매하기 가격비교 47 상품 상세정보 의견리뷰 61 연관상품 사용시간 41분(최대) 스테이선 먼지비움 랜드거지 청소기능 시청소 먼지감지센서 필터 워서불먼지필터 배터리 배티리 내장령 배터리종류 리롭이온 배티리용탕 3,o0OmAh 전합 11.1V 메인브러쉬 전방향회전 추가e러쉬 침구브러쉬 틈새부러쉬 패부리브러쉬 편의기능 먼지통분리 무게 [@ 인종 적합성평가인층 R-R-sn8-LCI5OKRBL | 인종변호 확인 안전확인인승 XU103298-23001A 인증번호 꽉인 1.7k9",
+      "extracted_text": "사크난자 사크 예보파위 시스템 FIT+ LCI5OKRBL 11> 548,990원 무료배승 최저가 구매하기 가격비교 45 상품 상세정보 의견리뷰 61 연관상품 밤식 집입전용 배터리 사용시간 41분(최대) 필터 워서들먼지필터 스테이선 먼지비움 충전 랜드거지 청소기능 시청소 먼지감지센서 배터리 배터리 내장형 출시연도 2025년형 배터리 배터리종류 리듬이온 배터리용량 3,oo0mAh 전압 117V 메인터러쉬 Close 전방향회전 We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\샤크닌자 샤크 에보파워 시스템 FIT+ LC150KRBL\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/샤크닌자 샤크 에보파워 시스템 FIT+ LC150KRBL/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }

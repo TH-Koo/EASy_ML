@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=28414934",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "로엘 보스 헬스케어 AI 가습기",
       "name": "로엘 보스 헬스케어 AI 가습기",
       "description": "",
-      "ocr_text": "로엘 보스 헬스웨어 Al 가습기 모일전자 129,C 000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 28 뉴스커유니티 연관상품 수조분리 분리형스조 세적관리 완벽세칙 UV실군 수조용랑 12.OL 연속사용 100시간 최대분무탕 6OOcc 가슴조절 습도조절 습도표시 분무탕조철 분무구회전 편의기능 상부금수식 수위표시 스트완제어 리모권 타이머 최저소음 30dB [g 인종 적합성평가인층 R-R-ROE-BTAI | 인증번호 확인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인 제조사제공 로엘 못데ON 상품 설명 복사하기",
+      "ocr_text": "로엘 보스 헬스웨어 Al 가슴기 로얼전자   129,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 28 뉴스커유니티 연관상품 수조분리 분리형수조 세적관리 완벽세적 UV살군 수조용량 12.0L 연속사용 100시간 최대분무량 60Occ 가슴조절 습도조절 습도표시 분무량조절 분무구회전 편의기능 삼부금수식 수위표시 스마트겨제어 '리모권 타이머 '최저소음 30dB [@ 인종 적합성평가인증  R-R-ROE-BTAI |인종번호 확인 안전확인인증 상세설명 판매 사이트 문의 인중번호 확인 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "가습기": "지원",
         "복합식": "지원",
@@ -30,18 +30,74 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=28414934",
       "manufacturer": "LORENZ, League of Legends",
-      "model_name": "LROEL-B-AI"
+      "model_name": "310X715X180MM"
     },
     "norm_info": {
       "company_name": "LORENZ, League of Legends",
-      "model_name": "LROEL-B-AI",
+      "model_name": "310X715X180MM",
       "product_name": "로엘 보스 헬스케어 AI 가습기"
     },
     "db_results": [],
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 인공지능 기반의 실시간 이스포츠 중계 최적화 기술 연구 등 총 7건",
+      "detail": "NTIS에서 [LEAGUE OF LEGENDS] 검색어로 조회한 결과, AI 관련 과제 7건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "인공지능 기반의 실시간 이스포츠 중계 최적화 기술 연구",
+          "project_number": "2420016197",
+          "lead_company": "LEAGUE OF LEGENDS",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "맞춤화가 쉬운 실용적인 개체명 인식기 개발",
+          "project_number": "1345342646",
+          "lead_company": "LEAGUE OF LEGENDS",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "맞춤화가 쉬운 실용적인 개체명 인식기 개발",
+          "project_number": "1345348471",
+          "lead_company": "LEAGUE OF LEGENDS",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "맞춤화가 쉬운 실용적인 개체명 인식기 개발",
+          "project_number": "1345320083",
+          "lead_company": "LEAGUE OF LEGENDS",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "인공지능 기반의 실시간 이스포츠 중계 최적화 기술 연구",
+          "project_number": "2420005711",
+          "lead_company": "LEAGUE OF LEGENDS",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "적응형 AI 관측기를 기반으로한 양자 암호 통신의 동기화 시스템 개발",
+          "project_number": "2420026655",
+          "lead_company": "LORENZ",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "적응형 AI 관측기를 기반으로한 양자 암호 통신의 동기화 시스템 개발",
+          "project_number": "2420024312",
+          "lead_company": "LORENZ",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -51,18 +107,18 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "LORENZ, League of Legends",
-    "model_param": "LROEL-B-AI",
+    "model_param": "310X715X180MM",
     "ocr_result": {
-      "extracted_text": "로엘 보스 헬스웨어 Al 가습기 모일전자 129,C 000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 28 뉴스커유니티 연관상품 수조분리 분리형스조 세적관리 완벽세칙 UV실군 수조용랑 12.OL 연속사용 100시간 최대분무탕 6OOcc 가슴조절 습도조절 습도표시 분무탕조철 분무구회전 편의기능 상부금수식 수위표시 스트완제어 리모권 타이머 최저소음 30dB [g 인종 적합성평가인층 R-R-ROE-BTAI | 인증번호 확인 안전확인인승 상세설명 판매 사이트 문의 인증번호 확인 제조사제공 로엘 못데ON 상품 설명 복사하기",
+      "extracted_text": "로엘 보스 헬스웨어 Al 가슴기 로얼전자   129,000원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 28 뉴스커유니티 연관상품 수조분리 분리형수조 세적관리 완벽세적 UV살군 수조용량 12.0L 연속사용 100시간 최대분무량 60Occ 가슴조절 습도조절 습도표시 분무량조절 분무구회전 편의기능 삼부금수식 수위표시 스마트겨제어 '리모권 타이머 '최저소음 30dB [@ 인종 적합성평가인증  R-R-ROE-BTAI |인종번호 확인 안전확인인증 상세설명 판매 사이트 문의 인중번호 확인 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\로엘 보스 헬스케어 AI 가습기\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/로엘 보스 헬스케어 AI 가습기/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1,
       "_cache_meta": {
-        "image_path": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\product_images\\로엘 보스 헬스케어 AI 가습기\\detail_scan.png",
-        "image_size": 60483,
-        "image_sha256": "de4c4df0cebfe5d06c708740ee8d2c2878a1acee7b08d573e385a30af77e5913"
+        "image_path": "/home/projects/EASy_ML/product_images/로엘 보스 헬스케어 AI 가습기/detail_scan.png",
+        "image_size": 80509,
+        "image_sha256": "70a35cc13f9adce2251cc27209fa18c9605f2f87429ae1132faaf2b23bd59d1a"
       }
     }
   }

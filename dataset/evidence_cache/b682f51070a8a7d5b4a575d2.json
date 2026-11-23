@@ -1,28 +1,28 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=102002555",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "스틸시리즈 Arctis Nova 7X Gen2 (블랙, 정품)",
       "name": "스틸시리즈 Arctis Nova 7X Gen2 (블랙, 정품)",
       "description": "",
-      "ocr_text": "스틱시리즈 Arctis Nova 7X Gen2 (불렉 정품) 스틱시리즈 공식돌 299,000원  무료배송 최저가 구매하기 가격비교 10 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 유넷크기 20~4Omm 연결방식 USB-C농글 2.4GHz 불루투스 불루투스 V5.0 지원 빌티포인트 임피터스 362 감도 105dB 주파수 2OHz~22kHz 사운드기능 A노이즈랜쓸림가이 ENC노이즈랜되림마 편의기능 리충전 사용시간 54시간 증전시간 1시간 미만 충전단자 USB-C 패드형대 오버이어 권트론러형태 일제형조작부 권트물러기능 볼룹 조설 음소거",
+      "ocr_text": "스틱시리즈 Arctis Nova 7X Gen2 (불렉 정품) 스틱시리즈정품판매점   239,000원 무료배송 최저가 구매하기 가격비교 10 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 유냉크기 20~40mm 연결밤식 USB-C동글 2.4GHz 불무투스 불루투스 V5.0 지원 멀리포인트 무선호환 PS4 PS5 년~도스위치 임피터스 362 감도 105dB 주파수 2OHz~22kHz 사용시간 54시간 충전시간 1시간 미만  충전단자 USB-C 사운드기능 AI노이즈랜늘림마이 ENC노이즈랜되림마 이크 편의기능 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "무선 PC헤드셋": "지원",
-        "USB-C동글": "지원",
         "2.4GHz": "지원",
+        "USB-C동글": "지원",
         "블루투스 v5.0": "지원",
         "멀티포인트": "지원",
-        "무선호환": "PS4 , PS5 , 닌텐도스위치",
+        "무선호환": "닌텐도스위치 , PS5 , PS4",
         "36Ω": "지원",
         "105dB": "지원",
         "20Hz~22kHz": "지원",
-        "AI노이즈캔슬링마이크": "지원",
-        "ENC노이즈캔슬링마이크": "지원",
-        "퀵충전": "지원",
         "사용시간": "54시간",
         "충전시간": "1시간 미만",
         "충전단자": "USB-C",
+        "ENC노이즈캔슬링마이크": "지원",
+        "AI노이즈캔슬링마이크": "지원",
+        "퀵충전": "지원",
         "[형태] 오버이어": "지원",
         "일체형조작부": "지원",
         "컨트롤러기능": "볼륨 조절 , 음소거",
@@ -34,15 +34,15 @@
         "360도사운드": "지원",
         "출시가": "299,000원"
       },
-      "raw_specs": "무선 PC헤드셋 / USB-C동글 / 2.4GHz / 블루투스 v5.0 / 멀티포인트 / 무선호환 : PS4 , PS5 , 닌텐도스위치 / 36Ω / 105dB / 20Hz~22kHz / AI노이즈캔슬링마이크 / ENC노이즈캔슬링마이크 / 퀵충전 / 사용시간 : 54시간 / 충전시간 : 1시간 미만 / 충전단자 : USB-C / [형태] 오버이어 / 일체형조작부 / 컨트롤러기능 : 볼륨 조절 , 음소거 / 마이크형태 : 수납형 / 밴드형태 : 슬라이더형 , 접이식 / 색상 : 블랙 / 무게 : 326g / EQ설정 / 360도사운드 / 출시가: 299,000원",
+      "raw_specs": "무선 PC헤드셋 / 2.4GHz / USB-C동글 / 블루투스 v5.0 / 멀티포인트 / 무선호환 : 닌텐도스위치 , PS5 , PS4 / 36Ω / 105dB / 20Hz~22kHz / 사용시간 : 54시간 / 충전시간 : 1시간 미만 / 충전단자 : USB-C / ENC노이즈캔슬링마이크 / AI노이즈캔슬링마이크 / 퀵충전 / [형태] 오버이어 / 일체형조작부 / 컨트롤러기능 : 볼륨 조절 , 음소거 / 마이크형태 : 수납형 / 밴드형태 : 슬라이더형 , 접이식 / 색상 : 블랙 / 무게 : 326g / EQ설정 / 360도사운드 / 출시가: 299,000원",
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=102002555",
       "manufacturer": "스틸시리즈, Steel Series",
-      "model_name": "ARCTIS-NOVA7X-GEN2"
+      "model_name": "GEN2"
     },
     "norm_info": {
       "company_name": "스틸시리즈, Steel Series",
-      "model_name": "ARCTIS-NOVA7X-GEN2",
+      "model_name": "GEN2",
       "product_name": "스틸시리즈 Arctis Nova 7X Gen2 (블랙, 정품)"
     },
     "db_results": [
@@ -212,7 +212,35 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: DARKFIELD LIGHT 영상분석을 활용한 철강재 불량검사시스템 개발 등 총 3건",
+      "detail": "NTIS에서 [STEEL SERIES] 검색어로 조회한 결과, AI 관련 과제 3건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "DARKFIELD LIGHT 영상분석을 활용한 철강재 불량검사시스템 개발",
+          "project_number": "2420003058",
+          "lead_company": "STEEL SERIES",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "납기/수요예측 딥러닝 AI 알고리즘을 활용한 철강규격소재 제품의 생산공정 개선",
+          "project_number": "1425180476",
+          "lead_company": "STEEL SERIES",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "납기/수요예측 딥러닝 AI 알고리즘을 활용한 철강규격소재 제품의 생산공정 개선",
+          "project_number": "2420002085",
+          "lead_company": "STEEL SERIES",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -222,12 +250,12 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "스틸시리즈, Steel Series",
-    "model_param": "ARCTIS-NOVA7X-GEN2",
+    "model_param": "GEN2",
     "ocr_result": {
-      "extracted_text": "스틱시리즈 Arctis Nova 7X Gen2 (불렉 정품) 스틱시리즈 공식돌 299,000원  무료배송 최저가 구매하기 가격비교 10 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 유넷크기 20~4Omm 연결방식 USB-C농글 2.4GHz 불루투스 불루투스 V5.0 지원 빌티포인트 임피터스 362 감도 105dB 주파수 2OHz~22kHz 사운드기능 A노이즈랜쓸림가이 ENC노이즈랜되림마 편의기능 리충전 사용시간 54시간 증전시간 1시간 미만 충전단자 USB-C 패드형대 오버이어 권트론러형태 일제형조작부 권트물러기능 볼룹 조설 음소거",
+      "extracted_text": "스틱시리즈 Arctis Nova 7X Gen2 (불렉 정품) 스틱시리즈정품판매점   239,000원 무료배송 최저가 구매하기 가격비교 10 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 유냉크기 20~40mm 연결밤식 USB-C동글 2.4GHz 불무투스 불루투스 V5.0 지원 멀리포인트 무선호환 PS4 PS5 년~도스위치 임피터스 362 감도 105dB 주파수 2OHz~22kHz 사용시간 54시간 충전시간 1시간 미만  충전단자 USB-C 사운드기능 AI노이즈랜늘림마이 ENC노이즈랜되림마 이크 편의기능 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\스틸시리즈 Arctis Nova 7X Gen2 (블랙, 정품)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/스틸시리즈 Arctis Nova 7X Gen2 (블랙, 정품)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }

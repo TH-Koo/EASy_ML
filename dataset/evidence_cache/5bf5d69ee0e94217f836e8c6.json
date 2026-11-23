@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=77964938",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "삼성전자 비스포크 AI 콤보 WD90F25CHW (기본형)",
       "name": "삼성전자 비스포크 AI 콤보 WD90F25CHW (기본형)",
       "description": "",
-      "ocr_text": "삼성전자 비스포크 Al 콤보 WD9OF25CHW (기본형) AUCTION 3,234,380원   무료배승 최저가 구매하기 가격비교 65 상품 상세정보 의견리뷰 23 연관상품 건조기능 옷감손상적은 인번터 하드덤프 에너지등급 에너지: 1등금 소비전력 세탁2100w 건조10O0W 시I기능 A세탁건조 AI에너지절막 Al롬 진용소음 진능소음저감 세탁기능 세탁물감지>Al 코스 셋팀 세제자농부안 71단계 세제함 일반97Oml 유연제83Oml 55주) 주요 기능 미세플라스틱저감 군 세제스랜 정량투입 평레이 코스 스틱실군 세탁건조시간 쾌속코스 89분 조작 풀티치조작 원격제이 음성명령",
+      "ocr_text": "삼성전자 비스포크 Al 콤보 WD9OF25CHW (기본형) 11> 3,254,390원  무료배승 최저가 구매하기 가격비교 56 상품 상세정보 의견리뷰 23 연관상품 건조기능 옷감손상적은 인번터 하트덤프 에너지등급 에너지: 1등급 소비전력 세탁21ooW 건조I0O0W 시기능 시세탁건조 시에너지절약 A급 진동소음 진동소음저감 세닥기능 세탁물감지>Al 코스 셋팅 세제자등투입 71단계 세제함 일반97Oml 유연제83Oml (약 5.5주) 주요 기능 미세플라스틱저감 코 세제스랜 정량투입 켓에어 코스 스틱살군 세탁건조시간 쾌속코스 89분 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "세탁건조기": "지원",
         "세탁25kg,건조18kg": "지원",
@@ -504,7 +504,21 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: <span class=\"search_word\">전자</span>부품/제품용 화학소재 유해물질 신속 검출 자동화시스템 개발 등 총 1건",
+      "detail": "NTIS에서 [삼성전자] 검색어로 조회한 결과, AI 관련 과제 1건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "<span class=\"search_word\">전자</span>부품/제품용 화학소재 유해물질 신속 검출 자동화시스템 개발",
+          "project_number": "2410002643",
+          "lead_company": "삼성전자",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -562,10 +576,10 @@
         "cert_no": "NEP-MOTIE-2019-059",
         "product_name": "Bladeless 기류제어가 적용된 360˚ 카세트",
         "company_name": "삼성전자(주)",
-        "biz_no": null,
-        "representative": null,
+        "biz_no": NaN,
+        "representative": NaN,
         "cert_date": "2022-12-26",
-        "expire_date": null
+        "expire_date": NaN
       },
       {
         "id": 17875,
@@ -573,10 +587,10 @@
         "cert_no": "NEP-MOTIE-2019-059",
         "product_name": "Bladeless 기류제어가 적용된 360˚ 카세트",
         "company_name": "삼성전자(주)",
-        "biz_no": null,
-        "representative": null,
+        "biz_no": NaN,
+        "representative": NaN,
         "cert_date": "2022-12-26",
-        "expire_date": null
+        "expire_date": NaN
       },
       {
         "id": 17914,
@@ -584,10 +598,10 @@
         "cert_no": "NEP-MOTIE-2022-168",
         "product_name": "냉동 사이클 응축 압력 제어 기술이 적용된 시스템 에어컨",
         "company_name": "삼성전자(주)",
-        "biz_no": null,
-        "representative": null,
+        "biz_no": NaN,
+        "representative": NaN,
         "cert_date": "2022-09-22",
-        "expire_date": null
+        "expire_date": NaN
       },
       {
         "id": 17922,
@@ -595,10 +609,10 @@
         "cert_no": "NEP-MOTIE-2022-168",
         "product_name": "냉동 사이클 응축 압력 제어 기술이 적용된 시스템 에어컨",
         "company_name": "삼성전자(주)",
-        "biz_no": null,
-        "representative": null,
+        "biz_no": NaN,
+        "representative": NaN,
         "cert_date": "2022-09-22",
-        "expire_date": null
+        "expire_date": NaN
       }
     ],
     "dart_result": {
@@ -612,12 +626,17 @@
     "target_company_name": "삼성전자",
     "model_param": "WD90F25CHW",
     "ocr_result": {
-      "extracted_text": "삼성전자 비스포크 Al 콤보 WD9OF25CHW (기본형) AUCTION 3,234,380원   무료배승 최저가 구매하기 가격비교 65 상품 상세정보 의견리뷰 23 연관상품 건조기능 옷감손상적은 인번터 하드덤프 에너지등급 에너지: 1등금 소비전력 세탁2100w 건조10O0W 시I기능 A세탁건조 AI에너지절막 Al롬 진용소음 진능소음저감 세탁기능 세탁물감지>Al 코스 셋팀 세제자농부안 71단계 세제함 일반97Oml 유연제83Oml 55주) 주요 기능 미세플라스틱저감 군 세제스랜 정량투입 평레이 코스 스틱실군 세탁건조시간 쾌속코스 89분 조작 풀티치조작 원격제이 음성명령",
+      "extracted_text": "삼성전자 비스포크 Al 콤보 WD9OF25CHW (기본형) 11> 3,254,390원  무료배승 최저가 구매하기 가격비교 56 상품 상세정보 의견리뷰 23 연관상품 건조기능 옷감손상적은 인번터 하트덤프 에너지등급 에너지: 1등급 소비전력 세탁21ooW 건조I0O0W 시기능 시세탁건조 시에너지절약 A급 진동소음 진동소음저감 세닥기능 세탁물감지>Al 코스 셋팅 세제자등투입 71단계 세제함 일반97Oml 유연제83Oml (약 5.5주) 주요 기능 미세플라스틱저감 코 세제스랜 정량투입 켓에어 코스 스틱살군 세탁건조시간 쾌속코스 89분 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\삼성전자 비스포크 AI 콤보 WD90F25CHW (기본형)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/삼성전자 비스포크 AI 콤보 WD90F25CHW (기본형)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/삼성전자 비스포크 AI 콤보 WD90F25CHW (기본형)/detail_scan.png",
+        "image_size": 86591,
+        "image_sha256": "0ed7ebe3e4de430d7a6ba437b5c2cf7a6c1a9588a53790115f00663afb2a93d4"
+      }
     }
   }
 }

@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=122629009",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "넥시안 360X 3채널 (64GB)",
       "name": "넥시안 360X 3채널 (64GB)",
       "description": "",
-      "ocr_text": "넥시안 360X 3채널 (64GB) 11> 810,860원   무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 카메라 수(재널) 3채널 전방 QHD(2560x1440) 패널종류 IPS패널 저장마제 Micro-SD 전원 12-24V 저장용량 64GB 센서 Sony STARVIS 2 후방 해상도 FHD(1920x1080) 안전관련기능 전방추들경고(FCW 앞자출발알림(FVSA) 신6변경알림(TLDS) 안전운전도우미 전원관련기능 주차저전력모드 배터리방전방지 녹화방식 상시녹화 스등녹화 충격감지녹화 녹화관련기능 스가드고온자단 자능포멋 Al 주차녹화 야간보점 나이드비전 GPS GPS내잠 스마트혼 연동 Wi-Fi 연결 부가기능 음션 비밀번호잠금 슬음운전방지",
+      "ocr_text": "넥시안 360X 3채널 (64GB) 11> 819,580원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 카메라 수(채널) 3채널 전방 QHD(2560x1440) 패널종류 IPS패널 저장머체 Micro-SD 전원 12-24V 저장용량 64GB 센서 Sony STARVIS 2 후방 해상도 FHD(192ox1080) 안전관련기능 전방주들경고FCW 앞자출발알림lFVSA) 신호변경알림(TLDS) 안전운전도우미  전원관련기능 주차저전력모드 배터리방전방지  녹화방식 상시녹화 수동녹화 충격감지녹화 녹화관련기능 스마트고온자단 자동포멋 Al 주차속화 야간보정 나이트비전 GPS GPS내장 Close 스마트포 연동 We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "블랙박스": "지원",
         "3채널": "지원",
@@ -33,11 +33,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=122629009",
       "manufacturer": "넥시안, Nexian",
-      "model_name": "360X"
+      "model_name": ""
     },
     "norm_info": {
       "company_name": "넥시안, Nexian",
-      "model_name": "360X",
+      "model_name": "",
       "product_name": "넥시안 360X 3채널 (64GB)"
     },
     "db_results": [],
@@ -54,14 +54,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "넥시안, Nexian",
-    "model_param": "360X",
+    "model_param": "",
     "ocr_result": {
-      "extracted_text": "넥시안 360X 3채널 (64GB) 11> 810,860원   무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 카메라 수(재널) 3채널 전방 QHD(2560x1440) 패널종류 IPS패널 저장마제 Micro-SD 전원 12-24V 저장용량 64GB 센서 Sony STARVIS 2 후방 해상도 FHD(1920x1080) 안전관련기능 전방추들경고(FCW 앞자출발알림(FVSA) 신6변경알림(TLDS) 안전운전도우미 전원관련기능 주차저전력모드 배터리방전방지 녹화방식 상시녹화 스등녹화 충격감지녹화 녹화관련기능 스가드고온자단 자능포멋 Al 주차녹화 야간보점 나이드비전 GPS GPS내잠 스마트혼 연동 Wi-Fi 연결 부가기능 음션 비밀번호잠금 슬음운전방지",
+      "extracted_text": "넥시안 360X 3채널 (64GB) 11> 819,580원 무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 카메라 수(채널) 3채널 전방 QHD(2560x1440) 패널종류 IPS패널 저장머체 Micro-SD 전원 12-24V 저장용량 64GB 센서 Sony STARVIS 2 후방 해상도 FHD(192ox1080) 안전관련기능 전방주들경고FCW 앞자출발알림lFVSA) 신호변경알림(TLDS) 안전운전도우미  전원관련기능 주차저전력모드 배터리방전방지  녹화방식 상시녹화 수동녹화 충격감지녹화 녹화관련기능 스마트고온자단 자동포멋 Al 주차속화 야간보정 나이트비전 GPS GPS내장 Close 스마트포 연동 We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\넥시안 360X 3채널 (64GB)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/넥시안 360X 3채널 (64GB)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/넥시안 360X 3채널 (64GB)/detail_scan.png",
+        "image_size": 93268,
+        "image_sha256": "895451f1d32a508fe37d44c1d37f8eb7ddbf4a6b54728365562e445c3aee8ba6"
+      }
     }
   }
 }

@@ -291,8 +291,11 @@ class WeightModuleIntegrationTests(unittest.TestCase):
         engine = OntologyAnalysisEngine(str(self.root/"ontology"), weight_predictor=self.predictor)
         verdict, _ = engine._decide_verdict(accs=10, confidence=40, sufficiency=0, positive_caps=[object()])
         self.assertIn("Suspected", verdict)
+        # 인정된 주장이 없어도 판정 제외로 빼지 않고 ACCS 구간으로 판정한다(2026-11-16 팀 결정).
         verdict, _ = engine._decide_verdict(accs=90, confidence=90, sufficiency=1, positive_caps=[])
-        self.assertIn("Not Evaluated", verdict)
+        self.assertIn("Credible", verdict)
+        verdict, _ = engine._decide_verdict(accs=10, confidence=0, sufficiency=0, positive_caps=[])
+        self.assertIn("Washing", verdict)
 
     def test_all_missing_is_reported_but_engine_owns_decision(self):
         from analysis_engine import OntologyAnalysisEngine
@@ -301,7 +304,8 @@ class WeightModuleIntegrationTests(unittest.TestCase):
         dynamic = result.details["dynamic_weighting"]
         self.assertEqual(dynamic["weight_status"], "no_usable_channels")
         self.assertEqual(sum(dynamic["weights"].values()), 0)
-        self.assertIn("Not Evaluated", result.verdict)
+        # 판정은 가중치 모델이 아니라 엔진이 ACCS 구간으로 정한다. 근거가 없으면 최하 구간이다.
+        self.assertIn("Washing", result.verdict)
 
     def test_training_and_engine_configuration_drift_fails(self):
         from dataclasses import replace

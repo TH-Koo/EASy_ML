@@ -23,6 +23,13 @@ from fides_scoring import CHANNELS, calculate_accs
 DEFAULT_WEIGHT_CHECKPOINT = Path(__file__).resolve().parent / "artifacts" / "cen_senn_run"
 
 
+def load_s_only_predictor() -> Optional[Any]:
+    """Load the optional process-cached Suspicious correction model."""
+    from fides_ml.s_only import load_s_only_predictor as load_predictor
+
+    return load_predictor()
+
+
 def load_weight_predictor(checkpoint_dir: Optional[str] = None) -> Optional[Any]:
     """학습된 CEN 가중치 모델을 한 번 불러온다. 서버·파이프라인 시작 시 호출한다.
 
@@ -191,6 +198,7 @@ def secure_analyze_bundle(
     weight_predictor: Optional[Any] = None,
     product_type: str = "",
     engine_config: Optional[EngineConfig] = None,
+    s_only_predictor: Optional[Any] = None,
     **_: Any,
 ) -> AnalysisResult:
     """Normalize one crawler bundle and return one authoritative analysis result.
@@ -226,10 +234,13 @@ def secure_analyze_bundle(
         )
 
     ontology_path = Path(ontology_dir or Path(__file__).resolve().parent / "ontology")
+    if s_only_predictor is None:
+        s_only_predictor = load_s_only_predictor()
     engine = OntologyAnalysisEngine(
         str(ontology_path),
         enable_dynamic_weighting=enable_dynamic_weighting,
         weight_predictor=weight_predictor,
+        s_only_predictor=s_only_predictor,
         engine_config=engine_config,
     )
 

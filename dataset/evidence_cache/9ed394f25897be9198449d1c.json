@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=6453605",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "가온미디어 카카오미니C KM-1500",
       "name": "가온미디어 카카오미니C KM-1500",
       "description": "",
-      "ocr_text": "가온미디어 카카오미니C KM-1500 가격비교 상품 상세정보 의견리뷰 연관상품 최대출력 14W 불무투스버전 불무투스 V4.2 불루투스코덕 SBC 입출력 AUX 네트위크 Wi-Fi 멀티미디어 전화통화 편의기능 음성비서내장 내장 음성비서 카카오i 인식가능언어 한국이인식 음성제어기능 loT연놈 교통정보 날씨 알람설점 음막재생 사용시간 4시간 대기시간 대기시간 9시간 충전단자 USB-C 무게 390g",
+      "ocr_text": "가온미디어 카카오미니C KM-1500 가격비교 상품 상세정보 의견리뷰 연관상품 최대출력 14W 불무투스버전 불무투스 v4.2 불루투스코댁 SBC 입출력 AUX 네트위크 Wi-Fi 멀티미디어 전화통화 편의기능 음성비서내장 내장 음성비서 카카오i 인식가능언어 한국어인식 음성제어기능 loT연동 고통정보 날씨 뉴스 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "7W": "지원",
         "최대출력": "14W",
@@ -36,11 +36,40 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: Beyond Smart TV 기술 개발 등 총 1건",
+      "detail": "NTIS에서 [가온미디어] 검색어로 조회한 결과, AI 관련 과제 1건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "Beyond Smart TV 기술 개발",
+          "project_number": "1575000756",
+          "lead_company": "가온미디어",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
-        "title": "AI 특허 내역 없음 None"
+        "source_record_id": "1020210147242",
+        "일련번호": "1",
+        "출원번호": "1020210147242",
+        "발명의명칭(한글)": "클라우드 AI 기반의 XR 디바이스 운영 시스템",
+        "출원일자": "2021-10-29",
+        "출원인": "가온그룹 주식회사|가온로보틱스 주식회사",
+        "등록상태": "등록",
+        "초록": "본 발명은 일반적으로 XR 콘텐츠를 위해 촬영영상에서 객체를 인식 처리하는 기술에 관한 것이다. 특히, 본 발명은 XR 디바이스가 주변 촬영영상과 공간정보를 기초로 일정 구간마다 객체 식별을 수행하여 대표이미지를 클라우드 서버로 전달하고, 클라우드 서버가 대표이미지를 AI 딥러닝 연산에 적용하여 객체 인식을 수행하고 그 결과를 XR 디바이스로 반환하도록 구성함으로써 XR 객체인식을 효과적으로 처리할 수 있는 클라우드 AI 기반의 XR 객체인식 처리 기술에 관한 것이다. 본 발명에 따르면 XR 디바이스가 촬영영상에서 객체를 식별하고 클라우드 기반으로 객체 인식을 수행하도록 구성함으로써 XR 콘텐츠를 위한 객체인식 과정을 효과적으로 처리할 수 있는 장점이 있다. 또한, 본 발명에 따르면 객체 인식 과정을 효과적으로 수행할 수 있어 저성능의 XR 디바이스로도 XR 콘텐츠를 실시간으로 제공할 수 있는 장점이 있다. 또한, 본 발명에 따르면 클라우드 AI 딥러닝 기반으로 특징 기반 객체인식 과정을 수행하므로 객체 정보를 학습함에 따라 객체 인식율과 인식 정확도를 점차적으로 향상시킬 수 있는 장점이 있다.",
+        "IPC": "G06T 19/00|G06T 7/11|G06T 7/50|G06V 20/00|G06N 3/08",
+        "CPC": "",
+        "relevance_type": "general_ai",
+        "match_confidence": 0.45,
+        "search_alias": "가온미디어",
+        "search_type": "AI 특허 [일반]",
+        "search_query": "AP=[가온미디어]*AD=[20210101~20261231]*(TI=[인공지능+AI+딥러닝+머신러닝+신경망+자연어]+AB=[인공지능+AI+딥러닝+머신러닝+신경망+자연어])",
+        "status": "verified"
       }
     ],
     "cert_results": [],
@@ -48,12 +77,17 @@
     "target_company_name": "가온미디어, Gaon Media",
     "model_param": "KM-1500",
     "ocr_result": {
-      "extracted_text": "가온미디어 카카오미니C KM-1500 가격비교 상품 상세정보 의견리뷰 연관상품 최대출력 14W 불무투스버전 불무투스 V4.2 불루투스코덕 SBC 입출력 AUX 네트위크 Wi-Fi 멀티미디어 전화통화 편의기능 음성비서내장 내장 음성비서 카카오i 인식가능언어 한국이인식 음성제어기능 loT연놈 교통정보 날씨 알람설점 음막재생 사용시간 4시간 대기시간 대기시간 9시간 충전단자 USB-C 무게 390g",
+      "extracted_text": "가온미디어 카카오미니C KM-1500 가격비교 상품 상세정보 의견리뷰 연관상품 최대출력 14W 불무투스버전 불무투스 v4.2 불루투스코댁 SBC 입출력 AUX 네트위크 Wi-Fi 멀티미디어 전화통화 편의기능 음성비서내장 내장 음성비서 카카오i 인식가능언어 한국어인식 음성제어기능 loT연동 고통정보 날씨 뉴스 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\가온미디어 카카오미니C KM-1500\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/가온미디어 카카오미니C KM-1500/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/가온미디어 카카오미니C KM-1500/detail_scan.png",
+        "image_size": 63252,
+        "image_sha256": "5e656b9520d8014b4e278c64c8b50351481a20ddf3eb00ac2f6098a500042aeb"
+      }
     }
   }
 }

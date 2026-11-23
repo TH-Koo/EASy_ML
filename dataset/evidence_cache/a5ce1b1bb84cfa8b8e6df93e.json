@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=58849820",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
-      "title": "LG전자 트롬 오브제컬렉션 워시타워 W21WAM (일반판매처)",
-      "name": "LG전자 트롬 오브제컬렉션 워시타워 W21WAM (일반판매처)",
+      "title": "LG전자 트롬 오브제컬렉션 워시타워 W21WAM (일반구매)",
+      "name": "LG전자 트롬 오브제컬렉션 워시타워 W21WAM (일반구매)",
       "description": "",
-      "ocr_text": "LG전자 트름 오브제업렉선 위시타워 W2IWAM (일반판매처) AUCTION 2,548,990원  무료배승 최저가 구매하기 가격비교 68 상품 상세정보 의견리뷰 932 연관상품 세탁 24kg 건조 21kg 주요기능 팀실군 세탁물웨이 에너지 세탁2등금 에너지 건조:2등근 시I기능 시세탁 시건조 시에너지설약 세탁기능 6모선세탁 DD인버터모터 세탁 부가기능 스트코스추선 미세플라스틱저감 5방향터보사 건조방식 하트편프식 건조기능 6모선건조 건조기모터 인버터DD건조모터 건조 부가기능 통살군 조작부 원바디런드리권트록(풀티치) 건조기 조작",
+      "ocr_text": "LG전자 트롬 오브제걸렉선 위시타위 W2IWAM (일반구매) 텍스트전자   2,549,000원 무료배송 최저가 구매하기 가격비교 57 상품 상세정보 의견리뷰 932 연관상품 세탁 24kg 건조 21kg 주요기능 스템실군 세탁물레어 에너지 세탁 2등급 에너지 건조:2등급금 시기능 시세탁 시건조 시에너지절약 세탁기능 6모선세탁 DD인버터모터 세탁 부가기능 스마트코스추천 미세플라스틱저감 5방향터보사 건조방식 하트럽프식 건조기능 6모선건조 건조기모터 두얼인버터DD건조모터 Close 거즈 보가기느 We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "드럼세탁기+건조기": "지원",
         "일체형": "지원",
@@ -38,7 +38,7 @@
     "norm_info": {
       "company_name": "엘지전자,LG전자",
       "model_name": "세탁기(FX24WJAD), 건조기(RD21WJAD)",
-      "product_name": "LG전자 트롬 오브제컬렉션 워시타워 W21WAM (일반판매처)"
+      "product_name": "LG전자 트롬 오브제컬렉션 워시타워 W21WAM (일반구매)"
     },
     "db_results": [
       {
@@ -495,7 +495,70 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: <span class=\"search_word\">전자</span>(가전) 산업의 벨류체인 고도화를 위한 지능형 협업공장 구축 기술 개발 등 총 8건",
+      "detail": "NTIS에서 [LG전자] 검색어로 조회한 결과, AI 관련 과제 8건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "<span class=\"search_word\">전자</span>(가전) 산업의 벨류체인 고도화를 위한 지능형 협업공장 구축 기술 개발",
+          "project_number": "2410000376",
+          "lead_company": "LG전자",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "<span class=\"search_word\">전자</span>(가전) 산업의 벨류체인 고도화를 위한 지능형 협업공장 구축 기술 개발",
+          "project_number": "2410011766",
+          "lead_company": "LG전자",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "<span class=\"search_word\">전자</span>(가전) 산업의 벨류체인 고도화를 위한 지능형 협업공장 구축 기술 개발",
+          "project_number": "1415188308",
+          "lead_company": "LG전자",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "실외 무인 경비 로봇을 위한 멀티모달 지능형 정보분석 기술 개발",
+          "project_number": "1711055496",
+          "lead_company": "엘지전자",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "실외 무인 경비 로봇을 위한 멀티모달 지능형 정보분석 기술 개발",
+          "project_number": "1711103183",
+          "lead_company": "엘지전자",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "실외 무인 경비 로봇을 위한 멀티모달 지능형 정보분석 기술 개발",
+          "project_number": "1711067714",
+          "lead_company": "엘지전자",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "실외 무인 경비 로봇을 위한 멀티모달 지능형 정보분석 기술 개발",
+          "project_number": "1711080926",
+          "lead_company": "엘지전자",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "(1세부) AI 기반 XR 스마트글래스 시제품 개발",
+          "project_number": "2410018400",
+          "lead_company": "엘지전자",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -520,10 +583,10 @@
         "cert_no": "GTP-23-03812",
         "product_name": "소비전력 절감형 모니터",
         "company_name": "엘지전자주식회사",
-        "biz_no": null,
-        "representative": null,
+        "biz_no": NaN,
+        "representative": NaN,
         "cert_date": "2023-09-14",
-        "expire_date": null
+        "expire_date": NaN
       }
     ],
     "dart_result": {
@@ -539,12 +602,17 @@
     "target_company_name": "엘지전자,LG전자",
     "model_param": "세탁기(FX24WJAD), 건조기(RD21WJAD)",
     "ocr_result": {
-      "extracted_text": "LG전자 트름 오브제업렉선 위시타워 W2IWAM (일반판매처) AUCTION 2,548,990원  무료배승 최저가 구매하기 가격비교 68 상품 상세정보 의견리뷰 932 연관상품 세탁 24kg 건조 21kg 주요기능 팀실군 세탁물웨이 에너지 세탁2등금 에너지 건조:2등근 시I기능 시세탁 시건조 시에너지설약 세탁기능 6모선세탁 DD인버터모터 세탁 부가기능 스트코스추선 미세플라스틱저감 5방향터보사 건조방식 하트편프식 건조기능 6모선건조 건조기모터 인버터DD건조모터 건조 부가기능 통살군 조작부 원바디런드리권트록(풀티치) 건조기 조작",
+      "extracted_text": "LG전자 트롬 오브제걸렉선 위시타위 W2IWAM (일반구매) 텍스트전자   2,549,000원 무료배송 최저가 구매하기 가격비교 57 상품 상세정보 의견리뷰 932 연관상품 세탁 24kg 건조 21kg 주요기능 스템실군 세탁물레어 에너지 세탁 2등급 에너지 건조:2등급금 시기능 시세탁 시건조 시에너지절약 세탁기능 6모선세탁 DD인버터모터 세탁 부가기능 스마트코스추천 미세플라스틱저감 5방향터보사 건조방식 하트럽프식 건조기능 6모선건조 건조기모터 두얼인버터DD건조모터 Close 거즈 보가기느 We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\LG전자 트롬 오브제컬렉션 워시타워 W21WAM (일반판매처)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/LG전자 트롬 오브제컬렉션 워시타워 W21WAM (일반구매)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/LG전자 트롬 오브제컬렉션 워시타워 W21WAM (일반구매)/detail_scan.png",
+        "image_size": 80862,
+        "image_sha256": "c77cb5a231739dc2ed85419c838eedf4490ca9cdef492b8e1c4193e32ef32f00"
+      }
     }
   }
 }

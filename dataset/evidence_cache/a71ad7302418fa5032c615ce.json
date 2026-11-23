@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=91765823",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "쿠쿠전자 파워클론 AI 2 CRVC-CFFAC1610W",
       "name": "쿠쿠전자 파워클론 AI 2 CRVC-CFFAC1610W",
       "description": "",
-      "ocr_text": "구구전자 파위클론 Al 2 CRVC-CFFAC161OW 전자런드 990,000원 무료배송 최저가 구매하기 가격비교 42 상품 상세정보 의견리뷰 연관상품 집입력 16 2OOPa 센서 LDS 카메라 맵핑 2D 인식 시사물인식 감지회피 잠애물회피 오면도감지 리프팅 1.2cm 통과높이 12cm 청소운전 꼼꼼 모서리 브러쉬 메인 사이드 머리카락컷팀 청소기능 브러쉬리프팀 물걸레리프팀 스마토존제어 금지구역 구역지정 진공후물결레 물걸레 회전형 물걸레 회전스 2O0RPM",
+      "ocr_text": "구구전자 파위클론 Al 2 CRVC-CFFAC161oW HIMART 990,000원 무료배승 최저가 구매하기 가격비교 42 상품 상세정보 의견리뷰 연관상품 집입력 16 2o0Pa 센서 LDS 카메라 맵핑 2D 인식 시사물인식 감지회피 장애물회피 오염도감지 리프팅 1.2cm 통과높이 I2cm 청소운전 꼼꼼 모서리 브러쉬 메인 사이드 머리카락컷팀 청소기능 부러쉬리프팅 물걸레리프팅 Close 스마트포제어 We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "로봇청소기": "지원",
         "흡입+물걸레": "지원",
@@ -91,12 +91,17 @@
     "target_company_name": "쿠쿠전자, KuKu Techno",
     "model_param": "CRVC-CFFAC1610W",
     "ocr_result": {
-      "extracted_text": "구구전자 파위클론 Al 2 CRVC-CFFAC161OW 전자런드 990,000원 무료배송 최저가 구매하기 가격비교 42 상품 상세정보 의견리뷰 연관상품 집입력 16 2OOPa 센서 LDS 카메라 맵핑 2D 인식 시사물인식 감지회피 잠애물회피 오면도감지 리프팅 1.2cm 통과높이 12cm 청소운전 꼼꼼 모서리 브러쉬 메인 사이드 머리카락컷팀 청소기능 브러쉬리프팀 물걸레리프팀 스마토존제어 금지구역 구역지정 진공후물결레 물걸레 회전형 물걸레 회전스 2O0RPM",
+      "extracted_text": "구구전자 파위클론 Al 2 CRVC-CFFAC161oW HIMART 990,000원 무료배승 최저가 구매하기 가격비교 42 상품 상세정보 의견리뷰 연관상품 집입력 16 2o0Pa 센서 LDS 카메라 맵핑 2D 인식 시사물인식 감지회피 장애물회피 오염도감지 리프팅 1.2cm 통과높이 I2cm 청소운전 꼼꼼 모서리 브러쉬 메인 사이드 머리카락컷팀 청소기능 부러쉬리프팅 물걸레리프팅 Close 스마트포제어 We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\쿠쿠전자 파워클론 AI 2 CRVC-CFFAC1610W\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/쿠쿠전자 파워클론 AI 2 CRVC-CFFAC1610W/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/쿠쿠전자 파워클론 AI 2 CRVC-CFFAC1610W/detail_scan.png",
+        "image_size": 72755,
+        "image_sha256": "c48a7cb360cffaac5d07ab84b85f11a9a0100f3525cbd2c02b303b2ba272c1ec"
+      }
     }
   }
 }

@@ -20,16 +20,16 @@ const INITIAL = 5;
 export function VerdictClaimList({ claims }: { claims: Claim[] }) {
   const [expanded, setExpanded] = useState(false);
   const rest = claims.length - INITIAL;
-  const shown = expanded ? claims : claims.slice(0, INITIAL);
 
   return (
     <>
-      <ul className="mt-1 divide-y divide-white/10">
-        {shown.map((c) => (
-          <li key={c.id}>
+      <ul className="divide-border mt-1 divide-y">
+        {/* 접힌 줄도 그려 두고 화면에서만 숨긴다. 종이에는 펼칠 버튼이 없다. */}
+        {claims.map((c, i) => (
+          <li key={c.id} className={cn(!expanded && i >= INITIAL && "hidden print:block")}>
             <a
               href={`#claim-${c.id}`}
-              className="flex items-center gap-3 rounded-lg px-1 py-2.5 hover:bg-white/10"
+              className="text-fg hover:bg-surface flex items-center gap-3 rounded-lg px-1 py-2.5"
             >
               <StatusMark status={c.status} />
               <span className="min-w-0 flex-1 truncate text-[15px] font-semibold tracking-[var(--tracking-tight)]">
@@ -38,8 +38,9 @@ export function VerdictClaimList({ claims }: { claims: Claim[] }) {
               <span
                 className={cn(
                   "text-[13px] font-bold",
-                  c.status === "partial" && "text-[#c9d3f7]",
-                  c.status === "unsupported" && "text-[#ffb07a]",
+                  c.status === "verified" && "text-[var(--claim-ok)]",
+                  c.status === "partial" && "text-[var(--claim-part)]",
+                  c.status === "unsupported" && "text-[var(--claim-no)]",
                 )}
               >
                 {CLAIM_META[c.status].label}
@@ -53,7 +54,7 @@ export function VerdictClaimList({ claims }: { claims: Claim[] }) {
           type="button"
           aria-expanded={expanded}
           onClick={() => setExpanded((v) => !v)}
-          className="mt-1 flex w-full items-center justify-between rounded-lg border-t border-white/15 px-1 pt-3 pb-1 text-[13px] font-semibold text-white/85 hover:text-white"
+          className="border-border text-fg-muted hover:text-fg mt-1 flex w-full print:hidden items-center justify-between rounded-lg border-t px-1 pt-3 pb-1 text-[13px] font-semibold"
         >
           {expanded ? "접기" : `나머지 ${rest}개 기능 보기`}
           <ChevronDown
@@ -68,9 +69,9 @@ export function VerdictClaimList({ claims }: { claims: Claim[] }) {
 }
 
 const MARK: Record<ClaimStatus, { Icon: typeof Check; cls: string }> = {
-  verified: { Icon: Check, cls: "bg-white text-[#0f35b4]" },
-  partial: { Icon: Minus, cls: "bg-[var(--claim-part-on-dark)] text-[#08195f]" },
-  unsupported: { Icon: X, cls: "bg-[var(--claim-no-on-dark)] text-white" },
+  verified: { Icon: Check, cls: "bg-[var(--claim-ok)] text-white" },
+  partial: { Icon: Minus, cls: "bg-[var(--claim-part)] text-white" },
+  unsupported: { Icon: X, cls: "bg-[var(--claim-no)] text-white" },
 };
 
 function StatusMark({ status }: { status: ClaimStatus }) {

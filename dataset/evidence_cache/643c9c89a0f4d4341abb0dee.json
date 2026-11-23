@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=122667593",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "하이센스 55Q7Q (스탠드)",
       "name": "하이센스 55Q7Q (스탠드)",
       "description": "",
-      "ocr_text": "하이센스 5597Q (스랜드) coupang 589,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 디스플레이 QLED 해상도 4K UHD 주사물 144H2 명양비 3선800.1 밝기 350cd 에너지효물 4등금 소비전력 260W 년형 2026년형 프로세서 MT9618 시화질 A밝기조설 AI모선감지 시명답비강화 시장로맛흡화면 화질 4K업스레일림 장르맛출화면 모선보간(MEMC) 필름메이커모드 HDR 돌비비전 Q 돌비비전 HDR1O+ HDRiO HLG RAM 3GB ROM 32GB 게임 HDMI2.1 VRR(I44Hz) ALLM FreeSync 게임모드",
+      "ocr_text": "하이센스 5597Q (스랜드) 가격비교 상품 상세정보 의견리뷰 연관상품 디스플레이 QLED 해상도 4K UHD 주사율 144Hz 명양비 3천800:1 밝기  350cd 에너지효물 4등급 소비전력 260W 년형  2026년형 프로세서 MT9618 시화질 시밝기조절 시모선감지 시명임비강화 시장르맞중화면 화질 4K업스레일림 장르맞중화면 모선보간(MEMC) 필름메이커모드 HDR 돌비비전Q 돌비비전 HDR1O+ HDRIO HLG RAM 3GB ROM 32GB 게임 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "QLED TV": "지원",
         "55인치(139cm)": "지원",
@@ -148,12 +148,17 @@
     "target_company_name": "하이센스, HighSense",
     "model_param": "55Q7Q",
     "ocr_result": {
-      "extracted_text": "하이센스 5597Q (스랜드) coupang 589,000원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 디스플레이 QLED 해상도 4K UHD 주사물 144H2 명양비 3선800.1 밝기 350cd 에너지효물 4등금 소비전력 260W 년형 2026년형 프로세서 MT9618 시화질 A밝기조설 AI모선감지 시명답비강화 시장로맛흡화면 화질 4K업스레일림 장르맛출화면 모선보간(MEMC) 필름메이커모드 HDR 돌비비전 Q 돌비비전 HDR1O+ HDRiO HLG RAM 3GB ROM 32GB 게임 HDMI2.1 VRR(I44Hz) ALLM FreeSync 게임모드",
+      "extracted_text": "하이센스 5597Q (스랜드) 가격비교 상품 상세정보 의견리뷰 연관상품 디스플레이 QLED 해상도 4K UHD 주사율 144Hz 명양비 3천800:1 밝기  350cd 에너지효물 4등급 소비전력 260W 년형  2026년형 프로세서 MT9618 시화질 시밝기조절 시모선감지 시명임비강화 시장르맞중화면 화질 4K업스레일림 장르맞중화면 모선보간(MEMC) 필름메이커모드 HDR 돌비비전Q 돌비비전 HDR1O+ HDRIO HLG RAM 3GB ROM 32GB 게임 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\하이센스 55Q7Q (스탠드)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/하이센스 55Q7Q (스탠드)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/하이센스 55Q7Q (스탠드)/detail_scan.png",
+        "image_size": 75899,
+        "image_sha256": "73c596fbef17ea918ca6ae527e8e82d4e133b110c560b320c3b538543be1083b"
+      }
     }
   }
 }

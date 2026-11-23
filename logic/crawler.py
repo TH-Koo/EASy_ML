@@ -21,10 +21,12 @@ import json
 import os
 import re
 import time
-from typing import Any, Dict, Optional, Tuple
+import logging
+from typing import Any, Dict, List, Optional, Tuple
 from urllib.parse import parse_qs, urlparse
 
 from selenium import webdriver
+from selenium.common.exceptions import TimeoutException, WebDriverException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -105,7 +107,9 @@ def _is_cache_valid(cache_data: Dict[str, Any], url: str) -> bool:
         return False
 
     screenshot_path = str(cache_data.get("screenshot_path") or "")
-    if screenshot_path and not os.path.exists(screenshot_path):
+    # 상세 이미지를 못 찍은 결과는 다시 크롤링한다. 그대로 쓰면 OCR 이 0자라
+    # 광고 이미지 속 AI 문구를 하나도 못 읽는데, 그 상태가 TTL 동안 굳는다.
+    if not screenshot_path or not os.path.exists(screenshot_path):
         return False
 
     return True
@@ -168,6 +172,8 @@ def _build_chrome_options(headless: bool = True) -> Options:
     Selenium 안정성을 유지하면서 이미지 로딩은 보존한다.
     """
     options = Options()
+    # 외부 리소스 전체 완료 대신 DOM 준비 후 상품 요소를 직접 기다린다.
+    options.page_load_strategy = "eager"
 
     if headless:
         options.add_argument("--headless=new")
@@ -204,8 +210,8 @@ def _setup_driver():
             options = _build_chrome_options(headless=headless)
 
             driver = webdriver.Chrome(options=options)
-            driver.set_page_load_timeout(40)
-            driver.implicitly_wait(2)
+            driver.set_page_load_timeout(60)
+            driver.implicitly_wait(0)
 
             print(f"Chrome 드라이버 초기화 성공: selenium, {mode_text}")
             return driver
@@ -232,20 +238,29 @@ def _wait_for_initial_page(driver) -> None:
         ".prod_tit",
         "h2.title",
         "h1",
-        "body",
     ]
 
-    for selector in selectors:
-        try:
-            WebDriverWait(driver, PAGE_READY_TIMEOUT).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, selector))
-            )
-            return
-        except Exception:
-            continue
+    WebDriverWait(driver, PAGE_READY_TIMEOUT).until(
+        lambda d: any(element.text.strip() for element in
+                      d.find_elements(By.CSS_SELECTOR, ", ".join(selectors)))
+    )
 
-    # 완전히 실패해도 뒤 단계에서 driver.title 등을 fallback으로 쓰기 위해 종료하지 않는다.
-    time.sleep(1)
+
+def _open_product_page(driver, url: str) -> None:
+    """접속 실패는 한 번 재시도하며 상품 DOM 준비 여부를 확인한다."""
+    for attempt in range(2):
+        try:
+            try:
+                driver.get(url)
+            except TimeoutException:
+                driver.execute_script("window.stop();")
+            _wait_for_initial_page(driver)
+            return
+        except WebDriverException:
+            if attempt == 1:
+                raise
+            logging.getLogger(__name__).warning("페이지 접속 재시도", exc_info=True)
+            time.sleep(1)
 
 
 def _extract_product_title(driver) -> str:
@@ -425,29 +440,110 @@ def _slow_scroll_to_bottom(driver) -> None:
 # =====================================================================
 # 상세 영역 캡처 / 스펙 추출
 # =====================================================================
+_OLD_DETAIL_SELECTORS = [
+    "#detail_content_wrap",
+    "#productDescriptionArea",
+    ".product_detail_area",
+    ".detail_content_wrap",
+    ".prod_detail",
+    ".product_detail",
+]
+
+# 새 화면(React) 상품 페이지의 제조사 제공 상세 이미지.
+# 예: 세탁기 pcode=77965100. 위 옛 선택자가 하나도 없고, 이미지는 lazy 로딩에
+# 높이 제한(max-height) 상자 안에 접혀 있어 요소 스크린샷으로는 찍히지 않는다.
+_NEW_DETAIL_IMAGE_SELECTOR = (
+    '#manufacturer-tabpanel-1 img, '
+    '[data-testid="ProductDetailSection"] img[src*="catalog-content"]'
+)
+
+
 def _find_detail_area(driver):
-    detail_selectors = [
-        "#detail_content_wrap",
-        "#productDescriptionArea",
-        ".product_detail_area",
-        ".detail_content_wrap",
-        ".prod_detail",
-        ".product_detail",
-    ]
+    """옛 화면의 상세 영역을 찾는다. 선택자 전체를 한 번에 기다린다.
 
-    for selector in detail_selectors:
-        try:
-            detail_area = WebDriverWait(driver, 3).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, selector))
-            )
-
-            if detail_area:
-                return detail_area
-
-        except Exception:
-            continue
-
+    예전에는 선택자마다 3초씩 따로 기다려서, 상세 영역이 없는 새 화면
+    페이지에서는 아무것도 못 찾은 채 18초를 버렸다.
+    """
+    combined = ", ".join(_OLD_DETAIL_SELECTORS)
+    try:
+        WebDriverWait(driver, 3).until(
+            lambda d: d.find_elements(By.CSS_SELECTOR, combined)
+        )
+    except Exception:
+        return None
+    for selector in _OLD_DETAIL_SELECTORS:
+        found = driver.find_elements(By.CSS_SELECTOR, selector)
+        if found:
+            return found[0]
     return None
+
+
+# 새 화면 상세 이미지를 이어 붙일 최대 높이(px). OCR 은 2000px 조각마다
+# CPU 로 15초 안팎이 걸려, 이미지 28장(3.3만 px)을 다 읽으면 4~5분이 된다.
+# 광고의 AI 문구는 앞쪽에 몰려 있다: 세탁기 pcode=77965100 은 앞 30%(약 1만 px)
+# 만 읽어도 잡히는 주장 5개와 ACCS 가 전부 읽을 때와 같았다.
+DETAIL_MAX_HEIGHT = int(os.getenv("EASY_DETAIL_MAX_HEIGHT", "12000"))
+
+
+def _new_layout_detail_image_urls(driver) -> List[str]:
+    """새 화면의 상세 이미지 주소를 순서대로 모은다. 없으면 빈 목록."""
+    try:
+        urls = driver.execute_script(
+            "return [...document.querySelectorAll(arguments[0])]"
+            ".map(i => i.currentSrc || i.src || i.getAttribute('data-src') || '')"
+            ".filter(u => u.startsWith('http'));",
+            _NEW_DETAIL_IMAGE_SELECTOR,
+        ) or []
+    except Exception:
+        return []
+    return list(dict.fromkeys(urls))
+
+
+def _stitch_detail_images(urls: List[str], out_path: str, referer: str) -> str:
+    """상세 이미지를 내려받아 세로로 이어 한 장으로 저장한다.
+
+    요소 스크린샷 대신 원본을 받는 이유: 이어 붙인 높이가 3만 px 를 넘는데,
+    headless Chrome 은 그렇게 긴 요소를 한 번에 찍지 못한다.
+    """
+    import io
+
+    import requests
+    from PIL import Image
+
+    target_width = 860
+    tiles = []
+    total = 0
+    for url in urls[:60]:
+        if total >= DETAIL_MAX_HEIGHT:
+            break
+        try:
+            res = requests.get(
+                url,
+                timeout=10,
+                headers={"User-Agent": "Mozilla/5.0", "Referer": referer},
+            )
+            res.raise_for_status()
+            img = Image.open(io.BytesIO(res.content)).convert("RGB")
+        except Exception as e:
+            print(f"   상세 이미지 받기 실패: {url[:80]} ({e})")
+            continue
+        if img.width < 200 or img.height < 50:
+            continue  # 아이콘·구분선
+        if img.width != target_width:
+            img = img.resize((target_width, max(1, round(img.height * target_width / img.width))))
+        tiles.append(img)
+        total += img.height
+
+    if not tiles:
+        return ""
+    canvas = Image.new("RGB", (target_width, total), "white")
+    y = 0
+    for t in tiles:
+        canvas.paste(t, (0, y))
+        y += t.height
+    canvas.save(out_path)
+    print(f"[성공] 새 화면 상세 이미지 {len(tiles)}장을 이어 저장: {out_path} ({total}px)")
+    return out_path
 
 
 def _capture_detail_area(driver, model_name: str) -> str:
@@ -466,6 +562,13 @@ def _capture_detail_area(driver, model_name: str) -> str:
     detail_area = _find_detail_area(driver)
 
     if detail_area is None:
+        urls = _new_layout_detail_image_urls(driver)
+        if urls:
+            try:
+                return _stitch_detail_images(urls, screenshot_file, driver.current_url)
+            except Exception as e:
+                print(f"새 화면 상세 이미지 저장 실패: {e}")
+                return ""
         print("[스킵] 상세 이미지 영역을 찾을 수 없습니다.")
         return ""
 
@@ -493,6 +596,21 @@ def _capture_detail_area(driver, model_name: str) -> str:
         return ""
 
 
+_NEW_SPEC_TABLE_SELECTOR = '[data-testid="ProductDetailSection"] table'
+# 새 화면 상단의 요약 스펙. 옛 spec_list 와 같은 "항목 / 항목 : 값" 모양이다.
+_NEW_SPEC_SUMMARY_SELECTOR = '[data-testid="ProductHeader-specs"]'
+
+
+# 새 화면 스펙표 칸에는 링크·버튼 글자가 값에 섞여 들어온다. 제조회사가
+# "삼성전자 (제조사 웹사이트 바로가기)"가 되면 회사명 정규화가 이 글자째로
+# DART·특허·NTIS 를 찾아 전부 실패한다.
+_SPEC_LINK_NOISE = re.compile(r"\s*\(?제조사 웹사이트 바로가기\)?|\s*인증번호 확인")
+
+
+def _clean_spec_value(text: str) -> str:
+    return re.sub(r"\s+", " ", _SPEC_LINK_NOISE.sub("", text or "")).strip()
+
+
 def _extract_specs(driver) -> Tuple[Dict[str, str], str]:
     """
     다나와 상품 스펙 정보를 수집한다.
@@ -503,7 +621,17 @@ def _extract_specs(driver) -> Tuple[Dict[str, str], str]:
     raw_specs = ""
 
     try:
+        # 새 화면(React)은 prod_spec_table 대신 상세 섹션 안의 이름 없는
+        # 표에 스펙을 둔다(예: 세탁기 pcode=109483526). 이걸 못 읽으면 스펙이
+        # 0개가 돼 "상품 페이지로 보이지 않아요"로 분석이 멈췄다.
         spec_tables = driver.find_elements(By.CLASS_NAME, "prod_spec_table")
+        if not spec_tables:
+            try:
+                spec_tables = WebDriverWait(driver, 5).until(
+                    lambda d: d.find_elements(By.CSS_SELECTOR, _NEW_SPEC_TABLE_SELECTOR)
+                )
+            except Exception:
+                spec_tables = []
 
         if spec_tables:
             rows = spec_tables[0].find_elements(By.TAG_NAME, "tr")
@@ -521,12 +649,13 @@ def _extract_specs(driver) -> Tuple[Dict[str, str], str]:
                     value = "지원"
 
                     if i < len(tds):
-                        value = tds[i].text.strip()
+                        value = _clean_spec_value(tds[i].text)
 
                     specs[key] = value
 
         if len(specs) < 3:
-            spec_lists = driver.find_elements(By.CLASS_NAME, "spec_list")
+            spec_lists = (driver.find_elements(By.CLASS_NAME, "spec_list")
+                          or driver.find_elements(By.CSS_SELECTOR, _NEW_SPEC_SUMMARY_SELECTOR))
 
             if spec_lists:
                 raw_specs = re.sub(r"\s+", " ", spec_lists[0].text).strip()
@@ -544,6 +673,11 @@ def _extract_specs(driver) -> Tuple[Dict[str, str], str]:
                         specs[item] = "지원"
 
         if not raw_specs:
+            summary = driver.find_elements(By.CSS_SELECTOR, _NEW_SPEC_SUMMARY_SELECTOR)
+            if summary:
+                raw_specs = re.sub(r"\s+", " ", summary[0].text).strip()
+
+        if not raw_specs:
             try:
                 body_text = driver.find_element(By.TAG_NAME, "body").text
                 raw_specs = re.sub(r"\s+", " ", body_text).strip()[:3000]
@@ -554,6 +688,65 @@ def _extract_specs(driver) -> Tuple[Dict[str, str], str]:
         print(f"스펙 정보 수집 실패: {e}")
 
     return specs, raw_specs
+
+
+# 분류 경로 읽는 방식이 바뀔 때 올린다. 이보다 낮은 크롤링 캐시는 다시 수집한다.
+# 2: location_wrap(textContent·HTML 원문) + JSON-LD BreadcrumbList
+CATEGORY_VERSION = 2
+
+
+def _breadcrumb_from_jsonld(html: str) -> List[str]:
+    """<script type="application/ld+json"> 의 BreadcrumbList 에서 분류 이름을 순서대로 꺼낸다."""
+    for raw in re.findall(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>', html, re.S):
+        try:
+            data = json.loads(raw)
+        except ValueError:
+            continue
+        for node in data if isinstance(data, list) else [data]:
+            if not isinstance(node, dict) or node.get("@type") != "BreadcrumbList":
+                continue
+            items = sorted(node.get("itemListElement") or [], key=lambda x: x.get("position", 0))
+            names = [str((it.get("item") or {}).get("name") or it.get("name") or "").strip() for it in items]
+            names = [n for n in names if n]
+            if names:
+                return names
+    return []
+
+
+def _extract_category(driver) -> List[str]:
+    """상단 분류 경로(예: 태블릿/모바일/디카 > 이어폰/헤드폰 > 무선 이어폰)를 단계별로 읽는다.
+
+    예전에는 스펙 원문의 첫 토막을 카테고리로 썼는데, 스펙 표가 있는 상품은 원문이
+    페이지 본문 전체로 채워져 다나와 상단 메뉴 글자가 카테고리로 들어갔다.
+    """
+    try:
+        buttons = driver.find_elements(By.CSS_SELECTOR, ".location_wrap .loca_item > button.arw")
+        # .text 는 화면에 안 보이는 요소에서 빈 문자열을 돌려준다. 서버(EC2)의 headless
+        # 창에서는 분류 경로가 접혀 있어 늘 비었으므로 textContent 로 읽는다.
+        levels = [
+            re.sub(r"\s+", " ", b.get_attribute("textContent") or "").strip()
+            for b in buttons
+        ]
+        levels = [t for t in levels if t and t != "선택하세요"]
+        if not levels:
+            # 요소를 못 찾으면 HTML 원문에서 같은 자리를 꺼낸다.
+            html = driver.page_source or ""
+            start = html.find("location_wrap")
+            if start >= 0:
+                found = re.findall(
+                    r'class="loca_item"[^>]*>\s*<button class="arw">([^<]+)<',
+                    html[start:start + 80000],
+                )
+                levels = [t.strip() for t in found if t.strip() and t.strip() != "선택하세요"]
+        if not levels:
+            # 새 화면 구조의 상품 페이지(예: 세탁기)는 location_wrap 이 없고,
+            # 분류 경로를 검색엔진용 JSON-LD BreadcrumbList 로만 싣는다.
+            levels = _breadcrumb_from_jsonld(driver.page_source or "")
+        print(f"[Category] {' > '.join(levels) if levels else '분류 경로를 찾지 못함'}")
+        return levels
+    except Exception as e:
+        print(f"[Category] 분류 경로 읽기 실패: {e}")
+        return []
 
 
 # =====================================================================
@@ -580,7 +773,9 @@ def get_product_data(url: str) -> Optional[Dict[str, Any]]:
         return None
 
     cached_data = _load_cached_product_data(url)
-    if cached_data:
+    # 분류 경로 읽는 방식이 바뀌기 전에 만든 캐시는 category 가 없거나 비어 있다.
+    # 판정 버전이 지금보다 낮으면 한 번 다시 수집해 채운다.
+    if cached_data and cached_data.get("category_version", 0) >= CATEGORY_VERSION:
         return cached_data
 
     driver = None
@@ -592,19 +787,27 @@ def get_product_data(url: str) -> Optional[Dict[str, Any]]:
         "specs": {},
         "raw_specs": "",
         "screenshot_path": "",
+        # 분류 경로를 못 찾아도 키는 남겨, 캐시가 매번 다시 수집되지 않게 한다
+        "category": "",
+        "category_path": "",
+        "category_version": CATEGORY_VERSION,
     }
 
     try:
         driver = _setup_driver()
 
         print("[1/3] 페이지 접속 및 로딩 중...")
-        driver.get(url)
-        _wait_for_initial_page(driver)
+        _open_product_page(driver, url)
 
         model_name = _extract_product_title(driver)
         product_data["model_name"] = model_name
 
         print(f"상품명: {model_name}")
+
+        levels = _extract_category(driver)
+        if levels:
+            product_data["category"] = levels[-1]
+            product_data["category_path"] = " > ".join(levels)
 
         _click_more_button_if_exists(driver)
         _slow_scroll_to_bottom(driver)
@@ -622,6 +825,7 @@ def get_product_data(url: str) -> Optional[Dict[str, Any]]:
 
     except Exception as e:
         print(f"크롤링 오류 발생: {e}")
+        logging.getLogger(__name__).exception("상품 크롤링 실패")
         return None
 
     finally:

@@ -1,4 +1,4 @@
-import { AlertTriangle, Check, Loader2 } from "lucide-react";
+import { AlertTriangle, Check } from "lucide-react";
 
 import { cn } from "@/lib/cn";
 import type { StageStatus } from "@/types/analysis";
@@ -6,78 +6,72 @@ import type { StageStatus } from "@/types/analysis";
 /**
  * 파이프라인 한 단계.
  *
- * 알약과 라운드 카드 배경을 걷어내고 괘선 위의 한 줄로 바꿨다. 여섯 줄을
- * 배경색으로 구분하면 진행 중인 단계가 아니라 색칸이 먼저 보인다. 지금은
- * 번호 자리의 아이콘과 오른쪽 상태 글자, 두 곳만 색이 바뀐다.
- *
- * 상태 라벨을 한글로 옮겼다. 화면의 나머지가 전부 한글인데 이 줄만
- * `DONE / RUN / WAIT / ERR` 였다.
+ * 홈·결과 화면과 같은 말씨와 색을 쓴다. 색은 보라 하나 — 끝난 단계는
+ * 보라 체크, 지금 단계는 보라 점이 숨 쉬듯 깜빡이고, 기다리는 단계는
+ * 회색이다. 오류만 로즈다(결과 화면에서 로즈는 '문제'를 뜻한다).
  */
 
 interface StepItemProps {
-  index: number;
   stage: StageStatus;
 }
 
-const STATE: Record<StageStatus["state"], { label: string; color: string }> = {
-  done: { label: "완료", color: "var(--color-brand-fg)" },
-  running: { label: "진행 중", color: "var(--color-brand-fg)" },
-  wait: { label: "대기", color: "var(--color-fg-faint)" },
-  error: { label: "오류", color: "var(--color-missing)" },
+const STATE: Record<StageStatus["state"], { label: string; cls: string }> = {
+  done: { label: "완료", cls: "text-brand-fg" },
+  running: { label: "진행 중", cls: "text-brand-fg" },
+  wait: { label: "대기", cls: "text-fg-dim" },
+  error: { label: "오류", cls: "text-[var(--claim-no)]" },
 };
 
-export function StepItem({ index, stage }: StepItemProps) {
-  const isDone = stage.state === "done";
-  const isRunning = stage.state === "running";
-  const isError = stage.state === "error";
+export function StepItem({ stage }: StepItemProps) {
   const s = STATE[stage.state];
+  const isError = stage.state === "error";
 
   return (
-    <li className="grid grid-cols-[22px_minmax(0,1fr)_auto] items-baseline gap-x-4 py-3.5">
-      <span
-        className="grid place-items-center font-mono text-xs"
-        style={{ color: s.color }}
-        aria-hidden
-      >
-        {isDone ? (
-          <Check size={13} />
-        ) : isRunning ? (
-          <Loader2 size={13} className="animate-spin" />
-        ) : isError ? (
-          <AlertTriangle size={13} />
-        ) : (
-          <span className="tnum">{String(index).padStart(2, "0")}</span>
-        )}
-      </span>
-
-      <div className="min-w-0">
+    <li className="border-border flex min-w-0 items-center gap-3 border-b py-3">
+      <Mark state={stage.state} />
+      <div className="min-w-0 flex-1">
         <p
           className={cn(
-            "text-sm tracking-[var(--tracking-tight)]",
-            isRunning ? "text-fg font-medium" : "text-fg",
+            "text-[15px] tracking-[var(--tracking-tight)]",
+            stage.state === "wait" ? "text-fg-muted" : "text-fg font-semibold",
           )}
         >
           {stage.label}
         </p>
-        <p
-          className="mt-0.5 text-xs leading-relaxed"
-          style={{
-            color:
-              isError && stage.error_message
-                ? "var(--color-missing)"
-                : "var(--color-fg-dim)",
-          }}
-        >
+        <p className={cn("mt-0.5 truncate text-xs", isError ? "text-[var(--claim-no)]" : "text-fg-dim")}>
           {isError && stage.error_message ? stage.error_message : stage.sub_label}
         </p>
       </div>
-
-      <span
-        className="font-mono text-xs tracking-[var(--tracking-label)]"
-        style={{ color: s.color }}
-      >
-        {s.label}
-      </span>
+      <span className={cn("shrink-0 text-[13px] font-semibold", s.cls)}>{s.label}</span>
     </li>
+  );
+}
+
+function Mark({ state }: { state: StageStatus["state"] }) {
+  if (state === "done") {
+    return (
+      <span aria-hidden className="bg-brand grid size-5 shrink-0 place-items-center rounded-full text-white">
+        <Check size={12} strokeWidth={3} />
+      </span>
+    );
+  }
+  if (state === "error") {
+    return (
+      <span aria-hidden className="grid size-5 shrink-0 place-items-center rounded-full bg-[var(--claim-no)] text-white">
+        <AlertTriangle size={11} strokeWidth={2.6} />
+      </span>
+    );
+  }
+  if (state === "running") {
+    return (
+      <span aria-hidden className="grid size-5 shrink-0 place-items-center">
+        <span className="bg-brand size-2.5 animate-pulse rounded-full shadow-[0_0_0_5px_var(--color-brand-soft)] motion-reduce:animate-none" />
+      </span>
+    );
+  }
+  return (
+    <span aria-hidden className="grid size-5 shrink-0 place-items-center">
+      <span className="bg-border size-2.5 rounded-full" />
+    </span>
   );
 }

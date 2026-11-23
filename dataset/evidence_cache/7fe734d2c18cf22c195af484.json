@@ -1,22 +1,21 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=124047084",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "레노버 리전 Y700 무극 5G 해외구매 (램24GB,1TB)",
       "name": "레노버 리전 Y700 무극 5G 해외구매 (램24GB,1TB)",
       "description": "",
-      "ocr_text": "레노버 리전 Y7OO 무극 56 해외구매 (캠24GB,1TB) coupang 1,600,000원 무료배승 최저가 구매하기 가격비교 10 상품 상세정보 의견리뷰 연관상품 화면크기 8.4인치 디스플레이 OLED 해상도 2560x1600 정설 수(ppi) 359ppi 최대주사물 165Hz 색감 DCI-P3 쇠대밝기 4o0Onits 시스템 24GB 용탕 1TB 저장매체 UFS4기(너장) 외장메도리 microSD지I원 외장메모리용탕 TnicroSD 쇠대2TB 프로세서 스년드래근8 엘리트 Gens 코어 개수 8코이 코이클럭 4.6GHz+3.62GHz GPU Adreno84o 벤치마크 AP CPU 99점 AP 게이팅 96점 CPU(싱글) 3639 CPU(밀리) 11047 시I기능 요약 편집 교점 실시간 통역번역 카메라 후면카메라 후면:5,000만화소 전면카메라 화소 전면 800만화소 사운드 스피커",
+      "ocr_text": "레노버 리전 Y7OO 무극 56 해외구매 (캠24GB,1TB) Gmarket   1,694,330원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 18 연관상품 모델명 TB324ZC 화면크기 8.4인치 화면크기 8인치대 디스플레이 OLED 해상도 2560x1600 퍽설 수(ppi) 359 최대주사물 165Hz 색감 DCI-P3 최대밝기 400Onits 시스템 24GB 용량 ITB 저장매체 UFS4기내장) 외장메모리 microSD미지원 프로세서 스냄드래근8 엘리트 Gen5 코어 개수 8코어 코어클력 4.6GHz+3.62GHz GPU Adreno84o 벤치마크 AP CPU 99점 AP 게이망 96점 AP CPU(싱글) 3639 AP CPU멀리) 11047 네트위크 불무투스버전 불무투스v6.0 카메라 후면카메라 싱글 후면:5,000만화소 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "태블릿PC": "지원",
         "5G": "지원",
         "8.4인치": "지원",
         "OLED": "지원",
         "165Hz": "지원",
-        "4000nits": "지원",
         "램": "24GB",
         "용량": "1TB",
-        "microSD지원": "지원",
+        "microSD미지원": "지원",
         "전용펜 별매": "지원",
         "전용키보드 미지원": "지원",
         "[프로세서/AI] 스냅드래곤8 엘리트 Gen5": "지원",
@@ -31,7 +30,7 @@
         "두께": "6.5mm",
         "무게": "289g"
       },
-      "raw_specs": "태블릿PC / 5G / 8.4인치 / OLED / 165Hz / 4000nits / 램 : 24GB / 용량 : 1TB / microSD지원 / 전용펜 별매 / 전용키보드 미지원 / [프로세서/AI] 스냅드래곤8 엘리트 Gen5 / AP CPU : 99점 / AP 게이밍 : 96점 / [카메라] 후면카메라 : 싱글 / 전면카메라 : 싱글 / 스피커 : 2개 / [배터리/규격] USB3.2 / 7,47mAh / 최대충전 : 68W / 두께 : 6.5mm / 무게 : 289g",
+      "raw_specs": "태블릿PC / 5G / 8.4인치 / OLED / 165Hz / 램 : 24GB / 용량 : 1TB / microSD미지원 / 전용펜 별매 / 전용키보드 미지원 / [프로세서/AI] 스냅드래곤8 엘리트 Gen5 / AP CPU : 99점 / AP 게이밍 : 96점 / [카메라] 후면카메라 : 싱글 / 전면카메라 : 싱글 / 스피커 : 2개 / [배터리/규격] USB3.2 / 7,47mAh / 최대충전 : 68W / 두께 : 6.5mm / 무게 : 289g",
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=124047084",
       "manufacturer": "레노버, Lenober",
@@ -509,10 +508,10 @@
     "target_company_name": "레노버, Lenober",
     "model_param": "Y700",
     "ocr_result": {
-      "extracted_text": "레노버 리전 Y7OO 무극 56 해외구매 (캠24GB,1TB) coupang 1,600,000원 무료배승 최저가 구매하기 가격비교 10 상품 상세정보 의견리뷰 연관상품 화면크기 8.4인치 디스플레이 OLED 해상도 2560x1600 정설 수(ppi) 359ppi 최대주사물 165Hz 색감 DCI-P3 쇠대밝기 4o0Onits 시스템 24GB 용탕 1TB 저장매체 UFS4기(너장) 외장메도리 microSD지I원 외장메모리용탕 TnicroSD 쇠대2TB 프로세서 스년드래근8 엘리트 Gens 코어 개수 8코이 코이클럭 4.6GHz+3.62GHz GPU Adreno84o 벤치마크 AP CPU 99점 AP 게이팅 96점 CPU(싱글) 3639 CPU(밀리) 11047 시I기능 요약 편집 교점 실시간 통역번역 카메라 후면카메라 후면:5,000만화소 전면카메라 화소 전면 800만화소 사운드 스피커",
+      "extracted_text": "레노버 리전 Y7OO 무극 56 해외구매 (캠24GB,1TB) Gmarket   1,694,330원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 18 연관상품 모델명 TB324ZC 화면크기 8.4인치 화면크기 8인치대 디스플레이 OLED 해상도 2560x1600 퍽설 수(ppi) 359 최대주사물 165Hz 색감 DCI-P3 최대밝기 400Onits 시스템 24GB 용량 ITB 저장매체 UFS4기내장) 외장메모리 microSD미지원 프로세서 스냄드래근8 엘리트 Gen5 코어 개수 8코어 코어클력 4.6GHz+3.62GHz GPU Adreno84o 벤치마크 AP CPU 99점 AP 게이망 96점 AP CPU(싱글) 3639 AP CPU멀리) 11047 네트위크 불무투스버전 불무투스v6.0 카메라 후면카메라 싱글 후면:5,000만화소 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\레노버 리전 Y700 무극 5G 해외구매 (램24GB,1TB)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/레노버 리전 Y700 무극 5G 해외구매 (램24GB,1TB)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }

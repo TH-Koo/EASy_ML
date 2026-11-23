@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=122665585",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "에이서 스위프트 GO 14 AI SFG14-75-508U (리퍼비시)",
       "name": "에이서 스위프트 GO 14 AI SFG14-75-508U (리퍼비시)",
       "description": "",
-      "ocr_text": "에이서 스위프트 GO 14 Al SFG14-75-508U (리퍼비시) 가격비교 상품 상세정보 의견리뷰 연관상품 화면 크기 35.56cmn(14인지) 무게 1.24kg 최대사용시간 쇠대 26시간 운영제제 (OS) 원도우11흡 [화면] 화면 비율 1610 해상도 1920x1200(WUXGA) sRGB 10076 화면 회전각 180도 주사율 12OHz 밝기 35Onit 파널 종류 IPS 디스플레이 특징 광시아각 [CPU] CPU 제조사 인텔 CPU 세분류 굳어 울드라5(S2) CPU 코드명 루나레이크 CPU 넘버 226V (4.5GHz) CPU 코이 옥타a어(4P+4E) CPU 스레드 8스레드 NPU 종류 인텔 Al Boost NPU 40ToPS [그래픽] GPU 종류 내장그래픽 GPU 제조사 GPU 침셋 Arc 130V GPU 코어 7코어 GPU 클력 185OMHz [구성] 댐 타입 LPDDR5x(온보다) 16GB",
+      "ocr_text": "에이서 스위프트 GO 14 Al SFG14-75-508U (리퍼비시) 가격비교 상품 상세정보 의견리뷰 연관상품 화면 크기 35.56cm(i4인지) 무게 최대사용시간 최대 26시간 운영제제(OS) 원도우11흡 [화면] 화면 비율 1610 허상도 1920*1200(WUXGA) sRGB 10096 화면 회전각 180도 주사율 12OHz 밝기 35Onit 패널 종류 IPS 디스플레이 특징 광시아각 [CPU] CPU 제조사 인텔 CPU 세분류 코어 울드라5(S2) CPU 코드명 루나레이크 CPU 넘버 226V (4.5GHz) CPU 코어 목타코어(4P+4E) CPU 스레드 8스레드 NPU 종류 인텔 Al Boost NPU 40TOPS [그래픽] GPU 종류 내장그래픽 GPU 제조사  인텔 GPU 집셋 Arc 130V GPU 코어 7코어 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies 1.24kg",
       "specs": {
         "리퍼비시": "지원",
         "AI노트북": "지원",
@@ -35,11 +35,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=122665585",
       "manufacturer": "에이서, EAES",
-      "model_name": "SFG14-75-508U"
+      "model_name": "SFG14-75"
     },
     "norm_info": {
       "company_name": "에이서, EAES",
-      "model_name": "SFG14-75-508U",
+      "model_name": "SFG14-75",
       "product_name": "에이서 스위프트 GO 14 AI SFG14-75-508U (리퍼비시)"
     },
     "db_results": [
@@ -81,14 +81,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "에이서, EAES",
-    "model_param": "SFG14-75-508U",
+    "model_param": "SFG14-75",
     "ocr_result": {
-      "extracted_text": "에이서 스위프트 GO 14 Al SFG14-75-508U (리퍼비시) 가격비교 상품 상세정보 의견리뷰 연관상품 화면 크기 35.56cmn(14인지) 무게 1.24kg 최대사용시간 쇠대 26시간 운영제제 (OS) 원도우11흡 [화면] 화면 비율 1610 해상도 1920x1200(WUXGA) sRGB 10076 화면 회전각 180도 주사율 12OHz 밝기 35Onit 파널 종류 IPS 디스플레이 특징 광시아각 [CPU] CPU 제조사 인텔 CPU 세분류 굳어 울드라5(S2) CPU 코드명 루나레이크 CPU 넘버 226V (4.5GHz) CPU 코이 옥타a어(4P+4E) CPU 스레드 8스레드 NPU 종류 인텔 Al Boost NPU 40ToPS [그래픽] GPU 종류 내장그래픽 GPU 제조사 GPU 침셋 Arc 130V GPU 코어 7코어 GPU 클력 185OMHz [구성] 댐 타입 LPDDR5x(온보다) 16GB",
+      "extracted_text": "에이서 스위프트 GO 14 Al SFG14-75-508U (리퍼비시) 가격비교 상품 상세정보 의견리뷰 연관상품 화면 크기 35.56cm(i4인지) 무게 최대사용시간 최대 26시간 운영제제(OS) 원도우11흡 [화면] 화면 비율 1610 허상도 1920*1200(WUXGA) sRGB 10096 화면 회전각 180도 주사율 12OHz 밝기 35Onit 패널 종류 IPS 디스플레이 특징 광시아각 [CPU] CPU 제조사 인텔 CPU 세분류 코어 울드라5(S2) CPU 코드명 루나레이크 CPU 넘버 226V (4.5GHz) CPU 코어 목타코어(4P+4E) CPU 스레드 8스레드 NPU 종류 인텔 Al Boost NPU 40TOPS [그래픽] GPU 종류 내장그래픽 GPU 제조사  인텔 GPU 집셋 Arc 130V GPU 코어 7코어 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies 1.24kg",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\에이서 스위프트 GO 14 AI SFG14-75-508U (리퍼비시)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/에이서 스위프트 GO 14 AI SFG14-75-508U (리퍼비시)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/에이서 스위프트 GO 14 AI SFG14-75-508U (리퍼비시)/detail_scan.png",
+        "image_size": 93233,
+        "image_sha256": "fbec7079af8f4bced730e55977a15ac692eb6cdb6dc6882c5153d4d4e82f6095"
+      }
     }
   }
 }

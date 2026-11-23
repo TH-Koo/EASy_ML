@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=59087771",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "헤이홈 G7 하이퍼 GKW-RC411WH",
       "name": "헤이홈 G7 하이퍼 GKW-RC411WH",
       "description": "",
-      "ocr_text": "헤이롬 67 하이퍼 GKW-RC41IWH LOTTE ON 678,000원   무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 집입력 6,OoOPa 센서 LDS 인식 시사물인식 감지회피 잠애물회피 낙하방지 카켓회피 리프팀 1.2cm 낙하감지 6cm 눈늑년기 2cm 브러쉬 메인 사이드 엉림방지재질 충전시간 3시간 배터리용량 52OOmAh 스마트포제어 금지구역 구역지점 예약청소 물걸레 회전형 압력 1.2kg(12N) 물걸레 회전수 18ORPM 스테이선 먼지비움 걸레세칙(온수)",
+      "ocr_text": "헤이롬 G7 하이퍼 GKW-RC41IWH LOTTE ON 678,000원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 집입력 6,OoOPa 센서 LDS 인식 시사물인식 감지회피 장애물회피 낙하방지 카켓회피 리프팅 1.2cm 낙하감지 6cm 문늑넘기 2cm 브러쉬 메인 사이드 엉림방지재질 충전시간 3시간 배터리용량 52o0mAh 스마토포제어 금지구역 구역지정 예약청소 물걸레 회전형  압력 1.2kgli2N) Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "로봇청소기": "지원",
         "흡입+물걸레": "지원",
@@ -400,7 +400,42 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 개인 상황 인지를 기반으로 스마트 홈 케어가 가능한 <span class=\"search_word\">Home</span> Ambient Intelligence Display (HAID) 및 디자인 개발 등 총 4건",
+      "detail": "NTIS에서 [HOME] 검색어로 조회한 결과, AI 관련 과제 4건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "개인 상황 인지를 기반으로 스마트 홈 케어가 가능한 <span class=\"search_word\">Home</span> Ambient Intelligence Display (HAID) 및 디자인 개발",
+          "project_number": "1415186393",
+          "lead_company": "HOME",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AX-<span class=\"search_word\">Home</span> : 멀티모달 AI·DT 기반 자율지능형 공동주택 생애주기 플랫폼",
+          "project_number": "2710107378",
+          "lead_company": "HOME",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "디지털 바이오마커 기반 파킨슨병 하위유형 분류 모델 및 <span class=\"search_word\">Home</span>-based 중재 치료 시스템 개발: 중장기 실증 연구",
+          "project_number": "2340058004",
+          "lead_company": "HOME",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "디지털 바이오마커 기반 파킨슨병 하위유형 분류 모델 및 <span class=\"search_word\">Home</span>-based 중재 치료 시스템 개발: 중장기 실증 연구",
+          "project_number": "2340040081",
+          "lead_company": "HOME",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -423,7 +458,7 @@
       },
       {
         "source_record_id": "1020250184765",
-        "일련번호": "1",
+        "일련번호": "2",
         "출원번호": "1020250184765",
         "발명의명칭(한글)": "AI 기반의 제작가구 개념도 구체화 방법 및 시스템",
         "출원일자": "2025-11-28",
@@ -520,7 +555,7 @@
         "출원인": "(주)홈페이지코리아",
         "등록상태": "공개",
         "초록": "본 발명은 온라인 또는 오프라인으로 제공받는 이력서의 정보만으로는 기업측에서 채용요건에 적합한 업무를 수행할 수 있는 지원자인지 판단하기 어려운 점에 대하여 같이 근무한 선배, 동료를 비롯한 스승 등과 같이 신뢰도를 갖는 추천인의 추천과 이력을 통해서 채용 확률을 높이고 이직률을 낮추기 위한 신뢰도를 갖는 추천인의 인재추천데이터를 이용한 채용 시스템에 관한 것이다.  이에 따른, 본 발명은 같은 직장에서 근무한 선배, 동료 또는 스승, 친구 등과 같이 신뢰도를 갖는 추천인이 인재추천과 관련된 정보를 제공함에 따라 이력서만으로는 업무상 적합한 자인지 판단하기 어려운 점을 해소하는 효과가 있고, 이를 통하여 채용 확률은 높아지고 이직률은 감소하는 효과가 있으며, 대화형 인공지능을 활용함에 따라 기업에서 인사와 관련되어 효율적인 채용이 가능한 효과가 있다.",
-        "IPC": "G06Q 10/10|G06Q 10/06|H04L 51/02|G06F 16/332|G06F 16/33|G06F 40/20|G06F 21/31",
+        "IPC": "G06Q 10/1053|G06Q 10/0631|H04L 51/02|G06F 16/3329|G06F 16/334|G06F 40/20|G06F 21/31|G06F 16/953|G06Q 50/10",
         "CPC": "",
         "relevance_type": "general_ai",
         "match_confidence": 0.45,
@@ -621,14 +656,14 @@
       },
       {
         "source_record_id": "1020210114558",
-        "일련번호": "2",
+        "일련번호": "1",
         "출원번호": "1020210114558",
         "발명의명칭(한글)": "인공지능 기반의 증상 및 질환 매칭을 위한 챗봇 서비스 제공방법",
         "출원일자": "2021-08-30",
         "출원인": "주식회사 초메디신|세종대학교산학협력단",
         "등록상태": "소멸",
         "초록": "본 발명은 인공지능 기반의 증상 및 질환 매칭을 위한 챗봇 서비스 제공방법에 관한 것이다.  보다 상세하게는 본 발명의 일 실시예에 따른 장치에 의하여 수행되는 인공지능 기반의 증상 및 질환 매칭을 위한 챗봇 서비스 제공방법에 있어서, 사용자로부터 자연어 기반의 증상입력정보를 입력받는 단계, 상기 증상입력정보를 기반으로 증상키워드를 추출하는 단계, 상기 증상키워드를 토큰화하는 단계, 토큰화된 상기 증상키워드를 표준화하여 증상표준키워드를 추출하는 단계, 상기 증상표준키워드를 기반으로 질환과 매칭하는 단계 및 매칭된 질환정보를 사용자에게 제공하는 단계를 포함할 수 있다.",
-        "IPC": "G16H 10/20|G16H 80/00|G16H 50/50|G16H 50/20|G16H 50/30|G06F 16/332|G06F 16/33|G06F 40/284",
+        "IPC": "G16H 10/20|G16H 80/00|G16H 50/50|G16H 50/20|G16H 50/30|H04L 51/02|G06F 16/3329|G06F 16/3332|G06F 40/284|G06N 20/00",
         "CPC": "",
         "relevance_type": "general_ai",
         "match_confidence": 0.45,
@@ -679,12 +714,17 @@
     "target_company_name": "Home, HeyHome",
     "model_param": "GKW-RC411WH",
     "ocr_result": {
-      "extracted_text": "헤이롬 67 하이퍼 GKW-RC41IWH LOTTE ON 678,000원   무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 집입력 6,OoOPa 센서 LDS 인식 시사물인식 감지회피 잠애물회피 낙하방지 카켓회피 리프팀 1.2cm 낙하감지 6cm 눈늑년기 2cm 브러쉬 메인 사이드 엉림방지재질 충전시간 3시간 배터리용량 52OOmAh 스마트포제어 금지구역 구역지점 예약청소 물걸레 회전형 압력 1.2kg(12N) 물걸레 회전수 18ORPM 스테이선 먼지비움 걸레세칙(온수)",
+      "extracted_text": "헤이롬 G7 하이퍼 GKW-RC41IWH LOTTE ON 678,000원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 집입력 6,OoOPa 센서 LDS 인식 시사물인식 감지회피 장애물회피 낙하방지 카켓회피 리프팅 1.2cm 낙하감지 6cm 문늑넘기 2cm 브러쉬 메인 사이드 엉림방지재질 충전시간 3시간 배터리용량 52o0mAh 스마토포제어 금지구역 구역지정 예약청소 물걸레 회전형  압력 1.2kgli2N) Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\헤이홈 G7 하이퍼 GKW-RC411WH\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/헤이홈 G7 하이퍼 GKW-RC411WH/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/헤이홈 G7 하이퍼 GKW-RC411WH/detail_scan.png",
+        "image_size": 75342,
+        "image_sha256": "d9fd8a9e8e1f964c9be5af31a5205d1a46d814055c95e4ae2e9d66de41797eb1"
+      }
     }
   }
 }

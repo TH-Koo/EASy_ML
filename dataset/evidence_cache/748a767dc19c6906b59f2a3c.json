@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=122617959",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "알파스캔 AOC 24E40L 게이밍 144 IPS 원형편광 시력보호 Ai HDR 무결점",
       "name": "알파스캔 AOC 24E40L 게이밍 144 IPS 원형편광 시력보호 Ai HDR 무결점",
       "description": "",
-      "ocr_text": "알파스랜 AOC 24E4OL 게이망 144 IPS 원형편광 시력보호 Ai HDR 무결점 AUCTION 128,990원 (128,990+무료배송) 최저가 구매하기 가격비교 77 상품 상세정보 의견리뷰 30 뉴스커유니티 연관상품 해삼도 FHD(192o 1080) 쇠대 주사물 144H2 패널 종류 IPS 화면 비율 라이드(16.9) 파닐 형대 평면 시야각 광시야각 퍽설피치 0.2745mm 응답 속도 O.5ms(MPRT) 화면 밝기 300nits 명만비 1,500:1 통적명압비 무한(이 7 HDR 지원 HDR HDR 인종 HDR1O 시력보호 기능 끌리커 프리 불루라이트 자단 눈부십 방지 논글레어 화면 기능 고정종훨비 지원 크로마서브생플림 부가 기능 테드문 아웃 스랜드 기능 빌드(상하) 규격 VESA봄 100 1oOmm 크기(가로x세로x깊 544x423x175mmn 무게 2.97kg 소비전력 16W",
+      "ocr_text": "알파스랜 AOC 24E4OL 게이망 144 IPS 원형편광 시력보호 Ai HDR 무결점 알파스랜  129,000원 (129,000+무료버송) 최저가 구매하기 가격비교 82 상품 상세정보 의견리뷰 32 뉴스커유니티 연관상품 해상도 FHD(192o 1080) 최대 주사물 144Hz 패널 종류 IPS 화면 비율 와이드(169) 패널 형태 평면 시야각 광시아각 퍽실피치 02745mm 응답 속도 O.5ms(MPRT) 화면 밝기 300nits 명양비 1500.1 동적명임비   무한(이:1 HDR 지원 HDR HDR 인종 HDR1O 시력보호 기능 플리커 프리 불루라이트 차단 눈부심 방지 논글레어 화면 기능 고정증히비 지원 크로마서브심플림 부가 기능 헤드끈 아옷 스랜드 기능 털트상하) Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "모니터": "지원",
         "60.5cm(24인치)": "지원",
@@ -34,11 +34,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=122617959",
       "manufacturer": "알파스캔, AlphaScan",
-      "model_name": "AOC24E40L"
+      "model_name": "G-SYNC"
     },
     "norm_info": {
       "company_name": "알파스캔, AlphaScan",
-      "model_name": "AOC24E40L",
+      "model_name": "G-SYNC",
       "product_name": "알파스캔 AOC 24E40L 게이밍 144 IPS 원형편광 시력보호 Ai HDR 무결점"
     },
     "db_results": [
@@ -145,7 +145,49 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 소상공인을 위한 딥러닝 기반의 개인맞춤형 디지털 사이니지 광고 자동 노출 시스템 등 총 5건",
+      "detail": "NTIS에서 [알파스캔] 검색어로 조회한 결과, AI 관련 과제 5건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "소상공인을 위한 딥러닝 기반의 개인맞춤형 디지털 사이니지 광고 자동 노출 시스템",
+          "project_number": "1425161074",
+          "lead_company": "알파스캔",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "클라우드 게임의 8K 초저지연 스트리밍 미디어 서비스를 위한 AI 기반 고품질 스케일링 알고리즘 연구개발",
+          "project_number": "1375027144",
+          "lead_company": "알파스캔",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "실시간 초점 확장, 선택적 Z-stack 기술을 이용한 고심도, 초고채널 형광 통합 고기능 디지털 병리 스캐너 상용화 개발",
+          "project_number": "2710110797",
+          "lead_company": "알파스캔",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "<span class=\"search_word\">AlphaScan</span>: 강화학습 AI 기반 고배율 MRI 프로토콜",
+          "project_number": "2420022853",
+          "lead_company": "ALPHASCAN",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "<span class=\"search_word\">AlphaScan</span>: 강화학습 AI 기반 고배율 MRI 프로토콜",
+          "project_number": "2420029206",
+          "lead_company": "ALPHASCAN",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -155,14 +197,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "알파스캔, AlphaScan",
-    "model_param": "AOC24E40L",
+    "model_param": "G-SYNC",
     "ocr_result": {
-      "extracted_text": "알파스랜 AOC 24E4OL 게이망 144 IPS 원형편광 시력보호 Ai HDR 무결점 AUCTION 128,990원 (128,990+무료배송) 최저가 구매하기 가격비교 77 상품 상세정보 의견리뷰 30 뉴스커유니티 연관상품 해삼도 FHD(192o 1080) 쇠대 주사물 144H2 패널 종류 IPS 화면 비율 라이드(16.9) 파닐 형대 평면 시야각 광시야각 퍽설피치 0.2745mm 응답 속도 O.5ms(MPRT) 화면 밝기 300nits 명만비 1,500:1 통적명압비 무한(이 7 HDR 지원 HDR HDR 인종 HDR1O 시력보호 기능 끌리커 프리 불루라이트 자단 눈부십 방지 논글레어 화면 기능 고정종훨비 지원 크로마서브생플림 부가 기능 테드문 아웃 스랜드 기능 빌드(상하) 규격 VESA봄 100 1oOmm 크기(가로x세로x깊 544x423x175mmn 무게 2.97kg 소비전력 16W",
+      "extracted_text": "알파스랜 AOC 24E4OL 게이망 144 IPS 원형편광 시력보호 Ai HDR 무결점 알파스랜  129,000원 (129,000+무료버송) 최저가 구매하기 가격비교 82 상품 상세정보 의견리뷰 32 뉴스커유니티 연관상품 해상도 FHD(192o 1080) 최대 주사물 144Hz 패널 종류 IPS 화면 비율 와이드(169) 패널 형태 평면 시야각 광시아각 퍽실피치 02745mm 응답 속도 O.5ms(MPRT) 화면 밝기 300nits 명양비 1500.1 동적명임비   무한(이:1 HDR 지원 HDR HDR 인종 HDR1O 시력보호 기능 플리커 프리 불루라이트 차단 눈부심 방지 논글레어 화면 기능 고정증히비 지원 크로마서브심플림 부가 기능 헤드끈 아옷 스랜드 기능 털트상하) Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\알파스캔 AOC 24E40L 게이밍 144 IPS 원형편광 시력보호 Ai HDR 무결점\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/알파스캔 AOC 24E40L 게이밍 144 IPS 원형편광 시력보호 Ai HDR 무결점/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/알파스캔 AOC 24E40L 게이밍 144 IPS 원형편광 시력보호 Ai HDR 무결점/detail_scan.png",
+        "image_size": 93014,
+        "image_sha256": "8465786b3173ba8c4212e2ed3e9c117241fdb589772ac9ca36c10a6e4f83db9a"
+      }
     }
   }
 }

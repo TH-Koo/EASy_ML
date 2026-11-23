@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=122698082",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "레노버 씽크패드 E16 IPL G4 U7 3K AI 64GB램 (SSD 1TB)",
       "name": "레노버 씽크패드 E16 IPL G4 U7 3K AI 64GB램 (SSD 1TB)",
       "description": "",
-      "ocr_text": "레노버 생크패드 E16 IPL G4 U7 3K Al 64GB램 (SSD ITB) 레노버공식파트너 다무올 3,139,000원 무료래승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 무게 1.63kg 운명제제(OS) OS미I포함(프리도스) 판매유형 구성변경상품 [화면] 화면 비율 1610 해상도 2560x1600(WQXGA) sRGB 10096 주사물 12OHz 밝기 4OOnit 패널 표면 저리 안티글레이 파널 종류 IPS 디스플레이 특징 광시아각 [CPU] CPU 제조사 CPU 세분류 굳어 울드라7(S3) CPU 코드명 괜서레이크 CPU 넘버 355 (4.7GHz) CPU 코이 옥타코어(4P+4LE) CPU 스레드 8스레드 NPU 종류 인텔 Al Boost NPU 49TOPS [그래픽] GPU 종류 내장그래픽 GPU 제조사 GPU 집셋 Intel Graphics [구성] 댐 타입 DDR5 646B 캠 슬로 총 2가 램 대역쪽 56OOMHz",
+      "ocr_text": "레노버 생크때드 E16 IPL G4 U7 3K Al 64GB램 (SSD ITB) phcne 3,230,000원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 무게 1.63kg 운영제제(OS) OS미포함(프리도스) 판매유형 구성변경상품 [화면] 화면 비율 1610 해상도 2560*1600(WQXGA) sRGB 10096 주사율 12OHz 밝기 400nit 패널 표면 저리 안티글레어 패널 종류 IPS 디스플레이 특징 광시아각 [CPU] CPU 제조사 인텔 CPU 세분류 코어 울드라7(S3) CPU 코드명 팬서레이크 CPU 넘버 355 (4.7GHz) CPU 코어 목타코어(4P+4LE) CPU 스레드 8스레드 NPU 종류 인텔 Al Boost NPU 49TOPS [그래픽] GPU 종류- 내장그래픽 GPU 제조사  GPU 집셋 Intel Graphics Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "AI노트북": "지원",
         "40.6cm(16인치)": "지원",
@@ -32,11 +32,11 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=122698082",
       "manufacturer": "레노버, Lenober",
-      "model_name": "E16 IPL G4 U7"
+      "model_name": "USB-PD"
     },
     "norm_info": {
       "company_name": "레노버, Lenober",
-      "model_name": "E16 IPL G4 U7",
+      "model_name": "USB-PD",
       "product_name": "레노버 씽크패드 E16 IPL G4 U7 3K AI 64GB램 (SSD 1TB)"
     },
     "db_results": [
@@ -504,14 +504,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "레노버, Lenober",
-    "model_param": "E16 IPL G4 U7",
+    "model_param": "USB-PD",
     "ocr_result": {
-      "extracted_text": "레노버 생크패드 E16 IPL G4 U7 3K Al 64GB램 (SSD ITB) 레노버공식파트너 다무올 3,139,000원 무료래승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 무게 1.63kg 운명제제(OS) OS미I포함(프리도스) 판매유형 구성변경상품 [화면] 화면 비율 1610 해상도 2560x1600(WQXGA) sRGB 10096 주사물 12OHz 밝기 4OOnit 패널 표면 저리 안티글레이 파널 종류 IPS 디스플레이 특징 광시아각 [CPU] CPU 제조사 CPU 세분류 굳어 울드라7(S3) CPU 코드명 괜서레이크 CPU 넘버 355 (4.7GHz) CPU 코이 옥타코어(4P+4LE) CPU 스레드 8스레드 NPU 종류 인텔 Al Boost NPU 49TOPS [그래픽] GPU 종류 내장그래픽 GPU 제조사 GPU 집셋 Intel Graphics [구성] 댐 타입 DDR5 646B 캠 슬로 총 2가 램 대역쪽 56OOMHz",
+      "extracted_text": "레노버 생크때드 E16 IPL G4 U7 3K Al 64GB램 (SSD ITB) phcne 3,230,000원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 무게 1.63kg 운영제제(OS) OS미포함(프리도스) 판매유형 구성변경상품 [화면] 화면 비율 1610 해상도 2560*1600(WQXGA) sRGB 10096 주사율 12OHz 밝기 400nit 패널 표면 저리 안티글레어 패널 종류 IPS 디스플레이 특징 광시아각 [CPU] CPU 제조사 인텔 CPU 세분류 코어 울드라7(S3) CPU 코드명 팬서레이크 CPU 넘버 355 (4.7GHz) CPU 코어 목타코어(4P+4LE) CPU 스레드 8스레드 NPU 종류 인텔 Al Boost NPU 49TOPS [그래픽] GPU 종류- 내장그래픽 GPU 제조사  GPU 집셋 Intel Graphics Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\레노버 씽크패드 E16 IPL G4 U7 3K AI 64GB램 (SSD 1TB)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/레노버 씽크패드 E16 IPL G4 U7 3K AI 64GB램 (SSD 1TB)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/레노버 씽크패드 E16 IPL G4 U7 3K AI 64GB램 (SSD 1TB)/detail_scan.png",
+        "image_size": 96141,
+        "image_sha256": "e0d8518244f852d5f4594c8550ef27aa942a0e74c4440fa8e301f1e2bb41edb7"
+      }
     }
   }
 }

@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=58010036",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "엘즈 파비스 AI 에코 PV-FS02B",
       "name": "엘즈 파비스 AI 에코 PV-FS02B",
       "description": "",
-      "ocr_text": "엘즈 파비스 Al 에코 PV-FSo2B Gmarket 165,, 540원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 형태 랜드령 위무선 유선 모티방식 DC모티 소비전력 26W 바람 12단 바람모드 초미풍(유아품) 자연품 에코품(자능품속조 '날가개수 3업날가 곰공기이동거리 15mn 헤드조절 좌우회전 상하각도조설 3D인체회전 주요기능 타이머 리모컨 부가기능 오로리터 [g 인종 적합성평가인층 R-R-EZH-PV-FSO2B| 인긍번호 확인 안전확인인승 SU10726-200025 | 인증번호 확인",
+      "ocr_text": "엘즈 파비스 Al 에코 PV-FSo2B AUCTION 167,320원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 형태 스랜드형 위무선 유선 모터방식 DC모터 소비전력 26W 바람 12단 바람모드 조미품유아품) 자연품 에코풍자동품속조 날개개수 38날개 공기이동거리 15m 헤드조절 좌우회전 상하각도조절 3D입체회전  주요기능 타이머 리모권 부가기능 오토리터 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "선풍기": "지원",
         "스탠드형": "지원",
@@ -491,7 +491,42 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: LPM(Large Process Model) 기반 기업 운영 최적화를 위한 프로세스 인텔리전스 AI 솔루션 개발 등 총 4건",
+      "detail": "NTIS에서 [ELS] 검색어로 조회한 결과, AI 관련 과제 4건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "LPM(Large Process Model) 기반 기업 운영 최적화를 위한 프로세스 인텔리전스 AI 솔루션 개발",
+          "project_number": "2420029209",
+          "lead_company": "ELS",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "LPM(Large Process Model) 기반 기업 운영 최적화를 위한 프로세스 인텔리전스 AI 솔루션 개발",
+          "project_number": "2420022849",
+          "lead_company": "ELS",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "인공지능 및 자동차 SoC용 칩렛 인터페이스를 위한 Tbps/mm급 인터페이스 IP 및 실리콘 포토닉스 응용기술 개발",
+          "project_number": "2710075045",
+          "lead_company": "ELS",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "탄성광 산란 이미지를 이용한 인공지능 미생물 신속 비파괴 분석시스템 개발",
+          "project_number": "2420026774",
+          "lead_company": "ELS",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -968,12 +1003,17 @@
     "target_company_name": "엘즈, ELS",
     "model_param": "PV-FS02B",
     "ocr_result": {
-      "extracted_text": "엘즈 파비스 Al 에코 PV-FSo2B Gmarket 165,, 540원  무료배송 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 형태 랜드령 위무선 유선 모티방식 DC모티 소비전력 26W 바람 12단 바람모드 초미풍(유아품) 자연품 에코품(자능품속조 '날가개수 3업날가 곰공기이동거리 15mn 헤드조절 좌우회전 상하각도조설 3D인체회전 주요기능 타이머 리모컨 부가기능 오로리터 [g 인종 적합성평가인층 R-R-EZH-PV-FSO2B| 인긍번호 확인 안전확인인승 SU10726-200025 | 인증번호 확인",
+      "extracted_text": "엘즈 파비스 Al 에코 PV-FSo2B AUCTION 167,320원 무료배승 최저가 구매하기 가격비교 상품 상세정보 의견리뷰 연관상품 형태 스랜드형 위무선 유선 모터방식 DC모터 소비전력 26W 바람 12단 바람모드 조미품유아품) 자연품 에코풍자동품속조 날개개수 38날개 공기이동거리 15m 헤드조절 좌우회전 상하각도조절 3D입체회전  주요기능 타이머 리모권 부가기능 오토리터 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\엘즈 파비스 AI 에코 PV-FS02B\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/엘즈 파비스 AI 에코 PV-FS02B/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/엘즈 파비스 AI 에코 PV-FS02B/detail_scan.png",
+        "image_size": 72027,
+        "image_sha256": "25a4c4abb70877b83d455de1747dec70641bf9c26110b3992eeba8dacc04490a"
+      }
     }
   }
 }

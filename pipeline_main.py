@@ -32,6 +32,7 @@ from logic.api import (
 )
 
 from fides_scoring import display_score
+from fides_scoring import display_score
 from fides_integration import (
     infer_product_type,
     load_weight_predictor,
@@ -607,12 +608,24 @@ def collect_evidence(url: str, scraped_item: dict, ocr_result: dict) -> dict:
     official_company = resolve_real_company_name(norm_result.get("raw_company", ""), scraped_item.get("model_name", ""))
     official_model = (
         _spec_table_model(scraped_item)
+        or norm_result.get("final_norm_model")
+        or norm_result.get("final_norm_model")
         or resolve_model_name(scraped_item.get("model_name", ""), ocr_text)
-        or norm_result.get("final_norm_model", "미확인")
+        or "미확인"
+        or "미확인"
     )
     product_category = scraped_item.get("category", "") if isinstance(scraped_item.get("category"), str) else ""
     llm_aliases = scraped_item.get("aliases", [])
-    search_payload = generate_tailored_search_payload(official_company, llm_aliases)
+    # Preserve the crawler's original manufacturer and deterministic aliases.
+    # Never inject historical unreviewed Ollama cache values into agency searches.
+    raw_company = norm_result.get("raw_company", "")
+    safe_aliases = [raw_company] if raw_company and raw_company != "미확인" else []
+    search_payload = generate_tailored_search_payload(official_company, safe_aliases)
+    # Preserve the crawler's original manufacturer and deterministic aliases.
+    # Never inject historical unreviewed Ollama cache values into agency searches.
+    raw_company = norm_result.get("raw_company", "")
+    safe_aliases = [raw_company] if raw_company and raw_company != "미확인" else []
+    search_payload = generate_tailored_search_payload(official_company, safe_aliases)
 
     print(f"\n 분석 대상: {official_company} / {official_model}")
     print("⏳ 로컬 DB 및 다중 API 통신을 병렬로 진행합니다...\n")
@@ -621,7 +634,7 @@ def collect_evidence(url: str, scraped_item: dict, ocr_result: dict) -> dict:
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
         dart_target_list = search_payload["dart"] if search_payload["dart"] else [official_company]
         futures = {
-            executor.submit(check_dart_ai_washing, dart_target_list, scraped_item.get("model_name")): 'DART',
+            executor.submit(check_dart_ai_washing, dart_target_list, scraped_item.get("model_name"), product_category or infer_product_type(scraped_item)): 'DART',
             executor.submit(verify_kipris, search_payload["kipris"], product_category): 'KIPRIS',
             executor.submit(search_kc_db_local, search_payload["local_db"], official_model): 'RRA',
             executor.submit(search_cert_db_local, search_payload["local_db"]): 'TTA',
@@ -857,7 +870,6 @@ def run_full_pipeline(url: str):
     print(f"[채널 가중치] HES {w.get('hes', 0):.3f} / TES {w.get('tes', 0):.3f} / CES {w.get('ces', 0):.3f}")
     print(f"└ 방식: {weighting['method']} | 모델 버전: {weighting['model_version'] or '없음(규칙 기반)'}")
     print("-" * 85)
-    # 화면과 같은 표시 점수(v2)를 앞에 보여 준다. 판정·저장은 원점수 ACCS 로 한다.
     print(f"⭐ 최종 AI 주장 신뢰도 : {display_score(analysis_result.accs):05.2f} / 100 점"
           f"  (원점수 ACCS {analysis_result.accs:05.2f})")
 
@@ -900,5 +912,24 @@ def run_full_pipeline(url: str):
 
 
 if __name__ == "__main__":
-    target_url = "https://prod.danawa.com/info/?pcode=75854861"
-    run_full_pipeline(target_url)
+    import argparse
+
+    parser = argparse.ArgumentParser(description="다나와 상품 분석 파이프라인")
+    parser.add_argument("url", nargs="?", default="https://prod.danawa.com/info/?pcode=56062199", help="다나와 상품 URL")
+    parser.add_argument("--crawl-only", action="store_true", help="크롤링만 실행하고 결과를 확인")
+    parser.add_argument("--no-crawl-cache", action="store_true", help="크롤링 캐시를 사용하거나 저장하지 않음")
+    args = parser.parse_args()
+
+    if args.no_crawl_cache:
+        import logic.crawler as crawler
+        crawler.USE_CRAWLER_CACHE = False
+
+    if args.crawl_only:
+        result = get_product_data(args.url)
+        if not result:
+            print("크롤링 실패: 위의 오류 로그를 확인하세요.")
+            sys.exit(1)
+        print("\n크롤링 결과:")
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+    else:
+        run_full_pipeline(args.url)

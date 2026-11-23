@@ -1,12 +1,12 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=124011463",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "크로스오버 A27QR924 Fast-iPS 240 USB-C WQHD Ai게이밍",
       "name": "크로스오버 A27QR924 Fast-iPS 240 USB-C WQHD Ai게이밍",
       "description": "",
-      "ocr_text": "크로스오버 A27QR924 Fast-iPs 240 USB-C WQHD Ai게이망 5퍼스타  239,000원 (239,000+무료배송) 최저가 구매하기 가격비교 24 상품 상세정보 의견리뷰 연관상품 해삼도 QHD(2560 1440) 쇠대 주사물 24OHz 패널 종류 Fast IPS 화면 비율 라이드(16.9) 파닐 형대 평면 시야각 광시야각 퍽설피치 0.2331mm 응답 속도 O.5ms(MPRT) 화면 밝기 4OOnits 명만비 1,300:1 통적명압반 OOO,0OO:1 HDR 지원 HDR 시력보호 기능 끌리커 프리 불루라이트 자단 눈부십 방지 안티글레이 화면 기능 고정종훨비 지원 크로마서브생플림 부가 기능 스피커 내장 해드시 아옷 USBPD 지원 스피키 출력 3W X 2 스랜드 기능 빌드(상하) 규격 VESA봄 75mnmn 크기(가로x세로x깊 614x448x163mm 무게 3.66kg 소비전력 15W",
+      "ocr_text": "크로스오버 A27QR924 Fast-iPs 240 USB-C WQHD Ai게이망 투퍼스타   231,000원 (231,000+무료배송) 최저가 구매하기 가격비교 26 상품 상세정보 의견리뷰 연관상품 해상도 QHD(2560 1440) 최대 주사물 240Hz 패널 종류 FastIPS 화면 비율 와이드(169) 패널 형태 평면 시야각 광시아각 퍽실피치 0.2331mm 응답 속도 O.5ms(MPRT) 화면 밝기 40Onits 명양비 13001 동적명임비   5,000,000.1 HDR 지원 HDR 시력보호 기능 플리커 프리 불루라이트 차단 눈부심 방지 안티글레어 화면 기능 고정증히비 지원 크로마서브생플림 부가 기능 스피커 내장 헤드포 아옷 USB PD 지원 스피커 출력 3WX 2 스랜드 기능 털트상하) Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "specs": {
         "모니터": "지원",
         "68cm(27인치)": "지원",
@@ -36,14 +36,50 @@
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=124011463",
       "manufacturer": "크로스오버, Crossover",
-      "model_name": "A27QR924"
+      "model_name": "FAST-IPS"
     },
     "norm_info": {
       "company_name": "크로스오버, Crossover",
-      "model_name": "A27QR924",
+      "model_name": "FAST-IPS",
       "product_name": "크로스오버 A27QR924 Fast-iPS 240 USB-C WQHD Ai게이밍"
     },
     "db_results": [
+      {
+        "company_name": "(주) 크로스오버존",
+        "equip_name": "LED 모니터",
+        "model_name": "27QAW9 Fast-iPS WQHD 화이트 게이밍",
+        "country": "중국",
+        "cert_date": "2024-07-08",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-CSO-27QAW9"
+      },
+      {
+        "company_name": "(주) 크로스오버존",
+        "equip_name": "LED 모니터",
+        "model_name": "32UFi7 Fast-iPS UHD4K 프로-게이밍 멀티스탠드",
+        "country": "중국",
+        "cert_date": "2024-06-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-CSO-32UFi7"
+      },
+      {
+        "company_name": "(주) 크로스오버존",
+        "equip_name": "LED 모니터",
+        "model_name": "27GU950 Fast-iPS UHD4K PD65 USB-C 게이밍 멀티스탠드",
+        "country": "중국",
+        "cert_date": "2024-06-19",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-CSO-27GU950"
+      },
+      {
+        "company_name": "(주) 크로스오버존",
+        "equip_name": "LED 모니터",
+        "model_name": "27FAW9 Fast-iPS 180 화이트 USB-C Ai게이밍",
+        "country": "중국",
+        "cert_date": "2025-04-16",
+        "cert_status": "적합등록",
+        "cert_no": "R-R-CSO-27FAW9"
+      },
       {
         "company_name": "(주) 크로스오버존",
         "equip_name": "텔레비전수상기",
@@ -93,7 +129,35 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 신체화 인공지능 장시간 구동을 위한 고출력 직접 에탄올 연료전지 MEA 기술 개발 등 총 3건",
+      "detail": "NTIS에서 [크로스오버] 검색어로 조회한 결과, AI 관련 과제 3건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "신체화 인공지능 장시간 구동을 위한 고출력 직접 에탄올 연료전지 MEA 기술 개발",
+          "project_number": "2710106690",
+          "lead_company": "크로스오버",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "AI 기반 한국형 초가공식품 정밀평가체계 개발을 기반으로 한 대체식 중재 연구",
+          "project_number": "2710103940",
+          "lead_company": "CROSSOVER",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "보상경로의 GABA 농도와 기능적 연결성 증강도를 통한 무의욕의 병태생리 규명",
+          "project_number": "1345265761",
+          "lead_company": "CROSSOVER",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -103,14 +167,19 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "크로스오버, Crossover",
-    "model_param": "A27QR924",
+    "model_param": "FAST-IPS",
     "ocr_result": {
-      "extracted_text": "크로스오버 A27QR924 Fast-iPs 240 USB-C WQHD Ai게이망 5퍼스타  239,000원 (239,000+무료배송) 최저가 구매하기 가격비교 24 상품 상세정보 의견리뷰 연관상품 해삼도 QHD(2560 1440) 쇠대 주사물 24OHz 패널 종류 Fast IPS 화면 비율 라이드(16.9) 파닐 형대 평면 시야각 광시야각 퍽설피치 0.2331mm 응답 속도 O.5ms(MPRT) 화면 밝기 4OOnits 명만비 1,300:1 통적명압반 OOO,0OO:1 HDR 지원 HDR 시력보호 기능 끌리커 프리 불루라이트 자단 눈부십 방지 안티글레이 화면 기능 고정종훨비 지원 크로마서브생플림 부가 기능 스피커 내장 해드시 아옷 USBPD 지원 스피키 출력 3W X 2 스랜드 기능 빌드(상하) 규격 VESA봄 75mnmn 크기(가로x세로x깊 614x448x163mm 무게 3.66kg 소비전력 15W",
+      "extracted_text": "크로스오버 A27QR924 Fast-iPs 240 USB-C WQHD Ai게이망 투퍼스타   231,000원 (231,000+무료배송) 최저가 구매하기 가격비교 26 상품 상세정보 의견리뷰 연관상품 해상도 QHD(2560 1440) 최대 주사물 240Hz 패널 종류 FastIPS 화면 비율 와이드(169) 패널 형태 평면 시야각 광시아각 퍽실피치 0.2331mm 응답 속도 O.5ms(MPRT) 화면 밝기 40Onits 명양비 13001 동적명임비   5,000,000.1 HDR 지원 HDR 시력보호 기능 플리커 프리 불루라이트 차단 눈부심 방지 안티글레어 화면 기능 고정증히비 지원 크로마서브생플림 부가 기능 스피커 내장 헤드포 아옷 USB PD 지원 스피커 출력 3WX 2 스랜드 기능 털트상하) Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\크로스오버 A27QR924 Fast-iPS 240 USB-C WQHD Ai게이밍\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/크로스오버 A27QR924 Fast-iPS 240 USB-C WQHD Ai게이밍/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
-      "chunk_count": 1
+      "chunk_count": 1,
+      "_cache_meta": {
+        "image_path": "/home/projects/EASy_ML/product_images/크로스오버 A27QR924 Fast-iPS 240 USB-C WQHD Ai게이밍/detail_scan.png",
+        "image_size": 93353,
+        "image_sha256": "a72759c6a580812627f65b8721b3df07710051c6b3afeee5c5cd2a8b405ccee1"
+      }
     }
   }
 }

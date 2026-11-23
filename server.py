@@ -24,6 +24,7 @@ import concurrent.futures
 import re
 import urllib.parse
 from datetime import datetime
+from html import unescape
 from typing import AsyncGenerator, Optional
 
 from fastapi import FastAPI, HTTPException, Header
@@ -38,6 +39,7 @@ import pandas as pd
 from google import genai
 from google.genai import types as genai_types
 
+
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logic'))
 
 from crawler import get_product_data
@@ -45,8 +47,9 @@ from ocr_analyzer import analyze_ai_washing
 from normalizer import normalize_data, expand_company_aliases, is_valid_model_number
 from patent_scraper import get_company_patent_data
 from llm_resolver import resolve_real_company_name, resolve_model_name
-from dart_scraper import check_dart_ai_washing  # 🔥 DART 스크래퍼 추가
+from dart_scraper import check_dart_ai_washing 
 from fides_scoring import display_score
+from logic.api import is_ai_project, verify_ntis_rnd
 
 """
 설정은 config.py 하나에서만 읽는다 (gitignore 되어 있다).
@@ -75,6 +78,7 @@ except Exception:
 try:
     from fides_integration import (
         infer_product_type,
+        load_s_only_predictor,
         load_weight_predictor,
         secure_analyze_bundle,
         weighting_summary,
@@ -85,6 +89,9 @@ except ImportError as exc:
 # CEN 가중치 모델은 서버 시작 시 한 번만 불러와 모든 분석 요청에 재사용한다.
 # 체크포인트가 없으면 None 이고, 엔진은 규칙 기반 가중치로 동작한다.
 WEIGHT_PREDICTOR = load_weight_predictor()
+S_ONLY_PREDICTOR = load_s_only_predictor()
+
+from fides_ml.s_only import verdict_label
 
 # 크롤링 이후의 OCR·제조사 확정·공공 기록 조회는 터미널 파이프라인과 같은
 # 함수를 쓴다. 따로 구현하면 화면과 터미널의 근거·점수가 갈라진다.
@@ -412,6 +419,25 @@ def decode_jwt(token: str) -> Optional[dict]:
     except JWTError:
         return None
 
+def _product_category(product_json: dict) -> str:
+    """제품 분류. 크롤러가 읽은 다나와 분류 경로를 먼저 쓴다.
+
+    예전 캐시처럼 분류가 없으면 스펙 원문의 첫 토막을 쓰되, 스펙 표가 있는 상품은
+    원문이 페이지 본문 전체라 첫 토막이 상단 메뉴 글자다. 짧은 토막만 분류로 인정한다.
+    """
+    category = str(product_json.get("category") or "").strip()
+    if category:
+        return category
+    first = str(product_json.get("raw_specs") or "").split("/")[0].strip()
+    return first if 0 < len(first) <= 20 else ""
+
+
+def _server_error(what: str, exc: Exception) -> HTTPException:
+    """500 응답에는 일반 문구만 싣고, 예외 원문(DB 주소 등)은 서버 로그에만 남긴다."""
+    print(f"[ERROR] {what}: {exc!r}")
+    return HTTPException(500, f"{what}. 잠시 후 다시 시도해 주세요.")
+
+
 def user_from_header(authorization: Optional[str]) -> Optional[dict]:
     """Authorization: Bearer <token> 헤더에서 페이로드 추출. 없거나 만료 시 None 반환."""
     if not authorization or not authorization.startswith("Bearer "):
@@ -439,7 +465,7 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
         push(0, "URL 크롤링 및 OCR 처리 중")
         product_json = get_product_data(url)
         if not product_json:
-            fail("크롤링 실패 — 다나와 제품 URL을 확인하세요.")
+            fail("상품 페이지를 불러오지 못했습니다. 다나와 상품 URL과 네트워크 연결을 확인한 뒤 다시 시도해 주세요.")
             return
         if not pipeline_looks_like_product_page(product_json):
             fail("상품 페이지로 보이지 않아요 — 다나와 제품 상세 URL을 넣어 주세요.")
@@ -464,6 +490,7 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
         analysis_result = secure_analyze_bundle(
             **bundle_kwargs,
             weight_predictor=WEIGHT_PREDICTOR,
+            s_only_predictor=S_ONLY_PREDICTOR,
             product_type=infer_product_type(bundle_kwargs["product_json"]),
         )
         weighting = weighting_summary(analysis_result)
@@ -482,7 +509,7 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
 
         brand = api_company or '미확인'
         prod_name = product_json.get('model_name', '')
-        source_rows = summarize_sources(final_results)
+        source_rows = summarize_sources(final_results, bundle_kwargs.get("model_param"))
         source_counts = {row["source"]: row["count"] for row in source_rows}
 
         _task_start = _tasks[task_id].get("start_time", datetime.now())
@@ -513,12 +540,17 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
             # 보여줘야 하므로 전체를 싣는다.
             "capability_scores": analysis_result.capability_scores,
             "ontology_reasons": analysis_result.reasons,
+            "s_only_correction": (analysis_result.details or {}).get("s_only_correction"),
             # 채널 가중치·기여도·모델 버전. result_json 으로 DB 에도 함께 저장된다.
             "weighting": weighting,
 
             # (기존 UI 호환성을 위한 일부 필드 보존)
             "trust_score": analysis_result.accs / 100, # 0~1 스케일 변환 (색상 바닥용)
-            "verdict_cls": "genuine" if "신뢰" in analysis_result.verdict else "washing" if "워싱" in analysis_result.verdict else "uncertain",
+            "verdict_cls": {
+                "genuine": "genuine",
+                "washing": "washing",
+                "suspicious": "uncertain",
+            }.get(verdict_label(analysis_result.verdict), "uncertain"),
             "text_color": calc_dim_color(analysis_result.tes),
             "verify_color": calc_dim_color(analysis_result.hes),
             "relation_color": calc_dim_color(analysis_result.ces),
@@ -532,6 +564,9 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
             "_dart_status": (final_results.get("DART") or {}).get("status", "스킵") if isinstance(final_results.get("DART"), dict) else "스킵",
             "_dart_count": source_counts.get("dart", 0),
             "_category": product_category,
+            # NTIS 국가R&D: 엔진 근거로만 쓰이고 화면에 나오지 않던 조회 결과
+            "_ntis_status": (final_results.get("NTIS") or {}).get("status", "스킵") if isinstance(final_results.get("NTIS"), dict) else "스킵",
+            "_ntis_count": source_counts.get("ntis", 0),
         }
 
         _tasks[task_id]["events"].append({"type": "result", "data": result_payload})
@@ -567,7 +602,8 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
     except Exception as e:
         import traceback
         traceback.print_exc()
-        _tasks[task_id]["events"].append({"type": "error", "message": f"서버 오류 발생: {str(e)}"})
+        # 원문은 위 traceback 으로 서버 로그에만 남긴다
+        _tasks[task_id]["events"].append({"type": "error", "message": "서버 오류가 발생했습니다. 잠시 후 다시 시도해 주세요."})
         _tasks[task_id]["done"] = True
 
 # ══════════════════════════════════════════
@@ -642,7 +678,72 @@ def _result_count(res) -> int:
     return 1 if evidence else 0
 
 
-def summarize_sources(final_results: dict) -> list:
+def _source_text(value) -> str:
+    if not isinstance(value, str):
+        return ""
+    return " ".join(re.sub(r"<[^>]*>", "", unescape(value)).split())
+
+
+def _ai_record_text(value) -> bool:
+    text = _source_text(value)
+    return is_ai_project(text) or bool(re.search(r"(?<![a-z])ai(?![a-z])", text, re.IGNORECASE))
+
+
+def _source_details(source: str, result: dict, model_name: Optional[str]) -> dict:
+    """Keep only the public fields needed by the result page."""
+    if not isinstance(result, dict) or result.get("error"):
+        return {}
+
+    records = result.get("records")
+    records = [row for row in records if isinstance(row, dict)] if isinstance(records, list) else []
+    if source == "rra":
+        model_key = re.sub(r"[^A-Z0-9]", "", (model_name or "").upper())
+        if not model_key:
+            return {}
+        matches = [
+            row for row in records
+            if re.sub(r"[^A-Z0-9]", "", str(row.get("model_name") or "").upper()) == model_key
+        ]
+        for row in matches:
+            title = _source_text(row.get("equip_name"))
+            registration = _source_text(row.get("cert_no"))
+            if title or registration:
+                example = f"{title} ({registration})" if title and registration else title or registration
+                return {"record_titles": [example], "matched_model_count": len(matches)}
+        return {}
+    if source == "kipris":
+        for row in records:
+            title = _source_text(row.get("발명의명칭(한글)") or row.get("title"))
+            context = " ".join(_source_text(row.get(key)) for key in ("초록", "abstract", "text"))
+            if title and _ai_record_text(title + " " + context):
+                return {"record_titles": [title]}
+        return {}
+    if source == "ntis":
+        titles = (
+            _source_text(row.get("project_name")) for row in records
+            if _ai_record_text(row.get("project_name"))
+        )
+    elif source == "dart":
+        titles = [
+            _source_text(row.get("text") or row.get("title")) for row in records
+            if _ai_record_text(row.get("text") or row.get("title"))
+        ]
+        if not any(titles):
+            evidence = result.get("evidence")
+            if not isinstance(evidence, list):
+                return {}
+            titles = (
+                re.sub(r"^.*?\[AI (?:제품적용|사업/연구|특허/IP|기술언급)\]\s*", "", _source_text(entry))
+                for entry in evidence
+                if _ai_record_text(re.sub(r"^.*?\[AI [^\]]+\]\s*", "", _source_text(entry)))
+            )
+    else:
+        return {}
+
+    return {"record_titles": list(dict.fromkeys(title for title in titles if title))[:3]}
+
+
+def summarize_sources(final_results: dict, model_name: Optional[str] = None) -> list:
     """기관별 조회 결과를 화면의 검증 행으로 옮긴다.
 
     예전 화면은 서버가 따로 조회한 7곳만 적었고 NTIS·IITP 등은 아예 없었다.
@@ -669,6 +770,7 @@ def summarize_sources(final_results: dict) -> list:
             "value": value,
             "intent": intent,
             "count": count,
+            **_source_details(source, res, model_name),
         })
     return rows
 
@@ -685,6 +787,10 @@ def build_claims(capability_scores: list) -> list:
     실제로 걸린 것(positive_claim)만 주장이다. 거르지 않으면 모니터 결과에
     "AI 건조 코스 추천" 같은 남의 기능이 광고한 기능처럼 나온다.
 
+    capability_scores 에는 온톨로지의 기능 전부(28개)가 들어 있다. 광고에서
+    실제로 걸린 것(positive_claim)만 주장이다. 거르지 않으면 모니터 결과에
+    "AI 건조 코스 추천" 같은 남의 기능이 광고한 기능처럼 나온다.
+
     판정 기준:
         근거 소스가 하나도 없으면            unsupported
         있으나 필수 요건을 다 못 채웠으면      partial
@@ -693,6 +799,8 @@ def build_claims(capability_scores: list) -> list:
     claims = []
     for i, c in enumerate(capability_scores or []):
         if not isinstance(c, dict):
+            continue
+        if not c.get("positive_claim", True):
             continue
         if not c.get("positive_claim", True):
             continue
@@ -728,6 +836,39 @@ def build_claims(capability_scores: list) -> list:
             "note": " · ".join(missing) if missing else None,
         })
     return claims
+
+
+def log_claim_breakdown(capability_scores: list) -> None:
+    """광고에서 잡힌 주장마다 판정과 세부점수를 한 줄씩 찍는다."""
+    claims = {c["id"]: c for c in build_claims(capability_scores)}
+    roll = claims_rollup(claims.values())
+    print(f"[Claims] 확인 {roll['verified']} · 일부 {roll['partial']} · 미확인 {roll['missing']}")
+    for c in capability_scores or []:
+        claim = claims.get(c.get("capability_id"))
+        if claim is None:
+            continue
+        print(
+            f"  {claim['status']:<11} {c.get('capability_name_ko')} "
+            f"final={c.get('final_score')} claim={c.get('base_claim_score')} "
+            f"req={c.get('required_fulfillment_ratio')} opt={c.get('optional_fulfillment_ratio')} "
+            f"src={','.join(c.get('supporting_sources') or []) or '-'} "
+            f"missing={' · '.join(c.get('missing_required_components') or []) or '-'}"
+        )
+
+
+# DB 없이도 분석 결과를 다시 볼 수 있게 로컬에 남긴다. result_json 과 같은 모양이다.
+RESULT_CACHE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logs", "analysis")
+
+
+def save_result_cache(task_id: str, result_payload: dict) -> None:
+    try:
+        os.makedirs(RESULT_CACHE_DIR, exist_ok=True)
+        name = f"{datetime.now():%Y%m%d_%H%M%S}_{task_id[:8]}.json"
+        with open(os.path.join(RESULT_CACHE_DIR, name), "w", encoding="utf-8") as f:
+            json.dump(result_payload, f, ensure_ascii=False, indent=2, default=str)
+        print(f"[Cache] saved {name}")
+    except Exception as ce:
+        print(f"[Cache] save failed: {ce}")
 
 
 def log_claim_breakdown(capability_scores: list) -> None:
@@ -889,6 +1030,14 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
     dart_status  = payload.get("_dart_status", "")
     patent_count = payload.get("patent_count", 0)
     gs_count     = payload.get("gs_count", 0)
+    ntis_count   = payload.get("_ntis_count", 0)
+    ntis_status  = payload.get("_ntis_status", "스킵")
+    ntis_shown   = (
+        f"AI 과제 {ntis_count}건" if ntis_count > 0
+        else "AI 과제 없음" if ntis_status == "not_found"
+        else "조회 불가" if ntis_status == "error"
+        else "조회 안 함"
+    )
 
     verification_rows = [
         # ── 로컬 DB ──────────────────────────────────────────────────
@@ -908,11 +1057,16 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
         # ── DART 공시 ────────────────────────────────────────────────
         {"source": "dart", "key": SOURCE_LABELS["dart"],
          "value": f"{dart_count}건 ({dart_status})" if dart_count > 0 else shown(dart_status),
-         "intent": "ok" if dart_count > 0 else intent(dart_status)},
+         "intent": "ok" if dart_count > 0 else intent(dart_status),
+         "count": dart_count},
         # ── 특허 · 인증 ──────────────────────────────────────────────
         {"source": "kipris", "key": SOURCE_LABELS["kipris"],
          "value": f"{patent_count}건",
          "intent": "ok" if patent_count > 0 else "neutral"},
+        # ── 국가 R&D ─────────────────────────────────────────────────
+        {"source": "ntis", "key": SOURCE_LABELS["ntis"],
+         "value": ntis_shown, "intent": "ok" if ntis_count > 0 else "neutral",
+         "count": ntis_count},
         # GS 와 NEP 는 한 건수로 함께 세므로 한 줄로 둔다
         {"source": "gs", "key": "GS · NEP 인증",
          "value": f"{gs_count}건",
@@ -920,10 +1074,16 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
     ]
 
     if payload.get("_sources"):
+        public_fields = ("source", "key", "value", "intent", "count", "record_titles", "matched_model_count")
         verification_rows = [
-            {k: row.get(k) for k in ("source", "key", "value", "intent")}
+            {key: row[key] for key in public_fields if key in row}
             for row in payload["_sources"]
         ]
+        for row in verification_rows:
+            if row.get("source") in {"dart", "ntis"} and "record_titles" in row:
+                row["record_titles"] = [
+                    title for title in row["record_titles"] if _ai_record_text(title)
+                ][:3]
 
     prod_name = payload.get("product_name", "")
     category  = payload.get("_category", "")
@@ -943,8 +1103,16 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
             "ai_claims_count": len(top_caps) or len(reasons),
             "analysis_duration_seconds": round(duration, 1),
             "analysis_date": datetime.now().date().isoformat(),
+            # 결과 화면의 '다나와에서 보기' 바로가기. 저장된 기록에도 같은 값이 들어 있다.
+            "url": payload.get("url", ""),
+            # 결과 화면의 '다나와에서 보기' 바로가기. 저장된 기록에도 같은 값이 들어 있다.
+            "url": payload.get("url", ""),
         },
         "scores": {
+            # 화면에는 표시 점수(v2)를, 판정·비교용 원점수는 overall_raw 로 같이 싣는다.
+            # DB·result_json 에는 원점수가 남으므로 옛 기록도 여기서 같은 변환을 탄다.
+            "overall": round(display_score(accs), 1),
+            "overall_raw": accs,
             # 화면에는 표시 점수(v2)를, 판정·비교용 원점수는 overall_raw 로 같이 싣는다.
             # DB·result_json 에는 원점수가 남으므로 옛 기록도 여기서 같은 변환을 탄다.
             "overall": round(display_score(accs), 1),
@@ -955,6 +1123,13 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
             "relational_credibility": ces,
             "ecs": ecs,
             "conf": conf,
+            "indicator_display": {
+                "text_credibility": round(display_score(tes), 2),
+                "verification_credibility": round(display_score(hes), 2),
+                "relational_credibility": round(display_score(ces), 2),
+                "ecs": round(display_score(ecs), 2),
+                "conf": round(display_score(conf), 2),
+            },
         },
         "xai_findings": xai_findings,
         "verification": {"rows": verification_rows},
@@ -963,6 +1138,7 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
         "claims": build_claims(payload.get("capability_scores", [])),
         # 이 기능 이전에 저장된 기록에는 weighting 이 없다.
         "weighting": payload.get("weighting"),
+        "s_only_correction": payload.get("s_only_correction"),
         "meta": {
             "backend": "real",
             "pipeline_version": "real-v1",
@@ -1132,7 +1308,7 @@ async def register(req: RegisterRequest):
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(500, f"회원가입 실패: {e}")
+        raise _server_error("회원가입 실패", e)
 
 
 @app.post("/api/auth/login")
@@ -1150,7 +1326,7 @@ async def login(req: LoginRequest):
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(500, f"로그인 실패: {e}")
+        raise _server_error("로그인 실패", e)
 
 
 # ══════════════════════════════════════════
@@ -1199,6 +1375,7 @@ async def get_history(authorization: Optional[str] = Header(None)):
                 "company_name": r[3] or "",
                 "verdict":      r[4] or "",
                 "accs_score":   round(display_score(r[5] or 0), 1),
+                "accs_score":   round(display_score(r[5] or 0), 1),
                 "risk_level":   r[6] or "",
                 "created_at":   r[7].strftime("%Y.%m.%d %H:%M") if r[7] else "",
                 "category":     category,
@@ -1209,7 +1386,7 @@ async def get_history(authorization: Optional[str] = Header(None)):
             })
         return items
     except Exception as e:
-        raise HTTPException(500, f"히스토리 조회 실패: {e}")
+        raise _server_error("히스토리 조회 실패", e)
 
 
 @app.get("/api/history/{history_id}")
@@ -1230,7 +1407,7 @@ async def get_history_item(history_id: int, authorization: Optional[str] = Heade
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(500, f"히스토리 조회 실패: {e}")
+        raise _server_error("히스토리 조회 실패", e)
 
 
 @app.get("/api/history/{history_id}/result")
@@ -1252,7 +1429,7 @@ async def get_history_result(history_id: int, authorization: Optional[str] = Hea
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(500, f"히스토리 결과 조회 실패: {e}")
+        raise _server_error("히스토리 결과 조회 실패", e)
 
 
 @app.delete("/api/history/{history_id}", status_code=204)
@@ -1268,7 +1445,7 @@ async def delete_history_item(history_id: int, authorization: Optional[str] = He
                 {"id": history_id, "uid": user_id},
             )
     except Exception as e:
-        raise HTTPException(500, f"삭제 실패: {e}")
+        raise _server_error("삭제 실패", e)
 
 
 @app.patch("/api/history/{history_id}/folder")
@@ -1296,7 +1473,7 @@ async def move_history_item(history_id: int, body: MoveHistoryRequest, authoriza
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(500, f"이동 실패: {e}")
+        raise _server_error("이동 실패", e)
 
 
 # ══════════════════════════════════════════
@@ -1332,7 +1509,7 @@ async def get_folders(authorization: Optional[str] = Header(None)):
             for r in rows
         ]
     except Exception as e:
-        raise HTTPException(500, f"폴더 조회 실패: {e}")
+        raise _server_error("폴더 조회 실패", e)
 
 
 @app.post("/api/folders", status_code=201)
@@ -1355,7 +1532,7 @@ async def create_folder(body: FolderRequest, authorization: Optional[str] = Head
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(500, f"폴더 생성 실패: {e}")
+        raise _server_error("폴더 생성 실패", e)
 
 
 @app.patch("/api/folders/{folder_id}")
@@ -1379,7 +1556,7 @@ async def rename_folder(folder_id: int, body: FolderRequest, authorization: Opti
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(500, f"이름 변경 실패: {e}")
+        raise _server_error("이름 변경 실패", e)
 
 
 @app.delete("/api/folders/{folder_id}", status_code=204)
@@ -1395,7 +1572,7 @@ async def delete_folder(folder_id: int, authorization: Optional[str] = Header(No
                 {"id": folder_id, "uid": user_id},
             )
     except Exception as e:
-        raise HTTPException(500, f"폴더 삭제 실패: {e}")
+        raise _server_error("폴더 삭제 실패", e)
 
 
 @app.get("/api/watchlist")
@@ -1420,7 +1597,7 @@ async def get_watchlist(authorization: Optional[str] = Header(None)):
             for r in rows
         ]
     except Exception as e:
-        raise HTTPException(500, f"북마크 조회 실패: {e}")
+        raise _server_error("북마크 조회 실패", e)
 
 
 @app.post("/api/watchlist", status_code=201)
@@ -1438,7 +1615,7 @@ async def add_watchlist(body: WatchlistRequest, authorization: Optional[str] = H
             new_id = result.lastrowid
         return {"id": new_id, "url": body.url, "product_name": body.product_name, "added_at": ""}
     except Exception as e:
-        raise HTTPException(500, f"북마크 추가 실패: {e}")
+        raise _server_error("북마크 추가 실패", e)
 
 
 @app.delete("/api/watchlist/{watchlist_id}", status_code=204)
@@ -1454,7 +1631,7 @@ async def delete_watchlist(watchlist_id: int, authorization: Optional[str] = Hea
                 {"id": watchlist_id, "uid": user_id},
             )
     except Exception as e:
-        raise HTTPException(500, f"북마크 삭제 실패: {e}")
+        raise _server_error("북마크 삭제 실패", e)
 
 
 @app.post("/api/compare")
@@ -1506,6 +1683,7 @@ async def compare_items(body: CompareRequest, authorization: Optional[str] = Hea
                     "product_name": row[1] or "알 수 없음",
                     "company_name": row[2] or "",
                     "accs_score":   round(display_score(row[3] or 0), 1),
+                    "accs_score":   round(display_score(row[3] or 0), 1),
                     "verdict":      row[4] or "",
                     "risk_level":   row[5] or "",
                     "created_at":   row[7].strftime("%Y.%m.%d") if row[7] else "",
@@ -1518,7 +1696,7 @@ async def compare_items(body: CompareRequest, authorization: Optional[str] = Hea
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(500, f"비교 조회 실패: {e}")
+        raise _server_error("비교 조회 실패", e)
 
 
 @app.get("/api/dashboard")
@@ -1535,9 +1713,11 @@ async def get_dashboard(authorization: Optional[str] = Header(None)):
                     SELECT
                         COUNT(*)                                                        AS total,
                         AVG(accs_score)                                                 AS avg_score,
-                        SUM(CASE WHEN accs_score >= 60 THEN 1 ELSE 0 END)              AS ok_count,
-                        SUM(CASE WHEN accs_score >= 35 AND accs_score < 60 THEN 1 ELSE 0 END) AS warn_count,
-                        SUM(CASE WHEN accs_score < 35  THEN 1 ELSE 0 END)              AS danger_count
+                        -- 분류는 결과 화면(overall_label)과 같은 엔진 판정 문구로 센다.
+                        -- 원점수를 35·60 으로 자르면 '신뢰 상품'이 '검토 필요'로 세어졌다.
+                        SUM(CASE WHEN verdict LIKE '%신뢰%' THEN 1 ELSE 0 END)         AS ok_count,
+                        SUM(CASE WHEN verdict LIKE '%워싱 의심%' THEN 1 ELSE 0 END)    AS warn_count,
+                        SUM(CASE WHEN verdict LIKE '%AI 워싱 상품%' THEN 1 ELSE 0 END) AS danger_count
                     FROM analysis_history
                     WHERE user_id = :uid
                 """),
@@ -1581,6 +1761,9 @@ async def get_dashboard(authorization: Optional[str] = Header(None)):
         # DB 에는 원점수가 있다. 변환이 단조라 최소·최대는 정확하고, 평균은
         # "원점수 평균의 표시 점수"라 표시 점수 평균과 조금 다를 수 있다.
         avg_score   = round(display_score(s[1]), 1) if s[1] is not None else None
+        # DB 에는 원점수가 있다. 변환이 단조라 최소·최대는 정확하고, 평균은
+        # "원점수 평균의 표시 점수"라 표시 점수 평균과 조금 다를 수 있다.
+        avg_score   = round(display_score(s[1]), 1) if s[1] is not None else None
         ok_count    = int(s[2] or 0)
         warn_count  = int(s[3] or 0)
         danger_count= int(s[4] or 0)
@@ -1600,6 +1783,9 @@ async def get_dashboard(authorization: Optional[str] = Header(None)):
                     "avg_score":    round(display_score(r[2]), 1) if r[2] is not None else 0,
                     "min_score":    round(display_score(r[3]), 1) if r[3] is not None else 0,
                     "max_score":    round(display_score(r[4]), 1) if r[4] is not None else 0,
+                    "avg_score":    round(display_score(r[2]), 1) if r[2] is not None else 0,
+                    "min_score":    round(display_score(r[3]), 1) if r[3] is not None else 0,
+                    "max_score":    round(display_score(r[4]), 1) if r[4] is not None else 0,
                 }
                 for r in company_rows
             ],
@@ -1611,6 +1797,7 @@ async def get_dashboard(authorization: Optional[str] = Header(None)):
                     "company_name": r[3] or "",
                     "verdict":      r[4] or "",
                     "accs_score":   round(display_score(r[5] or 0), 1),
+                    "accs_score":   round(display_score(r[5] or 0), 1),
                     "risk_level":   r[6] or "",
                     "created_at":   r[7].strftime("%Y.%m.%d %H:%M") if r[7] else "",
                 }
@@ -1620,7 +1807,7 @@ async def get_dashboard(authorization: Optional[str] = Header(None)):
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(500, f"대시보드 조회 실패: {e}")
+        raise _server_error("대시보드 조회 실패", e)
 
 
 if __name__ == "__main__":

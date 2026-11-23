@@ -1,14 +1,15 @@
 {
   "url": "https://prod.danawa.com/info/?pcode=99127763",
   "bundle_kwargs": {
-    "ontology_dir": "C:\\Users\\yangs\\OneDrive\\Desktop\\졸프\\졸프\\fides\\EASy\\ontology",
+    "ontology_dir": "/home/projects/EASy_ML/ontology",
     "product_json": {
       "title": "Nothing Ear (3) (정품)",
       "name": "Nothing Ear (3) (정품)",
       "description": "",
-      "ocr_text": "Nothing Ear (3) (정품) AUCTION 204,060원   무료배승 최저가 구매하기 가격비교 20 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 사신 이어 (3) 무행기; 또이상반거 만르 크크 NotpingEarB3) 역대급신발한문선 이어표 제조회사 Nothing (제조사 웬사이트 바로가기) 등록년원 2025년 10밑 분류 무선이어논 이어프타입 커널형 외형 크드리스 용도 음악+통화용 무선연결 불무투스 V5.4 노이즈런트론 댁티브노이즈랜슬림 (ANC) 적응형ANC 주버스리드기 여런 건처음% TLK",
+      "ocr_text": "Nothing Ear (3) (정품) SSG.COM 219,000원 무료배승  최저가 구매하기 가격비교 19 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 나신이어(91 또 이상바거 만있크크 무체기 이런건처음히 NothiihgEarBa) 역대급신발한문선이어표 제조회사 Nothing (제조사 웬사이트 바로가기) 등록년월 2025년 10월 분류- 무선이어프 용도 음악+통화용 이어프타입 커널형 외형 코드리스 무선연결 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies T_`",
       "specs": {
         "커널형": "지원",
+        "코드리스": "지원",
         "블루투스 v5.4": "지원",
         "[노이즈컨트롤] 액티브노이즈캔슬링(ANC)": "지원",
         "적응형ANC": "지원",
@@ -32,15 +33,15 @@
         "IP54방수": "지원",
         "Super Mic 케이스": "지원"
       },
-      "raw_specs": "커널형 / 블루투스 v5.4 / [노이즈컨트롤] 액티브노이즈캔슬링(ANC) / 적응형ANC / 주변소리듣기 / [AI 기능] AI 노이즈캔슬링마이크 / [사운드] HRA / 유닛:12mm / 드라이버 : 다이나믹 / 32Ω / 20Hz~40kHz / 코덱 : LDAC , SBC , AAC / [배터리] 1회충전시 : 3.5시간(ANC ON), 5.5시간(ANC OFF) / 최대재생 : 22시간(ANC ON), 38시간(ANC OFF) / 충전 : 무선충전 , USB-C / [기능] 편의기능 : 위치찾기 / EQ수동조절 / 저지연게이밍모드 / 멀티포인트 / 구글패스트페어 / 마이크특징 : MEMS / IP54방수 / Super Mic 케이스",
+      "raw_specs": "커널형 / 코드리스 / 블루투스 v5.4 / [노이즈컨트롤] 액티브노이즈캔슬링(ANC) / 적응형ANC / 주변소리듣기 / [AI 기능] AI 노이즈캔슬링마이크 / [사운드] HRA / 유닛:12mm / 드라이버 : 다이나믹 / 32Ω / 20Hz~40kHz / 코덱 : LDAC , SBC , AAC / [배터리] 1회충전시 : 3.5시간(ANC ON), 5.5시간(ANC OFF) / 최대재생 : 22시간(ANC ON), 38시간(ANC OFF) / 충전 : 무선충전 , USB-C / [기능] 편의기능 : 위치찾기 / EQ수동조절 / 저지연게이밍모드 / 멀티포인트 / 구글패스트페어 / 마이크특징 : MEMS / IP54방수 / Super Mic 케이스",
       "category": "",
       "url": "https://prod.danawa.com/info/?pcode=99127763",
       "manufacturer": "Nothing Co., Nothing",
-      "model_name": "N2E3"
+      "model_name": "IP54"
     },
     "norm_info": {
       "company_name": "Nothing Co., Nothing",
-      "model_name": "N2E3",
+      "model_name": "IP54",
       "product_name": "Nothing Ear (3) (정품)"
     },
     "db_results": [
@@ -192,7 +193,42 @@
     "jodale_result": null,
     "nipa_result": null,
     "kaiac_result": null,
-    "ntis_result": null,
+    "ntis_result": {
+      "score": 20,
+      "evidence": "NTIS R&D AI 관련 과제 확인: 머신러닝기반 압축 네트워크코딩 전략 등 총 4건",
+      "detail": "NTIS에서 [NOTHING] 검색어로 조회한 결과, AI 관련 과제 4건이 확인되었습니다.",
+      "records": [
+        {
+          "project_name": "머신러닝기반 압축 네트워크코딩 전략",
+          "project_number": "1345246304",
+          "lead_company": "NOTHING",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "인간과 협업하는 딥러닝 기반 AI 소설 생성 융합 연구",
+          "project_number": "2340008168",
+          "lead_company": "NOTHING",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "인간과 협업하는 딥러닝 기반 AI 소설 생성 융합 연구",
+          "project_number": "2340038197",
+          "lead_company": "NOTHING",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        },
+        {
+          "project_name": "인간과 협업하는 딥러닝 기반 AI 소설 생성 융합 연구",
+          "project_number": "1345355968",
+          "lead_company": "NOTHING",
+          "relevance_type": "general_ai",
+          "status": "verified"
+        }
+      ],
+      "status": "verified"
+    },
     "iitp_result": null,
     "patent_items_df": [
       {
@@ -202,12 +238,12 @@
     "cert_results": [],
     "dart_result": null,
     "target_company_name": "Nothing Co., Nothing",
-    "model_param": "N2E3",
+    "model_param": "IP54",
     "ocr_result": {
-      "extracted_text": "Nothing Ear (3) (정품) AUCTION 204,060원   무료배승 최저가 구매하기 가격비교 20 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 사신 이어 (3) 무행기; 또이상반거 만르 크크 NotpingEarB3) 역대급신발한문선 이어표 제조회사 Nothing (제조사 웬사이트 바로가기) 등록년원 2025년 10밑 분류 무선이어논 이어프타입 커널형 외형 크드리스 용도 음악+통화용 무선연결 불무투스 V5.4 노이즈런트론 댁티브노이즈랜슬림 (ANC) 적응형ANC 주버스리드기 여런 건처음% TLK",
+      "extracted_text": "Nothing Ear (3) (정품) SSG.COM 219,000원 무료배승  최저가 구매하기 가격비교 19 상품 상세정보 의견리뷰 뉴스커유니티 연관상품 나신이어(91 또 이상바거 만있크크 무체기 이런건처음히 NothiihgEarBa) 역대급신발한문선이어표 제조회사 Nothing (제조사 웬사이트 바로가기) 등록년월 2025년 10월 분류- 무선이어프 용도 음악+통화용 이어프타입 커널형 외형 코드리스 무선연결 Close We value your personal information. Detailed Settings This service uses cookies to display information according to the language you use Please read our Cookie Policy outlined in th Policy regarding the use of cookies. Allow Cookies T_`",
       "ocr_device": "CPU",
       "cache_hit": false,
-      "cache_path": "product_images\\Nothing Ear (3) (정품)\\detail_scan.ocr_cache.json",
+      "cache_path": "product_images/Nothing Ear (3) (정품)/detail_scan.ocr_cache.json",
       "chunk_size": 2000,
       "chunk_count": 1
     }
