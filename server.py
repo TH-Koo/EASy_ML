@@ -484,7 +484,7 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
 
         # Step 2~3: 제조사·모델 확정 + 공공 기록 병렬 조회
         push(2, "데이터 정규화 및 제조사 추적 중")
-        push(3, "외부 증거(인증/특허/공시/R&D) 병렬 수집 중")
+        push(3, "외부 증거 병렬 수집 중")
         collected = collect_evidence(url, product_json, ocr_result)
         bundle_kwargs = collected["bundle_kwargs"]
         final_results = collected["final_results"]
@@ -493,7 +493,7 @@ def run_analysis(task_id: str, url: str, user_id: Optional[int] = None):
         push(4, "외부 증거 수집 완료")
 
         # 🧠 Step 5: 온톨로지 기반 최종 분석 엔진 호출 🧠
-        push(5, "온톨로지 엔진 기반 AI 주장 신뢰도(ACCS) 산출 중")
+        push(5, "온톨로지 엔진 기반 AI 주장 신뢰도 산출 중")
         analysis_result = secure_analyze_bundle(
             **bundle_kwargs,
             weight_predictor=WEIGHT_PREDICTOR,
