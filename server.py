@@ -905,6 +905,34 @@ def build_claims(capability_scores: list) -> list:
     return claims
 
 
+_NAME_AI_PATTERN = re.compile(r"(?<![a-z])ai(?![a-z])|인공지능", re.IGNORECASE)
+
+
+def _with_product_name_claim(claims: list, product_name: str) -> list:
+    """상품명에 'AI'·'인공지능'을 내세웠는데 구체적 기능 주장이 하나도 없으면
+    그 표기 자체를 근거 미확인 주장으로 보여 준다. 화면 표시용이며 점수·판정은 바꾸지 않는다.
+    """
+    if claims or not product_name:
+        return claims
+    match = _NAME_AI_PATTERN.search(product_name)
+    if not match:
+        return claims
+    return [{
+        "id": "PRODUCT_NAME_AI",
+        "text": "상품명의 AI 표기",
+        "quote": match.group(0),
+        "status": "unsupported",
+        "required_support": 0.0,
+        "components": [],
+        "support_thresholds": {
+            "verified": DEFAULT_CLAIM_THRESHOLDS.verified,
+            "partial": DEFAULT_CLAIM_THRESHOLDS.partial,
+        },
+        "evidence": [],
+        "note": "상품명에 AI를 내세웠지만 어떤 AI 기능인지 페이지에서 특정할 수 없어요",
+    }]
+
+
 def log_claim_breakdown(capability_scores: list) -> None:
     """광고에서 잡힌 주장마다 판정과 세부점수를 한 줄씩 찍는다."""
     claims = {c["id"]: c for c in build_claims(capability_scores)}
@@ -994,7 +1022,11 @@ def claims_from_result_json(raw: str) -> list:
     """
     import json as _json
     try:
-        return build_claims(_json.loads(raw or "{}").get("capability_scores", []))
+        payload = _json.loads(raw or "{}")
+        return _with_product_name_claim(
+            build_claims(payload.get("capability_scores", [])),
+            payload.get("product_name", ""),
+        )
     except Exception:
         # 깨진 행 하나가 목록 전체를 죽이지 않게 한다
         return []
@@ -1154,6 +1186,10 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
 
     prod_name = payload.get("product_name", "")
     category  = payload.get("_category", "")
+    claims = _with_product_name_claim(
+        build_claims(payload.get("capability_scores", [])), prod_name,
+    )
+    claim_count = len(claims) if claims or "capability_scores" in payload else (len(top_caps) or len(reasons))
 
     return {
         "analysis_id": analysis_id,
@@ -1167,7 +1203,7 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
                 t.get("capability_name_ko", "") if isinstance(t, dict) else str(t)
                 for t in payload.get("top_capabilities", [])[:5]
             ],
-            "ai_claims_count": len(top_caps) or len(reasons),
+            "ai_claims_count": claim_count,
             "analysis_duration_seconds": round(duration, 1),
             "ocr_scope_note": payload.get("ocr_scope_note"),
             "analysis_date": datetime.now().date().isoformat(),
@@ -1203,7 +1239,7 @@ def build_analysis_result(analysis_id: str, payload: dict) -> dict:
         "verification": {"rows": verification_rows},
         # 이 분석 이전에 저장된 기록에는 capability_scores 가 없다.
         # 그때는 빈 배열이 나가고 화면은 대조 뷰를 접는다.
-        "claims": build_claims(payload.get("capability_scores", [])),
+        "claims": claims,
         # 이 기능 이전에 저장된 기록에는 weighting 이 없다.
         "weighting": payload.get("weighting"),
         "s_only_correction": payload.get("s_only_correction"),
