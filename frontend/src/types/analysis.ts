@@ -115,6 +115,9 @@ export interface VerificationRow {
   key: string;
   value: string;
   intent: VerificationIntent;
+  count?: number;
+  record_titles?: string[];
+  matched_model_count?: number;
 }
 
 /* ── 대조 뷰 (Claim–Evidence) ──────────────────────────────────────────────
