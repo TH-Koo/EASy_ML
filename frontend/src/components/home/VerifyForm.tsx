@@ -35,11 +35,11 @@ type Check = { ok: true; url: string } | { ok: false; message: string; cell?: Gu
  * 않는다. 실제 회사 제품에 단정하는 표현을 붙이지 않고, 눌러 봐야 결과를 알게 한다.
  */
 const EXAMPLES = [
+  { name: "AI 로봇청소기", url: "https://prod.danawa.com/info/?pcode=108367196" },
+  { name: "AI 청소기", url: "https://prod.danawa.com/info/?pcode=98230349" },
   { name: "AI 세탁기", url: "https://prod.danawa.com/info/?pcode=109483526" },
   { name: "AI 가습기", url: "https://prod.danawa.com/info/?pcode=99839723" },
-  { name: "AI 하드디스크", url: "https://prod.danawa.com/info/?pcode=94811081" },
   { name: "AI 에어컨", url: "https://prod.danawa.com/info/?pcode=104987522" },
-  { name: "AI 로봇청소기", url: "https://prod.danawa.com/info/?pcode=108367196" },
   { name: "AI 이어폰", url: "https://prod.danawa.com/info/?pcode=14957273" },
 ] as const;
 
