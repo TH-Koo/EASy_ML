@@ -287,15 +287,17 @@ function EvidenceRow({
 }
 
 function evidenceExample(source: string, row?: VerificationRow): string | null {
+  if (source === "kipris") {
+    // 특허 제목은 회사 전체 검색 결과의 첫 건이라 이 기능과 맞춘 특허가 아니다.
+    // 제목을 붙이면 기능과 무관한 특허로 확인한 것처럼 보이므로 건수만 적는다.
+    const count = row?.count;
+    return count ? "제조사 특허 " + count + "건" : null;
+  }
   const title = row?.record_titles?.[0];
   if (!title) return null;
   if (source === "rra") {
     const count = row.matched_model_count;
     return title + (count ? " · 동일 모델 " + count + "건" : "");
-  }
-  if (source === "kipris") {
-    const count = row.count ?? 1;
-    return "제조사 특허 조회 · 「" + title + "」" + (count > 1 ? " 등 " + count + "건" : "");
   }
   return title;
 }
