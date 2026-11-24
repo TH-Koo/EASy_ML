@@ -17,7 +17,7 @@ from sqlalchemy import create_engine, text
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from logic.crawler import get_product_data
-from logic.ocr_analyzer import analyze_ai_washing
+from logic.evidence_cache import query_cached
 from logic.normalizer import normalize_data
 from logic.llm_resolver import resolve_real_company_name, resolve_model_name
 from logic.dart_scraper import check_dart_ai_washing
@@ -31,7 +31,6 @@ from logic.api import (
     verify_iitp,
 )
 
-from fides_scoring import display_score
 from fides_scoring import display_score
 from fides_integration import (
     infer_product_type,
@@ -184,7 +183,7 @@ def save_to_dataset(product_info, scores, final_score, is_ai_product, verdict, r
     dataset_dir = "dataset"
     os.makedirs(dataset_dir, exist_ok=True)
     csv_filename = os.path.join(dataset_dir, "ai_washing_dataset.csv")
-    
+
     model_name = product_info.get("model", "미확인")
     # 저장소에 0바이트 CSV가 있더라도 첫 행에는 헤더를 기록한다.
     file_exists = os.path.isfile(csv_filename) and os.path.getsize(csv_filename) > 0
@@ -408,7 +407,7 @@ def generate_tailored_search_payload(raw_llm_name, scraping_aliases=None):
     if scraping_aliases:
         base_list.extend(scraping_aliases)
 
-    base_list = list(set([n for n in base_list if n]))
+    base_list = list(dict.fromkeys(n for n in base_list if n))
     payload = {
         "pps_mall": [],
         "local_db": [],
@@ -428,7 +427,7 @@ def generate_tailored_search_payload(raw_llm_name, scraping_aliases=None):
         expanded_names.append(clean_name.upper())
         expanded_names.append(clean_name.lower())
 
-    expanded_names = list(set(expanded_names))
+    expanded_names = list(dict.fromkeys(expanded_names))
 
     for clean_name in expanded_names:
         payload["kipris"].append(clean_name)
@@ -451,7 +450,7 @@ def generate_tailored_search_payload(raw_llm_name, scraping_aliases=None):
             payload["pps_mall"].append(pps_clean)
 
     for key in payload:
-        payload[key] = list(set(payload[key]))
+        payload[key] = list(dict.fromkeys(payload[key]))
 
     return payload
 
@@ -567,12 +566,14 @@ def _save_evidence_bundle_cache(url: str, bundle_kwargs: dict) -> None:
         print(f"⚠️ [EvidenceCache] 캐시 저장 실패 (무시하고 진행): {e}")
 
 
-def run_product_ocr(scraped_item: dict) -> dict:
+def run_product_ocr(scraped_item: dict, progress_callback=None) -> dict:
     """상세페이지 스크린샷을 OCR 한다. 이미지가 같으면 캐시를 쓴다.
 
     터미널 파이프라인과 웹 서버(server.py)가 같은 OCR 결과를 써야 같은 주장을
     잡는다. 그래서 이 단계를 함수로 떼어 둘 다 여기를 지나게 한다.
     """
+    if scraped_item.get('collection_mode') == 'specs':
+        return {'extracted_text': '', 'skipped': True, 'reason': 'specs_only'}
     img_path = scraped_item.get("screenshot_path", "")
     if not img_path:
         return {}
@@ -585,7 +586,8 @@ def run_product_ocr(scraped_item: dict) -> dict:
         return cached_ocr_result
 
     print("⏳ [OCR] 캐시가 없거나 이미지가 변경되어 OCR을 새로 수행합니다.")
-    ocr_result = analyze_ai_washing(img_path)
+    from logic.ocr_analyzer import analyze_ai_washing
+    ocr_result = analyze_ai_washing(img_path, progress_callback=progress_callback)
     _save_ocr_result_cache(img_path, json_path, ocr_result)
     return ocr_result
 
@@ -609,18 +611,10 @@ def collect_evidence(url: str, scraped_item: dict, ocr_result: dict) -> dict:
     official_model = (
         _spec_table_model(scraped_item)
         or norm_result.get("final_norm_model")
-        or norm_result.get("final_norm_model")
         or resolve_model_name(scraped_item.get("model_name", ""), ocr_text)
-        or "미확인"
         or "미확인"
     )
     product_category = scraped_item.get("category", "") if isinstance(scraped_item.get("category"), str) else ""
-    llm_aliases = scraped_item.get("aliases", [])
-    # Preserve the crawler's original manufacturer and deterministic aliases.
-    # Never inject historical unreviewed Ollama cache values into agency searches.
-    raw_company = norm_result.get("raw_company", "")
-    safe_aliases = [raw_company] if raw_company and raw_company != "미확인" else []
-    search_payload = generate_tailored_search_payload(official_company, safe_aliases)
     # Preserve the crawler's original manufacturer and deterministic aliases.
     # Never inject historical unreviewed Ollama cache values into agency searches.
     raw_company = norm_result.get("raw_company", "")
@@ -631,19 +625,19 @@ def collect_evidence(url: str, scraped_item: dict, ocr_result: dict) -> dict:
     print("⏳ 로컬 DB 및 다중 API 통신을 병렬로 진행합니다...\n")
 
     final_results = {}
-    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
         dart_target_list = search_payload["dart"] if search_payload["dart"] else [official_company]
         futures = {
-            executor.submit(check_dart_ai_washing, dart_target_list, scraped_item.get("model_name"), product_category or infer_product_type(scraped_item)): 'DART',
-            executor.submit(verify_kipris, search_payload["kipris"], product_category): 'KIPRIS',
-            executor.submit(search_kc_db_local, search_payload["local_db"], official_model): 'RRA',
-            executor.submit(search_cert_db_local, search_payload["local_db"]): 'TTA',
-            executor.submit(verify_nipa_solution, search_payload["nipa"]): 'AI공급',
-            executor.submit(verify_pps_mall, search_payload["pps_mall"]): '조달몰',
-            executor.submit(verify_koneps, search_payload["koneps"]): '나라장터',
-            executor.submit(verify_kaiac, search_payload["local_db"]): 'KAIAC',
-            executor.submit(verify_ntis_rnd, search_payload["koneps"], product_category): 'NTIS',
-            executor.submit(verify_iitp, search_payload["koneps"], product_category): 'IITP',
+            executor.submit(query_cached, 'DART', check_dart_ai_washing, dart_target_list, scraped_item.get("model_name"), product_category or infer_product_type(scraped_item)): 'DART',
+            executor.submit(query_cached, 'KIPRIS', verify_kipris, search_payload["kipris"], product_category): 'KIPRIS',
+            executor.submit(query_cached, 'RRA', search_kc_db_local, search_payload["local_db"], official_model): 'RRA',
+            executor.submit(query_cached, 'TTA', search_cert_db_local, search_payload["local_db"]): 'TTA',
+            executor.submit(query_cached, 'AI공급', verify_nipa_solution, search_payload["nipa"]): 'AI공급',
+            executor.submit(query_cached, '조달몰', verify_pps_mall, search_payload["pps_mall"]): '조달몰',
+            executor.submit(query_cached, '나라장터', verify_koneps, search_payload["koneps"]): '나라장터',
+            executor.submit(query_cached, 'KAIAC', verify_kaiac, search_payload["local_db"]): 'KAIAC',
+            executor.submit(query_cached, 'NTIS', verify_ntis_rnd, search_payload["koneps"], product_category): 'NTIS',
+            executor.submit(query_cached, 'IITP', verify_iitp, search_payload["koneps"], product_category): 'IITP',
         }
 
         for future in concurrent.futures.as_completed(futures):
@@ -829,7 +823,7 @@ def run_full_pipeline(url: str):
                 if records:
                     print(f" 주요 검색 결과:")
                     for i, rec in enumerate(records[:3], 1):
-                        
+
                         name_val = (
                             rec.get('project_name')
                             or rec.get('발명의명칭(한글)')
@@ -839,12 +833,12 @@ def run_full_pipeline(url: str):
                             or rec.get('model_name')
                             or '확인된 실적'
                         )
-                        
+
                         cert_type = rec.get('cert_type') or rec.get('인증종류') or rec.get('type', '')
                         cert_mark = f"[{cert_type}] " if cert_type else ""
-                        
+
                         print(f" {i}. {cert_mark}{name_val}")
-                        
+
                 evidence = res.get('evidence', [])
                 if evidence:
                     print(f" 주요 실적 내역:")

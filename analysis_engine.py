@@ -212,6 +212,7 @@ class CapabilityScore:
     indirect_evidence_count: int = 0
     component_support: Dict[str, float] = field(default_factory=dict)
     evidence_ids: List[str] = field(default_factory=list)
+    source_evidence: List[Dict[str, Any]] = field(default_factory=list)
 
 
 @dataclass
@@ -755,8 +756,10 @@ class OntologyRepository:
 
 
 class OntologyAnalysisEngine:
-    HES_SOURCES = {"kc", "rra", "seller_page"}
-    TES_SOURCES = {"kipris", "dart", "nipa", "kaiac", "tipa", "koraia", "seller_page", "ntis", "iitp"}
+    # 제품이 스스로 적은 내용. 주장 텍스트로만 쓰고 검증 점수에는 넣지 않는다.
+    FIRST_PARTY_SOURCES = {"seller_page", "review", "ocr_text", "product_text"}
+    HES_SOURCES = {"kc", "rra"}
+    TES_SOURCES = {"kipris", "dart", "nipa", "kaiac", "tipa", "koraia", "ntis", "iitp"}
     CES_SOURCES = {"gs", "nep", "procurement", "tta", "kaiac", "nipa", "tipa", "koraia", "net", "sandbox"}
 
     def __init__(
@@ -805,7 +808,7 @@ class OntologyAnalysisEngine:
             for record in (evidence_records or [])
         ]
 
-        
+
         validated = [
             record for record in validated
             if is_valid_evidence_status(record.status)
@@ -819,7 +822,7 @@ class OntologyAnalysisEngine:
         ]
 
 
-        
+
         validated = [
             record for record in validated
             if is_valid_evidence_status(record.status)
@@ -835,68 +838,38 @@ class OntologyAnalysisEngine:
         records = self._dedup_evidence(validated)
 
 
-        print("\n========== INPUT EVIDENCE ==========")
+        debug = os.getenv('EASY_ENGINE_DEBUG', '0').lower() in {'1', 'true', 'yes'}
+        if debug:
+            print("\n========== INPUT EVIDENCE ==========")
 
-        for record in records:
-            print({
-                "evidence_id": record.evidence_id,
-                "source_type": record.source_type,
-                "status": record.status,
-                "title": record.title,
-                "relation_type": record.relation_type,
-                "capability_ids": record.capability_ids,
-                "source_record_id": record.source_record_id,
-                "text": record.text[:300],
-            })
+            for record in records:
+                print({
+                    "evidence_id": record.evidence_id,
+                    "source_type": record.source_type,
+                    "status": record.status,
+                    "title": record.title,
+                    "relation_type": record.relation_type,
+                    "capability_ids": record.capability_ids,
+                    "source_record_id": record.source_record_id,
+                    "text": record.text[:300],
+                })
 
-        print("====================================\n")
-
-
-
-        print("\n========== INPUT EVIDENCE ==========")
-
-        for record in records:
-            print({
-                "evidence_id": record.evidence_id,
-                "source_type": record.source_type,
-                "status": record.status,
-                "title": record.title,
-                "relation_type": record.relation_type,
-                "capability_ids": record.capability_ids,
-                "source_record_id": record.source_record_id,
-                "text": record.text[:300],
-            })
-
-        print("====================================\n")
-
+            print("====================================\n")
 
         claim_text = self._build_claim_text(ad_text, ocr_text, extra_texts, records)
 
-        import re
+        if debug:
 
-        for match in re.finditer(
-            r"LLM",
-            claim_text,
-            flags=re.IGNORECASE
-        ):
-            start = max(0, match.start() - 100)
-            end = min(len(claim_text), match.end() + 100)
+            for match in re.finditer(
+                r"LLM",
+                claim_text,
+                flags=re.IGNORECASE
+            ):
+                start = max(0, match.start() - 100)
+                end = min(len(claim_text), match.end() + 100)
 
-            print("[LLM MATCH]", claim_text[start:end])
-            
+                print("[LLM MATCH]", claim_text[start:end])
 
-        import re
-
-        for match in re.finditer(
-            r"LLM",
-            claim_text,
-            flags=re.IGNORECASE
-        ):
-            start = max(0, match.start() - 100)
-            end = min(len(claim_text), match.end() + 100)
-
-            print("[LLM MATCH]", claim_text[start:end])
-            
         capability_scores = self._score_all_capabilities(records, claim_text)
         # 제품군과 맞지 않는 기능은 점수는 남기되 주장에서는 뺀다.
         category_filtered = []
@@ -916,84 +889,43 @@ class OntologyAnalysisEngine:
         ecs = self._calculate_ecs(channel_details, records)
 
 
-        # ===== 디버깅 코드 시작 =====
-        import json
+        if debug:
+            # Detailed evidence dumps are opt-in.
 
-        print("\n========== CHANNEL DEBUG ==========")
-        print(json.dumps(
-            channel_details,
-            ensure_ascii=False,
-            indent=2,
-            default=str,
-        ))
+            print("\n========== CHANNEL DEBUG ==========")
+            print(json.dumps(
+                channel_details,
+                ensure_ascii=False,
+                indent=2,
+                default=str,
+            ))
 
-        print("\n========== CAPABILITY DEBUG ==========")
-        for cap in used_caps:
-            print(
-                cap.capability_id,
-                "score =", cap.final_score,
-                "strong =", cap.matched_strong_patterns,
-                "weak =", cap.matched_weak_patterns,
-            )
+            print("\n========== CAPABILITY DEBUG ==========")
+            for cap in used_caps:
+                print(
+                    cap.capability_id,
+                    "score =", cap.final_score,
+                    "strong =", cap.matched_strong_patterns,
+                    "weak =", cap.matched_weak_patterns,
+                )
 
-        print("\n========== EVIDENCE DEBUG ==========")
-        for cap in used_caps:
-            contributions = self._contributions_by_cap.get(
-                cap.capability_id, []
-            )
+            print("\n========== EVIDENCE DEBUG ==========")
+            for cap in used_caps:
+                contributions = self._contributions_by_cap.get(
+                    cap.capability_id, []
+                )
 
-            print(f"\n[Capability] {cap.capability_id}")
+                print(f"\n[Capability] {cap.capability_id}")
 
-            for c in contributions:
-                print({
-                    "evidence_id": c.evidence_id,
-                    "source_type": c.source_type,
-                    "relation_type": c.relation_type,
-                    "support": c.support,
-                })
+                for c in contributions:
+                    print({
+                        "evidence_id": c.evidence_id,
+                        "source_type": c.source_type,
+                        "relation_type": c.relation_type,
+                        "support": c.support,
+                    })
 
-        print("===================================\n")
-
-
-
-        # ===== 디버깅 코드 시작 =====
-        import json
-
-        print("\n========== CHANNEL DEBUG ==========")
-        print(json.dumps(
-            channel_details,
-            ensure_ascii=False,
-            indent=2,
-            default=str,
-        ))
-
-        print("\n========== CAPABILITY DEBUG ==========")
-        for cap in used_caps:
-            print(
-                cap.capability_id,
-                "score =", cap.final_score,
-                "strong =", cap.matched_strong_patterns,
-                "weak =", cap.matched_weak_patterns,
-            )
-
-        print("\n========== EVIDENCE DEBUG ==========")
-        for cap in used_caps:
-            contributions = self._contributions_by_cap.get(
-                cap.capability_id, []
-            )
-
-            print(f"\n[Capability] {cap.capability_id}")
-
-            for c in contributions:
-                print({
-                    "evidence_id": c.evidence_id,
-                    "source_type": c.source_type,
-                    "relation_type": c.relation_type,
-                    "support": c.support,
-                })
-
-        print("===================================\n")
-
+            print("===================================\n")
 
         legacy = self._calculate_legacy_accs(hes, tes, ces, ecs)
         dynamic = self._calculate_dynamic_weighting(
@@ -1213,11 +1145,122 @@ class OntologyAnalysisEngine:
             indirect_evidence_count=indirect_count,
             component_support=requirement_info["component_support"],
             evidence_ids=evidence_ids,
+            source_evidence=self._summarize_capability_sources(contributions, records),
         )
 
-    
 
-    
+
+
+    def _patent_display_terms(self, contributions: List[EvidenceContribution]) -> Set[str]:
+        """Specific function/component phrases for presentation, not scoring."""
+        generic = GENERIC_COMPONENT_TOKENS | {
+            "인식", "감지", "탐지", "검출", "처리", "학습", "데이터", "정보",
+            "입력", "출력", "엔진", "신경망", "딥러닝", "머신러닝", "learning",
+        }
+        terms = set()
+        for item in contributions:
+            # Short/general words such as 'AI', '모델', '제어' cannot connect
+            # a vehicle patent to floor detection merely by being present.
+            terms.update(token for token in meaningful_tokens(item.component_name)
+                         if token not in generic and len(token) >= 3)
+        repo = getattr(self, "repo", None)
+        if repo is not None:
+            for ident in {getattr(item, "capability_id", "") for item in contributions}:
+                for pattern in repo.get_patterns(ident):
+                    text = str(pattern.get("pattern_text_ko", ""))
+                    if (normalize_text(pattern.get("evidence_strength", "")) == "strong"
+                            and meaningful_tokens(text) - generic and len(compact_text(text)) >= 3):
+                        terms.add(text)
+        return terms
+
+    @staticmethod
+    def _patent_display_matches(text: str, terms: Set[str]) -> bool:
+        text = clean_markup(text)
+        compact = compact_text(text)
+        for term in terms:
+            if re.fullmatch(r"[a-z0-9]+", term, re.IGNORECASE):
+                if re.search(r"(?<![a-z0-9])" + re.escape(term) + r"(?![a-z0-9])", text, re.IGNORECASE):
+                    return True
+            elif compact_text(term) in compact:
+                return True
+        return False
+
+    def _summarize_capability_sources(
+        self, contributions: List[EvidenceContribution], records: List[EvidenceRecord]
+    ) -> List[Dict[str, Any]]:
+        """Expose actual component-to-record links without changing any score.
+
+        Prefer the closest function/component match, using directness and
+        score selection as tie breakers. Company evidence remains indirect.
+        """
+        by_id = {record.evidence_id: record for record in records}
+        selected = set()
+        for component in unique_keep_order(c.component_name for c in contributions):
+            best = {}
+            for item in contributions:
+                if item.component_name != component:
+                    continue
+                old = best.get(item.independent_source_key)
+                if old is None or item.support > old.support:
+                    best[item.independent_source_key] = item
+            for item in sorted(best.values(), key=lambda c: c.support, reverse=True)[:10]:
+                selected.add((item.component_name, item.evidence_id))
+        def relevance_key(item):
+            # Rank the record's actual function/component match before its
+            # score contribution, which also reflects source quality and age.
+            return (
+                (item.capability_relevance + item.component_relevance) / 2.0,
+                item.capability_relevance,
+                item.required_level == "required",
+                item.relation_weight,
+                (item.component_name, item.evidence_id) in selected,
+                item.support,
+            )
+
+        summaries = []
+        for source in unique_keep_order(c.source_type for c in contributions):
+            items = [c for c in contributions if c.source_type == source and c.evidence_id in by_id]
+            if not items:
+                continue
+            items.sort(key=relevance_key, reverse=True)
+            top = items[0]
+            display = {}
+            if source == "kipris":
+                terms = self._patent_display_terms(items)
+                related_ids = set()
+                titled = []
+                for item in items:
+                    candidate = by_id[item.evidence_id]
+                    meta = getattr(candidate, "meta", {}) or {}
+                    abstract = _first_nonempty(meta, ["초록", "abstract", "Abstract", "요약", "summary", "description"])
+                    # record.text also contains search_query/search_alias. Those
+                    # query terms are not content of the returned patent.
+                    if not meta:
+                        abstract = getattr(candidate, "text", "")
+                    if self._patent_display_matches(f"{candidate.title} {abstract}", terms):
+                        related_ids.add(item.evidence_id)
+                    if self._patent_display_matches(candidate.title, terms):
+                        titled.append(item)
+                if titled:
+                    top = titled[0]
+                display = {
+                    "display_record_title": by_id[top.evidence_id].title if titled else None,
+                    "related_record_count": len(related_ids),
+                }
+            record = by_id[top.evidence_id]
+            record_items = [c for c in items if c.evidence_id == top.evidence_id]
+            summaries.append((relevance_key(top), {
+                "source": source,
+                "components": unique_keep_order(c.component_name for c in record_items),
+                "record_title": record.title,
+                "record_id": record.source_record_id,
+                "matched_record_count": len({c.evidence_id for c in items}),
+                "relation_type": top.relation_type,
+                "used_for_support": any((c.component_name, c.evidence_id) in selected for c in record_items),
+                **display,
+            }))
+        return [row for _, row in sorted(summaries, key=lambda entry: entry[0], reverse=True)]
+
     def _match_positive_patterns(
         self, capability_id: str, claim_text: str
     ) -> Tuple[List[str], List[str]]:
@@ -1231,7 +1274,7 @@ class OntologyAnalysisEngine:
                 continue
 
             matched = pattern in claim_text
-    
+
 
             if not matched:
                 continue
@@ -1247,7 +1290,7 @@ class OntologyAnalysisEngine:
                 continue
 
             matched = pattern in claim_text
-    
+
 
             if not matched:
                 continue
@@ -1387,6 +1430,11 @@ class OntologyAnalysisEngine:
                 # not an individual product's required hardware/software component.
                 # Count it once at the TES channel level instead of here.
                 if record.source_type == "ntis":
+                    continue
+                # 판매 페이지·리뷰는 검증 대상인 주장의 출처일 뿐, 그 주장을
+                # 뒷받침하는 근거가 아니다. 부품 충족·HES·TES·CES 어디에도
+                # 점수로 들어가지 않게 여기서 한 번에 뺀다.
+                if record.source_type in self.FIRST_PARTY_SOURCES:
                     continue
                 if record.source_type != source and not (
                     (record.source_type == "ntis" and source in {"kipris", "dart", "nipa"})
@@ -1644,7 +1692,7 @@ class OntologyAnalysisEngine:
                 return 0.60
         if record.source_type in {"kipris", "dart", "ntis", "tta", "gs", "rra", "net", "sandbox"}:
             return 0.50
-        
+
         return 0.0
 
     def _aggregate_component_support(
@@ -1906,7 +1954,7 @@ class OntologyAnalysisEngine:
                     if cap_id in cap_by_id
                 ]
                 capability_score = sum(cap_scores) / len(cap_scores) if cap_scores else 0.0
-                
+
                 bonus = 0.0
 
                 # 1. 출처 다양성
@@ -1922,8 +1970,8 @@ class OntologyAnalysisEngine:
 
                 # 4. 서로 다른 출처 보상
                 bonus += min(unique_sources * 2, 8)
-                
-                
+
+
                 # Saturation
                 bonus = 15 * (1 - exp(-bonus / 12))
 
@@ -2072,7 +2120,7 @@ class OntologyAnalysisEngine:
                     capability_score = 0
                     score = 0
 
-            
+
 
             # Independent, bounded manufacturer AI capability evidence.
             # 1 distinct topic: 22 TES points; 2: 26; 3+: 30.
@@ -2274,7 +2322,7 @@ class OntologyAnalysisEngine:
         cfg = self.dynamic_weight_config
         scores = {"hes": hes, "tes": tes, "ces": ces}
         active = {key: value for key, value in scores.items() if value > 0}
-        
+
         logits: Dict[str, float] = {}
         prediction = None
 
@@ -2523,7 +2571,7 @@ class OntologyAnalysisEngine:
     ) -> float:
         if not used_caps:
             return 0.0
-            
+
         used_contributions = [
             contribution
             for cap in used_caps
@@ -2534,7 +2582,7 @@ class OntologyAnalysisEngine:
             for contribution in used_contributions
             if contribution.source_type not in {"seller_page", "review"}
         ]
-        
+
         external_count = len(external_contributions)
         count_score = 1.0 - exp(-external_count / 4.0)
 
@@ -2564,7 +2612,7 @@ class OntologyAnalysisEngine:
             + core_coverage * 0.25
             + source_diversity * 0.15
         )
-        
+
         return clamp01(sufficiency)
 
     def _record_is_company_capability_for_any(
@@ -2576,9 +2624,9 @@ class OntologyAnalysisEngine:
             for cap in used_caps
         )
 
-    
 
-    
+
+
     def _decide_verdict(
         self,
         accs: float,

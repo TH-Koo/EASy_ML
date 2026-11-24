@@ -30,11 +30,11 @@ export const VERDICT_COLOR = [
 ] as const;
 
 /**
- * 점수 막대의 구간 경계. fides_config.py 의 VerdictThresholds
- * (suspected 21.8 · normal 35)와 같다. 엔진은 신뢰도도 함께 보므로 드물게
- * 핀이 판정과 다른 구간에 설 수 있다 — 막대는 판정 단계 색을 따른다.
+ * 화면 표시 점수의 구간 경계. 원점수 경계(21.8 · 35)에
+ * fides_scoring.display_score를 적용한 값(20 · 40)이다.
+ * 보조모델 등이 판정을 보정한 경우에도 판정 색은 백엔드 결과를 따른다.
  */
-export const SCORE_ZONES = { low: 21.8, high: 35 } as const;
+export const SCORE_ZONES = { low: 20, high: 40 } as const;
 
 /** 백엔드 구간 라벨 → 화면 3단계. "판정 제외"는 단계가 없다. */
 export function verdictLevel(label: OverallLabel): VerdictLevel | null {
@@ -332,21 +332,25 @@ export interface PlainExplanation {
 
 const MEANING: Record<ClaimStatus, string> = {
   verified:
-    "분석 기준에 따라 이 기능을 뒷받침하는 자료가 확인됐어요. 아래에서 자료의 내용과 확인 범위를 볼 수 있어요.",
+    "이 기능을 뒷받침하는 관련 자료가 확인돼 ‘근거 확인’으로 판단했어요.",
   partial:
     "이 기능에 연결된 자료는 찾았어요. 다만 제품 적용 여부나 구체적인 작동 방식 등 추가 확인이 필요해요.",
   unsupported:
-    "확인할 수 있는 공식 기록을 찾지 못했어요. 기능이 없다는 뜻이 아니라, 공개된 기록으로는 확인되지 않는다는 뜻이에요.",
+    "이 기능을 뒷받침할 자료가 없거나, 찾은 자료만으로 기능을 확인하기 어려워 ‘미확인’으로 판단했어요. 기능이 없거나 허위라는 뜻은 아니에요.",
 };
 
 const ROLE: Record<ClaimStatus, string> = {
   verified:
     "연결된 자료가 기능별 확인 기준을 충족한 것으로 분석됐어요. 기능의 실제 성능을 시험한 결과와는 구분해 주세요.",
   partial:
-    "관련 자료의 존재는 확인했지만, 기능별 확인 기준을 모두 충족하지 못해 ‘일부 확인’으로 표시했어요.",
+    "자료가 광고한 기능의 어떤 부분을 설명하는지, 해당 제품과 직접 연결되는지를 함께 살펴봐요.",
   unsupported:
-    "이번 조회에서 기능을 뒷받침하는 자료가 확인되지 않았어요. 기능이 없거나 허위라는 뜻은 아니에요.",
+    "자료의 존재만으로 기능 적용을 확인하지 않아요. 이 제품의 기능을 뒷받침할 근거가 충분하지 않으면 ‘미확인’으로 표시해요.",
 };
+
+export function spaceMiddleDots(text: string): string {
+  return text.replace(/\s*·\s*/g, " · ");
+}
 
 export function explain(claim: Claim): PlainExplanation {
   const ids = new Set(claim.evidence.map((e) => e.source.toLowerCase()));
@@ -355,6 +359,40 @@ export function explain(claim: Claim): PlainExplanation {
     for (const id of Object.keys(SOURCE_INFO)) {
       if (claim.note.toLowerCase().includes(id)) ids.add(id);
     }
+  }
+  if (claim.explanation) {
+    return {
+      meaning: claim.explanation.result,
+      sources: [...ids].map((id) => SOURCE_INFO[id]).filter(Boolean),
+      role: claim.explanation.criterion,
+    };
+  }
+  const components = (claim.components ?? [])
+    .filter((component) => !["없음", "없음 또는 상황 의존", "해당 없음"].includes(component.name))
+    .sort((a, b) => b.support - a.support);
+  if (components.length > 0) {
+    const supported = components.filter((component) => component.fulfilled);
+    const weak = components.filter((component) => !component.fulfilled);
+    const names = (items: typeof components) => items.slice(0, 3).map((item) => spaceMiddleDots(item.name)).join(" · ")
+      + (items.length > 3 ? ` 등 ${items.length}개 구성 요소` : "");
+    let meaning = supported.length > 0
+      ? `${names(supported)} 관련 자료를 찾았어요.`
+      : `${names(components)}에 관한 자료를 살펴봤지만, 기능을 뒷받침할 근거는 충분하지 않았어요.`;
+    if (weak.length > 0 && supported.length > 0) {
+      meaning += ` ${names(weak)}는 근거가 부족해 추가 확인이 필요해요.`;
+    }
+    meaning += claim.status === "verified"
+      ? " 이 자료들이 광고한 기능을 뒷받침하는 확인 기준을 충족해 ‘근거 확인’으로 판단했어요."
+      : claim.status === "partial"
+        ? " 관련 자료는 있지만, 광고한 기능 전체를 뒷받침하기에는 부족해 ‘일부 확인’으로 판단했어요."
+        : claim.evidence.length === 0
+          ? " 이 기능에 연결된 근거를 찾지 못해 ‘미확인’으로 판단했어요."
+          : " 찾은 자료만으로는 광고한 기능을 확인하기 어려워 ‘미확인’으로 판단했어요.";
+    return {
+      meaning,
+      sources: [...ids].map((id) => SOURCE_INFO[id]).filter(Boolean),
+      role: "구성 요소 이름은 기능을 살펴보는 분석 항목이에요. 특허·공시는 제조사의 관련 기술 이력을 보여 주며, 이 제품의 실제 적용 여부와 성능은 제품에 직접 연결된 자료로 별도 확인해야 해요.",
+    };
   }
   return {
     meaning: MEANING[claim.status],

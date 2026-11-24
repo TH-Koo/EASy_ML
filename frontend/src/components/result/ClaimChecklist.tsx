@@ -4,13 +4,13 @@ import { cn } from "@/lib/cn";
 import {
   CLAIM_META,
   SOURCE_SCOPE,
-  displayQuote,
   evidenceChips,
   explain,
   isInternalId,
   sortClaims,
   sourceName,
   sourceDetails,
+  spaceMiddleDots,
 } from "@/lib/resultSummary";
 import { descriptionFor } from "@/lib/verificationDescriptions";
 import type { Claim, ClaimStatus, EvidenceRef, VerificationRow } from "@/types/analysis";
@@ -44,7 +44,7 @@ export function ClaimChecklist({
         >
           광고 문구 팩트체크
         </h2>
-        <p className="text-fg-dim flex gap-3 pb-1 text-[12.5px]">
+        <p className="text-fg-dim flex gap-3 pb-1 text-[12px]">
           <Legend cls="bg-[var(--claim-ok)]" label="근거 확인" />
           <Legend cls="bg-[var(--claim-part)]" label="일부 확인" />
           <Legend cls="bg-[var(--claim-no)]" label="미확인" />
@@ -56,7 +56,7 @@ export function ClaimChecklist({
         ))}
         {tail.length > 0 ? (
           <details className="group/more">
-            <summary className="text-fg-muted border-border flex cursor-pointer list-none items-center justify-center gap-1.5 border-t py-3.5 text-[13.5px] font-semibold group-open/more:hidden [&::-webkit-details-marker]:hidden">
+            <summary className="text-fg-muted border-border flex cursor-pointer list-none items-center justify-center gap-1.5 border-t py-3.5 text-[13px] font-semibold group-open/more:hidden [&::-webkit-details-marker]:hidden">
               나머지 {tail.length}개 기능 보기
               <ChevronDown size={16} aria-hidden />
             </summary>
@@ -118,18 +118,12 @@ function ClaimRow({
 }) {
   const { Icon, bg, text } = MARK[claim.status];
   const isSellerPage = (source: string) => source.toLowerCase() === "seller_page";
-  const evidence = claim.evidence.slice().sort(
+  const evidence = claim.evidence.filter((ref) => ref.source.toLowerCase() !== "dart").sort(
     (a, b) => Number(isSellerPage(b.source)) - Number(isSellerPage(a.source)),
   );
-  const chips = evidenceChips({ ...claim, evidence });
-  const quote = displayQuote(claim);
+  const chips = evidenceChips({ ...claim, evidence }).filter((chip) => !/\bdart\b/i.test(chip));
   const found = evidence.length > 0;
   const ex = explain(claim);
-  const dartContext = sourceRows.find((row) => row.source === "dart");
-  const showDartContext = Boolean(
-    dartContext?.record_titles?.length &&
-    !evidence.some((ref) => ref.source.toLowerCase() === "dart"),
-  );
   const publicLabels = [...new Set(evidence.filter((ref) => !isSellerPage(ref.source)).map(
     (ref) => {
       const source = ref.source.toLowerCase();
@@ -142,7 +136,9 @@ function ClaimRow({
     ? publicLabels.join(", ") + " 자료를 찾았어요."
     : "";
   const sellerFound = evidence.some((ref) => isSellerPage(ref.source));
-  const explanation = claim.status === "partial" && found
+  const explanation = claim.components?.length
+    ? ex.meaning
+    : claim.status === "partial" && found
     ? [
         sellerFound ? "판매 페이지에는 이 기능이 안내돼 있어요." : "",
         foundRecords,
@@ -167,14 +163,9 @@ function ClaimRow({
           <Icon size={15} strokeWidth={3} />
         </span>
         <span className="flex min-w-0 flex-col">
-          <b className="text-fg text-[15.5px] font-bold tracking-[var(--tracking-tight)]">
+          <b className="text-fg text-[16px] font-bold tracking-[var(--tracking-tight)]">
             {claim.text}
           </b>
-          {quote ? (
-            <span className="text-fg-dim truncate text-[13px] print:whitespace-normal">
-              “{quote}”
-            </span>
-          ) : null}
         </span>
         <span
           className={cn(
@@ -187,7 +178,7 @@ function ClaimRow({
             <span
               key={chip}
               className={cn(
-                "rounded-md px-2 py-0.5 text-xs font-semibold whitespace-nowrap",
+                "rounded-md px-2 py-0.5 text-[12px] font-semibold whitespace-nowrap",
                 found
                   ? "bg-[var(--claim-ok-soft)] text-[var(--claim-ok)]"
                   : "bg-surface-strong text-fg-dim",
@@ -215,25 +206,19 @@ function ClaimRow({
               key={`${ref.source}-${ref.record_id ?? i}`}
               item={ref}
               sourceRows={sourceRows}
+              claimText={claim.text}
             />
           ))
         ) : (
-          <p className="text-fg-muted py-2.5 text-[13.5px]">
+          <p className="text-fg-muted py-2.5 text-[13px]">
             {chips.length > 0
               ? `${chips.join(" · ")} — 조회했지만 찾지 못했어요`
               : "조회한 기록에서 찾지 못했어요"}
           </p>
         )}
 
-        {showDartContext ? (
-          <EvidenceRow
-            item={{ source: "dart", label: "DART 전자공시", record_id: null }}
-            sourceRows={sourceRows}
-            companyContext
-          />
-        ) : null}
         <div className="bg-surface my-3 flex flex-col gap-2 rounded-lg px-3 py-3 sm:px-3.5 print:my-2 print:gap-1.5 print:py-2.5">
-          <p className="text-brand-fg text-xs font-bold">
+          <p className="text-brand-fg text-[12.5px] font-bold">
             왜 이렇게 평가했나요?
           </p>
           <Explain tag="결과">{explanation}</Explain>
@@ -251,47 +236,63 @@ const EVIDENCE_ROW_TITLES: Record<string, string> = {
   seller_page: "판매 페이지",
   rra: "RRA 전파인증",
   kipris: "KIPRIS 특허",
-  dart: "DART 전자공시",
 };
 
 function EvidenceRow({
   item,
   sourceRows,
-  companyContext = false,
+  claimText,
 }: {
   item: EvidenceRef;
   sourceRows: VerificationRow[];
-  companyContext?: boolean;
+  claimText: string;
 }) {
   const source = item.source.toLowerCase();
   const title = EVIDENCE_ROW_TITLES[source] ?? sourceName(item);
-  const description = SOURCE_SCOPE[source] ?? sourceDetails(source).role;
+  const description = spaceMiddleDots(SOURCE_SCOPE[source] ?? sourceDetails(source).role);
   const recordId = isInternalId(item.record_id) ? null : item.record_id;
   const row = sourceRows.find((entry) => entry.source === source);
-  const example = evidenceExample(source, row) ?? recordId;
+  const example = source === "seller_page" ? null : evidenceExample(source, row, item, claimText) ?? recordId;
 
   return (
     <div className="border-border grid grid-cols-1 gap-x-3 border-b py-2.5 last:border-b-0 print:py-2 md:grid-cols-[120px_minmax(0,1fr)_auto] md:items-baseline print:grid-cols-[110px_minmax(0,1fr)_auto] print:items-baseline">
-      <b className="text-fg text-xs font-bold">{title}</b>
+      <b className="text-fg text-[12.5px] font-bold">{spaceMiddleDots(title)}</b>
       <div className="min-w-0">
-        <p className="text-fg-muted text-xs leading-relaxed">{description}</p>
+        <p className="text-fg-muted text-[12.5px] leading-relaxed">{description}</p>
         {example ? (
-          <p className="text-fg-dim mt-1 text-xs leading-relaxed">{example}</p>
+          <p className="text-fg-dim mt-1 text-[12.5px] leading-relaxed">{spaceMiddleDots(example)}</p>
         ) : null}
       </div>
-      <span className="text-xs font-bold text-[var(--claim-part)]">
-        {companyContext ? "회사 이력" : "찾음"}
+      <span className="text-[12px] font-bold text-[var(--claim-part)]">
+        찾음
       </span>
     </div>
   );
 }
 
-function evidenceExample(source: string, row?: VerificationRow): string | null {
+function evidenceExample(
+  source: string,
+  row?: VerificationRow,
+  item?: EvidenceRef,
+  claimText?: string,
+): string | null {
   if (source === "kipris") {
-    // 특허 제목은 회사 전체 검색 결과의 첫 건이라 이 기능과 맞춘 특허가 아니다.
-    // 제목을 붙이면 기능과 무관한 특허로 확인한 것처럼 보이므로 건수만 적는다.
-    const count = row?.count;
-    return count ? "제조사 특허 " + count + "건" : null;
+    const feature = claimText || "해당";
+    // The title filter only controls whether an example title is shown. It
+    // must not replace the engine's evidence count/status with literal word hits.
+    return typeof item?.matched_record_count === "number"
+      ? `${feature} 기능에 연결된 자료 ${item.matched_record_count}건`
+        + (item.display_record_title ? ` · 「${item.display_record_title}」` : "")
+      : `${feature} 기능 관련 자료 건수 미확인`;
+  }
+  if (item?.record_title && item.components?.length) {
+    const components = item.components.filter((name) => !["없음", "없음 또는 상황 의존", "해당 없음"].includes(name)).slice(0, 3).join(" · ");
+    const indirect = item.relation_type?.startsWith("company_");
+    const scope = indirect ? "제조사 기술 이력" : "제품 관련 자료";
+    const count = item.matched_record_count;
+    return `${components || "기술"} 관련 ${scope} · 「${item.record_title}」`
+      + (count && count > 1 ? ` 등 연결 자료 ${count}건` : "")
+      + (item.used_for_support === false ? " · 관련 참고 자료" : "");
   }
   const title = row?.record_titles?.[0];
   if (!title) return null;
@@ -314,7 +315,7 @@ function Explain({
       <span className="bg-surface-strong text-fg-dim rounded-md py-0.5 text-center text-[11.5px] font-bold">
         {tag}
       </span>
-      <p className="text-fg-muted text-[12.5px] leading-relaxed">{children}</p>
+      <p className="text-fg-muted text-[13px] leading-relaxed">{typeof children === "string" ? spaceMiddleDots(children) : children}</p>
     </div>
   );
 }
@@ -374,13 +375,13 @@ export function RecordChecklist({ rows }: { rows: VerificationRow[] }) {
               </span>
               <div className="min-w-0 flex-1">
                 <p className="flex flex-wrap items-baseline justify-between gap-x-3">
-                  <b className="text-fg text-[14.5px] font-bold">{row.key}</b>
-                  <span className="text-fg-muted text-[13px] font-semibold tabular-nums">
+                  <b className="text-fg text-[14px] font-bold">{row.key}</b>
+                  <span className="text-fg-muted text-[12.5px] font-semibold tabular-nums">
                     {row.value}
                   </span>
                 </p>
                 {desc ? (
-                  <p className="text-fg-dim mt-0.5 text-[13px]">{desc}</p>
+                  <p className="text-fg-dim mt-0.5 text-[12.5px]">{desc}</p>
                 ) : null}
               </div>
             </li>

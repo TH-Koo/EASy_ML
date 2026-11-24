@@ -47,6 +47,9 @@ export function ResultView({
 
       <VerdictPanel data={data} />
       <SummaryStrip data={data} />
+      {data.product.ocr_scope_note ? (
+        <p className="text-fg-dim px-1 text-[12.5px] leading-relaxed">{data.product.ocr_scope_note}</p>
+      ) : null}
 
       <div className="mt-8 flex flex-col gap-11">
         {claims.length > 0 ? (

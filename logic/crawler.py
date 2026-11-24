@@ -1,17 +1,8 @@
-"""
-crawler.py — 다나와 상품 페이지 크롤러
+"""Danawa product title and HTML specification collector.
 
-속도 개선 방향:
-- undetected_chromedriver 사용하지 않음
-- 일반 Selenium WebDriver만 사용
-- 고정 time.sleep()을 WebDriverWait 기반 대기로 최대한 대체
-- 상세 이미지 lazy loading 스크롤 시간을 단축하되, 이미지 개수/페이지 높이가 안정화될 때까지 확인
-- 동일 URL 재분석 시 선택적으로 크롤링 캐시 사용
-
-정확도 유지 원칙:
-- 상세 영역 캡처와 스펙 추출 로직은 유지
-- 더보기 버튼 클릭, lazy loading 스크롤, 상세 영역 캡처는 모두 수행
-- 캐시는 URL과 스크린샷 파일 존재 여부를 확인하고, TTL 안에서만 재사용
+The default skips marketing images, scrolling and OCR. Set EASY_DETAIL_MODE=images
+to explicitly use the retained image collection path. Existing valid spec caches
+can be reused without an image file.
 """
 
 from __future__ import annotations
@@ -92,6 +83,33 @@ def _cache_path_for_url(url: str) -> str:
     return os.path.join(_cache_dir(), f"{_extract_pcode_or_hash(url)}.json")
 
 
+def _specs_only() -> bool:
+    return os.getenv('EASY_DETAIL_MODE', 'specs').strip().lower() != 'images'
+
+
+def _supported_specs(specs):
+    """Unknown or explicitly unsupported fields must not become AI claims."""
+    absent = {'', '-', 'x', '×', '✕', '✖', '미지원', '미적용', '지원안함', '없음', '해당없음', '아니오'}
+    return {str(key).strip(): str(value).strip() for key, value in (specs if isinstance(specs, dict) else {}).items()
+            if str(key).strip() and re.sub(r'\s+', '', str(value)).lower() not in absent}
+
+
+def _as_specs_product(product):
+    product = dict(product)
+    product['specs'] = _supported_specs(product.get('specs'))
+    product['raw_specs'] = ' / '.join(f'{key}: {value}' for key, value in product['specs'].items())
+    product['screenshot_path'] = ''
+    product['description'] = ''
+    product.pop('ocr_extracted_text', None)
+    product.pop('ocr_text', None)
+    product['collection_mode'] = 'specs'
+    product['ocr_scope_note'] = (
+        '상품명과 다나와 상세정보 표에 기재된 기능을 기준으로 분석했어요. '
+        '이미지 속 광고 문구는 분석에 포함하지 않았어요.'
+    )
+    return product
+
+
 def _is_cache_valid(cache_data: Dict[str, Any], url: str) -> bool:
     """
     URL, TTL, 스크린샷 파일 존재 여부를 기준으로 캐시 재사용 가능 여부를 판단한다.
@@ -106,10 +124,25 @@ def _is_cache_valid(cache_data: Dict[str, Any], url: str) -> bool:
     if CRAWLER_CACHE_TTL_SECONDS > 0 and (_now_ts() - created_at) > CRAWLER_CACHE_TTL_SECONDS:
         return False
 
+    if _specs_only():
+        product = cache_data.get('product_data') or {}
+        return bool(_supported_specs(product.get('specs')))
+
+    if cache_data.get("detail_max_height") != DETAIL_MAX_HEIGHT:
+        return False
+
     screenshot_path = str(cache_data.get("screenshot_path") or "")
     # 상세 이미지를 못 찍은 결과는 다시 크롤링한다. 그대로 쓰면 OCR 이 0자라
     # 광고 이미지 속 AI 문구를 하나도 못 읽는데, 그 상태가 TTL 동안 굳는다.
     if not screenshot_path or not os.path.exists(screenshot_path):
+        return False
+
+    try:
+        from PIL import Image
+        with Image.open(screenshot_path) as image:
+            if image.height > DETAIL_MAX_HEIGHT:
+                return False
+    except (OSError, ValueError):
         return False
 
     return True
@@ -135,7 +168,7 @@ def _load_cached_product_data(url: str) -> Optional[Dict[str, Any]]:
             return None
 
         print(f"[Crawler Cache] 기존 크롤링 결과 재사용: {path}")
-        return product_data
+        return _as_specs_product(product_data) if _specs_only() else product_data
 
     except Exception as e:
         print(f"[Crawler Cache] 캐시 로드 실패, 새로 크롤링합니다: {e}")
@@ -152,6 +185,7 @@ def _save_cached_product_data(url: str, product_data: Dict[str, Any]) -> None:
         "created_at": _now_ts(),
         "created_at_text": time.strftime("%Y-%m-%d %H:%M:%S"),
         "screenshot_path": product_data.get("screenshot_path", ""),
+        "detail_max_height": DETAIL_MAX_HEIGHT,
         "product_data": product_data,
     }
 
@@ -189,6 +223,8 @@ def _build_chrome_options(headless: bool = True) -> Options:
     # 크롤링 정확도에 필요한 이미지는 막지 않는다.
     # 불필요한 확장/로그만 줄인다.
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
+    if _specs_only():
+        options.add_experimental_option('prefs', {'profile.managed_default_content_settings.images': 2})
 
     return options
 
@@ -276,19 +312,14 @@ def _extract_product_title(driver) -> str:
 
     raw_title = ""
 
+    # Initial page readiness already waited for one of these selectors.
     for selector in title_selectors:
-        try:
-            title_elem = WebDriverWait(driver, 4).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, selector))
-            )
-
-            raw_title = title_elem.text.strip()
-
+        for title_elem in driver.find_elements(By.CSS_SELECTOR, selector):
+            raw_title = (title_elem.get_attribute('textContent') or title_elem.text).strip()
             if raw_title:
                 break
-
-        except Exception:
-            continue
+        if raw_title:
+            break
 
     if not raw_title:
         raw_title = driver.title
@@ -531,6 +562,9 @@ def _stitch_detail_images(urls: List[str], out_path: str, referer: str) -> str:
             continue  # 아이콘·구분선
         if img.width != target_width:
             img = img.resize((target_width, max(1, round(img.height * target_width / img.width))))
+        remaining = DETAIL_MAX_HEIGHT - total
+        if img.height > remaining:
+            img = img.crop((0, 0, img.width, remaining))
         tiles.append(img)
         total += img.height
 
@@ -587,6 +621,11 @@ def _capture_detail_area(driver, model_name: str) -> str:
             return ""
 
         detail_area.screenshot(screenshot_file)
+        from PIL import Image
+        with Image.open(screenshot_file) as image:
+            cropped = image.crop((0, 0, image.width, DETAIL_MAX_HEIGHT)) if image.height > DETAIL_MAX_HEIGHT else None
+        if cropped is not None:
+            cropped.save(screenshot_file)
 
         print(f"[성공] 상세페이지 스크린샷 완료: {screenshot_file}")
         return screenshot_file
@@ -612,81 +651,39 @@ def _clean_spec_value(text: str) -> str:
 
 
 def _extract_specs(driver) -> Tuple[Dict[str, str], str]:
-    """
-    다나와 상품 스펙 정보를 수집한다.
-    """
-    print("[3/3] 스펙 정보 수집 중...")
-
-    specs: Dict[str, str] = {}
-    raw_specs = ""
-
+    """Read the specification table DOM in one browser call; never scan page ads."""
+    print('[2/2] 상세정보 표 수집 중...')
+    selector = '.prod_spec_table, ' + _NEW_SPEC_TABLE_SELECTOR
     try:
-        # 새 화면(React)은 prod_spec_table 대신 상세 섹션 안의 이름 없는
-        # 표에 스펙을 둔다(예: 세탁기 pcode=109483526). 이걸 못 읽으면 스펙이
-        # 0개가 돼 "상품 페이지로 보이지 않아요"로 분석이 멈췄다.
-        spec_tables = driver.find_elements(By.CLASS_NAME, "prod_spec_table")
-        if not spec_tables:
-            try:
-                spec_tables = WebDriverWait(driver, 5).until(
-                    lambda d: d.find_elements(By.CSS_SELECTOR, _NEW_SPEC_TABLE_SELECTOR)
-                )
-            except Exception:
-                spec_tables = []
-
-        if spec_tables:
-            rows = spec_tables[0].find_elements(By.TAG_NAME, "tr")
-
-            for row in rows:
-                ths = row.find_elements(By.TAG_NAME, "th")
-                tds = row.find_elements(By.TAG_NAME, "td")
-
-                for i, th in enumerate(ths):
-                    key = th.text.strip()
-
-                    if not key:
-                        continue
-
-                    value = "지원"
-
-                    if i < len(tds):
-                        value = _clean_spec_value(tds[i].text)
-
-                    specs[key] = value
-
-        if len(specs) < 3:
-            spec_lists = (driver.find_elements(By.CLASS_NAME, "spec_list")
-                          or driver.find_elements(By.CSS_SELECTOR, _NEW_SPEC_SUMMARY_SELECTOR))
-
-            if spec_lists:
-                raw_specs = re.sub(r"\s+", " ", spec_lists[0].text).strip()
-
-                for item in raw_specs.split(" / "):
-                    item = item.strip()
-
-                    if not item:
-                        continue
-
-                    if ":" in item:
-                        key, value = item.split(":", 1)
-                        specs[key.strip()] = value.strip()
-                    else:
-                        specs[item] = "지원"
-
-        if not raw_specs:
-            summary = driver.find_elements(By.CSS_SELECTOR, _NEW_SPEC_SUMMARY_SELECTOR)
-            if summary:
-                raw_specs = re.sub(r"\s+", " ", summary[0].text).strip()
-
-        if not raw_specs:
-            try:
-                body_text = driver.find_element(By.TAG_NAME, "body").text
-                raw_specs = re.sub(r"\s+", " ", body_text).strip()[:3000]
-            except Exception:
-                raw_specs = ""
-
-    except Exception as e:
-        print(f"스펙 정보 수집 실패: {e}")
-
+        WebDriverWait(driver, 5).until(lambda d: d.find_elements(By.CSS_SELECTOR, selector))
+    except TimeoutException:
+        pass
+    rows = driver.execute_script('''
+        return Array.from(document.querySelectorAll(arguments[0])).flatMap(table =>
+            Array.from(table.rows).flatMap(row => Array.from(row.cells).flatMap(cell => {
+                const next = cell.nextElementSibling;
+                if (cell.tagName !== 'TH' || !next || next.tagName !== 'TD') return [];
+                const key = (cell.textContent || '').trim();
+                let value = (next.textContent || '').trim();
+                if (!value) {
+                    const accessible = next.querySelector('[aria-label], img[alt]');
+                    value = accessible ? (accessible.getAttribute('aria-label') || accessible.getAttribute('alt') || '') : '';
+                }
+                return key ? [[key, value]] : [];
+            })));
+    ''', selector)
+    specs = _supported_specs({str(key).strip(): _clean_spec_value(value) for key, value in rows})
+    # Old-layout pages can expose only the scoped summary, not a table.
+    if not specs:
+        summaries = driver.find_elements(By.CSS_SELECTOR, '.spec_list, ' + _NEW_SPEC_SUMMARY_SELECTOR)
+        if summaries:
+            text = summaries[0].get_attribute('textContent') or summaries[0].text
+            for item in re.split(r'\s+/\s+', text):
+                key, separator, value = item.strip().partition(':')
+                if key:
+                    specs[key.strip()] = _clean_spec_value(value) if separator else '지원'
+            specs = _supported_specs(specs)
+    raw_specs = ' / '.join(f'{key}: {value}' for key, value in specs.items())
     return specs, raw_specs
 
 
@@ -796,7 +793,7 @@ def get_product_data(url: str) -> Optional[Dict[str, Any]]:
     try:
         driver = _setup_driver()
 
-        print("[1/3] 페이지 접속 및 로딩 중...")
+        print("[1/2] 페이지 접속 및 로딩 중..." if _specs_only() else "[1/3] 페이지 접속 및 로딩 중...")
         _open_product_page(driver, url)
 
         model_name = _extract_product_title(driver)
@@ -809,15 +806,26 @@ def get_product_data(url: str) -> Optional[Dict[str, Any]]:
             product_data["category"] = levels[-1]
             product_data["category_path"] = " > ".join(levels)
 
-        _click_more_button_if_exists(driver)
-        _slow_scroll_to_bottom(driver)
+        if not _specs_only():
+            _click_more_button_if_exists(driver)
+            _slow_scroll_to_bottom(driver)
 
-        screenshot_path = _capture_detail_area(driver, model_name)
-        product_data["screenshot_path"] = screenshot_path
+            screenshot_path = _capture_detail_area(driver, model_name)
+            product_data["screenshot_path"] = screenshot_path
+            if screenshot_path:
+                product_data["ocr_scope_note"] = (
+                    f"상세 이미지는 앞부분 최대 {DETAIL_MAX_HEIGHT:,}px 범위를 확인했어요. "
+                    "아래쪽 광고 문구는 분석에 포함되지 않을 수 있어요."
+                )
 
         specs, raw_specs = _extract_specs(driver)
         product_data["specs"] = specs
         product_data["raw_specs"] = raw_specs
+
+        if _specs_only():
+            product_data = _as_specs_product(product_data)
+        else:
+            product_data['collection_mode'] = 'images'
 
         print("상품 크롤링 완료")
         _save_cached_product_data(url, product_data)

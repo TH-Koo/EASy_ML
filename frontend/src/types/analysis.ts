@@ -37,8 +37,8 @@ export const STAGE_ORDER: StageName[] = [
 
 export const STAGE_LABELS: Record<StageName, { name: string; sub: string }> = {
   crawl: { name: "URL 크롤링", sub: "페이지 수집" },
-  ocr: { name: "이미지 OCR", sub: "텍스트 추출" },
-  llm_refine: { name: "로컬 AI 정제 중", sub: "Ollama · 주장 구조화" },
+  ocr: { name: "상세정보 표 확인", sub: "표에 기재된 기능 확인" },
+  llm_refine: { name: "제품 정보 정리", sub: "제조사 · 모델명 확인" },
   public_verify: {
     name: "공공 API 검증",
     sub: "전파인증 · 조달청 · TIPA · KORAIA",
@@ -76,6 +76,7 @@ export interface ProductInfo {
   ai_claims_count: number;
   analysis_duration_seconds: number;
   analysis_date: string; // YYYY-MM-DD
+  ocr_scope_note?: string | null;
   /** 분석한 상품 페이지 주소. 예전 기록에는 없을 수 있다. */
   url?: string;
 }
@@ -145,6 +146,16 @@ export interface EvidenceRef {
   /** 화면에 그대로 노출되는 한 줄 설명 */
   label: string;
   record_id: string | null;
+  /** This representative record's actual links to this claim's components. */
+  components?: string[];
+  record_title?: string;
+  matched_record_count?: number;
+  /** Literal phrase hits for title selection only; never a claim status or evidence count. */
+  related_record_count?: number;
+  /** Only present when the patent title itself names a related function/component. */
+  display_record_title?: string | null;
+  relation_type?: string;
+  used_for_support?: boolean;
 }
 
 export interface Claim {
@@ -154,10 +165,15 @@ export interface Claim {
   /** 페이지에서 실제로 매칭된 광고 문구 */
   quote: string | null;
   status: ClaimStatus;
+  required_support?: number;
+  components?: { name: string; support: number; fulfilled: boolean }[];
+  support_thresholds?: { verified: number; partial: number };
   /** 빈 배열이면 근거 없음 */
   evidence: EvidenceRef[];
   /** 연결이 끊긴 이유 — "KIPRIS 0건 · DART 0건" 등 */
   note: string | null;
+  /** Why an advertised feature remains unverified; does not alter model scores. */
+  explanation?: { result: string; criterion: string };
 }
 
 export interface VerificationResult {
