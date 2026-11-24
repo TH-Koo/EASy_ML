@@ -1174,6 +1174,25 @@ class OntologyAnalysisEngine:
         return terms
 
     @staticmethod
+    def _display_body(record: EvidenceRecord) -> str:
+        """Record content used to judge display relevance, minus search terms.
+
+        record.text flattens the whole row, including search_query/search_alias.
+        Those are what we searched for, not what the returned record says.
+        """
+        meta = getattr(record, "meta", {}) or {}
+        if not meta:
+            return getattr(record, "text", "")
+        abstract = _first_nonempty(meta, ["초록", "abstract", "Abstract", "요약", "summary", "description"])
+        if abstract or record.source_type == "kipris":
+            return abstract or ""
+        return " ".join(
+            str(value) for key, value in meta.items()
+            if isinstance(value, str)
+            and not any(word in str(key).lower() for word in ("query", "alias", "keyword", "search"))
+        )
+
+    @staticmethod
     def _patent_display_matches(text: str, terms: Set[str]) -> bool:
         text = clean_markup(text)
         compact = compact_text(text)
@@ -1224,29 +1243,25 @@ class OntologyAnalysisEngine:
                 continue
             items.sort(key=relevance_key, reverse=True)
             top = items[0]
-            display = {}
-            if source == "kipris":
-                terms = self._patent_display_terms(items)
-                related_ids = set()
-                titled = []
-                for item in items:
-                    candidate = by_id[item.evidence_id]
-                    meta = getattr(candidate, "meta", {}) or {}
-                    abstract = _first_nonempty(meta, ["초록", "abstract", "Abstract", "요약", "summary", "description"])
-                    # record.text also contains search_query/search_alias. Those
-                    # query terms are not content of the returned patent.
-                    if not meta:
-                        abstract = getattr(candidate, "text", "")
-                    if self._patent_display_matches(f"{candidate.title} {abstract}", terms):
-                        related_ids.add(item.evidence_id)
-                    if self._patent_display_matches(candidate.title, terms):
-                        titled.append(item)
-                if titled:
-                    top = titled[0]
-                display = {
-                    "display_record_title": by_id[top.evidence_id].title if titled else None,
-                    "related_record_count": len(related_ids),
-                }
+            # Every source (KIPRIS, RRA, GS, ...) shows a record title only when
+            # that title itself names this function/component. Otherwise the
+            # screen would present a company-wide record as feature proof.
+            terms = self._patent_display_terms(items)
+            related_ids = set()
+            titled = []
+            for item in items:
+                candidate = by_id[item.evidence_id]
+                body = self._display_body(candidate)
+                if self._patent_display_matches(f"{candidate.title} {body}", terms):
+                    related_ids.add(item.evidence_id)
+                if self._patent_display_matches(candidate.title, terms):
+                    titled.append(item)
+            if titled:
+                top = titled[0]
+            display = {
+                "display_record_title": by_id[top.evidence_id].title if titled else None,
+                "related_record_count": len(related_ids),
+            }
             record = by_id[top.evidence_id]
             record_items = [c for c in items if c.evidence_id == top.evidence_id]
             summaries.append((relevance_key(top), {
