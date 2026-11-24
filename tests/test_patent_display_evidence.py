@@ -64,6 +64,29 @@ class PatentDisplayEvidenceTests(unittest.TestCase):
         self.assertIsNone(row["display_record_title"])
         self.assertEqual(row["related_record_count"], 0)
 
+    def non_patent(self, source, ident, title, **row):
+        item = self.item(ident)
+        item.source_type = source
+        record = EvidenceRecord(source_type=source, evidence_id=ident, title=title,
+                                text=f"{title} AI바닥인식", meta={"title": title, **row},
+                                source_record_id=ident)
+        return item, record
+
+    def test_rra_and_gs_hide_unrelated_titles_like_kipris(self):
+        for source in ("rra", "gs"):
+            item, record = self.non_patent(source, "x", "특정소출력 무선기기",
+                                           search_query="AI바닥인식 오염도")
+            row = self.engine._summarize_capability_sources([item], [record])[0]
+            self.assertIsNone(row["display_record_title"], source)
+            self.assertEqual(row["related_record_count"], 0, source)
+            self.assertEqual(row["matched_record_count"], 1, source)
+
+    def test_rra_shows_title_when_it_names_the_function(self):
+        item, record = self.non_patent("rra", "floor", "바닥재 판별 로봇 청소기")
+        row = self.engine._summarize_capability_sources([item], [record])[0]
+        self.assertEqual(row["display_record_title"], "바닥재 판별 로봇 청소기")
+        self.assertEqual(row["related_record_count"], 1)
+
     def test_api_preserves_explicit_zero_and_hidden_title(self):
         claim = build_claims([{
             "positive_claim": True, "supporting_sources": ["kipris"],

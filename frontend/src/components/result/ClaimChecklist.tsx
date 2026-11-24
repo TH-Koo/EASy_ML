@@ -276,24 +276,15 @@ function evidenceExample(
   item?: EvidenceRef,
   claimText?: string,
 ): string | null {
-  if (source === "kipris") {
-    const feature = claimText || "해당";
-    // The title filter only controls whether an example title is shown. It
-    // must not replace the engine's evidence count/status with literal word hits.
-    return typeof item?.matched_record_count === "number"
-      ? `${feature} 기능에 연결된 자료 ${item.matched_record_count}건`
-        + (item.display_record_title ? ` · 「${item.display_record_title}」` : "")
-      : `${feature} 기능 관련 자료 건수 미확인`;
+  const feature = claimText || "해당";
+  // KIPRIS · RRA · GS 등 모든 기관을 같은 모양으로 적는다. 제목은 엔진이
+  // 이 기능과 관련 있다고 본 경우(display_record_title)에만 붙인다 — 회사
+  // 전체 기록의 첫 제목을 붙이면 무관한 기록으로 확인한 것처럼 보인다.
+  if (typeof item?.matched_record_count === "number") {
+    return `${feature} 기능에 연결된 자료 ${item.matched_record_count}건`
+      + (item.display_record_title ? ` · 「${item.display_record_title}」` : "");
   }
-  if (item?.record_title && item.components?.length) {
-    const components = item.components.filter((name) => !["없음", "없음 또는 상황 의존", "해당 없음"].includes(name)).slice(0, 3).join(" · ");
-    const indirect = item.relation_type?.startsWith("company_");
-    const scope = indirect ? "제조사 기술 이력" : "제품 관련 자료";
-    const count = item.matched_record_count;
-    return `${components || "기술"} 관련 ${scope} · 「${item.record_title}」`
-      + (count && count > 1 ? ` 등 연결 자료 ${count}건` : "")
-      + (item.used_for_support === false ? " · 관련 참고 자료" : "");
-  }
+  if (source === "kipris") return `${feature} 기능 관련 자료 건수 미확인`;
   const title = row?.record_titles?.[0];
   if (!title) return null;
   if (source === "rra") {
